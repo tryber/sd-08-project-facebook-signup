@@ -1,0 +1,33 @@
+.top-bar{
+  display:flex;
+  justify-content: space-between;
+  background-color: rgb(66, 103, 178);
+}
+
+.facebook-login{
+  display:flex;
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.form-control{
+  display:flex;
+  align-self:flex-end;
+}
+
+.main-content{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.left-content{
+  width: 800px;
+}
+
+.right-content{
+  width: 300px;
+}

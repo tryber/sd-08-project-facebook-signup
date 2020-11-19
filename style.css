@@ -1,6 +1,6 @@
 body {
-  box-sizing: border-box;
   background-color: #e2eeff;
+  box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -31,7 +31,13 @@ body {
   display: flex;
 }
 
-.inputemail,
+.inputemail {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin-left: 14px;
+}
+
 .inputpassword {
   display: flex;
   flex-direction: column;
@@ -65,7 +71,7 @@ body {
   justify-content: center;
 }
 
-#button-login {
+.btnlogin {
   align-self: center;
   background-color: #4267b2;
   border-color: #29487d;

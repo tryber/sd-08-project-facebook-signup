@@ -33,5 +33,11 @@
 .right-content form {
   display: flex;
   flex-wrap: wrap;
-  width: 372px;
+  width: 370px;
+}
+
+.right-content form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

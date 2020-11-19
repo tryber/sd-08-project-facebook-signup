@@ -59,10 +59,25 @@
           />
           <input type="password" name="password" placeholder="Nova senha" />
 
+          <div class="form-group">
+            <label id="label-birthdate" for="">Data de nascimento</label>
+            <input
+              type="text"
+              name="birthdate"
+              value=""
+              placeholder="dd/mm/aaaa"
+            />
+          </div>
+
           <label id="label-gender">Gênero</label>
-          <input type="radio" name="gender">Feminino
-          <input type="radio" name="gender">Masculino
-          <input type="radio" name="gender">Personalizado
+          <br />
+          <input type="radio" name="gender" value="feminino" />Feminino
+          <input type="radio" name="gender" value="masculino" />Masculino
+          <input
+            type="radio"
+            name="gender"
+            value="personalizado"
+          />Personalizado
         </form>
       </section>
     </main>

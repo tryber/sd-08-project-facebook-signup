@@ -1,7 +1,8 @@
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
   border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
   height: 17vh;
   width: 100%;
 }

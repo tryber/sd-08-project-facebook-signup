@@ -9,3 +9,8 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.facebook-login {
+  display: flex;
+  flex-direction: column;
+}

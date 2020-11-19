@@ -1,17 +1,46 @@
 .top-bar {
-    background-color: rgb(66, 103, 178);
-    display:flex;
-    justify-content: space-between;
-    
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
 }
 .facebook-login {
-    display: flex;
+  display: flex;
 }
 .form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control {
-    align-self: flex-end;
+  align-self: flex-end;
 }
+
+.main-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.name-lastname {
+  display: flex;
+}
+
+#label-birthdate {
+    display: block;
+}
+
+#label-gender{
+    display: block;
+}
+
+#label-gender {
+    display: block;
+}
+

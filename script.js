@@ -1,6 +1,6 @@
-let button = document.getElementById("button-login");
-let label = document.getElementById("user-email-phone");
+const button = document.getElementById('button-login');
+const label = document.getElementById('user-email-phone');
 
-button.addEventListener('click', function() {
+button.addEventListener('click', function () {
   alert(label.value);
-})
+});

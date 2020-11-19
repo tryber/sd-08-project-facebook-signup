@@ -4,6 +4,7 @@ html , body {
 }
 
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-around;
@@ -14,8 +15,7 @@ html , body {
 }
 
 .top-bar img {
-  height: auto;
-  width: auto;
+  background-size: cover;
 }
 
 .facebook-login {
@@ -30,6 +30,6 @@ html , body {
   flex-direction: column;
 }
 
-.login {
+.form-control {
   display: flex;
 }

@@ -1,7 +1,3 @@
-#formUser { 
-  margin-top: 10px;
-}
-
 .box1{
   display: flex;
   flex-direction: row;
@@ -17,13 +13,17 @@
   display: flex;
 }
 
+.form-control {
+  align-self: flex-end
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
 }
 
-.form-control {
-  align-self: flex-end
+.formUser { 
+  margin-top: 10px;
 }
 
 .left-content {
@@ -48,9 +48,7 @@
 }
 
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-
-

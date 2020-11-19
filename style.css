@@ -99,13 +99,13 @@ body {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: flex-start;
 }
 
 .left-content {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 800px;
 }
 
@@ -144,7 +144,7 @@ body {
   justify-content: space-between;
 }
 
-.div-outros{
+.div-outros {
   clear: both;
   display: flex;
   flex-direction: column;
@@ -178,7 +178,7 @@ body {
   border: 1px solid rgb(221, 218, 218);
   border-radius: 4px;
   height: 25px;
-  margin: 5px 0 5px;
+  margin: 5px 0;
 }
 
 .label-gender {

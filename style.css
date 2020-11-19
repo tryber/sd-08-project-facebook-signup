@@ -25,6 +25,7 @@ body {
 
 .form-group {
   display: flex;
+  flex-direction: column;
 }
 
 .facebook-login {

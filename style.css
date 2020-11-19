@@ -12,7 +12,6 @@ body {
   display: flex;
   height: 90px;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
 }
 
@@ -34,4 +33,24 @@ body {
 
 .form-control {
   align-self: flex-end;
+}
+
+.main-content{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-content{
+  width:800px;
+}
+
+.right-content{
+  width:300px;
+  display: flex;
+  flex-flow: column;
+  justify-content:flex-start;
+}
+
+.right-content h1{
+  font-size: 40px;
 }

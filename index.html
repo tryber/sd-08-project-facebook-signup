@@ -23,12 +23,12 @@
       </div>
     </form>
   </header>
-  <container class="main-content ">
-    <subcontainer class="left-content">
-      <p> "O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida."</p>
+  <section class="main-content ">
+    <section class="left-content">
+      <p id ="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
       <img src=imgs/networking.png alt="FacebookLogo" id="facebook-networking">
-    </subcontainer>
-    <subcontainer class="right-content">
+    </section>
+    <section class="right-content">
         <h1> "Abra uma conta" </h1>
         <p class="quick-easy">  "É rápido e fácil." </p>
       <form >
@@ -40,24 +40,21 @@
           <input class ="input2" type="text" name="phone_email" placeholder="Celular ou email">
         </section>
         <section class="input2">
-          <input  type="password" name="password" placeholder="Nova senha">
+          <input  type="password" name="password" placeholder="Nova senha"></input>
         </section>
         <section class="input2">
-          <label  for= "Data de nascimento" id=" label-birthdate ">
-          <input  type="text" name="birthdate" placeholder="dd/mm/aaaa" id="label-birthdate">
-          </label>
+          <label  for= "Data de nascimento" id="label-birthdate "> </label>
+          <input  type="text" name="birthdate" placeholder="dd/mm/aaaa" id="label-birthdate">Data de nascimento
         </section>
-        <section class="input2">
-          <label  for= "Gênero" id="label-gender" class="label-gender">
+        <section class="input3">
+          <label  for= "Gênero" id="label-gender" class="label-gender"> Gênero </label>
           <input  type="radio" name="gender" id="label-gender" class="label-gender"> Feminino</input>
           <input  type="radio" name="gender" id="label-gender" class="label-gender"> Masculino</input>
           <input  type="radio" name="gender" id="label-gender" class="label-gender"> Personalizado</input>
-          </label>
           <button type="submit" id="submit">Cadastre-se</button>
         </section>
       </form>
-    </subcontainer>
-
+    </section>
   </container>
   <script src="script.js"></script>
 </body>

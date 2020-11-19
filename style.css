@@ -30,8 +30,12 @@ body {
 }
 
 .main-content {
-  background-color: aqua;
+  background-color: rgb(235, 233, 233);
   display: flex;
   flex-direction: row;
   height: 100vh;
+}
+
+.left-content {
+  width: 800px;
 }

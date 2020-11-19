@@ -44,19 +44,25 @@
         <p class="quick-easy">É rápido e fácil.</p>
         <form action="GET" class="cadastro-nome">
           <div class="fullname">
-            <input type="text" placeholder="Nome" name="firstname" />
-            <input type="text" placeholder="Sobrenome" name="lastname" />
+            <input type="text" placeholder="Nome" name="firstname" required />
+            <input
+              type="text"
+              placeholder="Sobrenome"
+              name="lastname"
+              required
+            />
           </div>
           <input
             type="text"
             name="phone_email"
             placeholder="Celular ou email"
+            required
           />
-          <input type="password" name="password" placeholder="Nova senha" />
+          <input type="password" name="password" placeholder="Nova senha" required/>
           <br />
           <label for="" id="label-gender">Gênero</label>
           <br />
-          <input type="radio" name="gender" /> Feminino
+          <input type="radio" name="gender" checked/>Feminino
           <input type="radio" name="gender" />Masculino
           <input type="radio" name="gender" />Personalizado
           <br />
@@ -66,6 +72,7 @@
             name="birthdate"
             placeholder="dd/mm/aaaa"
             id="bday"
+            required
           />
           <button id="facebook-register" type="submit">Cadastre-se</button>
         </form>

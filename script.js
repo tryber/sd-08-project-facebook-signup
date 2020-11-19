@@ -35,11 +35,9 @@ window.onload = () => {
   const InputAll = document.querySelectorAll('#signup-container .input');
   registerButton.addEventListener('click', function () {
     for (let index = 0; index < InputAll.length; index += 1) {
-        if (InputAll[index].value === '') {
-            alert('Campos inválidos');
-        }
+      if (InputAll[index].value) {
+        alert('Campos inválidos');
+      }
     }
-
-    return;
   });
 };

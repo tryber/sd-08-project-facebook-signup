@@ -66,6 +66,17 @@ h1 {
 }
 
 .in-row {
+  align-self: flex-start;
   margin: 0;
   width: 50%;
+}
+
+.in-row-right {
+  align-self: flex-end;
+  margin: 0;
+  width: 50%;
+}
+
+.clear-padding {
+  padding: 0;
 }

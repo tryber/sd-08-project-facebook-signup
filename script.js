@@ -17,7 +17,7 @@ customGender.addEventListener('change', () => {
 
 
 registerBtn.addEventListener('click', (event) => {
-  for(let index = 0; index < formInputs.length; index += 1) {
+  for (let index = 0; index < formInputs.length; index += 1) {
     if (formInputs[index].value === '') {
       event.preventDefault();
       formInputs[index].value = 'Campos inválidos';

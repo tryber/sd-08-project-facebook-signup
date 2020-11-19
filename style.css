@@ -52,7 +52,7 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: row;
+  flex-direction: row;
 }
 
 .left-content {

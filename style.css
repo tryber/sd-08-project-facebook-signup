@@ -17,6 +17,7 @@
   align-self: flex-end;
   display: flex;
 }
-.main-content{
+
+.main-content {
   display: flex;
 }

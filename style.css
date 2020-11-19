@@ -23,10 +23,11 @@
   align-self: flex-end;
 }
 
-#label-gender{
-    display: flex;
-    flex-direction: row;
+.label-gender {
+  display: flex;
+  flex-direction: row;
 }
+
 .form-group label {
   color: white;
   font-weight: 700;

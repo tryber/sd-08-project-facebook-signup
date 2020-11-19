@@ -1,13 +1,13 @@
-body {
+    body {
         margin: 0;
         padding: 0;
 }
 
-.top-bar {
+    .top-bar {
         background-color: rgb(66, 103, 178);
         display: flex;
 }
 
-.facebook-login {
+    .facebook-login {
         display: flex;
 }

@@ -53,10 +53,10 @@ body {
 
 .form-gender {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
-.buttons-gender {
+  .buttons-gender {
   display: flex;
   flex-direction: row;
 }

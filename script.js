@@ -1,5 +1,5 @@
 const alertButton = document.getElementById('button-login');
-let userInput = document.getElementById('user-email-phone');
+const userInput = document.getElementById('user-email-phone');
 
 function alertLogin() {
   if (userInput.value === '') {

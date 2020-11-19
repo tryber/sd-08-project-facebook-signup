@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function alertLogin() {
   const emailOrPhone = document.getElementById('user-email-phone');
   alert(emailOrPhone.value);
@@ -30,4 +31,15 @@ window.onload = () => {
   for (let index = 0; index < maleOrFemale.length; index += 1) {
     maleOrFemale[index].addEventListener('click', handleInputGender);
   }
+
+  const registerButton = document.getElementById('facebook-register');
+  const InputAll = document.querySelectorAll('#signup-container .input');
+  registerButton.addEventListener('click', function() {
+      for (let index in InputAll) {
+          if (InputAll[index].value === '') {
+              alert('Campos inválidos');
+              return true;
+          }
+      }
+  });
 };

@@ -34,3 +34,12 @@ body {
 .name {
   display: flex;
 }
+
+.create-account {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender {
+  display: flex;
+}

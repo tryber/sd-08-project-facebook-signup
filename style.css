@@ -44,8 +44,8 @@
 
 .inputName {
   display: flex;
-  width: 100px;
   margin-right: 5px;
+  width: 100px;
 }
 
 .inputLogin {

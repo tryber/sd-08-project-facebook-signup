@@ -24,19 +24,19 @@ body {
 }
 
 .main-content {
-  background:-webkit-gradient(linear, 0% 100%, 0% 1%, from(rgb(212 , 217 , 232)), to(rgb(254 , 254 , 254)));
+ /* background:-webkit-gradient(linear, 0% 100%, 0% 1%, from(rgb(212 , 217 , 232)), to(rgb(254 , 254 , 254))); isso aqui esta dando erro*/
   display: flex;
   justify-content: center;
 }
 
 .left-content p {
-  color: rgb(51 , 85 , 118);
+  color: rgb(51, 85, 118);
   font-size: 1.3em;
   font-weight: 800;
 }
 
-.right-content h1 {
-  color: rgb(52 , 52 , 52);
+.right-content h1, h2 {
+  color: rgb(52, 52, 52);
 }
 
 .form-group {
@@ -68,7 +68,12 @@ body {
   flex-direction: column;
 }
 
-.registrar {
+.register {
   display: flex;
   flex-direction: column;
+}
+
+.register button {
+  background-color: rgb(109 , 166 , 83);
+  color: white;
 }

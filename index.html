@@ -44,8 +44,10 @@
         <span class="quick-easy">É rápido e fácil.</span>
         <form action="">
           <div class="create-account-form-group">
-            <input type="text" name="firstname" value="" placeholder="Nome" />
+            <input class="ca-input" id="user-ca-name" type="text" name="firstname" value="" placeholder="Nome" />
             <input
+              class="ca-input"
+              id="user-ca-lastname"
               type="text"
               name="lastname"
               value=""
@@ -53,15 +55,19 @@
             />
           </div>
           <input
+            class="ca-input"
+            id="user-ca-phone-email"
             type="text"
             name="phone_email"
             placeholder="Celular ou email"
           />
-          <input type="password" name="password" placeholder="Nova senha" />
+          <input class="ca-input" id="user-ca-password" type="password" name="password" placeholder="Nova senha" />
 
           <div class="form-group">
             <label id="label-birthdate" for="">Data de nascimento</label>
             <input
+              class="ca-input"
+              id="user-ca-birthdate"
               type="text"
               name="birthdate"
               value=""
@@ -73,18 +79,18 @@
             <label id="label-gender">Gênero</label>
             <br />
             <label for="F">
-              <input id="F" type="radio" name="gender" value="Feminino" />Feminino
+              <input class="ca-radio-input" id="F" type="radio" name="gender" value="Feminino" />Feminino
             </label>
             <label for="M">
-              <input id="M" type="radio" name="gender" value="Masculino" />Masculino
+              <input class="ca-radio-input" id="M" type="radio" name="gender" value="Masculino" />Masculino
             </label>
             <label for="P">
-              <input id="P" type="radio" name="gender" value="Personalizado"/>Personalizado
+              <input class="ca-radio-input" id="P" type="radio" name="gender" value="Personalizado"/>Personalizado
             </label>
           </section>
 
           <div class="form-control">
-            <button id="faceook-register" type="submit">Cadastre-se</button>
+            <button id="facebook-register" type="submit">Cadastre-se</button>
           </div>
         </form>
       </section>

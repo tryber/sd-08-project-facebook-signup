@@ -1,39 +1,38 @@
 body {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-bar {
-    display: flex;
-    background-color: rgb(66, 103, 178);
-    height:60px;
-    justify-content: space-between;
-}
-
-.facebook-logo {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  height: 60px;
+  justify-content: space-between;
 }
 
 .facebook-login {
-    display: flex;
-    height: 25px;
-    margin-top: 20px;
+  display: flex;
+  height: 25px;
+  margin-top: 20px;
+}
 
+.form-group {
+  display: flex;
 }
 
 .main-content {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .left-content {
-    width: 800px;
-
+  width: 800px;
 }
 
 .right-content {
-    width: 300px;
+  width: 300px;
 }
 
-.name {
-    width: 149px;
+.name-input {
+  width: 140px;
 }

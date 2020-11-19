@@ -18,37 +18,62 @@
             <input type="text" id="user-email-phone" />
           </div>
           <div class="form-group">
-            <label id="user-password-label" for="user-password"
-              >Senha</label
-            >
-            <input type="text" id="user-password"/>
+            <label id="user-password-label" for="user-password">Senha</label>
+            <input type="text" id="user-password" />
           </div>
           <div class="form-control">
-              <button type="button" id="button-login">Entrar</button>
+            <button type="button" id="button-login">Entrar</button>
           </div>
         </form>
       </div>
     </header>
     <div class="main-content">
       <div class="left-content">
-        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-        <img src="imgs/networking.png" alt="facebook networking" id="facebook-networking">
+        <p id="facebook-slogan">
+          O Facebook ajuda você a se conectar e compartilhar com as pessoas que
+          fazem parte da sua vida.
+        </p>
+        <img
+          src="imgs/networking.png"
+          alt="facebook networking"
+          id="facebook-networking"
+        />
       </div>
-        <div class="right-content">
-          <h1>Abra uma conta</h1>
-          <p class="quick-easy">É rápido e fácil.</p>
-          <form action="GET" class="cadastro-nome">
-            <div class="fullname">
-              <input type="text" placeholder="Nome" name="firstname">
-              <input type="text" placeholder="Sobrenome" name="lastname">
-            </div>
-            <input type="text" name="phone_email" placeholder="Celular ou email">
-            <input type="password" name="password" placeholder="Nova senha">
-            <br>
-            <label for="bday" id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="bday">
-          </form>
-        </div>
+      <div class="right-content">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <form action="GET" class="cadastro-nome">
+          <div class="fullname">
+            <input type="text" placeholder="Nome" name="firstname" />
+            <input type="text" placeholder="Sobrenome" name="lastname" />
+          </div>
+          <input
+            type="text"
+            name="phone_email"
+            placeholder="Celular ou email"
+          />
+          <input type="password" name="password" placeholder="Nova senha" />
+          <br />
+          <label for="" id="label-gender">Gênero</label>
+          <br />
+          <div class="genders">
+            <input type="radio" name="gender" id="gender-male" />
+            <label for="gender-male">Masculino</label>
+            <input type="radio" name="gender" id="gender-female" />
+            <label for="gender-female">Feminino</label>
+            <input type="radio" name="gender" id="gender-personalized" />
+            <label for="gender-personalized">Personalizado</label>
+          </div>
+          <br />
+          <label for="bday" id="label-birthdate">Data de nascimento</label>
+          <input
+            type="text"
+            name="birthdate"
+            placeholder="dd/mm/aaaa"
+            id="bday"
+          />
+        </form>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

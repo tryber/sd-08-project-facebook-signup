@@ -23,12 +23,12 @@ body {
 }
 
 .form-control {
-  display: flex;
   align-items: flex-end;
+  display: flex;
 }
 
 .form-control button {
-  align-self: flex-end; /* Obrigatório*/
+  align-self: flex-end; /* Obrigatório */
 }
 
 .main-content {
@@ -39,13 +39,13 @@ body {
 }
 
 .left-content {
-  width: 800px;
   border: 1px solid black;
+  width: 800px;
 }
 
 .right-content {
-  max-width: 300px;
   border: 1px solid black;
+  max-width: 300px;
 }
 
 .right-content form {
@@ -53,7 +53,7 @@ body {
   flex-wrap: wrap;
 }
 
-.input-fisrt-name { /*Tratar individualmente */
-  flex: 1;  
+.input-fisrt-name { /* Tratar individualmente */
+  flex: 1;
   width: 140px;
 }

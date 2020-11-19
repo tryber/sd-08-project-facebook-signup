@@ -47,3 +47,13 @@ body {
   width: 300px;
   border: 1px solid black;
 }
+
+.right-content form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-fisrt-name {
+  flex: 1;
+  width: 140px;
+}

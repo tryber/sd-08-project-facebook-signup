@@ -60,12 +60,12 @@ h1 {
 .row-group {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 0;
   width: 100%;
 }
 
-.in-row {
+/* .in-row {
   align-self: flex-start;
   margin: 0;
   width: 50%;
@@ -75,7 +75,7 @@ h1 {
   align-self: flex-end;
   margin: 0;
   width: 50%;
-}
+} */
 
 .clear-padding {
   padding: 0;

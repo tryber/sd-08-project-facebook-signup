@@ -10,14 +10,17 @@
     <header class="top-bar">
         <img src="imgs/facebook-logo.png" alt="Logo do Facebook">
         <form action="login" class="facebook-login">
-            <label for="usuario"><span class="login">Email ou telefone</span>
-                <input type="text" id="usuario">
-            </label>
-            <label for="senha">
+            <div class="form-group">
+                <label for="usuario"></label>
+                <span class="login">Email ou telefone</span>
+                <input type="text" id="user-email-phone">
+            </div>
+            <div class="form-group">
+                <label for="senha"></label>
                 <span class="login">Senha</span>
                 <input type="password" name="senha" id="senha">
                 <span class="esq-senha">Esqueceu sua senha?</span>
-            </label>
+            </div>
             <label for="entrar" class="entrar">
                 <input type="submit" value="entrar">
             </label>

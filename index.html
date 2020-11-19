@@ -13,7 +13,7 @@
         </div>
         <form class="facebook-login" action="">
             <div class="form-group">
-                <label for="user-email-phone" id="user-email-phone-label">E-mail ou telefone</label>
+                <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
                 <input type="text" name="user-email-phone" id="user-email-phone">
             </div>
             <div class="form-group">
@@ -29,6 +29,33 @@
         <section class="left-content">
             <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
             <img id="facebook-networking" src="imgs/networking.png" alt="facebook-connections">
+        </section>
+
+        <section class="right-content">
+            <h1>Abra uma conta</h1>
+            <h3 class="quick-easy">É rápido e fácil</h3>
+            <form class="form-right-content" action="">
+                <div class="name">
+                    <input name="firstname" placeholder="Nome" type="text" oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')" required>
+                    <input name="lastname" placeholder="Sobrenome" type="text" oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')" required>
+                </div>
+                <input name="phone-email" placeholder="Celular ou email" type="text" oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')" required>
+                <input name="password" placeholder="Nova senha" type="password" oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')"required>
+
+                <label for="birthdate" id="label-birthdate">Data de Nascimento</label>
+                <input id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" type="text" oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')"required>
+
+                <label for="" id="label-gender">Gênero</label>
+                <div>
+                    <input id="female-gender" name="gender" type="radio">
+                    <label for="female-gender">Feminino</label>
+                    <input id="male-gender" name="gender" type="radio">
+                    <label for="male-gender">Masculino</label>
+                    <input id="custom-gender" name="gender" type="radio">
+                    <label for="custom-gender">Personalizado</label>
+                </div>
+                <button id="facebook-register" type="submit">Cadastre-se</button>
+            </form>
         </section>
 
     </main>

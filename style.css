@@ -19,7 +19,7 @@ body {
   flex-direction: column;
 }
 
-input {
+.form-group input {
   width: 70%;
 }
 
@@ -38,4 +38,14 @@ input {
 
 .right-content {
   width: 300px;
+}
+
+.forms-name {
+  display: flex;
+}
+
+.gender {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: baseline;
 }

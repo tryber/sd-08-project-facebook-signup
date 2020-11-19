@@ -36,23 +36,23 @@ label {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin: 20px 0;
   justify-content: center;
+  margin: 20px 0;
 }
 
 .left-content {
-  display: flex;
   align-items: flex-start;
+  display: flex;
   flex-flow: column wrap;
-  width: 800px;
   max-width: 800px;
+  width: 800px;
 }
 
 .right-content {
   display: flex;
   flex-direction: column;
-  width: 300px;
   max-width: 300px;
+  width: 300px;
 }
 
 .full-name {

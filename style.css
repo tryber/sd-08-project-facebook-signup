@@ -37,12 +37,6 @@
   flex-wrap: wrap;
 }
 
-.rightName {
-  flex-basis: 40%;
-  margin: 10px;
-  width: 100px;
-}
-
 .right-content form {
   display: flex;
   flex-wrap: wrap;

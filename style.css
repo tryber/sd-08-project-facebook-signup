@@ -6,4 +6,19 @@ body {
   background-color: rgb(66, 103, 178);
   color: white;
   display: flex;
+  justify-content: space-between;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  diplay: flex;
+  flex-direction: column;
 }

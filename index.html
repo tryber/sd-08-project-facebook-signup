@@ -10,26 +10,17 @@
 
   <body>
     <header class="top-bar">
-      <div>
-        <h1> facebook </h1>
-      </div>
-      <div>
-        <table>
-          <tr>
-            <td><label for="email">Email ou telefone</label></td>
-            <td><label for="pass">Senha</label></td>
-          </tr>
-          <tr>
-            <td><input type="email" name="email"></td>
-            <td><input type="password" id="pass"></td>
-            <td><label><button type="submit">Entrar</button></label></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Esquecue a conta?</td>
-          </tr>
-        </table>
-      </div>
+      <img class="facebook-logo" src="imgs/facebook-logo.png">
+      <form class="facebook-login">
+        <div class="input-container">
+          <label for="pass">Senha</label>
+          <input type="password" id="pass">
+        </div>
+        <div class="input-container">
+          <label for="pass">Email ou telefone</label>
+          <input type="email" name="email">
+        </div>
+      </form>
     </header>
   </body>
 

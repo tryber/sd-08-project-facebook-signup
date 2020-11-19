@@ -12,7 +12,7 @@
   <form class='facebook-login'>
     <div class='form-group'>
       <label for='user-email-phone' id='user-email-phone-label'>Email ou telefone</label>
-      <input type="text" value="Email ou telefone" id="user-email-phone">
+      <input type="text" id="user-email-phone">
     </div>
     <div class='form-group'>
       <label for='user-password' id='user-password-label'>Senha</label>
@@ -38,14 +38,19 @@
         <input type="text" name="lastname" placeholder='Sobrenome' class='name-lastname'>
         <input type="text" name="phone_email" placeholder='Celular ou email' class='email-password'>
         <input type="password" name="password" placeholder="Nova senha" class='email-password'>
-        <label id='label-birthdate'>Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder='dd/mm/aaaa'>
+        <div class='birthdate'>
+          <label id='label-birthdate'>Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder='dd/mm/aaaa'>
+        </div>
         <div>
           <label id='label-gender'>Gênero</label>
           <div class='gender'>
-            <input type="radio" name='gender' id=""> Feminino
-            <input type="radio" name='gender' id=""> Masculino
-            <input type="radio" name='gender' id=""> Personalizado
+            <input type="radio" name='gender' id='gender1'>
+            <label for="gender1">Feminino</label>
+            <input type="radio" name='gender' id='gender2'>
+            <label for="gender2">Masculino</label> 
+            <input type="radio" name='gender' id='gender3'>
+            <label for="gender3">Personalizado</label>
           </div>
         </div>
       </form>

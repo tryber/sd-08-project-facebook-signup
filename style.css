@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -5,7 +9,12 @@
   width: 100%;
 } 
 
-.form-group {
-  display: flex;
-  flex-direction: row;
+.top-left{
+  width: 45%;
+  margin-left: 25%;
+  margin-top: 10px;
+}
+
+.facebook-logo{
+  width: 150px
 }

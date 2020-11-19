@@ -115,7 +115,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 900;
   width: 400px;
 }
 

@@ -1,24 +1,30 @@
-.header {
-    display: flex;
-    background-color: rgb(66, 103, 178);
-    justify-content: center;
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-#facebook-logo {
-    width: 20%;
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: center;
 }
 
-#main-content{
-    display: flex;
-    justify-content: center;
-}
-#right-content{
-    width: 300px;
-    display: inline-block;
-    float: right;
+.facebook-logo {
+  width: 20%;
 }
 
-#left-content{
-    width: 800px;
-    display: inline-block;
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+.right-content {
+  width: 300px;
+  display: inline-block;
+  float: right;
+}
+
+.left-content {
+  width: 800px;
+  display: inline-block;
 }

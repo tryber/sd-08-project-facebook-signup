@@ -1,9 +1,8 @@
-let buttonLogin = document.getElementById('button-login');
-let emailOrTelephone = document.getElementById('user-email-phone');
-
-
-buttonLogin.addEventListener('click', funcaoAlert());
+const buttonLogin = document.getElementById('button-login');
+const emailOrTelephone = document.getElementById('user-email-phone');
 
 function funcaoAlert() {
   window.alert(emailOrTelephone.value);
 }
+
+buttonLogin.addEventListener('click', funcaoAlert());

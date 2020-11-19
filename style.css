@@ -5,10 +5,14 @@ body {
   margin: 0;
 }
 
-.top-bar {
-  background-color: rgb(66, 103, 178);
+header {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: bold;
@@ -16,18 +20,14 @@ body {
 
 .facebook-login {
   display: flex;
-  float: right;
-  margin-right: 10px;
-}
-
-.facebook-logo {
-  float: left;
+  align-content: center;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   padding: 5px;
+  margin-right: 0px;
 }
 
 #button-login
@@ -42,16 +42,17 @@ body {
 .form-group input {
   border: 0.1px solid black;
   padding: 5px;
-  margin-right: 10px;
   width: 130px;
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
+}
+
+button {
   background-color: rgb(66, 102, 178);
   border: 0.1px solid rgb(42,73,126);
   color: white;
-  margin: auto;
   padding: 5px;
 }
 
@@ -62,10 +63,13 @@ body {
 
 .main-content {
   display: flex;
+  justify-content: space-around;
 }
 
 .left-content {
   width: 800px;
 }
 
-
+.right-content {
+  width: 300px;
+}

@@ -4,6 +4,5 @@
   justify-content: space-around;
 }
 .facebook-login {
-  display: block;
-  margin-top: 15px;  
+  display: flex;  
 }

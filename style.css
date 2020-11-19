@@ -63,3 +63,7 @@ body {
 .gender {
   display: flex;
 }
+
+.label-birthdate {
+  width: 100%;
+}

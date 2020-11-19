@@ -20,8 +20,8 @@ body {
 }
 
 .main-content {
-  display: flex;
   background-image: linear-gradient(white, rgb(186, 199, 226));
+  display: flex;
   height: 800px;
   justify-content: center;
   width: 100%;
@@ -42,8 +42,8 @@ body {
 
 .right-content {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: left;
   margin-top: 40px;
+  text-align: left;
   width: 300px;
 }
 

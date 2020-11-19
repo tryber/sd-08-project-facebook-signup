@@ -41,6 +41,14 @@ body {
   flex-wrap: wrap;
 }
 
+.right-content form input:nth-child( 3 ) {
+  flex-basis: 100%;
+}
+
+.right-content form input:nth-child( 4 ) {
+  flex-basis: 100%;
+}
+
 .nomeSobrenome {
   flex-basis: 40%;
   width: 100px;

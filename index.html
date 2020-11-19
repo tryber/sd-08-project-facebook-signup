@@ -45,18 +45,43 @@
         <form action="">
           <div class="create-account-form-group">
             <input type="text" name="firstname" value="" placeholder="Nome" />
-            <input type="text" name="lastname" value="" placeholder="Sobrenome"/>
+            <input
+              type="text"
+              name="lastname"
+              value=""
+              placeholder="Sobrenome"
+            />
           </div>
-
-          <div class="form-group">
-            <input type="text" name="phone_email" placeholder="Celular ou email"/>
-            <input type="password" name="password" placeholder="Nova senha" />
-          </div>
+          <input
+            type="text"
+            name="phone_email"
+            placeholder="Celular ou email"
+          />
+          <input type="password" name="password" placeholder="Nova senha" />
 
           <div class="form-group">
             <label id="label-birthdate" for="">Data de nascimento</label>
-            <input type="text" name="birthdate" value="" placeholder="dd/mm/aaaa">
+            <input
+              type="text"
+              name="birthdate"
+              value=""
+              placeholder="dd/mm/aaaa"
+            />
           </div>
+
+          <section id="gender-input">
+            <label id="label-gender">Gênero</label>
+            <br />
+            <label for="F">
+              <input id="F" type="radio" name="gender" value="Feminino" />Feminino
+            </label>
+            <label for="M">
+              <input id="M" type="radio" name="gender" value="Masculino" />Masculino
+            </label>
+            <label for="P">
+              <input id="P" type="radio" name="gender" value="Personalizado"/>Personalizado
+            </label>
+          </section>
 
           <div class="form-control">
             <button id="faceook-register" type="submit">Cadastre-se</button>

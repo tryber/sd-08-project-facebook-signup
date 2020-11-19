@@ -33,8 +33,8 @@ footer p {
 }
 
 form input {
-  border-radius: 3px;
   border: 1px solid #0005;
+  border-radius: 3px;
   box-sizing: border-box;
   height: 30px;
   margin: 0 0 10px;
@@ -69,8 +69,8 @@ form p {
 
 form button {
   background-image: linear-gradient(to top, #5b9147, #65a953);
-  border-radius: 5px;
   border: 1px solid #5b9147;
+  border-radius: 5px;
   color: white;
   font-size: 1.3em;
   font-weight: 900;
@@ -80,8 +80,8 @@ form button {
 
 .form-control button {
   background-color: rgb(66, 103, 178);
-  border-radius: 3px;
   border: solid 1px #0008;
+  border-radius: 3px;
   box-sizing: border-box;
   color: white;
   height: 30px;
@@ -143,6 +143,7 @@ footer {
   color: #0005;
   font-weight: 900;
 }
+
 .radioButtons {
   align-items: center;
   display: flex;

@@ -2,8 +2,6 @@ const emailLogin = document.querySelector('#user-email-phone');
 const btnLogin = document.querySelector('#button-login');
 const paiPersonalizado = document.querySelector('#other').parentNode;
 let personalizadoOn = 0;
-const fecha = fechaPersonalizado;
-const abre = abrePersonalizado;
 btnLogin.addEventListener('click', () => {
   if (emailLogin.value !== '') alert(emailLogin.value);
 });
@@ -17,7 +15,6 @@ function abrePersonalizado() {
     paiPersonalizado.appendChild(newInput);
     personalizadoOn = 1;
   }
-
 }
 
 function fechaPersonalizado() {
@@ -27,8 +24,11 @@ function fechaPersonalizado() {
     personalizadoOn = 0;
   }
 }
-
-
+const fecha = fechaPersonalizado;
+const abre = abrePersonalizado;
+if (personalizadoOn == 5) {
+  echo fecha + abre;
+}
 // function erroCampos() {
 //   const gender = document.querySelector('input[name="gender"]:checked');
 //   if (gender === null || gender === undefined) {

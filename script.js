@@ -7,7 +7,7 @@ const logInClick = document.getElementById('button-login');
 logInClick.addEventListener('click', logInButton);
 
 function checkRegistration() {
-  let registrationArray = [];
+  const registrationArray = [];
 
   const firstName = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;
@@ -16,7 +16,7 @@ function checkRegistration() {
   const birthdate = document.getElementById('label-birthdate').value;
 
   registrationArray.push(firstName, lastName, phoneMail, password, birthdate);
-  
+
   let invalidInput = 0;
   for (let index = 0; index < 5; index += 1) {
     if (registrationArray[index] === '') {

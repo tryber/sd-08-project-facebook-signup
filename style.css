@@ -1,25 +1,38 @@
-.top-bar {
-  background-color: rgb(66, 103, 178);
-  display: flex;
-  justify-content: space-around;
-  width: 1366px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.facebook-logo {
-  text-align: right;
+.top-bar {
+    background-color: rgb(66, 103, 178);
+}
+
+#header-container {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+    max-width: 1024px;
 }
 
 .facebook-login {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
 
 .form {
-  flex-direction: column;
-  width: 200px;
+    flex-direction: column;
+    margin: 10px;
+    width: 150px;
 }
 
-.input-email {
-  width: 300px;
+.facebook-login button {
+    background-color: #4267b2;
+    border: 1px solid #29487d;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
 }

@@ -44,7 +44,7 @@ body {
 }
 
 .right-content {
-  width: 300px;
+  max-width: 300px;
   border: 1px solid black;
 }
 
@@ -53,7 +53,7 @@ body {
   flex-wrap: wrap;
 }
 
-.input-fisrt-name {
-  flex: 1;
+.input-fisrt-name { /*Tratar individualmente */
+  flex: 1;  
   width: 140px;
 }

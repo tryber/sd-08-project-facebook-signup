@@ -34,13 +34,16 @@ function isEverythingFilled() {
   registerButton.addEventListener('click', function () {
     const caInputList = document.querySelectorAll('.ca-input');
     const caRadioInputList = document.querySelectorAll('.ca-radio-input');
+    let isntFilledCount = 0;
     for (let index = 0; index < caInputList.length; index += 1) {
-      const caInputListItem = caInputList[index];
-      if (caInputListItem.value === '') {
-        alert('Campos inválidos');
+      if (caInputList[index].value === '') {
+        isntFilledCount += 1;
       }
     }
     if (caRadioInputList[0].checked === false && caRadioInputList[1].checked === false && caRadioInputList[2].checked === false) {
+      isntFilledCount += 1;
+    }
+    if (isntFilledCount != 0) {
       alert('Campos inválidos');
     }
   });

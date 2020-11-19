@@ -18,14 +18,14 @@
 }
 
 .form-control {
-  align-self: flex-end;  
+  align-self: flex-end;
 }
 
 .main-content {
-  align-items: baseline;  
+  align-items: baseline;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;  
+  justify-content: space-around;
 }
 
 .left-content {

@@ -14,12 +14,12 @@
 
     <form class="facebook-login">
       <section class="form-group">
-        <label for="user-email-phone-label">Email ou telefone</label>
+        <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
         <input id="user-email-phone" type="text">
       </section>
 
       <section class="form-group">
-        <label for="user-password-label">Senha</label>
+        <label for="user-password" id="user-password-label">Senha</label>
         <input id="user-password" type="text">
       </section>
 
@@ -40,23 +40,23 @@
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="">
-        <input type="text" name="firstname" placeholder="Nome" class="nomeSobrenome">
-        <input type="text" name="lastname" placeholder="Sobrenome" class="nomeSobrenome">
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input type="text" name="firstname" placeholder="Nome" class="input nomeSobrenome">
+        <input type="text" name="lastname" placeholder="Sobrenome" class="input nomeSobrenome">
+        <input type="text" name="phone_email" placeholder="Celular ou email" class="input">
+        <input type="password" name="password" placeholder="Nova senha" class="input">
 
         <label id="label-gender">Gênero</label>
         <section class="gender">
-          <input type="radio" name="gender" id="feminino">
+          <input type="radio" name="gender" id="feminino" class="gender">
           <label for="feminino">Feminino</label>
-          <input type="radio" name="gender" id="masculino">
+          <input type="radio" name="gender" id="masculino" class="gender">
           <label for="masculino">Masculino</label>
-          <input type="radio" name="gender" id="personalizado">
+          <input type="radio" name="gender" id="personalizado" class="gender">
           <label for="personalizado">Personalizado</label>
         </section>
 
         <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-        <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa">
+        <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" class="input">
 
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>

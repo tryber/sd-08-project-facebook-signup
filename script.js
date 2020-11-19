@@ -1,13 +1,9 @@
 const buttonLogin = document.querySelector('#button-login');
 const buttonCustomGender = document.querySelector('#Personalizado');
 const buttonRegister = document.querySelector('#facebook-register');
-const firstName = document.forms.myForm.firstname.value;
-const lastName = document.forms.myForm.lastname.value;
-const phoneEmail = document.forms.myForm.phone_email.value;
-const password = document.forms.myForm.password.value;
-const birthDate = document.forms.myForm.birthdate.value;
-const gender = document.forms.myForm.gender.value;
-const formFields = [firstName, lastName, phoneEmail, password, birthDate, gender];
+const invalidField = document.getElementById('invalid-field');
+let contador = 0
+
 
 buttonLogin.addEventListener('click', () => {
   const emailValue = document.querySelector('#user-email-phone');
@@ -30,16 +26,67 @@ function plotText() {
 }
 
 function validateForm() {
-  for (let index = 0; index < 6; index += 1) {
-    if (formFields[index] === '') {
-      const formField = document.querySelector('.create-account');
-      const msgError = document.createElement('p');
-      msgError.textContent = 'Campos inválidos';
-      formField.appendChild(msgError);
-      return;
-    }
+
+  contador = 0
+
+  validateFirstName();
+  validateLastName();
+  validatePhoneEmail();
+  validatePassword();
+  validateBirthDate();
+  validateGender();
+
+  if (contador === 6) {
+    plotText();
   }
-  plotText();
+}
+
+function validateFirstName() {
+  if (document.forms.myForm.firstname.value === '') {
+    invalidField.innerText = 'Campos inválidos';
+  } else {
+    contador += 1;
+  }
+}
+
+function validateLastName() {
+  if (document.forms.myForm.lastname.value === '') {
+    invalidField.innerText = 'Campos inválidos';
+  } else {
+    contador += 1;
+  }
+}
+
+function validatePhoneEmail() {
+  if (document.forms.myForm.phone_email.value === '') {
+    invalidField.innerText = 'Campos inválidos';
+  } else {
+    contador += 1;
+  }
+}
+
+function validatePassword() {
+  if (document.forms.myForm.password.value === '') {
+    invalidField.innerText = 'Campos inválidos';
+  } else {
+    contador += 1;
+  }
+}
+
+function validateBirthDate(){
+  if (document.forms.myForm.birthdate.value === '') {
+    invalidField.innerText = 'Campos inválidos';
+  } else {
+    contador += 1;
+  }
+}
+
+function validateGender(){
+  if (document.forms.myForm.gender.value === '') {
+    invalidField.innerText = 'Campos inválidos';
+  } else {
+    contador += 1;
+  }
 }
 
 buttonCustomGender.addEventListener('click', createCustomGender);

@@ -2,16 +2,22 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #e6e6e6;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: center;
+  height: 90px;
+  width: 100%;
 }
 
 .facebook-logo {
-  width: 20%;
+  width: 150px;
+  height: 60px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 100px
 }
 
 .main-content {
@@ -23,6 +29,30 @@ body {
   display: inline-block;
   float: right;
 }
+
+.left-content {
+  width: 800px;
+  display: inline-block;
+}
+
+
+#facebook-logo {
+  width: 20%;
+
+}
+
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.right-content {
+  width: 300px;
+  display: inline-block;
+  float: right;
+}
+
 
 .left-content {
   width: 800px;

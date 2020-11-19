@@ -1,12 +1,12 @@
-body{
+body {
   margin: auto;
   width: 60%;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
   padding: 6px 15px;
 }
 
@@ -16,7 +16,7 @@ header {
 
 .fonte-padrao {
   color: white;
-  font-weight: bolder;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 

@@ -20,17 +20,17 @@ body {
   width: 200px;
 }
 
-.inputs {
+.form-group {
   display: flex;
   flex-direction: column;
   padding: 5px;
 }
 
-.inputs label {
+.form-group label {
   color: white;
 }
 
-.inputs input {
+.form-group input {
   border: 0.1px solid black;
   padding: 5px;
 }

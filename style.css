@@ -39,4 +39,9 @@ fieldset {
 .main-content {
   background-color: rgb(240, 242, 245);
   display: flex;
+  height: 100vh;
+}
+
+.left-content{
+  width: 800px;
 }

@@ -39,6 +39,7 @@ body {
 .form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .form input:nth-child( 1 ) {

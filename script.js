@@ -1,6 +1,8 @@
 const button = document.getElementById('button-login');
 const label = document.getElementById('user-email-phone');
 
-button.addEventListener('click', function () {
-  alert(label.value);
+addEventListener('click', (event) => {
+  if (event.target.id === 'button-login') {
+    alert(label.value);
+  }
 });

@@ -15,6 +15,8 @@ function checkRegistration() {
   const password = document.getElementById('password').value;
   const birthdate = document.getElementById('label-birthdate').value;
 
+  const gender = document.getElementsByClassName('gender');
+
   registrationArray.push(firstName, lastName, phoneMail, password, birthdate);
 
   let invalidInput = 0;
@@ -22,6 +24,15 @@ function checkRegistration() {
     if (registrationArray[index] === '') {
       invalidInput += 1;
     }
+  }
+  let genderCheck = 0;
+  for (let index = 0; index < 3; index += 1) {
+    if (gender[index].checked) {
+      genderCheck += 1;
+    }
+  }
+  if (genderCheck === 0) {
+    invalidInput += 1;
   }
   if (invalidInput > 0) {
     alert('Campos inválidos');

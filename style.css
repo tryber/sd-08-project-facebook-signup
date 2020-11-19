@@ -4,21 +4,27 @@
     justify-content: center;
 }
 
+
 #facebook-logo {
     width: 20%;
+
 }
 
-#main-content{
+
+#main-content {
     display: flex;
     justify-content: center;
 }
-#right-content{
+
+#right-content {
     width: 300px;
     display: inline-block;
     float: right;
+
 }
 
-#left-content{
+
+#left-content {
     width: 800px;
     display: inline-block;
 }

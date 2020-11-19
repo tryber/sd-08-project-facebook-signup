@@ -26,3 +26,7 @@
   width: 300px;
   background-color: lightgrey;
 }
+
+form {
+  display: flex;
+}

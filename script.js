@@ -6,6 +6,6 @@ function addAlert() {
   buttonEntrar.addEventListener('click', function () {
     const inputEmail = document.querySelector('#user-email-phone');
     alert(inputEmail.value);
-});
+  });
 }
 addAlert();

@@ -1,8 +1,10 @@
-header {
-    display: flex;
-    background-color: rgb(66, 103, 178);
-    justify-content: center;
-}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+  }
 
 
 #facebook-logo {
@@ -10,16 +12,17 @@ header {
 
 }
 
-
 .main-content {
     display: flex;
     justify-content: center;
+    background-color: #f0f2f5 ;
 }
 
 .right-content {
     width: 300px;
     display: inline-block;
-    float: right;
+    float: left;
+   
 
 }
 
@@ -28,3 +31,5 @@ header {
     width: 800px;
     display: inline-block;
 }
+
+teste

@@ -47,3 +47,7 @@ body {
 .main-content {
   display: flex;
 }
+
+.left-content {
+  width: 800px;
+}

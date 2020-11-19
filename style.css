@@ -2,8 +2,9 @@
   display: flex;
 }
 .form-control {
-  display: flex;
   align-self: flex-end;
+  display: flex;
+  
 }
 
 .form-group {

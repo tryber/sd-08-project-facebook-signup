@@ -1,38 +1,26 @@
-* {
+body {
+  box-sizing: border-box;
+  background-color: #e2eeff;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  background-color: #e2eeff;
 }
 
 .header {
-  border-bottom: 1px solid #133783;
   background-color: rgb(66, 103, 178);
+  border-bottom: 1px solid #133783;
+  color: white;
   min-height: 82px;
-  color: #fff;
 }
 
 .top-bar {
-  background-color: rgb(66, 103, 178);
-  max-width: 980px;
-  height: 82px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.logo {
-  /* background-size: auto; */
-  /* background-repeat: no-repeat; */
-  /* display: inline-block; */
-  /* width: 170px; */
-  /* height: 34px; */
-  /* margin-top: 17px; */
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 82px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 980px;
 }
 
 .form {
@@ -56,8 +44,8 @@ body {
 }
 
 .linkpassword {
-  padding-top: 4px;
   color: #9cb4d8;
+  padding-top: 4px;
   text-decoration: none;
 }
 
@@ -71,31 +59,30 @@ body {
 }
 
 .form-control {
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
-  justify-content: flex;
+  justify-content: center;
 }
 
 #button-login {
-  margin-left: 14px;
-  width: 50px;
-  height: 23px;
-  margin-top: 1.2rem;
-  display: flex;
   align-self: center;
-  justify-content: flex;
-  flex-direction: column;
-
   background-color: #4267b2;
   border-color: #29487d;
-  border-width: 1px;
   border-radius: 2px;
-  color: #fff;
+  border-width: 1px;
+  color: white;
+  cursor: pointer;
+  display: flex;
   font-weight: 700;
   font-size: 12px;
+  flex-direction: column;
+  height: 23px;
+  justify-content: center;
+  margin-left: 14px;
+  margin-top: 1.2rem;
   padding: 2px 6px;
-  cursor: pointer;
+  width: 50px;
 }
 
 .inputbtn:hover {

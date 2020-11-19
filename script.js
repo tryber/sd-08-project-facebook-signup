@@ -1,3 +1,3 @@
 function entrar (){
-    alert("Digite seu Email ou telefone");
+  alert('Digite seu Email ou telefone');
 }

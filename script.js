@@ -12,12 +12,12 @@ addAlert();
 
 // validar input
 const inputArray = document.querySelectorAll('.input-validation');
-const facebookRegister = document.querySelector("#facebook-register");
+const facebookRegister = document.querySelector('#facebook-register');
 
 facebookRegister.addEventListener('click', function () {
   for (let index = 0; index < inputArray.length; index += 1) {
-    if (inputArray[index].innerText === "") {
-      alert("Campos inválidos");
+    if (inputArray[index].innerText === '') {
+      alert('Campos inválidos');
       break;
     }
   }
@@ -27,7 +27,7 @@ facebookRegister.addEventListener('click', function () {
 const divGender = document.querySelector('.gender');
 const personalizadoGender = document.querySelector('#personalizado');
 
-personalizado.addEventListener('click', function () {
+personalizadoGender.addEventListener('click', function () {
   const createInput = document.createElement('input');
   createInput.name = 'gender-custom';
   createInput.placeholder = 'Gênero (opcional)';

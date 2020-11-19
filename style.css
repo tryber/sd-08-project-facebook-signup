@@ -23,6 +23,10 @@ body {
   font-size: 0.8em;
 }
 
+.main-content {
+  background:-webkit-gradient(linear, 0% 100%, 0% 1%, from(#D4D9E8), to(#FEFEFE));
+}
+
 .form-group {
   color: white;
   display: flex;

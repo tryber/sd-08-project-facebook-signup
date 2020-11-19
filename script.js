@@ -1,4 +1,4 @@
-let button_login_btn = document.getElementById("button-login");
-button_login_btn.addEventListener('click', function(){
-  alert("Email ou telefone");  
-})
+const buttonLoginBtn = document.getElementById("button-login");
+buttonLoginBtn.addEventListener('click', function () {
+  alert('Email ou telefone');
+});

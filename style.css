@@ -20,15 +20,15 @@
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .left-content {
   width: 800px;
 }
 
-.right-content {  
+.right-content {
   display: flex;
   flex-direction: column;
   width: 300px;
-  }
+}

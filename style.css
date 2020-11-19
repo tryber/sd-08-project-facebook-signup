@@ -15,16 +15,12 @@ body {
   margin-right: 10px;
 }
 
-.column {
+.form-group {
   display: flex;
   flex-direction: column;
 }
 
-.form-group {
-  display: flex;
-}
-
-.button-container {
-  align-items: center;
+.form-control {
+  align-self: flex-end;
   display: flex;
 }

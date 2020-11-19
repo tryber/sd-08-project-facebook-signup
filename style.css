@@ -29,3 +29,7 @@ body{
 .form-group {
   display: flex;
 }
+
+.form-control {
+  align-self: flex-end;
+}

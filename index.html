@@ -9,7 +9,7 @@
   <body>
     <section class="top-bar">
       <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo" />
-      <form class="facebook-login" action="POST">
+      <form class="facebook-login" action="#">
         <div class="form-group">
           <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
           <input type="text" id="user-email-phone" name="user-email-phone" />
@@ -20,7 +20,7 @@
           <p>Esqueceu a conta?</p>
         </div>
         <div class="form-control">
-          <button id="button-login">Entrar</button>
+          <button class="entrar-button" id="button-login">Entrar</button>
         </div>
       </form>
     </section>
@@ -49,7 +49,7 @@
           <label class="bold-grey" id="label-gender" for="">Gênero</label>
 
           <div class="radioButtons">
-            <input id="Feminino" type="radio" name="gender" value="Feminino" />
+            <input id="Feminino" type="radio" name="gender" value="Feminino" checked />
             <label for="Feminino">Feminino</label>
 
             <input id="Masculino" type="radio" name="gender" value="Masculino" />
@@ -69,7 +69,7 @@
 
           <input class="input-genero" type="text" name="gender-custom" placeholder="Gênero (opcional)" />
 
-          <button type="submit" id="facebook-register">Cadastre-se</button>
+          <button class="cadastrar-button" type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </div>
     </section>

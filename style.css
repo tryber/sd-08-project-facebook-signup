@@ -43,7 +43,7 @@ form input {
 }
 
 .form-group input {
-  height: 25px;
+  height: 30px;
 }
 
 .form-group label {
@@ -67,25 +67,14 @@ form p {
   align-self: flex-end;
 }
 
-form button {
-  background-image: linear-gradient(to top, #5b9147, #65a953);
-  border: 1px solid #5b9147;
-  border-radius: 5px;
-  color: white;
-  font-size: 1.3em;
-  font-weight: 900;
-  padding: 10px 30px;
-  text-shadow: -1px 1px grey;
-}
-
-.form-control button {
+.entrar-button {
   background-color: rgb(66, 103, 178);
   border: solid 1px #0008;
   border-radius: 3px;
   box-sizing: border-box;
   color: white;
   height: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding: 2px 10px;
 }
 
@@ -136,7 +125,7 @@ footer {
 }
 
 .input-genero {
-  display: block;
+  display: none;
 }
 
 .bold-grey {
@@ -157,4 +146,15 @@ footer {
 .radioButtons input {
   margin: 0 5px;
   width: 12px;
+}
+
+.cadastrar-button {
+  background-image: linear-gradient(to top, #5b9147, #65a953);
+  border: 1px solid #5b9147;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 900;
+  padding: 10px 30px;
+  text-shadow: -1px 1px grey;
 }

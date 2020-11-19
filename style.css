@@ -27,3 +27,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.left-content{
+  width: 800px;
+}

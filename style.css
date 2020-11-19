@@ -30,3 +30,7 @@
 .right-content {
   width: 300px;
 }
+
+.personal-information {
+  display: flex;
+}

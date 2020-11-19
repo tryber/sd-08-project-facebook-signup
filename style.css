@@ -29,3 +29,14 @@
 .right-content {
   width: 300px;
 }
+
+.forms {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small {
+  box-sizing: border-box;
+  flex-basis: 50%;
+  min-width: 0;
+}

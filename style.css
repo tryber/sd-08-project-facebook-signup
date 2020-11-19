@@ -35,8 +35,14 @@
   flex-wrap: wrap;
 }
 
-.small {
+.forms > * {
   box-sizing: border-box;
-  flex-basis: 50%;
   min-width: 0;
+}
+
+.small {
+  flex-basis: 50%;
+}
+.large {
+  flex-basis: 100%;
 }

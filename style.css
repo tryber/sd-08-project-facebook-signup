@@ -52,7 +52,7 @@ body {
 
 .main-content {
   display: flex;
-  flex-direction: row;
+  justify-content: row;
 }
 
 .left-content {
@@ -61,4 +61,17 @@ body {
 
 .right-content {
   width: 300px;
+}
+
+.name-content {
+  display: flex;
+}
+
+.birthdate-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-content {
+  display: flex;
 }

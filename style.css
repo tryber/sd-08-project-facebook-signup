@@ -11,6 +11,7 @@ body {
 }
 
 .facebook-login {
+  display: flex;
   margin-right: 10px;
 }
 
@@ -18,5 +19,8 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
+}
+.button-container {
+  display: flex;
+  align-items: center;
 }

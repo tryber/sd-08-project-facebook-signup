@@ -20,7 +20,7 @@
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: ;
+  justify-content: space-evenly;
 }
 
 .left-content {

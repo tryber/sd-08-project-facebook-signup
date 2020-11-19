@@ -8,14 +8,14 @@
   </head>
   <body>
     <header class="top-bar">
-        <img class="facebook-logo" src="imgs/facebook-logo.png">
-        <form action="" method="GET" class="facebook-login">
-            <label for="email-login">Email ou telefone</label>
-            <input type="text">
-            <label for="senha-login">Senha</label>
-            <input type="text">
-            <button id="button-submit" type="submit">Entrar</button>
-        </form>
+      <img class="facebook-logo" src="imgs/facebook-logo.png" />
+      <form action="" method="GET" class="facebook-login">
+        <label for="email-login">Email ou telefone</label>
+        <input type="text" />
+        <label for="senha-login">Senha</label>
+        <input type="text" />
+        <button id="button-submit" type="submit">Entrar</button>
+      </form>
     </header>
 
     <section class="main-content">
@@ -64,17 +64,24 @@
             <input type="text" name="birthdate" placeholder="dd/mm/aaaa" />
           </label>
           <label for="" id="label-gender"
-            >Gênero
+            ><span>Gênero</span>
             <br />
-            <label for="female"
-              >Feminino
-              <input type="radio" name="gender" id="female" />
-            </label>
-            <label for="male"
-              >Masculino
-              <input type="radio" name="gender" id="male" />
-            </label>
+            <div class="radio-button-container">
+              <label for="female"
+                >Feminino
+                <input type="radio" name="gender" id="female" />
+              </label>
+              <label for="male"
+                >Masculino
+                <input type="radio" name="gender" id="male" />
+              </label>
+              <label for="custom"
+                >Personalizado
+                <input type="radio" name="gender" id="custom" />
+              </label>
+            </div>
           </label>
+          <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </div>
     </section>

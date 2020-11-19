@@ -72,6 +72,27 @@ body {
   padding: 5px;
 }
 
+.form #label-gender {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.radio-button-container {
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+  width: 100%;
+}
+
+.form span {
+  margin: 10px 10px;
+}
+
+button#facebook-register {
+  margin: 15px 10px;
+  padding: 10px;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;

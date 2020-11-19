@@ -2,7 +2,7 @@ const buttonLogin = document.querySelector('#button-login');
 const buttonCustomGender = document.querySelector('#Personalizado');
 const buttonRegister = document.querySelector('#facebook-register');
 const invalidField = document.getElementById('invalid-field');
-let contador = 0
+let contador = 0;
 
 
 buttonLogin.addEventListener('click', () => {
@@ -23,22 +23,6 @@ function plotText() {
   boxText.innerHTML = `<p> Olá, ${formValues.get('firstname')} ${formValues.get('lastname')}
   ${formValues.get('phone_email')} ${formValues.get('birthdate')} ${formValues.get('gender')}
   </p>`;
-}
-
-function validateForm() {
-
-  contador = 0
-
-  validateFirstName();
-  validateLastName();
-  validatePhoneEmail();
-  validatePassword();
-  validateBirthDate();
-  validateGender();
-
-  if (contador === 6) {
-    plotText();
-  }
 }
 
 function validateFirstName() {
@@ -73,7 +57,7 @@ function validatePassword() {
   }
 }
 
-function validateBirthDate(){
+function validateBirthDate() {
   if (document.forms.myForm.birthdate.value === '') {
     invalidField.innerText = 'Campos inválidos';
   } else {
@@ -81,11 +65,26 @@ function validateBirthDate(){
   }
 }
 
-function validateGender(){
+function validateGender() {
   if (document.forms.myForm.gender.value === '') {
     invalidField.innerText = 'Campos inválidos';
   } else {
     contador += 1;
+  }
+}
+
+function validateForm() {
+  contador = 0;
+
+  validateFirstName();
+  validateLastName();
+  validatePhoneEmail();
+  validatePassword();
+  validateBirthDate();
+  validateGender();
+
+  if (contador === 6) {
+    plotText();
   }
 }
 

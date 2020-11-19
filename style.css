@@ -7,9 +7,19 @@
 
 .facebook-login {
   display: flex;
+  align-items: center;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 0 10px;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+#button-login {
+  padding: 5px;
 }

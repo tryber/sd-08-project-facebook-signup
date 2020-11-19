@@ -37,3 +37,7 @@
   align-content: flex-end;
   width: 300px;
 }
+
+.form-signup {
+  display: flex;
+}

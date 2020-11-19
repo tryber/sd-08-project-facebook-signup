@@ -1,18 +1,16 @@
 * {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
 
 
 .top-bar {
-	display: flex;
-	background-color: rgb(66, 103, 178);
-	width: 100%;
-	padding: 15px 50px;
-	display: flex;
-	justify-content: space-between;
+  background-color: rgb(66, 103, 178);
+  width: 100%;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }

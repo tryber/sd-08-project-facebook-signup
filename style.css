@@ -46,3 +46,8 @@ body {
 .form-control {
   align-self: flex-end;
 }
+
+.name-container {
+  display: flex;
+}
+

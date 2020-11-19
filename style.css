@@ -56,7 +56,7 @@ body {
   flex-direction: column;
 }
 
-  .buttons-gender {
+.buttons-gender {
   display: flex;
   flex-direction: row;
 }

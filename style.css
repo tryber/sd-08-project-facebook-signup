@@ -7,11 +7,15 @@
   width: 100%;
 }
 
+.facebook-logo{
+  display: flex;
+}
+
 .form-group {
   display: flex;
+  flex-direction: column;
 }
 
 .facebook-login {
   display: flex;
-  flex-direction: column;
 }

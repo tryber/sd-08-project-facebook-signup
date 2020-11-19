@@ -7,22 +7,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <form action="" method="GET">
-        <div class="top-bar">
-          <div class="facebook-logo">
-            <img src="imgs/facebook-logo.png" alt="Logo Facebook" />
-          </div>
-          <div class="form-group">
-            <div class="facebook-login">
-              <label for="user-email-phone-label">Email ou telefone</label>
-              <input id="user-email-phone-label" type="text" />
-            </div>
-            <div class="facebook-login">
-              <label for="user-email-phone">Senha</label>
-              <input id="user-email-phone" type="text" />
-            </div>
-          </div>
+    <header class="top-bar">
+      <div>
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do facebook"/>
+      </div>
+      <form action="" class="facebook-login">
+        <div class="form-group">
+          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+          <input type="text" name="login" id="user-email-phone" />
+        </div>
+        <div class="form-group">
+          <label for="user-password" id="user-password-label">Senha</label>
+          <input type="password" name="password" id="user-password"/>
         </div>
       </form>
     </header>

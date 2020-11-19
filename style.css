@@ -50,3 +50,6 @@ body{
 .right-content h1,p{
   margin: 5px 0;
 }
+.form-control {
+  align-self: flex-end;
+}

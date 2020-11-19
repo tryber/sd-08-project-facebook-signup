@@ -1,3 +1,4 @@
+/* HEADER */
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -11,4 +12,10 @@
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+/* MAIN-CONTENT */
+
+.main-content {
+  display: flex;
 }

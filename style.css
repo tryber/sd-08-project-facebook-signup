@@ -2,6 +2,7 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  padding: 10px 250px;
 }
 
 .facebook-logo {

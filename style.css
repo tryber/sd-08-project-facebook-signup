@@ -35,16 +35,16 @@ header {
   align-self: flex-end;
 }
 
-.main-content{
+.main-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.left-content{
+.left-content {
   width: 800px;
 }
 
-.right-content{
+.right-content {
   width: 300px;
 }

@@ -9,13 +9,9 @@ body {
   width: 100%;
 }
 
-.top-left {
-  margin-left: 25%;
-  margin-top: 10px;
-  width: 45%;
-}
-
 .facebook-logo {
+  align-self: flex-start;
+  margin-top: 10px;
   width: 150px;
 }
 

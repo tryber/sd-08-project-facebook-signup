@@ -13,8 +13,7 @@ function validateForm() {
     const input = document.querySelectorAll('.cadastro input');
     for (let index = 0; index < input.length; index += 1) {
       input[index].setCustomValidity('Campos inválidos');
-    }
-    
+    }    
     });
 }
 validateForm();
@@ -26,7 +25,7 @@ function addGenderText() {
   genderText.placeholder = 'Gênero (opcional)';
   personalizado.addEventListener('click', function () {
     const genderFields = document.getElementById('gender-fields');
-    genderFields.appendChild(genderText);    
+    genderFields.appendChild(genderText);
   });
 }
 addGenderText();
@@ -36,8 +35,7 @@ addGenderText();
     button.addEventListener('click', function () {
       substituteFormContainer ();
   });
-
-
+/*
   function substituteFormContainer () {
   const input = document.querySelectorAll('.cadastro input');
   const rigthcontent = document.getElementById('rightcontent');
@@ -51,3 +49,4 @@ addGenderText();
   rigthcontent.innerHTML = mensagem;
 }
 substituteFormContainer();
+*/

@@ -35,22 +35,22 @@ body {
   align-self: flex-end;
 }
 
-.main-content{
+.main-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-.left-content{
-  width:800px;
+.left-content {
+  width: 800px;
 }
 
-.right-content{
-  width:300px;
+.right-content {
   display: flex;
   flex-flow: column;
   justify-content:flex-start;
+  width: 300px;
 }
 
-.right-content h1{
+.right-content h1 {
   font-size: 40px;
 }

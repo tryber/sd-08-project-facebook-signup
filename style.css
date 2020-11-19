@@ -10,12 +10,26 @@ body {
   width: 100%;
 }
 
+.facebook-login {
+  display: flex;
+  flex-direction: column;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
+  padding-right: 50px;
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }

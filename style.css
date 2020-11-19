@@ -21,9 +21,9 @@ header {
 }
 
 .facebook-login {
+  align-items: flex-end;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
 }
 
 .form-group {
@@ -31,8 +31,6 @@ header {
   flex-direction: column;
 }
 
-.form-control{
-    align-self: flex-end;
+.form-control {
+  align-self: flex-end;
 }
-
-

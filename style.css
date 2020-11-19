@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-#main-content{
-    display: flex;
-    justify-content: center;
-
-}
-
-#left-content{
-    width: 800px;
-    display: inline-block
-}
-
-#right-content{
-    width: 300px;
-    float: right;
-    display: inline-block;
-=======
 .header {
     display: flex;
     background-color: rgb(66, 103, 178);
@@ -23,5 +6,19 @@
 
 #facebook-logo {
     width: 20%;
->>>>>>> a9827649339bb5b7632207c34caea0fb0b72a51b
+}
+
+#main-content{
+    display: flex;
+    justify-content: center;
+}
+#right-content{
+    width: 300px;
+    display: inline-block;
+    float: right;
+}
+
+#left-content{
+    width: 800px;
+    display: inline-block;
 }

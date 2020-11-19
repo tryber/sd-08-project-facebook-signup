@@ -33,12 +33,12 @@ const validateData = () => {
 };
 
 const selectUserData = () => {
-  let data = [];
+  const data = [];
 
   const name = document.getElementsByClassName('input')[0].value;
   const lastName = document.getElementsByClassName('input')[1].value;
   const phoneEmail = document.getElementsByClassName('input')[2].value;
-  const gender = '';
+  let gender = '';
   const birthdate = document.getElementById('birthdate').value;
   const genders = document.getElementsByClassName('gender');
   for (let i = 0; i < genders.length; i += 1) {
@@ -48,12 +48,14 @@ const selectUserData = () => {
   }
 
   data.push(name, lastName, phoneEmail, gender, birthdate);
-  
+
   return data;
-}
+};
 
 buttonRegister.addEventListener('click', () => {
   validateData();
+  let data = selectUserData();
+  console.log(data[0]);
 });
 
 const gender = document.getElementsByClassName('gender');

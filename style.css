@@ -1,4 +1,21 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
 }

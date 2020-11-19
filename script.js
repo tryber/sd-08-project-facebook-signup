@@ -23,14 +23,14 @@ function plotText() {
 }
 
 function validateForm() {
-  let firstName = document.forms["myForm"]["firstname"].value;
-  let lastName = document.forms["myForm"]["lastname"].value;
-  let phoneEmail = document.forms["myForm"]["phone_email"].value;
-  let password = document.forms["myForm"]["password"].value;
-  let birthDate = document.forms["myForm"]["birthdate"].value;
-  let gender = document.forms["myForm"]["gender"].value;
+  const firstName = document.forms.myForm.firstname.value;
+  const lastName = document.forms.myForm.lastname.value;
+  const phoneEmail = document.forms.myForm.phone_email.value;
+  const password = document.forms.myForm.password.value;
+  const birthDate = document.forms.myForm.birthdate.value;
+  const gender = document.forms.myForm.gender.value;
 
-  if (firstName == "" || lastName == "" || phoneEmail == "" || password == "" || birthDate == "" || gender == "") {
+  if (firstName === '' || lastName === '' || phoneEmail === '' || password === '' || birthDate === '' || gender === '') {
     const formField = document.querySelector('.create-account');
     const msgError = document.createElement('p');
     msgError.textContent = 'Campos inválidos';
@@ -41,4 +41,4 @@ function validateForm() {
 }
 
 buttonCustomGender.addEventListener('click', createCustomGender);
-buttonRegister.addEventListener('click', validateForm)
+buttonRegister.addEventListener('click', validateForm);

@@ -32,7 +32,7 @@ document.querySelector('#facebook-register').addEventListener('click', () => {
     }
   }
   mudarRightContainer();
-  return null;
+  return;
 });
 
 for (let i = 5; i < 7; i += 1) {

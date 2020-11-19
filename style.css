@@ -21,3 +21,27 @@ body {
   width: 300px;
   border: 2px solid red;
 }
+.form {
+  display: flex;
+  flex-flow: row wrap;
+}
+.form .name-input {
+  padding: 5px 5px;
+  width: 40%;
+  margin: 0px auto;
+}
+.form .lastname-input {
+  padding: 5px 5px;
+  width: 40%;
+  margin: 0px auto;
+}
+.form .phoneemail-input {
+  width: 90%;
+  padding: 5px 5px;
+  margin: 10px auto;
+}
+.form .password-input {
+  width: 90%;
+  padding: 5px 5px;
+  margin: 0px auto;
+}

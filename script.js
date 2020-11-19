@@ -1,5 +1,5 @@
-let loginButton = document.getElementById('button-login');
-let emailTelefone = document.getElementById('user-email-phone');
-loginButton.addEventListener('click', function (event){
-    alert(emailTelefone.value);
+const loginButton = document.getElementById('button-login');
+const emailTelefone = document.getElementById('user-email-phone');
+loginButton.addEventListener('click', function () {
+  alert(emailTelefone.value);
 });

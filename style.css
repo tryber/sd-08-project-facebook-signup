@@ -1,11 +1,10 @@
-html ,
-body {
+html , body {
   margin: 0;
   padding: 0;
 }
 
 .top-bar {
-  background-color: rgb(66 , 103 , 178);
+  background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-around;
 }
@@ -20,10 +19,10 @@ body {
 }
 
 .facebook-login {
+  align-items: center;
   background-color: aqua;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .form-group {

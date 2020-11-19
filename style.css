@@ -40,8 +40,31 @@ fieldset {
   background-color: rgb(240, 242, 245);
   display: flex;
   height: 100vh;
+  justify-content: space-around;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+h1 {
+  color: rgb(24, 119, 242);
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.row-group {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  width: 100%;
+}
+
+.in-row {
+  margin: 0;
+  width: 50%;
 }

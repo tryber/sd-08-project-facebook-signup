@@ -1,9 +1,9 @@
-.facebook-login {
-  display: flex;
+body {
+  margin: 0;
 }
 
-header {
-  max-width: 100%;
+.facebook-login {
+  display: flex;
 }
 
 .top-bar {
@@ -11,4 +11,8 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.login {
+  display: flex;
 }

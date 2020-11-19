@@ -1,0 +1,10 @@
+.top-bar{
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  height: 70px;
+  justify-content: space-around;
+}
+.facebook-login{
+  display: flex;
+  flex-direction: column;
+}

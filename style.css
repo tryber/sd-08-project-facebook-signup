@@ -99,5 +99,5 @@ form input {
 }
 
 .nomecompleto input {
-  width: 100%;
+  margin: 0px;
 }

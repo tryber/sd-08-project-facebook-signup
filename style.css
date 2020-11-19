@@ -2,3 +2,7 @@
   display: flex;
   background-color: rgb(66 , 103 , 178);
 }
+
+.facebook-login {
+  display: flex;
+}

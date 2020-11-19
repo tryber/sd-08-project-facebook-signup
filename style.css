@@ -46,3 +46,7 @@
   display: flex;
   flex-flow: row nowrap;
 }
+
+.gender-custom {
+  display: none;
+}

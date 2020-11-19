@@ -26,8 +26,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .left-content{
   width: 800px;
+}
+
+.right-content{
+  width: 300px;
 }

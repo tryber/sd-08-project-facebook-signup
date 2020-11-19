@@ -42,8 +42,7 @@
   display: flex;
 }
 
-
 .radio-btns {
   display: flex;
-  wrap: nowrap;
+  flex-flow: row nowrap;
 }

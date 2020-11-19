@@ -22,3 +22,8 @@
 .form-control {
   align-self: flex-end;
 }
+
+.form-group label {
+  color: white;
+  font-weight: bold;
+}

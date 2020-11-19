@@ -1,47 +1,56 @@
 body {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
 }
+
 .main-content {
+  border: 2px solid black;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  border: 2px solid black;
 }
+
 .main-content .left-content {
+  border: 2px solid red;
   width: 800px;
-  border: 2px solid red;
 }
+
 .main-content .right-content {
-  width: 300px;
   border: 2px solid red;
+  width: 300px;
 }
+
 .form {
   display: flex;
   flex-flow: row wrap;
 }
+
 .form .name-input {
-  padding: 5px 5px;
-  width: 40%;
   margin: 0 auto;
+  padding: 5px;
+  width: 40%;
 }
+
 .form .lastname-input {
-  padding: 5px 5px;
+  margin: 0 auto;
+  padding: 5px;
   width: 40%;
-  margin: 0 auto;
 }
+
 .form .phoneemail-input {
-  width: 90%;
-  padding: 5px 5px;
   margin: 10px auto;
-}
-.form .password-input {
+  padding: 5px;
   width: 90%;
-  padding: 5px 5px;
+}
+
+.form .password-input {
   margin: 0 auto;
+  padding: 5px;
+  width: 90%;
 }

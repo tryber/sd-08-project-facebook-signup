@@ -54,3 +54,8 @@ body {
 .account {
   font-size: 40px;
 }
+.name-container{
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+}

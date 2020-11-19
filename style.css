@@ -20,6 +20,6 @@
   align-self: flex-end;
 }
 
-div #button-login {
+.form-control button:nth-child(1) {
   padding: 4px;
 }

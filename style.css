@@ -26,3 +26,7 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+.left-content {
+  max-width: 800px;
+}

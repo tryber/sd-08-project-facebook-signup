@@ -3,10 +3,40 @@ body {
 }
 
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-around;
+  padding: 13px;
 }
 
 .form-group {
   display: flex;
+  flex-direction: column;
+  padding: 7px;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+  padding: 10px 7px;
+}
+
+.facebook-login {
+  display: flex;
+  color: white;
+  height: fit-content;
+  border: 1px solid black;
+}
+
+.facebook-logo {
+  border: 1px solid black;
+  padding-bottom: 0;
+}
+
+.button-color {
+  background-color: rgb(80, 121, 204);
+  color: white;
+  outline: none;
+  border: none;
 }

@@ -22,14 +22,16 @@ const validateData = () => {
 
   if (!helper) {
     error.style.display = 'block';
+    return false;
   }
 
   for (let i = 0; i < input.length; i += 1) {
     if (input[i].value === '') {
       error.style.display = 'block';
-      break;
+      return false;
     }
   }
+  return true;
 };
 
 const selectUserData = () => {
@@ -53,9 +55,10 @@ const selectUserData = () => {
 };
 
 buttonRegister.addEventListener('click', () => {
-  validateData();
-  let data = selectUserData();
-  console.log(data[0]);
+  if (validateData()) {
+    const data = selectUserData();
+  } else {
+  }
 });
 
 const gender = document.getElementsByClassName('gender');

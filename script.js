@@ -6,10 +6,16 @@ function logInButton() {
 const logInClick = document.getElementById('button-login');
 logInClick.addEventListener('click', logInButton);
 
-function checkRegistration() {
+  const firstName = document.getElementById('firstname').value;
+  const lastName = document.getElementById('lastname').value;
+  const phoneMail = document.getElementById('phone_email').value;
+  const password = document.getElementById('password').value;
+  const birthdate = document.getElementById('label-birthdate').value;
   const gender = document.getElementsByClassName('gender');
 
-  const registrationArray = [document.getElementById('firstname').value, document.getElementById('lastname').value, document.getElementById('phone_email').value, document.getElementById('password').value, document.getElementById('label-birthdate').value];
+function checkRegistration() {
+  const registrationArray = [];
+  registrationArray = [firstName, lastName, phoneMail, password, birthdate];
 
   let invalidInput = 0;
   for (let index = 0; index < 5; index += 1) {

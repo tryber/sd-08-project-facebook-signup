@@ -31,27 +31,30 @@ body {
 
 .left-content {
   box-sizing: border-box;
-  width: 840px;
+  min-width: 800px;
 }
 
 .right-content {
   box-sizing: border-box;
-  width: 310px;
+  display: flex;
+  flex-flow: column wrap;
+  min-width: 300px;
 }
 
 .form-register {
   display: flex;
-  width: auto;
+  flex-direction: column;
+  min-width: 300px;
 }
 
-.firstName , .lastName {
+.firstName {
+  width: 140px;
+}
+
+.lastName {
   width: 140px;
 }
 
 .phoneEmail , .myPassword , .birthDate {
   width: 292px;
-}
-
-.labelGenero {
-  display: block;
 }

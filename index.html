@@ -34,22 +34,28 @@
         <div class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form action="#" id="form-register">
-                <input type="text" class="firstName" name="firstname" placeholder="Nome">
-                <input type="text" class="lastName" name="lastname" placeholder="Sobrenome">
+            <form action="#" class="form-register">
+                <div class="input-names">
+                    <input type="text" class="firstName" name="firstname" placeholder="Nome">
+                    <input type="text" class="lastName" name="lastname" placeholder="Sobrenome">
+                </div>
                 <input type="text" class="phoneEmail" name="phone_email" placeholder="Celular ou email">
                 <input type="password" class="myPassword" name="password" placeholder="Nova senha">
-                <label for="" class="labelGenero">Gênero</label>
-                <input type="radio" name="gender" checked>Feminino
-                <input type="radio" name="gender">Masculino
-                <input type="radio" name="gender">Personalizado
                 <label for="" id="label-birthdate">Data de nascimento</label>
                 <input type="text" class="birthDate" name="birthdate" placeholder="dd/mm/aaaa">
+                <label for="" class="labelGenero">Gênero</label>
+                <div class="radioBtns">
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="feminino" value="Feminino" name="gender" checked>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="masculino" value="Masculino" name="gender">
+                    <label for="personalizado">Personalizado</label>
+                    <input type="radio" id="personalizado" value="Personalizado" name="gender">
+                </div>
                 <button type="submit" id="facebook-register">Cadastre-se</button>
             </form>
         </div>
     </section>
     <script src="script.js"></script>
 </body>
-
 </html>

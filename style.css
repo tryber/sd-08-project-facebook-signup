@@ -17,6 +17,7 @@ body {
 }
 
 .form-group {
+  align-self: flex-end;
   display: flex;
 }
 
@@ -33,6 +34,12 @@ body {
   width: 300px;
 }
 
-.name-input {
-  width: 140px;
+.name-container {
+  display: flex;
+}
+
+.new-register {
+  box-sizing: border-box;
+  margin-top: 5px;
+  width: 100%;
 }

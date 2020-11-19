@@ -1,0 +1,11 @@
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  height: 100px;
+}

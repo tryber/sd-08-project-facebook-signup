@@ -1,3 +1,11 @@
+.facebook-login {
+  display: flex;
+}
+.form-control {
+  display: flex;
+  align-self: flex-end;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;

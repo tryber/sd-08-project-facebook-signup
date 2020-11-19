@@ -6,15 +6,14 @@ function alertLogin() {
   });
 }
 alertLogin();
-
+// setCustomValidity retirada do artigo: https://www.devmedia.com.br/html5-validator-validando-formularios-com-html5/28785
 function validateForm() {
   const button = document.getElementById('facebook-register');
   button.addEventListener('click', function () {
     const input = document.querySelectorAll('.cadastro input');
-    for (let index = 0; index < input.length; index +=1){
+    for (let index = 0; index < input.length; index += 1) {
       input[index].setCustomValidity('Campos inválidos');
     }
-  })
+  });
 }
 validateForm();
-// setCustomValidity retirada do artigo: https://www.devmedia.com.br/html5-validator-validando-formularios-com-html5/28785

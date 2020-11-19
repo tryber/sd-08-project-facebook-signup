@@ -31,3 +31,7 @@
 .right-content {
   width: 300px;
 }
+
+.create-account-form-group {
+  display: flex;
+}

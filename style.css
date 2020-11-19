@@ -20,6 +20,6 @@
   align-self: flex-end;
 }
 
-.form-control button:nth-child(1) {
+.form-control button:nth-child( 1 ) {
   padding: 4px;
 }

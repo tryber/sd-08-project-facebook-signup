@@ -30,7 +30,7 @@ function plotText() {
 }
 
 function validateForm() {
-  for (let pos of formFields) {
+  for (const pos in formFields) {
     if (pos === '') {
       const formField = document.querySelector('.create-account');
       const msgError = document.createElement('p');

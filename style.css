@@ -52,13 +52,18 @@ body {
   border-radius: 5px;
   border: transparent;
   height: 25px;
-  margin-top: 5px;
-  padding: 2px;
+  margin-top: 8px;
+  
 
 }
 
 .fullSize {
-    width: 100%;
+  width: 100%;
 
+}
+
+.birthdate {
+  color: gray;
+  padding-top: 20px;
 }
 

@@ -23,3 +23,13 @@ facebookRegister.addEventListener('click', function () {
   }
 });
 
+// adiciona input pesonalizado
+const divGender = document.querySelector('.gender');
+const personalizadoGender = document.querySelector('#personalizado');
+
+personalizado.addEventListener('click', function () {
+  const createInput = document.createElement('input');
+  createInput.name = 'gender-custom';
+  createInput.placeholder = 'Gênero (opcional)';
+  divGender.appendChild(createInput);
+});

@@ -1,0 +1,17 @@
+.top-bar {
+    background-color: rgb(66, 103, 178);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    display: flex;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}

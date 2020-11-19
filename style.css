@@ -30,3 +30,9 @@ body {
 .form-control button {
   align-self: flex-end; /* Obrigatório*/
 }
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  
+}

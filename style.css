@@ -9,3 +9,26 @@
   display: flex;
   height: 70px;
 }
+
+.facebook-login {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-group {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-password {
+  display: flex;
+  flex-direction: column;
+}

@@ -3,17 +3,6 @@
   display: flex;
   justify-content: space-between;
 }
-<<<<<<< HEAD
-.facebook-login{
-  display: flex;
-  flex-direction: row;
-}
-.form-group{
-  display: flex;
-  flex-direction: column;
-}
-.form-control{
-=======
 
 .facebook-login {
   display: flex;
@@ -26,6 +15,5 @@
 }
 
 .form-control {
->>>>>>> 811efb16e2d0720659dc497774473ad131daaf98
   align-self: flex-end;
 }

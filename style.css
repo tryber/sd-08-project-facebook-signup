@@ -1,9 +1,57 @@
-.top-bar {
-  background-color: rgb(66, 103, 178);
-  display: flex;
+body {
   margin: 0;
+}
+
+.top-bar {
+  background-color: rgb(66 , 103 , 178);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
 }
 
 .facebook-logo {
   align-self: flex-start;
+}
+
+.facebook-login {
+  align-self: flex-end;
+  color: white;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  border: none;
+  display: flex;
+  flex-direction: column;
 }

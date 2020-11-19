@@ -1,0 +1,112 @@
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 200px;
+}
+
+.facebook-slogan {
+  color: rgb(7, 52, 143);
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  width: 400px;
+}
+
+.facebook-networking{
+  width: 500px;
+}
+
+.right-content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 300px;
+}
+
+.right-content h1 {
+  margin: 20px 0 0;
+}
+
+.right-content h3 {
+  margin: 10px 0;
+}
+
+.div-nomes {
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-pequeno {
+  border: 1px solid rgb(221, 218, 218);
+  border-radius: 4px;
+  height: 25px;
+  margin: 0 5px 0 0;
+  width: 140px;
+}
+
+.input-grande {
+  border: 1px solid rgb(221, 218, 218);
+  border-radius: 4px;
+  color: grey;
+  display: flex;
+  height: 25px;
+  margin: 10px 0;
+  width: 290px;
+}
+
+.label-birthdate {
+  color: grey;
+  text-decoration: bold;
+  margin: 10px 0;
+}
+
+.input-birthdate {
+  border: 1px solid rgb(221, 218, 218);
+  border-radius: 4px;
+  height: 25px;
+  margin: 5px 0 10px 0;
+}
+
+.input-birthdate::-webkit-input-placeholder {
+  color: black;
+}
+
+.label-gender {
+  color: grey;
+  text-decoration: bold;
+  margin: 10px 0;
+}
+
+.gender-conteiner {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.gender {
+  margin: 0;
+}
+
+.label-gender2 {
+  color: black;
+  font-size: 15px;
+}
+
+.facebook-register {
+  background-color: rgb(79, 170, 79);
+  border: 0.8px solid rgb(87, 153, 87);
+  border-radius: 4px;
+  color: white;
+  height: 25px;
+  width: 150px;
+}

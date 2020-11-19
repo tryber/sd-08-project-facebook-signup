@@ -22,7 +22,7 @@ body {
   align-items: center;
 }
 
-.control {
+.form-group {
   display: flex;
   flex-direction: column;
 }

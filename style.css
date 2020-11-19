@@ -45,3 +45,8 @@
 .form-control {
   align-self: flex-end;
 }
+
+#label-gender{
+    display: flex;
+    flex-direction: row;
+}

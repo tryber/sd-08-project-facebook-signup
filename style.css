@@ -6,8 +6,8 @@
 }
 
 .facebook-login {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .form-group {
@@ -20,6 +20,6 @@
   align-self: flex-end;
 }
 
-#button-login {
-  padding: 5px;
+div #button-login {
+  padding: 4px;
 }

@@ -4,5 +4,3 @@ function sendAlert() {
 
 const getEnter = document.querySelector('#button-login');
 getEnter.addEventListener('click', sendAlert);
-
-

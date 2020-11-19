@@ -38,3 +38,7 @@ body , header , img {
 .right-content {
   width: 300px;
 }
+
+.name-lastname {
+  display: flex;
+}

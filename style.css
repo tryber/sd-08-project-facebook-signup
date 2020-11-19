@@ -35,3 +35,12 @@ body {
 .right-content {
   width: 300px;
 }
+
+.nome-e-sobrenome {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nome-e-sobrenome input {
+  width: 45%;
+}

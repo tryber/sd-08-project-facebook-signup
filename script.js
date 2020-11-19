@@ -6,8 +6,6 @@ function entrar() {
 const btnEntrar = document.getElementById('button-login');
 btnEntrar.addEventListener('click', entrar);
 
-//Exibir uma mensagem "Campos inválidos" dentro do formulário caso pelo menos
-//um campo não esteja preenchido
 const btnSubmit = document.getElementById('facebook-register');
 const rightContent = document.querySelector('.right-content');
 const formsContent = rightContent.querySelectorAll('input');

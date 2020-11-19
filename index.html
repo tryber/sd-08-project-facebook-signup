@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -13,12 +14,15 @@
       <img class="facebook-logo" src="imgs/facebook-logo.png"></img>
       <form action="" class="facebook-login">
         <div class="form-group">
-          <label for="fb-email" id=user-email-phone-label>E-mail ou telefone</label>
-          <input type="text" name="" id="user-email-phone" placeholder="Nome">
+          <label for="fb-email" id="user-email-phone-label">E-mail ou telefone</label>
+          <input type="text" name="" id="user-email-phone">
         </div>
         <div class="form-group">
           <label for="fb-password" id=user-password-label>Senha</label>
           <input type="password" name="" id="user-password">
+        </div>
+        <div class="form-control">
+          <button type="button" id="button-login">Entrar</button>
         </div>
       </form>
     </header>
@@ -30,6 +34,20 @@
       <section class='right-content'>
         <h1>Abra uma conta</h1>
         <p class='quick-easy'>É rápido e fácil.</p>
+        <form action="">
+          <label for=""></label>
+          <input type="text" name="firstname" id="first-name" placeholder="Nome">
+          <input type="text" name="lastname" id="last-name" placeholder="Sobrenome">
+          <input type="text" name="phone_email" id="first-name" placeholder="Celular ou e-mail">
+          <input type="password" name="password" id="first-name" placeholder="Nova senha">
+          <label for="birth-date" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" id="birth-date" placeholder="dd/mm/aaaa">
+          <label for="" id="label-gender">Gênero</label>
+          <button type="radio" name="gender" >Feminino
+          <button type="radio" name="gender" >Masculino
+          <button type="radio" name="gender" >Personalizado
+          <button type="submit" id='facebook-register'>Cadastre-se
+        </form>
       </section>
     </main>
   </body>

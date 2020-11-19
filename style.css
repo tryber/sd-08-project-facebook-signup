@@ -21,6 +21,10 @@ body {
   padding-right: 50px;
 }
 
+.form-contrl {
+  align-self: flex-end;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;

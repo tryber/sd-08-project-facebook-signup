@@ -47,6 +47,11 @@ html , body {
   width: 300px;
 }
 
-.form-group-create {
+form input{
+  width: 100%;
+}
+
+.form-group-name {
   display: flex;
+  justify-content: space-between;
 }

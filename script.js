@@ -22,7 +22,6 @@ submit.addEventListener('click', checaValidacao);
 
 /* function checaValidacao(e) {
   let nome = document.getElementById('nome');
-  
   nome.addEventListener('input', function (event) {
     if (nome.value === "") {
       nome.setCustomValidity('Campos inválidos');

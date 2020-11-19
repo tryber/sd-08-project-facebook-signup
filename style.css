@@ -28,3 +28,10 @@ body {
 .form-control {
   align-self: flex-end;
 }
+
+.main-content {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}

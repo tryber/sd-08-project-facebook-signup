@@ -8,15 +8,19 @@ const novaSenha = document.querySelector('.password');
 const genero = document.querySelector('.gender');
 const aniversario = document.querySelector('.birthdate');
 const rapidoFacil = document.querySelector('.quick-easy');
-
+var variaveis = { nome , sobreNome , telefone , novaSenha , genero , aniversario};
 buttonEntrar.addEventListener('click', function () {
   alert(emailOuTelefone.value);
 });
 
-buttonCadastro.addEventListener('click', function(){
-  if(nome.value === ''|| sobreNome.value === ''|| telefone.value === '' || novaSenha.value ==='' || genero.value === '' || aniversario.value ===''){
-    //let mensagemErro = document.createElement('p');
-    mensagemErro = document.creatTextNode('Campos inválidos');
-    mensagemErro.appendChild(rapidoFacil);
+function cadastro(){
+  console.log("foi");
+  for (const valores in variaveis){
+    if(valores.value == ''){
+      console.log("ENtreiii");
+      var mensagemErro = document.createTextNode('Campos inválidos');
+      rapidoFacil.appendChild(mensagemErro);
+      return false;
+    }
   }
-});
+}

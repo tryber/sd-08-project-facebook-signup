@@ -20,6 +20,10 @@ function handleInputGender(event) {
   }
 }
 
+function handleFormMessage() {
+  console.log('oi');
+}
+
 window.onload = () => {
   const loginBtn = document.getElementById('button-login');
   loginBtn.addEventListener('click', alertLogin);
@@ -33,11 +37,5 @@ window.onload = () => {
 
   const registerButton = document.getElementById('facebook-register');
   const InputAll = document.querySelectorAll('#signup-container .input');
-  registerButton.addEventListener('click', function () {
-    for (let index = 0; index < InputAll.length; index += 1) {
-      if (InputAll[index].value) {
-        alert('Campos inválidos');
-      }
-    }
-  });
+  registerButton.addEventListener('click', handleFormMessage);
 };

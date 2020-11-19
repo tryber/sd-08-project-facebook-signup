@@ -1,8 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
+body {
+    margin:0;
+    padding:0;
 }
-.top-bar{
+
+.top-bar {
+    background-color:rgb(66,103,178);
     display: flex;
-    background-color: rgb(66, 103, 178);
+}
+
+.facebook-login {
+    display: flex;
 }

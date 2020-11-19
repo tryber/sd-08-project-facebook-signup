@@ -38,3 +38,8 @@ body {
 .flex-form {
   display: flex;
 }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}

@@ -37,19 +37,19 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="">
         <div class="nome-e-sobrenome">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <input type="text" name="firstname" placeholder="Nome" required>
+          <input type="text" name="lastname" placeholder="Sobrenome" required>
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha"><br>
+        <input type="text" name="phone_email" placeholder="Celular ou email" required>
+        <input type="password" name="password" placeholder="Nova senha" required><br>
         <label id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa"><br>
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required><br>
         <label id="label-gender">Gênero</label><br>
-        <input type="radio" name="gender" value="Feminino" id="Feminino">
+        <input type="radio" name="gender" value="Feminino" id="Feminino" required>
         <label for="Feminino">Feminino</label>
-        <input type="radio" name="gender" value="Masculino" id="Masculino">
+        <input type="radio" name="gender" value="Masculino" id="Masculino" required>
         <label for="Masculino">Masculino</label>
-        <input type="radio" name="gender" value="Personalizado" id="Personalizado">
+        <input type="radio" name="gender" value="Personalizado" id="Personalizado" required>
         <label for="Personalizado">Personalizado</label><br>
         <button id="facebook-register" type="submit">Cadastre-se</button>
       </form>

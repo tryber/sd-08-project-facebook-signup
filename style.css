@@ -47,9 +47,9 @@ header {
 button {
   background-color: rgb(66, 102, 178);
   border: 0.1px solid rgb(42, 73, 126);
+  border-radius: 2px;
   color: white;
   padding: 5px;
-  border-radius: 2px;
 }
 
 .label-forgot {

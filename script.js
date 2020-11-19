@@ -16,6 +16,10 @@ function mudarRightContainer() {
   `;
 }
 
+function showInvalidos() {
+  document.querySelector('.mensagem-invalidos').style.display = 'block';
+}
+
 document.querySelector('#button-login').addEventListener('click', () => {
   alert(document.querySelector('#user-email-phone').value);
 });
@@ -23,7 +27,8 @@ document.querySelector('#button-login').addEventListener('click', () => {
 document.querySelector('#facebook-register').addEventListener('click', () => {
   for (let i = 0; i < allInputs.length - 1; i += 1) {
     if (allInputs[i].value === '') {
-      return alert('Campos inválidos');
+      showInvalidos();
+      return;
     }
   }
   mudarRightContainer();

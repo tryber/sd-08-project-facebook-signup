@@ -12,16 +12,18 @@ footer p {
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 100px;
-  justify-content: space-between;
   padding: 0 20%;
 }
 
 .top-bar img {
+  align-self: flex-start;
+  margin-right: auto;
   width: 200px;
 }
 
 .facebook-login {
   align-items: flex-start;
+  align-self: flex-end;
   display: flex;
   flex-direction: row;
 }
@@ -88,8 +90,8 @@ form p {
 
 .left-content {
   justify-content: flex-start;
+  min-width: 800px;
   padding-top: 30px;
-  width: 800px;
 }
 
 .left-content p {
@@ -102,8 +104,8 @@ form p {
 .right-content {
   display: flex;
   flex-flow: column nowrap;
+  min-width: 300px;
   padding-top: 30px;
-  width: 300px;
 }
 
 .right-content p {
@@ -157,4 +159,12 @@ footer {
   font-weight: 900;
   padding: 10px 30px;
   text-shadow: -1px 1px grey;
+}
+
+.mensagem-invalidos {
+  color: red;
+  display: none;
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 10px;
 }

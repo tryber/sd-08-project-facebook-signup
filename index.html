@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-
     <header class="top-bar">
       <img class="facebook-logo" src="imgs/facebook-logo.png" alt="" />
       <section class="login-form">
         <form class="facebook-login" action="">
-
           <div class="form-group">
             <label id="user-email-phone-label" for="user-email-phone"
               >Email ou telefone</label
@@ -29,7 +27,6 @@
           <div class="form-control">
             <button type="submit" id="button-login">Entrar</button>
           </div>
-
         </form>
       </section>
     </header>
@@ -46,8 +43,21 @@
         <h1>Abra uma conta</h1>
         <span class="quick-easy">É rápido e fácil.</span>
         <form action="">
-                <input type="text" name="phone_email" placeholder="Celular ou email">
-                <input type="password" name="password" placeholder="Nova senha">
+          <div class="create-account-form-group">
+            <input type="text" name="firstname" value="" placeholder="Nome" />
+            <input
+              type="text"
+              name="lastname"
+              value=""
+              placeholder="Sobrenome"
+            />
+          </div>
+          <input
+            type="text"
+            name="phone_email"
+            placeholder="Celular ou email"
+          />
+          <input type="password" name="password" placeholder="Nova senha" />
         </form>
       </section>
     </main>
@@ -55,5 +65,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-teste

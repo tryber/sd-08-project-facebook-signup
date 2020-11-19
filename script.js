@@ -17,3 +17,15 @@ function validateForm() {
   });
 }
 validateForm();
+
+function addGenderText() {
+  const personalizado = document.getElementById('personalizado');
+  const genderText = document.createElement('input');
+  genderText.name = 'gender-custom';
+  genderText.placeholder = 'Gênero (opcional)';
+  personalizado.addEventListener('click', function () {
+    const genderFields = document.getElementById('gender-fields');
+    genderFields.appendChild(genderText);
+  });
+}
+addGenderText();

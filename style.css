@@ -35,3 +35,16 @@ body {
 .right-content {
   width: 300px;
 }
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form input:nth-child( 1 ) {
+  width: 135px;
+}
+
+.form input:nth-child( 2 ) {
+  width: 135px;
+}

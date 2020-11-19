@@ -1,5 +1,5 @@
 function logInButton() {
-  const alertText = document.getElementById('user-email-phone').innerHTML;
+  const alertText = document.getElementById('user-email-phone').value;
   alert(alertText);
 }
 

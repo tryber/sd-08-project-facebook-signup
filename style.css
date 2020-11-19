@@ -19,6 +19,6 @@ body {
 }
 
 .form-group {
-  diplay: flex;
+  display: flex;
   flex-direction: column;
 }

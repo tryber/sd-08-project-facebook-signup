@@ -1,25 +1,22 @@
-html,
+html ,
 body {
   margin: 0;
   padding: 0;
 }
 
 .top-bar {
+  background-color: rgb(66 , 103 , 178);
   display: flex;
   justify-content: space-around;
-  background-color: rgb(66, 103, 178);
 }
 
 .facebook-logo {
-  
   display: flex;
-  
 }
 
 .top-bar img {
-  width: auto;
   height: auto;
-
+  width: auto;
 }
 
 .facebook-login {

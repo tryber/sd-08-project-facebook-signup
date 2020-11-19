@@ -11,5 +11,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 15px 50px;
-  width: 100%;
+  width: auto;
+}
+
+.facebook-login {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }

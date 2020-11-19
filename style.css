@@ -21,3 +21,7 @@ body , header , img {
   flex-direction: column;
   margin-right: 15px;
 }
+
+.form-control {
+  align-self: flex-end;
+}

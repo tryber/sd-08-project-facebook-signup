@@ -30,8 +30,8 @@ function plotText() {
 }
 
 function validateForm() {
-  for (const pos in formFields) {
-    if (pos === '') {
+  for (let index = 0; index < 6; index += 1) {
+    if (formFields[index] === '') {
       const formField = document.querySelector('.create-account');
       const msgError = document.createElement('p');
       msgError.textContent = 'Campos inválidos';

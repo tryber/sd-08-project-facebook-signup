@@ -24,7 +24,19 @@ body {
 }
 
 .main-content {
-  background:-webkit-gradient(linear, 0% 100%, 0% 1%, from(#D4D9E8), to(#FEFEFE));
+  background:-webkit-gradient(linear, 0% 100%, 0% 1%, from(rgb(212 , 217 , 232)), to(rgb(254 , 254 , 254)));
+  display: flex;
+  justify-content: center;
+}
+
+.left-content p {
+  color: rgb(51 , 85 , 118);
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.right-content h1 {
+  color: rgb(52 , 52 , 52);
 }
 
 .form-group {
@@ -49,4 +61,14 @@ body {
 
 .hide {
   display: none;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.registrar {
+  display: flex;
+  flex-direction: column;
 }

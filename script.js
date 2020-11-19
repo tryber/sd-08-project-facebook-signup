@@ -20,7 +20,7 @@ function btnLogin() {
   login.addEventListener('click', function () {
     let alerta = document.querySelector('#user-email-phone').value;
     alert(alerta)
-  }
+  });
 }
-btnLogin();
 
+btnLogin();

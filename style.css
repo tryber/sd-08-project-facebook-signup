@@ -13,6 +13,7 @@ body {
   width: 100%;
 }
 
-.login {
+.form-group {
   display: flex;
+  flex-direction: column;
 }

@@ -42,5 +42,5 @@ for (let i = 1; i < gender.length; i += 1) {
     } else {
       input.style.display = 'none';
     }
-  })
-};
+  });
+}

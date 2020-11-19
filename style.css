@@ -4,7 +4,24 @@
   height: 70px;
   justify-content: space-around;
 }
-.facebook-login{
+.form-group{
   display: flex;
   flex-direction: column;
+}
+#user-email-phone-label{
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+.facebook-login{
+  display: flex;
+}
+#user-password-label{
+  display: flex;
+  flex-direction: column;
+}
+#button-login{
+  background-color: rgb(66, 103, 178);
+  margin: 18px 10px;
+  color:white;
 }

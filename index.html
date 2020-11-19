@@ -46,20 +46,21 @@
         É rápido e fácil.
       </div>
       <form action="">
-        <div class="personal-information">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
-        </div>
-        <input type = "text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha"><br>
-        <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-        <input type="text" placeholder="dd/mm/aaaa" name="birthdate"><br>
-        <label id="label-gender" for="genderType">Gênero</label>
-        <div class="genderContainer">
-        <input id="genderType" type="radio" name="gender">Feminino
-        <input id="genderType" type="radio" name="gender">Masculino
-        <input id="genderType" type="radio" name="gender">Personalizado
-        </div>
+        <section class="personal-information">
+          <input type="text" name="firstname" placeholder="Nome" required>
+          <input type="text" name="lastname" placeholder="Sobrenome" required>
+        </section>
+        <input type = "text" name="phone_email" placeholder="Celular ou email" required>
+        <input type="password" name="password" placeholder="Nova senha" required><br>
+        <label for="birthdate" id="label-birthdate" required>Data de nascimento</label>
+        <input type="text" placeholder="dd/mm/aaaa" name="birthdate" required><br>
+        <label id="label-gender" for="genderType" required>Gênero</label>
+        <section id="genderContainer">
+        <input class="genderType" type="radio" name="gender" required>Feminino
+        <input class="genderType" type="radio" name="gender" required>Masculino
+        <input class="genderType" type="radio" name="gender" required>Personalizado
+        </section>
+        <button id="facebook-register" type="submit">Cadastre-se</button>
       </form>
     </section>
   </main>

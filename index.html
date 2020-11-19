@@ -37,7 +37,16 @@
         <div class="right-content">
           <h1>Abra uma conta</h1>
           <p class="quick-easy">É rápido e fácil.</p>
-          <form action="GET"></form>
+          <form action="GET" class="cadastro-nome">
+            <div class="fullname">
+              <input type="text" placeholder="Nome" name="firstname">
+              <input type="text" placeholder="Sobrenome" name="lastname">
+            </div>
+            <input type="text" name="phone_email" placeholder="Celular ou email">
+            <input type="password" name="password" placeholder="Nova senha">
+            <label for="" id="label-birthdate">Data de nascimento</label>
+            <input type="text" name="" placeholder="dd/mm/aaaa" id="birthdate">
+          </form>
         </div>
     </div>
     <script src="script.js"></script>

@@ -39,6 +39,26 @@
     <section class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
+      <form action="">
+        <input type="text" name="firstname" placeholder="Nome" class="nomeSobrenome">
+        <input type="text" name="lastname" placeholder="Sobrenome" class="nomeSobrenome">
+        <input type="text" name="phone_email" placeholder="Celular ou e-mail">
+        <input type="password" name="password" placeholder="Nova senha">
+
+        <label id="label-gender">Gênero</label>
+        <section class="gender">
+          <input type="radio" name="gender" id="feminino">
+          <label for="feminino">Feminino</label>
+          <input type="radio" name="gender" id="masculino">
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="gender" id="personalizado">
+          <label for="personalizado">Personalizado</label>
+        </section>
+        <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+        <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa">
+      
+        <button type="submit" id="facebook-register">Cadastre-se</button>
+      </form>
     </section>
   </main>
   <script src="script.js"></script>

@@ -56,11 +56,7 @@ a {
 }
 
 .main-content {
-  background-image: linear-gradient(
-    white,
-    rgb(195, 207, 233),
-    rgb(195, 207, 233)
-  );
+  background-image: linear-gradient(white, rgb(195, 207, 233), rgb(195, 207, 233));
   display: flex;
   justify-content: space-between;
   width: 100%;

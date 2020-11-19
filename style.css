@@ -46,8 +46,13 @@ button {
 
 .main-content {
   display: flex;
+  justify-content: space-around;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }

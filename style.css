@@ -21,6 +21,6 @@ body {
   flex-wrap: wrap;
 }
 .button-container {
-  display: flex;
   align-items: center;
+  display: flex;
 }

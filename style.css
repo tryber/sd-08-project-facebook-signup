@@ -1,13 +1,29 @@
-.facebook-logo {
+body{
+  margin: auto;
+  width: 60%;
+}
+
+header {
   display: flex;
-  height: 70px;
-  justify-content: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 6px 15px;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+}
+
+.fonte-padrao {
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.facebook-logo {
   display: flex;
   height: 70px;
+  justify-content: flex-start;
 }
 
 .facebook-login {
@@ -17,18 +33,23 @@
 }
 
 .form-group {
-  align-items: flex-end;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 7px;
 }
 
 .input-email {
   display: flex;
   flex-direction: column;
+  margin-right: 15px;
 }
 
 .input-password {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin-left: 15px;
 }

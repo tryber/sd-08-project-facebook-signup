@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
   <head>
     <meta charset="UTF-8">
@@ -14,12 +14,15 @@
       <div class="form-group">
         <form class="facebook-login" action="">
           <div class="input-email">
-            <label for="email-telefone" id="user-email-phone-label">Email ou telefone</label>
-            <input id="user-email-phone" type="text" name="email-telefone">
+            <label for="email-telefone" id="user-email-phone-label" class="fonte-padrao">Email ou telefone</label>
+            <input id="user-email-phone" type="text" name="email-telefone" required>
           </div>
           <div class="input-password">
-            <label for="senha" id="user-password-label">senha</label>
-            <input id="user-password" type="password" name="senha">
+            <label for="senha" id="user-password-label" class="fonte-padrao">Senha</label>
+            <input id="user-password" type="password" name="senha" required>
+          </div>
+          <div class="form-control">
+            <button type="submit" id="button-login">Entrar</button>
           </div>
         </form>
       </div>

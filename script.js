@@ -1,6 +1,6 @@
 const emailLogin = document.querySelector('#user-email-phone');
 const btnLogin = document.querySelector('#button-login');
-btnLogin.addEventListener('click', (e) => {
+btnLogin.addEventListener('click', () => {
   if (emailLogin.value != '')  alert(emailLogin.value);
 });
 function erroCampos(var1) {
@@ -18,6 +18,6 @@ const dataNascimento = document.querySelector('#birthdate');
 console.log(nome.value, sobrenome.value, emailPhone.value, novasenha.value, dataNascimento.value);
 const campos = [nome.value, sobrenome.value, emailPhone.value, novasenha.value, dataNascimento.value]
 const btnCadastro = document.querySelector('#facebook-register');
-btnCadastro.addEventListener('click', (e) => {
+btnCadastro.addEventListener('click', () => {
   erroCampos(campos);
 });

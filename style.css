@@ -22,3 +22,14 @@ header {
 .form-control {
   align-self: flex-end;
 }
+
+.main-content {
+  background: linear-gradient(white, #d3d8e8);
+  display: flex;
+  justify-content: center;
+  padding: 300px 0;
+}
+
+.left-content {
+  width: 800px;
+}

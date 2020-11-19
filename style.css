@@ -4,11 +4,6 @@
   justify-content: space-between;
 }
 
-.login-form {
-  align-items: center;
-  display: flex;
-}
-
 .facebook-login {
   display: flex;
 }

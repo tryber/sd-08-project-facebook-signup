@@ -1,2 +1,50 @@
 {
+  // editor
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 24,
+  "editor.fontLigatures": true,
+  "editor.rulers": [
+    80
+  ],
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.mouseWheelZoom": true,
+  "window.zoomLevel": 0,
+  //"workbench.iconTheme": "material-icon-theme",
+  //"workbench.colorTheme": "Dracula",
+  // terminal
+  "terminal.integrated.shell.linux": "/bin/zsh",
+  // html
+  "html.format.endWithNewline": true,
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.preserveNewLines": false,
+  // "html.format.wrapAttributes": "force-expand-multiline",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  // css
+  "[css]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  //coderunner
+  "code-runner.runInTerminal": true,
+  "explorer.confirmDelete": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  // eslint
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.options": {
+    "source.fixAll.stylelint": true,
+  },
+  "eslint.run": "onSave",
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript"
+  ],
+  "eslint.packageManager": "npm",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }

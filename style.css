@@ -24,6 +24,10 @@ body {
   align-self: flex-end;
 }
 
-.main-content{
+.main-content {
   display: flex;
+}
+
+.left-content {
+  width: 800px;
 }

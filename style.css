@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  padding: 0px;
+  padding: 0;
   margin: 0;
 }
 .top-bar {
@@ -28,12 +28,12 @@ body {
 .form .name-input {
   padding: 5px 5px;
   width: 40%;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 .form .lastname-input {
   padding: 5px 5px;
   width: 40%;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 .form .phoneemail-input {
   width: 90%;
@@ -43,12 +43,5 @@ body {
 .form .password-input {
   width: 90%;
   padding: 5px 5px;
-  margin: 0px auto;
-}
-    background-color: rgb(66, 103, 178);
-    display: flex
-}
-img {
-    text-align: left;
-    width: 100px;
+  margin: 0 auto;
 }

@@ -46,12 +46,12 @@
                 <input id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" type="text" oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')"required>
 
                 <label for="" id="label-gender">Gênero</label>
-                <div>
-                    <input id="female-gender" name="gender" type="radio">
+                <div class="radio-buttons">
+                    <input id="female-gender" name="gender" type="radio" value="Feminino" checked>
                     <label for="female-gender">Feminino</label>
-                    <input id="male-gender" name="gender" type="radio">
+                    <input id="male-gender" name="gender" type="radio" value="Masculino">
                     <label for="male-gender">Masculino</label>
-                    <input id="custom-gender" name="gender" type="radio">
+                    <input id="custom-gender" name="gender" type="radio" value="Personalizado">
                     <label for="custom-gender">Personalizado</label>
                 </div>
                 <button id="facebook-register" type="submit">Cadastre-se</button>

@@ -15,12 +15,29 @@ body {
   display: flex;
 }
 
-.form-group {
+.form-control {
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
 }
 
-.button-container {
-  align-items: center;
+.main-content {
   display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
 }

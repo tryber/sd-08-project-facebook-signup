@@ -31,3 +31,24 @@
 .right-content {
   width: 300px;
 }
+
+.quick-easy form{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rightName{
+  flex-basis: 40%;
+  margin: 10px;
+  width: 100px;
+}
+
+.right-content form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputName {
+  flex-basis: 48.6%;
+  width: 145px;
+}

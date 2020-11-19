@@ -10,6 +10,7 @@ const buttonRegister = document.getElementById('facebook-register');
 buttonRegister.addEventListener('click', () => {
   const input = document.getElementsByClassName('input');
   const gender = document.getElementsByClassName('gender');
+  const error = document.querySelector('.invalid-input');
   let helper = false;
 
   for (let i = 0; i < gender.length; i += 1) {
@@ -20,12 +21,12 @@ buttonRegister.addEventListener('click', () => {
   }
 
   if (!helper) {
-    alert('Campos inválidos!');
+    error.style.display = 'block';
   }
 
   for (let i = 0; i < input.length; i += 1) {
     if (input[i].value === '') {
-      alert('Campos inválidos!');
+      error.style.display = 'block';
       break;
     }
   }

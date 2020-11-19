@@ -49,6 +49,12 @@ body {
   flex-basis: 100%;
 }
 
+.invalid-input {
+  color: red;
+  display: none;
+  font-size: 20px;
+}
+
 .nomeSobrenome {
   flex-basis: 40%;
   width: 100px;

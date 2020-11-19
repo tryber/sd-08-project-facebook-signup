@@ -3,7 +3,6 @@ body {
 }
 
 .facebook-logo {
-  margin-left: 130px;
   width: 232px;
 }
 
@@ -12,4 +11,23 @@ body {
   display: flex;
   height: 90px;
   width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+}
+
+.facebook-login {
+  display: flex;
+  width: 390px;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column;
+}
+
+.form-group label {
+  color: white;
+  font-family: monospace;
 }

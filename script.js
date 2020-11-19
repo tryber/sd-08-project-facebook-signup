@@ -4,6 +4,9 @@ const customGenderDiv = document.querySelector('.genero-personalizado');
 const customGenderRadio = document.getElementById('Personalizado');
 const femaleGenderRadio = document.getElementById('Feminino');
 const maleGenderRadio = document.getElementById('Masculino');
+const signInForm = document.querySelector('.sign-in');
+const invalidMessage = document.querySelector('.invalid-form-message');
+const submitButton = document.getElementById('facebook-register');
 
 function alertLogin() {
   alert(emailInput.value);
@@ -30,3 +33,13 @@ function deleteCustomGender() {
 customGenderRadio.addEventListener('click', createCustomGender);
 femaleGenderRadio.addEventListener('click', deleteCustomGender);
 maleGenderRadio.addEventListener('click', deleteCustomGender);
+
+function validateForm() {
+  if (!signInForm.checkValidity()) {
+    invalidMessage.innerHTML = 'Campos inválidos';
+  } else {
+    invalidMessage.innerHTML = '';
+  }
+}
+
+submitButton.addEventListener('click', validateForm);

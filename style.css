@@ -52,3 +52,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.top-right {
+  align-self: center;
+}

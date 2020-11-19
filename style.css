@@ -9,7 +9,9 @@
 }
 
 .login {
+  align-items: center;
   display: flex;
+  margin-right: 10px;
 }
 
 .main-content {
@@ -17,8 +19,3 @@
   max-width: 960px;
 }
 
-.login {
-  align-items: center;
-  display: flex;
-  margin-right: 10px;
-}

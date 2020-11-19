@@ -36,13 +36,13 @@
   width: 370px;
 }
 
-.right-content form div.login-register-container {
+.login-register-container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.right-content form div.birthdate-container {
+.birthdate-container {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }

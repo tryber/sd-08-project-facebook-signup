@@ -26,7 +26,7 @@
 
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .left-content {
@@ -40,4 +40,10 @@
 
 .form-signup {
   display: flex;
+}
+
+
+.radio-btns {
+  display: flex;
+  wrap: nowrap;
 }

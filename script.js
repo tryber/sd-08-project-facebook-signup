@@ -1,6 +1,6 @@
 const emailLogin = document.querySelector('#user-email-phone');
 const btnLogin = document.querySelector('#button-login');
-const paiPersonalizado = document.querySelector('#other').parentNode;
+const paiPersonalizado = document.querySelectorAll('.form-content')[1];
 let personalizadoOn = 0;
 btnLogin.addEventListener('click', () => {
   if (emailLogin.value !== '') alert(emailLogin.value);
@@ -9,8 +9,8 @@ btnLogin.addEventListener('click', () => {
 function abrePersonalizado() {
   if (!personalizadoOn) {
     const newInput = document.createElement('input');
-    newInput.placeholder = 'Digite seu Gênero';
-    newInput.name = 'gender';
+    newInput.placeholder = 'Gênero (opcional)';
+    newInput.name = 'gender-custom';
     newInput.id = 'newInput';
     paiPersonalizado.appendChild(newInput);
     personalizadoOn = 1;

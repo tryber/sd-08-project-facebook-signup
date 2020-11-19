@@ -70,6 +70,11 @@ body {
   margin-left: 5px;
   margin-top: 5px;
   padding: 5px;
+  width: 100%;
+}
+
+.form .birthdate-input {
+  margin-left: 10px;
 }
 
 .form .label-gender {

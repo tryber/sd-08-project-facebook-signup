@@ -43,10 +43,9 @@ function isEverythingFilled() {
     if (caRadioInputList[0].checked === false && caRadioInputList[1].checked === false && caRadioInputList[2].checked === false) {
       isntFilledCount += 1;
     }
-    if (isntFilledCount != 0) {
+    if (isntFilledCount !== 0) {
       alert('Campos inválidos');
     }
   });
 }
 isEverythingFilled();
-

@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 .top-bar {
@@ -27,6 +29,22 @@
   background-color: lightgrey;
 }
 
+form input:nth-child( 1 ) {
+  width: 50%;
+  padding: 10px;
+}
+
+form input:nth-child( 2 ) {
+  width: 50%;
+  padding: 10px;
+}
+
+form input:nth-child( 3 ) {
+  width: 100%;
+  padding: 10px;
+}
+
 form {
   display: flex;
+  flex-wrap: wrap;
 }

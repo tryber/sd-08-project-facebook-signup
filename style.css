@@ -3,14 +3,14 @@
   display: flex;
   justify-content: space-between;
 }
-.facebook-login {
+.facebook-login{
   display: flex;
   flex-direction: row;
 }
-.form-group {
+.form-group{
   display: flex;
   flex-direction: column;
 }
-.form-control {
+.form-control{
   align-self: flex-end;
 }

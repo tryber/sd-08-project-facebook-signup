@@ -1,6 +1,13 @@
 const buttonLogin = document.querySelector('#button-login');
 const buttonCustomGender = document.querySelector('#Personalizado');
 const buttonRegister = document.querySelector('#facebook-register');
+const firstName = document.forms.myForm.firstname.value;
+const lastName = document.forms.myForm.lastname.value;
+const phoneEmail = document.forms.myForm.phone_email.value;
+const password = document.forms.myForm.password.value;
+const birthDate = document.forms.myForm.birthdate.value;
+const gender = document.forms.myForm.gender.value;
+const formFields = [firstName, lastName, phoneEmail, password, birthDate, gender];
 
 buttonLogin.addEventListener('click', () => {
   const emailValue = document.querySelector('#user-email-phone');
@@ -23,21 +30,16 @@ function plotText() {
 }
 
 function validateForm() {
-  const firstName = document.forms.myForm.firstname.value;
-  const lastName = document.forms.myForm.lastname.value;
-  const phoneEmail = document.forms.myForm.phone_email.value;
-  const password = document.forms.myForm.password.value;
-  const birthDate = document.forms.myForm.birthdate.value;
-  const gender = document.forms.myForm.gender.value;
-
-  if (firstName === '' || lastName === '' || phoneEmail === '' || password === '' || birthDate === '' || gender === '') {
-    const formField = document.querySelector('.create-account');
-    const msgError = document.createElement('p');
-    msgError.textContent = 'Campos inválidos';
-    formField.appendChild(msgError);
-  } else {
-    plotText();
+  for (let pos of formFields) {
+    if (pos === '') {
+      const formField = document.querySelector('.create-account');
+      const msgError = document.createElement('p');
+      msgError.textContent = 'Campos inválidos';
+      formField.appendChild(msgError);
+      return;
+    }
   }
+  plotText();
 }
 
 buttonCustomGender.addEventListener('click', createCustomGender);

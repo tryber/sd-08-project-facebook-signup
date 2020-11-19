@@ -6,4 +6,3 @@ function funcaoAlert() {
 }
 
 buttonLogin.addEventListener('click', funcaoAlert());
-

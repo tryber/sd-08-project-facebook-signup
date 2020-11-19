@@ -39,3 +39,35 @@ body {
 .left-content {
   width: 800px;
 }
+
+.right-content {
+  width: 300px;
+}
+
+.right-content form {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.name {
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.name input {
+  max-width: 140px;
+}
+
+.mail input {
+  margin-bottom: 10px;
+  width: 290px;
+}
+
+.date {
+  margin-bottom: 10px;
+}
+
+.gender {
+  font-size: 15px;
+  margin-bottom: 10px;
+}

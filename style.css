@@ -20,8 +20,7 @@
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
+ }
 
 .left-content {
   width: 800px;

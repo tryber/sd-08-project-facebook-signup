@@ -56,3 +56,7 @@ label {
 .full-name {
   display: flex;
 }
+
+.custom-input {
+  display: block;
+}

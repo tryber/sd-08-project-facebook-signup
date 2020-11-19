@@ -47,5 +47,4 @@ body {
 .gender {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: baseline;
 }

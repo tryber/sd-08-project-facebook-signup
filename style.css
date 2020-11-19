@@ -11,7 +11,7 @@ body {
 }
 
 .facebook-logo {
-  align-items: left;
+  align-items: flex-start;
 }
 
 .facebook-login {
@@ -19,9 +19,9 @@ body {
 }
 
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
-  color: white;
 }
 
 .distancia {

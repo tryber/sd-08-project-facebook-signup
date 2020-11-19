@@ -12,7 +12,7 @@ body {
 
 .facebook-login {
   display: flex;
-  margin-right: 10px;
+  align-self: flex-end;
 }
 
 .form-group {

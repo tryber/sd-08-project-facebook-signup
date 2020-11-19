@@ -20,6 +20,10 @@
   display: flex;
   flex-direction: row;
 }
+.right-content {
+  width: 300px;
+  justify-content: space-around;
+}
 
 .top-bar {
   background-color: rgb(66, 103, 178);

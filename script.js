@@ -11,7 +11,7 @@ buttonRegister.addEventListener('click', () => {
   const input = document.getElementsByClassName('input');
   const gender = document.getElementsByClassName('gender');
   let helper = false;
-  
+
   for (let i = 0; i < gender.length; i += 1) {
     if (gender[i].checked) {
       helper = true;

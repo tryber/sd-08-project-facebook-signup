@@ -16,7 +16,7 @@ function formsCheck() {
   btnSubmit.addEventListener('click', function (event) {
     for (let i = 0; i < formsContent.length; i += 1) {
       if (formsContent[i].value === '') {
-        formsContent[i].value = 'Campo inválido';
+        formsContent[i].value = 'Campos inválidos';
         event.preventDefault();
       }
     }

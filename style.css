@@ -10,7 +10,7 @@ body {
 }
 
 .facebook-logo {
-  align-self: start;
+  align-self: flex-start;
   margin-top: 10px;
   width: 150px;
 }

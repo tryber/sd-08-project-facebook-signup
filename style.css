@@ -21,7 +21,7 @@ body {
   flex-direction: column;
 }
 
-.form-control{
+.form-control {
   align-self: flex-end;
 }
 

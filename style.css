@@ -1,40 +1,51 @@
 body {
-  box-sizing: border-box;
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 .top-bar {
-  background-color: rgb(66, 103, 178);
+	background-color: rgb(66, 103, 178);
+	display: flex;
+}
+
+.top-bar img {
+	justify-content: left;
+	justify-self: left;
+	float: left;
 }
 
 .header-container {
-  align-items: flex-end;
-  display: flex;
-  justify-content: space-around;
-  max-width: 1024px;
+	align-items: flex-end;
+	display: flex;
+	max-width: 1024px;
 }
 
 .facebook-login {
-  align-items: center;
-  display: flex;
+	align-items: center;
+	display: flex;
+	justify-content: right;
+	float: right;
 }
 
 .form {
-  flex-direction: column;
-  margin: 10px;
-  width: 150px;
+	justify-content: right;
+	justify-items: right;
+	justify-self: right;
+	flex-direction: column;
+	margin: 10px;
+	width: 150px;
 }
 
 .facebook-login button {
-  background-color: #4267b2;
-  border: 1px solid #29487d;
-  color: white;
-  font-weight: 700;
-  padding: 5px;
+	background-color: #4267b2;
+	border: 1px solid #29487d;
+	color: white;
+	font-weight: 700;
+	padding: 5px;
 }
 
 .facebook-login label {
-  color: white;
+	color: white;
 }

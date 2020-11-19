@@ -32,12 +32,12 @@
   width: 300px;
 }
 
-.quick-easy form{
+.quick-easy form {
   display: flex;
   flex-wrap: wrap;
 }
 
-.rightName{
+.rightName {
   flex-basis: 40%;
   margin: 10px;
   width: 100px;

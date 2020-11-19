@@ -1,41 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .top-bar {
-    background-color: rgb(66, 103, 178);
-
+  background-color: rgb(66, 103, 178);
 }
 
-#header-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    max-width: 1024px;
+.header-container {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1024px;
 }
 
 .facebook-login {
-    display: flex;
-    align-items: center;
+  align-items: center;
+  display: flex;
 }
 
 .form {
-    flex-direction: column;
-    margin: 10px;
-    width: 150px;
+  flex-direction: column;
+  margin: 10px;
+  width: 150px;
 }
 
 .facebook-login button {
-    background-color: #4267b2;
-    border: 1px solid #29487d;
-    color: white;
-    font-weight: bold;
-    padding: 5px;
+  background-color: #4267b2;
+  border: 1px solid #29487d;
+  color: white;
+  font-weight: 700;
+  padding: 5px;
 }
 
 .facebook-login label {
-    color: white;
+  color: white;
 }

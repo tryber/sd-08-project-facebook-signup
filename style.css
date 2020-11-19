@@ -19,7 +19,7 @@ body {
 .facebook-login {
   display: flex;
   justify-content: space-between;
-  width: 390px;
+  width: 440px;
 }
 
 .form-group {
@@ -30,4 +30,8 @@ body {
 .form-group label {
   color: white;
   font-family: monospace;
+}
+
+.form-control {
+  align-self: flex-end;
 }

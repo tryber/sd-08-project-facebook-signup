@@ -51,9 +51,4 @@ header {
 
 .fullname {
   display: flex;
-
-}
-
-.genders {
-  font-size: 0.9em;
 }

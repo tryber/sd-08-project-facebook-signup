@@ -1,5 +1,5 @@
-let botaoLogin = document.getElementById("button-login");
+const botaoLogin = document.getElementById('button-login');
 
-botaoLogin.addEventListener("click",function(){
-  alert("Email ou telefone");
+botaoLogin.addEventListener('click' , function () {
+  alert('Email ou telefone');
 });

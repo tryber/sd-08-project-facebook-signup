@@ -1,11 +1,10 @@
 const enterBtn = document.querySelector('.form-control');
-const formItems = document.querySelector('#form-signup');
 const customGender = document.querySelector('#custom');
 
 enterBtn.addEventListener('click', (event) => {
   event.preventDefault();
   const emailValue = document.getElementById('user-email-phone');
-  alert(emailValue.value);  
+  alert(emailValue.value);
 });
 
 

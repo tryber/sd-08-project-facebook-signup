@@ -1,6 +1,12 @@
 .top-bar {
-    display: flex;
     background-color: rgb(66, 103, 178);
+    display: flex;
+    width: 1366px;
+    justify-content: space-around;
+}
+
+.facebook-logo {
+    text-align: right;
 }
 
 .facebook-login {
@@ -12,7 +18,8 @@
 }
 
 .form {
-    width: 300px;
+    flex-direction: column;
+    width: 200px;
 }
 
 #input-email {

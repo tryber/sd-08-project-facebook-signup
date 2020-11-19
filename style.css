@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-cadastro {
+  margin-top: 10px;
+}
+
+.btn-gender {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-gender input {
+  margin: 0 2px 0 10px;
+}
+
+.containerHeader {
+  align-items: center;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  width: 1100px;
+}
+
+.esqueceu {
+  color: #cecece;
+  font-size: 12px;
+  margin: 0;
+  margin-top: 1px;
+  padding: 0;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+.form-control button {
+  align-self: center;
+  background-color: blue;
+  border: 1px solid black;
+  color: white;
+  height: 30px;
+}
+
+.form-group input {
+  width: 150px;
+}
+
+.form-group {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.name input {
+  width: 100px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.right-content input {
+  margin: 4px 0;
+}
+
+.quick-easy {
+  margin: 5px 0;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}

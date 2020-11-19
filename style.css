@@ -1,0 +1,15 @@
+* {
+  font-family: "Montserrat", sans-serif, Arial;
+  margin: 0;
+}
+
+.top-bar {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  height: 12vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(66, 103, 178);
+}

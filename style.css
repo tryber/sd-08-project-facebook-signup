@@ -29,6 +29,7 @@ body {
 
 .form-group {
   display: flex;
+  flex-direction: column;
 }
 
 .left-content {
@@ -49,4 +50,9 @@ body {
 
 .form-control {
   align-self: flex-end;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: center;
 }

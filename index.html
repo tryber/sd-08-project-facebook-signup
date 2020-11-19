@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <title>Facebook</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
     <article class="top-bar">
 
       <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook Logo">
-      <form class="facebook-login" action="POST">
+      <form class="facebook-login">
 
         <fieldset class="form-group">
 
@@ -24,6 +25,11 @@
 
           <label for="" id="user-password-label">Senha</label>
           <input type="text" id="user-password">
+        </fieldset>
+
+        <fieldset class="form-control">
+
+          <button id="button-login">Entrar</button>
         </fieldset>
 
       </form>

@@ -21,8 +21,16 @@ body {
   display: flex;
 }
 
-.form-group {
+fieldset {
   border: none;
+}
+
+.form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
 }

@@ -49,3 +49,19 @@ body {
 .form input:nth-child( 2 ) {
   width: 135px;
 }
+
+.birthdate {
+  margin-right: 70px;
+}
+
+.gender-container input:nth-child( 1 ) {
+  width: 10px;
+}
+
+.gender-container input:nth-child( 2 ) {
+  width: 10px;
+}
+
+.gender-container input:nth-child( 3 ) {
+  width: 10px;
+}

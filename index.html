@@ -7,33 +7,49 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <header class="top-bar">
+    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do Facebook">
+    <form class="facebook-login" action="">
+      <div class="form-group">
+        <label id="user-email-phone-label" for="">Email ou telefone</label>
+        <input type="text" id="user-email-phone">
+      </div>
+      <div class="form-group">
+        <label id="user-password-label" for="">Senha</label>
+        <input type="text" id="user-password">
+      </div>
+      <div class="form-control">
+        <button id="button-login">Entrar</button>
+      </div>
+    </form>
+  </header>
   
+  <script src="script.js"></script>
+
   <container class="main-content ">
     <subcontainer class="left-content"> 
-<p> "O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida."</p>
-<img src=imgs/networking.png alt="FacebookLogo" id="facebook-networking">
+      <p> "O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida."</p>
+      <img src=imgs/networking.png alt="FacebookLogo" id="facebook-networking">
     </subcontainer>
-
     <subcontainer class="right-content"> 
-      <h1> "Abra uma conta" </h1>
-      <p class=" quick-easy ">  "É rápido e fácil." </p>
+        <h1> "Abra uma conta" </h1>
+        <p class=" quick-easy ">  "É rápido e fácil." </p>
       <form >
         <section class="inputs">
-        <input type="text" name="firstname" placeholder="Nome">
-        <input type="text" name="lastname" placeholder="Sobrenome">
+          <input type="text" name="firstname" placeholder="Nome">
+          <input type="text" name="lastname" placeholder="Sobrenome">
         </section>
         <section class="input2">
-        <input class ="input2" type="text" name="phone_email" placeholder="Celular ou email">
-      </section>
-      <section class="input2">
-        <input  type="password" name="password" placeholder="Nova senha">
-      </section>
+          <input class ="input2" type="text" name="phone_email" placeholder="Celular ou email">
+        </section>
+        <section class="input2">
+          <input  type="password" name="password" placeholder="Nova senha">
+        </section>
       </form>
     </subcontainer>
 
 
   </container>
-
-  <script src="script.js"></script>
 </body>
 </html>

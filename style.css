@@ -20,14 +20,17 @@
 
 .main-content {
   display: flex;
-  justify-content:center
+  justify-content: center;
 }
 
-.left-content{
+.left-content {
   width: 800px;
 }
 
-.right-content{
+.right-content {
   width: 300px;
 }
 
+.personal-information {
+  display: flex;
+}

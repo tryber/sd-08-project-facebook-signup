@@ -16,11 +16,11 @@ buttonEntrar.addEventListener('click', function () {
 function cadastro() {
   const mensagemErro = document.createTextNode('Campos inválidos');
   for (const valores in variaveis) {
-    if (valores.value === '') {
+    if (valores.value == null) {
       rapidoFacil.appendChild(mensagemErro);
       return false;
     }
   }
   return true;
 }
-cadastro ();
+// cadastro();

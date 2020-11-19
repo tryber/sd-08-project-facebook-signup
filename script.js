@@ -27,7 +27,8 @@ function fechaPersonalizado() {
 const fecha = fechaPersonalizado;
 const abre = abrePersonalizado;
 if (personalizadoOn == 5) {
-  echo fecha + abre;
+  fecha();
+  abre();
 }
 // function erroCampos() {
 //   const gender = document.querySelector('input[name="gender"]:checked');

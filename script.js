@@ -2,6 +2,12 @@
 
 const buttonEntrar = document.querySelector('#button-login');
 
+function addAlert () {
 buttonEntrar.addEventListener('click', function () {
-  alert('Email ou telefone');
+  const inputEmail = document.querySelector('#user-email-phone');
+  alert(inputEmail.value);
 });
+}
+addAlert();
+
+

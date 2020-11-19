@@ -1,3 +1,7 @@
+.email-password {
+  width: 100%;
+}
+
 .facebook-login {
   display: flex;
 }
@@ -10,6 +14,33 @@
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.gender{
+  font-size: 15px;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.name-lastname {
+  width: 45%;
+}
+
+.register {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.right-content {
+  width: 300px;
 }
 
 .top-bar {

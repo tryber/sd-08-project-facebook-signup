@@ -28,20 +28,67 @@
     </header>
     <div class="main-content">
       <div class="left-content">
-        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-        <img src="imgs/networking.png" id="facebook-networking">
+        <p id="facebook-slogan">
+          O Facebook ajuda você a se conectar e compartilhar com as pessoas que
+          fazem parte da sua vida.
+        </p>
+        <img src="imgs/networking.png" id="facebook-networking" />
       </div>
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <form class="forms">
-          <input class="small" type="text" name="firstname" placeholder="Nome">
-          <input class="small" type="text" name="lastname" placeholder="Sobrenome">
-          <input class="large" type="text" name="phone_email" placeholder="Celular ou email">
-          <input class="large" type="password" name="password" placeholder="Nova senha">
+          <input
+            class="small"
+            type="text"
+            name="firstname"
+            placeholder="Nome"
+          />
+          <input
+            class="small"
+            type="text"
+            name="lastname"
+            placeholder="Sobrenome"
+          />
+          <input
+            class="large"
+            type="text"
+            name="phone_email"
+            placeholder="Celular ou email"
+          />
+          <input
+            class="large"
+            type="password"
+            name="password"
+            placeholder="Nova senha"
+          />
           <label class="large" id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" class="large" placeholder="dd/mm/aaaa">
+          <input
+            type="text"
+            name="birthdate"
+            class="large"
+            placeholder="dd/mm/aaaa"
+          />
+          <label class="large" id="label-gender">Gênero</label>
+          <input
+            type="radio"
+            name="gender"
+            checked
+            id="feminino"
+            value="Feminino"
+          />
+          <label class="gender" for="feminino">Feminino</label>
+          <input type="radio" name="gender" id="masculino" value="Masculino" />
+          <label class="gender" for="masculino">Masculino</label>
+          <input
+            type="radio"
+            name="gender"
+            id="personalizado"
+            value="Personalizado"
+          />
+          <label class="gender" for="personalizado">Personalizado</label>
         </form>
       </div>
     </div>
+  </body>
 </html>

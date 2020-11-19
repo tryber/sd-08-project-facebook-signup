@@ -46,3 +46,7 @@
   flex-basis: 100%;
   min-width: 0;
 }
+
+.gender {
+  font-size: 13px;
+}

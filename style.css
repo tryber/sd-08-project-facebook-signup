@@ -1,56 +1,56 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.top-bar{
-  display: flex;
-  background-color: rgb(66, 103, 178);
-}
-
-.facebook-login{
-  display: flex;
-}
-
-.form-group{
-  display: flex;
-  flex-direction: column;
-}
-
-.form-control{
-  align-self: flex-end
-}
-
-.main-content{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.left-content{
-  width: 800px;
-}
-
-.right-content{
-  width: 300px;
-  margin-bottom: 10px;
-}
-
-#formUser{ 
+#formUser { 
   margin-top: 10px;
 }
 
 .box1{
   display: flex;
   flex-direction: row;
-  
 }
 
-.box2{
+.box2 {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end
+}
+
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.right-content {
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 

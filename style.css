@@ -12,11 +12,10 @@ body {
 
 .facebook-login {
   margin-right: 10px;
+  flex-wrap: wrap;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  
 }

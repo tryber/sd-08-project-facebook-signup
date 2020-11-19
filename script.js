@@ -26,7 +26,7 @@ function fechaPersonalizado() {
 }
 const fecha = fechaPersonalizado;
 const abre = abrePersonalizado;
-if (personalizadoOn == 5) {
+if (personalizadoOn === 5) {
   fecha();
   abre();
 }

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #e2eeff;
+}
+
+.header {
+  border-bottom: 1px solid #133783;
+  background-color: rgb(66, 103, 178);
+  min-height: 82px;
+  color: #fff;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  max-width: 980px;
+  height: 82px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  /* background-size: auto; */
+  /* background-repeat: no-repeat; */
+  /* display: inline-block; */
+  /* width: 170px; */
+  /* height: 34px; */
+  /* margin-top: 17px; */
+}
+
+.form {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+}
+
+.inputemail,
+.inputpassword {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin-left: 14px;
+}
+
+.user-email-phone-label {
+  padding-bottom: 4px;
+}
+
+.linkpassword {
+  padding-top: 4px;
+  color: #9cb4d8;
+  text-decoration: none;
+}
+
+.linkpassword:hover {
+  text-decoration: underline;
+}
+
+.input {
+  height: 23px;
+  width: 150px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: flex;
+}
+
+#button-login {
+  margin-left: 14px;
+  width: 50px;
+  height: 23px;
+  margin-top: 1.2rem;
+  display: flex;
+  align-self: center;
+  justify-content: flex;
+  flex-direction: column;
+
+  background-color: #4267b2;
+  border-color: #29487d;
+  border-width: 1px;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.inputbtn:hover {
+  background-color: #365899;
+  border-color: #29487d;
+}

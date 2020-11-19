@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar"> <!--1º requesito obrigatorio-->
+            <div class="facebook-logo"><img src="imgs/facebook-logo.png" alt="facebook" srcset=""></div> <!--2º requesito obrigatorio-->
+            <div class="facebook-login"><!--3º requesito obrigatorio-->
+                <form class="form-group" action=""><!--4º requesito obrigatorio-->
+                    <div class="inputemail"> <!--5º requesito obrigatorio-->
+                        <label class="user-email-phone-label" for="">Email ou telefone</label>
+                        <input  id="user-email-phone" class="input" type="text">
+                    </div>
+                    <div class="inputpassword"> <!--6º requesito obrigatorio-->
+                        <label id="user-password-label" class="user-email-phone-label" for="">Senha</label>
+                        <input id="user-password" class="input" type="password">
+                        <a class="linkpassword" href="#">Esqueceu a conta?</a>
+                    </div>
+                    <div id="form-control">
+                        <input id="button-login" type="submit" value="Entrar" onclick="entrar()"> <!--7º requesito obrigatorio-->
+                    </div>
+                </form>                
+            </div>    
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>

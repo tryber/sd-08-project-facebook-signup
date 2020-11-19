@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Helvetica, sans-serif;
 }
 
 .top-bar {
@@ -33,4 +34,9 @@ fieldset {
 .form-control {
   align-self: flex-end;
   display: flex;
+}
+
+.main-content {
+  display: flex;
+  background-color: rgb(240, 242, 245);
 }

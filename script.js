@@ -12,10 +12,10 @@ const buttonRegister = document.querySelector('#facebook-register');
 function verifyFields() {
   const firstname = document.querySelector('.firstname').value;
   const lastname = document.querySelector('.lastname').value;
-  const phone_email = document.querySelector('.phone_email').value;
+  const phoneEmail = document.querySelector('.phone_email').value;
   const password = document.querySelector('.password').value;
   const birthdate = document.querySelector('.birthdate').value;
-  const fields = [firstname, lastname, phone_email, password, birthdate]
+  const fields = [firstname, lastname, phoneEmail, password, birthdate];
   for (let i = 0; i < fields.length; i += 1) {
     if (fields[i] === '') {
       alert('Campos inválidos');
@@ -37,4 +37,4 @@ function customGender() {
   }
 }
 
-custom.addEventListener('change', customGender)
+custom.addEventListener('change', customGender);

@@ -1,27 +1,41 @@
-.top-bar{
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 70px;
   justify-content: space-around;
 }
-.form-group{
-  display: flex;
-  flex-direction: column;
+
+.top-bar p {
+  color: white;
+  opacity: 0.7;
+  margin-top: 6px;
+  padding-left: 1px;
+  font-size: 0.8em;
 }
-#user-email-phone-label{
+
+.top-bar label {
+  font-size: 0.8em;
+}
+
+.form-group {
   display: flex;
   flex-direction: column;
+  color: white;
   padding-right: 10px;
+  
 }
-.facebook-login{
+
+.facebook-login { 
   display: flex;
 }
-#user-password-label{
-  display: flex;
-  flex-direction: column;
-}
-#button-login{
+
+#button-login {
   background-color: rgb(66, 103, 178);
   margin: 18px 10px;
-  color:white;
+  color: white;
 }

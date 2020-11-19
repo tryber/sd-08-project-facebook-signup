@@ -36,6 +36,7 @@ html , body {
 
 .main-content {
   display: flex;
+  justify-content: center;
 }
 
 .left-content {
@@ -43,5 +44,5 @@ html , body {
 }
 
 .right-content {
-  width: 800px;
+  width: 300px;
 }

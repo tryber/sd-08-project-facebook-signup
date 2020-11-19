@@ -47,11 +47,19 @@ html , body {
   width: 300px;
 }
 
-form input{
+form input {
   width: 100%;
+}
+
+form label {
+  display: flex;
 }
 
 .form-group-name {
   display: flex;
   justify-content: space-between;
+}
+
+.form-group-genere {
+  display: flex;
 }

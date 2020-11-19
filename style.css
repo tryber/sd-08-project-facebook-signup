@@ -7,14 +7,23 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 20px;
 }
 
 .facebook-login {
+  align-items: center;
+  color: white;
   display: flex;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-right: 6px;
+}
+
+.form-control {
+  align-self: flex-end;
+  justify-content: center;
 }

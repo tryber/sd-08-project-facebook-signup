@@ -29,8 +29,12 @@ body {
 }
 
 form input {
+  border-radius: 3px;
+  border: 1px solid #0005;
+  box-sizing: border-box;
   height: 30px;
-  margin: 5px;
+  margin: 0 0 10px 0;
+  padding: 5px;
   width: 100%;
 }
 
@@ -66,8 +70,10 @@ form input {
 }
 
 .main-content {
+  background-image: linear-gradient(to top, #d3d8e8, white);
   display: flex;
   flex-flow: row nowrap;
+  height: 550px;
   padding: 0 20%;
 }
 
@@ -87,11 +93,13 @@ form input {
 .right-content {
   display: flex;
   flex-flow: column nowrap;
+  padding-top: 30px;
   width: 300px;
 }
 
 .nomecompleto {
   display: flex;
+  justify-content: space-between;
 }
 
 .radioButtons {
@@ -99,5 +107,58 @@ form input {
 }
 
 .nomecompleto input {
+  margin: 0 0 10px 0;
+  width: 49%;
+}
+
+footer {
+  padding: 0 20%;
+}
+
+footer p {
+  color: #4267b288;
+}
+
+.input-genero {
+  display: block;
+}
+
+.bold-grey {
+  font-weight: 900;
+  color: #0005;
+}
+.radioButtons {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.radioButtons label {
+  font-size: 0.9em;
+}
+
+.radioButtons input {
+  margin: 0 5px;
+  width: 12px;
+}
+
+form button {
+  background-image: linear-gradient(to top, #5b9147, #65a953);
+  border-radius: 5px;
+  border: 1px solid #5b9147;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 900;
+  padding: 10px 30px;
+  text-shadow: -1px 1px grey;
+}
+
+form p {
+  font-size: 0.7em;
+  color: #0008;
+}
+
+.right-content h1 {
+  font-size: 2em;
   margin: 0;
 }

@@ -5,6 +5,7 @@ function loginButtonAlert() {
     alert(emailPhone);
   });
 }
+
 loginButtonAlert();
 
 function createGenderField() {

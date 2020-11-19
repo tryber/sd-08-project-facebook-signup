@@ -1,13 +1,18 @@
-.header {
+.top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-around;
-  left: 0;
   position: fixed;
   top: 0;
   width: 100%;
+  left: 0;
 }
 
 .login {
   display: flex;
+}
+
+.main-content {
+  max-width: 960px;
+  margin: 0 auto;
 }

@@ -42,9 +42,9 @@
                 <section class="form-content">
                     <label for="gender" id="label-gender">Gênero</label>
                     <section class="btn-gender">
-                        <input type="radio" name="gender" id="female" value="Feminino" required /><label for="female">Feminino</label>
-                        <input type="radio" name="gender" id="male" value="Masculino"  required/><label for="male">Masculino</label>
-                        <input type="radio" name="gender" id="other" value="Personalizado" required /><label for="other">Personalizado</label>
+                        <input type="radio" onchange="fechaPersonalizado()" name="gender" id="female" value="Feminino" required /><label for="female">Feminino</label>
+                        <input type="radio" name="gender" onchange="fechaPersonalizado()" id="male" value="Masculino"  required/><label for="male">Masculino</label>
+                        <input type="radio" name="gender" onchange="abrePersonalizado()" id="other" value="Personalizado" required /><label for="other">Personalizado</label>
                     </section>
                 </section>
                 <button type="submit" id="facebook-register" class="btn-cadastro">Cadastre-se</button>

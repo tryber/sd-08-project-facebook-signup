@@ -1,3 +1,26 @@
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.left-content {
+    width: 800px;
+}
+
+.right-content {
+    width: 300px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row
+}
+
+.input2 {
+    display: flex;
+    flex-direction: column
+}
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;

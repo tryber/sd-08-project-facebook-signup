@@ -28,4 +28,18 @@ function cadastrar(){
 }
 cadastrar();
 
+let radioPersonalizado = document.querySelector("#pers");
+let box4 = document.querySelector(".box4");
+radioPersonalizado.addEventListener("click", function(){
+  let input = document.createElement("input");
+  input.type = "radio";
+  input.id = "opcional"
+  input.name = "gender-custom"
+  input.placeholder = "Gênero (opcional)";
+  let label = document.createElement("label");
+  label.for = "opcional";
+  label.innerHTML = "Gênero (opcional)";
+  box4.append(input);
+  box4.append(label); 
+});
 

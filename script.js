@@ -3,12 +3,12 @@ const btnLogin = document.querySelector('#button-login');
 btnLogin.addEventListener('click', () => {
   if (emailLogin.value !== '') alert(emailLogin.value);
 });
-function erroCampos() {
-  const gender = document.querySelector('input[name="gender"]:checked');
-  if (gender === null || gender === undefined) {
-    alert('Campos inválidos: Gênero');
-  }
-}
+// function erroCampos() {
+//   const gender = document.querySelector('input[name="gender"]:checked');
+//   if (gender === null || gender === undefined) {
+//     alert('Campos inválidos: Gênero');
+//   }
+// }
 // const nome = document.querySelector('#firstname');
 // const sobrenome = document.querySelector('#lastname');
 // const emailPhone = document.querySelector('#phone_email');

@@ -31,3 +31,16 @@ buttonRegister.addEventListener('click', () => {
     }
   }
 });
+
+const gender = document.getElementsByClassName('gender');
+const input = document.querySelector('.optional-input');
+
+for (let i = 1; i < gender.length; i += 1) {
+  gender[i].addEventListener('click', () => {
+    if (gender[3].checked) {
+      input.style.display = 'block';
+    } else {
+      input.style.display = 'none';
+    }
+  })
+};

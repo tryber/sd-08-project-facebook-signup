@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function alertLogin() {
   const emailOrPhone = document.getElementById('user-email-phone');
   alert(emailOrPhone.value);
@@ -7,7 +6,7 @@ function alertLogin() {
 function handleInputGender(event) {
   const registerForm = document.getElementById('signup-container');
   const customInputField = document.getElementById('custom-input');
-  
+
   if (event.target.value === 'Personalizado' && !customInputField) {
     const createCustomInput = document.createElement('input');
     const registerBtn = document.getElementById('facebook-register');

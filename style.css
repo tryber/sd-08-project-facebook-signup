@@ -7,14 +7,8 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 60px;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
-}
-
-.top-bar-content {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
 }
 
 .facebook-logo {
@@ -22,6 +16,7 @@ body {
 }
 
 .facebook-login {
+  align-items: center;
   display: flex;
 }
 
@@ -40,14 +35,10 @@ body {
   padding-right: 10px;
 }
 
-.form-group-content {
-  display: flex;
-  padding: 5px 10px;
-}
-
 .form-control {
   align-self: flex-end;
-  padding-bottom: 13px;
+  padding-bottom: 9px;
+  padding-left: 10px;
 }
 
 .main-content {

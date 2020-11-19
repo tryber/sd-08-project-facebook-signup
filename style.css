@@ -37,5 +37,14 @@ body {
 }
 
 .left-content {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
     width: 800px;
+    max-width: 800px;
+}
+
+.right-content {
+    width: 300px;
+    max-width: 300px;
 }

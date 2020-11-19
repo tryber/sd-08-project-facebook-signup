@@ -1,15 +1,17 @@
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 17vh;
   justify-content: space-between;
   width: 100%;
 }
-.form-group{
+
+.form-group {
   display: flex;
-  
 }
-.facebook-login{
+
+.facebook-login {
   display: flex;
   flex-direction: column;
 }

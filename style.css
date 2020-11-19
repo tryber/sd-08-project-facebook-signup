@@ -8,6 +8,10 @@
     background-color: rgb(66, 103, 178);
 }
 
-.facebook.log {
-    
+.facebook.logo {
+
+}
+
+.facebook.login {
+    display: flex;
 }

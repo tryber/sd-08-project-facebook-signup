@@ -6,8 +6,9 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
+
 .facebook-login {
   display: flex;
 }
@@ -23,4 +24,8 @@ body {
 
 .right-content {
   width: 300px;
+}
+
+.name {
+  display: flex;
 }

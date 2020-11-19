@@ -1,6 +1,6 @@
 body {
-  margin: 0;
   font-family: Helvetica, sans-serif;
+  margin: 0;
 }
 
 .top-bar {
@@ -37,6 +37,6 @@ fieldset {
 }
 
 .main-content {
-  display: flex;
   background-color: rgb(240, 242, 245);
+  display: flex;
 }

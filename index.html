@@ -31,29 +31,29 @@
         <section class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form id='form-signup' autocomplete='off'>
+            <form id='form-signup'>
                 <div class="form-signup">
-                  <input class="signup-input" name="firstname" placeholder="Nome" type="text">
-                  <input class="signup-input" name="lastname" placeholder="Sobrenome" type="text">
+                  <input name="firstname" placeholder="Nome" type="text">
+                  <input name="lastname" placeholder="Sobrenome" type="text">
                 </div>
                 <div>
-                  <input class="signup-input" name="phone_email" placeholder="Celular ou email" type="text">
-                  <input class="signup-input" name="password" type="password" placeholder="Nova senha">
+                  <input name="phone_email" placeholder="Celular ou email" type="text">
+                  <input name="password" type="password" placeholder="Nova senha">
                 </div>
                 <div>
                   <label for='birthdate' id="label-birthdate">Data de nascimento</label>
-                  <input class="signup-input" id='birthdate' type="text" name="birthdate" placeholder="dd/mm/aaaa">
+                  <input id='birthdate' type="text" name="birthdate" placeholder="dd/mm/aaaa">
                   <br>
                   <label id="label-gender">Gênero</label>
                   <div class="radio-btns">
                     <label for="female">Feminino</label>
-                    <input class="signup-input" id="female" type="radio" name="gender">
+                    <input id="female" type="radio" name="gender" checked>
                     <label for="male">Masculino</label>
-                    <input class="signup-input" id="male" type="radio" name="gender">
+                    <input id="male" type="radio" name="gender">
                     <label for="custom">Personalizado</label>
-                    <input class="signup-input" type="radio" name="gender" id="custom">
+                    <input type="radio" name="gender" id="custom">
                   </div>
-                  <input class="signup-input" type="text" name="gender-custom" class="gender-custom" placeholder="Genêro (opcional)"><br>
+                  <input type="text" name="gender-custom" class="gender-custom" placeholder="Genêro (opcional)"><br>
                   <button type="submit" id="facebook-register">Cadastre-se</button>
                 </div>
             </form>

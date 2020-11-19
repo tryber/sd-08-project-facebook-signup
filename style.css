@@ -9,12 +9,18 @@
     justify-content: space-evenly;
 }
 
-.facebook.login {
+.facebook-logo {
+    width: auto;
+}
+
+.facebook-login {
     display: flex;
+    
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     color: white;
+    margin: 10px;
 }

@@ -1,7 +1,8 @@
-const loginButton = document.getElementById("button-login");
-loginButton.addEventListener("click", sendForm);
+const loginButton = document.getElementById('button-login');
 
-function sendForm(){
-const emailPhone = document.getElementById("user-email-phone");
-alert(emailPhone.value);
+function sendForm() {
+  const emailPhone = document.getElementById('user-email-phone');
+  alert(emailPhone.value);
 }
+
+loginButton.addEventListener('click', sendForm);

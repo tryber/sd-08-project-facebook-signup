@@ -1,18 +1,67 @@
 body {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 .top-bar {
-    background-color: rgb(66, 103, 178);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
+
 .facebook-logo {
-    text-align: left;
-    width: 100px;
+  text-align: left;
+  width: 100px;
 }
+
 .facebook-login {
-    display: flex;
+  display: flex;
+}
+
+.main-content {
+  border: 2px solid black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.main-content .left-content {
+  border: 2px solid red;
+  width: 800px;
+}
+
+.main-content .right-content {
+  border: 2px solid red;
+  width: 300px;
+}
+
+.form {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.form .name-input {
+  margin: 0 auto;
+  padding: 5px;
+  width: 40%;
+}
+
+.form .lastname-input {
+  margin: 0 auto;
+  padding: 5px;
+  width: 40%;
+}
+
+.form .phoneemail-input {
+  margin: 10px auto;
+  padding: 5px;
+  width: 90%;
+}
+
+.form .password-input {
+  margin: 0 auto;
+  padding: 5px;
+  width: 90%;
 }

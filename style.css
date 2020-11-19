@@ -33,3 +33,7 @@ html , body {
 .form-control {
   display: flex;
 }
+
+.main-content{
+  display: flex;
+}

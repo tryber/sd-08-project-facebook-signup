@@ -1,12 +1,29 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .top-bar {
     background-color: rgb(66, 103, 178);
     display: flex;
+    justify-content: space-around;
     position: absolute;
-    height: 100px;
     top: 0;
     left: 0;
     right: 0;
 }
 .facebook-logo {
-    
+
+} 
+
+.facebook-login {
+    background-color: azure;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

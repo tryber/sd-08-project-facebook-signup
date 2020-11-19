@@ -21,3 +21,12 @@ body {
   flex-direction: column;
   margin: 10px;
 }
+
+.form-control {
+  display: flex;
+  align-items: flex-end;
+}
+
+.form-control button {
+  align-self: flex-end; /* Obrigatório*/
+}

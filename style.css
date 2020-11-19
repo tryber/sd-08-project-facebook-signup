@@ -1,50 +1,60 @@
 html,
 body {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+label {
+  display: block;
 }
 
 .top-bar {
-    align-items: center;
-    background-color: rgb(66, 103, 178);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .facebook-login {
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
 }
 
 .form-control {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 20px 0;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 20px 0;
+  justify-content: center;
 }
 
 .left-content {
-    display: flex;
-    align-items: flex-start;
-    flex-flow: column wrap;
-    width: 800px;
-    max-width: 800px;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  width: 800px;
+  max-width: 800px;
 }
 
 .right-content {
-    width: 300px;
-    max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-width: 300px;
+}
+
+.full-name {
+  display: flex;
 }

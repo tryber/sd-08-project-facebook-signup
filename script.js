@@ -4,7 +4,7 @@ const buttonEntrar = document.querySelector('#button-login');
 
 function addAlert() {
   buttonEntrar.addEventListener('click', function () {
-    const inputEmail = document.querySelector('#user-email-phone');
+    //  const inputEmail = document.querySelector('#user-email-phone');
     alert('Email ou telefone');
   });
 }

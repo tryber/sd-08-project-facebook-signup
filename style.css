@@ -16,13 +16,8 @@ body , header , img {
   display: flex;
 }
 
-.top-bar .input-group {
+.top-bar .form-group {
   display: flex;
   flex-direction: column;
   margin-right: 15px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
 }

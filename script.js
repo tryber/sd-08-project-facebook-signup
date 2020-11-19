@@ -6,13 +6,13 @@ function alertaLogin() {
 const botaoLogin = document.querySelector('#button-login');
 botaoLogin.addEventListener('click', alertaLogin);
 
-let custom = document.querySelector('#custom');
+const custom = document.querySelector('#custom');
 custom.addEventListener('click', function () {
-  let custom_input = document.createElement('input');
-  custom_input.type = 'text';
-  custom_input.name = 'gender-custom';
-  custom_input.placeholder = 'Gênero (opcional)'
-  document.querySelector('.custom-content').appendChild(custom_input);
+  const customInput = document.createElement('input');
+  customInput.type = 'text';
+  customInput.name = 'gender-custom';
+  customInput.placeholder = 'Gênero (opcional)';
+  document.querySelector('.custom-content').appendChild(customInput);
 });
 
 function checaValidacao() {
@@ -27,5 +27,3 @@ function checaValidacao() {
 }
 const submit = document.querySelector('#facebook-register');
 submit.addEventListener('click', checaValidacao);
-
-

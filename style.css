@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -30,12 +30,12 @@ body {
   padding-right: 10px;
 }
 
-.facebook-login { 
+.facebook-login {
   display: flex;
 }
 
 .form-control button {
   background-color: rgb(66, 103, 178);
   color: white;
-  margin: 18px 10px;
+  margin: 16px 10px;
 }

@@ -7,8 +7,9 @@ html , body {
 
 .top-bar {
   align-items: center;
-  background-color: rgb(66 , 103 , 178);
+  background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -17,13 +18,8 @@ html , body {
   flex-direction: column;
 }
 
-.facebook-logo {
-  align-self: flex-start;
-}
-
 .facebook-login {
   align-items: center;
-  align-self: flex-end;
   display: flex;
 }
 

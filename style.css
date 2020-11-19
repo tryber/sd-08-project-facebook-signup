@@ -1,3 +1,9 @@
+body {
+  box-sizing: content-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;

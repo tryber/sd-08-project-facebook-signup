@@ -10,10 +10,6 @@ body {
   width: 100%;
 }
 
-img {
-  margin: 10px;
-}
-
 .facebook-login {
   display: flex;
 }
@@ -29,4 +25,17 @@ input {
 
 .form-control {
   align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }

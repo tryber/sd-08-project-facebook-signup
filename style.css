@@ -30,4 +30,17 @@
 
 .right-content {
   width: 300px;
+  display:flex;
+  flex-direction:column;
+}
+
+.user-name{
+  display:flex;
+
+}
+
+.user-register {
+  display: flex;
+  flex-direction: column;
+  width: 61.5%;
 }

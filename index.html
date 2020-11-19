@@ -31,16 +31,30 @@
           vida.</p>
         <img src='imgs/networking.png' id='facebook-networking'>
       </section>
-      <section id='right-content'>
+      <section class='right-content'>
         <h1>Abra uma conta</h1>
-        <p>É rápido e fácil.</p>
+        <p class='quick-easy'>É rápido e fácil.</p>
         <form>
-          <input type='text' name='firstname' placeholder='Nome'>
-          <input type='text' name='lastname' placeholder='Sobrenome'>
-          <br>
-          <input type='text' name='phone_email' placeholder='Celular ou email'>
-          <br>
-          <input type='password' name='password' placeholder='Nova senha'>
+          <section class='user-name'>
+            <input type='text' name='firstname' placeholder='Nome'>
+            <input type='text' name='lastname' placeholder='Sobrenome'>
+          </section>
+          <section class='user-register'>
+            <input type='text' name='phone_email' placeholder='Celular ou email'>
+            <input type='password' name='password' placeholder='Nova senha'>
+          </section>
+          <section class='birthdate'>
+            <label id='label-birthdate'>Data de Nascimento</label>
+            <input type='text' name='birthdate' placeholder='dd/mm/aaaa'>
+          </section>
+          <section class='gender'>
+            <label id='label-gender'>Gênero</label>
+            <section>
+              <input type='radio' name='gender' value='Feminino'>Feminino <input type='radio' name='gender'
+                value='Masculino'>Masculino <input type='radio' name='gender' value='Personalizado'>Personalizado
+            </section>
+          </section>
+          <button id='facebook-register' type='submit'>Cadastre-se</button>
         </form>
       </section>
     </div>

@@ -18,3 +18,10 @@ body{
 .facebook-logo{
   width: 150px
 }
+
+.main-content{
+  display: flex;
+  width: 100%;
+  height: 800px;
+  background-image: linear-gradient(white, rgb(186, 199, 226));
+}

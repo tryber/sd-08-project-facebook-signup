@@ -1,4 +1,5 @@
 const botaoEntrar = document.getElementById('button-login');
 botaoEntrar.addEventListener('click', function () {
-  alert('Email ou telefone');
+  const loginEmailOuTel = document.getElementById('user-email-phone').value;
+  alert(loginEmailOuTel);
 });

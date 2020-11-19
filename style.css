@@ -29,10 +29,6 @@ header {
   padding: 5px;
 }
 
-.button-login {
-  border-radius: 2px;
-}
-
 .form-group label {
   color: white;
 }
@@ -44,7 +40,8 @@ header {
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
+  margin-bottom: 20px;
 }
 
 button {
@@ -52,6 +49,7 @@ button {
   border: 0.1px solid rgb(42, 73, 126);
   color: white;
   padding: 5px;
+  border-radius: 2px;
 }
 
 .label-forgot {

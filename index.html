@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header class="top-bar">
+        <section class="containerHeader">
+            <a href="#"><img class="facebook-logo" src="./imgs/facebook-logo.png" alt="Facebook Logo"></a>
+            <form action="" class="facebook-login">
+                <section class="form-group"><label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label><input type="email" name="login" id="user-email-phone"></section>
+                <section class="form-group"><label for="password" id="user-password-label">Senha</label><input type="password" name="password" id="user-password">
+                <p class="esqueceu"> Esqueceu a Conta?</p>
+                </section>
+                <section class="form-control"><button type="button" id="button-login" class="btn-login">Entrar</button></section>
+            </form>
+        </section>
+    </header>
+    <section class="main-content">
+        <section class="left-content">
+            <p id="facebook-slogan" class="facebook-slogan">
+                O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+            </p>
+            <img id="facebook-networking" src="./imgs/networking.png" alt="Facebook networking">
+        </section>
+        <section class="right-content">
+            <h1>Abra uma conta</h1>
+            <p class="quick-easy">É rápido e fácil.</p>
+            <form action="">
+                <section class="name">
+                    <input type="text" name="firstname" id="firstname" placeholder="Nome" required>
+                    <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" required>
+                </section>
+                <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" required>
+                <input type="password" name="password" id="password" placeholder="Nova senha" required>
+                <section class="form-content">
+                    <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+                    <input type="date" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" required>
+                </section>
+                <section class="form-content">
+                    <label for="gender" id="label-gender">Gênero</label>
+                    <section class="btn-gender">
+                        <input type="radio" name="gender" id="female" value="Feminino" required /><label for="female">Feminino</label>
+                        <input type="radio" name="gender" id="male" value="Masculino"  required/><label for="male">Masculino</label>
+                        <input type="radio" name="gender" id="other" value="Personalizado" required /><label for="other">Personalizado</label>
+                    </section>
+                </section>
+                <button type="submit" id="facebook-register" class="btn-cadastro">Cadastre-se</button>
+            </form>
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-color: rgb(66 , 103 , 178);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerHeader {
+  width: 1100px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end
+}
+
+.form-control button {
+  height: 30px;
+  align-self: center;
+  border: 1px solid black;
+  background-color: blue;
+  color: white;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.form-group input {
+  width: 150px;
+}
+
+.esqueceu {
+  margin: 0;
+  margin-top: 1px;
+  padding: 0;
+  font-size: 12px;
+  color: #cecece;
+}
+
+.main-content {
+  margin: 0 auto;
+  display: flex;
+  width: 1100px;
+  justify-content: space-between;
+
+}
+
+.left-content{
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-content input {
+  margin: 4px 0;
+}
+
+.right-content h1 {
+  margin-bottom: 5px;
+}
+
+.btn-gender {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn-gender input {
+  margin: 0 2px 0 10px;
+
+}
+
+.quick-easy {
+  margin: 5px 0;
+}
+
+.name input {
+  width: 100px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.btn-cadastro {
+  margin-top: 10px;
+}

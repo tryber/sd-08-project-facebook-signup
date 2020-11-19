@@ -11,9 +11,15 @@
 
 .facebook-login {
   display: flex;
+  justify-content: center;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-items: center;
+  align-self: flex-end;
 }

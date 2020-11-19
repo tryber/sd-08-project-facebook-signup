@@ -7,18 +7,16 @@ const logInClick = document.getElementById('button-login');
 logInClick.addEventListener('click', logInButton);
 
 function checkRegistration() {
-  let registrationArray = [];
+  const registrationArray = [];
 
   const firstName = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;
   const phoneMail = document.getElementById('phone_email').value;
   const password = document.getElementById('password').value;
-  const birthdate = document.getElementById('birthdate').value;
-
-  const gender = document.getElementById('label-gender').getElementsByTagName('input').checked;
+  const birthdate = document.getElementById('label-birthdate').value;
 
   registrationArray.push(firstName, lastName, phoneMail, password, birthdate);
-  
+
   let invalidInput = 0;
   for (let index = 0; index < 5; index += 1) {
     if (registrationArray[index] === '') {
@@ -30,5 +28,5 @@ function checkRegistration() {
   }
 }
 
-const cadastro = document.getElementById('submit');
+const cadastro = document.getElementById('facebook-register');
 cadastro.addEventListener('click', checkRegistration);

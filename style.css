@@ -19,11 +19,18 @@
 } 
 
 .facebook-login {
-    background-color: azure;
+    display: flex;
+    color: white;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.form-control {
+    align-self: flex-end;
+}
+#button-login {
+    
 }

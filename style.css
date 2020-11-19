@@ -5,22 +5,22 @@ body {
 }
 
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .facebook-login {
-  display: flex;
   align-content: center;
+  display: flex;
 }
 
-.facebook-login label {
+/* .facebook-login label {
   flex-direction: column;
-}
+} */
 
 .form-group {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
 }

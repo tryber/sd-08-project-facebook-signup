@@ -11,8 +11,15 @@ body {
 }
 
 .facebook-logo {
-  background-color: aqua;
+  
   display: flex;
+  
+}
+
+.top-bar img {
+  width: auto;
+  height: auto;
+
 }
 
 .facebook-login {

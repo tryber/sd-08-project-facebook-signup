@@ -13,9 +13,7 @@ function checkRegistration() {
   const lastName = document.getElementById('lastname').value;
   const phoneMail = document.getElementById('phone_email').value;
   const password = document.getElementById('password').value;
-  const birthdate = document.getElementById('birthdate').value;
-
-  const gender = document.getElementById('label-gender').getElementsByTagName('input').checked;
+  const birthdate = document.getElementById('label-birthdate').value;
 
   registrationArray.push(firstName, lastName, phoneMail, password, birthdate);
   
@@ -30,5 +28,5 @@ function checkRegistration() {
   }
 }
 
-const cadastro = document.getElementById('submit');
+const cadastro = document.getElementById('facebook-register');
 cadastro.addEventListener('click', checkRegistration);

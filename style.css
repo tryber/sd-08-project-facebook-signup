@@ -43,3 +43,7 @@ body {
   margin: auto;
   padding: 5px;
 }
+
+.main-content {
+  display: flex;
+}

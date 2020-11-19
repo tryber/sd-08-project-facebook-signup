@@ -1,33 +1,33 @@
-.top-bar{
-  display:flex;
-  justify-content: space-between;
+.top-bar {
   background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
 }
 
-.facebook-login{
-  display:flex;
+.facebook-login {
+  display: flex;
 }
 
-.form-group{
-  display:flex;
-  flex-direction:column;
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
-.form-control{
-  display:flex;
-  align-self:flex-end;
+.form-control {
+  align-self: flex-end;
+  display: flex;
 }
 
-.main-content{
-  display:flex;
+.main-content {
+  display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-.left-content{
+.left-content {
   width: 800px;
 }
 
-.right-content{
+.right-content {
   width: 300px;
 }

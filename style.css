@@ -1,9 +1,9 @@
-.header {
+
+.top-bar {
     display: flex;
     background-color: rgb(66, 103, 178);
     justify-content: center;
 }
 
 #facebook-logo {
-    width: 20%;
 }

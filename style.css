@@ -79,8 +79,8 @@ body {
 
 .radio-button-container {
   display: flex;
-  margin-top: 5px;
   justify-content: center;
+  margin-top: 5px;
   width: 100%;
 }
 

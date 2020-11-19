@@ -18,8 +18,8 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
+
 .button-container {
   align-items: center;
   display: flex;

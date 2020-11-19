@@ -1,7 +1,7 @@
 function btnLogin() {
-  let btnEntrar = document.querySelector('#button-login');
-  let textLogin = document.querySelector('#user-email-phone');
-  btnEntrar.addEventListener('click', function() {
+  const btnEntrar = document.querySelector('#button-login');
+  const textLogin = document.querySelector('#user-email-phone');
+  btnEntrar.addEventListener('click', function () {
     alert(textLogin.value);
   });
 }

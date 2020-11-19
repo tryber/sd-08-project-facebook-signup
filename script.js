@@ -14,7 +14,8 @@ function validateForm() {
     for (let index = 0; index < input.length; index += 1) {
       input[index].setCustomValidity('Campos inválidos');
     }
-  });
+    
+    });
 }
 validateForm();
 
@@ -25,7 +26,28 @@ function addGenderText() {
   genderText.placeholder = 'Gênero (opcional)';
   personalizado.addEventListener('click', function () {
     const genderFields = document.getElementById('gender-fields');
-    genderFields.appendChild(genderText);
+    genderFields.appendChild(genderText);    
   });
 }
 addGenderText();
+
+  function registerMessage(){
+    const button = document.getElementById('facebook-register');
+    button.addEventListener('click', function () {
+      substituteFormContainer ();
+  });
+
+
+  function substituteFormContainer () {
+  const input = document.querySelectorAll('.cadastro input');
+  const rigthcontent = document.getElementById('rightcontent');
+  const name = document.getElementById('nome');
+  const sobrenome = document.getElementById('sobrenome');
+  const phonemail = document.getElementById('phonemail');
+  const birthdate = document.getElementById('birthdate');
+  const mensagem = `Olá${nome} ${sobrenome}\n ${phonemail}\n ${birthdate}`;
+  for (let index = 0; index < input.length; index += 1) {
+    if (input[index] != '');
+  rigthcontent.innerHTML = mensagem;
+}
+substituteFormContainer();

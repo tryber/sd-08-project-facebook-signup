@@ -23,3 +23,7 @@
 .form-control button:nth-child( 1 ) {
   padding: 4px;
 }
+
+.main-content{
+  display: flex;
+}

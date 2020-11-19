@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #main-content{
     display: flex;
     justify-content: center;
@@ -13,4 +14,14 @@
     width: 300px;
     float: right;
     display: inline-block;
+=======
+.header {
+    display: flex;
+    background-color: rgb(66, 103, 178);
+    justify-content: center;
+}
+
+#facebook-logo {
+    width: 20%;
+>>>>>>> a9827649339bb5b7632207c34caea0fb0b72a51b
 }

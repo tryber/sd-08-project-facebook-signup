@@ -25,6 +25,7 @@ body {
 
 .form-group {
   display: flex;
+  flex-direction: column;
 }
 
 .left-content {
@@ -51,3 +52,15 @@ body {
   display: flex;
 }
 
+.facebook-login {
+  display: flex;
+  justify-content: center;
+}
+
+.top-right {
+  align-self: center;
+}
+
+.radio-content {
+  display: flex;
+}

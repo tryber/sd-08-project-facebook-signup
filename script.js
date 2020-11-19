@@ -7,7 +7,7 @@ buttonLogin.addEventListener('click', function () {
 
 const buttonRegister = document.getElementById('facebook-register');
 
-buttonRegister.addEventListener('click', () => {
+const validateData = () => {
   const input = document.getElementsByClassName('input');
   const gender = document.getElementsByClassName('gender');
   const error = document.querySelector('.invalid-input');
@@ -30,6 +30,30 @@ buttonRegister.addEventListener('click', () => {
       break;
     }
   }
+};
+
+const selectUserData = () => {
+  let data = [];
+
+  const name = document.getElementsByClassName('input')[0].value;
+  const lastName = document.getElementsByClassName('input')[1].value;
+  const phoneEmail = document.getElementsByClassName('input')[2].value;
+  const gender = '';
+  const birthdate = document.getElementById('birthdate').value;
+  const genders = document.getElementsByClassName('gender');
+  for (let i = 0; i < genders.length; i += 1) {
+    if (genders[i].checked) {
+      gender = genders[i].innerText;
+    }
+  }
+
+  data.push(name, lastName, phoneEmail, gender, birthdate);
+  
+  return data;
+}
+
+buttonRegister.addEventListener('click', () => {
+  validateData();
 });
 
 const gender = document.getElementsByClassName('gender');

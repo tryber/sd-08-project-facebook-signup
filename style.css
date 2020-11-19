@@ -44,6 +44,6 @@ body {
   width: 45%;
 }
 
-#label-gender {
+.gender-label {
   display: block;
 }

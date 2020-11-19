@@ -13,11 +13,12 @@ body {
 
 .facebook-login {
   display: flex;
+  float: right;
   margin-right: 10px;
 }
 
 .facebook-logo {
-  width: 200px;
+  float: left;
 }
 
 .form-group {

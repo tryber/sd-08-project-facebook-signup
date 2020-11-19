@@ -34,3 +34,7 @@
 .personal-information {
   display: flex;
 }
+
+.genderContainer {
+  display: flex;
+}

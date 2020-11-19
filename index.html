@@ -10,8 +10,14 @@
     <header class="top-bar">
       <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo" />
       <div class="facebook-login">
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Senha" />
+        <div class="form-group">
+          <label id="user-email-phone-label">Email ou telefone</label>
+          <input id="user-email-phone" type="text" placeholder="Email" />          
+        </div>
+        <div class="form-group">
+            <label id="user-password-label">Senha</label>
+            <input id="user-password" type="text" placeholder="Senha" />
+        </div>
         <button type="submit">Entrar</button>
       </div>
     </header>

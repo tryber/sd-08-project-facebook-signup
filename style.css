@@ -34,3 +34,7 @@ body {
 .right-content {
   width: 300px;
 }
+
+.flex-form {
+  display: flex;
+}

@@ -1,18 +1,15 @@
-.top-bar {
-  background-color: rgb(66, 103, 178);
-  width: 100%;
-  padding: 15px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 body {
+  box-sizing: border-box;
+  font-size: 100%;
   margin: 0;
   padding: 0;
-  font-size: 100%;
-  box-sizing: border-box;
 }
 
-
-
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  width: 100%;
+}

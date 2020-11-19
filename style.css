@@ -43,3 +43,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.gender {
+  display: flex;
+}

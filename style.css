@@ -1,0 +1,39 @@
+body {
+ display: flex;
+ flex-direction: column;
+}
+
+.top-bar {
+    display: flex;
+    background-color: rgb(66, 103, 178);
+    height:60px;
+    justify-content: space-between;
+}
+
+.facebook-logo {
+}
+
+.facebook-login {
+    display: flex;
+    height: 25px;
+    margin-top: 20px;
+
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.left-content {
+    width: 800px;
+
+}
+
+.right-content {
+    width: 300px;
+}
+
+.name {
+    width: 149px;
+}

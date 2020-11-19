@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 
- <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
- </head>
+  <link rel="stylesheet" href="style.css">
+</head>
 
- <body>
-  <header>
-  </header>
- </body>
+<body>
+  <!-- Header requisitos 1 ao 7 -->
+  <!-- Main content 8 em diante -->
 
+  <section>
+    <header class="top-bar">
+      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo do facebook">
+      <form class="facebook-login" action="">
+        <input type="text" id="login-name" name="login-name" value="Nome de Usuário">
+        <input type="password" id="login-pass" name="login-pass" value="Senha">
+        <input type="submit" value="Entrar">
+      </form>
+    </header>
+  </section>
+
+  <section class="main-content">
+     <section class="left-content">
+       <p id="facebook-slogan">
+         O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+       </p>
+       <p id="facebook-slogan">
+         <img src="./imgs/networking.png" alt="" id="facebook-networking">
+       </p>
+     </section>
+
+     <section class="right-content">
+
+      <h1>Abra uma conta</h1>
+      <p id="quick-easy">É rápido e fácil</p>
+
+      <form action="">
+        <label for="firstname" class="name">
+          <input type="text" name="firstname" id="firstname" placeholder="Nome" class="name">
+        </label>
+        <label for="lastname" class="name">
+          <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" class="name">
+        </label>
+      </form>
+
+    </section>
+  </section>
+
+  <section> 
+    footer 
+  </section>
+
+</body>
 </html>

@@ -32,4 +32,6 @@
 
 .right-content form {
   display: flex;
+  flex-wrap: wrap;
+  width: 370px;
 }

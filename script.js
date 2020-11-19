@@ -11,9 +11,9 @@ function sendAlert() {
 const getEnter = document.querySelector('#button-login');
 getEnter.addEventListener('click', sendAlert);
 
-submitButton.addEventListener('click', function () {
+submitButton.addEventListener('click', function (event) {
   for (let i = 0; i < formFields.length; i += 1) {
-    if (formValidation[formFields[i]].value === 0) {
+    if (formValidation[formFields[i]].value === '') {
       formValidation[formFields[i]].value = 'Campos inválidos';
       event.preventDefault();
       break;

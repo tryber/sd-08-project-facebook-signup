@@ -13,11 +13,6 @@
   display: flex;
 }
 
-.form-row {
-  display: flex;
-  flex-direction: column;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;

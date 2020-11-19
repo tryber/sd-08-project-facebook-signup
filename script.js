@@ -1,5 +1,9 @@
 const loginButton = document.getElementById('button-login');
-const emailInput = document.getElementById('user-email-phone');
+const loginEmail = document.getElementById('user-email-phone');
+const nameInput = document.getElementById('firstname');
+const lastNameInput = document.getElementById('lastname');
+const emailInput = document.getElementById('email-input');
+const birthDateInput = document.getElementById('birthdate');
 const customGenderDiv = document.querySelector('.genero-personalizado');
 const customGenderRadio = document.getElementById('Personalizado');
 const femaleGenderRadio = document.getElementById('Feminino');
@@ -7,9 +11,10 @@ const maleGenderRadio = document.getElementById('Masculino');
 const signInForm = document.querySelector('.sign-in');
 const invalidMessage = document.querySelector('.invalid-form-message');
 const submitButton = document.getElementById('facebook-register');
+const rightContent = document.querySelector('.right-content');
 
 function alertLogin() {
-  alert(emailInput.value);
+  alert(loginEmail.value);
 }
 
 loginButton.addEventListener('click', alertLogin);
@@ -19,6 +24,7 @@ function createCustomGender() {
     const genderInput = document.createElement('input');
     genderInput.name = 'gender-custom';
     genderInput.placeholder = 'Gênero (opcional)';
+    genderInput.id = 'custom-gender-input';
     customGenderDiv.appendChild(genderInput);
   }
 }
@@ -42,4 +48,54 @@ function validateForm() {
   }
 }
 
-submitButton.addEventListener('click', validateForm);
+function deleteRightContent() {
+  const { children } = rightContent;
+  for (let index = 0; index < children.length;) {
+    rightContent.removeChild(rightContent.lastChild);
+  }
+}
+
+function addName() {
+  const hello = document.createElement('p');
+  hello.innerHTML = `Olá, ${nameInput.value} ${lastNameInput.value}`;
+  rightContent.appendChild(hello);
+}
+
+function addMailOrPhone() {
+  const mailOrPhone = document.createElement('p');
+  mailOrPhone.innerHTML = `Email ou telefone: ${emailInput.value}`;
+  rightContent.appendChild(mailOrPhone);
+}
+
+function addBirthDate() {
+  const birthDate = document.createElement('p');
+  birthDate.innerHTML = `Data de nascimento: ${birthDateInput.value}`;
+  rightContent.appendChild(birthDate);
+}
+
+function addGender() {
+  const gender = document.createElement('p');
+  if (femaleGenderRadio.checked) {
+    gender.innerHTML = `Gênero: ${femaleGenderRadio.value}`;
+  } else if (maleGenderRadio.checked) {
+    gender.innerHTML = `Gênero: ${maleGenderRadio.value}`;
+  } else {
+    const customGenderInput = document.getElementById('custom-gender-input');
+    gender.innerHTML = `Gênero ${customGenderRadio.value}: ${customGenderInput.value}`;
+  }
+  rightContent.appendChild(gender);
+}
+
+function addContent(event) {
+  event.preventDefault();
+  validateForm();
+  if (signInForm.checkValidity()) {
+    deleteRightContent();
+    addName();
+    addMailOrPhone();
+    addBirthDate();
+    addGender();
+  }
+}
+
+submitButton.addEventListener('click', addContent);

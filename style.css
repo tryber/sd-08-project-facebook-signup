@@ -3,7 +3,7 @@ body {
 }
 
 .top-bar {
-  background-color: rgb(66 , 103 , 178);
+  background-color: rgb(66, 103, 178);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,35 +19,6 @@ body {
   align-self: flex-end;
   color: white;
   display: flex;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group {
-  border: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group {
-  border: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group {
-  border: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group {
-  border: none;
-  display: flex;
-  flex-direction: column;
 }
 
 .form-group {

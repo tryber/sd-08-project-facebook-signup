@@ -33,4 +33,10 @@
 
 .form-register {
   display: flex;
+  flex-wrap: wrap;
 }
+
+#nome, #sobrenome{
+  width: 120px;
+}
+

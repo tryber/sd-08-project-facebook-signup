@@ -8,6 +8,7 @@ body {
   display: flex;
   height: 60px;
   justify-content: space-around;
+  align-items: center;
 }
 
 .facebook-login {
@@ -17,4 +18,16 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
 }

@@ -14,12 +14,6 @@ header {
   background-color: rgb(66, 103, 178);
 }
 
-.fonte-padrao {
-  color: white;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
 .facebook-logo {
   display: flex;
   height: 70px;
@@ -34,8 +28,6 @@ header {
 
 .form-group {
   display: flex;
-  flex-direction: column;
-  margin-top: 7px;
 }
 
 .input-email {
@@ -52,4 +44,10 @@ header {
 .form-control {
   align-self: flex-end;
   margin-left: 15px;
+}
+
+.fonte-padrao {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 5px;
 }

@@ -26,7 +26,7 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .left-content {
@@ -35,4 +35,21 @@ body {
 
 .right-content {
   width: 300px;
+}
+
+.form-register {
+  display: flex;
+  width: auto;
+}
+
+.firstName , .lastName {
+  width: 140px;
+}
+
+.phoneEmail , .myPassword , .birthDate {
+  width: 292px;
+}
+
+.labelGenero {
+  display: block;
 }

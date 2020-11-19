@@ -1,4 +1,10 @@
-.top-bar {
+.facebook-login {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.top-bar {
   background-color: rgb(66, 103, 178);
+  display: flex;
 }

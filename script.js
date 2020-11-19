@@ -1,8 +1,8 @@
-let buttonLogin = document.getElementById('button-login');
+const entrar = document.getElementById('button-login');
+const emailPhone = document.getElementById('user-email-phone');
 
+entrar.addEventListener('click', functionAlert());
 
-function funcaoAlert() {
-  window.alert("Eu sou um alert!");
+funciton functionAlert() {
+  window.alert(emailPhone.value);
 }
-
-buttonLogin.addEventListener('click',funcaoAlert);

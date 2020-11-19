@@ -7,6 +7,17 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.facebook-logo {
+  text-align: left;
+  width: 100px;
+}
+
+.facebook-login {
+  display: flex;
 }
 
 .main-content {
@@ -59,4 +70,9 @@ body {
   margin-left: 5px;
   margin-top: 5px;
   padding: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }

@@ -10,39 +10,32 @@
 
   <body>
     <!-- Header requisitos 1 ao 7 -->
-    <!-- Main content 8 em diante -->
+    <!-- Main content 8 ao 17 -->
+    <!-- js 18 ao 20 -->
     <section>
       <header class="top-bar">
         <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo do facebook">
         <form class="facebook-login" action="">
-        <div class="form-group">
-          <label id="user-email-phone-label" for="user-email-phone">E-mail ou telefone <input type="text"
-              id="user-email-phone" name="login-name">
+          <label class="form-group" id="user-email-phone-label" for="user-email-phone">Email ou telefone<input type="text" id="user-email-phone" name="login-name">
           </label>
-        </div>
-        <div class="form-group">
-          <label id="user-password-label" for="user-password">Senha
-            <input id="user-password" type="password" name="login-pass">
+          <label class="form-group" id="user-password-label" for="user-password">Senha<input id="user-password" type="password" name="login-pass">
           </label>
-        </div>
-        <div class="form-control">
-          <button id="button-login">Entrar</button>
-        </div>
+          <div class="form control form-group">
+            <button class="form-control" id="button-login">Entrar</button>
+          </div>
         </form>
       </header>
     </section>
 
     <section class="main-content">
-
       <section class="left-content">
-        <p id="facebook-slogan"> O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
-          sua vida. </p>
-          <img src="imgs/networking.png" alt="" id="facebook-networking">
+        <p id="facebook-slogan"> O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+          vida. </p>
+        <img src="imgs/networking.png" alt="" id="facebook-networking">
       </section>
-
       <section class="right-content">
         <h1>Abra uma conta</h1>
-        <p clase="quick-easy">É rápido e fácil</p>
+        <p class="quick-easy">É rápido e fácil</p>
         <form action="">
           <section class="name-container">
             <label for="firstname">
@@ -60,21 +53,17 @@
           </label>
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
           <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" class="new-register">
-
-          <label for="" id="label-gender" class="new-register">Gênero </label>
+          <label for="gender" id="label-gender" class="gender-label">Gênero</label>
           <label for="female">
-            <input type="radio" name="gender" id="female">Feminino </label>
+            <input type="radio" name="gender" id="female" value="female">Feminino</label>
           <label for="male">
-            <input type="radio" name="gender" id="male">Masculino </label>
+            <input type="radio" name="gender" id="male" value="male">Masculino</label>
           <label for="custom">
-            <input type="radio" name="gender" id="custom">Personalizado </label>
-
+            <input type="radio" name="gender" id="custom" value="custom">Personalizado</label>
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </section>
     </section>
-    <section>
-    </section>
+    <script src="./script.js"></script>
   </body>
-
 </html>

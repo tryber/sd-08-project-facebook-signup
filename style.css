@@ -47,3 +47,7 @@ body {
   margin-top: 5px;
   width: 100%;
 }
+
+.gender-label {
+  display: block;
+}

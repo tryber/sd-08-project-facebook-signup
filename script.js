@@ -19,12 +19,13 @@ function checkRegistration() {
 
   registrationArray.push(firstName, lastName, phoneMail, password, birthdate);
 
-  let invalidInput, genderCheck = 0;
+  let invalidInput = 0;
   for (let index = 0; index < 5; index += 1) {
     if (registrationArray[index] === '') {
       invalidInput += 1;
     }
   }
+  let genderCheck = 0;
   for (let index = 0; index < 3; index += 1) {
     if (gender[index].checked) {
       genderCheck += 1;

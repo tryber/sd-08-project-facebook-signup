@@ -11,19 +11,17 @@ footer p {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-between;
   height: 100px;
   padding: 0 20%;
 }
 
 .top-bar img {
-  align-self: flex-start;
-  margin-right: auto;
   width: 200px;
 }
 
 .facebook-login {
   align-items: flex-start;
-  align-self: flex-end;
   display: flex;
   flex-direction: row;
 }

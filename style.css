@@ -45,3 +45,18 @@ body {
 .form-name {
   display: flex;
 }
+
+.form-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-gender {
+  display: flex;
+  flex-direction: column; 
+}
+
+.buttons-gender {
+  display: flex;
+  flex-direction: row;
+}

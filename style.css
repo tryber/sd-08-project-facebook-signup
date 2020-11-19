@@ -36,12 +36,10 @@ body {
   width: 300px;
 }
 
-input[ name = "lastname" ] {
+.input-name {
   float: right;
-  width: 45%;
 }
 
-input[ name = "firstname" ] {
-  float: left;
+.input-space {
   width: 45%;
 }

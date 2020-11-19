@@ -29,7 +29,7 @@ const personalizadoGender = document.querySelector('#personalizado');
 
 personalizadoGender.addEventListener('click', function () {
   const createInput = document.createElement('input');
-  createInput.className = 'input-validation'
+  createInput.className = 'input-validation';
   createInput.name = 'gender-custom';
   createInput.placeholder = 'Gênero (opcional)';
   divGender.appendChild(createInput);

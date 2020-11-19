@@ -12,10 +12,15 @@ body {
 
 .facebook-login {
   margin-right: 10px;
-  flex-wrap: wrap;
+  display: flex;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.button-container {
+  align-items: center;
+  display: flex;
 }

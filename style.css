@@ -36,14 +36,12 @@ body {
   width: 300px;
 }
 
-input[name=lastname] {
+input[ name = "lastname" ] {
   float: right;
   width: 45%;
 }
 
-input[name=firstname] {
+input[ name = "firstname" ] {
   float: left;
   width: 45%;
 }
-
-

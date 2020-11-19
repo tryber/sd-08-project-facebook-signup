@@ -1,12 +1,19 @@
-.top-bar {
-    background-color: rgb(66, 103, 178);
-    display: flex;
-    width: 1366px;
-    justify-content: space-around;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.facebook-logo {
-    text-align: right;
+.top-bar {
+    background-color: rgb(66, 103, 178);
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    max-width: 1024px;
 }
 
 .facebook-login {
@@ -15,5 +22,6 @@
 
 .form {
     flex-direction: column;
-    width: 200px;
+    margin: 10px;
+    width: 150px;
 }

@@ -49,3 +49,4 @@ radioPersonalizado.addEventListener('click', function () {
   box4.append(input);
   box4.append(label);
 });
+

@@ -12,11 +12,14 @@ function showData() {
   const rightContent = document.getElementById('right-content');
   const ola = document.createElement('p');
   ola.innerText = `Olá, ${filedForms[0].value} ${filedForms[1].value}.`;
-  while (rightContent.firstChild) {
-    rightContent.removeChild(rightContent.firstChild);
+
+  const rightSize = rightContent.children.length;
+  for (let pos = 0; pos < rightSize; pos += 1) {
+    rightContent.removeChild(rightContent.firstElementChild);
   }
   rightContent.appendChild(ola);
-  for (index = 2; index < filedForms.length - 1; index += 1) {
+
+  for (let index = 2; index < filedForms.length - 1; index += 1) {
     if (
       filedForms[index].type !== 'password' &&
       (filedForms[index].type !== 'radio' || filedForms[index].checked)

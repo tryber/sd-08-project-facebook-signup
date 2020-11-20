@@ -22,6 +22,35 @@ body {
   padding-left: 1px;
 }
 
+.left-content {
+  padding-left: 120px;
+  width: 800px;
+}
+
+form p {
+  font-size: 0.8em;
+  margin-top: 20px;
+}
+
+footer {
+  margin: 10px auto;
+  text-align: left;
+  width: 1100px;
+}
+
+footer p {
+  color: rgb(163, 163, 163);
+  font-size: 00.8em;
+  padding: 5px;
+}
+
+.left-content p {
+  color: rgb(51, 85, 118);
+  font-size: 1.3em;
+  font-weight: 800;
+  width: 480px;
+}
+
 .top-bar p:hover {
   opacity: 1;
   text-decoration-line: underline;
@@ -72,18 +101,6 @@ body {
   padding-bottom: 40px;
 }
 
-.left-content {
-  padding-left: 120px;
-  width: 800px;
-}
-
-.left-content p {
-  color: rgb(51, 85, 118);
-  font-size: 1.3em;
-  font-weight: 800;
-  width: 480px;
-}
-
 .right-content {
   display: flex;
   flex-direction: column;
@@ -126,9 +143,9 @@ body {
   color: white;
   cursor: pointer;
   display: inline-block;
-  margin-top: 15px;
   font-size: 0.95em;
   font-weight: 800;
+  margin-top: 15px;
   opacity: 0.9;
   padding: 10px 40px;
   text-decoration: none;
@@ -146,17 +163,6 @@ body {
 
 .radio {
   font-size: 0.9em;
-}
-
-form p {
-  margin-top: 20px;
-  font-size: 0.8em;
-}
-
-footer {
-  margin: 10px auto;
-  text-align: left;
-  width: 1100px;
 }
 
 footer a {
@@ -194,13 +200,7 @@ hr {
   width: 1060px;
 }
 
-.links-facebook{
+.links-facebook {
   text-align: left;
   width: 1100px;
-}
-
-footer p {
-  color: rgb(163, 163, 163);
-  font-size: 00.8em;
-  padding: 5px;
 }

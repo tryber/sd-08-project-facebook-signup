@@ -9,7 +9,6 @@ logInClick.addEventListener('click', logInButton);
 const firstName = document.getElementById('firstname').value;
 const lastName = document.getElementById('lastname').value;
 const phoneMail = document.getElementById('phone_email').value;
-const password = document.getElementById('password').value;
 const birthdate = document.getElementById('label-birthdate').value;
 const gender = document.getElementsByClassName('gender');
 const signUpForm = document.querySelector('.signUp');

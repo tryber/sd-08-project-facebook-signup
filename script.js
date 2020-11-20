@@ -1,6 +1,5 @@
 function fBtnLogin() {
-  console.log('clicou!!!');
-  let inputUserEmail = document.getElementById('user-email-phone');
-  console.log(inputUserEmail);
+  const inputUserEmail = document.getElementById('user-email-phone');
   alert(inputUserEmail.value);
 }
+document.getElementById('button-login').addEventListener('click', fBtnLogin);

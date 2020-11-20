@@ -11,15 +11,11 @@ const btnCadastreSe = document.getElementById('facebook-register');
 
 btnCadastreSe.addEventListener('click', function (event) {
   event.preventDefault();
-  let erros = '';
-  const inputsText = document.querySelectorAll('input[type=text], input[type=password]');
-  for (let index = 2; index < inputsText.length; index += 1) {
-    const input = inputsText[index];
+  const AllInputs = document.querySelectorAll('.right-content input');
+  for (let index = 2; index < AllInputs.length; index += 1) {
+    const input = AllInputs[index];
     if (input.value === '') {
-      erros += 'Campos inválidos\n';
+      alert('Campos inválidos');
     }
-  }
-  if (erros !== '') {
-    alert('Campos inválidos');
   }
 });

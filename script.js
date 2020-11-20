@@ -7,9 +7,18 @@ function loginCheck() {
   btnEntrar.addEventListener('click', entrar);
 }
 loginCheck();
-const btncadastro = document.getElementById('facebook-register');
-btncadastro.addEventListener('click', function () {
-  if ((document.getElementById('inputnome').value === '') || (document.getElementById('inputsobrenome').value === '') || (document.getElementById('inputcelular').value === '') || (document.getElementById('inputnovasenha').value === '') || (document.getElementById('inputnascimento').value === '')) {
-    alert('Campos inválidos');
+
+  //modelo modificado do site http://gabsferreira.com/alterando-a-validacao-padrao-do-html5/
+
+const formInputLocal = document.querySelectorAll('.form-input')
+for (let index = 0; index < formInputLocal.length; index += 1) {
+  formInputLocal[index].oninvalid  = function () {
+    // remove mensagens de erro padrão
+    this.setCustomValidity("");
+    // faz a validação novamente
+    if (!this.validity.valid) {
+      // se estiver inválido, coloca a mensagem
+      this.setCustomValidity("Campos inválidos");
+    }
   }
-});
+}

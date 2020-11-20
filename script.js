@@ -33,5 +33,5 @@ document.getElementById('personalizado').addEventListener('click', function () {
   const newInput = document.createElement('input');
   newInput.name = 'gender-custom';
   newInput.placeholder = 'Gênero (opcional)';
-  document.querySelector('.gender-conteiner').appendChild(newInput);
+  document.getElementById('teste').appendChild(newInput);
 });

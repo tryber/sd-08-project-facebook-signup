@@ -1,5 +1,4 @@
 node_modules/
 debug
-package.json
+
 .history
-package-lock.json

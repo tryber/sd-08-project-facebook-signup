@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 0.7em;
   font-weight: 600;
   color: #ffffff;
@@ -54,7 +54,7 @@ body {
 .login-item {
   margin-bottom: 2px;
   outline: none;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .login-item:hover {

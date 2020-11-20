@@ -10,6 +10,7 @@ const validate = (element) => {
       }, 3000);
     });
   }
+  //
 };
 
 document.getElementById("facebook-register").addEventListener("click", () => {

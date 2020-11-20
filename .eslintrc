@@ -4,7 +4,10 @@
     "no-alert": "off",
     "prefer-arrow-callback": "off",
     "func-names": "off",
-    "arrow-parens": [2, "always"],
+    "arrow-parens": [
+      2,
+      "always"
+    ],
     "no-param-reassign": "off"
   },
   "env": {

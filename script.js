@@ -56,29 +56,24 @@ function fillAfterAcContent() {
   } else if (p.checked === true) {
     gender.innerHTML = 'Personalizado';
   }
+}
 
-};
-
-function verifyRadio(item, value) {
-
-  for (let index = 0; index < value; index += 1) {
-    if (item[index] === true) {
-
-    }
-  }
-
-};
-
-function verifyRadio(){
+function verifyRadio() {
   const caRadioInputList = document.querySelectorAll('.ca-radio-input');
   if (caRadioInputList[0].checked === true) {
-    return false
+    return false;
   } else if (caRadioInputList[1].checked === true) {
     return false;
   } else if (caRadioInputList[2].checked === true) {
     return false;
   }
   return true;
+}
+
+function changeRightContentElementDisplay() {
+  const contentBeforeAc = document.querySelector('.before-ac');
+
+  contentBeforeAc.parentNode.removeChild(contentBeforeAc);
 }
 
 function isEverythingFilled() {
@@ -103,14 +98,5 @@ function isEverythingFilled() {
       changeRightContentElementDisplay();
     }
   });
-};
+}
 isEverythingFilled();
-
-function changeRightContentElementDisplay() {
-  const contentBeforeAc = document.querySelector('.before-ac');
-
-  contentBeforeAc.parentNode.removeChild(contentBeforeAc);
-};
-
-
-

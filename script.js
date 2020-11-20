@@ -13,7 +13,6 @@ const validateData = () => {
 
   for (let i = 0; i < input.length; i += 1) {
     if (input[i].value === '') {
-      
       helper = false;
     }
   }
@@ -48,23 +47,23 @@ const deleteContent = () => {
   for (let i = 0; i < children.length; i) {
     content.removeChild(content.lastChild);
   }
-}
+};
 
 buttonRegister.addEventListener('click', () => {
   const helper = validateData();
-  
+
   if (helper) {
     const data = selectUserData();
-    
+
     deleteContent();
     const content = document.getElementsByClassName('right-content')[0];
-    
+
     const p = document.createElement('p');
     p.innerText = `Olá, ${data[0]} ${data[1]}`;
     content.appendChild(p);
-    
+
     for (let i = 2; i < data.length; i += 1) {
-      const p = document.createElement('p');
+      p = document.createElement('p');
       p.innerText = data[i];
       content.appendChild(p);
     }

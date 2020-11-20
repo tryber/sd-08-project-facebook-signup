@@ -8,7 +8,8 @@ const buttonCadastro = document.querySelector('#facebook-register');
 // const genero = document.querySelector('.gender');
 // const aniversario = document.querySelector('.birthdate');
 // const rapidoFacil = document.querySelector('.quick-easy');
-// const variaveis = { a: nome, b: sobreNome, c: telefone, d: novaSenha, e: genero, f: aniversario };
+// const variaveis = { a: nome, b: sobreNome, c:
+// telefone, d: novaSenha, e: genero, f: aniversario };
 buttonEntrar.addEventListener('click', function () {
   alert(emailOuTelefone.value);
 });

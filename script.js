@@ -8,7 +8,7 @@ document.getElementById('facebook-register').addEventListener('click', (event) =
   const celMail = document.getElementById('cel_mail').value;
   const senha = document.getElementById('senha').value;
   const dataNascimento = document.getElementById('birthdate').value;
-  const ola = "Olá, "
+  const ola = 'Olá, ';
   const sadacao = ola + nome + sobrenome;
   if (!nome || !senha || !sobrenome || !celMail || !dataNascimento) {
     document.getElementById('camposInvalidos').innerText = 'Campos inválidos';

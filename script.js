@@ -13,7 +13,6 @@ alertEmail();
   const button = document.querySelector('#facebook-register');
   let contador = 0;
   let radio = false;
-
   button.addEventListener('click', function () {
     const formsInput = document.querySelectorAll('.form-register input');
     for (let index = 0; index < formsInput.length; index += 1) {
@@ -33,7 +32,6 @@ alertEmail();
     }
   });
 }
-
 cheksInput(); */
 
 const invalid = document.createElement('p');
@@ -85,5 +83,4 @@ function radioCustom() {
   });
 }
 
-radioCustom();
 radioCustom();

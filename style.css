@@ -43,3 +43,13 @@ body {
 .nomeSobrenome {
   width: 120px;
 }
+
+.nome input {
+  float: left;
+  margin-right: 10px;
+  width: 120px;
+}
+
+.custom label {
+  font-size: 15px;
+}

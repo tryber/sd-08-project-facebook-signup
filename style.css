@@ -25,15 +25,18 @@ body {
   flex-direction: column;
 }
 
+/* fiz este */
 .form-control {
   align-self: flex-end;
   display: flex;
 }
 
+/* fiz este */
 .main-content {
   display: flex;
 }
 
+/* fiz este */
 .left-content {
   width: 800px;
 }

@@ -30,7 +30,7 @@ function validateInputElement(elem) {
 function handleFormMessage() {
   const InputAll = document.querySelectorAll('#signup-container input');
   const Forms = document.getElementById('signup-container');
-  Forms.innerHTML = '';
+  Forms.innerHTML = 'Olá, ';
   for (let index = 0; index < InputAll.length; index += 1) {
     if (!InputAll[index].value) {
       Forms.innerHTML = 'Campos inválidos';

@@ -36,12 +36,12 @@ function validation() {
     }
   }
   if (invalid > 0) {
-    const invalidMsg = document.createElement('p')
+    const invalidMsg = document.createElement('p');
     invalidMsg.className = 'danger';
     invalidMsg.innerText = 'Campos inválidos';
     document.getElementById('form-register').append(invalidMsg);
   } else {
-    registerMsg()
+    registerMsg();
   }
 }
 

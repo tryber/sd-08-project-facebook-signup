@@ -58,7 +58,7 @@ body {
   border: 1px solid #343a40;
   border-radius: 5px;
   margin: 10px 10px 10px 0;
-  padding: 10px
+  padding: 10px;
 }
 
 .name-content {
@@ -69,16 +69,4 @@ body {
 .birthdate-content {
   display: flex;
   flex-direction: column;
-}
-
-.gender-content input {
-  margin: 5px 0 5px 5px;
-}
-
-.gender-content label {
-  padding-right: 2px;
-}
-
-.gender-content {
-  margin-bottom: 10px;
 }

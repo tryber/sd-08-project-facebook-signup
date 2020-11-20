@@ -191,3 +191,11 @@ input:focus {
   color: #ffffffea;
   background-color: #3f8f37;
 }
+
+.form-error {
+  margin-top: 1px;
+  margin-left: 2px;
+  padding: 5px;
+  font-size: 1.2em;
+  color: rgba(212, 8, 8, 0.767);
+}

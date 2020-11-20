@@ -25,8 +25,10 @@ function substituteFormContainer() {
   const sobrenome = document.getElementById('sobrenome').innerText;
   const phonemail = document.getElementById('phonemail').innerText;
   const birthdate = document.getElementById('birthdate').innerText;
-  const mensagem = `Olá${name} ${sobrenome}`;
+  const mensagem = `Olá${name} ${sobrenome}\n`;
+  const mensagemTwo = `${phonemail}\n${birthdate}`
   rigthcontent.innerHTML = mensagem;
+  rigthcontent.appendChild(mensagemTwo);
 }
 
 // setCustomValidity retirada do artigo: https://www.devmedia.com.br/html5-validator-validando-formularios-com-html5/28785

@@ -21,19 +21,15 @@ header {
 }
 
 .facebook-login {
-  align-items: center;
   display: flex;
-  justify-content: flex-end;
+  margin-top: 5px;
+  align-self: end;
 }
 
 .form-group {
   display: flex;
-}
-
-.input-email {
-  display: flex;
   flex-direction: column;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .input-password {
@@ -41,13 +37,13 @@ header {
   flex-direction: column;
 }
 
-.form-control {
-  align-self: flex-end;
-  margin-left: 15px;
-}
-
 .fonte-padrao {
   color: white;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin-left: 10px;
 }

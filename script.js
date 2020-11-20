@@ -33,7 +33,7 @@ function rightSideChange() {
     const rightSide = document.querySelector('.right-content');
     rightSide.innerHTML = '';
     const rightSideText = document.createElement('h1');
-    const text = `Nome: ${firstName} Sobrenome: ${lastName} Email ou Telefone: ${email} Data de Nascimento: ${birthDate} Gênero: ${genderValue}`;
+    const text = `Olá, ${firstName} ${lastName} Email ou Telefone: ${email} Data de Nascimento: ${birthDate} Gênero: ${genderValue}`;
     const rightSideTextContent = document.createTextNode(text);
     rightSideText.appendChild(rightSideTextContent);
     rightSide.appendChild(rightSideText);
@@ -56,9 +56,11 @@ function formsCheck() {
           'red';
         verificaVazio += 1;
         event.preventDefault();
+      } else {
+        rightSideChange();
       }
-      rightSideChange();
     }
+    verificaVazio = 0;
   });
 }
 formsCheck();

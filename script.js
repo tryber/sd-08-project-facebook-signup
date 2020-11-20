@@ -3,6 +3,7 @@ const emailTelefone = document.getElementById('user-email-phone');
 const btnFacebook = document.getElementById('facebook-register');
 const signup = document.getElementById('form-cadastro');
 const signupInputs = document.querySelectorAll('#form-cadastro input');
+const radioPersonalizado = document.getElementById('radioPersonalizado');
 const radioPersonalized = document.getElementById('pers');
 
 function login() {
@@ -27,11 +28,10 @@ function createInput() {
   for (let index = 0; index < radios.length; index += 1) {
     if (radios[index].value === 'Personalizado') {
       let campo = document.createElement('input');
-      signup.appendChild(campo);
-      campo = signup.insertBefore(campo, btnFacebook);
       campo.type = 'text';
       campo.name = 'gender-custom';
       campo.placeholder = 'Gênero (opcional)';
+      radioPersonalizado.appendChild(campo);
     }
   }
 }

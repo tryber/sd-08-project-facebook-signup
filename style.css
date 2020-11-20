@@ -48,3 +48,7 @@ body {
 .first-last-name {
   display: flex;
 }
+
+.gender-container {
+  display: flex;
+}

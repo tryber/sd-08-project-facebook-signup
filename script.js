@@ -4,24 +4,31 @@ btnLogin.addEventListener('click', function () {
 });
 
 let buttonCadastrar = document.querySelector("#facebook-register");
+let form = document.querySelector(".form-user");
+let right = document.querySelector(".right-content");
 
 function cadastrar(){
   buttonCadastrar.addEventListener("click", function(event){
     event.preventDefault();
     let inputs = document.querySelectorAll(".form-user input[type=text]");
     let resultado = "";
+    let resultadoUsuario = "";
     for (let index=0; index<inputs.length; index++){
       let arrayInput = inputs[index];
       if (arrayInput.value == "") {
         arrayInput.className = "erro";
-        resultado += `Campos inválidos ${arrayInput.name}.\n`;
+        resultado += `Campos inválidos ${arrayInput.name}.\n`;        
       }else {
-       arrayInput.className = ""; 
+       arrayInput.className = "";
+       resultadoUsuario += arrayInput.value;
       }    
     }
     if (resultado !== ""){
       alert(resultado);            
     }else {            
+      let p = document.createElement("p");
+      p.innerHTML = resultadoUsuario;
+      right.append(p);
       form.reset();
     }
   });

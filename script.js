@@ -30,7 +30,6 @@ registerMessage();
 */
 
 function substituteFormContainer() {
-  const input = document.querySelectorAll('.cadastro input');
   const rigthcontent = document.getElementById('rightcontent');
   const name = document.getElementById('nome').innerText;
   const sobrenome = document.getElementById('sobrenome').innerText;

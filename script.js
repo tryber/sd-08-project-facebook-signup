@@ -6,23 +6,6 @@ function alertLogin() {
   });
 }
 alertLogin();
-// setCustomValidity retirada do artigo: https://www.devmedia.com.br/html5-validator-validando-formularios-com-html5/28785
-function validateForm() {
-  const button = document.getElementById('facebook-register');
-  button.addEventListener('click', function () {
-    const input = document.querySelectorAll('.cadastro input');
-    for (let index = 0; index < input.length; index += 1) {
-      input[index].setCustomValidity('Campos inválidos');
-    }
-    for (let index = 0; index < input.length; index += 1) {
-      if (input[index] == '') {
-        break;
-      }
-    }
-    substituteFormContainer();
-  });
-}
-validateForm();
 
 function addGenderText() {
   const personalizado = document.getElementById('personalizado');
@@ -36,21 +19,41 @@ function addGenderText() {
 }
 addGenderText();
 
-/*function registerMessage() {
+/*
+function registerMessage() {
   const button = document.getElementById('facebook-register');
   button.addEventListener('click', function () {
     substituteFormContainer();
   });
 }
-registerMessage();*/
+registerMessage();
+*/
 
-function substituteFormContainer () {
+function substituteFormContainer() {
   const input = document.querySelectorAll('.cadastro input');
   const rigthcontent = document.getElementById('rightcontent');
-  const name = document.getElementById('nome');
-  const sobrenome = document.getElementById('sobrenome');
-  const phonemail = document.getElementById('phonemail');
-  const birthdate = document.getElementById('birthdate');
-  const mensagem = `Olá${nome.innerText} ${sobrenome.innerText}\n ${phonemail.innerText}\n ${birthdate.innerText}`;
-  rigthcontent.innerHTML = mensagem;  
+  const name = document.getElementById('nome').innerText;
+  const sobrenome = document.getElementById('sobrenome').innerText;
+  const phonemail = document.getElementById('phonemail').innerText;
+  const birthdate = document.getElementById('birthdate').innerText;
+  const mensagem = `Olá${name} ${sobrenome}\n ${phonemail}\n ${birthdate}`;
+  rigthcontent.innerHTML = mensagem;
 }
+
+// setCustomValidity retirada do artigo: https://www.devmedia.com.br/html5-validator-validando-formularios-com-html5/28785
+function validateForm() {
+  const button = document.getElementById('facebook-register');
+  button.addEventListener('click', function () {
+    const input = document.querySelectorAll('.cadastro input');
+    for (let index = 0; index < input.length; index += 1) {
+      input[index].setCustomValidity('Campos inválidos');
+    }
+    for (let index = 0; index < input.length; index += 1) {
+      if (input[index] === '') {
+        break;
+      }
+    }
+    substituteFormContainer();
+  });
+}
+validateForm();

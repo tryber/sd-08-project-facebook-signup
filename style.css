@@ -59,7 +59,7 @@ header {
 
 .left-content p {
   font-weight: 600;
-  width: 300px;
+  /* width: 300px; */
 }
 
 .left-content {
@@ -96,4 +96,9 @@ header {
   height: 29px;
   margin-top: 5px;
   width: 313px;
+}
+
+.birthdate-label {
+  font-weight: 600;
+  opacity: 0.5;
 }

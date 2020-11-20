@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Facebook</title>
-  <script src="script.js"></script>
 </head>
+
 <body>
   <header class="top-bar"></header>
-  <link rel="stylesheet" href="style.css">
+  <div class="main-content">
+    <div class="left-content">
+      <p id="facebook-slogan">
+        O Facebook ajuda você a se conectar e <br>
+        compartilhar com as pessoas que fazem parte <br>
+        da sua vida.
+      </p>
+      <img src="imgs/networking.png" alt="facebook-networking" id="facebook-networking">
+    </div>
+    <div class="right-content">
+      <h1>Abra uma conta</h1>
+      <p class="quick-easy">É rápido e fácil</p>
+      <form action="#">
+        <div id="fullname">
+          <input type="text" name="firstname" placeholder="Nome">
+          <input type="text" name="lastname" placeholder="Sobrenome">
+        </div>
+
+        <input type="text" name="phone_email" placeholder="Celular ou email">
+        <input type="password" name="password" placeholder="Nova senha">
+
+        <div id="birthdate">
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        </div>
+
+        <div id="gender">
+          <label for="gender" id="label-gender">Gênero</label>
+          <div id="gender_options">
+            <input type="radio" name="gender" value="male">
+            <label for="female">Feminino</label>
+            <input type="radio" name="gender" value="female">
+            <label for="female">Masculino</label>
+            <input type="radio" name="gender" value="other">
+            <label for="female">Personalizado</label>
+          </div>
+        </div>
+
+        <button type="submit" id="facebook-register">Cadastre-se</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>

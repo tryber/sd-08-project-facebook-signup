@@ -1,4 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  height: 80vh;
+  background-image: linear-gradient(white, #D3D8E8);
+}
+
 .top-bar {
   display: flex;
-  background-color: rgb(66, 103, 178);
+  background-color:#3C5A98;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.right-content > h1 {
+  color: #333333;
+}
+
+.quick-easy {
+  margin: 10px 0;
+}
+
+#facebook-slogan {
+  color: #0E385F;
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+#fullname {
+  display: flex;
+}
+
+#birthdate {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+#gender {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-gender {
+  margin: 9px 0;
+  margin-left: 4px;
+  color: #989CA4;
+  font-weight: 800;
+  font-size: 13.5px;
+}
+
+#label-birthdate {
+  margin-left: 4px;
+  color: #989CA4;
+  font-weight: 800;
+  font-size: 13.5px;
+}
+
+#facebook-register {
+  background-image: linear-gradient(#65A952, #588B44);
+  padding: 6px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0.5px 0.5px 0.5px grey;
+  border: 1.2px solid rgba(104, 104, 104, 0.2);
+  box-shadow: inset 0 0.5px 0.5px rgba(255, 255, 255, 0.8);
+  margin-top: 60px;
+}
+
+input {
+  background-color: white;
+  margin: 5px 0;
+}
+
+input[name="firstname"] {
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 2px solid #D4DAE6;
+  width: 100%;
+}
+
+input[type="password"] {
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 2px solid #D4DAE6;
+  width: 100%;
 }

@@ -36,5 +36,4 @@ cadastre.addEventListener('click', function () {
     alerta.className = 'alerta';
     formulario.appendChild(alerta);
   }
-
 });

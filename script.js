@@ -41,7 +41,7 @@ radiop.addEventListener("click", function (event) {
 let persona = document.querySelector("#botaopersonalizado");
 
 let radiop = document.getElementsByClassName("radioperso");
-let element = document.createElement("input");
+//let element = document.createElement("input");
 
 for (let index = 0; index < radiop.length; index++) {
   radiop[index].addEventListener("click", function (event) {

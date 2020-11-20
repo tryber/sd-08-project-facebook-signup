@@ -10,7 +10,7 @@ function alertEmail() {
 alertEmail();
 
 const invalid = document.createElement('p');
-const form = document.querySelector('.form-register')
+const form = document.querySelector('.form-register');
 
 function signIt() {
   const inputs = document.querySelectorAll('.inputC');

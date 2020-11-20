@@ -2,6 +2,7 @@ const buttonLoginBtn = document.getElementById('button-login');
 const userEmailPhone = document.getElementById('user-email-phone');
 const facebookRegisterBtn = document.getElementById('facebook-register');
 const invalidField = document.getElementById('invalid-field');
+
 let counter = 0;
 
 facebookRegisterBtn.addEventListener('click', validateForm);

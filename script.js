@@ -44,8 +44,8 @@ function obrigado() {
 
   form2Local[0].innerHTML = `<br><br> Olá, ${bancoDeDados.firstname} ${bancoDeDados.lastname}`;
   form2Local[0].innerHTML += `<br><br> Celular / E-mail: ${bancoDeDados.phone_email}`;
-  form2Local[0].innerHTML += `<br> Data de Nascimento: ${bancoDeDados.birthdate}`;
-  form2Local[0].innerHTML += `<br> Celular - Gênero: ${bancoDeDados.gender}`;
+  form2Local[0].innerHTML += `<br><br> Data de Nascimento: ${bancoDeDados.birthdate}`;
+  form2Local[0].innerHTML += `<br><br> Gênero: ${bancoDeDados.gender}`;
 }
 
 function validar() {
@@ -68,6 +68,9 @@ function validado() {
 
 window.onload = function () {
   validado();
+  const newInput = document.createElement('input');
+  newInput.name = 'firstname';
+  form2Local[0].appendChild(newInput);
 };
 
 document.getElementById('personalizado').addEventListener('click', function () {

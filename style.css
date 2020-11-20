@@ -1,4 +1,10 @@
-#facebook-register {
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.facebook-register {
   margin-top: 10px;
 }
 
@@ -15,12 +21,12 @@
 
 .box4 {
   display: flex;
-  flex-direction: row; 
-  margin-top: 10px; 
+  flex-direction: row;
+  margin-top: 10px;
 }
 
 .erro {
-  border-color: red;    
+  border-color: red; 
 }
 
 .facebook-login {
@@ -58,10 +64,5 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-}
-
-body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
 }

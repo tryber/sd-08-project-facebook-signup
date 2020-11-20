@@ -50,3 +50,7 @@ body {
 .radio-genero {
   display: flex;
 }
+
+.mensagem-invalida {
+  display: none;
+}

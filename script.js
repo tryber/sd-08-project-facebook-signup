@@ -12,7 +12,7 @@ botaoEnviar.addEventListener('click', function() {
 
   const inputsText = document.getElementsByClassName('inputs');
 
-  for (let index = 0;index < inputsText.length;index += 1) {
+  for (let index = 0; index < inputsText.length; index += 1) {
     
     const value = inputsText[index];
     if (value.required) {
@@ -27,7 +27,7 @@ botaoEnviar.addEventListener('click', function() {
 const persona = document.querySelector('.botaopersonalizado');
 const radioPerso = document.getElementsByClassName('radioperso');
 
-for (let index = 0;index < radioPerso.length;index += 1) {
+for (let index = 0; index < radioPerso.length; index += 1) {
   radioPerso[index].addEventListener('click', function() {
     if (radioPerso[2].checked === true) {
       persona.style.display = 'block';

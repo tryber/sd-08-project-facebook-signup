@@ -51,7 +51,6 @@ body {
   flex-direction: column;
 }
 
-.div-personalizado , 
-.to-reveal {
+.div-personalizado, .to-reveal {
   display: none;
 }

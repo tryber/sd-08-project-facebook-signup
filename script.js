@@ -17,7 +17,7 @@ document.getElementById('facebook-register').addEventListener('click', (event) =
     document.getElementById('nome-reveal').innerHTML = 'Olá, ' + nome + sobrenome;
     document.getElementById('email-reveal').innerHTML = celMail;
     document.getElementById('data-reveal').innerHTML = dataNascimento;
-  if (document.getElementById('feminino').checked) {
+    if (document.getElementById('feminino').checked) {
     document.getElementById('gender-reveal').innerHTML = 'Feminino';
   } else if (document.getElementById('masculino').checked) {
     document.getElementById('gender-reveal').innerHTML = 'Masculino';
@@ -29,5 +29,5 @@ document.getElementById('facebook-register').addEventListener('click', (event) =
 });
 
 document.getElementById('personalizado').addEventListener('click', () => {
-document.getElementById('div-personalizado').className = 'none';
+  document.getElementById('div-personalizado').className = 'none';
 });

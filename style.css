@@ -14,6 +14,10 @@
   display: flex;
 }
 
+.facebook-login div {
+  margin: 0 5px;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -30,7 +34,12 @@
 
 .form-group label {
   color: white;
+  font-size: 14px;
   font-weight: 700;
+}
+
+.form-group input {
+  width: 130px;
 }
 
 .main-content {

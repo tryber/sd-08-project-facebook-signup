@@ -1,6 +1,6 @@
 body {
   margin: auto;
-  width: 60%;
+  width: 80%;
 }
 
 header {
@@ -50,8 +50,14 @@ header {
 
 .main-content {
   display: flex;
+  justify-content: space-between;
 }
 
 .left-content {
   width: 800px;
+  margin-right: 100px;
+}
+
+.right-content{
+width: 300px;
 }

@@ -52,3 +52,16 @@ body {
 .gender-container {
   display: flex;
 }
+
+.mensagem-invalidos {
+  color: red;
+  display: none;
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.custom {
+  display: none;
+  align-self: flex-end;
+}

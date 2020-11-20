@@ -33,32 +33,22 @@ btnSalvar.addEventListener('click', function () {
 // resolvido utilizando dados do site https://pt.stackoverflow.com/questions/65696/como-capturar-par%C3%A2metros-passados-pela-url-usando-javascript contudo, foi bem compreendido o funcionamento.
 
 function obrigado() {
-  let urlData = location.search.slice(1);
-  let partes = urlData.split('&');
-  let bancoDeDados = {};
-  partes.forEach(function (parte) {
-      let chaveValor = parte.split('=');
-      let chave = decodeURIComponent(chaveValor[0]);
-      let valor = decodeURIComponent(chaveValor[1]);
-      bancoDeDados[chave] = valor;
+  const urlData = location.search.slice(1).split('&');
+  const bancoDeDados = {};
+  urlData.forEach(function (parte) {
+    let chaveValor = parte.split('=');
+    const chave = decodeURIComponent(chaveValor[0]);
+    const valor = decodeURIComponent(chaveValor[1]);
+    bancoDeDados[chave] = valor;
   });
 
-  form2Local[0].innerHTML = ("Olá, " + bancoDeDados['firstname'] + " " + bancoDeDados['lastname']);
-
-  for (let index in bancoDeDados) {
-    if (index === "firstname") {
-      
-    } else if (index === "lastname") {
-
-    } else if (index === "password") {
-
-    } else {
-     form2Local[0].innerHTML += ('<br><br>' + index + ": " + bancoDeDados[index]);
-    }
-  }
+  form2Local[0].innerHTML = ('<br><br> Olá, ' + bancoDeDados['firstname'] + ' ' + bancoDeDados['lastname']);
+  form2Local[0].innerHTML += ('<br><br> Celular / E-mail: ' + bancoDeDados['phone_email']);
+  form2Local[0].innerHTML += ('<br> Data de Nascimento: ' + bancoDeDados['birthdate']);
+  form2Local[0].innerHTML += ('<br> Celular - Gênero: ' + bancoDeDados['gender']);
 }
 
-function validar() {
+function validar () {
   if ((document.getElementById('inputnome').value === '') || (document.getElementById('inputsobrenome').value === '') || (document.getElementById('inputcelular').value === '') || (document.getElementById('inputnovasenha').value === '') || (document.getElementById('inputnascimento').value === '')) {
     
   } else {

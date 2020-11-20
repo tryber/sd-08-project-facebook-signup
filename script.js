@@ -36,9 +36,9 @@ function checkRadio() {
       if (!inputRadio[index].checked) {
         invalid.innerText = 'Campos inválidos';
       }
-      form.appendChild(invalid)
+      form.appendChild(invalid);
     }
   });
-  
 }
+
 checkRadio();

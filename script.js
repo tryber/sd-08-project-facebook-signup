@@ -16,7 +16,6 @@ function cheksInput() {
 
   button.addEventListener ('click', function () {
     const formsInput = document.querySelectorAll('.form-register input');
-    
     for (let index = 0; index < formsInput.length; index += 1) {
       if (formsInput[index].value === '' && formsInput[index].type === 'text') {
         contador += 1;
@@ -27,7 +26,7 @@ function cheksInput() {
       }
     }
     if (contador !== 0 || radio !== true) {
-      alert("Campos inválidos");
+      alert('Campos inválidos');
     }
   });
 }
@@ -36,13 +35,12 @@ cheksInput();
 
 function radioCustom() {
   const forms = document.querySelector('.form-register');
-
   forms.addEventListener('click', function (event) {
     if (event.target.id === 'personalizado') {
       const textArea = document.createElement('textarea');
       const personalizado = document.querySelector('.custom');
       textArea.name = 'gender-custom';
-      textArea.placeholder = "Gênero";
+      textArea.placeholder = 'Gênero';
       personalizado.appendChild(textArea);
     }
   });

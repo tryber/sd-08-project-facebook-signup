@@ -66,5 +66,15 @@ button {
 }
 
 .right-content {
+  display: flex;
+  flex-direction: column;
   width: 300px;
+}
+
+.input-name-lastname {
+  display: flex;
+}
+
+.radio-buttons {
+  display: flex;
 }

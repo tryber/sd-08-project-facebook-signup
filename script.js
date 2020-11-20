@@ -26,7 +26,10 @@ function cheksInput() {
       }
     }
     if (contador !== 0 || radio !== true) {
-      alert('Campos inválidos');
+      const forms = document.querySelector('.form-register');
+      const errorText = document.createElement('p');
+      errorText.innerHTML = 'Campos inválidos';
+      forms.appendChild(errorText);
     }
   });
 }
@@ -41,7 +44,7 @@ function radioCustom() {
       const personalizado = document.querySelector('.custom');
       textArea.type = 'text';
       textArea.name = 'gender-custom';
-      textArea.placeholder = 'Gênero';
+      textArea.placeholder = 'Gênero (opcional)';
       personalizado.appendChild(textArea);
     }
   });

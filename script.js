@@ -10,30 +10,30 @@ function alertEmail() {
 alertEmail();
 
 function signIt() {
-  let inputs = document.querySelectorAll('.inputC');
-  let register = document.querySelector('#facebook-register');
+  const inputs = document.querySelectorAll('.inputC');
+  const register = document.querySelector('#facebook-register');
   register.addEventListener('click', function () {
-    for (let index =0; index < inputs.length; index +=1){
-      if (inputs[index].value == ""){
+    for (let index =0; index < inputs.length; index +=1) {
+      if (inputs[index].value === ''){
         alert('Campos inválidos');
       }
     }
-  })
+  });
 }
 
 signIt();
 
 function checkRadio() {
-  let inputRadio = document.querySelectorAll('.inputRadio');
-  let register = document.querySelector('#facebook-register');
+  const inputRadio = document.querySelectorAll('.inputRadio');
+  const register = document.querySelector('#facebook-register');
   register.addEventListener('click', function () {
-    for(let index = 0; index < inputRadio.length; index+=1){
-      if(!inputRadio[index].checked){
+    for (let index = 0; index < inputRadio.length; index+=1) {
+      if (!inputRadio[index].checked) {
         alert('Campos inválidos');
-      }else {
+      } else {
         break;
       }
     }
-  })
+  });
 }
 checkRadio();

@@ -11,11 +11,11 @@ buttonLoginBtn.addEventListener('click', function () {
 let counter = 0;
 
 function plotText() {
-  let firstName = document.forms.myForm.firstname.value;
-  let lastName = document.forms.myForm.lastname.value;
-  let phoneEmail = document.forms.myForm.phone_email.value;
-  let birthdate = document.forms.myForm.birthdate.value;
-  let gender = document.forms.myForm.gender.value;
+  const firstName = document.forms.myForm.firstname.value;
+  const lastName = document.forms.myForm.lastname.value;
+  const phoneEmail = document.forms.myForm.phone_email.value;
+  const birthdate = document.forms.myForm.birthdate.value;
+  const gender = document.forms.myForm.gender.value;
 
   const formField = document.getElementById('.create-account');
   const boxText = document.querySelector('.right-content');

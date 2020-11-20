@@ -39,67 +39,83 @@
       </div>
       <div class="right-content">
         <div class="to-remove">
-            <h1>Abra uma conta</h1>
-        <p class="quick-easy">É rápido e fácil.</p>
-        <form action="">
-          <div class="flex">
-            <input id="nome" type="text" name="firstname" placeholder="Nome" />
+          <h1>Abra uma conta</h1>
+          <p class="quick-easy">É rápido e fácil.</p>
+          <form action="">
+            <div class="flex">
+              <input
+                id="nome"
+                type="text"
+                name="firstname"
+                placeholder="Nome"
+              />
+              <input
+                id="sobrenome"
+                type="text"
+                name="lastname"
+                placeholder="Sobrenome"
+              />
+            </div>
             <input
-              id="sobrenome"
+              id="cel_mail"
               type="text"
-              name="lastname"
-              placeholder="Sobrenome"
+              name="phone_email"
+              placeholder="Celular ou email"
             />
-          </div>
-          <input
-            id="cel_mail"
-            type="text"
-            name="phone_email"
-            placeholder="Celular ou email"
-          />
-          <input
-            id="senha"
-            type="password"
-            name="password"
-            placeholder="Nova senha"
-          />
-          <div class="flex column">
-            <label id="label-birthdate">Data de nascimento</label>
             <input
-              id="birthdate"
-              name="birthdate"
-              type="text"
-              placeholder="dd/mm/aaaa"
+              id="senha"
+              type="password"
+              name="password"
+              placeholder="Nova senha"
             />
-          </div>
-          <label id="label-gender" for="">Gênero</label>
-          <div class="flex">
-            <input id="feminino" name="gender" type="radio" value="Feminino" checked />
-            <label for="">Feminino</label>
-            <input  id="masculino" name="gender" type="radio" value="Masculino" />
-            <label for="">Masculino</label>
-            <input
-              id="personalizado"
-              name="gender"
-              type="radio"
-              value="Personalizado"
-            />
-            <label for="">Personalizado</label>
-          </div>
-          <div class="div-personalizado" id="div-personalizado">
-            <input name="gender-custom" type="text" placeholder="Gênero" />
-          </div>
-          <button type="submit" id="facebook-register">Cadastre-se</button>
-          <p id="camposInvalidos"></p>
-        </form>
+            <div class="flex column">
+              <label id="label-birthdate">Data de nascimento</label>
+              <input
+                id="birthdate"
+                name="birthdate"
+                type="text"
+                placeholder="dd/mm/aaaa"
+              />
+            </div>
+            <label id="label-gender" for="">Gênero</label>
+            <div class="flex">
+              <input
+                id="feminino"
+                name="gender"
+                type="radio"
+                value="Feminino"
+                checked
+              />
+              <label for="">Feminino</label>
+              <input
+                id="masculino"
+                name="gender"
+                type="radio"
+                value="Masculino"
+              />
+              <label for="">Masculino</label>
+              <input
+                id="personalizado"
+                name="gender"
+                type="radio"
+                value="Personalizado"
+              />
+              <label for="">Personalizado</label>
+            </div>
+            <div class="div-personalizado" id="div-personalizado">
+              <input name="gender-custom" type="text" placeholder="Gênero" />
+            </div>
+            <button type="submit" id="facebook-register">Cadastre-se</button>
+            <p id="camposInvalidos"></p>
+          </form>
         </div>
         <div class="to-reveal column">
-           <form>
+          <form>
             <label id="nome-reveal"></label>
             <label id="email-reveal"></label>
             <label id="data-reveal"></label>
             <label id="gender-reveal"></label>
-           </form>
+          </form>
         </div>
       </div>
     </main>

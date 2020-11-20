@@ -135,13 +135,13 @@ h1 {
 }
 
 .date-birth label {
-  width: 100%;
   margin: 5px 0;
+  width: 100%;
 }
 
 .label-gender {
-  width: 100%;
   margin: 5px 0;
+  width: 100%;
 }
 
 .right-content form input:nth-child( 6 ) {
@@ -175,7 +175,7 @@ h1 {
 .radio-gender {
   align-items: center;
   display: flex;
-  margin: 5px 0;
   justify-content: space-between;
+  margin: 5px 0;
   width: 100%;
 }

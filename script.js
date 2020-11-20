@@ -3,6 +3,7 @@ const getInputLogin = document.getElementById('user-email-phone');
 const getButtonSubmit = document.getElementById('facebook-register');
 const getGenderPersonalizado = document.getElementById('personalizado');
 const getGenderPersonalizadoContainer = document.getElementById('genero-personalizado');
+const setMessageInvalid = document.getElementById('message-invalid');
 
 function createInputGenderPersonalizado() {
   const genderCustom = '<input name="gender-custom" type="text" placeholder="Gênero (opcional)"></input>';
@@ -19,8 +20,8 @@ getButtonSubmit.onclick = function (event) {
   let check = false;
   inputForm.forEach((element) => {
     const valueElement = element.value;
-    if (valueElement) check = true;
+    if (valueElement === '') check = true;
   });
-  if (check) alert('Campos inválidos');
+  if (check) setMessageInvalid.style.display = 'block';
 };
 getGenderPersonalizado.onclick = createInputGenderPersonalizado;

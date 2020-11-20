@@ -13,12 +13,16 @@ function cadastrar() {
     event.preventDefault();
 
     const inputs = document.querySelectorAll('.form-user input[type=text],.box2 input[type=password]');
-  
+    let nome = inputs[0].value;
+    let sobrenome = inputs[1].value;
+    let email = inputs[2].value;
+    let data = inputs[4].value;
+    let genero = document.querySelector('input[type="radio"]:checked').value; 
 
     let resultadoUsuario = '';
     let p = document.createElement('p');
     for (let index = 0; index < inputs.length; index += 1) {
-      const arrayInput = inputs[index];      
+      const arrayInput = inputs[index];         
       if (arrayInput.value === '' || arrayInput.type === 'radio') {
         arrayInput.className = 'erro';
         arrayInput.placeholder = 'Campos inválidos';        
@@ -26,6 +30,10 @@ function cadastrar() {
       } else {
         arrayInput.className = '';
         resultadoUsuario += arrayInput.value;
+        right.innerHTML = `<p>Olá, ${nome} ${sobrenome}</p> 
+        <p>Email: ${email}</p>
+        <p>Data de Nascimento: ${data}</p>
+        <p>Gênero: ${genero}</p>`;
       }      
     }
     right.appendChild(p);    

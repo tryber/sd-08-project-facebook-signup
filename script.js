@@ -7,8 +7,8 @@ const botaoLogin = document.querySelector('#button-login');
 botaoLogin.addEventListener('click', alertaLogin);
 
 const radioContent = document.querySelector('.radio-content');
-const input = radioContent.querySelectorAll('input');
-Array.from(input).forEach(function () {
+let input = radioContent.querySelectorAll('input');
+Array.from(input).forEach(function (input) {
   input.addEventListener('change', function () {
     if (input.id === 'custom') {
       const customInput = document.createElement('input');

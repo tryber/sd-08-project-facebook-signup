@@ -1,8 +1,8 @@
-window.onload = function (){
-    const warning = document.getElementById('button-login');
-    warning.addEventListener('click', function () {
-    const emailPhone = document.getElementById('user-email-phone');
-      alert(emailPhone.value);
+window.onload = function () {
+  const warning = document.getElementById('button-login');
+  warning.addEventListener('click', function () {
+  const emailPhone = document.getElementById('user-email-phone');
+     alert(emailPhone.value);
     });
   };
 function changeRightContainer() {

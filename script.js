@@ -19,17 +19,17 @@ function cadastrar() {
     let data = inputs[4].value;
     let genero = document.querySelector('input[type="radio"]:checked').value; 
 
-    let resultadoUsuario = '';
+   // let resultadoUsuario = '';
     let p = document.createElement('p');
     for (let index = 0; index < inputs.length; index += 1) {
       const arrayInput = inputs[index];         
-      if (arrayInput.value === '' || arrayInput.type === 'radio') {
+      if (arrayInput.value === '') {
         arrayInput.className = 'erro';
         arrayInput.placeholder = 'Campos inválidos';        
         p.innerText = 'Campos inválidos';        
       } else {
         arrayInput.className = '';
-        resultadoUsuario += arrayInput.value;
+    //    resultadoUsuario += arrayInput.value;
         right.innerHTML = `<p>Olá, ${nome} ${sobrenome}</p> 
         <p>Email: ${email}</p>
         <p>Data de Nascimento: ${data}</p>

@@ -2,7 +2,8 @@ body {
   margin: 0;
 }
 
-@media screen and ( max-width: 749px ) {
+@media screen and ( max-width : 749px ) {
+  
   .logo-mobile {
     background-color: blue;
     display: block;
@@ -26,7 +27,7 @@ body {
   .font-small {
     display: block;
   }
- 
+
   .facebook-login {
     align-items: center;
     display: flex;
@@ -34,14 +35,16 @@ body {
   }
 }
 
-/* DISPLAY DESKTOP LAPTOP*/
-@media screen and ( min-width: 750px ) {
+/* DISPLAY DESKTOP LAPTOP */
+
+@media screen and ( min-width : 750px ) {
+  
   .top-bar {
     align-items: center;
     background-color: rgb(66, 103, 178);
     display: flex;
     justify-content: space-between;
-    padding:0 80px;
+    padding: 0 80px;
   }
 
   .facebook-login {
@@ -66,9 +69,9 @@ body {
   }
 
   .left-content {
-    width: 800px;
     margin-left: -100px;
     margin-right: 100px;
+    width: 800px;
   }
 
   .right-content {
@@ -114,7 +117,7 @@ body {
   }
 
   .witdh-input {
-    width:292px;
+    width: 292px;
   }
 
   .img-width {

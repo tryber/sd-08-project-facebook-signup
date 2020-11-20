@@ -13,8 +13,11 @@ loginButton.addEventListener('click', sendForm);
 
 function inputs() {
   for (let index = 0; index < verify.length; index += 1) {
-    if (verify[index].value === '') { span.textContent = 'Campos inválidos'; }
-    else { span.textContent = ''; }
+    if (verify[index].value === '') { 
+      span.textContent = 'Campos inválidos'; 
+    } else { 
+      span.textContent = ''; 
+    }
   }
 }
 
@@ -30,5 +33,9 @@ buttonRegister.addEventListener('click', verifyFilling);
 
 addEventListener('change', function (e) {
   const gender = document.querySelector('.optional').style;
-  e.target.id === 'gender-custom' ? gender.display = 'inherit' : gender.display = 'none';
+  if(e.target.id === 'gender-custom') {
+    gender.display = 'inherit';
+  } else {
+    gender.display = 'none';
+  }
 });

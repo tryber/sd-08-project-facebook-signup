@@ -17,7 +17,7 @@ function signIt() {
   register.addEventListener('click', function () {
     for (let index = 0; index < inputs.length; index += 1) {
       if (inputs[index].value === '') {
-        invalid.innerText = "Campos inválidos";
+        invalid.innerText = 'Campos inválidos';
       }
     }
   });
@@ -34,7 +34,7 @@ function checkRadio() {
   register.addEventListener('click', function () {
     for (let index = 0; index < inputRadio.length; index += 1) {
       if (!inputRadio[index].checked) {
-        invalid.innerText = "Campos inválidos";
+        invalid.innerText = 'Campos inválidos';
       }
       form.appendChild(invalid);
     }

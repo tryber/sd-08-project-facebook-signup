@@ -28,3 +28,10 @@ function checkRegistration() {
 
 const cadastro = document.getElementById('facebook-register');
 cadastro.addEventListener('click', checkRegistration);
+
+function genderCustom() {
+  
+}
+
+const custom = document.getElementById('Personalizado');
+custom.addEventListener('click', genderCustom);

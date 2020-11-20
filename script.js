@@ -21,6 +21,7 @@ function customGender() {
 custom.addEventListener('change', customGender);
 
 const buttonRegister = document.querySelector('#facebook-register');
+const rightContent = document.querySelector('.right-content');
 
 function verifyFields() {
   const firstname = document.querySelector('.firstname').value;
@@ -32,9 +33,43 @@ function verifyFields() {
   for (let i = 0; i < fields.length; i += 1) {
     if (fields[i] === '') {
       document.querySelector('.invalid-field').style.display = 'contents';
-      break;
+      return false;
     }
   }
+  return fields;
 }
 
-buttonRegister.addEventListener('click', verifyFields);
+function genderChecked() {
+  let gender;
+  if (document.querySelector('#Masculino').checked) {
+    gender = 'Masculino';
+  } else if (document.querySelector('#Feminino')) {
+    gender = 'Feminino';
+  } else {
+    if (inputCustom.value !== '') {
+      gender = inputCustom.value;
+    } else {
+      gender = 'Personalizado';
+    }
+  }
+  return gender;
+}
+
+function subimitForm() {
+  const fields = verifyFields();
+
+  const gender = genderChecked();
+
+  if (fields !== false) {
+    rightContent.innerHTML = 
+    `<h1>Olá ${fields[0]} ${fields[1]}</h1>
+    <h2>Seja bem vinda(o)</h2>
+    <p>Por favor confira se os dados estão corretos.</p>
+    <p>Email/celular:${fields[2]}</p>
+    <p>Data de nascimento: ${fields[4]}</p>
+    <p>Gênero: ${gender}</p>`
+  }
+
+}
+
+buttonRegister.addEventListener('click', subimitForm);

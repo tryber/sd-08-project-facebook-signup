@@ -14,6 +14,12 @@ function validateForm() {
     for (let index = 0; index < input.length; index += 1) {
       input[index].setCustomValidity('Campos inválidos');
     }
+    for (let index = 0; index < input.length; index += 1) {
+      if (input[index] == '') {
+        break;
+      }
+    }
+    substituteFormContainer();
   });
 }
 validateForm();
@@ -30,24 +36,21 @@ function addGenderText() {
 }
 addGenderText();
 
-function registerMessage(){
+/*function registerMessage() {
   const button = document.getElementById('facebook-register');
   button.addEventListener('click', function () {
     substituteFormContainer();
-});
+  });
 }
-/*
-  function substituteFormContainer () {
+registerMessage();*/
+
+function substituteFormContainer () {
   const input = document.querySelectorAll('.cadastro input');
   const rigthcontent = document.getElementById('rightcontent');
   const name = document.getElementById('nome');
   const sobrenome = document.getElementById('sobrenome');
   const phonemail = document.getElementById('phonemail');
   const birthdate = document.getElementById('birthdate');
-  const mensagem = `Olá${nome} ${sobrenome}\n ${phonemail}\n ${birthdate}`;
-  for (let index = 0; index < input.length; index += 1) {
-    if (input[index] != '');
-  rigthcontent.innerHTML = mensagem;
+  const mensagem = `Olá${nome.innerText} ${sobrenome.innerText}\n ${phonemail.innerText}\n ${birthdate.innerText}`;
+  rigthcontent.innerHTML = mensagem;  
 }
-substituteFormContainer();
-*/

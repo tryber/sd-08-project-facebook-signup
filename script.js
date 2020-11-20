@@ -53,7 +53,8 @@ function selectedRadio() {
 }
 
 function createRightContent() {
-  const newRightContent = document.createElement('p');
+  const newRightContent = document.createElement('div');
+  newRightContent.className = 'right-content';
   mainContent.appendChild(newRightContent);
   newRightContent.innerText = `Olá, ${formText[0].value} ${formText[1].value} ${'\n'} ${formText[2].value} ${'\n'} ${formText[4].value} ${'\n'} ${selectedRadio()}`;
 }

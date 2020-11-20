@@ -11,15 +11,13 @@ function showInvalidos() {
 }
 
 document.querySelector('#facebook-register').addEventListener('click', function (event) {
-  for (let i = 0; i < allInputs.length - 1; i += 1) {
-    if (allInputs[i].value === '') {
-      showInvalidos();
-      event.preventDefault();
-    } else {
-      document.querySelector('.register-validation').style.display = 'flex';
+    for (let i = 0; i < allInputs.length - 1; i += 1) {
+      if (allInputs[i].value === "") {
+        showInvalidos();
+        event.preventDefault();
+      }
     }
-  }
-});
+  });
 
 allInputs[7].addEventListener('change', function () {
   if (allInputs[7].checked === true) {

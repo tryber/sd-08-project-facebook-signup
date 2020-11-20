@@ -25,9 +25,7 @@ function checkRegistration(registrationArray) {
   if (invalidInput > 0) {
     alert('Campos inválidos');
   }
-  if (gender[0].checked || gender[1].checked || gender[2].checked) {
-    return;
-  } else {
+  if (!(gender[0].checked || gender[1].checked || gender[2].checked)) {
     alert('Campos inválidos');
   }
 }

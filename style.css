@@ -6,15 +6,21 @@ body {
   padding: 0;
 }
 
-.top-bar {
+.header {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+.header top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 85px;
-  justify-content: space-between;
 }
 
 .facebook-logo {
-  width: 180px;
+  width: 130px;
 }
 
 .facebook-login {

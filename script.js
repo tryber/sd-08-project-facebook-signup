@@ -27,7 +27,7 @@ registerButton.addEventListener('click', function () {
 
 customGender.addEventListener('click', function () {
   const input = document.createElement('input');
-    input.setAttribute('name', 'gender-custom');
-    input.setAttribute('placeholder', 'Gênero (opcional)');
-    form.insertBefore(input,registerButton);
+  input.setAttribute('name', 'gender-custom');
+  input.setAttribute('placeholder', 'Gênero (opcional)');
+  form.insertBefore(input, registerButton);
 });

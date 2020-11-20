@@ -1,3 +1,7 @@
+const getFormNewAccount = document.querySelector('#register-form');
+const getAllInputs = getFormNewAccount.getElementsByTagName('input');
+const p = document.querySelector('#error-message');
+
 function alertPhoneOrMail() {
   const buttonEnterFacebook = document.querySelector('#button-login');
   buttonEnterFacebook.addEventListener('click', function () {
@@ -5,8 +9,6 @@ function alertPhoneOrMail() {
     alert(urserMailOrPhone);
   });
 }
-
-alertPhoneOrMail();
 
 function addCustomGenderInput() {
   const customGenderRadio = document.querySelector('#custom');
@@ -26,8 +28,6 @@ function addCustomGenderInput() {
   });
 }
 
-addCustomGenderInput();
-
 function deleteGenderInput() {
   const genderInput = document.querySelector('#gender-custom');
   const form = document.querySelector('#register-form');
@@ -43,25 +43,41 @@ function removeCustomGenderInput() {
   customGenderMale.addEventListener('click', deleteGenderInput);
 }
 
-removeCustomGenderInput();
-
-function validateForm() {
-  const getFormNewAccount = document.querySelector('#register-form');
-  const getAllInputs = getFormNewAccount.getElementsByTagName('input');
-  const p = document.querySelector('#error-message');
-  let radioSelected = false;
+function checkInputValues() {
   for (let index = 0; index < getAllInputs.length; index += 1) {
-    if (getAllInputs[index].type === 'text' && getAllInputs[index].value === '' && getAllInputs[index].id != 'gender-custom') {
+    if (getAllInputs[index].type === 'text' && getAllInputs[index].value === '' && getAllInputs[index].id !== 'gender-custom') {
       p.innerHTML = 'Campos inválidos';
       return false;
     }
+  }
+  return true;
+}
 
+function checkRadioSelected() {
+  for (let index = 0; index < getAllInputs.length; index += 1) {
     if (getAllInputs[index].type === 'radio' && getAllInputs[index].checked) {
-      radioSelected = true;
+      return true;
     }
   }
-  if (!radioSelected) {
+  return false;
+}
+
+function validateForm() {
+  const allInputFilled = checkInputValues();
+  const radioSelected = checkRadioSelected();
+  if (!allInputFilled || !radioSelected) {
     p.innerHTML = 'Campos inválidos';
     return false;
   }
+  return true;
+}
+
+var validateForm = validateForm;
+
+window.onload = function () {
+  alertPhoneOrMail();
+  addCustomGenderInput();
+  removeCustomGenderInput();
+  validateForm();
+  p.innerHTML = '';
 }

@@ -18,6 +18,7 @@
 }
 
 .main-content {
+  margin-right: 1px;
   display: flex;
   justify-content: space-between;
 }

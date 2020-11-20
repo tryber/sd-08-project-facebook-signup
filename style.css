@@ -62,13 +62,11 @@ footer p {
 
 .facebook-logo {
   height: 64px;
-  padding-left: 100px;
 }
 
 .facebook-login {
   align-items: flex-start;
   display: flex;
-  padding-right: 100px;
 }
 
 .facebook-login input {

@@ -45,13 +45,22 @@ body {
 }
 
 .left-content {
-  background-color: rgb(56, 57, 151);
+  border: 1px solid black;
   height: 500px;
   width: 800px;
 }
 
 .right-content {
-  background-color: blue;
+  border: 1px solid black;
   height: 300px;
   width: 300px;
+}
+
+.input-name {
+  display: flex;
+}
+
+.input-name input {
+  margin: 5px;
+  padding: 4px;
 }

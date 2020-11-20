@@ -97,4 +97,5 @@ function addContent(event) {
   }
 }
 
+// Apaga e adiciona//
 submitButton.addEventListener('click', addContent);

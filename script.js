@@ -18,11 +18,11 @@ function checkRegistration() {
 
   for (let index = 0; index < 5; index += 1) {
     if (registrationArray[index] === '') {
-      alert('Campos inválidos');
+      document.getElementById('invalid').innerHTML = ('Campos inválidos');
     }
   }
   if (!(gender[0].checked || gender[1].checked || gender[2].checked)) {
-    alert('Campos inválidos');
+    document.getElementById('invalid').innerHTML = ('Campos inválidos');
   }
 }
 

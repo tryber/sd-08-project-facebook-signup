@@ -41,11 +41,11 @@
 		<input type="password" placeholder="Nova senha" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campo inválido')" name="password">
 		<label for="bday" id="label-birthdate">Data de nascimento</label>
 			<input type="text" placeholder="dd/mm/aaaa" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campo inválido')" id="bday">
-		<label for="label-gender">Gênero</label>
+		<label id="label-gender">Gênero</label>
 			<div class="radios">
-			<input type="radio" name="gender" required oninvalid="this.setCustomValidity('Campo inválido')" id="label-gender"> Feminino
-			<input type="radio" name="gender" required oninvalid="this.setCustomValidity('Campo inválido')" id="label-gender"> Masculino
-			<input type="radio" name="gender" required oninvalid="this.setCustomValidity('Campo inválido')" id="label-gender"> Personalizado
+			<input type="radio" name="gender" value="Feminino" required oninvalid="this.setCustomValidity('Campo inválido')" id="Feminino"><label for="Feminino">Feminino</label>
+			<input type="radio" name="gender" value="Masculino" required oninvalid="this.setCustomValidity('Campo inválido')" id="Masculino"><label for="Masculino">Masculino</label>
+			<input type="radio" name="gender" value="Personalizado" required oninvalid="this.setCustomValidity('Campo inválido')" id="Personalizado"><label for="Personalizado">Personalizado</label>
 			</div>
 			<button type="submit" id="facebook-register">Cadastre-se</button>
 	</form>

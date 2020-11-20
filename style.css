@@ -107,6 +107,17 @@ footer p {
   width: 300px;
 }
 
+.success {
+  background-color: rgba(66, 103, 178, 0.2);
+  border: rgb(66, 103, 178) solid 1px;
+  border-radius: 3px;
+  color: rgb(52, 52, 52);
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 60px 20px;
+  padding: 40px 20px;
+}
+
 .open {
   color: rgb(52, 52, 52);
   margin-bottom: 10px;
@@ -229,4 +240,11 @@ span {
 
 span:hover {
   text-decoration-line: underline;
+}
+
+.danger {
+  color: red;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 10px auto;
 }

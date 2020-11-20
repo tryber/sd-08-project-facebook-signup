@@ -1,4 +1,3 @@
-//Gabriel G.
 function loginButtonAlert() {
   const buttonLogin = document.getElementById('button-login');
   buttonLogin.addEventListener('click', function () {

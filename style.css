@@ -49,10 +49,14 @@ body {
   width: 300px;
 }
 
-.first-last-name {
+.first-last-name { /* Simplificar as classes que recebem os mesmos estilos e atributos */
   display: flex;
 }
 
 .right-content form label {
+  display: flex;
+}
+
+.radio {
   display: flex;
 }

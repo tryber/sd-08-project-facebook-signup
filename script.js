@@ -16,12 +16,10 @@ const gender = document.getElementById('Personalizado');
 const signUpForm = document.querySelector('.signUp');
 
 function finishForm() {
-  document.querySelector('.main-content').removeChild(document.querySelector('.right-content'));
+  document.querySelector('.right-content').removeChild(document.querySelector('.signUpForm'));
 
-  const newMessage = document.createElement('section');
-
-  document.querySelector('.main-content').appendChild(newMessage);
-
+  const newMessage = document.querySelector('.right-content');
+  
   const helloLog = document.createElement('h1');
   helloLog.innerHTML = `Olá, ${firstName.value} ${lastName.value}`;
   const emailLog = document.createElement('p');

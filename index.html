@@ -29,39 +29,41 @@
       <img src=imgs/networking.png alt="FacebookLogo" id="facebook-networking">
     </section>
     <section class="right-content">
-      <h1>Abra uma conta</h1>
-      <p class="quick-easy">É rápido e fácil.</p>
-      <form class="signUp" action="">
-        <section class="inputs">
-          <input id="firstname" type="text" name="firstname" placeholder="Nome" required>
-          <input id="lastname" type="text" name="lastname" placeholder="Sobrenome" required>
-        </section>
-        <section class="input2">
-          <input id="phone_email" class ="input2" type="text" name="phone_email" placeholder="Celular ou email" required>
-        </section>
-        <section class="input2">
-          <input id="password" type="password" name="password" placeholder="Nova senha" required></input>
-        </section>
-        <section class="input2">
-          <label  id="label-birthdate">Data de nascimento</label>
-          <input  type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required>
-        </section>
-        <section id="select-gender">
-          <div>
-            <label id="label-gender">Gênero</label>
-          </div>
-          <input class="gender" type="radio" name="gender" id="Feminino" value="Feminino" required></input>
-          <label for="Feminino">Feminino</label>
-          <input class="gender" type="radio" name="gender" id="Masculino" value="Masculino" required></input>
-          <label for="Masculino">Masculino</label>
-          <input class="gender" type="radio" name="gender" id="Personalizado" value="Personalizado" required></input>
-          <label for="Personalizado">Personalizado</label>
-        </section>
-          <section class="input2">
-            <button type="submit" id="facebook-register">Cadastre-se</button>
+      <div class="signUpForm">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <form class="signUp" action="">
+          <section class="inputs">
+            <input id="firstname" type="text" name="firstname" placeholder="Nome" required>
+            <input id="lastname" type="text" name="lastname" placeholder="Sobrenome" required>
           </section>
-          <p id="invalid"></p>
-      </form>
+          <section class="input2">
+            <input id="phone_email" class ="input2" type="text" name="phone_email" placeholder="Celular ou email" required>
+          </section>
+          <section class="input2">
+            <input id="password" type="password" name="password" placeholder="Nova senha" required></input>
+          </section>
+          <section class="input2">
+            <label  id="label-birthdate">Data de nascimento</label>
+            <input  type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required>
+          </section>
+          <section id="select-gender">
+            <div>
+              <label id="label-gender">Gênero</label>
+            </div>
+            <input class="gender" type="radio" name="gender" id="Feminino" value="Feminino" required></input>
+            <label for="Feminino">Feminino</label>
+            <input class="gender" type="radio" name="gender" id="Masculino" value="Masculino" required></input>
+            <label for="Masculino">Masculino</label>
+            <input class="gender" type="radio" name="gender" id="Personalizado" value="Personalizado" required></input>
+            <label for="Personalizado">Personalizado</label>
+          </section>
+            <section class="input2">
+              <button type="submit" id="facebook-register">Cadastre-se</button>
+            </section>
+            <p id="invalid"></p>
+        </form>
+    </div>
     </section>
   </section>
   <script src="script.js"></script>

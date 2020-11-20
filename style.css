@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* HEADER */
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  padding: 0 20%;
 }
 
 .facebook-login {
@@ -21,6 +27,7 @@
 .main-content {
   display: flex;
   justify-content: center;
+  padding: 0 20%;
 }
 
 /* MAIN */
@@ -34,4 +41,8 @@
 
 .create-account-form-group {
   display: flex;
+}
+
+.after-ac {
+  display: unset;
 }

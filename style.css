@@ -69,3 +69,7 @@ body {
 .genderOpt {
   margin-right: 40px;
 }
+
+#invalidos {
+  color: red;
+}

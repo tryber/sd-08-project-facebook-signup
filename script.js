@@ -32,6 +32,6 @@ cadastre.addEventListener('click', function () {
     }
   }
   if (contador !== 0) {
-    invalido.innerText = 'Campos inválidos';
+    invalido.innerHTML = 'Campos inválidos';
   }
 });

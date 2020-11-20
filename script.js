@@ -15,6 +15,7 @@ document.getElementById('facebook-register').addEventListener('click', (event) =
 });
 
 document.getElementById('personalizado').addEventListener('click', () => {
-  const html = '<input name=gender-custom type=text />';
-  document.getElementById('div-personalizado').innerHTML=html;  
+  const s = " "
+  const html = '<input' + s + 'name=gender-custom' + s + 'type=text' + s + '/>';
+  document.getElementById('div-personalizado').innerHTML = html;  
 });

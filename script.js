@@ -25,7 +25,7 @@ function registerMsg() {
   document.querySelector('h1').outerHTML = '';
   document.querySelector('.quick-easy').outerHTML = '';
   document.getElementById('form-register').outerHTML = '';
-  document.querySelector('.right-content').innerHTML = `<div class='success'><p>Olá, ${firstname}</p><p>Email/Celular: ${emailPhone}</p><p>Data de nascimento: ${birthdate}</p><p>Gênero: ${gender}</p></div>`;
+  document.querySelector('.right-content').innerHTML = `<p>Olá, ${firstname}</p><p>Email/Celular: ${emailPhone}</p><p>Data de nascimento: ${birthdate}</p><p>Gênero: ${gender}</p>`;
 }
 
 function validation() {

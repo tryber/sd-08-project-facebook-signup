@@ -11,8 +11,8 @@ body {
 }
 
 .facebook-login {
-  display: flex;
   align-self: flex-end;
+  display: flex;
 }
 
 .form-group {
@@ -31,7 +31,6 @@ body {
 
 .left-content {
   width: 800px;
-  background-color: red;
 }
 
 .right-content {

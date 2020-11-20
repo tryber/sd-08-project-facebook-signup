@@ -46,3 +46,10 @@ btnCadastreSe.addEventListener('click', function (event) {
     newDiv.appendChild(genero);
   }
 });
+
+document.querySelector('#custom').addEventListener('click', function () {
+  const newInput = document.createElement('input');
+  newInput.name = 'gender-custom';
+  newInput.placeholder = 'Gênero (opcional)';
+  document.querySelector('.form-gender').appendChild(newInput);
+});

@@ -65,3 +65,12 @@ body {
 .largerInput {
   width: 300px;
 }
+
+.gender {
+  width: 360px;
+}
+
+.button {
+  padding: 11px;
+  width: 200px;
+}

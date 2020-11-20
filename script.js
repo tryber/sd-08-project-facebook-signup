@@ -1,5 +1,5 @@
+const submit = document.getElementById('button-login');
 function entrar() {
-  const submit = document.getElementById('button-login');
   alert('Digite seu Email ou telefone');
-  submit.addEventListener('click', entrar());
 }
+submit.addEventListener('click', entrar());

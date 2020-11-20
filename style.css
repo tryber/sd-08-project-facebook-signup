@@ -62,6 +62,7 @@ header {
 }
 
 .left-content {
+  justify-content: flex-start;
   width: 800px;
 }
 
@@ -93,4 +94,10 @@ header {
 
 .lastname {
   width: 150px;
+}
+
+.phone-email {
+  height: 29px;
+  margin-top: 5px;
+  width: 313px;
 }

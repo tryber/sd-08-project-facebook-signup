@@ -4,23 +4,6 @@
   justify-content: space-between;
 }
 
-/* #button-login {
-  background-color: #4267b2;
-  border: 1px solid  #2a487d;
-  border-radius: 2px;
-  color: white;
-  font-size: 8pt;
-  font-weight: 700;
-  height: 23px;
-  margin: 7px;
-  padding: 4px;
-}
-
-#button-login:hover {
-  background-color: #6c87bd;
-  cursor: pointer;
-} */
-
 .facebook-login {
   color: white;
   display: flex;
@@ -51,16 +34,3 @@
 .right-content form div {
   display: flex;
 }
-
-/* #facebook-register {
-  background: linear-gradient(180deg, rgba(101, 169, 82, 1) 0%, rgba(88, 138, 68, 1)
-  100%);
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 10pt;
-  font-weight: 700;
-  margin: 10px;
-  padding: 10px;
-  width: 40%;
-} */

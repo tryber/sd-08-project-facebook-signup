@@ -26,12 +26,12 @@
   <div class="main-content">
     <div class="left-content">
       <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-      <img src="imgs/networking.png" alt="Networking">
+      <img id="facebook-networking" src="imgs/networking.png" alt="Networking">
     </div>
     <div id="rightcontent" class="right-content">
       <h1>Abra uma conta</h1>
       <span class="quick-easy">É rápido e fácil.</span>
-      <form class="cadastro" action="">
+      <form id="register" class="cadastro" action="submit">
         <div class="input-name">
           <input id="nome" type="text" name="firstname" placeholder="Nome" required>
           <input id="sobrenome" type="text" name="lastname" placeholder="Sobrenome" required>
@@ -39,13 +39,13 @@
         <input id="phoneemail" type="text" name="phone_email" placeholder="Celular ou email" required>
         <input type="password" name="password" placeholder="Nova senha" required>
         <div>
-          <label id="birthdate" for="" id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+          <input id="birthdate" type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
         </div>
         <label id="label-gender">Gênero</label>
         <div id="gender-fields">
-          <label for="masculino"><input type="radio" id="masculino" name="gender" value="Masculino" checked>Masculino</label>
-          <label for="feminino"><input type="radio" name="gender" id="feminino" value="Feminino">Feminino</label>
+          <label for="feminino"><input type="radio" name="gender" id="feminino" value="Feminino" checked>Feminino</label>
+          <label for="masculino"><input type="radio" name="gender" id="masculino" value="Masculino">Masculino</label>
           <label for="personalizado"><input type="radio" name="gender" id="personalizado" value="Personalizado">Personalizado</label>
         </div>
         <button id="facebook-register" type="submit">Cadastre-se</button>

@@ -11,34 +11,7 @@ loginCheck();
 
 const rightContent = document.querySelector('.right-content');
 const formsContent = rightContent.querySelectorAll('input');
-console.log(formsContent)
-let verificaVazio = 0; 
-
-
-function formsCheck() {
-  const btnSubmit = document.getElementById('facebook-register');
-  btnSubmit.addEventListener('click', function (event) {
-    for (let i = 0; i < 5; i += 1) {
-      if (formsContent[i].value === '') {
-        formsContent[0].placeholder = 'Preencha seu nome';
-        formsContent[1].placeholder = 'Preencha seu sobrenome';
-        formsContent[2].placeholder = 'Preencha celular ou e-mail';
-        formsContent[3].placeholder = 'Preencha sua senha';
-        formsContent[4].placeholder = 'Preencha seu nascimento';
-        document.getElementById('mensagem-campos-invalidos').innerHTML =
-          'Campos inválidos';
-        document.getElementById('mensagem-campos-invalidos').style.color =
-          'red';
-        event.preventDefault();
-      } else {
-        verificaVazio += 1;
-        console.log(verificaVazio)
-      }
-    }
-    rightSideChange();
-  });
-}
-formsCheck();
+let verificaVazio = 0;
 
 function rightSideChange() {
   if (verificaVazio >= 5) {
@@ -66,6 +39,30 @@ function rightSideChange() {
     rightSide.appendChild(rightSideText);
   }
 }
+
+function formsCheck() {
+  const btnSubmit = document.getElementById('facebook-register');
+  btnSubmit.addEventListener('click', function (event) {
+    for (let i = 0; i < 5; i += 1) {
+      if (formsContent[i].value === '') {
+        formsContent[0].placeholder = 'Preencha seu nome';
+        formsContent[1].placeholder = 'Preencha seu sobrenome';
+        formsContent[2].placeholder = 'Preencha celular ou e-mail';
+        formsContent[3].placeholder = 'Preencha sua senha';
+        formsContent[4].placeholder = 'Preencha seu nascimento';
+        document.getElementById('mensagem-campos-invalidos').innerHTML =
+          'Campos inválidos';
+        document.getElementById('mensagem-campos-invalidos').style.color =
+          'red';
+        event.preventDefault();
+      } else {
+        verificaVazio += 1;
+      }
+    }
+    rightSideChange();
+  });
+}
+formsCheck();
 
 function personalizeCheck() {
   const personaBtn = document.getElementById('btn-personalizado');

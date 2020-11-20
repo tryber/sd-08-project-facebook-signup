@@ -190,7 +190,6 @@ body {
 .gender-conteiner {
   align-content: center;
   display: flex;
-  align-content: center;
   justify-content: space-between;
   margin: 5px 0;
 }

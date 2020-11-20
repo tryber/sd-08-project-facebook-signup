@@ -17,21 +17,24 @@ function verificaInputTexto() {
   }
 }
 
-const btnPresonalizado = document.getElementById('personalizado');
-btnPresonalizado.addEventListener('click', () => {
-  const newInput = document.createElement('input');
-  newInput.name = 'gender-custom';
-  newInput.placeholder = 'Gênero (opcional)';
-  inputTexto.appendChild(newInput);
-  const btnMasculino = document.getElementById('masculino');
-  btnMasculino.addEventListener('click', () => {
-    inputTexto.removeChild(newInput)
-  });
-  const btnFeminino = document.getElementById('feminino');
+function radioButtons () {
+  const btnPresonalizado = document.getElementById('personalizado');
+  btnPresonalizado.addEventListener('click', () => {
+    const newInput = document.createElement('input');
+    newInput.name = 'gender-custom';
+    newInput.placeholder = 'Gênero (opcional)';
+    inputTexto.appendChild(newInput);
+    const btnMasculino = document.getElementById('masculino');
+    btnMasculino.addEventListener('click', () => {
+        inputTexto.removeChild(newInput);
+      });
+    const btnFeminino = document.getElementById('feminino');
     btnFeminino.addEventListener('click', () => {
-    inputTexto.removeChild(newInput)
+        inputTexto.removeChild(newInput);
+      });
   });
-});
+}
+radioButtons();
 
 const btnCadastro = document.getElementById('facebook-register');
 btnCadastro.addEventListener('click', verificaInputTexto);

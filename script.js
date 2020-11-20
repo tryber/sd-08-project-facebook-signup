@@ -6,7 +6,7 @@ btnLogin.addEventListener('click', () => {
 
 const inputTexto = document.getElementById('formulario-abre-conta');
 
-function verificaInputTexto(event) {
+function verificaInputTexto() {
   for (let index = 0; index < 4; index += 1) {
     if (inputTexto[index].value === '') {
       const camposInvalidos = document.createElement('p');

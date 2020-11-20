@@ -64,11 +64,13 @@ function checkRadioSelected() {
 }
 
 function getSelectedGender() {
+  const gender = 'none';
   for (let index = 0; index < getAllInputs.length; index += 1) {
     if (getAllInputs[index].type === 'radio' && getAllInputs[index].checked) {
-      return getAllInputs[index].value;
+      gender = getAllInputs[index].value;
     }
   }
+  return gender;
 }
 
 function createP(text) {
@@ -96,13 +98,14 @@ function createNewUserInfo() {
 function validateForm() {
   const allInputFilled = checkInputValues();
   const radioSelected = checkRadioSelected();
+
   if (!allInputFilled || !radioSelected) {
     p.innerHTML = 'Campos inválidos';
     return false;
-  } else {
-    createNewUserInfo();
-    return false;
   }
+
+  createNewUserInfo();
+  return false;
 }
 
 window.onload = function () {

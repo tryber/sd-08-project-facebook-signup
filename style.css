@@ -42,4 +42,9 @@ body {
 
 .register {
   display: flex;
+  flex-direction: column;
+}
+
+.first-last-name {
+  display: flex;
 }

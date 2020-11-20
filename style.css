@@ -102,45 +102,58 @@ h1 {
   margin: 10px 0;
 }
 
+.date-birth input {
+  width: 100%;
+}
+
 .right-content form input {
   font-size: 18px;
   padding: 10px;
 }
 
-.right-content form input:nth-child( 1 ) {
-  width: 48%;
+.full-name {
+  display: flex;
+  justify-content: space-between;
 }
 
-.right-content form input:nth-child( 2 ) {
-  width: 48%;
+.name {
+  width: 49%;
 }
 
-.right-content form input:nth-child( 3 ) {
+.last-name {
+  width: 49%;
+}
+
+.email {
   margin-top: 5px;
-  width: 98%;
+  width: 100%;
 }
 
-.right-content form input:nth-child( 4 ) {
+.pass {
   margin-top: 5px;
-  width: 98%;
+  width: 100%;
 }
 
-.right-content form label:nth-child( 5 ) {
-  margin-top: 5px;
-  padding: 5px;
-  width: 98%;
+.date-birth label {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.label-gender {
+  width: 100%;
+  margin: 5px 0;
 }
 
 .right-content form input:nth-child( 6 ) {
   margin-top: 5px;
   padding: 10px;
-  width: 98%;
+  width: 100%;
 }
 
-.right-content form label:nth-child( 7 ) {
+.date-birth {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 5px;
-  padding: 10px;
-  width: 98%;
 }
 
 .right-content form {
@@ -157,4 +170,12 @@ h1 {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.radio-gender {
+  align-items: center;
+  display: flex;
+  margin: 5px 0;
+  justify-content: space-between;
+  width: 100%;
 }

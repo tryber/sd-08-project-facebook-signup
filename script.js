@@ -15,7 +15,7 @@ function sendForm() {
 loginButton.addEventListener('click', sendForm);
 
 function formConfirmation() {
-  register.innerHTML = `Olá, ${verify[0].value} <br> ${verify[1].value} <br> ${verify[2].value} <br> ${verify[4].value} <br>`;
+  register.innerHTML = `Olá, ${verify[0].value} ${verify[1].value} ${verify[2].value} ${verify[4].value}`;
   if (femin.checked) {
     register.innerText += 'Feminino';
   }

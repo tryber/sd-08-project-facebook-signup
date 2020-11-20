@@ -34,10 +34,10 @@
       <h1>Abra uma conta</h1>
       <p class='quick-easy'>É rápido e fácil.</p>
       <form class='register'>
-        <input class='input-validation name-lastname' type="text" name='firstname' placeholder='Nome'>
-        <input class='input-validation name-lastname' type="text" name="lastname" placeholder='Sobrenome'>
-        <input class='input-validation email-password' type="text" name="phone_email" placeholder='Celular ou email'>
-        <input class='input-validation email-password' type="password" name="password" placeholder="Nova senha">
+        <input class='input-validation name-lastname' type="text" name='firstname' placeholder='Nome' required>
+        <input class='input-validation name-lastname' type="text" name="lastname" placeholder='Sobrenome' required>
+        <input class='input-validation email-password' type="text" name="phone_email" placeholder='Celular ou email' required>
+        <input class='input-validation email-password' type="password" name="password" placeholder="Nova senha" required>
         <div class='birthdate'>
           <label id='label-birthdate'>Data de nascimento</label>
           <input class='input-validation' type="text" name="birthdate" placeholder='dd/mm/aaaa'>
@@ -45,13 +45,14 @@
         <div>
           <label id='label-gender'>Gênero</label>
           <div class='gender'>
-            <input type="radio" name='gender' id='feminino' value="Feminino">
+            <input type="radio" name='gender' id='feminino' value="Feminino" checked>
             <label for="feminino">Feminino</label>
             <input type="radio" name='gender' id='masculino' value="Masculino">
             <label for="masculino">Masculino</label>
             <input type="radio" name='gender' id='personalizado' value="Personalizado">
             <label for="personalizado">Personalizado</label>
           </div>
+          <p id='validation-message'></p>
         </div>
         <button type="submit" id='facebook-register'>Cadastre-se</button>
       </form>

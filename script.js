@@ -76,10 +76,25 @@ function changeRightContentElementDisplay() {
   contentBeforeAc.parentNode.removeChild(contentBeforeAc);
 }
 
+function clearForm() {
+  if (document.querySelector('#invalid-field') === null) {
+    createInvalidFieldMensage();
+  }
+}
+
+function createInvalidFieldMensage() {
+  let form = document.querySelector('#ac-form');
+  let invalidField = document.createElement('p');
+
+  invalidField.innerHTML = 'Campos inválidos';
+  invalidField.id = 'invalid-field';
+  form.appendChild(invalidField);
+}
+
 function isEverythingFilled() {
   const registerButton = document.getElementById('facebook-register');
-  registerButton.addEventListener('click', function () {
-    fillAfterAcContent();
+  registerButton.addEventListener('click', function (event) {
+    event.preventDefault();
     const caInputList = document.querySelectorAll('.ca-input');
     let isntFilledCount = 0;
 
@@ -92,7 +107,9 @@ function isEverythingFilled() {
       isntFilledCount += 1;
     }
     if (isntFilledCount !== 0) {
-      alert('Campos inválidos');
+
+      clearForm();
+
     } else {
       fillAfterAcContent();
       changeRightContentElementDisplay();

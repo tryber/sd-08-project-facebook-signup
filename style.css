@@ -8,7 +8,6 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  padding: 0 20%;
 }
 
 .facebook-login {
@@ -27,7 +26,6 @@ body {
 .main-content {
   display: flex;
   justify-content: center;
-  padding: 0 20%;
 }
 
 /* MAIN */

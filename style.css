@@ -42,7 +42,7 @@ body {
   display: flex;
 }
 
-.new-register, .gender-input {
+.new-register , .gender-input {
   box-sizing: border-box;
   margin-top: 5px;
   width: 100%;

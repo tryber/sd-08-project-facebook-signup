@@ -9,8 +9,7 @@ body {
 .header {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
-  width: auto;
+  justify-content: space-around;
 }
 
 .header top-bar {

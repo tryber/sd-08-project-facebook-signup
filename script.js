@@ -3,6 +3,8 @@ const formFields = ['firstname', 'lastname', 'phone_email', 'password', 'birthda
 const formValidation = document.forms.cadastro;
 const personButton = document.getElementById('personalizado');
 const opcionalInput = document.getElementById('campo-opicional');
+const invalidDiv = document.getElementsByClassName('invalidField')[0];
+const invalidField = document.createElement('p');
 
 function sendAlert() {
   alert(document.getElementById('user-email-phone').value);
@@ -14,7 +16,8 @@ getEnter.addEventListener('click', sendAlert);
 submitButton.addEventListener('click', function (event) {
   for (let i = 0; i < formFields.length; i += 1) {
     if (formValidation[formFields[i]].value === '') {
-      formValidation[formFields[i]].value = 'Campos inválidos';
+      invalidField.innerHTML = 'Campos inválidos';
+      invalidDiv.appendChild(invalidField);
       event.preventDefault();
     }
   }

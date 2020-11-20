@@ -17,7 +17,7 @@ function verificaInputTexto() {
   }
 }
 
-const btnPresonalizado = document.getElementById("personalizado")
+const btnPresonalizado = document.getElementById('personalizado');
 btnPresonalizado.addEventListener('click', () => {
   const newInput = document.createElement('input');
   newInput.name = 'gender-custom';

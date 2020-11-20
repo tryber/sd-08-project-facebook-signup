@@ -39,3 +39,7 @@ body {
   border: none;
   color: white;
 }
+
+.main-content {
+  display: flex;
+}

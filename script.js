@@ -1,5 +1,5 @@
 const entrar = document.getElementById('button-login');
-const invalido = document.getElementById('invalidos');
+const invalido = document.querySelector('.invalidos');
 
 entrar.addEventListener('click', function () {
   const email = document.getElementById('user-email-phone');

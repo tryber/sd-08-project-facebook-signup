@@ -19,3 +19,8 @@ document.getElementsByName('firstname')[0].style.width = '138px';
 document.getElementsByName('lastname')[0].style.width = '138px';
 document.getElementsByName('phone_email')[0].style.width = '300px';
 document.getElementsByName('password')[0].style.width = '300px';
+const btnLogin = document.getElementById('button-login');
+btnLogin.addEventListener('click', function () {
+  alert(document.getElementById('user-email-phone').value);
+});
+

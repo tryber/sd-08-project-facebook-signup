@@ -3,7 +3,6 @@ const buttonRegister = document.getElementById('facebook-register');
 const verify = document.querySelectorAll('.verify');
 const radio = document.querySelectorAll('.radio');
 const span = document.getElementById('invalid');
-const genderCustom = document.getElementById('gender-custom');
 
 function sendForm() {
   const emailPhone = document.getElementById('user-email-phone');
@@ -14,7 +13,8 @@ loginButton.addEventListener('click', sendForm);
 
 function verifyFilling(e) {
   for (let index = 0; index < verify.length; index += 1) {
-    if (verify[index].value === '') span.textContent = 'Campos inválidos';
+    if (verify[index].value === '') { span.textContent = 'Campos inválidos'; }
+    else { span.textContent = ''; }
   }
   if (!(radio[0].checked || radio[1].checked || radio[2].checked)) {
     span.textContent = 'Campos inválidos';
@@ -24,6 +24,7 @@ function verifyFilling(e) {
 
 buttonRegister.addEventListener('click', verifyFilling);
 
-genderCustom.addEventListener('change', function () {
-  document.querySelector('.optional').style.display = 'inherit';
+addEventListener('change', function (e) {
+  const gender = document.querySelector('.optional').style;
+  e.target.id === 'gender-custom' ? gender.display = 'inherit' : gender.display = 'none';
 });

@@ -8,25 +8,26 @@
 </head>
 <body>
 <header class="top-bar">
-  <img src="imgs/facebook-logo.png" alt="logo-facebook" class="facebook-logo">
+  <div class="logo-mobile"><img src="imgs/facebook-logo.png" alt="logo-facebook" class="facebook-logo"></div>
   <form action="" class="facebook-login">
     <div class="form-group">
-      <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-      <input type="text" id="user-email-phone">
+      <label for="user-email-phone" id="user-email-phone-label" class="none">Email ou telefone</label>
+      <input type="text" id="user-email-phone" class="login">
     </div>
     <div class="form-group">
-      <label for="user-password" id="user-password-label">Senha</label>
-      <input type="text" id="user-password">
+      <label for="user-password" id="user-password-label" class="none">Senha</label>
+      <input type="text" id="user-password" class="login">
+      <span class="font-small">Esqueceu sua senha?</span>
     </div>
     <div class="form-control">
-      <button id="button-login">Entrar</button>
+      <button id="button-login" class="margin-button">Entrar</button>
       </div>
   </form>
 </header>
 <main class="main-content">
   <section class="left-content">
     <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-    <img src="imgs/networking.png" alt="networking" id="facebook-networking">
+    <img src="imgs/networking.png" alt="networking" id="facebook-networking" class="img-width">
   </section>
   <section class="right-content">
     <h1>Abra uma conta</h1>
@@ -34,16 +35,16 @@
     <form action="" id="register">
       <input type="text" name="firstname" placeholder="Nome" class="input-space verify">
       <input type="text" name="lastname" placeholder="Sobrenome" class="input-space input-name verify">
-      <input type="text" name="phone_email" placeholder="Celular ou email" class="verify">
-      <input type="password" name="password" placeholder="Nova senha" class="verify">
+      <input type="text" name="phone_email" placeholder="Celular ou email" class="verify witdh-input">
+      <input type="password" name="password" placeholder="Nova senha" class="verify witdh-input"><br>
+      <label for="" id="label-birthdate">Data de nascimento</label>
+      <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="verify witdh-input">
       <label for="" class="gender-label" id="rotulo-genero">Gênero</label>
       <input type="radio" name="genero" class="radio">Feminino
       <input type="radio" name="genero" class="radio">Masculino
       <input type="radio" name="genero" class="radio" id="gender-custom">Personalizado
       <input type="text" name="gender-custom" placeholder="Gênero (opcional)" class="optional">
-      <label for="" id="label-birthdate">Data de nascimento</label>
-      <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="verify">
-      <button type="submit" id="facebook-register">Cadastre-se</button>
+      <button type="submit" id="facebook-register">Cadastre-se</button><br>
       <span id="invalid"></span>
     </form>
   </section>

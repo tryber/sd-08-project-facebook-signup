@@ -43,10 +43,12 @@ html , body {
 
 .left-content {
   width: 800px;
+  justify-content: flex-start;
 }
 
 .right-content {
   width: 300px;
+  justify-content: flex-end;
 }
 
 .right-content input {

@@ -9,7 +9,7 @@ function alertEmail() {
 
 alertEmail();
 
-function cheksInput() {
+/*function cheksInput() {
   const button = document.querySelector('#facebook-register');
   let contador = 0;
   let radio = false;
@@ -34,7 +34,46 @@ function cheksInput() {
   });
 }
 
-cheksInput();
+cheksInput();*/
+
+const invalid = document.createElement('p');
+const form = document.querySelector('.form-register');
+
+function addRegisterEvent() {
+  const register = document.querySelector('#facebook-register');
+  register.addEventListener('click', function () {
+    checkRadio();
+    signIt();
+  });
+}
+
+addRegisterEvent();
+
+function checkRadio() {
+  const inputRadio = document.querySelector('.inputRadio');
+  for (let index = 0; index < inputRadio.length; index += 1) {
+    if (!inputRadio[index].checked) {
+      console.log(invalid.innerHTML);
+      invalid.innerHTML = 'Campos inválidos';
+      form.appendChild(invalid);
+      break;
+    }   
+  }
+}
+
+function signIt() {
+  const inputs = document.querySelectorAll('.inputText');
+  for (let index = 0; index < inputs.length; index += 1) {
+    if (inputs[index].value === '') {
+      console.log(invalid.innerHTML);
+      invalid.innerHTML = 'Campos inválidos';
+      form.appendChild(invalid);
+      
+      break;
+    } 
+  }
+}
+
 
 function radioCustom() {
   const forms = document.querySelector('.form-register');
@@ -50,4 +89,5 @@ function radioCustom() {
   });
 }
 
+radioCustom();
 radioCustom();

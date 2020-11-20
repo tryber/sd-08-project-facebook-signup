@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;;
+  font-family: Arial, sans-serif;;
   margin: 0;
   padding: 0;
 }
@@ -64,18 +64,19 @@ body {
 
 .input-fisrt-name { /* Tratar individualmente */
   flex: 1;
-  width: 140px;
+  min-width: 140px;
+  height: 30px;
 }
 
 .new-user-name {
   display: flex;
-  flex-wrap: nowrap;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
 }
 
 .teste {
   margin-left: 12px;
 }
-
 
 .new-user-contact {
   display: flex;
@@ -86,4 +87,5 @@ body {
 .input-contact {
   margin: 0px 10px 10px 0px;
   width: 100%;
+  height: 30px;
 }

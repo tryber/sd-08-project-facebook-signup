@@ -3,6 +3,7 @@ const buttonRegister = document.getElementById('facebook-register');
 const verify = document.querySelectorAll('.verify');
 const radio = document.querySelectorAll('.radio');
 const span = document.getElementById('invalid');
+const genderCustom = document.getElementById('gender-custom');
 
 function sendForm() {
   const emailPhone = document.getElementById('user-email-phone');
@@ -22,3 +23,7 @@ function verifyFilling(e) {
 }
 
 buttonRegister.addEventListener('click', verifyFilling);
+
+genderCustom.addEventListener('change', function () {
+  document.querySelector('.optional').style.display = 'inherit';
+});

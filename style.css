@@ -47,3 +47,7 @@ body {
 .gender-label {
   display: block;
 }
+
+.optional {
+  display:none;
+}

@@ -21,8 +21,3 @@ Boas práticas pasta pública
 Boas prática do principal
 - Decidir o que vai subir sempre juntos em call
 - Explicar o código e fazer reveiw do código
-
-
-
-
-

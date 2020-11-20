@@ -9,33 +9,13 @@ function loginCheck() {
 }
 loginCheck();
 
+
+
 const rightContent = document.querySelector('.right-content');
 const formsContent = rightContent.querySelectorAll('input');
 let verificaVazio = 0;
-function formsCheck() {
-  const btnSubmit = document.getElementById('facebook-register');
-  btnSubmit.addEventListener('click', function (event) {
-    for (let i = 0; i < formsContent.length; i += 1) {
-      if (formsContent[i].value === '') {
-        formsContent[0].placeholder = 'Preencha seu nome';
-        formsContent[1].placeholder = 'Preencha seu sobrenome';
-        formsContent[2].placeholder = 'Preencha celular ou e-mail';
-        formsContent[3].placeholder = 'Preencha sua senha';
-        formsContent[4].placeholder = 'Preencha seu nascimento';
-        document.getElementById('mensagem-campos-invalidos').innerHTML =
-          'Campos inválidos';
-        document.getElementById('mensagem-campos-invalidos').style.color =
-          'red';
-        verificaVazio += 1;
-        event.preventDefault();
-      }
-      rightSideChange();
-    }
-  });
-}
-formsCheck();
 
-function rightSideChange () {
+function rightSideChange() {
   if (verificaVazio === 0) {
     const firstName = document.getElementById('first-name').value;
     const lastName = document.getElementById('last-name').value;
@@ -61,6 +41,30 @@ function rightSideChange () {
     rightSide.appendChild(rightSideText);
   }
 }
+
+function formsCheck() {
+  const btnSubmit = document.getElementById('facebook-register');
+  btnSubmit.addEventListener('click', function (event) {
+    for (let i = 0; i < formsContent.length; i += 1) {
+      if (formsContent[i].value === '') {
+        formsContent[0].placeholder = 'Preencha seu nome';
+        formsContent[1].placeholder = 'Preencha seu sobrenome';
+        formsContent[2].placeholder = 'Preencha celular ou e-mail';
+        formsContent[3].placeholder = 'Preencha sua senha';
+        formsContent[4].placeholder = 'Preencha seu nascimento';
+        document.getElementById('mensagem-campos-invalidos').innerHTML =
+          'Campos inválidos';
+        document.getElementById('mensagem-campos-invalidos').style.color =
+          'red';
+        verificaVazio += 1;
+        event.preventDefault();
+      }
+      rightSideChange();
+    }
+  });
+}
+formsCheck();
+
 
 function personalizeCheck() {
   const personaBtn = document.getElementById('btn-personalizado');

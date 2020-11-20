@@ -11,16 +11,22 @@ const btnSubmited = document.getElementById('facebook-register');
 btnSubmited.addEventListener('click', function (e) {
   e.preventDefault();
   if (!filedForms.checkValidity()) {
-    window.alert('Campos inválidos');
+    const paragraph = document.getElementById('invalid-form');
+    if (paragraph === null) {
+      const parag = document.createElement('p');
+      parag.id = 'invalid-form';
+      parag.innerText = 'Campos inválidos';
+      filedForms.appendChild(parag);
+    }
   }
 });
 
 const personalizado = document.getElementById('personalizado');
 
 function addInputGender() {
-  const input = document.createElement('input');
   const genderCustom = document.getElementById('gender-custom');
   if (genderCustom === null) {
+    const input = document.createElement('input');
     input.type = 'text';
     input.className = 'large';
     input.name = 'gender-custom';

@@ -7,6 +7,7 @@ const phoneEmail = document.getElementById('phone_email');
 const password = document.getElementById('password');
 const birthdate = document.getElementById('birthdate');
 const btnRegister = document.getElementById('facebook-register');
+const labelEmpty = document.getElementById('labelEmpty');
 let userId;
 
 btnLogin.addEventListener('click', function () {
@@ -16,7 +17,7 @@ btnLogin.addEventListener('click', function () {
 
 btnRegister.addEventListener('click', function () {
   if (firstname.value === '' || lastname.value === '' || phoneEmail === '' || password === '' || birthdate === '') {
-    alert('Campos inválidos');
+    labelEmpty.innerHTML = '<p>Campos inválidos</p>';
   }
 });
 

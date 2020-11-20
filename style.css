@@ -19,6 +19,7 @@ body {
 }
 
 .facebook-logo {
+  align-self: left;
   margin-right: 300px;
   width: 200px;
 }

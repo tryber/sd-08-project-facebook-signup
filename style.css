@@ -34,9 +34,29 @@ body {
   width: 800px;
 }
 
+.signup {
+  display: flex;
+}
+
 .right-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 300px;
+}
+
+.nome-sobrenome {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  display: flex;
+  width: 45%;
+}
+
+.lastname {
+  display: flex;
+  justify-content: flex-end;
+  width: 45%;
 }

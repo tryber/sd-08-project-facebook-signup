@@ -52,3 +52,7 @@ body {
 .first-last-name {
   display: flex;
 }
+
+.right-content form label {
+  display: flex;
+}

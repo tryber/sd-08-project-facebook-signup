@@ -27,3 +27,18 @@ function formsCheck() {
   });
 }
 formsCheck();
+
+function personalizeCheck() {
+  const personaBtn = document.getElementById('btn-personalizado');
+  const gndrContent = document.querySelector('.gender-content');
+  let newInput = document.createElement('input');
+  newInput.type = 'text';
+  gndrContent.addEventListener('change', function () {
+    if (personaBtn.checked) {
+      gndrContent.appendChild(newInput);
+    } else if (gndrContent.contains(newInput)) {
+      gndrContent.removeChild(newInput);
+    }
+  });
+}
+personalizeCheck();

@@ -9,8 +9,6 @@ function loginCheck() {
 }
 loginCheck();
 
-
-
 const rightContent = document.querySelector('.right-content');
 const formsContent = rightContent.querySelectorAll('input');
 let verificaVazio = 0;
@@ -65,7 +63,6 @@ function formsCheck() {
 }
 formsCheck();
 
-
 function personalizeCheck() {
   const personaBtn = document.getElementById('btn-personalizado');
   const gndrContent = document.querySelector('.gender-content');
@@ -82,10 +79,3 @@ function personalizeCheck() {
   });
 }
 personalizeCheck();
-
-
-/* const btnSubmit = document.getElementById('facebook-register');
-btnSubmit.addEventListener('click', function changeForm() {
-  alert('sumitado');
-})
- */

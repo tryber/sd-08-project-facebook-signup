@@ -6,6 +6,7 @@ function loginCheck() {
   const btnEntrar = document.getElementById('button-login');
   btnEntrar.addEventListener('click', entrar);
 }
+loginCheck();
 const btncadastro = document.getElementById('facebook-register');
 function validar() {
   if ((document.getElementById('inputnome').value == null) || (document.getElementById('inputsobrenome').value == null)

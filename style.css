@@ -44,12 +44,11 @@ body {
 }
 
 .left-content {
-  margin: 180px;
+  margin: 30px;
   width: 800px;
 }
 
 .right-content {
-  margin: 180px 80px;
   width: 300px;
 }
 

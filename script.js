@@ -98,7 +98,6 @@ facebookRegisterBtn.addEventListener('click', validateForm);
 function personalizadoField() {
   const personalizadoInput = document.createElement('input');
   personalizadoInput.type = 'text';
-  personalizadoInput.Id = 'Personalizado';
   personalizadoInput.name = 'gender-custom';
   personalizadoInput.placeholder = 'Gênero (opcional)';
   document.querySelector('.personalizado-container').appendChild(personalizadoInput);

@@ -1,7 +1,6 @@
 const getFormLogin = document.querySelector('.facebook-login');
 const getFormRegister = document.getElementsByClassName('form-register')[0];
 const getInvalid = document.querySelector('.invalid');
-const getRadioPerson = document.getElementById('personalizado');
 const radioBtn = document.getElementsByClassName('radioBtns');
 
 const alertLogin = (value) => alert(value);
@@ -13,9 +12,12 @@ function login() {
   });
 }
 
-const validForm = (elments) => {
-  for (let el = 0; el < elments.length; el += 1) {
-    if (elments[el].value === '' && elments[el].type !== 'submit') {
+const reg = (elements, el) => (elements[el].value === '' && elements[el].type !== 'submit') &&
+    (elements[el].style.display === 'block');
+
+const validForm = (elements) => {
+  for (let el = 0; el < elements.length; el += 1) {
+    if (reg(elements, el)) {
       getInvalid.style.display = 'inline';
       return false;
     }
@@ -24,27 +26,14 @@ const validForm = (elments) => {
   return true;
 };
 
-function genderOpcClick() {
-  const inputText = document.createElement('input');
-  inputText.id = 'genderOpc';
-  inputText.name = 'gender-custom';
-  inputText.type = 'text';
-  inputText.style.display = 'block';
-  inputText.placeholder = 'Gênero (opcional).';
-  getRadioPerson.addEventListener('focus', () => {
-    if (getRadioPerson.spellcheck === true) {
-      radioBtn[0].appendChild(inputText);
-    }
-  });
-}
-
-const regra = (ev) => ((ev.target.spellcheck === true && ev.target.id === 'feminino') || (ev.target.spellcheck === true && ev.target.id === 'masculino'));
-
-function removeInput() {
+function chekedInput() {
   radioBtn[0].addEventListener('click', (event) => {
-    const getGendOpc = document.getElementById('genderOpc');
-    if (regra(event) && getGendOpc !== null) {
-      radioBtn[0].removeChild(getGendOpc);
+    const setInput = document.getElementsByClassName('genderOpc');
+    if (event.target.id === 'personalizado') {
+      setInput[0].style.display = 'block';
+    }
+    if (event.target.id === 'masculino' || event.target.id === 'feminino') {
+      setInput[0].style.display = 'none';
     }
   });
 }
@@ -59,8 +48,7 @@ function mainFormRegister() {
 function main() {
   login();
   mainFormRegister();
-  genderOpcClick();
-  removeInput();
+  chekedInput();
 }
 
 main();

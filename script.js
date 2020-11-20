@@ -56,19 +56,11 @@ const btSubmit = document.getElementById('facebook-register');
 btSubmit.addEventListener('click', validateForm);
 
 
-const genderOption = document.getElementById('label-gender');
-
+const genderOption = document.getElementById('test');
+let inputPersGender = document.createElement('input');
+inputPersGender.type = 'text';
+inputPersGender.name = 'gender-custom';
+inputPersGender.placeholder = 'Gênero (opcional)';
 genderOption.addEventListener('click', function () {
-    // let btGenderPers = document.querySelector('#pers').checked;
-    // console.log(btGenderPers);
-
-  const aux = document.forms['signUp-form']['gender'].value;
-
-  if (aux === 'Personalizado') {
-    const inputPersGender = document.createElement('input');
-    inputPersGender.type = 'text';
-    inputPersGender.name = 'gender-custom';
-    inputPersGender.placeholder = 'Gênero (opcional)';
-    genderOption.appendChild(inputPersGender);
-  }
+  document.getElementById('label-gender').appendChild(inputPersGender);
 });

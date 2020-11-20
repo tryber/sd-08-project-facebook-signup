@@ -16,17 +16,19 @@ function cadastrar() {
   
 
     let resultadoUsuario = '';
-
+    let p = document.createElement('p');
     for (let index = 0; index < inputs.length; index += 1) {
-      const arrayInput = inputs[index];
-      if (arrayInput.value === '') {
+      const arrayInput = inputs[index];      
+      if (arrayInput.value === '' || arrayInput.type === 'radio') {
         arrayInput.className = 'erro';
-        arrayInput.placeholder = 'Campos inválidos';
+        arrayInput.placeholder = 'Campos inválidos';        
+        p.innerText = 'Campos inválidos';        
       } else {
         arrayInput.className = '';
         resultadoUsuario += arrayInput.value;
-      }
+      }      
     }
+    right.appendChild(p);    
   });
 }
 cadastrar();

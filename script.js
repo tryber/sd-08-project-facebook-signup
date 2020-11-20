@@ -28,3 +28,10 @@ const form2Local = document.getElementsByClassName('form-group2');
 btnSalvar.addEventListener('click', function () {
   form2Local[0].insertAdjacentHTML('afterbegin', 'Campos inválidos');
 });
+
+document.getElementById('personalizado').addEventListener('click', function () {
+  const newInput = document.createElement('input');
+  newInput.name = 'gender-custom';
+  newInput.placeholder = 'Gênero (opcional)';
+  document.querySelector('.gender-conteiner').appendChild(newInput);
+});

@@ -36,6 +36,28 @@ const signUpForm = document.getElementById('sign-up');
 const errorMessage = document.createElement('p');
 signUpForm.appendChild(errorMessage);
 
+function eraseRightContent() {
+  mainContent.removeChild(mainContent.lastElementChild);
+}
+
+function createRightContent() {
+  const newRightContent = document.createElement('p');
+  mainContent.appendChild(newRightContent);
+  newRightContent.innerText = `Olá, ${formText[0].value} ${formText[1].value} ${'\n'} ${formText[2].value} ${'\n'} ${formText[4].value} ${'\n'} ${selectedRadio()}`;
+}
+
+const mainContent = document.querySelector('.main-content');
+
+function selectedRadio() {
+  let selectedGenre = '';
+  for (let index = 0; index < formRadio.length; index += 1) {
+    if (formRadio[index].checked === true) {
+      selectedGenre = formRadio[index].value;
+    }
+  }
+  return selectedGenre;
+}
+
 function completeSignUp() {
   const buttonRegister = document.getElementById('facebook-register');
   buttonRegister.addEventListener('click', function (event) {
@@ -46,31 +68,7 @@ function completeSignUp() {
       errorMessage.innerText = '';
       eraseRightContent();
       createRightContent();
-      console.log(selectedRadio());
     }
   });
 }
 completeSignUp();
-
-const mainContent = document.querySelector('.main-content');
-
-function eraseRightContent() {
-  mainContent.removeChild(mainContent.lastElementChild);
-}
-
-function createRightContent() {
-  const newRightContent = document.createElement('p');
-  mainContent.appendChild(newRightContent);
-  newRightContent.innerText = `Olá, ${formText[0].value} ${formText[1].value} ${"\n"} ${formText[2].value} ${"\n"} ${formText[4].value} ${"\n"} ${selectedRadio()}`
-}
-
-function selectedRadio() {
-  var selectedGenre = '';
-  for (let index = 0; index < formRadio.length; index += 1) {
-    if (formRadio[index].checked === true) {
-      selectedGenre = formRadio[index].value;
-    }
-  }
-  return selectedGenre;
-}
-

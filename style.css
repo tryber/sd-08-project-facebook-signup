@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 85px;
 }
 
 /* .facebook-logo {
@@ -20,6 +21,20 @@ body {
   padding-top: 40px;
   width: 150px;
 } */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook-login {
+  align-items: center;
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+}
 
 .main-content {
   background-color: #f0f2f5;

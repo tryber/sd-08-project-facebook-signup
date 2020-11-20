@@ -52,18 +52,19 @@ header {
 
 .main-content {
   display: flex;
+  justify-content: flex-start;
   margin: auto;
   width: 80%;
-}
-
-.left-content {
-  justify-content: flex-start;
-  width: 800px;
 }
 
 .left-content p {
   font-weight: 600;
   width: 300px;
+}
+
+.left-content {
+  justify-content: flex-start;
+  width: 800px;
 }
 
 .img-left {
@@ -91,7 +92,7 @@ header {
   width: 150px;
 }
 
-.phone-email {
+.registry-input {
   height: 29px;
   margin-top: 5px;
   width: 313px;

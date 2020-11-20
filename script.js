@@ -44,7 +44,3 @@ function removeCustomGenderInput() {
 }
 
 removeCustomGenderInput();
-
-function errorMessage() {
-
-}

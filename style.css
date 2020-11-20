@@ -78,17 +78,18 @@ body {
 }
 
 .phone-email-input {
+  border: 1px solid rgb(202, 209, 223);
+  border-radius: 2px;
   margin: 4px;
   padding: 7px;
 }
 
-input {
+.style-input {
   border: 1px solid rgb(202, 209, 223);
-  border-radius: 3px;
-  color: black;
+  border-radius: 2px;
 }
 
 input:focus {
-  border: 1px solid #4e4e4e;
   outline: none;
+  border: 1px solid #b8b8b8;
 }

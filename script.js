@@ -12,7 +12,7 @@ function cadastrar() {
   buttonCadastrar.addEventListener('click', function (event) {
     event.preventDefault();
 
-    const inputs = document.querySelectorAll('.form-user input[type=text]');
+    const inputs = document.querySelectorAll('.form-user input[type=text],.box2 input[type=password]');
     let resultado = '';
     let resultadoUsuario = '';
     for (let index = 0; index < inputs.length; index += 1) {

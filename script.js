@@ -27,3 +27,6 @@ btnPresonalizado.addEventListener('click', () => {
 
 const btnCadastro = document.getElementById('facebook-register');
 btnCadastro.addEventListener('click', verificaInputTexto);
+btnCadastro.addEventListener('click', (event) => {
+  event.preventDefault();
+});

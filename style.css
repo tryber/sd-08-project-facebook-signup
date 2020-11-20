@@ -42,12 +42,12 @@ body {
   display: flex;
 }
 
-.new-register {
+.new-register, .gender-input {
   box-sizing: border-box;
   margin-top: 5px;
   width: 100%;
 }
 
-.gender-label {
+.gender-label{
   display: block;
 }

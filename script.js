@@ -4,8 +4,7 @@ btnLogin.addEventListener('click', function () {
   alert(inputValue.value);
 });
 const buttonCadastrar = document.querySelector('#facebook-register');
-const right = document.querySelector('.right-content');
-
+const formUser = document.querySelector('.form-user');
 function cadastrar() {
   buttonCadastrar.addEventListener('click', function (event) {
     event.preventDefault();
@@ -22,15 +21,14 @@ function cadastrar() {
       if (arrayInput.value === '' || genero === '') {
         arrayInput.className = 'erro';
         p.innerText = 'Campos inválidos';
-        resultado += `Favor preencher o campo .\n`;
+        resultado += 'Favor preencher o campo .\n';
       } else {
         arrayInput.className = '';
       }
-      right.appendChild(p);
+      formUser.appendChild(p);
     }
-    if (resultado !== ""){
-    } else {
-      right.innerHTML = `<p>Olá, ${nome} ${sobrenome}</p> <p>Email: ${email}</p> <p>Data de Nascimento: ${data}</p> <p>Gênero: ${genero}`;
+    if (resultado === '') {
+      formUser.innerHTML = `<p>Olá, ${nome} ${sobrenome}</p> <p>Email: ${email}</p> <p>Data de Nascimento: ${data}</p> <p>Gênero: ${genero}`;
     }
   });
 }

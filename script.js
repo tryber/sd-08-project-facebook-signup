@@ -17,16 +17,13 @@ Array.from(input).forEach(function (inputArray) {
       customInput.name = 'gender-custom';
       customInput.placeholder = 'Gênero (opcional)';
       document.querySelector('.custom-content').appendChild(customInput);
-    } else {
-      if (customContent.children.length > 0) {
-        customContent.removeChild(customContent.firstChild);
-      }
+    } else if (customContent.children.length > 0) {
+      customContent.removeChild(customContent.firstChild);
     }
   });
 });
 
-function message() {
-
+function showMessage() {
   document.querySelector('span');
   if (document.querySelector('span') != null) {
     return;
@@ -36,7 +33,6 @@ function message() {
   message.style.color = 'red';
   message.innerText = 'Campos inválidos';
   form.insertBefore(message, form.firstChild);
-
 }
 
 function verificaRadio(formInput) {
@@ -48,7 +44,7 @@ function verificaRadio(formInput) {
     }
   }
   radio[0].setCustomValidity('Campos inválidos');
-  message();
+  showMessage();
 }
 
 function checaValidacao() {

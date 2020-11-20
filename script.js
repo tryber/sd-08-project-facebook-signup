@@ -7,7 +7,8 @@ const botaoLogin = document.querySelector('#button-login');
 botaoLogin.addEventListener('click', alertaLogin);
 
 function checaValidacao() {
-  const input = document.querySelectorAll('input');
+  const input = document.querySelectorAll('.right-content input');
+  console.log(input);
   for (let i = 0; i < input.length; i += 1) {
     if (input[i].value.length === 0) {
       input[i].setCustomValidity('Campos inválidos');

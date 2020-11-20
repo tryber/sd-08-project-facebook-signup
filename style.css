@@ -61,3 +61,7 @@ header {
 .radios {
   display: flex;
 }
+
+#personalizado-container {
+  display: flex;
+}

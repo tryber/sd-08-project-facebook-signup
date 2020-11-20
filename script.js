@@ -2,7 +2,7 @@ document.getElementById('button-login').addEventListener('click', () => {
   (alert(document.getElementById('user-email-phone').value));
 });
 
-document.getElementById('facebook-register').addEventListener('click', () => {
+document.getElementById('facebook-register').addEventListener('click', (event) => {
   const nome = document.getElementById('nome').value;
   const sobrenome = document.getElementById('sobrenome').value;
   const celMail = document.getElementById('cel_mail').value;
@@ -10,5 +10,6 @@ document.getElementById('facebook-register').addEventListener('click', () => {
   const dataNascimento = document.getElementById('birthdate').value;
   if (!nome || !senha || !sobrenome || !celMail || !dataNascimento) {
     document.getElementById('camposInvalidos').innerText = 'Campos inválidos';
+    event.preventDefault();
   }
 });

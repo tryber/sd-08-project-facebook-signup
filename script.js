@@ -19,3 +19,20 @@ buttonCadastro.addEventListener('click', function (event) {
     }
   }
 });
+
+const customGenderInput = document.getElementById('gender-personalizado-input');
+
+function toggleCustomGenderInput(event) {
+  const radio = event.target;
+  if (radio.id === 'gender-personalizado') {
+    customGenderInput.classList.remove('d-none');
+  } else {
+    customGenderInput.classList.add('d-none');
+  }
+}
+
+const radios = document.querySelectorAll('[type=radio]');
+for (let index = 0; index < radios.length; index += 1) {
+  const radio = radios[index];
+  radio.addEventListener('change', toggleCustomGenderInput);
+}

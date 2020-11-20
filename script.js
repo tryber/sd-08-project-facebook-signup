@@ -35,7 +35,6 @@ cadastre.addEventListener('click', function () {
     alerta.innerText = 'Campos inválidos';
     alerta.className = 'alerta';
     formulario.appendChild(alerta);
-  } else {
-    alert('Cadastro Efetuado');
   }
+
 });

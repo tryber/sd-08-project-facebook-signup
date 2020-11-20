@@ -1,4 +1,4 @@
-function checkForms (event) {
+function checkForms () {
     let form = document.querySelectorAll(".form input");
     let flag1 = 0;
     let flag2 = 0;
@@ -12,9 +12,14 @@ function checkForms (event) {
             flag2 = 1;
         }
     }
-    if (flag1 === 1 && flag2 === 0){
+    return ([flag1, flag2]);
+}
+
+function clickSubmit (event) {
+    let check = checkForms ();
+    if (check[0] === 1 || check[1] === 0){
         alert("Campos inválidos");
         event.preventDefault();
     }
 }
-document.querySelector(".facebook-register").addEventListener("click",checkForms)
+document.querySelector(".facebook-register").addEventListener("click",clickSubmit);

@@ -60,3 +60,19 @@ body {
   display: flex;
   width: 45%;
 }
+
+.phone-email {
+  margin-top: 5px;
+}
+
+.gender {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}

@@ -44,16 +44,16 @@ buttonCadastro.addEventListener('click', function (event) {
 
   const firstname = formFields.get('firstname');
   const lastname = formFields.get('lastname');
-  previewData += `Olá, ${firstname} ${lastname}</br>`;
+  previewData += `Olá, ${firstname} ${lastname} `;
 
   const email = formFields.get('phone_email');
-  previewData += `Email: ${email}</br>`;
+  previewData += `Email: ${email} `;
 
   const birthdate = formFields.get('birthdate');
-  previewData += `Data de nascimento: ${birthdate}</br>`;
+  previewData += `Data de nascimento: ${birthdate} `;
 
   const gender = formFields.get('gender');
-  previewData += `Gênero: ${gender}</br>`;
+  previewData += `Gênero: ${gender} `;
 
   rightContent.innerHTML = previewData;
 });

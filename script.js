@@ -5,33 +5,35 @@ btnLogin.addEventListener('click', function () {
 });
 
 const buttonCadastrar = document.querySelector('#facebook-register');
-// const form = document.querySelector('.form-user');
 const right = document.querySelector('.right-content');
 
 function cadastrar() {
   buttonCadastrar.addEventListener('click', function (event) {
     event.preventDefault();
-    const inputs = document.querySelectorAll('.form-user input[type=text],.box2 input[type=password]');
+    const inputs = document.querySelectorAll('.form-user input[type=text],.box2 input[type=password],.box4 input[type=radio]');
     const nome = inputs[0].value;
     const sobrenome = inputs[1].value;
     const email = inputs[2].value;
     const data = inputs[4].value;
-    const genero = document.querySelector('input[type="radio"]:checked').value;
-    // let resultadoUsuario = '';
+    const genero = document.querySelector('input[type="radio"]');
+    let resultadoUsuario = 0;
     const p = document.createElement('p');
     for (let index = 0; index < inputs.length; index += 1) {
       const arrayInput = inputs[index];
-      if (arrayInput.value === '' || arrayInput.type === 'radio') {
+      if (arrayInput.value === '' || genero.checked.value === '') {
         arrayInput.className = 'erro';
         arrayInput.placeholder = 'Campos inválidos';
         p.innerText = 'Campos inválidos';
       } else {
         arrayInput.className = '';
-        // resultadoUsuario += arrayInput.value;
-        right.innerHTML = `<p>Olá, ${nome} ${sobrenome}</p> <p>Email: ${email}</p> <p>Data de Nascimento: ${data}</p> <p>Gênero: ${genero}</p>`;
-      }
+        resultadoUsuario ++;  
+        console.log(resultadoUsuario)      
     }
     right.appendChild(p);
+    if(resultadoUsuario >= 8){
+      right.innerHTML = `<p>Olá, ${nome} ${sobrenome}</p> <p>Email: ${email}</p> <p>Data de Nascimento: ${data}</p> <p>Gênero: ${genero}</p>`;
+      }
+    }
   });
 }
 cadastrar();

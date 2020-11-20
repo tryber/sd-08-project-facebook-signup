@@ -1,7 +1,9 @@
 const btnEntrar = document.getElementById('button-login');
 const btnCadastre = document.getElementById('facebook-register');
 const divMensagemInvalida = document.getElementById('mensagem-invalida');
+const divGenero = document.getElementById('genero');
 const txtEmail = document.getElementById('user-email-phone');
+const rbPersonalizado = document.getElementById('Personalizado');
 
 function alertConteudoEmail() {
   alert(txtEmail.value);
@@ -20,3 +22,11 @@ function validaCadastro() {
 }
 
 btnCadastre.addEventListener('click', validaCadastro);
+
+function addCustomField () {
+  if (rbPersonalizado.checked) {
+    divGenero.style.display = 'flex';
+  }
+}
+
+rbPersonalizado.addEventListener('change', addCustomField);

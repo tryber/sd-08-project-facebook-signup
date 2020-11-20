@@ -54,3 +54,8 @@ body {
 .mensagem-invalida {
   display: none;
 }
+
+.genero {
+  display: none;
+  flex-direction: column;
+}

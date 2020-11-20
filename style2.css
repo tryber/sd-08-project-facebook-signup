@@ -75,7 +75,7 @@ body {
 }
 
 .forgot-account {
-  color: #ffffff6c;
+  color: #ffffff8a;
   font-size: small;
   font-size: 1em;
   padding-left: 1px;
@@ -92,6 +92,11 @@ body {
   border-radius: 2px;
   font-weight: bold;
   margin-top: 2px;
+}
+
+.btn-login:hover {
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  background-color: #3362a5;
 }
 
 .main-conteiner {
@@ -118,16 +123,60 @@ body {
   display: flex;
 }
 
+.facebook-ss {
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 .sign-up-form {
   display: flex;
   flex-direction: row;
 }
 
-.sign-up-form * {
-  margin: 10px;
+.open-account {
+  margin-left: 4px;
+  margin-bottom: 0;
+}
+
+.quick-easy {
+  margin-left: 6px;
+}
+
+.form-group-gender {
+  margin-top: 4px;
+}
+
+.form-group-gender * {
+  margin-top: 10px;
+}
+
+.form-group-gender input {
+  margin-left: 10px;
 }
 
 .form-input {
+  margin-bottom: 8px;
+  margin-left: 4px;
+  width: 140px;
+  outline: none;
+  transition: .2s ease-in-out;
+}
+
+.btn-signup {
+  color: #ffffffea;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  background-color: #589651;
+  padding: 2px 2px;
   width: 100px;
+  height: 30px;
   font-size: 1em;
+  border-radius: 2px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.btn-signup:hover {
+  color: #ffffffea;
+  background-color: #3f8f37;
 }

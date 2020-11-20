@@ -40,14 +40,15 @@
   <div class='main-container'>
     <main class="main-content">
       <div class="left-content">
-        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
+        <p id="facebook-slogan" class="facebook-ss">O Facebook ajuda você a se conectar e compartilhar com as pessoas
+          que fazem parte da
           sua
           vida.</p>
         <img src="imgs/networking.png" alt="mapa mundi em braco com alguns personagens conectados"
           id="facebook-networking">
       </div>
       <div class="right-content">
-        <h1>Abra uma conta</h1>
+        <h1 class="open-account">Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <form action="" method="">
           <div class="nome">
@@ -60,12 +61,15 @@
           <label for="birthdate" id="label-birthdate" class='form-input'>Data de nascimento</label>
           <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class='form-input'>
           <br>
-          <label for="gender" id="label-gender">Gênero</label>
+          <div class="form-group-gender">
+            <label for="gender" id="label-gender">Gênero</label>
+            <br>
+            <input type="radio" name="gender" value="Feminino">Feminino
+            <input type="radio" name="gender" value="Masculino">Masculino
+            <input type="radio" name="gender" value="Personalizado">Personalizado
+          </div>
           <br>
-          <input type="radio" name="gender" value="Feminino">Feminino
-          <input type="radio" name="gender" value="Masculino">Masculino
-          <input type="radio" name="gender" value="Personalizado">Personalizado
-          <button id="facebook-register" type="submit">Cadastre-se</button>
+          <button id="facebook-register" type="submit" class='btn-signup '>Cadastre-se</button>
         </form>
       </div>
     </main>

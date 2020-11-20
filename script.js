@@ -19,13 +19,13 @@ btnLogin.addEventListener('click', function () {
 
 function registerMsg() {
   const firstname = document.getElementsByName('firstname')[0].value;
+  const lastname = document.getElementsByName('lastname')[0].value;
   const emailPhone = document.getElementsByName('phone_email')[0].value;
   const birthdate = document.getElementsByName('birthdate')[0].value;
   const gender = document.querySelector(':checked').value;
-  document.querySelector('h1').outerHTML = '';
-  document.querySelector('.quick-easy').outerHTML = '';
-  document.getElementById('form-register').outerHTML = '';
-  document.querySelector('.right-content').innerHTML = `<p>Olá, ${firstname}</p><p>Email/Celular: ${emailPhone}</p><p>Data de nascimento: ${birthdate}</p><p>Gênero: ${gender}</p>`;
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = `<p>Olá, ${firstname} ${lastname}</p><p>Email/Celular: ${emailPhone}</p><p>Data de nascimento: ${birthdate}</p><p>Gênero: ${gender}</p>`;
+  document.querySelector('.right-content').classList.add('success');
 }
 
 function validation() {

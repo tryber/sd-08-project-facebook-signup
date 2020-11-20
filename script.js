@@ -18,3 +18,4 @@ function validar() {
   }
 }
 btncadastro.addEventListener('click', validar);
+validar();

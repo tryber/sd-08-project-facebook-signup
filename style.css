@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.full-name {
+  display: flex;
+}
+
+.birth-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-genero {
+  display: flex;
+}
+
+.mensagem-invalida {
+  display: none;
+}
+
+.genero {
+  display: none;
+  flex-direction: column;
+}

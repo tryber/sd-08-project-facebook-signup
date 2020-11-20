@@ -18,12 +18,18 @@ body {
   color: white;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-right: 200px;
   width: 800px;
+}
+
+.login {
+  margin-left: 10px;
 }
 
 .input-login {
   margin-top: 10px;
-  width: 150px;
+  width: 130px;
 }
 
 .form-group {
@@ -36,9 +42,13 @@ body {
   width: 150px;
 }
 
+.senha {
+  margin-left: 10px;
+}
+
 .input-senha {
   margin-top: 10px;
-  width: 150px;
+  width: 130px;
 }
 
 a {
@@ -50,9 +60,13 @@ a {
   color: white;
   font-weight: 700;
   height: 22px;
-  margin-left: 30px;
-  margin-top: 22px;
+  margin-bottom: 12px;
+  margin-left: -30px;
   padding: 0 10px;
+}
+
+.form-control {
+  align-self: flex-end;
 }
 
 .main-content {
@@ -63,6 +77,7 @@ a {
 }
 
 .left-content {
+  margin-left: 30px;
   width: 800px;
 }
 
@@ -73,6 +88,7 @@ a {
 }
 
 .right-content {
+  margin-right: 70px;
   width: 300px;
 }
 
@@ -81,9 +97,24 @@ a {
 }
 
 img {
+  margin-left: 30px;
   width: 100%;
 }
 
 .quick-easy {
   font-size: 24px;
+}
+
+.subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.name , .lastname {
+  width: 138px;
+}
+
+.phone_email , .password {
+  width: 300px;
 }

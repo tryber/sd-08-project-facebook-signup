@@ -5,6 +5,7 @@ btnLogin.addEventListener('click', function () {
 });
 
 const buttonCadastrar = document.querySelector('#facebook-register');
+const form = document.querySelector('.form-user');
 const right = document.querySelector('.right-content');
 
 function cadastrar() {
@@ -12,23 +13,19 @@ function cadastrar() {
     event.preventDefault();
 
     const inputs = document.querySelectorAll('.form-user input[type=text],.box2 input[type=password]');
-    let resultado = '';
+  
+
     let resultadoUsuario = '';
+
     for (let index = 0; index < inputs.length; index += 1) {
       const arrayInput = inputs[index];
       if (arrayInput.value === '') {
         arrayInput.className = 'erro';
-        arrayInput.placeholder = 'Campos inválidos'; 
-        resultado += `Campos inválidos ${arrayInput.name}.\n`;
+        arrayInput.placeholder = 'Campos inválidos';
       } else {
         arrayInput.className = '';
         resultadoUsuario += arrayInput.value;
       }
-    }
-    if (resultado !== '') {
-      alert(resultado);
-    } else {
-      right.innerHTML = resultadoUsuario;     
     }
   });
 }

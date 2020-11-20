@@ -74,16 +74,21 @@ body {
 
 .input-name input {
   margin: 4px;
-  padding: 5px;
+  padding: 7px;
 }
 
 .phone-email-input {
   margin: 4px;
-  padding: 5px;
+  padding: 7px;
+}
+
+input {
+  border: 1px solid rgb(202, 209, 223);
+  border-radius: 3px;
+  color: black;
 }
 
 input:focus {
-  box-shadow: 0 0 0 0;
-  border: 0 0;
-  outline: 0;
+  border: 1px solid #4e4e4e;
+  outline: none;
 }

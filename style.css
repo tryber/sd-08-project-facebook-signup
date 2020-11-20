@@ -45,3 +45,7 @@ body {
 .column {
   flex-direction: column;
 }
+
+.div-personalizado {
+    display:none;
+}

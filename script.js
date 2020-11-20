@@ -26,9 +26,7 @@ function cadastrar(){
     if (resultado !== ""){
       alert(resultado);            
     }else {            
-      let p = document.createElement("p");
-      p.innerHTML = resultadoUsuario;
-      right.append(p);
+      right.innerHTML = resultadoUsuario;
       form.reset();
     }
   });

@@ -14,12 +14,27 @@ const getEnter = document.querySelector('#button-login');
 getEnter.addEventListener('click', sendAlert);
 
 submitButton.addEventListener('click', function (event) {
+  if (invalidDiv.hasChildNodes() === true) {
+    document.getElementsByClassName('invalid-field')[0].remove();
+  }
   for (let i = 0; i < formFields.length; i += 1) {
     if (formValidation[formFields[i]].value === '') {
       invalidField.innerHTML = 'Campos inválidos';
+      invalidField.className = 'invalid-field';
       invalidDiv.appendChild(invalidField);
       event.preventDefault();
+      break;
     }
+  }
+  if (invalidDiv.hasChildNodes() === false) {
+    document.forms.cadastro.style.display = 'none';
+    const fullName = formValidation[formFields[0]].value + ' ' + formValidation[formFields[1]].value + ' ';
+    const mailPhone = formValidation[formFields[2]].value + ' ';
+    const birthDate = formValidation[formFields[4]].value + ' ';
+    const personGender = formValidation[formFields[5]].value;
+    invalidField.innerHTML = 'Olá, ' + fullName + mailPhone + birthDate + personGender;
+    document.getElementsByClassName('right-content')[0].appendChild(invalidField);
+    event.preventDefault();
   }
 }, false);
 

@@ -13,8 +13,8 @@ function validateForm() {
     const input = document.querySelectorAll('.cadastro input');
     for (let index = 0; index < input.length; index += 1) {
       input[index].setCustomValidity('Campos inválidos');
-    }    
-    });
+    }
+  });
 }
 validateForm();
 

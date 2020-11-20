@@ -6,7 +6,8 @@
 }
 
 .top-bar {
-  border: 1px solid black;
+
+  /* border: 1px solid black; */
   height: 130px;
   background-color: rgb(66, 103, 178);
 }
@@ -17,7 +18,8 @@
 }
 
 .left-content {
-  border: 1px solid black;
+
+  /* border: 1px solid black; */
 
   /* height: 400px; */
   width: 50%;
@@ -29,25 +31,41 @@
   background-color: lightgrey;
 }
 
+form p {
+  margin: 30px 15px;
+  color: #777;
+  font-size: 11px;
+}
+
+.right-content p {
+  margin: 10px 0;
+  color: #777;
+}
+
+.right-content h1 {
+  margin: 10px 0;
+}
+
+form input {
+  font-size: 18px;
+  padding: 10px;
+}
+
 form input:nth-child( 1 ) {
   width: 48%;
-  padding: 10px;
 }
 
 form input:nth-child( 2 ) {
   width: 48%;
-  padding: 10px;
 }
 
 form input:nth-child( 3 ) {
   width: 98%;
-  padding: 10px;
   margin-top: 5px;
 }
 
 form input:nth-child( 4 ) {
   width: 98%;
-  padding: 10px;
   margin-top: 5px;
 }
 
@@ -55,7 +73,6 @@ form label:nth-child( 5 ) {
   width: 98%;
   padding: 5px;
   margin-top: 5px;
-  justify-content: flex-start;
 }
 
 form input:nth-child( 6 ) {
@@ -74,4 +91,20 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+form button {
+  margin: 10px 0;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 7px 20px;
+  background-color: #69a74e;
+  color: white;
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22;
+  align-self: flex-start;
+}
+
+.right-content form p a {
+  color: blue;
 }

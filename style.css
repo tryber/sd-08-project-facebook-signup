@@ -12,12 +12,7 @@ body {
   justify-content: space-between;
 }
 
-.facebook-logo {
-  border: 1px solid black;
-}
-
 .facebook-login {
-  border: 1px solid black;
   display: flex;
 }
 
@@ -29,6 +24,7 @@ body {
 }
 
 .form-control {
+  align-self: flex-end; /* Obrigatório */
   display: flex;
   margin: 10px;
 }
@@ -44,12 +40,10 @@ body {
 }
 
 .left-content {
-  border: 1px solid black;
   width: 800px;
 }
 
 .right-content {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -61,7 +55,6 @@ h1 {
 }
 
 .right-content form {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
 }
@@ -91,4 +84,18 @@ h1 {
   height: 30px;
   margin: 0 10px 10px 0;
   width: 100%;
+}
+
+.genero-container {
+  margin-top: 10px;
+}
+
+.genero {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+
+.genero input{
+  margin-left: 20px;
 }

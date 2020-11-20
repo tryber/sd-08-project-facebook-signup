@@ -51,7 +51,7 @@ body {
   flex-direction: column;
 }
 
-.div-personalizado,
+.div-personalizado , 
 .to-reveal {
   display: none;
 }

@@ -52,3 +52,9 @@ header {
 .fullname {
   display: flex;
 }
+
+.gender {
+  display: flex;
+  justify-content: space-around;
+}
+

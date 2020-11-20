@@ -63,8 +63,9 @@ buttonRegister.addEventListener('click', () => {
     content.appendChild(p);
 
     for (let i = 2; i < data.length; i += 1) {
-      p.innerText = data[i];
-      content.appendChild(p);
+      const p2 = document.createElement('p');
+      p2.innerText = data[i];
+      content.appendChild(p2);
     }
   } else {
     const error = document.querySelector('.invalid-input');

@@ -29,11 +29,13 @@ btnCadastreSe.addEventListener('click', function (event) {
     document.querySelectorAll('form')[1].appendChild(pInvalid);
   } else {
     const pName = document.createElement('p');
-    pName.innerHTML = 'Olá, ' + document.querySelectorAll('input')[2].value + ' ' + document.querySelectorAll('input')[3].value;
+    pName.innerHTML = `Olá, ${document.querySelectorAll('input')[2].value} ${document.querySelectorAll('input')[3].value}`;
     const pEmail = document.createElement('p');
     pEmail.innerHTML = document.querySelectorAll('input')[4].value;
     const pBirthDate = document.createElement('p');
     pBirthDate.innerHTML = document.querySelectorAll('input')[6].value;
+    const genero = document.createElement('p');
+    genero.innerHTML = document.querySelector('input[type="radio"]:checked').value;
     document.querySelector('.main-content').removeChild(document.querySelector('.right-content'));
     const newDiv = document.createElement('div');
     newDiv.className = 'right-content';
@@ -41,12 +43,6 @@ btnCadastreSe.addEventListener('click', function (event) {
     newDiv.appendChild(pName);
     newDiv.appendChild(pEmail);
     newDiv.appendChild(pBirthDate);
+    newDiv.appendChild(genero);
   }
-});
-
-document.querySelector('#custom').addEventListener('click', function () {
-  const newInput = document.createElement('input');
-  newInput.name = 'gender-custom';
-  newInput.placeholder = 'Gênero (opcional)';
-  document.querySelector('.form-gender').appendChild(newInput);
 });

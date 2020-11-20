@@ -1,4 +1,17 @@
 .top-bar {
   background-color: #3c5a98;
+  color: #ffffff;
   display: flex;
+  justify-content: space-between;
+}
+.facebook-login {
+  display: flex;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-control {
+  display: flex;
+  align-self: flex-end;
 }

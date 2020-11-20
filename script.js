@@ -40,30 +40,20 @@ buttonCadastro.addEventListener('click', function (event) {
 
   const formFields = new FormData(signUpForm);
 
-  const signUpResult = document.createElement('div');
-  signUpResult.classList.add('right-content');
+  let previewData = '';
 
-  const previewName = document.createElement('p');
   const firstname = formFields.get('firstname');
   const lastname = formFields.get('lastname');
-  previewName.textContent = `Olá, ${firstname} ${lastname}`;
-  signUpResult.appendChild(previewName);
+  previewData += `Olá, ${firstname} ${lastname}</br>`;
 
   const email = formFields.get('phone_email');
-  const previewEmailPhone = document.createElement('p');
-  previewEmailPhone.textContent = `Email: ${email}`;
-  signUpResult.appendChild(previewEmailPhone);
+  previewData += `Email: ${email}</br>`;
 
   const birthdate = formFields.get('birthdate');
-  const previewBirthdate = document.createElement('p');
-  previewBirthdate.textContent = `Data de nascimento: ${birthdate}`;
-  signUpResult.appendChild(previewBirthdate);
+  previewData += `Data de nascimento: ${birthdate}</br>`;
 
   const gender = formFields.get('gender');
-  const previewGender = document.createElement('p');
-  previewGender.textContent = `Gênero: ${gender}`;
-  signUpResult.appendChild(previewGender);
+  previewData += `Gênero: ${gender}</br>`;
 
-  const parent = rightContent.parentNode;
-  parent.replaceChild(signUpResult, rightContent);
+  rightContent.innerHTML = previewData;
 });

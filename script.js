@@ -20,38 +20,39 @@ function addGenderText() {
 addGenderText();
 
 function substituteFormContainer() {
-  const rigthcontent = document.getElementById('rightcontent');
-  const name = document.getElementById('nome').innerText;
-  const sobrenome = document.getElementById('sobrenome').innerText;
-  const phonemail = document.getElementById('phonemail').innerText;
-  const birthdate = document.getElementById('birthdate').innerText;
+  const rigthcontent = document.getElementById('rightcontent');  
+  const name = document.getElementById('nome').value;
+  const sobrenome = document.getElementById('sobrenome').value;
+  const phonemail = document.getElementById('phonemail').value;
+  const birthdate = document.getElementById('birthdate').value;
   const mensagem = `Olá, ${name} ${sobrenome}\n`;
-  const mensagemTwo = `${phonemail}\n${birthdate}`;
+  const mensagemTwo = document.createElement('span');
+  mensagemTwo.innerText= `${phonemail}\n${birthdate}`;  
   rigthcontent.innerHTML = mensagem;
   rigthcontent.appendChild(mensagemTwo);
 }
 
-function registerMessage() {
-  const form = document.getElementById('register');
-  form.addEventListener('submit', function () {
-    substituteFormContainer();
-  });
-}
-
 // setCustomValidity retirada do artigo: https://www.devmedia.com.br/html5-validator-validando-formularios-com-html5/28785
 function validateForm() {
+  const paragraph = document.createElement('p');
   const invalidField = 'Campos inválidos';
+  paragraph.innerText = invalidField;
   const form = document.getElementById('register');
   const button = document.getElementById('facebook-register');
-  button.addEventListener('click', function () {
-    const input = document.querySelectorAll('.cadastro input');
+  const mistakes = 0;
+    button.addEventListener('click', function (event) { 
+    event.preventDefault();   
+    const input = document.querySelectorAll('.cadastro input[type="text"]');    
     for (let index = 0; index < input.length; index += 1) {
-      input[index].setCustomValidity('Campos inválidos');
-      if (input[index] === '') {
-        form.appendChild(invalidField);
-      }
-    }
-    registerMessage();
-  });
+      if (input[index].value === ''){
+        mistakes = mistakes + 1;
+      };
+    }  
+  if (mistakes != 0){
+    form.appendChild(paragraph);
+  } else {
+    substituteFormContainer();
+  }
+});
 }
 validateForm();

@@ -8,14 +8,14 @@ loginBtn.addEventListener('click', loginAlert);
 const personalizado = document.getElementById('other');
 const radioWrapper = document.getElementsByClassName('radio-wrapper')[0];
 function generoPersonalizado() {
-  const divDoPersonalizado = document.createElement('div');
-  radioWrapper.appendChild(divDoPersonalizado);
+  const divPersonalizado = document.createElement('div');
+  radioWrapper.appendChild(divPersonalizado);
   const insiraPersonalizado = document.createElement('input');
   insiraPersonalizado.type = 'text';
   insiraPersonalizado.name = 'gender-custom';
   insiraPersonalizado.placeholder = 'Gênero (opcional)';
   insiraPersonalizado.id = 'insira-personalizado';
-  divDoPersonalizado.appendChild(insiraPersonalizado);
+  divPersonalizado.appendChild(insiraPersonalizado);
 }
 personalizado.addEventListener('click', generoPersonalizado);
 

@@ -12,12 +12,12 @@ body {
 }
 
 .facebook-logo {
-  margin-left: 100px;
+  border: 1px solid black;
 }
 
 .facebook-login {
+  border: 1px solid black;
   display: flex;
-  margin-right: 100px;
 }
 
 .form-group {
@@ -28,7 +28,7 @@ body {
 }
 
 .form-control {
-  align-items: flex-end;
+  /* align-items: flex-end; */
   display: flex;
 }
 

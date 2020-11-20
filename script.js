@@ -7,16 +7,17 @@ function alertBotao() {
 botaoLogin.addEventListener('click', alertBotao);
 
 const botaoEnviar = document.querySelector('#facebook-register');
-
-botaoEnviar.addEventListener('click', function () {
+const formsPosicao = document.getElementById('limpa-forms');
+botaoEnviar.addEventListener('click', function (event) {
   const inputsText = document.getElementsByClassName('inputs');
-
+  event.preventDefault();
   for (let index = 0; index < inputsText.length; index += 1) {
-    const value = inputsText[index];
-    if (value.required) {
-      if (value.value === '') {
-        alert('Campos inválidos');
-        break;
+    const campoInput = inputsText[index];
+    if (campoInput.required) {
+      if (campoInput.value === '') {
+        alert('Campo inválido');
+      }else{
+        campoInput.value = '';
       }
     }
   }

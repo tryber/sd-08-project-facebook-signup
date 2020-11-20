@@ -8,6 +8,26 @@ btnLogin.addEventListener('click', function () {
 const filedForms = document.getElementById('forms');
 const btnSubmited = document.getElementById('facebook-register');
 
+function showData() {
+  const rightContent = document.getElementById('right-content');
+  const ola = document.createElement('p');
+  ola.innerText = `Olá, ${filedForms[0].value} ${filedForms[1].value}.`;
+  while (rightContent.firstChild) {
+    rightContent.removeChild(rightContent.firstChild);
+  }
+  rightContent.appendChild(ola);
+  for (index = 2; index < filedForms.length - 1; index += 1) {
+    if (
+      filedForms[index].type !== 'password' &&
+      (filedForms[index].type !== 'radio' || filedForms[index].checked)
+    ) {
+      const p = document.createElement('p');
+      p.innerText = `${filedForms[index].name}: ${filedForms[index].value}`;
+      rightContent.appendChild(p);
+    }
+  }
+}
+
 btnSubmited.addEventListener('click', function (e) {
   e.preventDefault();
   if (!filedForms.checkValidity()) {
@@ -18,6 +38,8 @@ btnSubmited.addEventListener('click', function (e) {
       parag.innerText = 'Campos inválidos';
       filedForms.appendChild(parag);
     }
+  } else {
+    showData();
   }
 });
 

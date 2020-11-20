@@ -3,6 +3,7 @@ const buttonRegister = document.getElementById('facebook-register');
 const verify = document.querySelectorAll('.verify');
 const radio = document.querySelectorAll('.radio');
 const span = document.getElementById('invalid');
+const register = document.getElementById('register');
 
 function sendForm() {
   const emailPhone = document.getElementById('user-email-phone');
@@ -11,20 +12,13 @@ function sendForm() {
 
 loginButton.addEventListener('click', sendForm);
 
-function inputs() {
+function verifyFilling(e) {
   for (let index = 0; index < verify.length; index += 1) {
     if (verify[index].value === '') {
       span.textContent = 'Campos inválidos';
     } else {
-      span.textContent = '';
+      register.textContent = 'Enviado!';
     }
-  }
-}
-
-function verifyFilling(e) {
-  inputs();
-  if (!(radio[0].checked || radio[1].checked || radio[2].checked)) {
-    span.textContent = 'Campos inválidos';
   }
   e.preventDefault();
 }

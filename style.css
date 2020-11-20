@@ -2,127 +2,89 @@ body {
   margin: 0;
 }
 
-@media screen and ( max-width : 599px ) {
-
-  .logo-mobile {
-    background-color: blue;
-    display: block;
-    height: 50px;
-    text-align: center;
-  }
-
-  .facebook-logo {
-    height: 50px;
-    width: 100px;
-  }
-
-  .main-content {
-    display: none;
-  }
-
-  .none {
-    display: none;
-  }
-
-  .font-small {
-    display: block;
-  }
-
-  .facebook-login {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
 }
 
-/* DISPLAY DESKTOP LAPTOP */
+.facebook-login {
+  display: flex;
+  margin-right: 100px;
+}
 
-@media screen and ( min-width : 600px ) {
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
 
-  .top-bar {
-    align-items: center;
-    background-color: rgb(66, 103, 178);
-    display: flex;
-    justify-content: space-between;
-    padding: 0 80px;
-  }
+.form-control {
+  align-self: flex-end;
+}
 
-  .facebook-login {
-    display: flex;
-    margin-right: 100px;
-  }
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 180px;
+}
 
-  .form-group {
-    display: flex;
-    flex-direction: column;
-  }
+.left-content {
+  box-sizing: border-box;
+  margin-left: -100px;
+  margin-right: 100px;
+  width: 800px;
+}
 
-  .form-control {
-    align-self: flex-end;
-  }
+.right-content {
+  width: 300px;
+}
 
-  .main-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px 180px;
-  }
+.input-name {
+  float: right;
+}
 
-  .left-content {
-    box-sizing: border-box;
-    margin-left: -100px;
-    margin-right: 100px;
-    width: 800px;
-  }
+.input-space {
+  width: 45%;
+}
 
-  .right-content {
-    width: 300px;
-  }
+.gender-label {
+  display: block;
+}
 
-  .input-name {
-    float: right;
-  }
+.optional {
+  display: none;
+}
 
-  .input-space {
-    width: 45%;
-  }
+.login {
+  margin-right: 10px;
+  width: 120px;
+}
 
-  .gender-label {
-    display: block;
-  }
+form {
+  width: 300px;
+}
 
-  .optional {
-    display: none;
-  }
+input {
+  margin-bottom: 5px;
+}
 
-  .login {
-    margin-right: 10px;
-    width: 120px;
-  }
+.font-small {
+  font-size: 12px;
+  margin-top: -5px;
+}
 
-  form {
-    width: 300px;
-  }
+.margin-button {
+  margin-bottom: 15px;
+}
 
-  input {
-    margin-bottom: 5px;
-  }
+.witdh-input {
+  width: 292px;
+}
 
-  .font-small {
-    font-size: 12px;
-    margin-top: -5px;
-  }
-
-  .margin-button {
-    margin-bottom: 15px;
-  }
-
-  .witdh-input {
-    width: 292px;
-  }
-
-  .img-width {
-    height: 150px;
-    width: 100%;
-  }
+.img-width {
+  height: 150px;
+  width: 100%;
 }

@@ -39,8 +39,14 @@ body {
 
 .form-group label {
   color: aliceblue;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
+  padding: 5px 0px;
+  
+} input#user-password ,input#user-email-phone {
+  width: 140px;
+  height: 18px;
+  
 }
 
 .form-control{
@@ -48,16 +54,18 @@ body {
 
 }
 .form-control button {
+  
   background-color: rgb(46, 74, 177);
-  border: 1px solid rgb(71, 71, 71);
+  border: 2px solid rgb(71, 71, 71);
   border-radius: 2px;
   color: aliceblue;
-  font-size: 8px;
   font-weight: 700;
-  padding: 2px 3px;
+  line-height: 19px;
+  padding: 0 8px;
+  
 }
 
-.main-content{
+  .main-content{
   display: flex;
   justify-content: space-between;
 }
@@ -80,3 +88,7 @@ body {
 .right-content{
   width: 300px;
 }
+ .form-style{
+  display: flex;
+  flex-direction: column;
+} 

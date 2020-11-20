@@ -38,7 +38,8 @@
         />
       </div>
       <div class="right-content">
-        <h1>Abra uma conta</h1>
+        <div class="to-remove">
+            <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <form action="">
           <div class="flex">
@@ -73,9 +74,9 @@
           </div>
           <label id="label-gender" for="">Gênero</label>
           <div class="flex">
-            <input name="gender" type="radio" value="Feminino" checked />
+            <input id="feminino" name="gender" type="radio" value="Feminino" checked />
             <label for="">Feminino</label>
-            <input name="gender" type="radio" value="Masculino" />
+            <input  id="masculino" name="gender" type="radio" value="Masculino" />
             <label for="">Masculino</label>
             <input
               id="personalizado"
@@ -91,6 +92,15 @@
           <button type="submit" id="facebook-register">Cadastre-se</button>
           <p id="camposInvalidos"></p>
         </form>
+        </div>
+        <div class="to-reveal column">
+           <form>
+            <label id="nome-reveal"></label>
+            <label id="email-reveal"></label>
+            <label id="data-reveal"></label>
+            <label id="gender-reveal"></label>
+           </form>
+        </div>
       </div>
     </main>
   </body>

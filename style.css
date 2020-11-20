@@ -46,6 +46,11 @@ body {
   flex-direction: column;
 }
 
-.div-personalizado {
+.column form{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-personalizado, .to-reveal {
   display: none;
 }

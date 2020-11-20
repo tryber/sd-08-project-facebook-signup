@@ -19,7 +19,7 @@
 
 .main-content {
   display: flex;
-  justify-content: baseline;
+  justify-content: center;
 }
 
 .left-content {

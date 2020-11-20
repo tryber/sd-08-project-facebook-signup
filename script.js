@@ -5,6 +5,18 @@ entrar.addEventListener('click', function () {
   alert(email.value);
 });
 
+const genderContainer = document.querySelector('.gender-container');
+
+const persona = document.getElementById('3');
+
+persona.addEventListener('click', function () {
+  const inputGender = document.createElement('input');
+  inputGender.name = 'gender-custom';
+  inputGender.type = 'text';
+  inputGender.placeholder = 'Gênero (opcional)';
+  genderContainer.appendChild(inputGender);
+});
+
 // const cadastre = document.getElementById('facebook-register');
 
 // const form = document.querySelectorAll('.form input');

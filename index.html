@@ -1,110 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Facebook</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Facebook</title>
+</head>
 
-  <body>
-      <header class="top-bar">
-        <img src="imgs/facebook-logo.png" alt="Logo Facebook" class="facebook-logo">
-        <form action="" method="GET" class="facebook-login">
-          <div class="form-group">
-            <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-            <input type="text" name="input-email" id="user-email-phone">
-          </div>
-          <div class="form-group">
-            <label for="user-password" id="user-password-label">Senha</label>
-            <input type="password" name="input-password" id="user-password">
-            <p>Esqueceu a conta?</p>
-          </div>
-          <div class="form-control">
-            <button type="submit" id="button-login">Entrar</button>
-          </div>
-        </form>
-      </header>
-      <main class="main-content">
-        <div class="left-content">
-          <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
-            vida.</p>
-          <img src="imgs/networking.png" alt="Networking" id="facebook-networking">
+<body>
+  <header class="top-bar">
+    <img src="imgs/facebook-logo.png" alt="Logo Facebook" class="facebook-logo">
+    <form action="" method="GET" class="facebook-login">
+      <div class="form-group">
+        <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+        <input type="text" name="input-email" id="user-email-phone">
+      </div>
+      <div class="form-group">
+        <label for="user-password" id="user-password-label">Senha</label>
+        <input type="password" name="input-password" id="user-password">
+        <p>Esqueceu a conta?</p>
+      </div>
+      <div class="form-control">
+        <button type="submit" id="button-login">Entrar</button>
+      </div>
+    </form>
+  </header>
+  <main class="main-content">
+    <div class="left-content">
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+        vida.</p>
+      <img src="imgs/networking.png" alt="Networking" id="facebook-networking">
+    </div>
+    <div class="right-content">
+      <h1 class="open">Abra uma conta</h1>
+      <p class="quick-easy">É rápido e fácil.</p>
+      <form method="get" class="register">
+        <div class="fullname">
+          <input type="text" name="firstname" placeholder="Nome">
+          <input type="text" name="lastname" placeholder="Sobrenome">
         </div>
-        <div class="right-content">
-          <h1 class="open">Abra uma conta</h1>
-          <p class="quick-easy">É rápido e fácil.</p>
-          <form action="" method="GET" class="register">
-            <input type="text" name="firstname" placeholder="Nome" required>
-            <input type="text" name="lastname" placeholder="Sobrenome" required>
-            <input type="text" name="phone_email" placeholder="Celular ou email" required>
-            <input type="password" name="password" placeholder="Nova senha" required>
-            <label for="birthdate" id="label-birthdate">Data de nascimento <input type="text" name="birthdate"
-                placeholder="dd/mm/aaaa" required>
-            </label>
-            <label for="gender" id="abel-gender">Gênero</label>
-            <div class="radio">
-              <input type="radio" name="gender" checked>Feminino
-              <input type="radio" name="gender">Masculino
-              <input type="radio" name="gender">Personalizado
-            </div>
-            <input type="text" name="gender-custom" placeholder="Gênero (opcional)" class="hide">
-            <button type="submit" id="facebook-register">Cadastre-se</button>
-            <p><span>Criar uma Página</span> para uma celebridade, banda ou empresa.</p>
-          </form>
+        <input type="text" name="phone_email" placeholder="Celular ou email">
+        <input type="text" name="password" placeholder="Nova senha">
+        <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        <label for="gender" id="label-gender">Gênero</label>
+        <div class="radio-buttons">
+          <input type="radio" name="gender" value="Feminino" checked>
+          <label for="Feminino">Feminino</label>
+          <input type="radio" name="gender" value="Masculino">
+          <label for="Masculino">Masculino</label>
+          <input type="radio" name="gender" value="Personalizado">
+          <label for="Personalizado">Personalizado</label>
         </div>
-      </main>
-      <footer>
-        <a class="pt-br">Português (Brasil)</a>
-        <a>English (US)</a>
-        <a>Español</a>
-        <a>Français (France)</a>
-        <a>Italiano</a>
-        <a>العربية</a>
-        <a>Deutsch</a>
-        <a>हिन्दी</a>
-        <a>中文(简体)</a>
-        <a>日本語</a>
-        <a class="a-btn" title="Mostrar mais idiomas">+</a>
-        <hr>
-        <div class="links-facebook">
-          <a>Cadastre-se</a>
-          <a>Entrar</a>
-          <a>Facebook Lite</a>
-          <a>Watch</a>
-          <a>Pessoas</a>
-          <a>Páginas</a>
-          <a>Categorias de Página</a>
-          <a>Locais</a>
-          <a>Jogos</a>
-          <a>Locais</a>
-          <a>Marketplace</a>
-          <a>Facebook Pay</a>
-          <a>Grupos</a>
-          <a>Vagas de emprego</a>
-          <a>Oculus</a>
-          <a>Portal</a>
-          <a>Instagram</a>
-          <a>Local</a>
-          <a>Campanhas de arrecadação de fundos</a>
-          <a>Serviços</a>
-          <a>Central de Informações de Votação</a>
-          <a>Sobre</a>
-          <a>Criar anúncio</a>
-          <a>Criar Página</a>
-          <a>Desenvolvedores</a>
-          <a>Carreiras</a>
-          <a>Privacidade</a>
-          <a>Cookies</a>
-          <a>Escolhas para anúncios</a>
-          <a>Termos</a>
-          <a>Ajuda</a>
-          <a>Configurações</a>
-          <a>Registro de Atividades</a>
-        </div>
-        <p>Facebook © 2020</p>
-      </footer>
-    <script src="script.js"></script>
-  </body>
+        <input type="text" name="gender-custom" placeholder="Gênero (opcional)" class="hide">
+        <button type="submit" id="facebook-register">Cadastre-se</button>
+        <p><span>Criar uma Página</span> para uma celebridade, banda ou empresa.</p>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <a class="pt-br">Português (Brasil)</a>
+    <a>English (US)</a>
+    <a>Español</a>
+    <a>Français (France)</a>
+    <a>Italiano</a>
+    <a>العربية</a>
+    <a>Deutsch</a>
+    <a>हिन्दी</a>
+    <a>中文(简体)</a>
+    <a>日本語</a>
+    <a class="a-btn" title="Mostrar mais idiomas">+</a>
+    <hr>
+    <div class="links-facebook">
+      <a>Cadastre-se</a>
+      <a>Entrar</a>
+      <a>Facebook Lite</a>
+      <a>Watch</a>
+      <a>Pessoas</a>
+      <a>Páginas</a>
+      <a>Categorias de Página</a>
+      <a>Locais</a>
+      <a>Jogos</a>
+      <a>Locais</a>
+      <a>Marketplace</a>
+      <a>Facebook Pay</a>
+      <a>Grupos</a>
+      <a>Vagas de emprego</a>
+      <a>Oculus</a>
+      <a>Portal</a>
+      <a>Instagram</a>
+      <a>Local</a>
+      <a>Campanhas de arrecadação de fundos</a>
+      <a>Serviços</a>
+      <a>Central de Informações de Votação</a>
+      <a>Sobre</a>
+      <a>Criar anúncio</a>
+      <a>Criar Página</a>
+      <a>Desenvolvedores</a>
+      <a>Carreiras</a>
+      <a>Privacidade</a>
+      <a>Cookies</a>
+      <a>Escolhas para anúncios</a>
+      <a>Termos</a>
+      <a>Ajuda</a>
+      <a>Configurações</a>
+      <a>Registro de Atividades</a>
+    </div>
+    <p>Facebook © 2020</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

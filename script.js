@@ -1,25 +1,19 @@
-const btnFacebookReg = document.getElementById('facebook-register');
-btnFacebookReg.addEventListener('submit', function (evt) {
-  evt.preventDefault();
-});
+function hide() {
+  if (document.getElementsByName('gender')[2].checked === true) {
+    document.getElementsByClassName('hide')[0].style.display = 'inline-block';
+  } else {
+    document.getElementsByClassName('hide')[0].style.display = 'none';
+  }
+}
 
-const btnRadioPersonalizado = document.getElementsByName('gender')[2];
-btnRadioPersonalizado.addEventListener('click', function () {
-  document.getElementsByClassName('hide')[0].style.display = 'inline-block';
-});
-const btnRadioFem = document.getElementsByName('gender')[0];
-btnRadioFem.addEventListener('click', function () {
-  document.getElementsByClassName('hide')[0].style.display = 'none';
-});
-const btnRadioMasc = document.getElementsByName('gender')[1];
-btnRadioMasc.addEventListener('click', function () {
-  document.getElementsByClassName('hide')[0].style.display = 'none';
-});
-document.getElementsByName('firstname')[0].style.width = '138px';
-document.getElementsByName('lastname')[0].style.width = '138px';
-document.getElementsByName('phone_email')[0].style.width = '300px';
-document.getElementsByName('password')[0].style.width = '300px';
+const btnFem = document.getElementsByName('gender')[0];
+const btnMas = document.getElementsByName('gender')[1];
+const btnPer = document.getElementsByName('gender')[2];
+btnFem.addEventListener('click', hide);
+btnMas.addEventListener('click', hide);
+btnPer.addEventListener('click', hide);
 const btnLogin = document.getElementById('button-login');
 btnLogin.addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });
+window.onload = hide();

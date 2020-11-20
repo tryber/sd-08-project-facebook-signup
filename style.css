@@ -117,13 +117,9 @@ footer p {
   margin-top: 0;
 }
 
-.hide {
-  display: none;
-}
-
 .register {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: space-between;
 }
 
@@ -135,11 +131,11 @@ footer p {
 }
 
 .register button {
-  background: linear-gradient(to bottom, rgb(13, 172, 8) 5%, rgb(8, 128, 24) 100%);
-  background-color: rgb(75, 177, 28);
+  background: linear-gradient(to bottom, rgb(96, 172, 93) 5%, rgb(14, 85, 23) 100%);
+  background-color: rgb(57, 133, 22);
   border: rgb(95, 153, 75) solid 1px;
-  border-radius: 4px;
-  box-shadow: inset 1px 1px 8px 0 rgb(126, 206, 92);
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 8px 0 rgb(61, 128, 33);
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -147,8 +143,10 @@ footer p {
   font-weight: 800;
   margin-top: 15px;
   opacity: 0.9;
-  padding: 10px 40px;
+  padding: 5px 0;
   text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(53, 53, 53, 0.8);
+  width: 170px;
 }
 
 .register button:hover {
@@ -159,10 +157,28 @@ footer p {
   color: rgb(132, 134, 141);
   font-size: 0.9em;
   font-weight: 800;
+  margin-bottom: 5px;
 }
 
-.radio {
-  font-size: 0.9em;
+.fullname {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.fullname input {
+  width: 138px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-buttons label {
+  color: rgb(52, 52, 52);
+  font-weight: 400;
+  padding-top: 6px;
 }
 
 footer a {
@@ -203,4 +219,14 @@ hr {
 .links-facebook {
   text-align: left;
   width: 1100px;
+}
+
+span {
+  color: rgb(66, 103, 178);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+span:hover {
+  text-decoration-line: underline;
 }

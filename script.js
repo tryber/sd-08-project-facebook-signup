@@ -46,11 +46,7 @@ function genderChecked() {
   } else if (document.querySelector('#Feminino')) {
     gender = 'Feminino';
   } else {
-    if (inputCustom.value !== '') {
-      gender = inputCustom.value;
-    } else {
-      gender = 'Personalizado';
-    }
+    gender = 'Personalizado';
   }
   return gender;
 }
@@ -61,15 +57,14 @@ function subimitForm() {
   const gender = genderChecked();
 
   if (fields !== false) {
-    rightContent.innerHTML = 
+    rightContent.innerHTML =
     `<h1>Olá ${fields[0]} ${fields[1]}</h1>
     <h2>Seja bem vinda(o)</h2>
     <p>Por favor confira se os dados estão corretos.</p>
     <p>Email/celular:${fields[2]}</p>
     <p>Data de nascimento: ${fields[4]}</p>
-    <p>Gênero: ${gender}</p>`
+    <p>Gênero: ${gender}</p>`;
   }
-
 }
 
 buttonRegister.addEventListener('click', subimitForm);

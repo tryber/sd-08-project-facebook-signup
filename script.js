@@ -14,7 +14,7 @@ function cheksInput() {
   let contador = 0;
   let radio = false;
 
-  button.addEventListener ('click', function () {
+  button.addEventListener('click', function () {
     const formsInput = document.querySelectorAll('.form-register input');
     for (let index = 0; index < formsInput.length; index += 1) {
       if (formsInput[index].value === '' && formsInput[index].type === 'text') {

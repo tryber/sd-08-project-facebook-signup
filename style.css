@@ -1,7 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .top-bar {
-  background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
+  background-color: rgb(66, 103, 178);
+  justify-content: space-around;
 }
 
 .facebook-login {
@@ -19,8 +24,7 @@
 
 .main-content {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .left-content {
@@ -29,13 +33,4 @@
 
 .right-content {
   width: 300px;
-}
-
-.form-register {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nomeSobrenome {
-  width: 120px;
 }

@@ -6,6 +6,7 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-between;
 }
 
 .content {
@@ -20,7 +21,6 @@ body {
 
 .facebook-logo {
   align-self: flex-start;
-  margin-right: 300px;
   width: 200px;
 }
 

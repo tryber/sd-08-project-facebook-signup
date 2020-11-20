@@ -27,7 +27,6 @@ const btnSalvar = document.getElementById('facebook-register');
 const form2Local = document.getElementsByClassName('form-group2');
 btnSalvar.addEventListener('click', function () {
   form2Local[0].insertAdjacentHTML('afterbegin', 'Campos inválidos');
-  form2Local[0].firstChild.remove();
 });
 
 document.getElementById('personalizado').addEventListener('click', function () {

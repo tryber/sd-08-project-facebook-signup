@@ -18,3 +18,16 @@ buttonCadastro.addEventListener('click', function () {
     }
   }
 });
+
+function PersonalizadoButton() {
+  const buttonPersonalizado = document.getElementById('Personalizado');
+
+  buttonPersonalizado.addEventListener('changed', function() {
+    const createInput = document.createElement('input');
+  
+    createInput.name = 'gender-custom';
+    createInput.placeholder = 'Gênero (opcional)';
+    createInput.className = 'radio-buttons';  
+  })
+}
+PersonalizadoButton();

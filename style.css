@@ -15,11 +15,22 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-around;
+  
+  
   width: 100%;
 }
 
 .form-group {
   align-self: flex-start;
   display: flex;
+}
+
+.main-content{
+  display: flex;
+}
+
+.left-content{
+  width: 800px;
 }

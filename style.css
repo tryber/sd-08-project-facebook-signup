@@ -62,6 +62,6 @@ body {
 }
 
 .custom {
-  display: none;
   align-self: flex-end;
+  display: none;  
 }

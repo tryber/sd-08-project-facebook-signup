@@ -12,14 +12,14 @@ const btnCadastreSe = document.getElementById('facebook-register');
 btnCadastreSe.addEventListener('click', function (event) {
   event.preventDefault();
   let erros = '';
-  const inputsText = document.querySelectorAll('input[type=text], input[type=radio], input[type=password]');
-  for (let index = 0; index < inputsText.length; index += 1) {
+  const inputsText = document.querySelectorAll('input[type=text], input[type=password]');
+  for (let index = 2; index < inputsText.length; index += 1) {
     const input = inputsText[index];
     if (input.value === '') {
-      erros += 'Campos inválidos';
+      erros += 'Campos inválidos\n';
     }
   }
   if (erros !== '') {
-    alert(erros);
+    alert('Campos inválidos');
   }
 });

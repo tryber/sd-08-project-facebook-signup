@@ -43,7 +43,7 @@ function genderChecked() {
   let gender;
   if (document.querySelector('#Masculino').checked) {
     gender = 'Masculino';
-  } else if (document.querySelector('#Feminino')) {
+  } else if (document.querySelector('#Feminino').checked) {
     gender = 'Feminino';
   } else {
     gender = 'Personalizado';
@@ -58,7 +58,7 @@ function subimitForm() {
 
   if (fields !== false) {
     rightContent.innerHTML =
-    `<h1>Olá ${fields[0]} ${fields[1]}</h1>
+    `<h1>Olá, ${fields[0]} ${fields[1]}</h1>
     <h2>Seja bem vinda(o)</h2>
     <p>Por favor confira se os dados estão corretos.</p>
     <p>Email/celular:${fields[2]}</p>

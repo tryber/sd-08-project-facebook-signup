@@ -13,7 +13,7 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  align-items: center;
+  align-items: initial;
   justify-content: space-around;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .login-input {
-  border: 1px solid rgba(0, 0, 0, 0.794);
+  border: 1px solid rgba(0, 0, 0, 0.692);
   width: 120px;
 }
 
@@ -58,7 +58,7 @@ body {
 
 .btn-main {
   color: #ffffffea;
-  border: 1px solid rgba(0, 0, 0, 0.233);
+  border: 1px solid rgba(0, 0, 0, 0.274);
   background-color: #3b6aad;
   padding: 2px 2px;
   width: 40px;

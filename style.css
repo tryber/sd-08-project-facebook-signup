@@ -46,3 +46,14 @@ body , header , img {
 .d-none {
   display: none;
 }
+
+.preview-row {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.preview-label {
+  margin-right: 20px;
+  width: 100px;
+}

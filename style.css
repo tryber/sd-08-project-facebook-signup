@@ -3,9 +3,11 @@
   display: flex;
   justify-content: space-between;
 }
+
 .facebook-login {
   display: flex;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -17,7 +19,7 @@
 
 .main-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .left-content {
@@ -32,15 +34,10 @@
   display: flex;
 }
 
-#label-birthdate {
-    display: block;
+.label-birthdate {
+  display: block;
 }
 
-#label-gender{
-    display: block;
+.label-gender {
+  display: block;
 }
-
-#label-gender {
-    display: block;
-}
-

@@ -36,7 +36,7 @@ function validateFirstName() {
   if (document.forms.myForm.firstname.value === '') {
     invalidField.innerText = 'Campos inválidos';
   } else {
-    contador += 1;
+    counter += 1;
   }
 }
 
@@ -44,7 +44,7 @@ function validateLastName() {
   if (document.forms.myForm.lastname.value === '') {
     invalidField.innerText = 'Campos inválidos';
   } else {
-    contador += 1;
+    counter += 1;
   }
 }
 
@@ -52,7 +52,7 @@ function validatePhoneEmail() {
   if (document.forms.myForm.phone_email.value === '') {
     invalidField.innerText = 'Campos inválidos';
   } else {
-    contador += 1;
+    counter += 1;
   }
 }
 
@@ -60,7 +60,7 @@ function validatePassword() {
   if (document.forms.myForm.password.value === '') {
     invalidField.innerText = 'Campos inválidos';
   } else {
-    contador += 1;
+    counter += 1;
   }
 }
 
@@ -68,7 +68,7 @@ function validateBirthDate() {
   if (document.forms.myForm.birthdate.value === '') {
     invalidField.innerText = 'Campos inválidos';
   } else {
-    contador += 1;
+    counter += 1;
   }
 }
 
@@ -76,6 +76,6 @@ function validateGender() {
   if (document.forms.myForm.gender.value === '') {
     invalidField.innerText = 'Campos inválidos';
   } else {
-    contador += 1;
+    counter += 1;
   }
 }

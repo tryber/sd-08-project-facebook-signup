@@ -42,10 +42,17 @@ function selectedRadio() {
   return selectedGenre;
 }
 
+const signUpForm = document.getElementById('sign-up');
 const textArea = document.getElementById('text-area');
 const newTextArea = document.createElement('textarea');
 newTextArea.name = 'gender-custom';
 newTextArea.placeholder = 'Gênero (opcional)';
+
+function eraseTextArea() {
+  if (signUpForm.length === 10) {
+    textArea.removeChild(textArea.lastElementChild);
+  }
+}
 
 function createTextArea() {
   textArea.appendChild(newTextArea);
@@ -63,13 +70,6 @@ function createBoxCustomGender() {
   }
 }
 createBoxCustomGender();
-
-const signUpForm = document.getElementById('sign-up');
-function eraseTextArea() {
-  if (signUpForm.length === 10) {
-    textArea.removeChild(textArea.lastElementChild);
-  }
-}
 
 const errorMessage = document.createElement('p');
 signUpForm.appendChild(errorMessage);

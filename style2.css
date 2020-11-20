@@ -78,7 +78,6 @@ body {
 .forgot-account {
   color: #ffffff8a;
   font-size: 1em;
-  font-size: small;
   padding-left: 1px;
 }
 
@@ -157,6 +156,14 @@ body {
 
 .form-group-gender input {
   margin-left: 10px;
+}
+
+input {
+  color: rgba(0, 0, 0, 0.767);
+}
+
+input:focus {
+  color: rgba(0, 0, 0, 0.931);
 }
 
 .form-input {

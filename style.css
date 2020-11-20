@@ -53,8 +53,6 @@ header {
 .main-content {
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  width: 80%;
 }
 
 .left-content p {
@@ -62,7 +60,6 @@ header {
 }
 
 .left-content {
-  justify-content: flex-start;
   width: 800px;
 }
 
@@ -73,7 +70,6 @@ header {
 .right-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   width: 300px;
 }
 

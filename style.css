@@ -47,7 +47,9 @@ main {
 }
 
 .right-content form > label {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
   margin-top: 30px;
 }
 
@@ -109,12 +111,6 @@ body {
   color: red;
   display: none;
   margin: 5px 35px;
-}
-
-.gender label {
-  display: flex;
-  flex-direction: column;
-  margin-right: 20px;
 }
 
 .gender {

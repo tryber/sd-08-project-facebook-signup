@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   font-size: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0;;
 }
 
 .top-bar {
@@ -23,10 +23,17 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  padding: 5px;
 }
 
 .form-control {
   align-self: flex-end;
+  padding: 5px;
+}
+
+.form-pattern {
+  color: white;
+  padding: 2px;
 }
 
 .main-content {
@@ -37,10 +44,12 @@ body {
 }
 
 .left-content {
+  margin: 180px 180px;
   width: 800px;
 }
 
 .right-content {
+  margin: 180px 80px;
   width: 300px;
 }
 

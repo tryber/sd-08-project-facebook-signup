@@ -2,7 +2,12 @@ function checkTexts() {
   const form = document.querySelectorAll('.form input');
   let flag1 = 0;
   for (let index = 0; index < form.length; index += 1) {
-    if (index < 5 || index > 7) {
+    if (index < 5) {
+      if (form[index].value === '') {
+        flag1 = 1;
+      }
+    }
+    if (index > 7) {
       if (form[index].value === '') {
         flag1 = 1;
       }

@@ -22,8 +22,7 @@ function submitFormCreate() {
   getRightContent.innerHTML += template;
 }
 function createInputGenderPersonalizado() {
-  const genderCustom =
-    '<input name="gender-custom" type="text" placeholder="Gênero (opcional)"></input>';
+  const genderCustom = '<input name="gender-custom" type="text" placeholder="Gênero (opcional)"></input>';
   getGenderPersonalizadoContainer.innerHTML += genderCustom;
 }
 

@@ -46,3 +46,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.radio-genero {
+  display: flex;
+}

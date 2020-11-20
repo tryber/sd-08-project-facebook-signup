@@ -13,3 +13,7 @@ document.getElementById('facebook-register').addEventListener('click', (event) =
     event.preventDefault();
   }
 });
+
+document.getElementById('personalizado').addEventListener('click', () => {
+    document.getElementById('div-personalizado').innerHTML = '<input name="gender" type="text" placeholder="Gênero" />'
+});

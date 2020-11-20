@@ -30,7 +30,11 @@ const cadastro = document.getElementById('facebook-register');
 cadastro.addEventListener('click', checkRegistration);
 
 function genderCustom() {
-  
+  const newGender = document.createElement('input');
+  newGender.setAttribute('name', 'gender-custom');
+  newGender.setAttribute('placeholder', 'Gênero (opcional)');
+
+  document.getElementById('select-gender').appendChild(newGender);
 }
 
 const custom = document.getElementById('Personalizado');

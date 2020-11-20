@@ -27,8 +27,8 @@ btnCadastreSe.addEventListener('click', function (event) {
     const pInvalid = document.createElement('p');
     pInvalid.innerHTML = 'Campos inválidos';
     document.querySelectorAll('form')[1].appendChild(pInvalid);
-  } else {    
-    const pName = document.createElement('p');    
+  } else {
+    const pName = document.createElement('p');
     pName.innerHTML = 'Olá, ' + document.querySelectorAll('input')[2].value + ' ' + document.querySelectorAll('input')[3].value;
     const pEmail = document.createElement('p');
     pEmail.innerHTML = document.querySelectorAll('input')[4].value;
@@ -41,6 +41,7 @@ btnCadastreSe.addEventListener('click', function (event) {
     newDiv.appendChild(pName);
     newDiv.appendChild(pEmail);
     newDiv.appendChild(pBirthDate);
+  }
 });
 
 document.querySelector('#custom').addEventListener('click', function () {

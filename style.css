@@ -8,11 +8,16 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178); /* Obrigatório */
   display: flex; /* Obrigatório */
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.facebook-logo {
+  margin-left: 100px;
 }
 
 .facebook-login {
   display: flex;
+  margin-right: 100px;
 }
 
 .form-group {

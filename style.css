@@ -68,3 +68,17 @@ button {
 .right-content {
   width: 300px;
 }
+
+.right-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.celphone {
+  width: 85%;
+}
+
+.password {
+  width: 85%;
+}

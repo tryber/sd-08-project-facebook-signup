@@ -39,15 +39,15 @@ cadast.addEventListener('click', () => {
       formsValue[index].value === ''
     ) {
       document.querySelector('.chec-return').style.display = 'block';
-  } else {
-    const firstName = document.getElementById('firstname').value;
-    const lastName = document.getElementById('lastname').value;
-    const phoneMail = document.getElementById('phone_email').value;
-    const birthDate = document.getElementById('birthdate').value;
-    const gender = document.querySelector('input[type=radio]:checked').value;
-    const welcomeUser = `Olá, ${firstName} ${lastName} ${gender} ${phoneMail} ${birthDate}`;
-    document.querySelector(".right-content").innerHTML = `${welcomeUser}`;
+    } else {
+      const firstName = document.getElementById('firstname').value;
+      const lastName = document.getElementById('lastname').value;
+      const phoneMail = document.getElementById('phone_email').value;
+      const birthDate = document.getElementById('birthdate').value;
+      const gender = document.querySelector('input[type=radio]:checked').value;
+      const welcomeUser = `Olá, ${firstName} ${lastName} ${gender} ${phoneMail} ${birthDate}`;
+      document.querySelector('.right-content').innerHTML = `${welcomeUser}`;
     }
-    }
+  }
   return false;
 });

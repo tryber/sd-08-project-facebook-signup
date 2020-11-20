@@ -3,7 +3,7 @@ body {
 }
 
 @media screen and ( max-width : 749px ) {
-  
+
   .logo-mobile {
     background-color: blue;
     display: block;
@@ -38,7 +38,7 @@ body {
 /* DISPLAY DESKTOP LAPTOP */
 
 @media screen and ( min-width : 750px ) {
-  
+
   .top-bar {
     align-items: center;
     background-color: rgb(66, 103, 178);

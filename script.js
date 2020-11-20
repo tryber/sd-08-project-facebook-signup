@@ -14,7 +14,7 @@ function generoPersonalizado() {
   insiraPersonalizado.type = 'text';
   insiraPersonalizado.name = 'gender-custom';
   insiraPersonalizado.placeholder = 'Gênero (opcional)';
-  insiraPersonalizado.id = 'insira-personalizado';
+  insiraPersonalizado.className = 'insira-personalizado';
   divDoPersonalizado.appendChild(insiraPersonalizado);
 }
 personalizado.addEventListener('click', generoPersonalizado);

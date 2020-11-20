@@ -31,7 +31,7 @@ formsCheck();
 function personalizeCheck() {
   const personaBtn = document.getElementById('btn-personalizado');
   const gndrContent = document.querySelector('.gender-content');
-  let newInput = document.createElement('input');
+  const newInput = document.createElement('input');
   newInput.type = 'text';
   gndrContent.addEventListener('change', function () {
     if (personaBtn.checked) {

@@ -62,7 +62,7 @@ body {
 .birthdate {
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .gender {
@@ -70,19 +70,11 @@ body {
   flex-direction: column;
 }
 
-label #label-gender {
-  margin: 9px 0;
-  margin-left: 4px;
+.label-style {
   color: #989ca4;
   font-weight: 800;
   font-size: 13.5px;
-}
-
-#label-birthdate {
-  margin-left: 4px;
-  color: #989ca4;
-  font-weight: 800;
-  font-size: 13.5px;
+  margin: 0 0 5px 5px;
 }
 
 #facebook-register {
@@ -103,18 +95,7 @@ label #label-gender {
   box-sizing: border-box;
 }
 
-.facebook-signin input[ name = 'firstname' ] {
-  margin-right: 10px;
-}
-
-.facebook-signin input[ type = 'text' ] {
-  padding: 6px 8px;
-  border-radius: 5px;
-  border: 2px solid #d4dae6;
-  width: 100%;
-}
-
-.facebook-signin input[ type = 'password' ] {
+.input-style {
   padding: 6px 8px;
   border-radius: 5px;
   border: 2px solid #d4dae6;

@@ -31,7 +31,7 @@ function finishForm() {
   if (genderFemale.checked) {
     genderLog.innerHTML = `Gênero: ${genderFemale.value}`;
   } else if (genderMale.checked) {
-    genderLog.innerHTML = `Gênero: ${genderMale.vallue}`;
+    genderLog.innerHTML = `Gênero: ${genderMale.value}`;
   } else if (gender.checked) {
     genderLog.innerHTML = `Gênero: ${gender.value}`;
   }

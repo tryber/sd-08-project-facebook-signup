@@ -1,6 +1,5 @@
 const enterBtn = document.querySelector('.form-control');
 const customGender = document.querySelector('#custom');
-const formInputs = document.querySelectorAll('.signup-input');
 const registerBtn = document.querySelector('#facebook-register');
 
 enterBtn.addEventListener('click', (event) => {
@@ -15,17 +14,21 @@ customGender.addEventListener('change', () => {
   const formGroup = document.querySelector('#facebook-register').parentNode;
   customInput.type = 'text';
   customInput.name = 'gender-custom';
-  customInput.className = 'gender-custom';
+  customInput.className = 'gender-custom signup-input';
   customInput.placeholder = 'Gênero (opcional)';
   formGroup.insertBefore(customInput, formGroup.lastElementChild);
 });
 
 
 registerBtn.addEventListener('click', (event) => {
+  const formInputs = document.querySelectorAll('.signup-input');
+  const message = document.createElement('p');
+  const signupForm = document.getElementById("form-signup")
+  message.innerText = "Campos inválidos"
   for (let index = 0; index < formInputs.length; index += 1) {
-    if (formInputs[index].value === '') {
+    if (formInputs[index].innerText === '') {
       event.preventDefault();
-      formInputs[index].value = 'Campos inválidos';
+      signupForm.appendChild(message);
     }
   }
 });

@@ -7,7 +7,7 @@ loginButton.addEventListener('click', function () {
 const registerButton = document.getElementById('facebook-register');
 
 registerButton.addEventListener('click', function () {
-  for (let index = 0; index < inputArray.length; index += 1){
+  for (let index = 0; index < inputArray.length; index += 1) {
     const input = inputArray[index];
     const check = input.checkValidity();
     if (check) {

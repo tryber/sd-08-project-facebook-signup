@@ -50,11 +50,12 @@ header {
 
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .left-content p {
   font-weight: 600;
+  width: 300px;
 }
 
 .left-content {

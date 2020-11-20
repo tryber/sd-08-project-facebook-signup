@@ -9,35 +9,45 @@ function alertEmail() {
 
 alertEmail();
 
-const invalid = document.createElement('p');
-const form = document.querySelector('.form-register');
+function cheksInput() {
+  const button = document.querySelector('#facebook-register');
+  let contador = 0;
+  let radio = false;
 
-function signIt() {
-  const inputs = document.querySelectorAll('.inputC');
-  const register = document.querySelector('#facebook-register');
-  register.addEventListener('click', function () {
-    for (let index = 0; index < inputs.length; index += 1) {
-      if (inputs[index].value === '') {
-        invalid.innerHTML = 'Campos inválidos';
+  button.addEventListener('click', function () {
+    const formsInput = document.querySelectorAll('.form-register input');
+    for (let index = 0; index < formsInput.length; index += 1) {
+      if (formsInput[index].value === '' && formsInput[index].type === 'text') {
+        contador += 1;
+      } else if (formsInput[index].value === '' && formsInput[index].type === 'password') {
+        contador += 1;
+      } else if (formsInput[index].checked === true && formsInput[index].type === 'radio') {
+        radio = true;
       }
-      form.appendChild(invalid);
+    }
+    if (contador !== 0 || radio !== true) {
+      const forms = document.querySelector('.form-register');
+      const errorText = document.createElement('p');
+      errorText.innerHTML = 'Campos inválidos';
+      forms.appendChild(errorText);
     }
   });
 }
 
-signIt();
+cheksInput();
 
-function checkRadio() {
-  const inputRadio = document.querySelectorAll('.inputRadio');
-  const register = document.querySelector('#facebook-register');
-  register.addEventListener('click', function () {
-    for (let index = 0; index < inputRadio.length; index += 1) {
-      if (!inputRadio[index].checked) {
-        invalid.innerHTML = 'Campos inválidos';
-      }
-      form.appendChild(invalid);
+function radioCustom() {
+  const forms = document.querySelector('.form-register');
+  forms.addEventListener('click', function (event) {
+    if (event.target.id === 'personalizado') {
+      const textArea = document.createElement('input');
+      const personalizado = document.querySelector('.custom');
+      textArea.type = 'text';
+      textArea.name = 'gender-custom';
+      textArea.placeholder = 'Gênero (opcional)';
+      personalizado.appendChild(textArea);
     }
   });
 }
 
-checkRadio();
+radioCustom();

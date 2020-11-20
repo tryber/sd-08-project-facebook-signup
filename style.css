@@ -1,0 +1,251 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  border-bottom: rgb(55, 92, 140) solid 1.5px;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+}
+
+form p {
+  font-size: 0.8em;
+  margin-top: 20px;
+}
+
+footer {
+  margin: 10px auto;
+  text-align: left;
+  width: 1100px;
+}
+
+footer p {
+  color: rgb(163, 163, 163);
+  font-size: 00.8em;
+  padding: 5px;
+}
+
+.top-bar p {
+  color: white;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin-top: 6px;
+  opacity: 0.7;
+  padding-left: 1px;
+}
+
+.left-content {
+  padding-left: 120px;
+  width: 800px;
+}
+
+.left-content p {
+  color: rgb(51, 85, 118);
+  font-size: 1.3em;
+  font-weight: 800;
+  width: 480px;
+}
+
+.top-bar p:hover {
+  opacity: 1;
+  text-decoration-line: underline;
+}
+
+.top-bar label {
+  font-size: 0.8em;
+}
+
+.facebook-logo {
+  width: 180px;
+}
+
+.facebook-login {
+  align-items: flex-start;
+  display: flex;
+  padding-top: 10px;
+}
+
+.facebook-login input {
+  border: rgb(55, 92, 140) solid 1.5px;
+  width: 115px;
+}
+
+.form-group {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-control button {
+  background-color: rgb(77, 123, 214);
+  border: rgb(55, 92, 140) solid 1.5px;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 33px;
+  margin-right: 20px;
+}
+
+.main-content {
+  background: linear-gradient(rgb(254, 254, 254), rgb(212, 217, 232));
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 40px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.open {
+  color: rgb(52, 52, 52);
+  margin-bottom: 10px;
+}
+
+.quick-easy {
+  color: rgb(52, 52, 52);
+  margin-top: 0;
+}
+
+.register {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.register input {
+  border: rgb(136, 150, 168) solid 1px;
+  border-radius: 3px;
+  height: 1.5em;
+  margin-bottom: 10px;
+}
+
+.register button {
+  background: linear-gradient(to bottom, rgb(96, 172, 93) 5%, rgb(14, 85, 23) 100%);
+  background-color: rgb(57, 133, 22);
+  border: rgb(95, 153, 75) solid 1px;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 8px 0 rgb(61, 128, 33);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.95em;
+  font-weight: 800;
+  margin-top: 15px;
+  opacity: 0.9;
+  padding: 5px 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(53, 53, 53, 0.8);
+  width: 170px;
+}
+
+.register button:hover {
+  opacity: 1;
+}
+
+.register label {
+  color: rgb(132, 134, 141);
+  font-size: 0.9em;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.fullname {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.fullname input {
+  width: 138px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-buttons label {
+  color: rgb(52, 52, 52);
+  font-weight: 400;
+  padding-top: 6px;
+}
+
+footer a {
+  color: rgb(51, 85, 118);
+  font-size: 0.8em;
+  margin: 10px 5px;
+}
+
+footer a:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.pt-br {
+  color: rgb(132, 134, 141);
+}
+
+.a-btn {
+  background-color: rgb(235, 235, 235);
+  border: rgb(187, 187, 187) solid 1px;
+  border-radius: 3px;
+  color: rgb(107, 105, 105);
+  font-size: 1em;
+  font-weight: 800;
+  padding: 1px 10px;
+}
+
+.a-btn:hover {
+  text-decoration: none;
+}
+
+hr {
+  border: rgb(218, 218, 218) solid 1px;
+  margin: 10px 5px;
+  width: 1060px;
+}
+
+.links-facebook {
+  text-align: left;
+  width: 1100px;
+}
+
+span {
+  color: rgb(66, 103, 178);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+span:hover {
+  text-decoration-line: underline;
+}
+
+.danger {
+  color: red;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 10px auto;
+}
+
+.success {
+  background-color: rgba(66, 103, 178, 0.2);
+  border: rgb(66, 103, 178) solid 1px;
+  border-radius: 3px;
+  color: rgb(52, 52, 52);
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 60px 20px;
+  padding: 40px 20px;
+}

@@ -9,29 +9,16 @@ const buttonRegister = document.getElementById('facebook-register');
 
 const validateData = () => {
   const input = document.getElementsByClassName('input');
-  const gender = document.getElementsByClassName('gender');
-  const error = document.querySelector('.invalid-input');
-  let helper = false;
-
-  for (let i = 0; i < gender.length; i += 1) {
-    if (gender[i].checked) {
-      helper = true;
-      break;
-    }
-  }
-
-  if (!helper) {
-    error.style.display = 'block';
-    return false;
-  }
+  let helper = true;
 
   for (let i = 0; i < input.length; i += 1) {
     if (input[i].value === '') {
-      error.style.display = 'block';
-      return false;
+      
+      helper = false;
     }
   }
-  return true;
+
+  return helper;
 };
 
 const selectUserData = () => {
@@ -45,7 +32,7 @@ const selectUserData = () => {
   const genders = document.getElementsByClassName('gender');
   for (let i = 0; i < genders.length; i += 1) {
     if (genders[i].checked) {
-      gender = genders[i].innerText;
+      gender = genders[i].value;
     }
   }
 
@@ -54,19 +41,45 @@ const selectUserData = () => {
   return data;
 };
 
+const deleteContent = () => {
+  const content = document.querySelector('.right-content');
+  const { children } = content;
+
+  for (let i = 0; i < children.length; i) {
+    content.removeChild(content.lastChild);
+  }
+}
+
 buttonRegister.addEventListener('click', () => {
-  if (validateData()) {
+  const helper = validateData();
+  
+  if (helper) {
     const data = selectUserData();
+    
+    deleteContent();
+    const content = document.getElementsByClassName('right-content')[0];
+    
+    const p = document.createElement('p');
+    p.innerText = `Olá, ${data[0]} ${data[1]}`;
+    content.appendChild(p);
+    
+    for (let i = 2; i < data.length; i += 1) {
+      const p = document.createElement('p');
+      p.innerText = data[i];
+      content.appendChild(p);
+    }
   } else {
+    const error = document.querySelector('.invalid-input');
+    error.style.display = 'block';
   }
 });
 
 const gender = document.getElementsByClassName('gender');
 const input = document.querySelector('.optional-input');
 
-for (let i = 1; i < gender.length; i += 1) {
+for (let i = 0; i < gender.length; i += 1) {
   gender[i].addEventListener('click', () => {
-    if (gender[3].checked) {
+    if (gender[2].checked) {
       input.style.display = 'block';
     } else {
       input.style.display = 'none';

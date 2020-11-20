@@ -36,5 +36,3 @@ document.querySelector('#custom').addEventListener('click', function () {
   newInput.placeholder = 'Gênero (opcional)';
   document.querySelector('.form-gender').appendChild(newInput);
 });
-
-

@@ -3,13 +3,60 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
 }
 
 .top-bar {
-
-  /* border: 1px solid black; */
-  height: 130px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  height: 85px;
   background-color: rgb(66, 103, 178);
+  justify-content: space-between;
+}
+
+.facebook-login {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.form-control {
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.form-group input {
+  padding: 2.7px;
+}
+
+.facebook-logo {
+  width: 170px;
+}
+
+#button-login {
+  background-color: #4367b2;
+  color: white;
+  font-size: 14px;
+  padding: 2px 8px;
+  border: 1px solid #243d74;
+  font-weight: 600;
+  outline: none;
+}
+
+#button-login:hover {
+  background-color: #3459a7;
 }
 
 .main-content {
@@ -31,7 +78,7 @@
   background-color: lightgrey;
 }
 
-form p {
+.right-content form p {
   margin: 30px 15px;
   color: #777;
   font-size: 11px;
@@ -46,54 +93,54 @@ form p {
   margin: 10px 0;
 }
 
-form input {
+.right-content form input {
   font-size: 18px;
   padding: 10px;
 }
 
-form input:nth-child( 1 ) {
+.right-content form input:nth-child( 1 ) {
   width: 48%;
 }
 
-form input:nth-child( 2 ) {
+.right-content form input:nth-child( 2 ) {
   width: 48%;
 }
 
-form input:nth-child( 3 ) {
+.right-content form input:nth-child( 3 ) {
   width: 98%;
   margin-top: 5px;
 }
 
-form input:nth-child( 4 ) {
+.right-content form input:nth-child( 4 ) {
   width: 98%;
   margin-top: 5px;
 }
 
-form label:nth-child( 5 ) {
+.right-content form label:nth-child( 5 ) {
   width: 98%;
   padding: 5px;
   margin-top: 5px;
 }
 
-form input:nth-child( 6 ) {
+.right-content form input:nth-child( 6 ) {
   width: 98%;
   padding: 10px;
   margin-top: 5px;
 }
 
-form label:nth-child( 7 ) {
+.right-content form label:nth-child( 7 ) {
   width: 98%;
   padding: 10px;
   margin-top: 5px;
 }
 
-form {
+.right-content form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-form button {
+.right-content form button {
   margin: 10px 0;
   font-size: 19px;
   font-weight: 600;

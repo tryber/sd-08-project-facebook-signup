@@ -23,7 +23,7 @@ function criaInput(event) {
     const genderCustom = document.createElement('input');
     genderCustom.type = 'text';
     genderCustom.name = 'gender-custom';
-    genderCustom.placeholder =  'Gênero (opcional)';
+    genderCustom.placeholder = 'Gênero (opcional)';
     const divGenderSignUp = document.querySelector('.gender-sign-up');
     divGenderSignUp.appendChild(genderCustom);
   }

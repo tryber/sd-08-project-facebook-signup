@@ -6,31 +6,58 @@ function alertaLogin() {
 const botaoLogin = document.querySelector('#button-login');
 botaoLogin.addEventListener('click', alertaLogin);
 
-function checaValidacao() {
-  const input = document.querySelectorAll('.right-content input');
-  console.log(input);
-  for (let i = 0; i < input.length; i += 1) {
-    if (input[i].value.length === 0) {
-      input[i].setCustomValidity('Campos inválidos');
-    } else {
-      input[i].setCustomValidity('');
+const radioContent = document.querySelector('.radio-content');
+const input = radioContent.querySelectorAll('input');
+Array.from(input).forEach(function (inputArray) {
+  inputArray.addEventListener('change', function () {
+    const customContent = document.querySelector('.custom-content');
+    if (inputArray.id === 'custom') {
+      const customInput = document.createElement('input');
+      customInput.type = 'text';
+      customInput.name = 'gender-custom';
+      customInput.placeholder = 'Gênero (opcional)';
+      document.querySelector('.custom-content').appendChild(customInput);
+    } else if (customContent.children.length > 0) {
+      customContent.removeChild(customContent.firstChild);
+    }
+  });
+});
+
+function showMessage() {
+  document.querySelector('span');
+  if (document.querySelector('span') != null) {
+    return;
+  }
+  const message = document.createElement('span');
+  const form = document.getElementById('form-singUp');
+  message.style.color = 'red';
+  message.innerText = 'Campos inválidos';
+  form.insertBefore(message, form.firstChild);
+}
+
+function verificaRadio(formInput) {
+  const radio = document.getElementsByClassName('radio');
+  for (let i = 0; i < radio.length; i += 1) {
+    if (radio[i].checked === true) {
+      formInput[i].setCustomValidity('');
+      return;
     }
   }
+  radio[0].setCustomValidity('Campos inválidos');
+  showMessage();
+}
+
+function checaValidacao() {
+  const form = document.getElementById('form-singUp');
+  const formInput = form.querySelectorAll('input');
+  for (let i = 0; i < formInput.length; i += 1) {
+    if (formInput[i].value.length === 0) {
+      showMessage();
+      return;
+    }
+  }
+  verificaRadio(formInput);
 }
 
 const submit = document.querySelector('#facebook-register');
 submit.addEventListener('click', checaValidacao);
-
-/* function checaValidacao(e) {
-  let nome = document.getElementById('nome');
-  nome.addEventListener('input', function (event) {
-    if (nome.value === "") {
-      nome.setCustomValidity('Campos inválidos');
-    } else {
-      nome.setCustomValidity('');
-    }
-  })
-}
-
-let submit = document.querySelector('#facebook-register');
-submit.addEventListener('click', checaValidacao); */

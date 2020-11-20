@@ -110,3 +110,14 @@ body {
   display: none;
   margin: 5px 35px;
 }
+
+.gender label {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.gender {
+  display: flex;
+  flex-direction: row;
+}

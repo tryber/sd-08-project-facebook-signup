@@ -5,7 +5,7 @@ const invalidField = document.getElementById('invalid-field');
 
 buttonLoginBtn.addEventListener('click', function () {
   alert(userEmailPhone.value);
-})
+});
 
 let counter = 0;
 

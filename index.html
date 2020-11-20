@@ -35,26 +35,26 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form action=""></form>
-        <div class="input-name-lastname">
-          <input name="firstname" placeholder="Nome" type="text">
-          <input name="lastname" placeholder="Sobrenome" type="text">
-        </div>
-        <input name="phone_email" placeholder="Celular ou email" type="text">
-        <input name="password" placeholder="Nova senha" type="password">
-        <label id="label-birthdate">Data de nascimento</label>
-        <input name="birthdate" placeholder="dd/mm/aaaa" type="text">
-        <label id="label-gender">Gênero</label>
-        <div class="radio-buttons">
-          <input type="radio" id="male" name="gender">
-          <label>Feminino</label>
-          <input type="radio" id="female" name="gender">
-          <label>Masculino</label>
-          <input type="radio" id="other" name="gender">
-          <label>Personalizado</label>
-        </div>
+        <form action="" class="right-form">
+          <div>
+            <input type="text" name="firstname" placeholder="Nome" class="full-name">
+            <input type="text" name="lastname" placeholder="Sobrenome" class="full-name">
+          </div>
+          <input type="text" name="phone_email" placeholder="Celular ou email">
+          <input type="password" name="password" placeholder="Nova senha">
+          <label for="" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="birthday">
+          <label id="label-gender">Gênero</label>
+          <div class="radio-buttons">
+            <input type="radio" id="male" name="gender">
+            <label>Feminino</label>
+            <input type="radio" id="female" name="gender">
+            <label>Masculino</label>
+            <input type="radio" id="other" name="gender">
+            <label>Personalizado</label>
+          </div>
+        </form>
       </div>
     </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
   </body>
-</html>

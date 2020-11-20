@@ -58,7 +58,7 @@ button {
 
 .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .left-content {
@@ -68,7 +68,6 @@ button {
 .right-content {
   display: flex;
   flex-direction: column;
-  width: 300px;
 }
 
 .input-name-lastname {
@@ -77,4 +76,10 @@ button {
 
 .radio-buttons {
   display: flex;
+}
+
+.right-form {
+  display: flex;
+  flex-direction: column;
+
 }

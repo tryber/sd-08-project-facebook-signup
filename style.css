@@ -1,0 +1,79 @@
+body {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  width: auto;
+}
+
+.facebook-login {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  background-color: rgb(235, 233, 233);
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.left-content {
+  margin-left: 30px;
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content form {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.name {
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.name input {
+  max-width: 140px;
+}
+
+.mail input {
+  margin-bottom: 10px;
+  width: 290px;
+}
+
+.date {
+  margin-bottom: 10px;
+}
+
+.gender {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.campo-opicional input {
+  margin-bottom: 10px;
+  width: 290px;
+}

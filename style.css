@@ -57,3 +57,7 @@ header {
 .full-name {
   display: flex;
 }
+
+.radios {
+  display: flex;
+}

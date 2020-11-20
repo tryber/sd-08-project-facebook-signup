@@ -78,15 +78,15 @@
   background-color: lightgrey;
 }
 
+.right-content p {
+  margin: 10px 0;
+  color: #777;
+}
+
 .right-content form p {
   margin: 30px 15px;
   color: #777;
   font-size: 11px;
-}
-
-.right-content p {
-  margin: 10px 0;
-  color: #777;
 }
 
 .right-content h1 {

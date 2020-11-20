@@ -1,29 +1,24 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .top-bar {
+  background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: center;
-  background-color: rgb(66, 103, 178);
 }
 
 .header-container {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 80%;
   margin: 10px;
+  width: 80%;
 }
 
-.facebook-login{
-  display: flex;
+.facebook-login {
   align-items: center;
+  display: flex;
 }
 
 .form-group {
@@ -33,28 +28,27 @@ body {
 }
 
 .form-group input {
-  width: 100px;
   height: 10px;
+  width: 100px;
 }
 
 .form-group label {
   color: aliceblue;
   font-size: 13px;
   font-weight: 700;
-  padding: 5px 0px;
-  
-} input#user-password ,input#user-email-phone {
-  width: 140px;
+  padding: 5px 0;
+}
+
+.label-style {
   height: 18px;
-  
+  width: 140px;
 }
 
-.form-control{
+.form-control {
   align-self: flex-end;
-
 }
+
 .form-control button {
-  
   background-color: rgb(46, 74, 177);
   border: 2px solid rgb(71, 71, 71);
   border-radius: 2px;
@@ -62,14 +56,14 @@ body {
   font-weight: 700;
   line-height: 19px;
   padding: 0 8px;
-  
 }
 
-  .main-content{
+.main-content {
   display: flex;
   justify-content: space-between;
 }
-.left-content{
+
+.left-content {
   display: flex;
   justify-content: center;
   width: 800px;
@@ -81,20 +75,21 @@ body {
   margin-top: 40px;
   width: 44%;
 }
+
 .slogan-container img {
   width: 120%;
 }
 
-.right-content{
+.right-content {
   width: 300px;
 }
- .form-style{
+
+.form-style {
   display: flex;
   flex-direction: column;
 }
 
 .validated-form {
-  /* background-color: rgb(212, 223, 245); */
   font-size: 14px;
   line-height: 1.6;
   padding: 5px 10px;

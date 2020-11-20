@@ -63,7 +63,6 @@ buttonRegister.addEventListener('click', () => {
     content.appendChild(p);
 
     for (let i = 2; i < data.length; i += 1) {
-      p = document.createElement('p');
       p.innerText = data[i];
       content.appendChild(p);
     }

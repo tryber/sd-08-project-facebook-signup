@@ -31,7 +31,8 @@
     <section class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-      <form >
+      <form>
+        <p id="invalid"></p>
         <section class="inputs">
           <input id="firstname" type="text" name="firstname" placeholder="Nome">
           <input id="lastname" type="text" name="lastname" placeholder="Sobrenome">
@@ -48,17 +49,16 @@
         </section>
         <section >
           <label id="label-gender">Gênero</label>
-          <input class="gender" type="radio" name="gender" id="Feminino"></input>
+          <input class="gender" type="radio" name="gender" id="Feminino" value="Feminino"></input>
           <label for="Feminino">Feminino</label>
-          <input class="gender" type="radio" name="gender" id="Masculino"></input>
+          <input class="gender" type="radio" name="gender" id="Masculino" value="Masculino"></input>
           <label for="Masculino">Masculino</label>
-          <input class="gender" type="radio" name="gender" id="Personalizado"></input>
+          <input class="gender" type="radio" name="gender" id="Personalizado" value="Personalizado"></input>
           <label for="Personalizado">Personalizado</label>
           <section class="input2">
             <button type="submit" id="facebook-register">Cadastre-se</button>
           </section>
         </section>
-        <p id="invalid"></p>
       </form>
     </section>
   </section>

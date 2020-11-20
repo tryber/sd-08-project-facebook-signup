@@ -15,7 +15,6 @@ botaoEnviar.addEventListener('click', function () {
     if (campoInput.required) {
       if (campoInput.value === '') {
         divVazia.innerHTML = 'Campo inválidos';
-      } else {
       }
     }
   }

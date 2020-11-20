@@ -16,7 +16,11 @@ function formsCheck() {
   btnSubmit.addEventListener('click', function (event) {
     for (let i = 0; i < formsContent.length; i += 1) {
       if (formsContent[i].value === '') {
-        formsContent[i].placeholder = 'Preencha este campo';
+        formsContent[0].placeholder = 'Preencha seu nome';
+        formsContent[1].placeholder = 'Preencha seu sobrenome';
+        formsContent[2].placeholder = 'Preencha celular ou e-mail';
+        formsContent[3].placeholder = 'Preencha sua senha';
+        formsContent[4].placeholder = 'Preencha seu nascimento';
         document.getElementById('mensagem-campos-invalidos').innerHTML =
           'Campos inválidos';
         document.getElementById('mensagem-campos-invalidos').style.color =

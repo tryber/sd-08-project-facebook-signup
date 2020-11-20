@@ -2,15 +2,8 @@ function checkTexts() {
   const form = document.querySelectorAll('.form input');
   let flag1 = 0;
   for (let index = 0; index < form.length; index += 1) {
-    if (index < 5) {
-      if (form[index].value === '') {
-        flag1 = 1;
-      }
-    }
-    if (index > 7) {
-      if (form[index].value === '') {
-        flag1 = 1;
-      }
+    if (form[index].value === '') {
+      flag1 = 1;
     }
   }
   return (flag1);
@@ -86,10 +79,10 @@ function seeForm() {
   const rightContent = document.querySelector('.right-content');
   rightContent.removeChild(document.querySelector('.form-container'));
   const h2 = document.createElement('h2');
-  h2.innerText = 'Olá, ' + sessionStorage.getItem('name') + ' ' + sessionStorage.getItem('lastName');
+  h2.innerText = `Olá, ${sessionStorage.getItem('name')} ${sessionStorage.getItem('lastName')}`;
   rightContent.appendChild(h2);
   const p = document.createElement('p');
-  p.innerHTML = 'Seu email ou telefone: ' + sessionStorage.getItem('phoneemail') + '<br>Data de Nascimento: ' + sessionStorage.getItem('birthdate') + '<br>Gênero: ' + sessionStorage.getItem('gender');
+  p.innerHTML = `Seu email ou telefone: ${sessionStorage.getItem('phoneemail')} <br>Data de Nascimento: ${sessionStorage.getItem('birthdate')} <br>Gênero ${sessionStorage.getItem('gender')}`;
   rightContent.appendChild(p);
 }
 

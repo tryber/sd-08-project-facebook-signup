@@ -11,11 +11,15 @@ function sendForm() {
 
 loginButton.addEventListener('click', sendForm);
 
-function verifyFilling(e) {
+function inputs() {
   for (let index = 0; index < verify.length; index += 1) {
     if (verify[index].value === '') { span.textContent = 'Campos inválidos'; }
     else { span.textContent = ''; }
   }
+}
+
+function verifyFilling(e) {
+  inputs();
   if (!(radio[0].checked || radio[1].checked || radio[2].checked)) {
     span.textContent = 'Campos inválidos';
   }

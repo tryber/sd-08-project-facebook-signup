@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and ( max-width: 749px ) {
   .logo-mobile {
     background-color: blue;
     display: block;
@@ -28,14 +28,14 @@ body {
   }
  
   .facebook-login {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
 /* DISPLAY DESKTOP LAPTOP*/
-@media screen and (min-width: 750px) {
+@media screen and ( min-width: 750px ) {
   .top-bar {
     align-items: center;
     background-color: rgb(66, 103, 178);
@@ -43,57 +43,57 @@ body {
     justify-content: space-between;
     padding:0 80px;
   }
-  
+
   .facebook-login {
     display: flex;
     margin-right: 100px;
   }
-  
+
   .form-group {
     display: flex;
     flex-direction: column;
   }
-  
+
   .form-control {
     align-self: flex-end;
   }
-  
+
   .main-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 10px 180px;
   }
-  
+
   .left-content {
     width: 800px;
     margin-left: -100px;
     margin-right: 100px;
   }
-  
+
   .right-content {
     width: 300px;
   }
-  
+
   .input-name {
     float: right;
   }
-  
+
   .input-space {
     width: 45%;
   }
-  
+
   .gender-label {
     display: block;
   }
-  
+
   .optional {
     display: none;
   }
-  
+
   .login {
-    width: 120px;
     margin-right: 10px;
+    width: 120px;
   }
 
   form {
@@ -118,7 +118,7 @@ body {
   }
 
   .img-width {
-    width: 100%;
     height: 150px;
+    width: 100%;
   }
 }

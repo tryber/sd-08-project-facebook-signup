@@ -34,4 +34,9 @@ body {
 
 .right-content {
   width: 300px;
+  display: flex;
+}
+
+.full-name {
+  display: flex;
 }

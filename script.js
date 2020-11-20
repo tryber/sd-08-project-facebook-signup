@@ -22,14 +22,8 @@ function checkRegistration() {
       invalidInput += 1;
     }
   }
-  let genderCheck = 0;
-  for (let index = 0; index < 3; index += 1) {
-    if (gender[index].checked) {
-      genderCheck += 1;
-    }
-  }
-  if (genderCheck === 0) {
-    invalidInput += 1;
+  if (gender[0].checked || gender[1].checked || gender[2].checked) {
+      alert('funcionou');
   }
   if (invalidInput > 0) {
     alert('Campos inválidos');

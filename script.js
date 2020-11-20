@@ -15,7 +15,7 @@ function showForm(value) {
 }
 
 function exibirTexto() {
-  const inputValueName = `Olá ${signUpForm.firstname.value} ${signUpForm.lastname.value}`;
+  const inputValueName = `Olá, ${signUpForm.firstname.value} ${signUpForm.lastname.value}`;
   showForm(inputValueName);
   const inputValueContact = `Celular ou email: ${signUpForm.phone_email.value}`;
   showForm(inputValueContact);

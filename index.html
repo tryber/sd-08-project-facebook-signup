@@ -11,7 +11,6 @@
 
 <body>
     <header class="top-bar">
-        <div class="header-container">
             <img class="facebook-logo" src="imgs/facebook-logo.png">
 
             <form method="GET" class="facebook-login">
@@ -35,7 +34,6 @@
 
 
             </form>
-        </div>
 
     </header>
 
@@ -52,8 +50,10 @@
             <h1>Abra uma conta</h1>
             <span class="quick-easy">É rápido e fácil.</span>
             <form method="GET" name="signUp-form" class="form-style" id="signUp">
-                <input type="text" name="firstname" placeholder="Nome">
-                <input type="text" name="lastname" placeholder="Sobrenome">
+                <div class="names">
+                    <input type="text" name="firstname" placeholder="Nome">
+                    <input type="text" name="lastname" placeholder="Sobrenome">
+                </div>
                 <input type="text" name="phone_email" placeholder="Celular ou email">
                 <input type="password" name="password" placeholder="Nova senha">
 

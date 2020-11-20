@@ -23,11 +23,19 @@ function checkForms(flag1) {
 }
 
 function clickSubmit(event) {
+  const form = document.querySelector('.form');
   const flags = checkTexts();
   const check = checkForms(flags);
   if (check[0] === 1 || check[1] === 0) {
-    alert('Campos inválidos');
+    if(document.querySelector(".form p") === null) {
+      let message = document.createElement('p');
+      message.innerHTML = 'Campos inválidos';
+      message.style.backgroundColor = 'red';
+      form.appendChild(message);
+    }
     event.preventDefault();
+  } else {
+    form.removeChild('p');
   }
 }
 document.querySelector('.facebook-register').addEventListener('click', clickSubmit);

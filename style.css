@@ -65,3 +65,7 @@ body {
   align-self: flex-end;
   display: none;
 }
+
+.moblie {
+  display: none;
+}

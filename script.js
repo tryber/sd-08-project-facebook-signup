@@ -31,6 +31,7 @@ function chekedInput() {
     const setInput = document.getElementsByClassName('genderOpc');
     if (event.target.id === 'personalizado') {
       setInput[0].style.display = 'flex';
+      setInput[0].style.flexDiction = 'row';
     }
     if (event.target.id === 'masculino' || event.target.id === 'feminino') {
       setInput[0].style.display = 'none';

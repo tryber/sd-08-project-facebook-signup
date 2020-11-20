@@ -84,3 +84,7 @@ button {
   flex-direction: column;
 
 }
+
+.name-lastname {
+  display: flex;
+}

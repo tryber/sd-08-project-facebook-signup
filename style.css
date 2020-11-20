@@ -1,15 +1,11 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
+  background-image: linear-gradient(white, #d3d8e8);
   height: 75vh;
-  background-image: linear-gradient(white, #D3D8E8);
+  margin: 0;
 }
 
 .top-bar {
-  background-color:#3C5A98;
+  background-color:#3c5a98;
   color: #fffffc;
   display: flex;
   justify-content: space-between;
@@ -31,9 +27,8 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: center;
-
   font-family: Roboto, sans-serif;
+  justify-content: center;
 }
 
 .left-content {
@@ -47,7 +42,7 @@ body {
 }
 
 .right-content > h1 {
-  color: #333333;
+  color: #333;
 }
 
 .quick-easy {
@@ -55,7 +50,7 @@ body {
 }
 
 #facebook-slogan {
-  color: #0E385F;
+  color: #0e385f;
   font-weight: 800;
   margin-left: 10px;
 }
@@ -78,20 +73,20 @@ body {
 #label-gender {
   margin: 9px 0;
   margin-left: 4px;
-  color: #989CA4;
+  color: #989ca4;
   font-weight: 800;
   font-size: 13.5px;
 }
 
 #label-birthdate {
   margin-left: 4px;
-  color: #989CA4;
+  color: #989ca4;
   font-weight: 800;
   font-size: 13.5px;
 }
 
 #facebook-register {
-  background-image: linear-gradient(#65A952, #588B44);
+  background-image: linear-gradient(#65a952, #588b44);
   padding: 6px 30px;
   border-radius: 5px;
   font-weight: 600;
@@ -105,23 +100,24 @@ body {
 .facebook-signin input {
   background-color: white;
   margin: 5px 0;
+  box-sizing: border-box;
 }
 
-.facebook-signin input[name="firstname"] {
+.facebook-signin input[ name='firstname' ] {
   margin-right: 10px;
 }
 
-.facebook-signin input[type="text"] {
+.facebook-signin input[ type='text' ] {
   padding: 6px 8px;
   border-radius: 5px;
-  border: 2px solid #D4DAE6;
+  border: 2px solid #d4dae6;
   width: 100%;
 }
 
-.facebook-signin input[type="password"] {
+.facebook-signin input[ type='password' ] {
   padding: 6px 8px;
   border-radius: 5px;
-  border: 2px solid #D4DAE6;
+  border: 2px solid #d4dae6;
   width: 100%;
   justify-content: space-between;
 }

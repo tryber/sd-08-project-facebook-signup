@@ -4,12 +4,12 @@
 
 }
 
-.facebook-login{
+.facebook-login {
   display: flex;
   align-items: flex-end;
 }
 
-.form-control{
+.form-control {
   display: flex;
   align-self: flex-end;
 }

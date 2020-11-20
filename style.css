@@ -52,6 +52,7 @@ body {
   color: rgb(149, 185, 255);
   font-size: 12px;
   font-weight: 600;
+  padding-bottom: 5px;
   padding-top: 5px;
   text-decoration: none;
 }

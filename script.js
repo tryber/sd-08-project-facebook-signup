@@ -37,3 +37,4 @@ document.querySelector('#custom').addEventListener('click', function () {
   document.querySelector('.form-gender').appendChild(newInput);
 });
 
+

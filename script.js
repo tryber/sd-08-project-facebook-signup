@@ -19,7 +19,7 @@ function finishForm() {
   document.querySelector('.right-content').removeChild(document.querySelector('.signUpForm'));
 
   const newMessage = document.querySelector('.right-content');
-  
+
   const helloLog = document.createElement('h1');
   helloLog.innerHTML = `Olá, ${firstName.value} ${lastName.value}`;
   const emailLog = document.createElement('p');

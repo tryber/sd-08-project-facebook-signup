@@ -36,17 +36,11 @@ const signUpForm = document.getElementById('sign-up');
 const errorMessage = document.createElement('p');
 signUpForm.appendChild(errorMessage);
 
+const mainContent = document.querySelector('.main-content');
+
 function eraseRightContent() {
   mainContent.removeChild(mainContent.lastElementChild);
 }
-
-function createRightContent() {
-  const newRightContent = document.createElement('p');
-  mainContent.appendChild(newRightContent);
-  newRightContent.innerText = `Olá, ${formText[0].value} ${formText[1].value} ${'\n'} ${formText[2].value} ${'\n'} ${formText[4].value} ${'\n'} ${selectedRadio()}`;
-}
-
-const mainContent = document.querySelector('.main-content');
 
 function selectedRadio() {
   let selectedGenre = '';
@@ -56,6 +50,12 @@ function selectedRadio() {
     }
   }
   return selectedGenre;
+}
+
+function createRightContent() {
+  const newRightContent = document.createElement('p');
+  mainContent.appendChild(newRightContent);
+  newRightContent.innerText = `Olá, ${formText[0].value} ${formText[1].value} ${'\n'} ${formText[2].value} ${'\n'} ${formText[4].value} ${'\n'} ${selectedRadio()}`;
 }
 
 function completeSignUp() {

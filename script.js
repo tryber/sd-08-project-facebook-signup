@@ -15,7 +15,7 @@ botaoEnviar.addEventListener('click', function () {
     const value = inputsText[index];
     if (value.required) {
       if (value.value === '') {
-        alert('Campos invalidos');
+        alert('Campos inválidos');
         break;
       }
     }

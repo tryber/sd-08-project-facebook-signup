@@ -47,7 +47,6 @@ btnCadastreSe.addEventListener('click', function (event) {
   }
 });
 
-//requisito 19
 document.querySelector('#custom').addEventListener('click', function () {
   const newInput = document.createElement('input');
   newInput.name = 'gender-custom';

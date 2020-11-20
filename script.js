@@ -1,9 +1,14 @@
 const botaoLogin = document.getElementById('button-login');
+const emailOuTelefone =  document.getElementById('user-email-phone');
 
-botaoLogin.addEventListener('click', function () {
-  alert('Email ou telefone');
-});
+function alertBotao() { 
+  alert(emailOuTelefone.value);
+}
+botaoLogin.addEventListener('click', alertBotao);
 
+
+
+const botaoCadastrar = document.getElementById('facebook-register');
 
 const botaoenviar = document.querySelector('#facebook-register');
 
@@ -16,8 +21,8 @@ botaoenviar.addEventListener('click', function () {
     let value = inputsText[index]
 
     if (value.required) {
-      if (value.value === "") {
-        alert("Campos invalidos")
+      if (value.value === '') {
+        alert('Campos invalidos')
         break
       }
     }
@@ -44,20 +49,20 @@ radiop.addEventListener("click", function (event) {
 
 }) */
 
-let persona = document.querySelector("#botaopersonalizado")
+let persona = document.querySelector('#botaopersonalizado')
 
-let radiop = document.getElementsByClassName("radioperso")
+let radiop = document.getElementsByClassName('radioperso')
 
 for (let index = 0; index < radiop.length; index++) {
 
-  radiop[index].addEventListener("click", function (event) {
+  radiop[index].addEventListener('click', function (event) {
 
     if (radiop[2].checked === true) {
 
-      persona.style.display = "block"
+      persona.style.display = 'block'
     }
     else {
-      persona.style.display = "none"
+      persona.style.display = 'none'
     }
   })
 }

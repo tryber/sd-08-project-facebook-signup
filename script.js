@@ -23,6 +23,14 @@ btnPresonalizado.addEventListener('click', () => {
   newInput.name = 'gender-custom';
   newInput.placeholder = 'Gênero (opcional)';
   inputTexto.appendChild(newInput);
+  const btnMasculino = document.getElementById('masculino');
+  btnMasculino.addEventListener('click', () => {
+    inputTexto.removeChild(newInput)
+  });
+  const btnFeminino = document.getElementById('feminino');
+    btnFeminino.addEventListener('click', () => {
+    inputTexto.removeChild(newInput)
+  });
 });
 
 const btnCadastro = document.getElementById('facebook-register');

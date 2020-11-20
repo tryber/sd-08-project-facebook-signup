@@ -5,7 +5,7 @@ body {
 }
 
 .top-bar {
-  background-color: #3c5a98;
+  background-color: rgb(66, 103, 178);
   color: #fffffc;
   display: flex;
   justify-content: space-between;

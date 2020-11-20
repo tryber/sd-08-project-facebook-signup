@@ -35,17 +35,13 @@ function cadastrar() {
 }
 cadastrar();
 
+const genderContainer = document.querySelector('#gender-container');
 const radioPersonalizado = document.querySelector('#pers');
-const box4 = document.querySelector('.box4');
 radioPersonalizado.addEventListener('click', function () {
   const input = document.createElement('input');
   input.type = 'text';
   input.id = 'opcional';
   input.name = 'gender-custom';
   input.placeholder = 'Gênero (opcional)';
-  const label = document.createElement('label');
-  label.for = 'opcional';
-  label.innerHTML = 'Gênero (opcional)';
-  box4.append(input);
-  box4.append(label);
+  genderContainer.append(input);
 });

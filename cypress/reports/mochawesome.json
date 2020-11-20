@@ -5,9 +5,15 @@
     "passes": 63,
     "pending": 0,
     "failures": 5,
+<<<<<<< HEAD
     "start": "2020-11-20T12:50:22.739Z",
     "end": "2020-11-20T12:51:33.168Z",
     "duration": 70429,
+=======
+    "start": "2020-11-20T12:42:54.613Z",
+    "end": "2020-11-20T12:43:50.544Z",
+    "duration": 55931,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
     "testsRegistered": 68,
     "passPercent": 92.64705882352942,
     "pendingPercent": 0,
@@ -18,7 +24,11 @@
   },
   "results": [
     {
+<<<<<<< HEAD
       "uuid": "4f5dac67-cef7-4902-8aa7-505261fc4dc6",
+=======
+      "uuid": "98af8727-dc9d-4580-a8d5-9e7182401fc9",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
       "title": "",
       "fullFile": "cypress/integration/project.spec.js",
       "file": "cypress/integration/project.spec.js",
@@ -27,7 +37,11 @@
       "tests": [],
       "suites": [
         {
+<<<<<<< HEAD
           "uuid": "90509b87-1589-477c-b7f1-68b134452666",
+=======
+          "uuid": "2c71d2f7-4300-4f87-a1ac-1b672f19a831",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
           "title": "Facebook Signup",
           "fullFile": "",
           "file": "",
@@ -36,7 +50,11 @@
           "tests": [],
           "suites": [
             {
+<<<<<<< HEAD
               "uuid": "8f3b7345-8024-4f2a-9f95-bbb56891efa6",
+=======
+              "uuid": "31a9c000-1643-41fc-96a4-a98e6b44e960",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Crie uma barra azul na parte superior da página com a classe top-bar",
               "fullFile": "",
               "file": "",
@@ -47,7 +65,11 @@
                   "title": "Esta barra deve possuir a classe top-bar",
                   "fullTitle": "Facebook Signup Crie uma barra azul na parte superior da página com a classe top-bar Esta barra deve possuir a classe top-bar",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 1551,
+=======
+                  "duration": 532,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -56,8 +78,13 @@
                   "context": null,
                   "code": "cy.get(TOP_BAR_SELECTOR).should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "3704efc0-9333-4bee-806f-237c8511fbee",
                   "parentUUID": "8f3b7345-8024-4f2a-9f95-bbb56891efa6",
+=======
+                  "uuid": "f3b779cf-97eb-4671-8734-308d33390dc0",
+                  "parentUUID": "31a9c000-1643-41fc-96a4-a98e6b44e960",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -65,7 +92,11 @@
                   "title": "A classe top-bar deve determinar que o elemento é um flex container",
                   "fullTitle": "Facebook Signup Crie uma barra azul na parte superior da página com a classe top-bar A classe top-bar deve determinar que o elemento é um flex container",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 813,
+=======
+                  "duration": 441,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -74,8 +105,13 @@
                   "context": null,
                   "code": "cy.get(TOP_BAR_SELECTOR).should('have.css', 'display', 'flex');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "fba6045b-8f5d-4d89-b49d-eee6b14e21c3",
                   "parentUUID": "8f3b7345-8024-4f2a-9f95-bbb56891efa6",
+=======
+                  "uuid": "7fdf7b00-280a-406c-b4af-03bbdc2edd60",
+                  "parentUUID": "31a9c000-1643-41fc-96a4-a98e6b44e960",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -83,7 +119,11 @@
                   "title": "A classe top-bar deve possuir a propriedade `background-color: rgb(66, 103, 178)`",
                   "fullTitle": "Facebook Signup Crie uma barra azul na parte superior da página com a classe top-bar A classe top-bar deve possuir a propriedade `background-color: rgb(66, 103, 178)`",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 648,
+=======
+                  "duration": 485,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -92,28 +132,47 @@
                   "context": null,
                   "code": "cy.get(TOP_BAR_SELECTOR).should('have.css', 'background-color', 'rgb(66, 103, 178)');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "3889d289-6fa6-4949-85b5-5c49a2e7a0e8",
                   "parentUUID": "8f3b7345-8024-4f2a-9f95-bbb56891efa6",
+=======
+                  "uuid": "85116046-1568-4ac1-b4f6-1c791f802e50",
+                  "parentUUID": "31a9c000-1643-41fc-96a4-a98e6b44e960",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "3704efc0-9333-4bee-806f-237c8511fbee",
                 "fba6045b-8f5d-4d89-b49d-eee6b14e21c3",
                 "3889d289-6fa6-4949-85b5-5c49a2e7a0e8"
+=======
+                "f3b779cf-97eb-4671-8734-308d33390dc0",
+                "7fdf7b00-280a-406c-b4af-03bbdc2edd60",
+                "85116046-1568-4ac1-b4f6-1c791f802e50"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 3012,
+=======
+              "duration": 1458,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "bfe9a091-42d5-44d6-a2e8-c29b4864d3c4",
+=======
+              "uuid": "2c8958b1-9695-4c8e-b795-60ea51a6cede",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "A barra superior deve conter o logotipo do Facebook no canto esquerdo com a classe facebook-logo",
               "fullFile": "",
               "file": "",
@@ -124,7 +183,11 @@
                   "title": "O logotipo deve estar alinhado a esquerda dentro da barra azul",
                   "fullTitle": "Facebook Signup A barra superior deve conter o logotipo do Facebook no canto esquerdo com a classe facebook-logo O logotipo deve estar alinhado a esquerda dentro da barra azul",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 518,
+=======
+                  "duration": 742,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -133,8 +196,13 @@
                   "context": null,
                   "code": "cy.get(FACEBOOK_LOGOTIPO_SELECTOR).should('be.leftAligned', '.top-bar');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "9ee24d07-249e-46b9-86e2-5b7536b54b6a",
                   "parentUUID": "bfe9a091-42d5-44d6-a2e8-c29b4864d3c4",
+=======
+                  "uuid": "af18dda2-7224-4435-99b2-d11f7cf6ce2b",
+                  "parentUUID": "2c8958b1-9695-4c8e-b795-60ea51a6cede",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -142,7 +210,11 @@
                   "title": "Deve existir um elemento img com a classe facebook-logo",
                   "fullTitle": "Facebook Signup A barra superior deve conter o logotipo do Facebook no canto esquerdo com a classe facebook-logo Deve existir um elemento img com a classe facebook-logo",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 487,
+=======
+                  "duration": 376,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -151,8 +223,13 @@
                   "context": null,
                   "code": "cy.get(FACEBOOK_LOGOTIPO_SELECTOR).should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "3cf3421d-87a0-452a-a232-113a5f35569b",
                   "parentUUID": "bfe9a091-42d5-44d6-a2e8-c29b4864d3c4",
+=======
+                  "uuid": "a12e69ed-816e-4159-806f-80f477685afb",
+                  "parentUUID": "2c8958b1-9695-4c8e-b795-60ea51a6cede",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -160,7 +237,11 @@
                   "title": "O atributo src do logotipo deve apontar para imgs/facebook-logo.png",
                   "fullTitle": "Facebook Signup A barra superior deve conter o logotipo do Facebook no canto esquerdo com a classe facebook-logo O atributo src do logotipo deve apontar para imgs/facebook-logo.png",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 819,
+=======
+                  "duration": 348,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -169,28 +250,47 @@
                   "context": null,
                   "code": "cy.get(FACEBOOK_LOGOTIPO_SELECTOR).should('have.attr', 'src').should('equal', 'imgs/facebook-logo.png');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "efeae600-63ad-424f-8523-5210d7a9acca",
                   "parentUUID": "bfe9a091-42d5-44d6-a2e8-c29b4864d3c4",
+=======
+                  "uuid": "c677fad7-343c-41b7-b540-ed1ffa06f50f",
+                  "parentUUID": "2c8958b1-9695-4c8e-b795-60ea51a6cede",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "9ee24d07-249e-46b9-86e2-5b7536b54b6a",
                 "3cf3421d-87a0-452a-a232-113a5f35569b",
                 "efeae600-63ad-424f-8523-5210d7a9acca"
+=======
+                "af18dda2-7224-4435-99b2-d11f7cf6ce2b",
+                "a12e69ed-816e-4159-806f-80f477685afb",
+                "c677fad7-343c-41b7-b540-ed1ffa06f50f"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 1824,
+=======
+              "duration": 1466,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "e51b3a61-4b4c-4e67-95ed-53c8dedf3b3a",
+=======
+              "uuid": "f84d6aa1-1567-458c-ab0b-208ecd129dfc",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "A barra superior deve conter um formulário de autenticação no canto direito",
               "fullFile": "",
               "file": "",
@@ -201,7 +301,11 @@
                   "title": "O formulário deve estar alinhado a direita dentro da barra azul",
                   "fullTitle": "Facebook Signup A barra superior deve conter um formulário de autenticação no canto direito O formulário deve estar alinhado a direita dentro da barra azul",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 860,
+=======
+                  "duration": 287,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -210,8 +314,13 @@
                   "context": null,
                   "code": "cy.get(FACEBOOK_LOGIN_FORM_SELECTOR).should('be.rightAligned', '.top-bar');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "bd8a3e1c-284f-48a8-8e54-0209e551bda5",
                   "parentUUID": "e51b3a61-4b4c-4e67-95ed-53c8dedf3b3a",
+=======
+                  "uuid": "e5b6df67-fcbc-4d8e-8ad3-dd3b39060697",
+                  "parentUUID": "f84d6aa1-1567-458c-ab0b-208ecd129dfc",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -219,7 +328,11 @@
                   "title": "Existe formulário possui uma classe chamada facebook-login",
                   "fullTitle": "Facebook Signup A barra superior deve conter um formulário de autenticação no canto direito Existe formulário possui uma classe chamada facebook-login",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 403,
+=======
+                  "duration": 275,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -228,8 +341,13 @@
                   "context": null,
                   "code": "cy.get(FACEBOOK_LOGIN_FORM_SELECTOR).should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "0be8404d-26b9-4241-8974-a1968c071cf3",
                   "parentUUID": "e51b3a61-4b4c-4e67-95ed-53c8dedf3b3a",
+=======
+                  "uuid": "54524d10-fade-439c-8fb2-408f3990eccf",
+                  "parentUUID": "f84d6aa1-1567-458c-ab0b-208ecd129dfc",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -237,7 +355,11 @@
                   "title": "O formulário deve ser um flex container",
                   "fullTitle": "Facebook Signup A barra superior deve conter um formulário de autenticação no canto direito O formulário deve ser um flex container",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 487,
+=======
+                  "duration": 214,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -246,28 +368,47 @@
                   "context": null,
                   "code": "cy.get(FACEBOOK_LOGIN_FORM_SELECTOR).should('have.css', 'display', 'flex');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "570029b6-3b91-42fc-a14d-7f97364fa9d5",
                   "parentUUID": "e51b3a61-4b4c-4e67-95ed-53c8dedf3b3a",
+=======
+                  "uuid": "e7569a2c-81c7-43bc-b722-5cf2d2310802",
+                  "parentUUID": "f84d6aa1-1567-458c-ab0b-208ecd129dfc",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "bd8a3e1c-284f-48a8-8e54-0209e551bda5",
                 "0be8404d-26b9-4241-8974-a1968c071cf3",
                 "570029b6-3b91-42fc-a14d-7f97364fa9d5"
+=======
+                "e5b6df67-fcbc-4d8e-8ad3-dd3b39060697",
+                "54524d10-fade-439c-8fb2-408f3990eccf",
+                "e7569a2c-81c7-43bc-b722-5cf2d2310802"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 1750,
+=======
+              "duration": 776,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "0e113857-f47e-4be6-beae-9107a1d16db3",
+=======
+              "uuid": "cf3ac8ab-94d2-40f8-a415-68b04a3b4ccc",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Crie uma classe no CSS chamada form-group",
               "fullFile": "",
               "file": "",
@@ -278,7 +419,11 @@
                   "title": "Essa classe deve possuir a propriedade `diplay: flex`",
                   "fullTitle": "Facebook Signup Crie uma classe no CSS chamada form-group Essa classe deve possuir a propriedade `diplay: flex`",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 339,
+=======
+                  "duration": 312,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -287,8 +432,13 @@
                   "context": null,
                   "code": "cy.get('.form-group').should('have.css', 'display', 'flex');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "c5c797c4-97f1-4435-8857-e15c0f7dff78",
                   "parentUUID": "0e113857-f47e-4be6-beae-9107a1d16db3",
+=======
+                  "uuid": "2263b718-2f63-4567-b8e5-3b41563dec74",
+                  "parentUUID": "cf3ac8ab-94d2-40f8-a415-68b04a3b4ccc",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -296,7 +446,11 @@
                   "title": "Alinhe o eixo principal dessa classe para ser o eixo vertical",
                   "fullTitle": "Facebook Signup Crie uma classe no CSS chamada form-group Alinhe o eixo principal dessa classe para ser o eixo vertical",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 253,
+=======
+                  "duration": 202,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -305,27 +459,45 @@
                   "context": null,
                   "code": "cy.get('.form-group').should('have.css', 'flex-direction', 'column');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "bfab9d23-0193-4652-a075-6a5bcf360d81",
                   "parentUUID": "0e113857-f47e-4be6-beae-9107a1d16db3",
+=======
+                  "uuid": "ecc7c587-47f2-40ab-b0e6-8d3810323b50",
+                  "parentUUID": "cf3ac8ab-94d2-40f8-a415-68b04a3b4ccc",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "c5c797c4-97f1-4435-8857-e15c0f7dff78",
                 "bfab9d23-0193-4652-a075-6a5bcf360d81"
+=======
+                "2263b718-2f63-4567-b8e5-3b41563dec74",
+                "ecc7c587-47f2-40ab-b0e6-8d3810323b50"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 592,
+=======
+              "duration": 514,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "a757fe6b-9c75-477d-88c1-4b8e502248e7",
+=======
+              "uuid": "c9a50dd3-fa2a-4cdb-a89c-485b811b2125",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Adicione o primeiro subcontainer com a classe form-group para agrupar o rótulo e campo \"E-mail ou telefone\" dentro do formulário criado na etapa 3",
               "fullFile": "",
               "file": "",
@@ -336,7 +508,11 @@
                   "title": "Deve haver um container utilizando a classe `form-group` criada no passo anterior",
                   "fullTitle": "Facebook Signup Adicione o primeiro subcontainer com a classe form-group para agrupar o rótulo e campo \"E-mail ou telefone\" dentro do formulário criado na etapa 3 Deve haver um container utilizando a classe `form-group` criada no passo anterior",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 353,
+=======
+                  "duration": 380,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -345,8 +521,13 @@
                   "context": null,
                   "code": "cy.get('form.facebook-login').children().first().should('exist').should('have.class', 'form-group');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "7ac920fe-74a2-4a68-90f4-40aeaad5916a",
                   "parentUUID": "a757fe6b-9c75-477d-88c1-4b8e502248e7",
+=======
+                  "uuid": "3e3fb284-6b0c-4dd0-9bba-880ccdc6e32e",
+                  "parentUUID": "c9a50dd3-fa2a-4cdb-a89c-485b811b2125",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -354,7 +535,11 @@
                   "title": "Dentro do container `form-group` criado, deve haver um rótulo com o id user-email-phone-label e o texto \"Email ou telefone\"",
                   "fullTitle": "Facebook Signup Adicione o primeiro subcontainer com a classe form-group para agrupar o rótulo e campo \"E-mail ou telefone\" dentro do formulário criado na etapa 3 Dentro do container `form-group` criado, deve haver um rótulo com o id user-email-phone-label e o texto \"Email ou telefone\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 373,
+=======
+                  "duration": 268,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -363,8 +548,13 @@
                   "context": null,
                   "code": "cy.get(USER_IDENTIFIER_LABEL_SELECTOR).parent().should('have.class', 'form-group');\ncy.get(USER_IDENTIFIER_LABEL_SELECTOR).should('exist').should('have.text', USER_IDENTIFIER_LABEL_TEXT_SELECTOR);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "dc33a6c1-9995-43c6-b5d3-836fa71d4db9",
                   "parentUUID": "a757fe6b-9c75-477d-88c1-4b8e502248e7",
+=======
+                  "uuid": "33cfeba4-18da-4fa5-96ef-3a38ca2cfa06",
+                  "parentUUID": "c9a50dd3-fa2a-4cdb-a89c-485b811b2125",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -372,7 +562,11 @@
                   "title": "Dentro do container `form-group` criado, abaixo do rótulo deve haver campo de entrada de texto para receber o email ou o telefone do usuário com o id user-email-phone",
                   "fullTitle": "Facebook Signup Adicione o primeiro subcontainer com a classe form-group para agrupar o rótulo e campo \"E-mail ou telefone\" dentro do formulário criado na etapa 3 Dentro do container `form-group` criado, abaixo do rótulo deve haver campo de entrada de texto para receber o email ou o telefone do usuário com o id user-email-phone",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 292,
+=======
+                  "duration": 237,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -381,28 +575,47 @@
                   "context": null,
                   "code": "cy.get(USER_IDENTIFIER_INPUT_SELECTOR).should('exist');\ncy.get(USER_IDENTIFIER_INPUT_SELECTOR).parent().should('have.class', 'form-group');\ncheckIsBelowOf(USER_IDENTIFIER_LABEL_SELECTOR, USER_IDENTIFIER_INPUT_SELECTOR);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "69eee371-4e10-4dd6-a35d-9c53d4891124",
                   "parentUUID": "a757fe6b-9c75-477d-88c1-4b8e502248e7",
+=======
+                  "uuid": "f3a2ad13-45ea-4697-81a2-2fef59426414",
+                  "parentUUID": "c9a50dd3-fa2a-4cdb-a89c-485b811b2125",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "7ac920fe-74a2-4a68-90f4-40aeaad5916a",
                 "dc33a6c1-9995-43c6-b5d3-836fa71d4db9",
                 "69eee371-4e10-4dd6-a35d-9c53d4891124"
+=======
+                "3e3fb284-6b0c-4dd0-9bba-880ccdc6e32e",
+                "33cfeba4-18da-4fa5-96ef-3a38ca2cfa06",
+                "f3a2ad13-45ea-4697-81a2-2fef59426414"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 1018,
+=======
+              "duration": 885,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "376afef7-1a38-4142-898e-b58d97834e63",
+=======
+              "uuid": "ad581cb7-9950-4eb9-836e-5509178033d7",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Adicione o segundo subcontainer com a classe form-group para agrupar o rótulo e campo \"Senha\" dentro do formulário criado na etapa 3",
               "fullFile": "",
               "file": "",
@@ -413,7 +626,11 @@
                   "title": "Deve haver um novo container utilizando a classe `form-group` criada no passo 4",
                   "fullTitle": "Facebook Signup Adicione o segundo subcontainer com a classe form-group para agrupar o rótulo e campo \"Senha\" dentro do formulário criado na etapa 3 Deve haver um novo container utilizando a classe `form-group` criada no passo 4",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 438,
+=======
+                  "duration": 337,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -422,8 +639,13 @@
                   "context": null,
                   "code": "cy.get(\"form.facebook-login > .form-group\").eq(1).should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "8e18adc4-aafa-445d-bd0a-c81535c76ffe",
                   "parentUUID": "376afef7-1a38-4142-898e-b58d97834e63",
+=======
+                  "uuid": "327f2938-a199-4885-95ae-bd1c79875e5f",
+                  "parentUUID": "ad581cb7-9950-4eb9-836e-5509178033d7",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -431,7 +653,11 @@
                   "title": "Dentro do novo container `form-group` criado, deve haver um rótulo com o id user-password-label e o texto \"Senha\"",
                   "fullTitle": "Facebook Signup Adicione o segundo subcontainer com a classe form-group para agrupar o rótulo e campo \"Senha\" dentro do formulário criado na etapa 3 Dentro do novo container `form-group` criado, deve haver um rótulo com o id user-password-label e o texto \"Senha\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 233,
+=======
+                  "duration": 258,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -440,8 +666,13 @@
                   "context": null,
                   "code": "cy.get(\"form.facebook-login .form-group label#user-password-label\").should('exist').should('have.text', USER_PASSWORD_LABEL_TEXT_SELECTOR);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "2a911bd0-ba17-4686-8ed7-55cccd7021ae",
                   "parentUUID": "376afef7-1a38-4142-898e-b58d97834e63",
+=======
+                  "uuid": "02731f25-2229-4f81-957c-c43c883f9613",
+                  "parentUUID": "ad581cb7-9950-4eb9-836e-5509178033d7",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -449,7 +680,11 @@
                   "title": "Dentro do novo container `form-group` criado, abaixo do rótulo deve haver campo de entrada para senha com o id user-password",
                   "fullTitle": "Facebook Signup Adicione o segundo subcontainer com a classe form-group para agrupar o rótulo e campo \"Senha\" dentro do formulário criado na etapa 3 Dentro do novo container `form-group` criado, abaixo do rótulo deve haver campo de entrada para senha com o id user-password",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 297,
+=======
+                  "duration": 241,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -458,28 +693,47 @@
                   "context": null,
                   "code": "cy.get(\"form.facebook-login .form-group input#user-password\").should('exist');\ncheckIsBelowOf(USER_PASSWORD_LABEL_SELECTOR, USER_PASSWORD_INPUT_SELECTOR);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "9ddbecce-8fff-43b2-bdf0-b9c23ac25c5d",
                   "parentUUID": "376afef7-1a38-4142-898e-b58d97834e63",
+=======
+                  "uuid": "1a3c9dd4-de9a-4c4b-a786-c0a9898beea2",
+                  "parentUUID": "ad581cb7-9950-4eb9-836e-5509178033d7",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "8e18adc4-aafa-445d-bd0a-c81535c76ffe",
                 "2a911bd0-ba17-4686-8ed7-55cccd7021ae",
                 "9ddbecce-8fff-43b2-bdf0-b9c23ac25c5d"
+=======
+                "327f2938-a199-4885-95ae-bd1c79875e5f",
+                "02731f25-2229-4f81-957c-c43c883f9613",
+                "1a3c9dd4-de9a-4c4b-a786-c0a9898beea2"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 968,
+=======
+              "duration": 836,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "5c9aa162-e44b-41a0-901b-a140ce3dda08",
+=======
+              "uuid": "93ecdebc-ccba-43df-9edb-15397661aa86",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Adicione o terceiro subcontainer com a classe form-control com o botão \"Entrar\" dentro do formulário criado na etapa 3",
               "fullFile": "",
               "file": "",
@@ -490,7 +744,11 @@
                   "title": "Deve haver um novo container utilizando a classe `form-control` criada no passo anterior`",
                   "fullTitle": "Facebook Signup Adicione o terceiro subcontainer com a classe form-control com o botão \"Entrar\" dentro do formulário criado na etapa 3 Deve haver um novo container utilizando a classe `form-control` criada no passo anterior`",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 383,
+=======
+                  "duration": 282,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -499,8 +757,13 @@
                   "context": null,
                   "code": "cy.get(\"form.facebook-login > .form-control\").eq(0).should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "8ecc1e98-43a1-4e83-a145-4cd7239b45b8",
                   "parentUUID": "5c9aa162-e44b-41a0-901b-a140ce3dda08",
+=======
+                  "uuid": "22cf48f3-f26f-4178-93cf-4ba1d845a4c8",
+                  "parentUUID": "93ecdebc-ccba-43df-9edb-15397661aa86",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -508,7 +771,11 @@
                   "title": "Crie uma classe no CSS form-control com a propriedade `align-self: flex-end`",
                   "fullTitle": "Facebook Signup Adicione o terceiro subcontainer com a classe form-control com o botão \"Entrar\" dentro do formulário criado na etapa 3 Crie uma classe no CSS form-control com a propriedade `align-self: flex-end`",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 220,
+=======
+                  "duration": 239,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -517,8 +784,13 @@
                   "context": null,
                   "code": "cy.get('.form-control').should('have.css', 'align-self', 'flex-end');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "20c35a18-750b-4f72-9055-5993d42c31cd",
                   "parentUUID": "5c9aa162-e44b-41a0-901b-a140ce3dda08",
+=======
+                  "uuid": "7c81679c-5612-462b-8f50-e03738f99ced",
+                  "parentUUID": "93ecdebc-ccba-43df-9edb-15397661aa86",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -526,7 +798,11 @@
                   "title": "Dentro do novo container `form-control` criado, deve haver um botão com o id \"button-login\" e o texto \"Entrar\"",
                   "fullTitle": "Facebook Signup Adicione o terceiro subcontainer com a classe form-control com o botão \"Entrar\" dentro do formulário criado na etapa 3 Dentro do novo container `form-control` criado, deve haver um botão com o id \"button-login\" e o texto \"Entrar\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 332,
+=======
+                  "duration": 170,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -535,8 +811,13 @@
                   "context": null,
                   "code": "cy.get(\"form.facebook-login .form-control #button-login\").should('exist').should('have.text', 'Entrar');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "eff01149-5310-43ae-b257-67bbfc549ec7",
                   "parentUUID": "5c9aa162-e44b-41a0-901b-a140ce3dda08",
+=======
+                  "uuid": "358e9f82-8d98-4148-a4c2-3efa7a307fcb",
+                  "parentUUID": "93ecdebc-ccba-43df-9edb-15397661aa86",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -544,7 +825,11 @@
                   "title": "O botão deve estar alinhado a direita do campo de entrada para senha",
                   "fullTitle": "Facebook Signup Adicione o terceiro subcontainer com a classe form-control com o botão \"Entrar\" dentro do formulário criado na etapa 3 O botão deve estar alinhado a direita do campo de entrada para senha",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 269,
+=======
+                  "duration": 350,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -553,8 +838,13 @@
                   "context": null,
                   "code": "checkIsRightOf(USER_PASSWORD_INPUT_SELECTOR, USER_LOGIN_BUTTON_SELECTOR);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "76b0ae10-5868-4d9e-acfc-70930ae0f4c6",
                   "parentUUID": "5c9aa162-e44b-41a0-901b-a140ce3dda08",
+=======
+                  "uuid": "77389a54-b0ff-4911-859a-858af64f1e33",
+                  "parentUUID": "93ecdebc-ccba-43df-9edb-15397661aa86",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -562,7 +852,11 @@
                   "title": "Ao clicar no botão com o id #button-login deve exibir um alert com o valor do campo \"Email ou telefone\"",
                   "fullTitle": "Facebook Signup Adicione o terceiro subcontainer com a classe form-control com o botão \"Entrar\" dentro do formulário criado na etapa 3 Ao clicar no botão com o id #button-login deve exibir um alert com o valor do campo \"Email ou telefone\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 873,
+=======
+                  "duration": 698,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -571,30 +865,51 @@
                   "context": null,
                   "code": "var content = 'my-user';\nvar alerted = false;\ncy.on('window:alert', function (text) {\n  expect(text).to.equal(content);\n  alerted = true;\n});\ncy.get(USER_IDENTIFIER_INPUT_SELECTOR).type(content);\ncy.get(USER_LOGIN_BUTTON_SELECTOR).should('exist').should('have.text', 'Entrar').click().then(function () {\n  expect(alerted).to.eq(true);\n});",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "22543801-d762-44d3-9b20-5b229ccb8778",
                   "parentUUID": "5c9aa162-e44b-41a0-901b-a140ce3dda08",
+=======
+                  "uuid": "54dd45cb-04cf-4b95-8e48-898b2585175a",
+                  "parentUUID": "93ecdebc-ccba-43df-9edb-15397661aa86",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "8ecc1e98-43a1-4e83-a145-4cd7239b45b8",
                 "20c35a18-750b-4f72-9055-5993d42c31cd",
                 "eff01149-5310-43ae-b257-67bbfc549ec7",
                 "76b0ae10-5868-4d9e-acfc-70930ae0f4c6",
                 "22543801-d762-44d3-9b20-5b229ccb8778"
+=======
+                "22cf48f3-f26f-4178-93cf-4ba1d845a4c8",
+                "7c81679c-5612-462b-8f50-e03738f99ced",
+                "358e9f82-8d98-4148-a4c2-3efa7a307fcb",
+                "77389a54-b0ff-4911-859a-858af64f1e33",
+                "54dd45cb-04cf-4b95-8e48-898b2585175a"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 2077,
+=======
+              "duration": 1739,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "9c51e8ee-a1f6-4c8c-b2a8-5450b6367133",
+=======
+              "uuid": "d3b75935-cd81-4aff-abd1-407ec22d034c",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Crie um container com a classe main-content abaixo da barra azul para agrupar o conteúdo principal da página",
               "fullFile": "",
               "file": "",
@@ -605,7 +920,11 @@
                   "title": "Crie um elemento com a classe main-content",
                   "fullTitle": "Facebook Signup Crie um container com a classe main-content abaixo da barra azul para agrupar o conteúdo principal da página Crie um elemento com a classe main-content",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 449,
+=======
+                  "duration": 140,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -614,8 +933,13 @@
                   "context": null,
                   "code": "cy.get('.main-content').should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "fdc3e5bb-a35e-45c2-a91c-9cfe15eeba21",
                   "parentUUID": "9c51e8ee-a1f6-4c8c-b2a8-5450b6367133",
+=======
+                  "uuid": "fb69badf-0ba1-48a0-8c03-1aed547e0318",
+                  "parentUUID": "d3b75935-cd81-4aff-abd1-407ec22d034c",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -623,7 +947,11 @@
                   "title": "O elemento deve ser um flex container no eixo horizontal",
                   "fullTitle": "Facebook Signup Crie um container com a classe main-content abaixo da barra azul para agrupar o conteúdo principal da página O elemento deve ser um flex container no eixo horizontal",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 315,
+=======
+                  "duration": 171,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -632,8 +960,13 @@
                   "context": null,
                   "code": "cy.get('.main-content').should('have.css', 'display', 'flex').should('have.css', 'flex-direction', 'row');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "0e0e7325-6244-4bc5-a84f-956edd23a1ab",
                   "parentUUID": "9c51e8ee-a1f6-4c8c-b2a8-5450b6367133",
+=======
+                  "uuid": "13bd714d-b6e9-4a1b-8d1f-9d02520d60c5",
+                  "parentUUID": "d3b75935-cd81-4aff-abd1-407ec22d034c",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -641,7 +974,11 @@
                   "title": "O elemento deve posicionado abaixo da barra azul",
                   "fullTitle": "Facebook Signup Crie um container com a classe main-content abaixo da barra azul para agrupar o conteúdo principal da página O elemento deve posicionado abaixo da barra azul",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 332,
+=======
+                  "duration": 154,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -650,28 +987,47 @@
                   "context": null,
                   "code": "checkIsBelowOf('.top-bar', '.main-content');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "90f8740a-8f2a-4e9e-8fdf-3a87d13f909b",
                   "parentUUID": "9c51e8ee-a1f6-4c8c-b2a8-5450b6367133",
+=======
+                  "uuid": "b0f88dde-3772-450f-8c60-6d1c862d0535",
+                  "parentUUID": "d3b75935-cd81-4aff-abd1-407ec22d034c",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "fdc3e5bb-a35e-45c2-a91c-9cfe15eeba21",
                 "0e0e7325-6244-4bc5-a84f-956edd23a1ab",
                 "90f8740a-8f2a-4e9e-8fdf-3a87d13f909b"
+=======
+                "fb69badf-0ba1-48a0-8c03-1aed547e0318",
+                "13bd714d-b6e9-4a1b-8d1f-9d02520d60c5",
+                "b0f88dde-3772-450f-8c60-6d1c862d0535"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 1096,
+=======
+              "duration": 465,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "62b44b00-ca73-4fd0-b71d-6efc57d661b6",
+=======
+              "uuid": "16cbe908-0e60-4c68-ad97-7202f04d0bd5",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Crie um subcontainer com a classe left-content para colocar o conteúdo do lado esquerdo dentro do container com a classe main-content",
               "fullFile": "",
               "file": "",
@@ -682,7 +1038,11 @@
                   "title": "O subcontainer deve ter a classe left-content",
                   "fullTitle": "Facebook Signup Crie um subcontainer com a classe left-content para colocar o conteúdo do lado esquerdo dentro do container com a classe main-content O subcontainer deve ter a classe left-content",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 392,
+=======
+                  "duration": 135,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -691,8 +1051,13 @@
                   "context": null,
                   "code": "cy.get('.main-content > .left-content').should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "8b95027e-5b61-414a-bcdb-ee65f2abc8a1",
                   "parentUUID": "62b44b00-ca73-4fd0-b71d-6efc57d661b6",
+=======
+                  "uuid": "f831202a-d6e0-4a59-b298-082f66c73522",
+                  "parentUUID": "16cbe908-0e60-4c68-ad97-7202f04d0bd5",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -700,7 +1065,11 @@
                   "title": "A classe left-content deve ter uma largura de 800px",
                   "fullTitle": "Facebook Signup Crie um subcontainer com a classe left-content para colocar o conteúdo do lado esquerdo dentro do container com a classe main-content A classe left-content deve ter uma largura de 800px",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 420,
+=======
+                  "duration": 199,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -709,8 +1078,13 @@
                   "context": null,
                   "code": "cy.get('.main-content > .left-content').should('have.css', 'width', '800px');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "e1972d4d-ba1e-4979-bd25-2f659b124c03",
                   "parentUUID": "62b44b00-ca73-4fd0-b71d-6efc57d661b6",
+=======
+                  "uuid": "cf4bb0ba-d70a-4056-9622-d4677895b789",
+                  "parentUUID": "16cbe908-0e60-4c68-ad97-7202f04d0bd5",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -718,7 +1092,11 @@
                   "title": "Dentro do container com a classe left-content deve existir um parágrafo com id facebook-slogan e o texto \"O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.\"",
                   "fullTitle": "Facebook Signup Crie um subcontainer com a classe left-content para colocar o conteúdo do lado esquerdo dentro do container com a classe main-content Dentro do container com a classe left-content deve existir um parágrafo com id facebook-slogan e o texto \"O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 283,
+=======
+                  "duration": 214,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -727,8 +1105,13 @@
                   "context": null,
                   "code": "cy.get('.main-content > .left-content #facebook-slogan').should('exist').contains(FACEBOOK_SLOGAN);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "70185215-8462-4ec5-b9c2-c4e34cba2e66",
                   "parentUUID": "62b44b00-ca73-4fd0-b71d-6efc57d661b6",
+=======
+                  "uuid": "c5119e20-706f-4722-be0b-fda3cf65e503",
+                  "parentUUID": "16cbe908-0e60-4c68-ad97-7202f04d0bd5",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -736,7 +1119,11 @@
                   "title": "Dentro do container com a classe left-content deve existir abaixo do parágrafo com id facebook-slogan uma imagem com id facebook-networking e o src com o endereço `imgs/networking.png`.",
                   "fullTitle": "Facebook Signup Crie um subcontainer com a classe left-content para colocar o conteúdo do lado esquerdo dentro do container com a classe main-content Dentro do container com a classe left-content deve existir abaixo do parágrafo com id facebook-slogan uma imagem com id facebook-networking e o src com o endereço `imgs/networking.png`.",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 233,
+=======
+                  "duration": 206,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -745,29 +1132,49 @@
                   "context": null,
                   "code": "cy.get('.main-content > .left-content img#facebook-networking').should('exist').should('have.attr', 'src', 'imgs/networking.png');\ncheckIsBelowOf(FACEBOOK_SLOGAN_SELECTOR, FACEBOOK_NETWORKING_IMG_SELECTOR);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "260dad0e-961b-4d3b-8cbe-b065339af1b4",
                   "parentUUID": "62b44b00-ca73-4fd0-b71d-6efc57d661b6",
+=======
+                  "uuid": "aa7ca570-a219-423f-8d2a-d460eeb7c621",
+                  "parentUUID": "16cbe908-0e60-4c68-ad97-7202f04d0bd5",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "8b95027e-5b61-414a-bcdb-ee65f2abc8a1",
                 "e1972d4d-ba1e-4979-bd25-2f659b124c03",
                 "70185215-8462-4ec5-b9c2-c4e34cba2e66",
                 "260dad0e-961b-4d3b-8cbe-b065339af1b4"
+=======
+                "f831202a-d6e0-4a59-b298-082f66c73522",
+                "cf4bb0ba-d70a-4056-9622-d4677895b789",
+                "c5119e20-706f-4722-be0b-fda3cf65e503",
+                "aa7ca570-a219-423f-8d2a-d460eeb7c621"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 1328,
+=======
+              "duration": 754,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "f942c812-6754-4a63-abed-38318c853772",
+=======
+              "uuid": "b1d3c0e9-a939-4f3c-bb98-eaa4464f2f0e",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Crie um subcontainer com a classe right-content para colocar o conteúdo do lado direito dentro do container com a classe main-content",
               "fullFile": "",
               "file": "",
@@ -778,7 +1185,11 @@
                   "title": "O novo subcontainer deve ter a classe right-content",
                   "fullTitle": "Facebook Signup Crie um subcontainer com a classe right-content para colocar o conteúdo do lado direito dentro do container com a classe main-content O novo subcontainer deve ter a classe right-content",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 400,
+=======
+                  "duration": 187,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -787,8 +1198,13 @@
                   "context": null,
                   "code": "cy.get('.main-content > .right-content').should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "97379ee7-8c57-4f0f-80c1-fc7f9b78765d",
                   "parentUUID": "f942c812-6754-4a63-abed-38318c853772",
+=======
+                  "uuid": "0fbfa47f-605b-4cd0-83f0-79afaf5c43a8",
+                  "parentUUID": "b1d3c0e9-a939-4f3c-bb98-eaa4464f2f0e",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -796,7 +1212,11 @@
                   "title": "A classe right-content deve ter uma largura de 300px",
                   "fullTitle": "Facebook Signup Crie um subcontainer com a classe right-content para colocar o conteúdo do lado direito dentro do container com a classe main-content A classe right-content deve ter uma largura de 300px",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 266,
+=======
+                  "duration": 196,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -805,8 +1225,13 @@
                   "context": null,
                   "code": "cy.get('.main-content > .right-content').should('have.css', 'width', '300px');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "f3a916e0-5b63-4844-b6c5-fec3fefa5085",
                   "parentUUID": "f942c812-6754-4a63-abed-38318c853772",
+=======
+                  "uuid": "3b15d3c7-b62f-4b57-876a-955fc372dec3",
+                  "parentUUID": "b1d3c0e9-a939-4f3c-bb98-eaa4464f2f0e",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -814,7 +1239,11 @@
                   "title": "Utilize na classe main-content a propriedade justify-content com o valor mais apropriado para alinhar os conteúdos",
                   "fullTitle": "Facebook Signup Crie um subcontainer com a classe right-content para colocar o conteúdo do lado direito dentro do container com a classe main-content Utilize na classe main-content a propriedade justify-content com o valor mais apropriado para alinhar os conteúdos",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 211,
+=======
+                  "duration": 190,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -823,8 +1252,13 @@
                   "context": null,
                   "code": "cy.get('.main-content').should('have.css', 'justify-content');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "f6f3fcdc-2226-4b9c-b6ef-ff13498c406d",
                   "parentUUID": "f942c812-6754-4a63-abed-38318c853772",
+=======
+                  "uuid": "eb0a3335-5e99-4295-bfc6-06073627ee19",
+                  "parentUUID": "b1d3c0e9-a939-4f3c-bb98-eaa4464f2f0e",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -832,7 +1266,11 @@
                   "title": "Dentro do subcontainer com a classe right-content deve existir um elemento h1 com o texto \"Abra uma conta\"",
                   "fullTitle": "Facebook Signup Crie um subcontainer com a classe right-content para colocar o conteúdo do lado direito dentro do container com a classe main-content Dentro do subcontainer com a classe right-content deve existir um elemento h1 com o texto \"Abra uma conta\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 343,
+=======
+                  "duration": 171,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -841,8 +1279,13 @@
                   "context": null,
                   "code": "cy.get('.main-content > .right-content h1').contains(OPEN_ACCOUNT_MESSAGE);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "9499a584-27e2-4349-8923-3f0e119d5e0a",
                   "parentUUID": "f942c812-6754-4a63-abed-38318c853772",
+=======
+                  "uuid": "b6d21267-dfe5-48d1-bc80-1a66905b62a0",
+                  "parentUUID": "b1d3c0e9-a939-4f3c-bb98-eaa4464f2f0e",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -850,7 +1293,11 @@
                   "title": "Dentro do subcontainer com a classe right-content deve existir um elemento com a classe quick-easy com o texto \"É rápido e fácil.\" posicionado abaixo do texto \"Abra uma conta\"",
                   "fullTitle": "Facebook Signup Crie um subcontainer com a classe right-content para colocar o conteúdo do lado direito dentro do container com a classe main-content Dentro do subcontainer com a classe right-content deve existir um elemento com a classe quick-easy com o texto \"É rápido e fácil.\" posicionado abaixo do texto \"Abra uma conta\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 261,
+=======
+                  "duration": 165,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -859,8 +1306,13 @@
                   "context": null,
                   "code": "cy.get('.main-content > .right-content .quick-easy').should('exist').contains(QUICK_AND_SIMPLE_MESSAGE);\ncheckIsBelowOf('.main-content > .right-content h1', '.main-content > .right-content .quick-easy');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "cb4518dc-81ce-442a-b297-1936b712d32f",
                   "parentUUID": "f942c812-6754-4a63-abed-38318c853772",
+=======
+                  "uuid": "6faef7e2-51f5-493a-8d60-08f40243bb85",
+                  "parentUUID": "b1d3c0e9-a939-4f3c-bb98-eaa4464f2f0e",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -868,7 +1320,11 @@
                   "title": "Dentro do subcontainer com a classe right-content deve existir um elemento form abaixo do texto \"É rápido e fácil.\"",
                   "fullTitle": "Facebook Signup Crie um subcontainer com a classe right-content para colocar o conteúdo do lado direito dentro do container com a classe main-content Dentro do subcontainer com a classe right-content deve existir um elemento form abaixo do texto \"É rápido e fácil.\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 385,
+=======
+                  "duration": 267,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -877,8 +1333,13 @@
                   "context": null,
                   "code": "cy.get('.main-content > .right-content form').should('exist');\ncheckIsBelowOf('.main-content > .right-content .quick-easy', '.main-content > .right-content form');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "8706ad98-4ba0-48b5-bae4-06241d9ef833",
                   "parentUUID": "f942c812-6754-4a63-abed-38318c853772",
+=======
+                  "uuid": "78660cee-cd13-4678-a166-6d7a18d6e5cc",
+                  "parentUUID": "b1d3c0e9-a939-4f3c-bb98-eaa4464f2f0e",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -886,7 +1347,11 @@
                   "title": "O elemento com a classe right-content deve estar a direita do elemento com a classe left-content",
                   "fullTitle": "Facebook Signup Crie um subcontainer com a classe right-content para colocar o conteúdo do lado direito dentro do container com a classe main-content O elemento com a classe right-content deve estar a direita do elemento com a classe left-content",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 278,
+=======
+                  "duration": 183,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -895,14 +1360,20 @@
                   "context": null,
                   "code": "checkIsRightOf('.main-content > .left-content', '.main-content > .right-content');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "b53923d0-89c9-4750-8070-3e5e49b96d04",
                   "parentUUID": "f942c812-6754-4a63-abed-38318c853772",
+=======
+                  "uuid": "bdbddd42-5013-4656-9a42-3b24cca7091a",
+                  "parentUUID": "b1d3c0e9-a939-4f3c-bb98-eaa4464f2f0e",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "97379ee7-8c57-4f0f-80c1-fc7f9b78765d",
                 "f3a916e0-5b63-4844-b6c5-fec3fefa5085",
                 "f6f3fcdc-2226-4b9c-b6ef-ff13498c406d",
@@ -910,17 +1381,34 @@
                 "cb4518dc-81ce-442a-b297-1936b712d32f",
                 "8706ad98-4ba0-48b5-bae4-06241d9ef833",
                 "b53923d0-89c9-4750-8070-3e5e49b96d04"
+=======
+                "0fbfa47f-605b-4cd0-83f0-79afaf5c43a8",
+                "3b15d3c7-b62f-4b57-876a-955fc372dec3",
+                "eb0a3335-5e99-4295-bfc6-06073627ee19",
+                "b6d21267-dfe5-48d1-bc80-1a66905b62a0",
+                "6faef7e2-51f5-493a-8d60-08f40243bb85",
+                "78660cee-cd13-4678-a166-6d7a18d6e5cc",
+                "bdbddd42-5013-4656-9a42-3b24cca7091a"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 2144,
+=======
+              "duration": 1359,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "a6cd1485-3bc6-4ef0-9781-04ad3ea57939",
+=======
+              "uuid": "8102cef1-65e3-4596-a0cd-5f63a63d7bb5",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Crie um campo de entrada de texto para o nome do usuário dentro do formulário criado no requisito 10",
               "fullFile": "",
               "file": "",
@@ -931,7 +1419,11 @@
                   "title": "O campo deve ter o atributo name com o valor \"firstname\"",
                   "fullTitle": "Facebook Signup Crie um campo de entrada de texto para o nome do usuário dentro do formulário criado no requisito 10 O campo deve ter o atributo name com o valor \"firstname\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 320,
+=======
+                  "duration": 171,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -940,8 +1432,13 @@
                   "context": null,
                   "code": "cy.get('.main-content form input[name=\"firstname\"]').should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "b1ca880b-56d9-4526-b9d4-aa7d6f61ccdd",
                   "parentUUID": "a6cd1485-3bc6-4ef0-9781-04ad3ea57939",
+=======
+                  "uuid": "785a16b2-1a3b-4ef0-abd5-5ad7b9e4feae",
+                  "parentUUID": "8102cef1-65e3-4596-a0cd-5f63a63d7bb5",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -949,7 +1446,11 @@
                   "title": "O campo deve ter um placeholder com o valor \"Nome\"",
                   "fullTitle": "Facebook Signup Crie um campo de entrada de texto para o nome do usuário dentro do formulário criado no requisito 10 O campo deve ter um placeholder com o valor \"Nome\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 297,
+=======
+                  "duration": 153,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -958,27 +1459,45 @@
                   "context": null,
                   "code": "cy.get('.main-content form input[name=\"firstname\"]').should('have.attr', 'placeholder', 'Nome');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "840417cb-81fd-478a-a302-90e035fd8b6d",
                   "parentUUID": "a6cd1485-3bc6-4ef0-9781-04ad3ea57939",
+=======
+                  "uuid": "f4aefef2-7065-4dfa-a8a0-1d19cc0ffc64",
+                  "parentUUID": "8102cef1-65e3-4596-a0cd-5f63a63d7bb5",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "b1ca880b-56d9-4526-b9d4-aa7d6f61ccdd",
                 "840417cb-81fd-478a-a302-90e035fd8b6d"
+=======
+                "785a16b2-1a3b-4ef0-abd5-5ad7b9e4feae",
+                "f4aefef2-7065-4dfa-a8a0-1d19cc0ffc64"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 617,
+=======
+              "duration": 324,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "27e8ccf9-dbcc-463b-8e0d-ba81e4a3bfd7",
+=======
+              "uuid": "53a250f3-ff97-4573-8e56-db2f978843cd",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Crie um campo de entrada de texto para o sobrenome do usuário dentro do formulário criado no requisito 10",
               "fullFile": "",
               "file": "",
@@ -989,7 +1508,11 @@
                   "title": "O campo deve ter o atributo name com o valor \"lastname\"",
                   "fullTitle": "Facebook Signup Crie um campo de entrada de texto para o sobrenome do usuário dentro do formulário criado no requisito 10 O campo deve ter o atributo name com o valor \"lastname\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 314,
+=======
+                  "duration": 155,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -998,8 +1521,13 @@
                   "context": null,
                   "code": "cy.get('.main-content form input[name=\"lastname\"]').should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "e9c3bc53-6b3b-4524-ad0d-021f2b0245c8",
                   "parentUUID": "27e8ccf9-dbcc-463b-8e0d-ba81e4a3bfd7",
+=======
+                  "uuid": "011eef9f-640a-4528-9e8c-438a7c90d730",
+                  "parentUUID": "53a250f3-ff97-4573-8e56-db2f978843cd",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1007,7 +1535,11 @@
                   "title": "O campo deve ter um placeholder com o valor \"Sobrenome\"",
                   "fullTitle": "Facebook Signup Crie um campo de entrada de texto para o sobrenome do usuário dentro do formulário criado no requisito 10 O campo deve ter um placeholder com o valor \"Sobrenome\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 250,
+=======
+                  "duration": 203,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1016,8 +1548,13 @@
                   "context": null,
                   "code": "cy.get('.main-content form input[name=\"lastname\"]').should('have.attr', 'placeholder', 'Sobrenome');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "43c1dc6d-6752-4676-a50f-658f0f03233f",
                   "parentUUID": "27e8ccf9-dbcc-463b-8e0d-ba81e4a3bfd7",
+=======
+                  "uuid": "89eba3be-a5b3-421b-b7a9-db35ca5f4dc7",
+                  "parentUUID": "53a250f3-ff97-4573-8e56-db2f978843cd",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1025,7 +1562,11 @@
                   "title": "Esse campo deve estar alinhado a direita do campo de Nome",
                   "fullTitle": "Facebook Signup Crie um campo de entrada de texto para o sobrenome do usuário dentro do formulário criado no requisito 10 Esse campo deve estar alinhado a direita do campo de Nome",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 184,
+=======
+                  "duration": 195,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1034,28 +1575,47 @@
                   "context": null,
                   "code": "checkIsRightOf('.main-content form input[name=\"firstname\"]', '.main-content form input[name=\"lastname\"]');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "3c4d181c-ec82-4bad-9df0-72a65274e095",
                   "parentUUID": "27e8ccf9-dbcc-463b-8e0d-ba81e4a3bfd7",
+=======
+                  "uuid": "d35e74e3-c206-4713-8af9-c43383ca2591",
+                  "parentUUID": "53a250f3-ff97-4573-8e56-db2f978843cd",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "e9c3bc53-6b3b-4524-ad0d-021f2b0245c8",
                 "43c1dc6d-6752-4676-a50f-658f0f03233f",
                 "3c4d181c-ec82-4bad-9df0-72a65274e095"
+=======
+                "011eef9f-640a-4528-9e8c-438a7c90d730",
+                "89eba3be-a5b3-421b-b7a9-db35ca5f4dc7",
+                "d35e74e3-c206-4713-8af9-c43383ca2591"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 748,
+=======
+              "duration": 553,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "cab49aed-2088-4aed-a252-2abd4d77beb1",
+=======
+              "uuid": "8ff440f4-5c37-4747-86ea-f1728388ae10",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Crie um campo de entrada de texto para o celular ou email do usuário dentro do formulário criado no requisito 10",
               "fullFile": "",
               "file": "",
@@ -1066,7 +1626,11 @@
                   "title": "O campo deve ter o atributo name com o valor \"phone_email\"",
                   "fullTitle": "Facebook Signup Crie um campo de entrada de texto para o celular ou email do usuário dentro do formulário criado no requisito 10 O campo deve ter o atributo name com o valor \"phone_email\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 712,
+=======
+                  "duration": 218,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1075,8 +1639,13 @@
                   "context": null,
                   "code": "cy.get('.main-content form input[name=\"phone_email\"]').should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "8cdd4ec1-1804-4521-b80b-dfbd9da0f818",
                   "parentUUID": "cab49aed-2088-4aed-a252-2abd4d77beb1",
+=======
+                  "uuid": "25022fe9-a91b-4d3b-9bbe-931eb910bc2c",
+                  "parentUUID": "8ff440f4-5c37-4747-86ea-f1728388ae10",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1084,7 +1653,11 @@
                   "title": "O campo deve ter um placeholder com o valor \"Celular ou email\"",
                   "fullTitle": "Facebook Signup Crie um campo de entrada de texto para o celular ou email do usuário dentro do formulário criado no requisito 10 O campo deve ter um placeholder com o valor \"Celular ou email\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 508,
+=======
+                  "duration": 163,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1093,8 +1666,13 @@
                   "context": null,
                   "code": "cy.get('.main-content form input[name=\"phone_email\"]').should('have.attr', 'placeholder', 'Celular ou email');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "14bd2b26-907a-41cd-8c45-277570bef7e1",
                   "parentUUID": "cab49aed-2088-4aed-a252-2abd4d77beb1",
+=======
+                  "uuid": "7c0a9130-fe0c-4f4b-ac58-70aeef43348b",
+                  "parentUUID": "8ff440f4-5c37-4747-86ea-f1728388ae10",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1102,7 +1680,11 @@
                   "title": "Posicione esse campo abaixo do campo do nome do usuário",
                   "fullTitle": "Facebook Signup Crie um campo de entrada de texto para o celular ou email do usuário dentro do formulário criado no requisito 10 Posicione esse campo abaixo do campo do nome do usuário",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 365,
+=======
+                  "duration": 193,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1111,28 +1693,47 @@
                   "context": null,
                   "code": "checkIsBelowOf('.main-content form input[name=\"firstname\"]', '.main-content form input[name=\"phone_email\"]');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "c887b626-a3c6-4471-8513-f9e9dd0de462",
                   "parentUUID": "cab49aed-2088-4aed-a252-2abd4d77beb1",
+=======
+                  "uuid": "bf7dd78a-1a9d-4de1-83b7-ac32c176411b",
+                  "parentUUID": "8ff440f4-5c37-4747-86ea-f1728388ae10",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "8cdd4ec1-1804-4521-b80b-dfbd9da0f818",
                 "14bd2b26-907a-41cd-8c45-277570bef7e1",
                 "c887b626-a3c6-4471-8513-f9e9dd0de462"
+=======
+                "25022fe9-a91b-4d3b-9bbe-931eb910bc2c",
+                "7c0a9130-fe0c-4f4b-ac58-70aeef43348b",
+                "bf7dd78a-1a9d-4de1-83b7-ac32c176411b"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 1585,
+=======
+              "duration": 574,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "903a5342-b006-438e-b773-1309891da80f",
+=======
+              "uuid": "1bded7d9-d024-41ef-a00c-8ab928081ccf",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Crie um campo de entrada para senha do usuário dentro do formulário criado no requisito 10",
               "fullFile": "",
               "file": "",
@@ -1143,7 +1744,11 @@
                   "title": "O campo deve ter o atributo name com o valor \"password\"",
                   "fullTitle": "Facebook Signup Crie um campo de entrada para senha do usuário dentro do formulário criado no requisito 10 O campo deve ter o atributo name com o valor \"password\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 284,
+=======
+                  "duration": 170,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1152,8 +1757,13 @@
                   "context": null,
                   "code": "cy.get('.main-content form input[name=\"password\"]').should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "4f54939a-605d-4de3-9ab3-78238b162799",
                   "parentUUID": "903a5342-b006-438e-b773-1309891da80f",
+=======
+                  "uuid": "595451ff-9d9c-40ad-af1f-b06ccbc966bd",
+                  "parentUUID": "1bded7d9-d024-41ef-a00c-8ab928081ccf",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1161,7 +1771,11 @@
                   "title": "O campo deve ser do tipo \"password\"",
                   "fullTitle": "Facebook Signup Crie um campo de entrada para senha do usuário dentro do formulário criado no requisito 10 O campo deve ser do tipo \"password\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 315,
+=======
+                  "duration": 186,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1170,8 +1784,13 @@
                   "context": null,
                   "code": "cy.get('.main-content form input[name=\"password\"]').should('have.attr', 'type', 'password');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "19a6c662-fe13-4cb3-af98-233410c8082e",
                   "parentUUID": "903a5342-b006-438e-b773-1309891da80f",
+=======
+                  "uuid": "4b3f8b5d-68df-4bb4-b9da-5933fda74af5",
+                  "parentUUID": "1bded7d9-d024-41ef-a00c-8ab928081ccf",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1179,7 +1798,11 @@
                   "title": "O campo deve ter um placeholder com o valor \"Nova senha\"",
                   "fullTitle": "Facebook Signup Crie um campo de entrada para senha do usuário dentro do formulário criado no requisito 10 O campo deve ter um placeholder com o valor \"Nova senha\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 284,
+=======
+                  "duration": 247,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1188,8 +1811,13 @@
                   "context": null,
                   "code": "cy.get('.main-content form input[name=\"password\"]').should('have.attr', 'placeholder', 'Nova senha');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "413d9813-b318-481a-8ba9-15d00c302137",
                   "parentUUID": "903a5342-b006-438e-b773-1309891da80f",
+=======
+                  "uuid": "ce687a72-4757-4ca2-9ed3-761fef85315b",
+                  "parentUUID": "1bded7d9-d024-41ef-a00c-8ab928081ccf",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1197,7 +1825,11 @@
                   "title": "Posicione esse campo abaixo do celular/email",
                   "fullTitle": "Facebook Signup Crie um campo de entrada para senha do usuário dentro do formulário criado no requisito 10 Posicione esse campo abaixo do celular/email",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 486,
+=======
+                  "duration": 289,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1206,29 +1838,49 @@
                   "context": null,
                   "code": "checkIsBelowOf('.main-content form input[name=\"phone_email\"]', '.main-content form input[name=\"password\"]');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "02ff0b3a-c243-4253-9d11-f26c9cd20cf5",
                   "parentUUID": "903a5342-b006-438e-b773-1309891da80f",
+=======
+                  "uuid": "bb0531c5-8c54-49fd-833b-0bfea51b2c57",
+                  "parentUUID": "1bded7d9-d024-41ef-a00c-8ab928081ccf",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "4f54939a-605d-4de3-9ab3-78238b162799",
                 "19a6c662-fe13-4cb3-af98-233410c8082e",
                 "413d9813-b318-481a-8ba9-15d00c302137",
                 "02ff0b3a-c243-4253-9d11-f26c9cd20cf5"
+=======
+                "595451ff-9d9c-40ad-af1f-b06ccbc966bd",
+                "4b3f8b5d-68df-4bb4-b9da-5933fda74af5",
+                "ce687a72-4757-4ca2-9ed3-761fef85315b",
+                "bb0531c5-8c54-49fd-833b-0bfea51b2c57"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 1369,
+=======
+              "duration": 892,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "6d78abaa-b598-4f71-a91d-8c066ff01e98",
+=======
+              "uuid": "c4e1c19a-a7a2-40c2-a46b-986154539611",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Crie um campo de entrada para data de nascimento do usuário dentro do formulário criado no requisito 10",
               "fullFile": "",
               "file": "",
@@ -1239,7 +1891,11 @@
                   "title": "Um rótulo abaixo do campo nova senha com o id label-birthdate e o texto \"Data de nascimento\" ",
                   "fullTitle": "Facebook Signup Crie um campo de entrada para data de nascimento do usuário dentro do formulário criado no requisito 10 Um rótulo abaixo do campo nova senha com o id label-birthdate e o texto \"Data de nascimento\" ",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 250,
+=======
+                  "duration": 264,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1248,8 +1904,13 @@
                   "context": null,
                   "code": "cy.get('.main-content form label#label-birthdate').contains(BIRTHDATE_TITLE);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "cc8bc750-3c9c-4fd0-989d-46e32abc0064",
                   "parentUUID": "6d78abaa-b598-4f71-a91d-8c066ff01e98",
+=======
+                  "uuid": "4f2363ee-8ffe-498f-8b49-7cf3214783fc",
+                  "parentUUID": "c4e1c19a-a7a2-40c2-a46b-986154539611",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1257,7 +1918,11 @@
                   "title": "O campo deve ter o atributo name com o valor \"birthdate\"",
                   "fullTitle": "Facebook Signup Crie um campo de entrada para data de nascimento do usuário dentro do formulário criado no requisito 10 O campo deve ter o atributo name com o valor \"birthdate\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 284,
+=======
+                  "duration": 126,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1266,8 +1931,13 @@
                   "context": null,
                   "code": "cy.get('.main-content form input[name=\"birthdate\"]').should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "ab71efbf-6ddd-47ad-982b-5a2f7fc5cb4a",
                   "parentUUID": "6d78abaa-b598-4f71-a91d-8c066ff01e98",
+=======
+                  "uuid": "e7b04fcc-5818-43c0-a6f7-f9d25b960ab0",
+                  "parentUUID": "c4e1c19a-a7a2-40c2-a46b-986154539611",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1275,7 +1945,11 @@
                   "title": "O campo deve ter um placeholder com o valor \"dd/mm/aaaa\"",
                   "fullTitle": "Facebook Signup Crie um campo de entrada para data de nascimento do usuário dentro do formulário criado no requisito 10 O campo deve ter um placeholder com o valor \"dd/mm/aaaa\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 275,
+=======
+                  "duration": 175,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1284,8 +1958,13 @@
                   "context": null,
                   "code": "cy.get('.main-content form input[name=\"birthdate\"]').should('have.attr', 'placeholder', 'dd/mm/aaaa');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "7d18341c-01e8-47cc-8736-3a347b111e01",
                   "parentUUID": "6d78abaa-b598-4f71-a91d-8c066ff01e98",
+=======
+                  "uuid": "a1f926db-8ddb-4aa3-a145-42fac80a6573",
+                  "parentUUID": "c4e1c19a-a7a2-40c2-a46b-986154539611",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1293,7 +1972,11 @@
                   "title": "Posicione esse campo abaixo do rótulo",
                   "fullTitle": "Facebook Signup Crie um campo de entrada para data de nascimento do usuário dentro do formulário criado no requisito 10 Posicione esse campo abaixo do rótulo",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 191,
+=======
+                  "duration": 150,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1302,29 +1985,49 @@
                   "context": null,
                   "code": "checkIsBelowOf('.main-content form label#label-birthdate', '.main-content form input[name=\"birthdate\"]');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "40457180-1f03-4a1f-b36a-f0fc4a63dece",
                   "parentUUID": "6d78abaa-b598-4f71-a91d-8c066ff01e98",
+=======
+                  "uuid": "f070a396-fe55-4016-bb0c-c75b0601b30b",
+                  "parentUUID": "c4e1c19a-a7a2-40c2-a46b-986154539611",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "cc8bc750-3c9c-4fd0-989d-46e32abc0064",
                 "ab71efbf-6ddd-47ad-982b-5a2f7fc5cb4a",
                 "7d18341c-01e8-47cc-8736-3a347b111e01",
                 "40457180-1f03-4a1f-b36a-f0fc4a63dece"
+=======
+                "4f2363ee-8ffe-498f-8b49-7cf3214783fc",
+                "e7b04fcc-5818-43c0-a6f7-f9d25b960ab0",
+                "a1f926db-8ddb-4aa3-a145-42fac80a6573",
+                "f070a396-fe55-4016-bb0c-c75b0601b30b"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 1000,
+=======
+              "duration": 715,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "e200fef8-d2c6-41c9-abf9-fa1e328ce5fe",
+=======
+              "uuid": "8219b125-c704-4096-92a9-798af0d277bb",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Crie um campo de entrada para gênero do usuário dentro do formulário criado no requisito 10",
               "fullFile": "",
               "file": "",
@@ -1335,7 +2038,11 @@
                   "title": "Um rótulo abaixo do campo nova senha com o id label-gender e o texto \"Gênero\" ",
                   "fullTitle": "Facebook Signup Crie um campo de entrada para gênero do usuário dentro do formulário criado no requisito 10 Um rótulo abaixo do campo nova senha com o id label-gender e o texto \"Gênero\" ",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 214,
+=======
+                  "duration": 243,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1344,8 +2051,13 @@
                   "context": null,
                   "code": "cy.get('.main-content form label#label-gender').contains(GENDER_TITLE);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "f8fb84b9-073d-4326-a532-860a503bdc73",
                   "parentUUID": "e200fef8-d2c6-41c9-abf9-fa1e328ce5fe",
+=======
+                  "uuid": "faa8e433-8cf1-431a-953f-b9c811cceb98",
+                  "parentUUID": "8219b125-c704-4096-92a9-798af0d277bb",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1353,7 +2065,11 @@
                   "title": "O campo deve ser formado por três `radio buttons` com as opções \"Feminino\", \"Masculino\" e \"Personalizado\"",
                   "fullTitle": "Facebook Signup Crie um campo de entrada para gênero do usuário dentro do formulário criado no requisito 10 O campo deve ser formado por três `radio buttons` com as opções \"Feminino\", \"Masculino\" e \"Personalizado\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 233,
+=======
+                  "duration": 297,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1362,8 +2078,13 @@
                   "context": null,
                   "code": "cy.get(\"input[type='radio']\").should(function ($radios) {\n  expect($radios).to.have.length(GENRES.length);\n  $radios.each(function (index, radio) {\n    expect(Cypress.$(radio).val()).to.equal(GENRES[index]);\n  });\n});",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "2820ab08-712a-40d0-a9db-f9d8c91a3904",
                   "parentUUID": "e200fef8-d2c6-41c9-abf9-fa1e328ce5fe",
+=======
+                  "uuid": "79446264-e902-49ae-ae4f-e0dcc0b2e213",
+                  "parentUUID": "8219b125-c704-4096-92a9-798af0d277bb",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1371,7 +2092,11 @@
                   "title": "Posicione os radio buttons para ficar na mesma linha",
                   "fullTitle": "Facebook Signup Crie um campo de entrada para gênero do usuário dentro do formulário criado no requisito 10 Posicione os radio buttons para ficar na mesma linha",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 276,
+=======
+                  "duration": 172,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1380,8 +2105,13 @@
                   "context": null,
                   "code": "var topOptions = [];\ncy.get(\"input[type='radio']\").should(function ($radios) {\n  $radios.each(function (index, radio) {\n    topOptions.push(radio.getBoundingClientRect()[\"top\"]);\n  });\n  expect((0, _toConsumableArray2[\"default\"])(new Set(topOptions)).length).to.equal(1);\n});",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "411720f6-8f22-4c77-be5e-bfae6312e633",
                   "parentUUID": "e200fef8-d2c6-41c9-abf9-fa1e328ce5fe",
+=======
+                  "uuid": "0f72ad36-0311-434e-9ae5-9b9cdb9ec727",
+                  "parentUUID": "8219b125-c704-4096-92a9-798af0d277bb",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1389,7 +2119,11 @@
                   "title": "Posicione os radio buttons para ficar abaixo do label",
                   "fullTitle": "Facebook Signup Crie um campo de entrada para gênero do usuário dentro do formulário criado no requisito 10 Posicione os radio buttons para ficar abaixo do label",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 278,
+=======
+                  "duration": 297,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1398,29 +2132,49 @@
                   "context": null,
                   "code": "cy.document().then(function (doc) {\n  var topOptions = [];\n  var topLabel = evaluateOffset(doc, '.main-content form label#label-gender', 'top');\n  var heightLabel = evaluateOffset(doc, '.main-content form label#label-gender', 'height');\n  cy.get(\"input[type='radio']\").should(function ($radios) {\n    $radios.each(function (index, radio) {\n      topOptions.push(radio.getBoundingClientRect()[\"top\"]);\n    });\n    expect((0, _toConsumableArray2[\"default\"])(new Set(topOptions))[0] > topLabel + heightLabel).to.equal(true);\n  });\n});",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "09c8ac05-1ce5-47bb-8c4d-f7438702e3c6",
                   "parentUUID": "e200fef8-d2c6-41c9-abf9-fa1e328ce5fe",
+=======
+                  "uuid": "e560f147-eb2a-472c-ab21-e9748e7f411b",
+                  "parentUUID": "8219b125-c704-4096-92a9-798af0d277bb",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "f8fb84b9-073d-4326-a532-860a503bdc73",
                 "2820ab08-712a-40d0-a9db-f9d8c91a3904",
                 "411720f6-8f22-4c77-be5e-bfae6312e633",
                 "09c8ac05-1ce5-47bb-8c4d-f7438702e3c6"
+=======
+                "faa8e433-8cf1-431a-953f-b9c811cceb98",
+                "79446264-e902-49ae-ae4f-e0dcc0b2e213",
+                "0f72ad36-0311-434e-9ae5-9b9cdb9ec727",
+                "e560f147-eb2a-472c-ab21-e9748e7f411b"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 1001,
+=======
+              "duration": 1009,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "ef51e3e2-322d-4bb5-ba60-0dc6d4e2932c",
+=======
+              "uuid": "8dd8e19b-2c5a-4154-85ec-9bf3e2157c74",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Crie um botão para finalizar o cadastro dentro do formulário criado no requisito 10",
               "fullFile": "",
               "file": "",
@@ -1431,7 +2185,11 @@
                   "title": "Um botão com o texto \"Cadastre-se\" e id \"facebook-register\"",
                   "fullTitle": "Facebook Signup Crie um botão para finalizar o cadastro dentro do formulário criado no requisito 10 Um botão com o texto \"Cadastre-se\" e id \"facebook-register\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 311,
+=======
+                  "duration": 258,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1440,8 +2198,13 @@
                   "context": null,
                   "code": "cy.get(REGISTER_BUTTON_SELECTOR).should('exist').should('have.text', 'Cadastre-se');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "5fce645e-0f4f-466e-93a9-9a9528425000",
                   "parentUUID": "ef51e3e2-322d-4bb5-ba60-0dc6d4e2932c",
+=======
+                  "uuid": "6714d0c6-dc26-4c82-874e-e77448611b73",
+                  "parentUUID": "8dd8e19b-2c5a-4154-85ec-9bf3e2157c74",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1449,7 +2212,11 @@
                   "title": "Deve ter a propriedade type igual a submit",
                   "fullTitle": "Facebook Signup Crie um botão para finalizar o cadastro dentro do formulário criado no requisito 10 Deve ter a propriedade type igual a submit",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 204,
+=======
+                  "duration": 161,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1458,27 +2225,45 @@
                   "context": null,
                   "code": "cy.get(REGISTER_BUTTON_SELECTOR).should('have.attr', 'type').should('equal', 'submit');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "d6339652-5790-4fc6-818e-a8cd6b7a4264",
                   "parentUUID": "ef51e3e2-322d-4bb5-ba60-0dc6d4e2932c",
+=======
+                  "uuid": "406aba32-affc-40d8-b684-f194a84764be",
+                  "parentUUID": "8dd8e19b-2c5a-4154-85ec-9bf3e2157c74",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "5fce645e-0f4f-466e-93a9-9a9528425000",
                 "d6339652-5790-4fc6-818e-a8cd6b7a4264"
+=======
+                "6714d0c6-dc26-4c82-874e-e77448611b73",
+                "406aba32-affc-40d8-b684-f194a84764be"
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 515,
+=======
+              "duration": 419,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "0b94c8e6-a65c-447c-8589-b07880b69522",
+=======
+              "uuid": "a91a146e-9474-4e72-b1ce-a0a9d62c3231",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Validar se todos os campos foram preenchidos ao clicar no botão \"Cadastre-se\"",
               "fullFile": "",
               "file": "",
@@ -1489,7 +2274,11 @@
                   "title": "Exibir uma mensagem \"Campos inválidos\" dentro do formulário caso pelo menos um campo não esteja preenchido",
                   "fullTitle": "Facebook Signup Validar se todos os campos foram preenchidos ao clicar no botão \"Cadastre-se\" Exibir uma mensagem \"Campos inválidos\" dentro do formulário caso pelo menos um campo não esteja preenchido",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 5129,
+=======
+                  "duration": 5122,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -1499,11 +2288,19 @@
                   "code": "cy.get('input[name=\"firstname\"]').type(\"John\");\ncy.get('input[name=\"lastname\"]').type(\"Doe\");\ncy.get(REGISTER_BUTTON_SELECTOR).click();\ncy.get('.main-content form').contains('Campos inválidos');",
                   "err": {
                     "message": "CypressError: Timed out retrying: Expected to find content: 'Campos inválidos' within the element: <form.form-user> but never did.",
+<<<<<<< HEAD
                     "estack": "CypressError: Timed out retrying: Expected to find content: 'Campos inválidos' within the element: <form.form-user> but never did.\n    at cypressErr (http://localhost:38773/__cypress/runner/cypress_runner.js:138036:9)\n    at throwErr (http://localhost:38773/__cypress/runner/cypress_runner.js:137969:11)\n    at Object.throwErrByPath (http://localhost:38773/__cypress/runner/cypress_runner.js:138017:3)\n    at retry (http://localhost:38773/__cypress/runner/cypress_runner.js:132299:19)\n    at onFailFn (http://localhost:38773/__cypress/runner/cypress_runner.js:120514:16)\n    at tryCatcher (http://localhost:38773/__cypress/runner/cypress_runner.js:164895:23)\n    at Promise._settlePromiseFromHandler (http://localhost:38773/__cypress/runner/cypress_runner.js:162831:31)\n    at Promise._settlePromise (http://localhost:38773/__cypress/runner/cypress_runner.js:162888:18)\n    at Promise._settlePromise0 (http://localhost:38773/__cypress/runner/cypress_runner.js:162933:10)\n    at Promise._settlePromises (http://localhost:38773/__cypress/runner/cypress_runner.js:163008:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:38773/__cypress/runner/cypress_runner.js:159620:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:38773/__cypress/runner/cypress_runner.js:159630:10)\n    at Async.drainQueues (http://localhost:38773/__cypress/runner/cypress_runner.js:159504:14)",
                     "diff": null
                   },
                   "uuid": "f3c199e7-00cc-4b51-b9de-88418cfde2bc",
                   "parentUUID": "0b94c8e6-a65c-447c-8589-b07880b69522",
+=======
+                    "estack": "CypressError: Timed out retrying: Expected to find content: 'Campos inválidos' within the element: <form.form-user> but never did.\n    at cypressErr (http://localhost:34835/__cypress/runner/cypress_runner.js:138036:9)\n    at throwErr (http://localhost:34835/__cypress/runner/cypress_runner.js:137969:11)\n    at Object.throwErrByPath (http://localhost:34835/__cypress/runner/cypress_runner.js:138017:3)\n    at retry (http://localhost:34835/__cypress/runner/cypress_runner.js:132299:19)\n    at onFailFn (http://localhost:34835/__cypress/runner/cypress_runner.js:120514:16)\n    at tryCatcher (http://localhost:34835/__cypress/runner/cypress_runner.js:164895:23)\n    at Promise._settlePromiseFromHandler (http://localhost:34835/__cypress/runner/cypress_runner.js:162831:31)\n    at Promise._settlePromise (http://localhost:34835/__cypress/runner/cypress_runner.js:162888:18)\n    at Promise._settlePromise0 (http://localhost:34835/__cypress/runner/cypress_runner.js:162933:10)\n    at Promise._settlePromises (http://localhost:34835/__cypress/runner/cypress_runner.js:163008:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:34835/__cypress/runner/cypress_runner.js:159620:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:34835/__cypress/runner/cypress_runner.js:159630:10)\n    at Async.drainQueues (http://localhost:34835/__cypress/runner/cypress_runner.js:159504:14)",
+                    "diff": null
+                  },
+                  "uuid": "833b9332-af3d-4f09-b086-afeaaebf7e8f",
+                  "parentUUID": "a91a146e-9474-4e72-b1ce-a0a9d62c3231",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
@@ -1511,17 +2308,29 @@
               "suites": [],
               "passes": [],
               "failures": [
+<<<<<<< HEAD
                 "f3c199e7-00cc-4b51-b9de-88418cfde2bc"
               ],
               "pending": [],
               "skipped": [],
               "duration": 5129,
+=======
+                "833b9332-af3d-4f09-b086-afeaaebf7e8f"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 5122,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "7b0de555-37c0-4cd0-b750-0a66fa4a4009",
+=======
+              "uuid": "7735211a-4c67-4a5e-81ba-69421a208023",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Adicione um novo campo de texto no formulário se a pessoa usuária selecionar a opção \"Personalizado\" no campo Gênero",
               "fullFile": "",
               "file": "",
@@ -1532,7 +2341,11 @@
                   "title": "O novo campo dever ser uma campo de texto com o atributo name \"gender-custom\" e um placeholder \"Gênero (opcional)\"",
                   "fullTitle": "Facebook Signup Adicione um novo campo de texto no formulário se a pessoa usuária selecionar a opção \"Personalizado\" no campo Gênero O novo campo dever ser uma campo de texto com o atributo name \"gender-custom\" e um placeholder \"Gênero (opcional)\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 945,
+=======
+                  "duration": 410,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1541,8 +2354,13 @@
                   "context": null,
                   "code": "cy.get('input[name=\"gender-custom\"]').should('exist');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "04a6b1fa-7484-4f65-8241-481e841bff67",
                   "parentUUID": "7b0de555-37c0-4cd0-b750-0a66fa4a4009",
+=======
+                  "uuid": "263d8f4c-3026-4786-a108-6a78bf5f3c51",
+                  "parentUUID": "7735211a-4c67-4a5e-81ba-69421a208023",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1550,7 +2368,11 @@
                   "title": "O novo campo deve estar posicionado entre as opções de gênero e o botão \"Cadastrar-se\"",
                   "fullTitle": "Facebook Signup Adicione um novo campo de texto no formulário se a pessoa usuária selecionar a opção \"Personalizado\" no campo Gênero O novo campo deve estar posicionado entre as opções de gênero e o botão \"Cadastrar-se\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 796,
+=======
+                  "duration": 682,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -1560,17 +2382,26 @@
                   "code": "checkIsBelowOf('input[name=\"gender\"]', 'input[name=\"gender-custom\"]');\ncheckIsBelowOf('input[name=\"gender-custom\"]', REGISTER_BUTTON_SELECTOR);",
                   "err": {
                     "message": "AssertionError: expected false to be true",
+<<<<<<< HEAD
                     "estack": "AssertionError: expected false to be true\n    at getRet (http://localhost:38773/__cypress/runner/cypress_runner.js:124653:16)\n    at tryCatcher (http://localhost:38773/__cypress/runner/cypress_runner.js:164895:23)\n    at Function.Promise.attempt.Promise.try (http://localhost:38773/__cypress/runner/cypress_runner.js:162170:29)\n    at Context.thenFn (http://localhost:38773/__cypress/runner/cypress_runner.js:124667:23)\n    at Context.then (http://localhost:38773/__cypress/runner/cypress_runner.js:125039:21)\n    at Context.<anonymous> (http://localhost:38773/__cypress/runner/cypress_runner.js:136977:21)\n    at http://localhost:38773/__cypress/runner/cypress_runner.js:136453:33\n    at tryCatcher (http://localhost:38773/__cypress/runner/cypress_runner.js:164895:23)\n    at Promise._settlePromiseFromHandler (http://localhost:38773/__cypress/runner/cypress_runner.js:162831:31)\n    at Promise._settlePromise (http://localhost:38773/__cypress/runner/cypress_runner.js:162888:18)\n    at Promise._settlePromiseCtx (http://localhost:38773/__cypress/runner/cypress_runner.js:162925:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:38773/__cypress/runner/cypress_runner.js:159625:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:38773/__cypress/runner/cypress_runner.js:159630:10)\n    at Async.drainQueues (http://localhost:38773/__cypress/runner/cypress_runner.js:159504:14)",
                     "diff": null
                   },
                   "uuid": "b195f87d-8cf9-4713-976a-df4b3fedccfb",
                   "parentUUID": "7b0de555-37c0-4cd0-b750-0a66fa4a4009",
+=======
+                    "estack": "AssertionError: expected false to be true\n    at getRet (http://localhost:34835/__cypress/runner/cypress_runner.js:124653:16)\n    at tryCatcher (http://localhost:34835/__cypress/runner/cypress_runner.js:164895:23)\n    at Function.Promise.attempt.Promise.try (http://localhost:34835/__cypress/runner/cypress_runner.js:162170:29)\n    at Context.thenFn (http://localhost:34835/__cypress/runner/cypress_runner.js:124667:23)\n    at Context.then (http://localhost:34835/__cypress/runner/cypress_runner.js:125039:21)\n    at Context.<anonymous> (http://localhost:34835/__cypress/runner/cypress_runner.js:136977:21)\n    at http://localhost:34835/__cypress/runner/cypress_runner.js:136453:33\n    at tryCatcher (http://localhost:34835/__cypress/runner/cypress_runner.js:164895:23)\n    at Promise._settlePromiseFromHandler (http://localhost:34835/__cypress/runner/cypress_runner.js:162831:31)\n    at Promise._settlePromise (http://localhost:34835/__cypress/runner/cypress_runner.js:162888:18)\n    at Promise._settlePromiseCtx (http://localhost:34835/__cypress/runner/cypress_runner.js:162925:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:34835/__cypress/runner/cypress_runner.js:159625:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:34835/__cypress/runner/cypress_runner.js:159630:10)\n    at Async.drainQueues (http://localhost:34835/__cypress/runner/cypress_runner.js:159504:14)",
+                    "diff": null
+                  },
+                  "uuid": "5d31644f-912d-48c4-8aad-2130971c7891",
+                  "parentUUID": "7735211a-4c67-4a5e-81ba-69421a208023",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "04a6b1fa-7484-4f65-8241-481e841bff67"
               ],
               "failures": [
@@ -1579,12 +2410,26 @@
               "pending": [],
               "skipped": [],
               "duration": 1741,
+=======
+                "263d8f4c-3026-4786-a108-6a78bf5f3c51"
+              ],
+              "failures": [
+                "5d31644f-912d-48c4-8aad-2130971c7891"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 1092,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
+<<<<<<< HEAD
               "uuid": "b5729dfe-0aed-4147-843c-a0d4f2beee2c",
+=======
+              "uuid": "683f2322-e945-4098-9e9d-cc857ac8f756",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "title": "Substituir o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado",
               "fullFile": "",
               "file": "",
@@ -1595,7 +2440,11 @@
                   "title": "Deve haver um texto no modelo \"Olá, Jonh Doe\" (substitua John Doe pelo nome e sobrenome preenchido no formulário)",
                   "fullTitle": "Facebook Signup Substituir o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado Deve haver um texto no modelo \"Olá, Jonh Doe\" (substitua John Doe pelo nome e sobrenome preenchido no formulário)",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 6501,
+=======
+                  "duration": 6270,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -1605,11 +2454,19 @@
                   "code": "cy.get('.main-content .right-content').contains(\"Ol\\xE1, \".concat(firstname, \" \").concat(lastname));",
                   "err": {
                     "message": "CypressError: Timed out retrying: Expected to find content: 'Olá, John Doe' within the element: <div.right-content> but never did.",
+<<<<<<< HEAD
                     "estack": "CypressError: Timed out retrying: Expected to find content: 'Olá, John Doe' within the element: <div.right-content> but never did.\n    at cypressErr (http://localhost:38773/__cypress/runner/cypress_runner.js:138036:9)\n    at throwErr (http://localhost:38773/__cypress/runner/cypress_runner.js:137969:11)\n    at Object.throwErrByPath (http://localhost:38773/__cypress/runner/cypress_runner.js:138017:3)\n    at retry (http://localhost:38773/__cypress/runner/cypress_runner.js:132299:19)\n    at onFailFn (http://localhost:38773/__cypress/runner/cypress_runner.js:120514:16)\n    at tryCatcher (http://localhost:38773/__cypress/runner/cypress_runner.js:164895:23)\n    at Promise._settlePromiseFromHandler (http://localhost:38773/__cypress/runner/cypress_runner.js:162831:31)\n    at Promise._settlePromise (http://localhost:38773/__cypress/runner/cypress_runner.js:162888:18)\n    at Promise._settlePromise0 (http://localhost:38773/__cypress/runner/cypress_runner.js:162933:10)\n    at Promise._settlePromises (http://localhost:38773/__cypress/runner/cypress_runner.js:163008:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:38773/__cypress/runner/cypress_runner.js:159620:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:38773/__cypress/runner/cypress_runner.js:159630:10)\n    at Async.drainQueues (http://localhost:38773/__cypress/runner/cypress_runner.js:159504:14)",
                     "diff": null
                   },
                   "uuid": "209e68fe-e732-4e9d-8c28-a396bb436771",
                   "parentUUID": "b5729dfe-0aed-4147-843c-a0d4f2beee2c",
+=======
+                    "estack": "CypressError: Timed out retrying: Expected to find content: 'Olá, John Doe' within the element: <div.right-content> but never did.\n    at cypressErr (http://localhost:34835/__cypress/runner/cypress_runner.js:138036:9)\n    at throwErr (http://localhost:34835/__cypress/runner/cypress_runner.js:137969:11)\n    at Object.throwErrByPath (http://localhost:34835/__cypress/runner/cypress_runner.js:138017:3)\n    at retry (http://localhost:34835/__cypress/runner/cypress_runner.js:132299:19)\n    at onFailFn (http://localhost:34835/__cypress/runner/cypress_runner.js:120514:16)\n    at tryCatcher (http://localhost:34835/__cypress/runner/cypress_runner.js:164895:23)\n    at Promise._settlePromiseFromHandler (http://localhost:34835/__cypress/runner/cypress_runner.js:162831:31)\n    at Promise._settlePromise (http://localhost:34835/__cypress/runner/cypress_runner.js:162888:18)\n    at Promise._settlePromise0 (http://localhost:34835/__cypress/runner/cypress_runner.js:162933:10)\n    at Promise._settlePromises (http://localhost:34835/__cypress/runner/cypress_runner.js:163008:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:34835/__cypress/runner/cypress_runner.js:159620:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:34835/__cypress/runner/cypress_runner.js:159630:10)\n    at Async.drainQueues (http://localhost:34835/__cypress/runner/cypress_runner.js:159504:14)",
+                    "diff": null
+                  },
+                  "uuid": "e178ae5d-6b2c-465e-a13c-cc6985584c94",
+                  "parentUUID": "683f2322-e945-4098-9e9d-cc857ac8f756",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1617,7 +2474,11 @@
                   "title": "Exibir o e-mail ou telefone",
                   "fullTitle": "Facebook Signup Substituir o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado Exibir o e-mail ou telefone",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 3272,
+=======
+                  "duration": 2122,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1626,8 +2487,13 @@
                   "context": null,
                   "code": "cy.get('.main-content .right-content').contains(phoneEmail);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "99fab125-1c04-420b-a073-4aabeb272cae",
                   "parentUUID": "b5729dfe-0aed-4147-843c-a0d4f2beee2c",
+=======
+                  "uuid": "4dd9fd86-9c22-4819-964e-3e6ab78b8716",
+                  "parentUUID": "683f2322-e945-4098-9e9d-cc857ac8f756",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1635,7 +2501,11 @@
                   "title": "Não exibir a senha",
                   "fullTitle": "Facebook Signup Substituir o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado Não exibir a senha",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 2203,
+=======
+                  "duration": 1903,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1644,8 +2514,13 @@
                   "context": null,
                   "code": "cy.get('.main-content .right-content').should('not.contain', password);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "0f4d499d-4e5f-4728-a02e-fec0275befda",
                   "parentUUID": "b5729dfe-0aed-4147-843c-a0d4f2beee2c",
+=======
+                  "uuid": "1a6906a5-fc4f-489e-88bd-eef9718571ea",
+                  "parentUUID": "683f2322-e945-4098-9e9d-cc857ac8f756",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1653,7 +2528,11 @@
                   "title": "Exibir a data de nascimento",
                   "fullTitle": "Facebook Signup Substituir o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado Exibir a data de nascimento",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 2224,
+=======
+                  "duration": 1925,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1662,8 +2541,13 @@
                   "context": null,
                   "code": "cy.get('.main-content .right-content').contains(birthdate);",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "bc4b5256-3183-4a7f-b7c5-2726d5f3be3e",
                   "parentUUID": "b5729dfe-0aed-4147-843c-a0d4f2beee2c",
+=======
+                  "uuid": "5f93c7c8-6130-493b-a602-471646a67fe8",
+                  "parentUUID": "683f2322-e945-4098-9e9d-cc857ac8f756",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1671,7 +2555,11 @@
                   "title": "Caso a opção selecionada no campo Gênero seja Feminino exibir \"Feminino\"",
                   "fullTitle": "Facebook Signup Substituir o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado Caso a opção selecionada no campo Gênero seja Feminino exibir \"Feminino\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 8461,
+=======
+                  "duration": 8193,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -1681,11 +2569,19 @@
                   "code": "fillForm();\ncy.get('input[name=\"gender\"]').check('Feminino');\ncy.get(REGISTER_BUTTON_SELECTOR).click();\ncy.get('.main-content .right-content').contains('Feminino');",
                   "err": {
                     "message": "CypressError: Timed out retrying: Expected to find content: 'Feminino' within the element: <div.right-content> but never did.",
+<<<<<<< HEAD
                     "estack": "CypressError: Timed out retrying: Expected to find content: 'Feminino' within the element: <div.right-content> but never did.\n    at cypressErr (http://localhost:38773/__cypress/runner/cypress_runner.js:138036:9)\n    at throwErr (http://localhost:38773/__cypress/runner/cypress_runner.js:137969:11)\n    at Object.throwErrByPath (http://localhost:38773/__cypress/runner/cypress_runner.js:138017:3)\n    at retry (http://localhost:38773/__cypress/runner/cypress_runner.js:132299:19)\n    at onFailFn (http://localhost:38773/__cypress/runner/cypress_runner.js:120514:16)\n    at tryCatcher (http://localhost:38773/__cypress/runner/cypress_runner.js:164895:23)\n    at Promise._settlePromiseFromHandler (http://localhost:38773/__cypress/runner/cypress_runner.js:162831:31)\n    at Promise._settlePromise (http://localhost:38773/__cypress/runner/cypress_runner.js:162888:18)\n    at Promise._settlePromise0 (http://localhost:38773/__cypress/runner/cypress_runner.js:162933:10)\n    at Promise._settlePromises (http://localhost:38773/__cypress/runner/cypress_runner.js:163008:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:38773/__cypress/runner/cypress_runner.js:159620:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:38773/__cypress/runner/cypress_runner.js:159630:10)\n    at Async.drainQueues (http://localhost:38773/__cypress/runner/cypress_runner.js:159504:14)",
                     "diff": null
                   },
                   "uuid": "5f52baab-0fd7-4946-8c81-0a4c540761c9",
                   "parentUUID": "b5729dfe-0aed-4147-843c-a0d4f2beee2c",
+=======
+                    "estack": "CypressError: Timed out retrying: Expected to find content: 'Feminino' within the element: <div.right-content> but never did.\n    at cypressErr (http://localhost:34835/__cypress/runner/cypress_runner.js:138036:9)\n    at throwErr (http://localhost:34835/__cypress/runner/cypress_runner.js:137969:11)\n    at Object.throwErrByPath (http://localhost:34835/__cypress/runner/cypress_runner.js:138017:3)\n    at retry (http://localhost:34835/__cypress/runner/cypress_runner.js:132299:19)\n    at onFailFn (http://localhost:34835/__cypress/runner/cypress_runner.js:120514:16)\n    at tryCatcher (http://localhost:34835/__cypress/runner/cypress_runner.js:164895:23)\n    at Promise._settlePromiseFromHandler (http://localhost:34835/__cypress/runner/cypress_runner.js:162831:31)\n    at Promise._settlePromise (http://localhost:34835/__cypress/runner/cypress_runner.js:162888:18)\n    at Promise._settlePromise0 (http://localhost:34835/__cypress/runner/cypress_runner.js:162933:10)\n    at Promise._settlePromises (http://localhost:34835/__cypress/runner/cypress_runner.js:163008:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:34835/__cypress/runner/cypress_runner.js:159620:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:34835/__cypress/runner/cypress_runner.js:159630:10)\n    at Async.drainQueues (http://localhost:34835/__cypress/runner/cypress_runner.js:159504:14)",
+                    "diff": null
+                  },
+                  "uuid": "a4cd7d9f-63b7-4d90-8e66-8cf5703ee8a2",
+                  "parentUUID": "683f2322-e945-4098-9e9d-cc857ac8f756",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1693,7 +2589,11 @@
                   "title": "Caso a opção selecionada no campo Gênero seja Masculino exibir \"Masculino\"",
                   "fullTitle": "Facebook Signup Substituir o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado Caso a opção selecionada no campo Gênero seja Masculino exibir \"Masculino\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 9464,
+=======
+                  "duration": 8181,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -1703,11 +2603,19 @@
                   "code": "fillForm();\ncy.get('input[name=\"gender\"]').check('Masculino');\ncy.get(REGISTER_BUTTON_SELECTOR).click();\ncy.get('.main-content .right-content').contains('Masculino');",
                   "err": {
                     "message": "CypressError: Timed out retrying: Expected to find content: 'Masculino' within the element: <div.right-content> but never did.",
+<<<<<<< HEAD
                     "estack": "CypressError: Timed out retrying: Expected to find content: 'Masculino' within the element: <div.right-content> but never did.\n    at cypressErr (http://localhost:38773/__cypress/runner/cypress_runner.js:138036:9)\n    at throwErr (http://localhost:38773/__cypress/runner/cypress_runner.js:137969:11)\n    at Object.throwErrByPath (http://localhost:38773/__cypress/runner/cypress_runner.js:138017:3)\n    at retry (http://localhost:38773/__cypress/runner/cypress_runner.js:132299:19)\n    at onFailFn (http://localhost:38773/__cypress/runner/cypress_runner.js:120514:16)\n    at tryCatcher (http://localhost:38773/__cypress/runner/cypress_runner.js:164895:23)\n    at Promise._settlePromiseFromHandler (http://localhost:38773/__cypress/runner/cypress_runner.js:162831:31)\n    at Promise._settlePromise (http://localhost:38773/__cypress/runner/cypress_runner.js:162888:18)\n    at Promise._settlePromise0 (http://localhost:38773/__cypress/runner/cypress_runner.js:162933:10)\n    at Promise._settlePromises (http://localhost:38773/__cypress/runner/cypress_runner.js:163008:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:38773/__cypress/runner/cypress_runner.js:159620:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:38773/__cypress/runner/cypress_runner.js:159630:10)\n    at Async.drainQueues (http://localhost:38773/__cypress/runner/cypress_runner.js:159504:14)",
                     "diff": null
                   },
                   "uuid": "f81d029b-1fc5-473f-98c8-3d54248d6615",
                   "parentUUID": "b5729dfe-0aed-4147-843c-a0d4f2beee2c",
+=======
+                    "estack": "CypressError: Timed out retrying: Expected to find content: 'Masculino' within the element: <div.right-content> but never did.\n    at cypressErr (http://localhost:34835/__cypress/runner/cypress_runner.js:138036:9)\n    at throwErr (http://localhost:34835/__cypress/runner/cypress_runner.js:137969:11)\n    at Object.throwErrByPath (http://localhost:34835/__cypress/runner/cypress_runner.js:138017:3)\n    at retry (http://localhost:34835/__cypress/runner/cypress_runner.js:132299:19)\n    at onFailFn (http://localhost:34835/__cypress/runner/cypress_runner.js:120514:16)\n    at tryCatcher (http://localhost:34835/__cypress/runner/cypress_runner.js:164895:23)\n    at Promise._settlePromiseFromHandler (http://localhost:34835/__cypress/runner/cypress_runner.js:162831:31)\n    at Promise._settlePromise (http://localhost:34835/__cypress/runner/cypress_runner.js:162888:18)\n    at Promise._settlePromise0 (http://localhost:34835/__cypress/runner/cypress_runner.js:162933:10)\n    at Promise._settlePromises (http://localhost:34835/__cypress/runner/cypress_runner.js:163008:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:34835/__cypress/runner/cypress_runner.js:159620:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:34835/__cypress/runner/cypress_runner.js:159630:10)\n    at Async.drainQueues (http://localhost:34835/__cypress/runner/cypress_runner.js:159504:14)",
+                    "diff": null
+                  },
+                  "uuid": "64d7b60a-ec74-407a-83a0-3ccaaffcfa04",
+                  "parentUUID": "683f2322-e945-4098-9e9d-cc857ac8f756",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 },
@@ -1715,7 +2623,11 @@
                   "title": "Caso a opção selecionada no campo Gênero seja Personalizado exibir \"Personalizado\"",
                   "fullTitle": "Facebook Signup Substituir o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado Caso a opção selecionada no campo Gênero seja Personalizado exibir \"Personalizado\"",
                   "timedOut": null,
+<<<<<<< HEAD
                   "duration": 4745,
+=======
+                  "duration": 4134,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1724,14 +2636,20 @@
                   "context": null,
                   "code": "fillForm();\ncy.get('input[name=\"gender\"]').check('Personalizado');\ncy.get(REGISTER_BUTTON_SELECTOR).click();\ncy.get('.main-content .right-content').contains('Personalizado');",
                   "err": {},
+<<<<<<< HEAD
                   "uuid": "362c44ec-0f63-45cc-9eea-f55e732cd2fc",
                   "parentUUID": "b5729dfe-0aed-4147-843c-a0d4f2beee2c",
+=======
+                  "uuid": "f5ba9453-2c62-4b56-8bbb-25e7645d4b09",
+                  "parentUUID": "683f2322-e945-4098-9e9d-cc857ac8f756",
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "99fab125-1c04-420b-a073-4aabeb272cae",
                 "0f4d499d-4e5f-4728-a02e-fec0275befda",
                 "bc4b5256-3183-4a7f-b7c5-2726d5f3be3e",
@@ -1745,6 +2663,21 @@
               "pending": [],
               "skipped": [],
               "duration": 36870,
+=======
+                "4dd9fd86-9c22-4819-964e-3e6ab78b8716",
+                "1a6906a5-fc4f-489e-88bd-eef9718571ea",
+                "5f93c7c8-6130-493b-a602-471646a67fe8",
+                "f5ba9453-2c62-4b56-8bbb-25e7645d4b09"
+              ],
+              "failures": [
+                "e178ae5d-6b2c-465e-a13c-cc6985584c94",
+                "a4cd7d9f-63b7-4d90-8e66-8cf5703ee8a2",
+                "64d7b60a-ec74-407a-83a0-3ccaaffcfa04"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 32728,
+>>>>>>> bac8da47acbed70b759730d47a648ae4a3c84853
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000

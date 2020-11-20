@@ -28,13 +28,12 @@ const validForm = (elements) => {
 
 function chekedInput() {
   radioBtn[0].addEventListener('click', (event) => {
-    const setInput = document.getElementsByClassName('genderOpc');
+    const setInput = document.getElementsByClassName('inputGender');
     if (event.target.id === 'personalizado') {
-      setInput[0].style.display = 'flex';
-      setInput[0].style.flexDirection = 'row';
+      setInput[0].classList.remove('genderOpc');
     }
     if (event.target.id === 'masculino' || event.target.id === 'feminino') {
-      setInput[0].style.display = 'none';
+      setInput[0].classList.add('genderOpc');
     }
   });
 }

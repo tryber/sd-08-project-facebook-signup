@@ -16,7 +16,7 @@ const facebookRegister = document.querySelector('#facebook-register');
 
 facebookRegister.addEventListener('click', function () {
   for (let index = 0; index < inputArray.length; index += 1) {
-    if (inputArray[index].innerText === '') {
+    if (inputArray[index].value === '') {
       alert('Campos inválidos');
       break;
     }

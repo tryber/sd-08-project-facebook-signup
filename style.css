@@ -1,4 +1,4 @@
-html , body , div , header , img , form , input , label , button {
+body , button , div , form , header , html , img , input , label {
   border: 0;
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;

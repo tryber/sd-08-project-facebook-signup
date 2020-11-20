@@ -11,10 +11,10 @@ function addAlert() {
 addAlert();
 
 // validar input
-const inputArray = document.querySelectorAll('.input-validation');
 const facebookRegister = document.querySelector('#facebook-register');
 
 facebookRegister.addEventListener('click', function () {
+  const inputArray = document.querySelectorAll('.input-validation');
   for (let index = 0; index < inputArray.length; index += 1) {
     if (inputArray[index].value === '') {
       alert('Campos inválidos');

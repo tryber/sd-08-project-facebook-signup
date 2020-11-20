@@ -9,15 +9,16 @@ function alertEmail() {
 
 alertEmail();
 
+const invalid = document.createElement('p');
+const form = document.querySelector('.form-register')
+
 function signIt() {
-  const invalid = document.querySelector('#invalid');
-  const form = document.querySelector('.form-register');
   const inputs = document.querySelectorAll('.inputC');
   const register = document.querySelector('#facebook-register');
   register.addEventListener('click', function () {
     for (let index = 0; index < inputs.length; index += 1) {
       if (inputs[index].value === '') {
-        invalid.innerText = 'Campos inválidos';
+        invalid.innerHTML = 'Campos inválidos';
       }
     }
   });
@@ -27,14 +28,12 @@ function signIt() {
 signIt();
 
 function checkRadio() {
-  const invalid = document.querySelector('.invalid');
-  const form = document.querySelector('.form-register');
   const inputRadio = document.querySelectorAll('.inputRadio');
   const register = document.querySelector('#facebook-register');
   register.addEventListener('click', function () {
     for (let index = 0; index < inputRadio.length; index += 1) {
       if (!inputRadio[index].checked) {
-        invalid.innerText = 'Campos inválidos';
+        invalid.innerHTML = 'Campos inválidos';
       }
       form.appendChild(invalid);
     }

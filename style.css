@@ -51,4 +51,9 @@ header {
 
 .right-content form {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.teste {
+  width: calc(100px/2);
 }

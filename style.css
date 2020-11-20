@@ -1,90 +1,75 @@
-
 body {
   background-color: #e6e6e6;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color:#ffffff;
-  }
-  
-  .top-bar {
-    background-color: rgb(66, 103, 178);
-    display: flex;
-    height: 90px;
-    width: 100%;
-  }
-  
-  .facebook-logo {
-    width: 150px;
-    height: 60px;
-    padding-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 100px
-  }
+}
 
-  .main-content {
-    display: flex;
-    justify-content: center;
-    background-color: #f0f2f5  ;  
-    height: 400px;
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 90px;
+  width: 100%;
+}
 
-  }
+.facebook-logo {
+  height: 60px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  padding-top: 40px;
+  width: 150px;
+}
 
-  .right-content {
-    width: 300px;
-    display: inline-block;
-    float: left;
-   
-  }
+.main-content {
+  background-color: #f0f2f5 ;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+}
 
+.right-content {
+  display: inline-flex;
+  float: left; 
+  width: 300px;  
+}
 
-  .left-content {
-    width: 800px;
-    display: inline-block;
+.left-content {
+  display: inline-block;
+  width: 800px;
+}
 
-  }
+.firstName {
+  display: inline-block;
+  max-width: 46%;
+}
 
+.lastName {
+  display: inline-flex;
+  float: right;
+  max-width: 46%; 
+}
 
-  .firstName {
-    display: inline-block;
-    max-width: 46%;
-    
+.borderStyle {
+  border-color: transparent;
+  border-image: initial;
+  border-radius: 5px;
+  border-style: inset;
+  border-width: 2px;
+  font-size: 90%;
+  height: 30px;
+  margin-top: 8px;
+  padding: 1px 2px;
+}
 
-  }
+.fullSize {
+  width: 100%;
+}
 
-  .lastName {
-    display: inline-block;
-    float: right;
-    max-width: 46%; 
-
-  }
-
-  .borderStyle {
-    border-radius: 5px;
-    height: 30px;
-    margin-top: 8px;
-    font-size: 90%;
-    padding: 1px 2px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: transparent;
-    border-image: initial;
-  
-
-  }
-
-  .fullSize {
-    width: 100%;
-
-  }
-
-  .birthdate {
-    color: #606770;
-    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    line-height: 20px;
-    margin-bottom: 0;
-    margin-top: 2px;
-  }
-
+.birthdate {
+  color: #606770;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 2px;
+}

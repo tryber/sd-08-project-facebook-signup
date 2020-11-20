@@ -43,20 +43,29 @@ function selectedRadio() {
 }
 
 const signUpForm = document.getElementById('sign-up');
-const textArea = document.getElementById('text-area');
-const newTextArea = document.createElement('textarea');
-newTextArea.name = 'gender-custom';
-newTextArea.placeholder = 'Gênero (opcional)';
+const newCustomInput = document.getElementById('custom-input');
+const newInput = document.createElement('input');
+newInput.name = 'gender-custom';
+newInput.placeholder = 'Gênero (opcional)';
 
 function createTextArea() {
-  textArea.appendChild(newTextArea);
+  newCustomInput.appendChild(newInput);
 }
+
+function eraseTextArea() {
+  if (signUpForm.length === 10) {
+    newCustomInput.removeChild(newCustomInput.lastElementChild);
+  }
+}
+
 
 function createBoxCustomGender() {
   for (let index = 0; index < formRadio.length; index += 1) {
     formRadio[index].addEventListener('click', function (event) {
       if (event.target.value === 'Personalizado') {
         createTextArea();
+      } else {
+        eraseTextArea();
       }
     });
   }

@@ -7,25 +7,30 @@ body {
 
 .top-bar {
   align-items: center;
-  background-color: rgb(66, 103, 178);
-  display: flex;
-  justify-content: space-around;
+  background-color: rgb(66, 103, 178); /* Obrigatório */
+  display: flex; /* Obrigatório */
+  justify-content: space-between;
+}
+
+.facebook-logo {
+  border: 1px solid black;
 }
 
 .facebook-login {
+  border: 1px solid black;
   display: flex;
 }
 
 .form-group {
   color: white;
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Obrigatório */
+  flex-direction: column; /* Obrigatório */
   margin: 10px;
 }
 
 .form-control {
-  align-items: flex-end;
   display: flex;
+  margin: 10px;
 }
 
 .form-control button {
@@ -34,9 +39,8 @@ body {
 
 .main-content {
   display: flex;
-  /* flex-direction: row; */
-  justify-content: center;
-
+  flex-direction: row;
+  justify-content: center; /* Propriedade obrigatória - Valor a definir */
 }
 
 .left-content {

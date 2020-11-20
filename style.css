@@ -39,15 +39,19 @@ body {
 }
 
 .main-content {
-  background: linear-gradient(#fff, rgb(202, 209, 223));
+  background: linear-gradient(white, rgb(202, 209, 223));
   display: flex;
+  justify-content: center;
 }
 
 .left-content {
-  width: 800px;
+  background-color: rgb(56, 57, 151);
   height: 500px;
+  width: 800px;
 }
 
 .rigth-content {
+  background-color: blue;
+  height: 300px;
   width: 300px;
 }

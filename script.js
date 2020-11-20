@@ -22,20 +22,3 @@ for (let index = 0; index < formInputLocal.length; index += 1) {
     }
   };
 }
-
-function personalizeCheck() {
-  const personaBtn = document.getElementById('personalizado');
-  const gndrContent = document.querySelector('.gender-conteiner');
-  const newInput = document.createElement('input');
-  newInput.type = 'text';
-  newInput.name = 'gender-custom';
-  newInput.placeholder = 'Gênero (opcional)';
-  gndrContent.addEventListener('change', function () {
-    if (personaBtn.checked) {
-      gndrContent.appendChild(newInput);
-    } else if (gndrContent.contains(newInput)) {
-      gndrContent.removeChild(newInput);
-    }
-  });
-}
-personalizeCheck();

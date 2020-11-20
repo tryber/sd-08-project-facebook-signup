@@ -7,7 +7,7 @@ function alertBotao() {
 botaoLogin.addEventListener('click', alertBotao);
 
 const botaoEnviar = document.querySelector('#facebook-register');
-const formsPosicao = document.getElementById('limpa-forms');
+
 botaoEnviar.addEventListener('click', function (event) {
   const inputsText = document.getElementsByClassName('inputs');
   event.preventDefault();
@@ -16,22 +16,22 @@ botaoEnviar.addEventListener('click', function (event) {
     if (campoInput.required) {
       if (campoInput.value === '') {
         alert('Campo inválido');
-      }else{
+      } else {
         campoInput.value = '';
       }
     }
   }
 });
 
-const persona = document.querySelector('.botaopersonalizado');
+const botaoPer = document.querySelector('.botaopersonalizado');
 const radioPerso = document.getElementsByClassName('radioperso');
 
 for (let index = 0; index < radioPerso.length; index += 1) {
   radioPerso[index].addEventListener('click', function () {
     if (radioPerso[2].checked === true) {
-      persona.style.display = 'block';
+      botaoPer.style.display = 'block';
     } else {
-      persona.style.display = 'none';
+      botaoPer.style.display = 'none';
     }
   });
 }

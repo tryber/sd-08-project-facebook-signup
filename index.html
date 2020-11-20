@@ -32,22 +32,23 @@
 	<img id="facebook-networking" src="imgs/networking.png"></section>
 	<section class="right-content"><h1>Abra uma conta</h1>
 	<h3 class="quick-easy">É rápido e fácil.</h3>
-	<form action="">
+	<form action="" id="create-acount">
 		<div class="full-name">
-		<input type="text" placeholder="Nome" title="Campos inválidos" required required oninvalid="this.setCustomValidity('Campo inválido')" name="firstname">
-		<input type="text" placeholder="Sobrenome" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campo inválido')" name="lastname">
+		<input type="text" placeholder="Nome" title="Campos inválidos" required name="firstname">
+		<input type="text" placeholder="Sobrenome" title="Campos inválidos" required name="lastname">
 		</div>
-		<input type="text" placeholder="Celular ou email" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campo inválido')" name="phone_email">
-		<input type="password" placeholder="Nova senha" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campo inválido')" name="password">
+		<input type="text" placeholder="Celular ou email" title="Campos inválidos" required name="phone_email">
+		<input type="password" placeholder="Nova senha" title="Campos inválidos" required name="password">
 		<label for="bday" id="label-birthdate">Data de nascimento</label>
-			<input type="text" name="birthdate" placeholder="dd/mm/aaaa" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campo inválido')" id="bday">
+			<input type="text" name="birthdate" placeholder="dd/mm/aaaa" title="Campos inválidos" required id="bday">
 		<label id="label-gender">Gênero</label>
 			<div class="radios">
-			<input type="radio" name="gender" value="Feminino" required oninvalid="this.setCustomValidity('Campo inválido')" id="Feminino"><label for="Feminino">Feminino</label>
-			<input type="radio" name="gender" value="Masculino" required oninvalid="this.setCustomValidity('Campo inválido')" id="Masculino"><label for="Masculino">Masculino</label>
-			<input type="radio" name="gender" value="Personalizado" required oninvalid="this.setCustomValidity('Campo inválido')" id="Personalizado"><label for="Personalizado">Personalizado</label>
+			<input type="radio" name="gender" value="Feminino" required id="Feminino"><label for="Feminino">Feminino</label>
+			<input type="radio" name="gender" value="Masculino" required id="Masculino"><label for="Masculino">Masculino</label>
+			<input type="radio" name="gender" value="Personalizado" required id="Personalizado"><label for="Personalizado">Personalizado</label>
 			</div>
 			<button type="submit" id="facebook-register">Cadastre-se</button>
+			<p id="invalid-field"></p>
 	</form>
 	</section>
 	</main>

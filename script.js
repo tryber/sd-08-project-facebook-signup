@@ -13,12 +13,12 @@ const password = document.getElementById('password').value;
 const birthdate = document.getElementById('label-birthdate').value;
 const gender = document.getElementsByClassName('gender');
 const registrationArray = [firstName, lastName, phoneMail, password, birthdate];
+const signUpForm = document.querySelector('.signUp');
 
 function finishForm() {
   document.querySelector('.main-content').removeChild(document.querySelector('.right-content'));
 
   const newMessage = document.createElement('section');
-  newMessage.setAttribute('class', 'message');
 
   document.querySelector('.main-content').appendChild(newMessage);
 
@@ -37,16 +37,11 @@ function finishForm() {
   newMessage.appendChild(genderLog);
 }
 
-function checkRegistration(registrationArray) {
-  for (let index = 0; index < 5; index += 1) {
-    if (registrationArray[index] === '') {
-      document.getElementById('invalid').innerHTML = ('Campos inválidos');
-    }
-  }
-  if (!(gender[0].checked || gender[1].checked || gender[2].checked)) {
-    document.getElementById('invalid').innerHTML = ('Campos inválidos');
-  }
-  if (document.getElementById('invalid').innerHTML !== 'Campos inválidos') {
+function checkRegistration() {
+  if (!signUpForm.checkValidity()) {
+    document.getElementById('invalid').innerHTML = 'Campos inválidos';
+  } else {
+    document.getElementById('invalid').innerHTML = '';
     finishForm();
   }
 }

@@ -37,19 +37,26 @@
         <form action="" class="sing-up-form">
           <label for=""></label>
           <div class="name-content">
-            <input type="text" name="firstname" id="first-name" placeholder="Nome">
-            <input type="text" name="lastname" id="last-name" placeholder="Sobrenome">
+            <input type="text" name="firstname" id="first-name" placeholder="Nome" required>
+            <input type="text" name="lastname" id="last-name" placeholder="Sobrenome" required>
           </div>
+<<<<<<< HEAD
           <div class="email-content">
             <input type="text" name="phone_email" placeholder="Celular ou email">
             <input type="password" name="password" placeholder="Nova senha">
           </div>
+=======
+          <input type="text" name="phone_email" placeholder="Celular ou email" required>
+          <input type="password" name="password" placeholder="Nova senha" required>
+>>>>>>> 0ba91100813fb701c736cb9eb0fd3d12eb1d047d
           <div class="birthdate-content">
             <label for="birth-date" id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" id="birth-date" placeholder="dd/mm/aaaa">
+            <input type="text" name="birthdate" id="birth-date" placeholder="dd/mm/aaaa" required>
+            <h3 id='mensagem-campos-invalidos'></h3>
           </div>
           <label for="" id="label-gender">Gênero</label>
           <div class="gender-content">
+<<<<<<< HEAD
             <input type="radio" name="gender" id="feminino" value="Feminino" checked>
             <label for="feminino">Feminino</label>
             <input type="radio" name="gender" id="masculino" value="Masculino">
@@ -57,6 +64,10 @@
             <input type="radio" name="gender" id="personalizado" value="Personalizado">
             <label for="personalizado">Personalizado</label>
           </div>
+=======
+            <input type="radio" name="gender" value="Feminino" checked>Feminino <input type="radio" name="gender"
+              value="Masculino">Masculino <input type="radio" name="gender" value="Personalizado">Personalizado </div>
+>>>>>>> 0ba91100813fb701c736cb9eb0fd3d12eb1d047d
           <button type="submit" id='facebook-register'>Cadastre-se</button>
         </form>
       </section>

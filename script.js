@@ -39,7 +39,7 @@ const radioPersonalizado = document.querySelector('#pers');
 const box4 = document.querySelector('.box4');
 radioPersonalizado.addEventListener('click', function () {
   const input = document.createElement('input');
-  input.type = 'radio';
+  input.type = 'text';
   input.id = 'opcional';
   input.name = 'gender-custom';
   input.placeholder = 'Gênero (opcional)';

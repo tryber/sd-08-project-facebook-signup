@@ -1,12 +1,12 @@
 body {
-  margin: 0;
-  padding: 0;
+  background-color: #dddddd41;
   border: 0;
+  color: #ffffff;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 0.7em;
   font-weight: 600;
-  color: #ffffff;
-  background-color: #dddddd41;
+  margin: 0;
+  padding: 0;
 }
 
 /*  */
@@ -17,38 +17,38 @@ body {
 }
 
 .top-bar {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  align-items: center;
-  justify-content: space-around;
   font-size: 0.9em;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
 }
 
 .facebook-logo {
-  width: 117px;
   height: 44px;
+  width: 117px;
 }
 
 .facebook-login {
   display: flex;
   flex-direction: row;
-  margin-top: 2px;
   margin-bottom: 2px;
+  margin-top: 2px;
 }
 
 .login-input {
   border: 1px solid rgba(0, 0, 0, 0.692);
-  width: 120px;
   color: rgba(0, 0, 0, 0.705);
+  width: 120px;
 }
 
 .form-group {
+  align-items: baseline;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
   margin: 5px;
 }
 
@@ -70,33 +70,29 @@ body {
   align-self: center;
 }
 
-.form-control p {
-  margin: 0;
-}
-
 .forgot-account {
   color: #ffffff8a;
-  font-size: small;
   font-size: 1em;
+  font-size: small;
   padding-left: 1px;
 }
 
 .btn-login {
-  color: #ffffffea;
-  border: 1px solid rgba(0, 0, 0, 0.274);
   background-color: #3b6aad;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  color: #ffffffea;
+  font-size: 0.9em;
+  font-weight: bold;
+  height: 20px;
+  margin-top: 2px;
   padding: 2px 2px;
   width: 40px;
-  height: 20px;
-  font-size: 0.9em;
-  border-radius: 2px;
-  font-weight: bold;
-  margin-top: 2px;
 }
 
 .btn-login:hover {
-  border: 1px solid rgba(0, 0, 0, 0.144);
   background-color: #3362a5;
+  border: 1px solid rgba(0, 0, 0, 0.144);
 }
 
 .main-conteiner {
@@ -104,11 +100,11 @@ body {
 }
 
 .main-content {
-  max-width: 800px;
+  color: rgba(0, 0, 0, 0.74);
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  color: rgba(0, 0, 0, 0.74);
+  max-width: 800px;
 }
 
 .left-content {
@@ -124,9 +120,9 @@ body {
 }
 
 .facebook-ss {
+  margin-bottom: 40px;
   margin-left: 40px;
   margin-top: 20px;
-  margin-bottom: 40px;
 }
 
 .sign-up-form {
@@ -135,8 +131,8 @@ body {
 }
 
 .open-account {
-  margin-left: 4px;
   margin-bottom: 0;
+  margin-left: 4px;
 }
 
 .quick-easy {
@@ -158,22 +154,22 @@ body {
 .form-input {
   margin-bottom: 8px;
   margin-left: 4px;
-  width: 140px;
   outline: none;
   transition: .2s ease-in-out;
+  width: 140px;
 }
 
 .btn-signup {
-  color: #ffffffea;
-  border: 1px solid rgba(0, 0, 0, 0.274);
   background-color: #589651;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  color: #ffffffea;
+  font-size: 1em;
+  font-weight: bold;
+  height: 30px;
+  margin-top: 2px;
   padding: 2px 2px;
   width: 100px;
-  height: 30px;
-  font-size: 1em;
-  border-radius: 2px;
-  font-weight: bold;
-  margin-top: 2px;
 }
 
 .btn-signup:hover {

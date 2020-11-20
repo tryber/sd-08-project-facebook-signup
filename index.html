@@ -7,27 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="top-bar"> <!--1º requesito obrigatorio-->
-            <img src="imgs/facebook-logo.png" class="facebook-logo" alt="facebook" srcset=""> <!--2º requesito obrigatorio-->
-            <div class="form-group"><!--3º requesito obrigatorio-->
-                <form class="facebook-login" action=""><!--4º requesito obrigatorio-->
-                    <div class="inputemail"> <!--5º requesito obrigatorio-->
-                        <label id="" class="user-email-phone-label" for="teste">Email ou telefone</label>
-                        <input  id="user-email-phone" class="input" type="text">
-                    </div>
-                    <div class="inputpassword form-group"> <!--6º requesito obrigatorio-->
-                        <label id="user-password-label" class="user-email-phone-label" for="">Senha</label>
-                        <input id="user-password" class="input" type="password" suggested="password">
-                        <a class="linkpassword" href="#">Esqueceu a conta?</a>
-                    </div>
-                    <div id="form-control">
-                        <button id="button-login" class="btnlogin" type="submit">Entrar</button> <!--7º requesito obrigatorio-->
-                    </div>
-                </form>
-            </div>
-        </div>
-    </header>
+  <header class="top-bar">
+    <img src="imgs/facebook-logo.png" alt="logo do facebook" class="facebook-logo">
+    <form action="" class="facebook-login">
+      <div class="form-group">
+        <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+        <input type="text" id="user-email-phone">
+      </div>
+      <div class="form-group">
+        <label for="user-password" id="user-password-label">Senha</label>
+        <input type="password" id="user-password">
+        <span>Esqueceu sua senha?</span>
+      </div>
+      <div class="form-control form-group">
+        <button type="submit" id="button-login" class="button-login">Entrar</button>
+      </div>
+    </form>
+  </header>
     <div class="main-content">
       <div class="left-content">
         <p id="facebook-slogan" class="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>

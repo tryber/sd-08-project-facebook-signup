@@ -52,7 +52,7 @@ function checaValidacao() {
   const formInput = form.querySelectorAll('input');
   for (let i = 0; i < formInput.length; i += 1) {
     if (formInput[i].value.length === 0) {
-      message();
+      showMessage();
       return;
     }
   }

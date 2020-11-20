@@ -9,7 +9,7 @@
 <body>
   <header class="top-bar">
     <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
-    <form class="facebook-login">
+    <section class="facebook-login">
       <div class="form-group">
         <label id="user-email-phone-label" for="user-email-phone-label">Email ou telefone</label>
         <input id="user-email-phone" type="text">
@@ -21,7 +21,7 @@
       <div class="form-control">
         <button id="button-login">Entrar</button>
       </div>
-    </form>
+    </section>
   </header>
   <section class="main-content">
     <div class="left-content">
@@ -31,22 +31,25 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <h3 class="quick-easy">É rápido e fácil.</h3>
-      <form action="">
+      <form id="formulario-abre-conta">
         <div class="nome-sobrenome">
           <input type="text" name="firstname" placeholder="Nome">
           <input type="text" name="lastname" placeholder="Sobrenome">
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <div class="email-password">
+          <input type="text" name="phone_email" placeholder="Celular ou email">
+          <input type="password" name="password" placeholder="Nova senha">
+        </div>
         <div class="birthdate-input">
           <label id="label-birthdate" for="">Data de nascimento</label>
           <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
         </div>
+      </form>
         <div>
           <label id="label-gender">Gênero</label>
           <div class="radio-button">
             <label for="feminino">
-            <input type="radio" id="feminino" name="gender" value="fem">Feminino
+            <input type="radio" id="feminino" checked name="gender" value="fem">Feminino
             </label><br>
             <label for="masculino">
             <input type="radio" id="masculino" name="gender" value="masc">Masculino
@@ -56,8 +59,7 @@
             </label>
           </div>
         </div>
-        <button type="submit" id="facebook-register">Cadastre-se</button>
-      </form>
+      <button type="submit" id="facebook-register">Cadastre-se</button>
     </div>
   </section>
   <script src="script.js"></script>

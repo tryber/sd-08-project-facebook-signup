@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-@media screen and ( max-width : 749px ) {
+@media screen and ( max-width : 599px ) {
 
   .logo-mobile {
     background-color: blue;
@@ -37,7 +37,7 @@ body {
 
 /* DISPLAY DESKTOP LAPTOP */
 
-@media screen and ( min-width : 750px ) {
+@media screen and ( min-width : 600px ) {
 
   .top-bar {
     align-items: center;
@@ -69,6 +69,7 @@ body {
   }
 
   .left-content {
+    box-sizing: border-box;
     margin-left: -100px;
     margin-right: 100px;
     width: 800px;

@@ -88,3 +88,4 @@ function validateRadio() {
   const radio = document.querySelectorAll('gender')[1].querySelectorAll('input[type=radio]');
   return radio[0].checked || radio[1].checked || radio[2].checked;
 }
+validateRadio();

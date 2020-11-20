@@ -51,7 +51,7 @@ function clickSubmit(event) {
     sessionStorage.setItem('birthdate', form.querySelector('.birthdate-input').value);
   }
 }
-document.querySelector('.facebook-register').addEventListener('click', clickSubmit);
+document.querySelector('#facebook-register').addEventListener('click', clickSubmit);
 
 function customGender() {
   const radioButtons = document.querySelector('.radio-button-container');

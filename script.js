@@ -44,3 +44,10 @@ function removeCustomGenderInput() {
 }
 
 removeCustomGenderInput();
+
+function errorMessage() {
+  const createAccountButton = document.querySelector('#facebook-register');
+  createAccountButton.addEventListener('click', checkAllInputs(){
+
+  });
+}

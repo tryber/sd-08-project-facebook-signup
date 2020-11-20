@@ -5,18 +5,30 @@ function alerta() {
 }
 entrar.addEventListener('click', alerta);
 
-const cadastre = document.getElementById('facebook-register');
+// const cadastre = document.getElementById('facebook-register');
 
-const form = document.querySelectorAll('.form input, .form div');
+// const form = document.querySelectorAll('.form input');
 
-cadastre.addEventListener('click', function () {
-  for (let index = 0; index < form.length; index += 1) {
-    if (form[index].innerText === '') {
-      alert('Campos inválidos');
-      break;
-    } else {
-      alert('Cadastro efetuado');
-      break;
-    }
-  }
-});
+
+// cadastre.addEventListener('click', function () {
+//   for (let index = 0; index < form.children.length ; index +=1 ) {
+//     var contadorBranco = 0
+//     if (form[index].length == 0) {
+//       contadorBranco = contadorBranco + 1;
+
+//     }
+//   }
+//   if(contadorBranco != 0){
+//     alert('Cadastro Efetuado')
+//   } else {
+//     alert('Cadastro inválido')
+//   }
+// })
+
+// cadastre.addEventListener('click', function (){
+//   if(form[0].length < 0 ){
+//     alert('Cadastro inválido');
+//   }else{
+//     alert('Cadastro efetuado');
+//   }
+// })

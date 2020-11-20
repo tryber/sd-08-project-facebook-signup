@@ -64,7 +64,7 @@ function checkRadioSelected() {
 }
 
 function getSelectedGender() {
-  const gender = 'none';
+  let gender = 'none';
   for (let index = 0; index < getAllInputs.length; index += 1) {
     if (getAllInputs[index].type === 'radio' && getAllInputs[index].checked) {
       gender = getAllInputs[index].value;

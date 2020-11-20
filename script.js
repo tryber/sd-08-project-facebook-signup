@@ -9,14 +9,13 @@ function showAlert() {
 showAlert();
 
 function verifyText() {
-  const formText = document.querySelectorAll(
-    '#sign-up input[type=text], #sign-up input[type=password]'
-  );
+  const formText = document.querySelectorAll('#sign-up input[type=text], #sign-up input[type=password]');
   for (let index = 0; index < formText.length; index += 1) {
     if (formText[index].value === '' || formText[index].value === null) {
       return true;
     }
   }
+  return false;
 }
 
 function verifyRadio() {
@@ -30,6 +29,7 @@ function verifyRadio() {
   if (radioEmpty > 2) {
     return true;
   }
+  return false;
 }
 
 const signUpForm = document.getElementById('sign-up');

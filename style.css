@@ -121,3 +121,15 @@ a {
 .label-birthdate , .birthdate {
   margin-right: 100px;
 }
+
+.register {
+  background-color: #48c774;
+  border-color: transparent;
+  color: white;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.personalizedText {
+  width: 100%;
+}

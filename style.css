@@ -12,6 +12,7 @@ body {
 
 .facebook-login {
   display: flex;
+  align-self: flex-end;
 }
 
 .form-group {
@@ -26,12 +27,11 @@ body {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 0 40px;
 }
 
 .left-content {
   width: 800px;
+  background-color: red;
 }
 
 .right-content {

@@ -12,7 +12,7 @@ addAlert();
 
 // validar input
 const facebookRegister = document.querySelector('#facebook-register');
-const message = document.querySelector('#validation-message')
+const message = document.querySelector('#validation-message');
 
 facebookRegister.addEventListener('click', function () {
   const inputArray = document.querySelectorAll('.input-validation');

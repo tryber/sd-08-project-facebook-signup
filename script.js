@@ -17,29 +17,25 @@ persona.addEventListener('click', function () {
   genderContainer.appendChild(inputGender);
 });
 
-// const cadastre = document.getElementById('facebook-register');
+const cadastre = document.getElementById('facebook-register');
 
-// const form = document.querySelectorAll('.form input');
+const form = document.querySelectorAll('.form input');
 
-// cadastre.addEventListener('click', function () {
-//   for (let index = 0; index < form.length ; index +=1 ) {
-//     var contadorBranco = 0
-//     if (form[index].value == 0) {
-//       contadorBranco = contadorBranco + 1;
+const formulario = document.querySelector('.form');
 
-//     }
-//   }
-//   if(contadorBranco != 0){
-//     alert('Cadastro Efetuado')
-//   } else {
-//     alert('Cadastro inválido')
-//   }
-// })
-
-// cadastre.addEventListener('click', function (){
-//   if(form[0].length < 0 ){
-//     alert('Cadastro inválido');
-//   }else{
-//     alert('Cadastro efetuado');
-//   }
-// })
+cadastre.addEventListener('click', function () {
+  let contador = 0;
+  for (let index = 0; index < form.length; index += 1) {
+    if (form[index].value === '') {
+      contador += 1;
+    }
+  }
+  if (contador !== 0) {
+    const alerta = document.createElement('div');
+    alerta.innerText = 'Campos inválidos';
+    alerta.className = 'alerta';
+    formulario.appendChild(alerta);
+  } else {
+    alert('Cadastro Efetuado');
+  }
+});

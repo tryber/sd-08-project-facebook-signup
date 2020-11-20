@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   font-size: 100%;
   margin: 0;
-  padding: 0;;
+  padding: 0;
 }
 
 .top-bar {
@@ -44,7 +44,7 @@ body {
 }
 
 .left-content {
-  margin: 180px 180px;
+  margin: 180px;
   width: 800px;
 }
 

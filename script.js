@@ -13,8 +13,8 @@ function signIt() {
   const inputs = document.querySelectorAll('.inputC');
   const register = document.querySelector('#facebook-register');
   register.addEventListener('click', function () {
-    for (let index =0; index < inputs.length; index +=1) {
-      if (inputs[index].value === ''){
+    for (let index = 0; index < inputs.length; index += 1) {
+      if (inputs[index].value === '') {
         alert('Campos inválidos');
       }
     }
@@ -27,7 +27,7 @@ function checkRadio() {
   const inputRadio = document.querySelectorAll('.inputRadio');
   const register = document.querySelector('#facebook-register');
   register.addEventListener('click', function () {
-    for (let index = 0; index < inputRadio.length; index+=1) {
+    for (let index = 0; index < inputRadio.length; index += 1) {
       if (!inputRadio[index].checked) {
         alert('Campos inválidos');
       } else {

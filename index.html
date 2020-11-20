@@ -14,7 +14,7 @@
         <div class="header-container">
             <img class="facebook-logo" src="imgs/facebook-logo.png">
 
-            <form class="facebook-login">
+            <form method="GET" class="facebook-login">
                 <div class="form-group">
                     <label id="user-email-phone-label">
                         Email ou telefone</label>
@@ -53,7 +53,7 @@
         <section class="right-content">
             <h1>Abra uma conta</h1>
             <span class="quick-easy">É rápido e fácil.</span>
-            <form class="form-style">
+            <form method="GET" name="signUp-form" class="form-style">
                 <input type="text" name="firstname" placeholder="Nome">
                 <input type="text" name="lastname" placeholder="Sobrenome">
                 <input type="text" name="phone_email" placeholder="Celular ou email">
@@ -64,11 +64,8 @@
 
                 <label id="label-gender">Gênero
                     <label for="fem"><input id="fem" type="radio" name="gender" value="Feminino">Feminino</label>
-
-
                     <label for="masc"> <input id='masc' type="radio" name="gender" value="Masculino">Masculino</label>
-                    <label for="pers"><input id="pers" type="radio" name="gender"
-                            value="Personalizado">Personalizado</label>
+                    <label for="pers"><input id="pers" type="radio" name="gender" value="Personalizado">Personalizado</label>
                 </label>
                 <button id="facebook-register" type="submit">Cadastre-se</button>
 

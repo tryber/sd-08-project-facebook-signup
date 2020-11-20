@@ -4,18 +4,33 @@ botaoEntrar.addEventListener('click', function () {
   alert(loginEmailOuTel);
 });
 
-const inputs = document.querySelectorAll('input[type=text], input[type=radio], input[type=password]');
+const formRegister = document.querySelector('.facebook-register')
+const inputs = formRegister.querySelectorAll('input[type=text], input[type=radio], input[type=password]');
 const botaoCadastrar = document.getElementById('facebook-register');
 function verificaCamposInvalidos() {
+  let erros = 0;
   for (let index = 0; index < inputs.length; index += 1) {
     const input = inputs[index];
     if (input.value === '') {
-      alert('Campos inválidos');
+      erros += 1;
     }
+  }
+  return erros;
+}
+
+function verificaErros() {
+  let erros = verificaCamposInvalidos();
+  if (erros !== 0) {
+    const invalido = document.createElement('p');
+    invalido.innerText = 'Campos inválidos';
+    formRegister.appendChild(invalido);
   }
 }
 
-botaoCadastrar.addEventListener('click', verificaCamposInvalidos);
+botaoCadastrar.addEventListener('click', function (event) {
+  event.preventDefault();
+  verificaErros();
+});
 
 const personalizado = document.getElementById('personalizado');
 function criaInput(event) {

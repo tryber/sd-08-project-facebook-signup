@@ -48,12 +48,6 @@ const newTextArea = document.createElement('textarea');
 newTextArea.name = 'gender-custom';
 newTextArea.placeholder = 'Gênero (opcional)';
 
-function eraseTextArea() {
-  if (signUpForm.length === 10) {
-    textArea.removeChild(textArea.lastElementChild);
-  }
-}
-
 function createTextArea() {
   textArea.appendChild(newTextArea);
 }
@@ -63,8 +57,6 @@ function createBoxCustomGender() {
     formRadio[index].addEventListener('click', function (event) {
       if (event.target.value === 'Personalizado') {
         createTextArea();
-      } else {
-        eraseTextArea();
       }
     });
   }

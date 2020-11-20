@@ -37,7 +37,7 @@
 		<input type="text" placeholder="Nome" title="Campos inválidos" required required oninvalid="this.setCustomValidity('Campo inválido')" name="firstname">
 		<input type="text" placeholder="Sobrenome" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campo inválido')" name="lastname">
 		</div>
-		<input type="text" placeholder="Celular ou email" title="Campos inválidos" required name="phone_email">
+		<input type="text" placeholder="Celular ou email" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campo inválido')" name="phone_email">
 		<input type="password" placeholder="Nova senha" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campo inválido')" name="password">
 		<label for="bday" id="label-birthdate">Data de nascimento</label>
 			<input type="text" name="birthdate" placeholder="dd/mm/aaaa" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campo inválido')" id="bday">

@@ -27,6 +27,7 @@ const validForm = (elments) => {
 function genderOpcClick() {
   const inputText = document.createElement('input');
   inputText.id = 'genderOpc';
+  inputText.name = 'gender-custom';
   inputText.type = 'text';
   inputText.style.display = 'block';
   inputText.placeholder = 'Gênero (opcional).';

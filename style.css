@@ -62,3 +62,7 @@ body {
 .invalid {
   display: none;
 }
+
+.radioBtns label {
+  display: block;
+}

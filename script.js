@@ -86,12 +86,12 @@ function validateForm() {
 facebookRegisterBtn.addEventListener('click', validateForm);
 
 function personalizadoField() {
-  let personalizadoInput = document.createElement('input');
+  const personalizadoInput = document.createElement('input');
   personalizadoInput.type = 'text';
   personalizadoInput.Id = 'Personalizado';
   personalizadoInput.name = 'gender-custom';
   personalizadoInput.placeholder = 'Gênero (opcional)';
-  document.getElementById('personalizado-container').appendChild(personalizadoInput);
+  document.querySelector('.personalizado-container').appendChild(personalizadoInput);
 }
 
 personalizadoRadio.addEventListener('click', personalizadoField);

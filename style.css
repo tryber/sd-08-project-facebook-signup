@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-.top-bar header {
+.top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
@@ -12,4 +12,10 @@ body {
 
 .facebook-login {
   display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }

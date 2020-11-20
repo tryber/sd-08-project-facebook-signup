@@ -7,6 +7,7 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  padding: 0 40px;
 }
 
 .facebook-login {
@@ -26,6 +27,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 0 40px;
 }
 
 .left-content {
@@ -42,4 +44,12 @@ body {
 
 .input-space {
   width: 45%;
+}
+
+.register {
+  width: 300px;
+}
+
+.optional {
+  display: none;
 }

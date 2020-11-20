@@ -105,12 +105,12 @@ h1 {
 }
 
 .register-button {
-  background-color: rgb(95,155,76);
+  background-color: rgb(95, 155, 76);
   border-radius: 5px;
   box-shadow: 2px 2px rgb(217, 217, 217);
   color: white;
-  font-weight: bold;
-  width: 50%;
+  font-weight: 900;
   height: 35px;
   margin: 20px 20px 20px 0;
+  width: 50%;
 }

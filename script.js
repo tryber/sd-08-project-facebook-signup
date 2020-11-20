@@ -1,7 +1,6 @@
 const loginButton = document.getElementById('button-login');
 const buttonRegister = document.getElementById('facebook-register');
 const verify = document.querySelectorAll('.verify');
-const radio = document.querySelectorAll('.radio');
 const span = document.getElementById('invalid');
 const register = document.getElementById('register');
 

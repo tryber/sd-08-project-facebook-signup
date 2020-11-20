@@ -20,9 +20,9 @@ function signIt() {
       if (inputs[index].value === '') {
         invalid.innerHTML = 'Campos inválidos';
       }
+      form.appendChild(invalid);
     }
   });
-  form.appendChild(invalid);
 }
 
 signIt();

@@ -34,9 +34,15 @@ body {
 /* fiz este */
 .main-content {
   display: flex;
+  justify-content: space-between;
 }
 
 /* fiz este */
 .left-content {
   width: 800px;
+}
+
+/* wagnermor */
+.right-content {
+  width: 300px;
 }

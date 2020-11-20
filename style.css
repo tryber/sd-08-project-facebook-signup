@@ -5,18 +5,23 @@
 }
 
 .facebook-login {
-  display: flex;
   align-items: flex-end;
+  display: flex;
 }
 
 .form-control {
-  display: flex;
   align-self: flex-end;
+  display: flex;
 }
 
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
+  display: flex;
   justify-content: flex-start;
   width: 100%;
+}
+
+.form-group{
+  align-self: flex-start;
+  display: flex;
 }

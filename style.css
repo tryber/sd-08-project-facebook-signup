@@ -18,6 +18,7 @@
 
 .facebook-login {
   display: flex;
+
 }
 
 .form-control {
@@ -43,4 +44,16 @@
 
 .button-radio {
   display: flex;
+}
+
+.divsforms{
+  margin-top: 15px;
+}
+
+.divsforms1{
+  margin-left: 10px;
+}
+
+#botaopersonalizado{
+  display: none;
 }

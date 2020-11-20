@@ -51,3 +51,12 @@ body {
 .radio-genero {
   display: flex;
 }
+
+.mensagem-invalida {
+  display: none;
+}
+
+.genero {
+  display: none;
+  flex-direction: column;
+}

@@ -39,22 +39,26 @@
             <input type="text" name="firstname" placeholder="Nome">
             <input type="text" name="lastname" placeholder="Sobrenome">
           </div>
-          <input type="text" name="phone_email" placeholder="Celular ou email">
-          <input type="password" name="password" placeholder="Nova senha">
+          <input class="validator" type="text" name="phone_email" placeholder="Celular ou email">
+          <input class="validator" type="password" name="password" placeholder="Nova senha">
           <div class="birth-date">
             <label id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+            <input class="validator" type="text" name="birthdate" placeholder="dd/mm/aaaa">
           </div>
           <label id="label-gender">Gênero</label>
           <div class="radio-genero">
-            <input id="Feminino" type="radio" name="gender" value="Feminino">
+            <input id="Feminino" type="radio" name="gender" value="Feminino" checked>
             <label for="Feminino">Feminino</label>
             <input id="Masculino" type="radio" name="gender" value="Masculino">
             <label for="Masculino">Masculino</label>
             <input id="Personalizado" type="radio" name="gender" value="Personalizado">
             <label for="Personalizado">Personalizado</label>
           </div>
+          <div id="genero" class="genero">
+            <input type="text" name="gender-custom" placeholder="Gênero (opcional)">
+          </div>
           <button id="facebook-register" type="submit">Cadastre-se</button>
+          <div id="mensagem-invalida" class="mensagem-invalida">Campos inválidos</div>
         </form>
       </div>
     </main>

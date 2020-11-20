@@ -22,11 +22,11 @@ function cadastrar() {
       const arrayInput = inputs[index];
       if (arrayInput.value === '' || genero.checked.value === '') {
         arrayInput.className = 'erro';
-        arrayInput.placeholder = 'Campos inválidos';
+    //    arrayInput.placeholder = 'Campos inválidos';
         p.innerText = 'Campos inválidos';
       } else {
         arrayInput.className = '';
-        resultadoUsuario += + 1;
+        resultadoUsuario += 1;
       }
       right.appendChild(p);
       if (resultadoUsuario >= 8) {

@@ -38,12 +38,11 @@
             <input class="input-pequeno" type="text" name="lastname" placeholder="Sobrenome">
           </div>
           <div class="div-outros">
-            <input class="input-grande" type="text" name="phone_email" placeholder="Celular ou email">
-            <input class="input-grande" type="password" name="password" placeholder="Nova senha">
-            <label  class="label-birthdate" id="label-birthdate" for="birthdate">Data de nascimento <br></label>
-            <input class="input-birthdate" type="text" name="birthdate" placeholder="dd/mm/aaaa">
-            <h3 id="campos-invalidos"></h3>
-            <label class="label-gender" id="label-gender" for="gender">Gênero</label>
+            <input class="input-grande" type="text" name="phone_email" placeholder="Celular ou email" required>
+            <input class="input-grande" type="password" name="password" placeholder="Nova senha" required>
+            <label  class="label-birthdate" id="label-birthdate" for="birthdate" required>Data de nascimento <br></label>
+            <input class="input-birthdate" type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
+            <label class="label-gender" id="label-gender" for="gender" required>Gênero</label>
             <div class="gender-conteiner">
               <div>
                 <input class="gender" type="radio" name="Feminino" id="feminino" value="Feminino">

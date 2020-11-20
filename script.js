@@ -21,7 +21,7 @@ function radioBtnValue() {
   return '';
 }
 
-function formValidation(event) {
+function inputValues() {
   const formInputs = {
     firstName: document.querySelector('.first-name').value,
     lastName: document.querySelector('.name input + input').value,
@@ -30,6 +30,35 @@ function formValidation(event) {
     birthdate: document.querySelector('#birthdate').value,
     gender: radioBtnValue(),
   };
+
+  return formInputs;
+}
+
+function welcome() {
+  const formInputs = inputValues();
+
+  const rightSection = document.querySelector('.right-content');
+  rightSection.innerHTML = '';
+
+  const fullName = document.createElement('h1');
+  fullName.innerHTML = `Olá, ${formInputs.firstName} ${formInputs.lastName}`;
+  rightSection.appendChild(fullName);
+
+  const emailTelefone = document.createElement('p');
+  emailTelefone.innerHTML = formInputs.phoneEmail;
+  rightSection.appendChild(emailTelefone);
+
+  const nascimento = document.createElement('p');
+  nascimento.innerHTML = formInputs.birthdate;
+  rightSection.appendChild(nascimento);
+
+  const genero = document.createElement('p');
+  genero.innerHTML = formInputs.gender;
+  rightSection.appendChild(genero);
+}
+
+function formValidation(event) {
+  const formInputs = inputValues();
 
   const span = document.querySelector('.form-span');
 
@@ -41,6 +70,28 @@ function formValidation(event) {
       span.style.display = 'block';
     }
   });
+
+  welcome();
 }
 
 btnRegister.addEventListener('click', formValidation);
+
+const btnPersonalizado = document.querySelector('#other');
+
+function genderCustomOn() {
+  const genderInput = document.querySelector('#gender-custom');
+  genderInput.style.display = 'block';
+}
+
+btnPersonalizado.addEventListener('click', genderCustomOn);
+
+const btnGenderMale = document.querySelector('#male');
+const btnGenderFemale = document.querySelector('#female');
+
+function genderCustomOff() {
+  const genderInput = document.querySelector('#gender-custom');
+  genderInput.style.display = 'none';
+}
+
+btnGenderMale.addEventListener('click', genderCustomOff);
+btnGenderFemale.addEventListener('click', genderCustomOff);

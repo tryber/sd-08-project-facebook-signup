@@ -46,7 +46,7 @@ main {
   font-size: 18px;
 }
 
-.right-content form label {
+.right-content form > label {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
@@ -116,8 +116,15 @@ body {
 .gender {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8px;
 }
 
 .gender-input {
   display: none;
+}
+
+.gender div {
+  display: flex;
+  flex-direction: column;
 }

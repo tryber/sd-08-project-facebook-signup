@@ -1,5 +1,7 @@
-const submit = document.getElementById('button-login');
-function entrar() {
-  alert('Digite seu Email ou telefone');
+function alertLogin() {
+  const buttonForm = document.querySelector('#button-login');
+  const loginInput = document.querySelector('#user-email-phone');
+  buttonForm.addEventListener('click', function () {
+    alert(loginInput.value);
+  });
 }
-submit.addEventListener('click', entrar());

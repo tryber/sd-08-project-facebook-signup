@@ -7,31 +7,29 @@ function alertBotao() {
 botaoLogin.addEventListener('click', alertBotao);
 
 const botaoEnviar = document.querySelector('#facebook-register');
-
-botaoEnviar.addEventListener('click', function (event) {
+const divVazia = document.getElementById('div-vazia');
+botaoEnviar.addEventListener('click', function () {
   const inputsText = document.getElementsByClassName('inputs');
-  event.preventDefault();
   for (let index = 0; index < inputsText.length; index += 1) {
     const campoInput = inputsText[index];
     if (campoInput.required) {
       if (campoInput.value === '') {
-        alert('Campo inválido');
+        divVazia.innerHTML = 'Campo inválidos';
       } else {
-        campoInput.value = '';
       }
     }
   }
 });
 
-const botaoPer = document.querySelector('.botaopersonalizado');
+const botaoPer = document.querySelector('#botaopersonalizado');
 const radioPerso = document.getElementsByClassName('radioperso');
 
 for (let index = 0; index < radioPerso.length; index += 1) {
   radioPerso[index].addEventListener('click', function () {
     if (radioPerso[2].checked === true) {
-      botaoPer.style.display = 'block';
+      botaoPer.innerHTML = '<input type="text" name="gender-custom" placeholder="Gênero (opcional)">';
     } else {
-      botaoPer.style.display = 'none';
+      botaoPer.innerHTML = '';
     }
   });
 }

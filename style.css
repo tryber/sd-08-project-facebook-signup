@@ -34,6 +34,10 @@ body {
   width: 150px;
 }
 
+.flex-end {
+  align-self: flex-end;
+}
+
 .form-group label {
   font-weight: 600;
   padding-bottom: 5px;

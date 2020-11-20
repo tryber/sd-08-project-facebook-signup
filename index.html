@@ -40,10 +40,8 @@
             <input type="text" name="firstname" id="first-name" placeholder="Nome" required>
             <input type="text" name="lastname" id="last-name" placeholder="Sobrenome" required>
           </div>
-          <div class="email-content">
-            <input type="text" name="phone_email" placeholder="Celular ou email">
-            <input type="password" name="password" placeholder="Nova senha">
-          </div>
+          <input type="text" name="phone_email" id="email" placeholder="Celular ou email" required>
+          <input type="password" name="password" placeholder="Nova senha" required>
           <div class="birthdate-content">
             <label for="birth-date" id="label-birthdate">Data de nascimento</label>
             <input type="text" name="birthdate" id="birth-date" placeholder="dd/mm/aaaa" required>
@@ -51,14 +49,14 @@
           </div>
           <label for="" id="label-gender">Gênero</label>
           <div class="gender-content">
-            <input type="radio" name="gender" value="Feminino" checked>Feminino <input type="radio" name="gender"
-              value="Masculino">Masculino <input type="radio" name="gender" id="btn-personalizado"
-              value="Personalizado">Personalizado </div>
+            <input type="radio" name="gender" id="btn-feminino" value="Feminino" checked>Feminino
+            <input type="radio" name="gender" id="btn-masculino" value="Masculino">Masculino
+            <input type="radio" name="gender" id="btn-personalizado" value="Personalizado">Personalizado
+          </div>
           <button type="submit" id='facebook-register'>Cadastre-se</button>
         </form>
       </section>
     </main>
     <script src="script.js"></script>
   </body>
-
 </html>

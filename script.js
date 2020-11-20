@@ -13,7 +13,7 @@ function verificaInputTexto() {
       const camposInvalidos = document.createElement('p');
       camposInvalidos.innerHTML = 'Campos inválidos';
       inputTexto.appendChild(camposInvalidos);
-      break; 
+      break;
     }
   }
 }

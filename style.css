@@ -65,3 +65,7 @@ body {
 .gender-container input:nth-child( 3 ) {
   width: 10px;
 }
+
+.genderOpt{
+  margin-right: 40px;
+}

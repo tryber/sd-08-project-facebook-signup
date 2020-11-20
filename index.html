@@ -34,19 +34,19 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <div class="quick-easy"> É rápido e fácil. </div>
-        <form action="" method="GET">
+        <form id= "form-cadastro" action="" method="GET">
           <div class="flex-form">
-            <input type="text" name="firstname" placeholder="Nome">
-            <input type="text" name="lastname" placeholder="Sobrenome">
+            <input type="text" name="firstname" placeholder="Nome" id="name">
+            <input type="text" name="lastname" placeholder="Sobrenome" id="last-name">
           </div>
           <div class="flex-column">
-            <input type="text" name="phone_email" placeholder="Celular ou email">
-            <input type="password" name="password" placeholder="Nova senha">
+            <input type="text" name="phone_email" placeholder="Celular ou email" id="phone">
+            <input type="password" name="password" placeholder="Nova senha" id="password">
             <label for="" id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate">
             <label for="" id="label-gender">Gênero</label>
             <div class="gender">
-              <input type="radio" name="gender" id="fem" value="Feminino">
+              <input type="radio" name="gender" id="fem" value="Feminino" checked>
               <label for="fem">Feminino</label>
               <input type="radio" name="gender" id="masc" value="Masculino">
               <label for="masc">Masculino</label>

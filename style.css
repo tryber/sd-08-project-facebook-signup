@@ -15,8 +15,8 @@ body {
 }
 
 .facebook-login {
-  display: flex;
   align-self: center;
+  display: flex;
 }
 
 .form-group {

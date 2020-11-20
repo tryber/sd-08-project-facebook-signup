@@ -35,10 +35,9 @@ function handleFormMessage() {
     if (!InputAll[index].value) {
       Forms.innerHTML = 'Campos inválidos';
       break;
-    } else if (validateInputElement(InputAll[index])) {
-      continue;
+    } else if (!validateInputElement(InputAll[index])) {
+      Forms.innerHTML += `${InputAll[index].value} `;
     }
-    Forms.innerHTML += `${InputAll[index].value} `;
   }
 }
 

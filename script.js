@@ -1,11 +1,13 @@
 
 const btnLogin = document.querySelector('#button-login');
 
-btnLogin.addEventListener('click', function () {
+function login() {
   const userEmailPhone = document.querySelector('#user-email-phone').value;
 
   alert(userEmailPhone);
-});
+}
+
+btnLogin.addEventListener('click', login);
 
 const btnRegister = document.querySelector('#facebook-register');
 

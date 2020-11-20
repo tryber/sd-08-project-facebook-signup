@@ -26,10 +26,10 @@ function cadastrar() {
         p.innerText = 'Campos inválidos';
       } else {
         arrayInput.className = '';
-        resultadoUsuario = resultadoUsuario + 1;
+        resultadoUsuario += + 1;
       }
       right.appendChild(p);
-      if (resultadoUsuario >= 8){
+      if (resultadoUsuario >= 8) {
         right.innerHTML = `<p>Olá, ${nome} ${sobrenome}</p> <p>Email: ${email}</p> <p>Data de Nascimento: ${data}</p> <p>Gênero: ${genero}</p>`;
       }
     }

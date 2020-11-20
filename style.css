@@ -46,8 +46,8 @@ body {
 
 .nome input {
   float: left;
-  width: 120px;
   margin-right: 10px;
+  width: 120px;
 }
 
 .custom label {

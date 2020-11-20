@@ -21,7 +21,7 @@ body {
 }
 
 .main-content {
-  background-color: #f0f2f5 ;
+  background-color: #f0f2f5;
   display: flex;
   height: 400px;
   justify-content: center;
@@ -29,8 +29,8 @@ body {
 
 .right-content {
   display: inline-flex;
-  float: left; 
-  width: 300px;  
+  float: left;
+  width: 300px;
 }
 
 .left-content {
@@ -46,7 +46,7 @@ body {
 .lastName {
   display: inline-flex;
   float: right;
-  max-width: 46%; 
+  max-width: 46%;
 }
 
 .borderStyle {

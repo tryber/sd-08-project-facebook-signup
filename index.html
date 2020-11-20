@@ -39,8 +39,8 @@
 		</div>
 		<input type="text" placeholder="Celular ou email" title="Campos inválidos" required name="phone_email">
 		<input type="password" placeholder="Nova senha" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campo inválido')" name="password">
-		<label for="bday" placeholder="dd/mm/aaaa" name="birthdate" id="label-birthdate">Data de nascimento</label>
-			<input type="text" placeholder="dd/mm/aaaa" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campo inválido')" id="bday">
+		<label for="bday" id="label-birthdate">Data de nascimento</label>
+			<input type="text" name="birthdate" placeholder="dd/mm/aaaa" title="Campos inválidos" required oninvalid="this.setCustomValidity('Campo inválido')" id="bday">
 		<label id="label-gender">Gênero</label>
 			<div class="radios">
 			<input type="radio" name="gender" value="Feminino" required oninvalid="this.setCustomValidity('Campo inválido')" id="Feminino"><label for="Feminino">Feminino</label>

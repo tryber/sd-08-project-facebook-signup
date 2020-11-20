@@ -79,13 +79,12 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 80px;
 }
 
 .left-content {
-  margin-right: 300px;
-  padding-left: 30px;
-  width: 300px;
+  width: 500px;
 }
 
 .right-content {

@@ -12,7 +12,14 @@ enterBtn.addEventListener('click', (event) => {
 
 customGender.addEventListener('change', () => {
   const genderInput = document.querySelector('.gender-custom');
-  genderInput.style.display = 'block';
+  const customInput = document.createElement('input');
+  const formGroup = document.querySelector('#facebook-register').parentNode;
+  customInput.type = 'text';
+  customInput.name = 'gender-custom';
+  customInput.className = 'gender-custom';
+  customInput.placeholder = 'Gênero (opcional)';
+  formGroup.insertBefore(customInput, formGroup.lastElementChild)
+  console.log(formGroup.lastChild)
 });
 
 
@@ -24,3 +31,6 @@ registerBtn.addEventListener('click', (event) => {
     }
   }
 });
+
+
+{/* <input type="text" name="gender-custom" class="gender-custom" placeholder="Gênero (opcional)"><br></br> */}

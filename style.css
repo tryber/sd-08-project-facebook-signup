@@ -47,6 +47,7 @@
   flex-flow: row nowrap;
 }
 
-.gender-custom {
-  display: none;
+.right-content  div  button[type='submit'] {
+  display: block;
+  margin-top: 5px;
 }

@@ -1,0 +1,130 @@
+.first-name {
+  margin-right: 8px;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.left-content {
+  font-size: 25px;
+  text-align: left;
+  width: 800px;
+}
+
+.left-content p {
+  color: rgb(14, 56, 95);
+  width: 70%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  min-width: 80%;
+}
+
+.right-content {
+  text-align: left;
+  width: 300px;
+}
+
+.right-content > input::placeholder {
+  color: gray;
+  font-size: 18px;
+}
+
+.right-content form > label {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.right-content form button {
+  background-color: rgb(90, 144, 71);
+  border-radius: 6px;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 10px 40px;
+}
+
+header {
+  background-color: rgb(66, 103, 178);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  min-width: 80%;
+}
+
+.facebook-login {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.facebook-logo {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
+  border: 1px solid rgb(199, 207, 222);
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding: 10px;
+  width: 100%;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+
+.form-span {
+  color: red;
+  display: none;
+  margin: 5px 35px;
+}
+
+.gender {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.gender div {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-input {
+  display: none;
+}

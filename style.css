@@ -49,8 +49,8 @@ body , header , img {
 
 .preview-row {
   display: flex;
-  padding: 5px;
   margin-bottom: 10px;
+  padding: 5px;
 }
 
 .preview-label {

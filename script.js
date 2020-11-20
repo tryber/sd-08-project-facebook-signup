@@ -38,12 +38,12 @@ buttonCadastro.addEventListener('click', function (event) {
     }
   }
 
-  let formFields = new FormData(signUpForm);
-  
+  const formFields = new FormData(signUpForm);
+
   const signUpResult = document.createElement('div');
   signUpResult.classList.add('right-content');
 
-  const previewName = document.createElement("p");
+  const previewName = document.createElement('p');
   const firstname = formFields.get('firstname');
   const lastname = formFields.get('lastname');
   previewName.textContent = `Olá, ${firstname} ${lastname}`;

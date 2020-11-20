@@ -23,7 +23,6 @@ btnCadastreSe.addEventListener('click', function (event) {
     }
   }
   if (erros !== '') {
-    // alert('Campos inválidos');
     const pInvalid = document.createElement('p');
     pInvalid.innerHTML = 'Campos inválidos';
     document.querySelectorAll('form')[1].appendChild(pInvalid);

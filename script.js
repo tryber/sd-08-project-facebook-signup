@@ -7,7 +7,7 @@ entrar.addEventListener('click', alerta);
 
 const cadastre = document.getElementById('facebook-register');
 
-const form = document.querySelectorAll('.form input div');
+const form = document.querySelectorAll('.form input, .form div');
 
 cadastre.addEventListener('click', function () {
   for (let index = 0; index < form.length; index += 1) {
@@ -16,6 +16,7 @@ cadastre.addEventListener('click', function () {
       break;
     } else {
       alert('Cadastro efetuado');
+      break;
     }
   }
 });

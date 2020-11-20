@@ -76,19 +76,19 @@ function changeRightContentElementDisplay() {
   contentBeforeAc.parentNode.removeChild(contentBeforeAc);
 }
 
-function clearForm() {
-  if (document.querySelector('#invalid-field') === null) {
-    createInvalidFieldMensage();
-  }
-}
-
 function createInvalidFieldMensage() {
-  let form = document.querySelector('#ac-form');
-  let invalidField = document.createElement('p');
+  const form = document.querySelector('#ac-form');
+  const invalidField = document.createElement('p');
 
   invalidField.innerHTML = 'Campos inválidos';
   invalidField.id = 'invalid-field';
   form.appendChild(invalidField);
+}
+
+function clearForm() {
+  if (document.querySelector('#invalid-field') === null) {
+    createInvalidFieldMensage();
+  }
 }
 
 function isEverythingFilled() {
@@ -107,9 +107,7 @@ function isEverythingFilled() {
       isntFilledCount += 1;
     }
     if (isntFilledCount !== 0) {
-
       clearForm();
-
     } else {
       fillAfterAcContent();
       changeRightContentElementDisplay();

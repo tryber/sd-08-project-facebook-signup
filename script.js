@@ -9,6 +9,6 @@ document.getElementById('facebook-register').addEventListener('click', () => {
   const senha = document.getElementById('senha').value;
   const dataNascimento = document.getElementById('birthdate').value;
   if (!nome || !senha || !sobrenome || !celMail || !dataNascimento) {
-    document.getElementById('camposInvalidos').innerText = "Campos inválidos";
+    document.getElementById('camposInvalidos').innerText = 'Campos inválidos';
   }
 });

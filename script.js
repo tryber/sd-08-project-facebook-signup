@@ -23,8 +23,8 @@ customGender.addEventListener('change', () => {
 registerBtn.addEventListener('click', (event) => {
   const formInputs = document.querySelectorAll('.signup-input');
   const message = document.createElement('p');
-  const signupForm = document.getElementById("form-signup")
-  message.innerText = "Campos inválidos"
+  const signupForm = document.getElementById('form-signup');
+  message.innerText = 'Campos inválidos';
   for (let index = 0; index < formInputs.length; index += 1) {
     if (formInputs[index].innerText === '') {
       event.preventDefault();

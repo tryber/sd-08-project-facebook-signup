@@ -27,3 +27,19 @@ function validarCadastro() {
   });
 }
 validarCadastro();
+
+function criarCampoGenero() {
+  if (!document.querySelector('.gender-custom')) {
+    const inputParaGenero = document.createElement('input');
+    const labelBirth = document.getElementById('label-birthdate');
+    inputParaGenero.type = 'text';
+    inputParaGenero.name = 'gender-custom';
+    inputParaGenero.placeholder = 'Gênero (opcional)';
+    inputParaGenero.className = 'gender-custom';
+
+    formContent.insertBefore(inputParaGenero, labelBirth);
+  }
+}
+
+const btnGeneroPersonalizado = document.getElementById('personalizado');
+btnGeneroPersonalizado.addEventListener('click', criarCampoGenero);

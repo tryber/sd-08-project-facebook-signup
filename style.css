@@ -57,3 +57,8 @@ header {
   display: flex;
   justify-content: space-around;
 }
+
+.gender-custom {
+  display: block;
+  width: 100%;
+}

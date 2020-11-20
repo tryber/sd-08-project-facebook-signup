@@ -42,13 +42,13 @@ html , body {
 }
 
 .left-content {
-  width: 800px;
   justify-content: flex-start;
+  width: 800px;
 }
 
 .right-content {
-  width: 300px;
   justify-content: flex-end;
+  width: 300px;
 }
 
 .right-content input {

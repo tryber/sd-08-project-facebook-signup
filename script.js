@@ -67,3 +67,4 @@ genderOption.addEventListener('click', function () {
         genderOption.appendChild(inputPersGender);
     }
 });
+

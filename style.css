@@ -59,7 +59,6 @@ body {
 
 .facebook-login {
   display: flex;
-  margin-right: 10px;
 }
 
 .form-control {
@@ -74,6 +73,7 @@ body {
   border-radius: 3px;
   color: white;
   font-weight: 600;
+  margin-right: 10px;
   padding: 5px;
 }
 

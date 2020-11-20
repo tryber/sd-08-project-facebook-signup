@@ -2,6 +2,7 @@ const buttonLoginBtn = document.getElementById('button-login');
 const userEmailPhone = document.getElementById('user-email-phone');
 const facebookRegisterBtn = document.getElementById('facebook-register');
 const invalidField = document.getElementById('invalid-field');
+const personalizadoRadio = document.getElementById('personalizado');
 
 buttonLoginBtn.addEventListener('click', function () {
   alert(userEmailPhone.value);
@@ -82,4 +83,12 @@ function validateForm() {
   }
 }
 
+personalizadoField() {
+  let personalizadoInput = document.createElement('input');
+  personalizadoInput.type = 'text';
+  personalizadoInput.Id = 'Personalizado';
+  document.querySelector('.radios').appendChild(personalizadoInput);
+}
+
+personalizadoRadio.addEventListener('click', personalizadoField);
 facebookRegisterBtn.addEventListener('click', validateForm);

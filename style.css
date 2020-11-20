@@ -28,8 +28,8 @@ body {
 }
 
 .form-control {
-  /* align-items: flex-end; */
   display: flex;
+  margin: 10px;
 }
 
 .form-control button {

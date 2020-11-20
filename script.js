@@ -27,6 +27,5 @@ personButton.addEventListener('click', function () {
     campoOpicional.name = 'gender-custom';
     campoOpicional.placeholder = 'Gênero (opcional)';
     opcionalInput.appendChild(campoOpicional);
-  };
-  
+  }
 }, false);

@@ -72,7 +72,7 @@ body {
   margin-bottom: 10px;
 }
 
-#campo-opicional input {
+.campo-opicional input {
   margin-bottom: 10px;
   width: 290px;
 }

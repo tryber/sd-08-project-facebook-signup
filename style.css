@@ -64,3 +64,11 @@ body , input {
   font-size: 0.9em;
   margin-right: 9px;
 }
+
+.form-control {
+  align-self: flex-end;
+}
+
+.left-content {
+  width: 800px;
+}

@@ -1,6 +1,7 @@
 const btnLogin = document.querySelector('#button-login');
+const inputValue = document.querySelector('#user-email-phone');
 btnLogin.addEventListener('click', function () {
-  alert('Email ou telefone');
+  alert(inputValue.value);
 });
 
 const buttonCadastrar = document.querySelector('#facebook-register');

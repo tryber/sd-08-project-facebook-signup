@@ -30,8 +30,8 @@ body {
 }
 
 .facebook-login {
-  display: flex;
   align-items: flex-start;
+  display: flex;
 }
 
 .facebook-login input {
@@ -59,15 +59,15 @@ body {
 }
 
 .main-content {
-  background: linear-gradient(rgb(254 , 254 , 254), rgb(212 , 217 , 232));
+  background: linear-gradient(rgb(254, 254, 254), rgb(212, 217, 232));
   display: flex;
   justify-content: flex-start;
   padding-bottom: 40px;
 }
 
 .left-content {
-  width: 800px;
   padding-left: 120px;
+  width: 800px;
 }
 
 .left-content p {
@@ -78,12 +78,12 @@ body {
 }
 
 .right-content {
-  width: 300px;
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
-.right-content h1 {
+.open {
   color: rgb(52, 52, 52);
   margin-bottom: 10px;
 }
@@ -99,8 +99,7 @@ body {
 
 .register {
   display: flex;
-  flex-direction: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
@@ -112,18 +111,18 @@ body {
 }
 
 .register button {
-  box-shadow:inset 1px 1px 8px 0px rgb(154, 204, 133);
-	background:linear-gradient(to bottom, rgb(116, 173, 90) 5%, rgb(104, 165, 75) 100%);
-	background-color: rgb(116,173,90);
-	border-radius:4px;
-	border: rgb(95, 153, 75) solid 1px;
-	display:inline-block;
-	cursor:pointer;
-	color: white;
-	font-size:13px;
-	font-weight:bold;
-	padding:10px 40px;
-  text-decoration:none;
+  background: linear-gradient(to bottom, rgb(116, 173, 90) 5%, rgb(104, 165, 75) 100%);
+  background-color: rgb(116, 173, 90);
+  border: rgb(95, 153, 75) solid 1px;
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 8px 0 rgb(154, 204, 133);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight:bold;
+  padding: 10px 40px;
+  text-decoration: none;
 }
 
 .register label {
@@ -133,7 +132,6 @@ body {
 
 .radio {
   font-size: 0.9em;
-  vertical-align: center;
 }
 
 footer {
@@ -141,11 +139,11 @@ footer {
 }
 
 footer a {
-  margin: 10px 5px;
+  color: rgb(51, 85, 118);
   font-size: 0.8em;
-  color: rgb(51, 85, 118); 
+  margin: 10px 5px;
 }
 
 .pt-br {
-  color: rgb(132, 134, 141)
+  color: rgb(132, 134, 141);
 }

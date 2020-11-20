@@ -33,11 +33,6 @@ header {
   margin-right: 10px;
 }
 
-.input-password {
-  display: flex;
-  flex-direction: column;
-}
-
 .fonte-padrao {
   color: white;
   font-weight: 600;

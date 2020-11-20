@@ -16,15 +16,17 @@ submitButton.addEventListener('click', function (event) {
     if (formValidation[formFields[i]].value === '') {
       formValidation[formFields[i]].value = 'Campos inválidos';
       event.preventDefault();
-      break;
     }
   }
 }, false);
 
 personButton.addEventListener('click', function () {
-  const campoOpicional = document.createElement('input');
-  campoOpicional.type = 'text';
-  campoOpicional.name = 'gender-custom';
-  campoOpicional.placeholder = 'Gênero (opcional)';
-  opcionalInput.appendChild(campoOpicional);
+  if (opcionalInput.hasChildNodes() === false) {
+    const campoOpicional = document.createElement('input');
+    campoOpicional.type = 'text';
+    campoOpicional.name = 'gender-custom';
+    campoOpicional.placeholder = 'Gênero (opcional)';
+    opcionalInput.appendChild(campoOpicional);
+  };
+  
 }, false);

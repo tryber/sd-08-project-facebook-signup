@@ -69,5 +69,5 @@ inputPersGender.type = 'text';
 inputPersGender.name = 'gender-custom';
 inputPersGender.placeholder = 'Gênero (opcional)';
 genderOption.addEventListener('click', function () {
-  document.getElementById('label-gender').appendChild(inputPersGender);
+  document.getElementById('btn-radios').appendChild(inputPersGender);
 });

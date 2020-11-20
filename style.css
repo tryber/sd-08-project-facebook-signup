@@ -90,6 +90,6 @@ body {
 }
 
 input:focus {
-  outline: none;
   border: 1px solid #b8b8b8;
+  outline: none;
 }

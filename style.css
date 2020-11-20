@@ -15,6 +15,7 @@ body {
 }
 
 .facebook-login {
+  align-self: center;
   display: flex;
 }
 

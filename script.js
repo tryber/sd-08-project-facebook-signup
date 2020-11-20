@@ -12,8 +12,8 @@ function login() {
   });
 }
 
-const reg = (elements, el) => (elements[el].value === '' && elements[el].type !== 'submit') &&
-    (elements[el].style.display === 'block');
+const reg = (elements, el) => (elements[el].value === '' && elements[el].type !== 'submit');
+
 
 const validForm = (elements) => {
   for (let el = 0; el < elements.length; el += 1) {
@@ -30,7 +30,7 @@ function chekedInput() {
   radioBtn[0].addEventListener('click', (event) => {
     const setInput = document.getElementsByClassName('genderOpc');
     if (event.target.id === 'personalizado') {
-      setInput[0].style.display = 'block';
+      setInput[0].style.display = 'flex';
     }
     if (event.target.id === 'masculino' || event.target.id === 'feminino') {
       setInput[0].style.display = 'none';

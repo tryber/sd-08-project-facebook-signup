@@ -120,11 +120,11 @@ body {
   margin-top: 8px;
 }
 
-.gender-input {
-  display: none;
-}
-
 .gender div {
   display: flex;
   flex-direction: column;
+}
+
+.gender-input {
+  display: none;
 }

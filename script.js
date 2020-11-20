@@ -75,7 +75,6 @@ function formValidation(event) {
   if (validation) {
     return welcome();
   }
-
   return '';
 }
 

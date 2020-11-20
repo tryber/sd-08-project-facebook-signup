@@ -52,7 +52,7 @@ header {
 
 .main-content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin: auto;
   width: 80%;
 }

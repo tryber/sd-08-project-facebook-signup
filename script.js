@@ -16,9 +16,9 @@ buttonEntrar.addEventListener('click', function () {
 buttonCadastro.addEventListener('click', function () {
   const mensagemErro = document.createTextNode('Campos inválidos');
   const naoSei = Object.value(variaveis);
-  for (const valor of naoSei) {
-    if (valor.value == null) {
-      rapidoFacil.appendChild(mensagemErro);
-    }
-  }
+  // for (const valor of naoSei) {
+  //   if (valor.value == null) {
+  //     rapidoFacil.appendChild(mensagemErro);
+  //   }
+  // }
 });

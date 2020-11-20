@@ -59,19 +59,24 @@ function welcome() {
 
 function formValidation(event) {
   const formInputs = inputValues();
-
   const span = document.querySelector('.form-span');
-
   const keys = Object.keys(formInputs);
+
+  let validation = true;
 
   keys.forEach(function (key) {
     if (formInputs[key] === null || formInputs[key] === '') {
       event.preventDefault();
       span.style.display = 'block';
+      validation = false;
     }
   });
 
-  welcome();
+  if (validation) {
+    return welcome();
+  }
+
+  return '';
 }
 
 btnRegister.addEventListener('click', formValidation);

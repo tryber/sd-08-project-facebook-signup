@@ -23,7 +23,7 @@ function validaCadastro() {
 
 btnCadastre.addEventListener('click', validaCadastro);
 
-function addCustomField () {
+function addCustomField() {
   if (rbPersonalizado.checked) {
     divGenero.style.display = 'flex';
   }

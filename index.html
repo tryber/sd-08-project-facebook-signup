@@ -42,22 +42,23 @@
         <p class="quick-easy">É rápido e fácil.</p>
         <form action="">
           <div class="flex">
-            <input type="text" name="firstname" placeholder="Nome" />
-            <input type="text" name="lastname" placeholder="Sobrenome" />
+            <input id="nome" type="text" name="firstname" placeholder="Nome" />
+            <input id="sobrenome" type="text" name="lastname" placeholder="Sobrenome" />
           </div>
           <input
+            id="cel_mail"
             type="text"
             name="phone_email"
             placeholder="Celular ou email"
           />
-          <input type="password" name="password" placeholder="Nova senha" />
+          <input id="senha" type="password" name="password" placeholder="Nova senha" />
           <div class="flex column">
-            <label id="label-birthdate" for="">Data de nascimento</label>
-            <input name="birthdate" type="text" placeholder="dd/mm/aaaa" />
+            <label id="label-birthdate">Data de nascimento</label>
+            <input id="birthdate" name="birthdate" type="text" placeholder="dd/mm/aaaa" />
           </div>
           <label id="label-gender" for="">Gênero</label>
           <div class="flex">
-            <input name="gender" type="radio" value="Feminino" />
+            <input name="gender" type="radio" value="Feminino" checked/>
             <label for="">Feminino</label>
             <input name="gender" type="radio" value="Masculino" />
             <label for="">Masculino</label>

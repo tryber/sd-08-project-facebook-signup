@@ -1,12 +1,12 @@
 .facebook-login {
   align-content: center;
   display: flex;
-  justify-content: flex-end;
+  justify-self: flex-end;
 }
 
 .facebook-logo {
   display: flex;
-  justify-content: flex-start;
+  justify-self: flex-start;
 }
 
 .first {

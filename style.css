@@ -1,8 +1,87 @@
 body {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: #ffffff;
 }
 
+/*  */
+
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.facebook-login {
+  display: flex;
+  flex-direction: row;
+}
+
+.login-input {
+  border: 1px solid rgba(0, 0, 0, 0.794);
+  width: 120px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 5px;
+}
+
+.login-item {
+  margin-bottom: 2px;
+}
+
+.form-group p {
+  margin: 0;
+}
+
+.form-control {
+  align-self: center;
+}
+
+.form-control p {
+  margin: 0;
+}
+
+.forgot-account {
+  color: #ffffff93;
+  font-size: small;
+  font-size: 1em;
+}
+
+.btn-main {
+  color: #ffffffea;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  background-color: #3b6aad;
+  padding: 2px 2px;
+  width: 40px;
+  height: 20px;
+  font-size: 0.9em;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  justify-content: space-around;
+  width: 300px;
+}
+
+.nome {
+  display: flex;
 }

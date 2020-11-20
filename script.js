@@ -15,7 +15,7 @@ function verifyFilling(e) {
   for (let index = 0; index < verify.length; index += 1) {
     if (verify[index].value === '') span.textContent = 'Campos inválidos';
   }
-  if(!(radio[0].checked || radio[1].checked || radio[2].checked)) {
+  if (!(radio[0].checked || radio[1].checked || radio[2].checked)) {
     span.textContent = 'Campos inválidos';
   }
   e.preventDefault();

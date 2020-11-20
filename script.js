@@ -72,12 +72,10 @@ function validateForm() {
   return true;
 }
 
-var validateForm = validateForm;
-
 window.onload = function () {
   alertPhoneOrMail();
   addCustomGenderInput();
   removeCustomGenderInput();
   validateForm();
   p.innerHTML = '';
-}
+};

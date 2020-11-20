@@ -52,7 +52,7 @@ function validateForm(event) {
   }
 
   if (notValid) {
-    alert('Campos inválidos');
+    document.getElementById('alerta').innerHTML = 'Campos inválidos';
   } else {
     exibirTexto();
   }

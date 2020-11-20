@@ -13,14 +13,12 @@ buttonEntrar.addEventListener('click', function () {
   alert(emailOuTelefone.value);
 });
 
-buttonCadastro.addEventListener('click', function() {
+buttonCadastro.addEventListener('click', function () {
   const mensagemErro = document.createTextNode('Campos inválidos');
-  for (const valores in variaveis) {
-    if (valores.value == null) {
+  const naoSei = Object.value(variaveis);
+  for (const valor of naoSei) {
+    if (valor.value == null) {
       rapidoFacil.appendChild(mensagemErro);
-      return false;
     }
   }
-  return true;
 });
-

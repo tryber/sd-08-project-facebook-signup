@@ -79,15 +79,18 @@ body {
 
 .main-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 80px;
 }
 
 .left-content {
+  align-self: flex-start;
   width: 500px;
 }
 
 .right-content {
+  align-self: flex-end;
   width: 400px;
 }
 

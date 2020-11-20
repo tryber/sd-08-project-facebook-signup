@@ -18,15 +18,15 @@ function cadastrar() {
       const arrayInput = inputs[index];
       if (arrayInput.value === '') {
         arrayInput.className = 'erro';
-        resultado += `Campos inválidos ${arrayInput.name}.\n`;    
+        resultado += `Campos inválidos ${arrayInput.name}.\n`;
       } else {
         arrayInput.className = '';
         resultadoUsuario += arrayInput.value;
       }
     }
     if (resultado !== '') {
-      alert(resultado);         
-    } else {         
+      alert(resultado);
+    } else {
       right.innerHTML = resultadoUsuario;
       form.reset();
     }

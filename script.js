@@ -22,3 +22,9 @@ for (let index = 0; index < formInputLocal.length; index += 1) {
     }
   };
 }
+
+const btnSalvar = document.getElementById('facebook-register');
+const form2Local = document.getElementsByClassName('form-group2');
+  btnSalvar.addEventListener('click', function () {
+    form2Local[0].innerHTML = 'Campos inválidos';
+});

@@ -5,7 +5,7 @@ body {
 }
 
 .top-bar {
-  background-color:#3c5a98;
+  background-color: #3c5a98;
   color: #fffffc;
   display: flex;
   justify-content: space-between;
@@ -72,8 +72,8 @@ body {
 
 .label-style {
   color: #989ca4;
-  font-weight: 800;
   font-size: 13.5px;
+  font-weight: 800;
   margin: 0 0 5px 5px;
 }
 
@@ -102,4 +102,3 @@ body {
   padding: 6px 8px;
   width: 100%;
 }
-

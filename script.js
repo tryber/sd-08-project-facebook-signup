@@ -9,13 +9,13 @@ function loginCheck() {
 loginCheck();
 const cadastro = document.getElementById('facebook-register');
 const form = document.querySelector('.form-group2');
-cadastro.addEventListener('click', function() {
-  for(let index = 0; index < form.length; index+=1) {
-    if(form[index].innerText === ''){
-      alert('Campos inválidos')
+cadastro.addEventListener('click', function () {
+  for (let index = 0; index < form.length; index += 1) {
+    if (form [index].innerText === ''){
+      alert('Campos inválidos');
       break;
-    }else{
-      alert('Cadastro efetuado')
+    } else {
+      alert('Cadastro efetuado');
     }
   }
-})
+});

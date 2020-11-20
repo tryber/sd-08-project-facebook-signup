@@ -1,4 +1,4 @@
-* {
+html , body , div , header , img , form , input , label , button {
   border: 0;
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
@@ -54,7 +54,6 @@ body {
   color: white;
   font-size: 14px;
   font-weight: 600;
-  outline: none;
   padding: 2px 8px;
 }
 
@@ -99,7 +98,7 @@ body {
   margin: 30px 15px;
 }
 
-.right-content h1 {
+h1 {
   margin: 10px 0;
 }
 

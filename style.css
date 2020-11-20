@@ -24,13 +24,13 @@
   width: 70%;
 }
 
-.main-content {
+main {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.main-content > div {
+.main-content {
   display: flex;
   flex-direction: row;
   width: 80%;

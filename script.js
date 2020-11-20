@@ -7,7 +7,7 @@ function formsAlert() {
 
 buttonLogin.addEventListener('click', formsAlert);
 
-const custom = document.querySelector('#custom');
+const custom = document.querySelector('#Personalizado');
 const inputCustom = document.querySelector('.custom');
 
 function customGender() {

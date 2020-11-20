@@ -33,6 +33,7 @@ btnSalvar.addEventListener('click', function () {
 // resolvido utilizando dados do site https://pt.stackoverflow.com/questions/65696/como-capturar-par%C3%A2metros-passados-pela-url-usando-javascript contudo, foi bem compreendido o funcionamento.
 
 function obrigado() {
+// coloca as informaçõess da url dentro de um object
   const urlData = location.search.slice(1).split('&');
   const bancoDeDados = {};
   urlData.forEach(function (parte) {
@@ -42,6 +43,7 @@ function obrigado() {
     bancoDeDados[chave] = valor;
   });
 
+// muda a classe das divs pra elas não aparecerem
   const divObg = document.getElementById('msg-obrigado');
   const divFormulario = document.getElementById('formulario');
   divObg.className = '';
@@ -73,9 +75,6 @@ function validado() {
 
 window.onload = function () {
   validado();
-  const newInput = document.createElement('input');
-  newInput.name = 'firstname';
-  form2Local[0].appendChild(newInput);
 };
 
 document.getElementById('personalizado').addEventListener('click', function () {

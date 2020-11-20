@@ -25,18 +25,16 @@ function checkRadios(flag1) {
   return (flags);
 }
 
-function isFormComplete () {
+function isFormComplete() {
   const flags = checkTexts();
   const check = checkRadios(flags);
-  if (check[0] === 1 || check[1] === 0){
+  if (check[0] === 1 || check[1] === 0) {
     return 0;
-  } else {
-    return 1;
   }
+  return 1;
 }
 
 function clickSubmit(event) {
-  
   const form = document.querySelector('.form');
   const complete = isFormComplete();
   if (complete === 0) {
@@ -48,12 +46,11 @@ function clickSubmit(event) {
     }
     event.preventDefault();
   } else {
-    sessionStorage.setItem('complete','1');
+    sessionStorage.setItem('complete', '1');
     sessionStorage.setItem('name', form.querySelector('.name-input').value);
     sessionStorage.setItem('lastName', form.querySelector('.lastname-input').value);
     sessionStorage.setItem('phoneemail', form.querySelector('.phoneemail-input').value);
     sessionStorage.setItem('birthdate', form.querySelector('.birthdate-input').value);
-
   }
 }
 document.querySelector('.facebook-register').addEventListener('click', clickSubmit);
@@ -80,14 +77,14 @@ function clearCustomGender() {
 document.querySelector('input#male').addEventListener('click', clearCustomGender);
 document.querySelector('input#female').addEventListener('click', clearCustomGender);
 
-function seeForm () {
+function seeForm() {
   const rightContent = document.querySelector('.right-content');
   rightContent.removeChild(document.querySelector('.form-container'));
   const h2 = document.createElement('h2');
   h2.innerText = 'Olá, ' + sessionStorage.getItem('name') + ' ' + sessionStorage.getItem('lastName');
   rightContent.appendChild(h2);
   const p = document.createElement('p');
-  p.innerHTML = 'Seu email ou telefone: ' + sessionStorage.getItem('phoneemail') + '<br>Data de Nascimento: ' + sessionStorage.getItem('birthdate') + '<br>Gênero: ' + sessionStorage.getItem('gender'); 
+  p.innerHTML = 'Seu email ou telefone: ' + sessionStorage.getItem('phoneemail') + '<br>Data de Nascimento: ' + sessionStorage.getItem('birthdate') + '<br>Gênero: ' + sessionStorage.getItem('gender');
   rightContent.appendChild(p);
 }
 
@@ -100,4 +97,4 @@ window.onload = function () {
   if (check === '0') {
     sessionStorage.removeItem('complete');
   }
-}
+};

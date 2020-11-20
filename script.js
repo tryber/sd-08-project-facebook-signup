@@ -1,5 +1,5 @@
 function funcaoAlert() {
-  alert(document.getElementById("user-email-phone").value);
+  alert(document.getElementById('user-email-phone').value);
 }
 
-document.getElementById("button-login").addEventListener("click", funcaoAlert);
+document.getElementById('button-login').addEventListener('click', funcaoAlert);

@@ -12,7 +12,7 @@ buttonCadastro.addEventListener('click', function (event) {
   event.preventDefault();
   const fields = document.querySelectorAll('[required]');
 
-  for (let index = 0; index < fields.length; index += 1){
+  for (let index = 0; index < fields.length; index += 1) {
     const field = fields[index];
     if (!field.checkValidity()) {
       formAlert.classList.remove('d-none');

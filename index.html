@@ -36,14 +36,14 @@
         <div class="quick-easy"> É rápido e fácil. </div>
         <form id="form-cadastro" action="" method="GET">
           <div class="flex-form">
-            <input type="text" name="firstname" placeholder="Nome" id="name">
-            <input type="text" name="lastname" placeholder="Sobrenome" id="last-name">
+            <input type="text" name="firstname" placeholder="Nome" id="name" required>
+            <input type="text" name="lastname" placeholder="Sobrenome" id="last-name" required>
           </div>
           <div class="flex-column">
-            <input type="text" name="phone_email" placeholder="Celular ou email" id="phone">
-            <input type="password" name="password" placeholder="Nova senha" id="password">
+            <input type="text" name="phone_email" placeholder="Celular ou email" id="phone" required>
+            <input type="password" name="password" placeholder="Nova senha" id="password" required>
             <label for="" id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate">
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required>
             <label for="" id="label-gender">Gênero</label>
             <div class="gender">
               <input type="radio" name="gender" id="fem" value="Feminino" checked>

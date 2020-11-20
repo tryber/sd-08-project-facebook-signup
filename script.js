@@ -14,7 +14,7 @@ loginButton.addEventListener('click', login);
 function submitForm() {
   for (let i = 0; i < signupInputs.length; i += 1) {
     if (signupInputs[i].value === '') {
-      alert('Campos inválidos');
+      signupInputs[i].setCustomValidity('Campos inválidos');
       break;
     }
   }

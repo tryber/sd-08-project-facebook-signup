@@ -44,5 +44,11 @@ body {
 
 /* wagnermor */
 .right-content {
+  display: flex;
+  flex-direction: column;
   width: 300px;
+}
+
+.first-last-name {
+  display: flex;
 }

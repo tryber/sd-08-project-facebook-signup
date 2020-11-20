@@ -19,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .form-control {
   align-self: flex-end;
 }
@@ -47,4 +48,8 @@ body {
 
 .gender {
   display: flex;
+}
+
+.custom-gender {
+  display: none;
 }

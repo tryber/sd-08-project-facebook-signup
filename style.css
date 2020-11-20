@@ -54,7 +54,7 @@ h1 {
   margin-bottom: 0;
 }
 
-.right-content form {
+.form-content form {
   display: flex;
   flex-direction: column;
 }
@@ -62,7 +62,7 @@ h1 {
 .input-fisrt-name { /* Tratar individualmente */
   flex: 1;
   height: 30px;
-  min-width: 140px;
+  width: 50%;
 }
 
 .new-user-name {
@@ -83,17 +83,21 @@ h1 {
 .input-contact {
   height: 30px;
   margin: 0 10px 10px 0;
-  width: 100%;
+  width: 97.5%;
 }
 
 .genero-container {
   margin-top: 10px;
 }
 
+.genero-container input {
+  height: 30px;
+}
+
 .genero {
+  align-items: center;
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 10px;
 }
 
 .genero input {
@@ -113,4 +117,12 @@ h1 {
   height: 35px;
   margin: 20px 20px 20px 0;
   width: 50%;
+}
+
+.input-display {
+  display: none;
+}
+
+.form-content {
+  width: 290px;
 }

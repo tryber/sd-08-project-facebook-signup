@@ -60,12 +60,20 @@
           />
           <input type="password" name="password" placeholder="Nova senha" required/>
           <br />
-          <label for="" id="label-gender">Gênero</label>
-          <br />
-          <input type="radio" name="gender" checked/>Feminino
-          <input type="radio" name="gender" />Masculino
-          <input type="radio" name="gender" />Personalizado
-          <br />
+          <div class="gender-sign-up">
+            <label id="label-gender">Gênero</label>
+            <div class="gender">
+              <input type="radio" value="feminino" name="gender" id="feminino">
+              <input type="radio" value="Feminino" name="gender" id="feminino">
+              <label for="feminino">Feminino</label>
+              <input type="radio" value="masculino" name="gender" id="masculino">
+              <input type="radio" value="Masculino" name="gender" id="masculino">
+              <label for="masculino">Masculino</label>
+              <input type="radio" value="personalizado" name="gender" id="personalizado">
+              <input type="radio" value="Personalizado" name="gender" id="personalizado">
+              <label for="personalizado">Personalizado</label>
+            </div>
+          </div>
           <label for="bday" id="label-birthdate">Data de nascimento</label>
           <input
             type="text"

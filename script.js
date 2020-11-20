@@ -5,6 +5,7 @@ btnLogin.addEventListener('click', () => {
 });
 
 const inputTexto = document.getElementById('formulario-abre-conta');
+const btnCadastro = document.getElementById('facebook-register');
 
 function verificaInputTexto() {
   for (let index = 0; index < 4; index += 1) {
@@ -12,10 +13,12 @@ function verificaInputTexto() {
       const camposInvalidos = document.createElement('p');
       camposInvalidos.innerHTML = 'Campos inválidos';
       inputTexto.appendChild(camposInvalidos);
-      break;
+      break; 
     }
   }
 }
+
+btnCadastro.addEventListener('click', verificaInputTexto);
 
 function radioButtons() {
   const btnPresonalizado = document.getElementById('personalizado');
@@ -35,6 +38,3 @@ function radioButtons() {
   });
 }
 radioButtons();
-
-const btnCadastro = document.getElementById('facebook-register');
-btnCadastro.addEventListener('click', verificaInputTexto);

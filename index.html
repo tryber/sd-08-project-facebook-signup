@@ -36,28 +36,29 @@
         <h2 class="quick-easy">É rápido e fácil.</h2>
         <form action="" method="get" id="register-form">
           <div>
-            <input type="text" name="firstname" id="" placeholder="Nome">
-            <input type="text" name="lastname" id="" placeholder="Sobrenome">
+            <input type="text" name="firstname" id="" placeholder="Nome" required>
+            <input type="text" name="lastname" id="" placeholder="Sobrenome" required>
           </div>
-          <input type="text" name="phone_email" placeholder="Celular ou email">
-          <input type="password" name="password" id="" placeholder="Nova senha">
+          <input type="text" name="phone_email" placeholder="Celular ou email" required>
+          <input type="password" name="password" id="" placeholder="Nova senha" required>
           <br>
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
           <br>
-          <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+          <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" required>
           <br>
           <label for="fem" id="label-gender">Gênero</label>
           <br>
           <div>
-            <input type="radio" name="gender" id="fem" value="Feminino" checked>
+            <input type="radio" name="gender" id="fem" value="Feminino" required>
             <label for="fem">Feminino</label>
-            <input type="radio" name="gender" id="mas" value="Masculino">
+            <input type="radio" name="gender" id="mas" value="Masculino" required>
             <label for="mas">Masculino</label>
-            <input type="radio" name="gender" id="per" value="Personalizado">
+            <input type="radio" name="gender" id="per" value="Personalizado" required>
             <label for="per">Personalizado</label>
-            <input type="text" name="gender-custom" id="gender-custom"
-            placeholder="Gênero (opcional)">
           </div>
+          <input type="text" name="gender-custom" id="gender-custom"
+            placeholder="Gênero (opcional)">
+          <br>
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </div>

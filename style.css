@@ -32,18 +32,30 @@ body , input {
   flex-wrap: wrap;
 }
 
+.full-name-wrapper , .birthdate-wrapper {
+  margin: 0 auto;
+  width: 95%;
+}
+
 .full-name-wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 95%;
 }
 
 .full-name-wrapper input {
   width: 47%;
 }
 
-.singup > input:nth-child( 2 ) , .singup > input:nth-child( 3 ) {
+.singup > input {
   margin: 10px auto 0;
   width: 95%;
+}
+
+.birthdate-wrapper {
+  margin-top: 10px;
+}
+
+.birthdate-wrapper input {
+  margin-top: 3px;
+  width: 100%;
 }

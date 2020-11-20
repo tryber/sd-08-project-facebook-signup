@@ -59,7 +59,7 @@ h1 {
 
 .row-group {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
 
   /* justify-content: space-between; */
   padding: 0;

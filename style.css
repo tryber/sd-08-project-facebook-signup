@@ -18,7 +18,6 @@
 
 .facebook-login {
   display: flex;
-
 }
 
 .form-control {
@@ -56,4 +55,8 @@
 
 .botaopersonalizado {
   display: none;
+}
+
+.alinha {
+  margin-right: 20px;
 }

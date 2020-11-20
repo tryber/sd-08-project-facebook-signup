@@ -8,16 +8,14 @@ function loginCheck() {
 }
 loginCheck();
 function validar() {
-  if(document.getElementById('inputnome').value == null || document.getElementById('inputsobrenome').value == null
+  const btncadastro = document.getElementById('facebook-register');
+  if (document.getElementById('inputnome').value == null || document.getElementById('inputsobrenome').value == null
   || document.getElementById('inputcelular').value == null || document.getElementById('inputnovasenha').value == null
   || document.getElementById('inputnascimento').value == null) {
     alert('Campos inválidos');
-    return false;
   } else {
     return true;
   }
-}
-function cliquevalidar() {
-  const btncadastro = document.getElementById('facebook-register');
   btncadastro.addEventListener('click', validar);
 }
+

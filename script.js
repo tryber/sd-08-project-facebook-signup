@@ -1,16 +1,23 @@
 let btEntrar = document.getElementById("button-login");
 
-
 btEntrar.addEventListener('click', function () {
     let m = document.getElementById("user-email-phone").value;
     alert(m);
 
 });
 
-let btSubmit = document.getElementById('facebook-register');
+function showForm (value) {
+    let dataInput = document.getElementById('data-input')
+    let createSpan = document.createElement('span');
+    createSpan.innerText = value;
+    createSpan.style.display = 'block';
+    dataInput.appendChild(createSpan);
+}
+
 let signUpForm = document.forms['signUp-form'];
 
-btSubmit.addEventListener('click', function () {
+function validateForm (event) {
+    event.preventDefault();
 
     if (signUpForm['firstname'].value === '') {
         alert('Campos inválidos');
@@ -22,10 +29,27 @@ btSubmit.addEventListener('click', function () {
         alert('Campos inválidos');
     } else if (signUpForm['birthdate'].value === '') {
         alert('Campos inválidos');
-    } else if (signUpForm['gender'].checked === false) {
+    } else if (signUpForm['gender'].value === '') {
         alert('Campos inválidos');
+    } else {
+        let inputValueName = 'Olá ' + signUpForm['firstname'].value + ' ' + signUpForm['lastname'].value;
+        showForm (inputValueName);
+        let inputValueContact = 'Celular ou email: ' + signUpForm['phone_email'].value;
+        showForm (inputValueContact);
+        let inputValueBday = 'Data de nascimento: ' + signUpForm['birthdate'].value;
+        showForm (inputValueBday);
+        let inputValueGender = 'Gênero: ' + signUpForm['gender'].value;
+        showForm (inputValueGender);
+
+        document.querySelector('.form-style').style.display = 'none';
     }
-});
+    
+}
+
+let btSubmit = document.getElementById('facebook-register');
+
+btSubmit.addEventListener('click', validateForm);
+
 
 let genderOption = document.getElementById('label-gender');
 

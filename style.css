@@ -91,4 +91,11 @@ body {
  .form-style{
   display: flex;
   flex-direction: column;
-} 
+}
+
+.validated-form {
+  /* background-color: rgb(212, 223, 245); */
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 5px 10px;
+}

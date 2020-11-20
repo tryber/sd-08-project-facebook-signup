@@ -35,6 +35,7 @@ function registerMessage(){
   button.addEventListener('click', function () {
     substituteFormContainer();
 });
+}
 /*
   function substituteFormContainer () {
   const input = document.querySelectorAll('.cadastro input');

@@ -79,7 +79,7 @@ function addGender() {
     gender.innerHTML = `Gênero: ${femaleGenderRadio.value}`;
   } else if (maleGenderRadio.checked) {
     gender.innerHTML = `Gênero: ${maleGenderRadio.value}`;
-  } else {
+  } else if (customGenderRadio.checked) {
     const customGenderInput = document.getElementById('custom-gender-input');
     gender.innerHTML = `Gênero ${customGenderRadio.value}: ${customGenderInput.value}`;
   }

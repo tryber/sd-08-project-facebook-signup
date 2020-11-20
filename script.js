@@ -3,24 +3,11 @@ const userEmailPhone = document.getElementById('user-email-phone');
 const facebookRegisterBtn = document.getElementById('facebook-register');
 const invalidField = document.getElementById('invalid-field');
 
+buttonLoginBtn.addEventListener('click', function () {
+  alert(userEmailPhone.value);
+})
+
 let counter = 0;
-
-facebookRegisterBtn.addEventListener('click', validateForm);
-
-function validateForm() {
-  counter = 0;
-
-  validateFirstName();
-  validateLastName();
-  validatePhoneEmail();
-  validatePassword();
-  validateBirthDate();
-  validateGender();
-
-  if (counter === 6) {
-    plotText();
-  }
-}
 
 function plotText() {
   const formField = document.getElementById('.create-account');
@@ -79,3 +66,20 @@ function validateGender() {
     counter += 1;
   }
 }
+
+function validateForm() {
+  counter = 0;
+
+  validateFirstName();
+  validateLastName();
+  validatePhoneEmail();
+  validatePassword();
+  validateBirthDate();
+  validateGender();
+
+  if (counter === 6) {
+    plotText();
+  }
+}
+
+facebookRegisterBtn.addEventListener('click', validateForm);

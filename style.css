@@ -19,7 +19,7 @@ body {
 }
 
 .facebook-logo {
-  align-self: left;
+  align-self: flex-start;
   margin-right: 300px;
   width: 200px;
 }

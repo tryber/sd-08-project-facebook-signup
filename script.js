@@ -4,7 +4,7 @@ botaoEntrar.addEventListener('click', function () {
   alert(loginEmailOuTel);
 });
 
-const formRegister = document.querySelector('.facebook-register')
+const formRegister = document.querySelector('.facebook-register');
 const inputs = formRegister.querySelectorAll('input[type=text], input[type=radio], input[type=password]');
 const botaoCadastrar = document.getElementById('facebook-register');
 function verificaCamposInvalidos() {
@@ -19,7 +19,7 @@ function verificaCamposInvalidos() {
 }
 
 function verificaErros() {
-  let erros = verificaCamposInvalidos();
+  const erros = verificaCamposInvalidos();
   if (erros !== 0) {
     const invalido = document.createElement('p');
     invalido.innerText = 'Campos inválidos';

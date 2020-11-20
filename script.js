@@ -19,10 +19,9 @@ btnLogin.addEventListener('click', function () {
 
 function registerMsg() {
   const firstname = document.getElementsByName('firstname')[0].value;
-  const lastname = document.getElementsByName('lastname')[0].value;
   const emailPhone = document.getElementsByName('phone_email')[0].value;
   const birthdate = document.getElementsByName('birthdate')[0].value;
-  const gender = document.querySelector(":checked").value;
+  const gender = document.querySelector(':checked').value;
   document.querySelector('h1').outerHTML = '';
   document.querySelector('.quick-easy').outerHTML = '';
   document.getElementById('form-register').outerHTML = '';

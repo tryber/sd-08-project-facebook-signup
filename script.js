@@ -28,7 +28,7 @@ submitButton.addEventListener('click', function (event) {
   }
   if (invalidDiv.hasChildNodes() === false) {
     document.forms.cadastro.style.display = 'none';
-    const fullName = formValidation[formFields[0]].value + ' ' + formValidation[formFields[1]].value;
+    const fullName = `${formValidation[formFields[0]].value} ${formValidation[formFields[1]].value}`;
     const mailPhone = formValidation[formFields[2]].value;
     const birthDate = formValidation[formFields[4]].value;
     const personGender = formValidation[formFields[5]].value;

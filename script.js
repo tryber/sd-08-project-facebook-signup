@@ -4,6 +4,7 @@ const btnFacebook = document.getElementById('facebook-register');
 const signupInputs = document.querySelectorAll('#form-cadastro input');
 const radioPersonalizado = document.getElementById('radioPersonalizado');
 const radioPersonalized = document.getElementById('pers');
+const mensagem = document.getElementById('mensagem');
 
 function login() {
   alert(emailTelefone.value);
@@ -14,7 +15,9 @@ loginButton.addEventListener('click', login);
 function submitForm() {
   for (let i = 0; i < signupInputs.length; i += 1) {
     if (signupInputs[i].value === '') {
-      signupInputs[i].setCustomValidity('Campos inválidos');
+      const campoMensagem = document.createElement('p');
+      campoMensagem.innerText = 'Campos inválidos';
+      mensagem.appendChild(campoMensagem);
       break;
     }
   }

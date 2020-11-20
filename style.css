@@ -7,7 +7,7 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  padding: 13px 300px;
+  padding: 10px 300px;
 }
 
 .form-group {
@@ -23,14 +23,12 @@ body {
 }
 
 .facebook-login {
-  border: 1px solid black;
   color: white;
   display: flex;
   height: fit-content;
 }
 
 .facebook-logo {
-  border: 1px solid black;
   padding-bottom: 0;
 }
 
@@ -41,9 +39,15 @@ body {
 }
 
 .main-content {
+  background: linear-gradient(#fff, rgb(202, 209, 223));
   display: flex;
 }
 
 .left-content {
   width: 800px;
+  height: 500px;
+}
+
+.rigth-content {
+  width: 300px;
 }

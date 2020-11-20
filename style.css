@@ -25,7 +25,7 @@ body {
 .facebook-login {
   color: white;
   display: flex;
-  font-size: .8rem;
+  font-size: 0.8rem;
   height: fit-content;
 }
 
@@ -58,9 +58,9 @@ body {
   width: 300px;
 }
 
-.right-content h1 {
-  margin-left: 4px;
+.form-title {
   margin-bottom: 0;
+  margin-left: 4px;
 }
 
 .quick-easy {
@@ -77,7 +77,7 @@ body {
   padding: 5px;
 }
 
-#phone-email-input {
+.phone-email-input {
   margin: 4px;
   padding: 5px;
 }

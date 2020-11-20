@@ -3,7 +3,7 @@ const rbPers = document.getElementById('personalizado');
 const persInput = document.getElementById('persInput');
 const firstname = document.getElementById('firstname');
 const lastname = document.getElementById('lastname');
-const phone_email = document.getElementById('phone_email');
+const phoneEmail = document.getElementById('phone_email');
 const password = document.getElementById('password');
 const birthdate = document.getElementById('birthdate');
 const btnRegister = document.getElementById('facebook-register');
@@ -14,8 +14,8 @@ btnLogin.addEventListener('click', function () {
   alert(userId.value);
 });
 
-btnRegister.addEventListener('click',function () {
-  if (firstname.value == "" || lastname.value == "" || phone_email == "" || password == "" || birthdate == "") {
+btnRegister.addEventListener('click', function () {
+  if (firstname.value === '' || lastname.value === '' || phoneEmail === '' || password === '' || birthdate === '') {
     alert('Campos inválidos');
   }
 });

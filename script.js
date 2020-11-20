@@ -4,7 +4,6 @@ function capturaEvento(elementoHTML, tipoDoEvento, acaoDoEvento) {
     acaoDoEvento(eventoAlvo.target);
   });
 }
-
 function alertarMensagem() {
   const emailUsuario = document.querySelector('#user-email-phone');
   if (emailUsuario.value) {
@@ -13,5 +12,4 @@ function alertarMensagem() {
     alert('Digite seu email ou telefone!');
   }
 }
-
 capturaEvento('#button-login', 'click', alertarMensagem);

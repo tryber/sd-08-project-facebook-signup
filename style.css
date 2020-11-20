@@ -54,15 +54,19 @@ body {
   width: 300px;
 }
 
+.sing-up-form input {
+  border: 1px solid #343a40;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0;
+  padding: 10px;
+}
+
 .name-content {
   display: flex;
 }
 
+
 .birthdate-content {
   display: flex;
   flex-direction: column;
-}
-
-.gender-content {
-  display: flex;
 }

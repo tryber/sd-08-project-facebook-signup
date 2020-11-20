@@ -32,7 +32,7 @@ function rightSideChange() {
     }
     const rightSide = document.querySelector('.right-content');
     rightSide.innerHTML = '';
-    const rightSideText = document.createElement('h1');
+    const rightSideText = document.createElement('h2');
     const text = `Olá, ${firstName} ${lastName} Email ou Telefone: ${email} Data de Nascimento: ${birthDate} Gênero: ${genderValue}`;
     const rightSideTextContent = document.createTextNode(text);
     rightSideText.appendChild(rightSideTextContent);

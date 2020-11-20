@@ -27,8 +27,8 @@ function clickSubmit(event) {
   const flags = checkTexts();
   const check = checkForms(flags);
   if (check[0] === 1 || check[1] === 0) {
-    if(document.querySelector(".form p") === null) {
-      let message = document.createElement('p');
+    if (document.querySelector('.form p') === null) {
+      const message = document.createElement('p');
       message.innerHTML = 'Campos inválidos';
       message.style.backgroundColor = 'red';
       form.appendChild(message);

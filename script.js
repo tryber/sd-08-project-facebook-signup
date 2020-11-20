@@ -1,12 +1,10 @@
-const getButtonLogin = document.getElementById("button-login");
-const getInputLogin = document.getElementById("user-email-phone");
-const getButtonSubmit = document.getElementById("facebook-register");
-const getRightContent = document.getElementById("right-content");
-const getGenderPersonalizado = document.getElementById("personalizado");
-const getGenderPersonalizadoContainer = document.getElementById(
-  "genero-personalizado"
-);
-const setMessageInvalid = document.getElementById("message-invalid");
+const getButtonLogin = document.getElementById('button-login');
+const getInputLogin = document.getElementById('user-email-phone');
+const getButtonSubmit = document.getElementById('facebook-register');
+const getRightContent = document.getElementById('right-content');
+const getGenderPersonalizado = document.getElementById('personalizado');
+const getGenderPersonalizadoContainer = document.getElementById('genero-personalizado');
+const setMessageInvalid = document.getElementById('message-invalid');
 const formInputName = [];
 
 function rightContentClear() {
@@ -14,7 +12,6 @@ function rightContentClear() {
     getRightContent.removeChild(getRightContent.firstChild);
   }
 }
-
 function submitFormCreate() {
   rightContentClear();
   const template = `<h1>Olá, ${formInputName[0]} ${formInputName[1]}</h1>
@@ -36,23 +33,23 @@ getButtonLogin.onclick = function () {
 };
 getButtonSubmit.onclick = function (event) {
   event.preventDefault();
-  const inputForm = document.querySelectorAll("#form-create input");
+  const inputForm = document.querySelectorAll('#form-create input');
   let check = false;
-  inputForm.forEach((element, index) => {
+  inputForm.forEach((element) => {
     const valueElement = element.value;
-    if (valueElement === "") {
-      check = true;
+    if (valueElement === '') {
+      return (check = true);
     }
-    if (element.name === "gender") {
+    if (element.name === 'gender') {
       if (element.checked) {
-        formInputName.push(element.value);
+        formInputName.push(valueElement);
       }
       return false;
     }
-    formInputName.push(element.value);
+    return formInputName.push(valueElement);
   });
   if (check) {
-    return (setMessageInvalid.style.display = "block");
+    return (setMessageInvalid.style.display = 'block');
   }
   return submitFormCreate();
 };

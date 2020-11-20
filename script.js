@@ -49,10 +49,10 @@ function obrigado() {
   divObg.className = '';
   divFormulario.className = 'display-none';
 
-  form2Local[0].insertAdjacentHTML('afterbegin', `<br><br> Olá, ${bancoDeDados.firstname} ${bancoDeDados.lastname}`);
-  form2Local[0].insertAdjacentHTML('beforeend', `<br><br> Celular / E-mail: ${bancoDeDados.phone_email}`);
-  form2Local[0].insertAdjacentHTML('beforeend', `<br><br> Data de Nascimento: ${bancoDeDados.birthdate}`);
-  form2Local[0].insertAdjacentHTML('beforeend', `<br><br> Gênero: ${bancoDeDados.gender}`);
+  divObg.insertAdjacentHTML('afterbegin', `<br><br> Olá, ${bancoDeDados.firstname} ${bancoDeDados.lastname}`);
+  divObg.insertAdjacentHTML('beforeend', `<br><br> Celular / E-mail: ${bancoDeDados.phone_email}`);
+  divObg.insertAdjacentHTML('beforeend', `<br><br> Data de Nascimento: ${bancoDeDados.birthdate}`);
+  divObg.insertAdjacentHTML('beforeend', `<br><br> Gênero: ${bancoDeDados.gender}`);
 }
 
 function validar() {

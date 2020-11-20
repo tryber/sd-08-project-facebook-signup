@@ -8,9 +8,7 @@ function showAlert() {
 }
 showAlert();
 
-const formText = document.querySelectorAll(
-  '#sign-up input[type=text], #sign-up input[type=password]'
-);
+const formText = document.querySelectorAll('#sign-up input[type=text], #sign-up input[type=password]');
 function verifyText() {
   for (let index = 0; index < formText.length; index += 1) {
     if (formText[index].value === '' || formText[index].value === null) {
@@ -44,22 +42,6 @@ function selectedRadio() {
   return selectedGenre;
 }
 
-function createBoxCustomGender() {
-  for (let index = 0; index < formRadio.length; index += 1) {
-    formRadio[index].addEventListener('click', function (event) {
-      if (event.target.value === 'Personalizado') {
-        console.log('personalizado');
-        console.log(signUpForm.length);
-        createTextArea();
-      } else {
-        console.log('outro');
-        eraseTextArea();
-      }
-    });
-  }
-}
-createBoxCustomGender();
-
 const textArea = document.getElementById('text-area');
 const newTextArea = document.createElement('textarea');
 newTextArea.name = 'gender-custom';
@@ -69,13 +51,26 @@ function createTextArea() {
   textArea.appendChild(newTextArea);
 }
 
+function createBoxCustomGender() {
+  for (let index = 0; index < formRadio.length; index += 1) {
+    formRadio[index].addEventListener('click', function (event) {
+      if (event.target.value === 'Personalizado') {
+        createTextArea();
+      } else {
+        eraseTextArea();
+      }
+    });
+  }
+}
+createBoxCustomGender();
+
+const signUpForm = document.getElementById('sign-up');
 function eraseTextArea() {
   if (signUpForm.length === 10) {
     textArea.removeChild(textArea.lastElementChild);
   }
 }
 
-const signUpForm = document.getElementById('sign-up');
 const errorMessage = document.createElement('p');
 signUpForm.appendChild(errorMessage);
 

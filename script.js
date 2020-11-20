@@ -11,10 +11,37 @@ loginCheck();
 
 const rightContent = document.querySelector('.right-content');
 const formsContent = rightContent.querySelectorAll('input');
-let verificaVazio = 0;
+console.log(formsContent)
+let verificaVazio = 0; 
+
+
+function formsCheck() {
+  const btnSubmit = document.getElementById('facebook-register');
+  btnSubmit.addEventListener('click', function (event) {
+    for (let i = 0; i < 5; i += 1) {
+      if (formsContent[i].value === '') {
+        formsContent[0].placeholder = 'Preencha seu nome';
+        formsContent[1].placeholder = 'Preencha seu sobrenome';
+        formsContent[2].placeholder = 'Preencha celular ou e-mail';
+        formsContent[3].placeholder = 'Preencha sua senha';
+        formsContent[4].placeholder = 'Preencha seu nascimento';
+        document.getElementById('mensagem-campos-invalidos').innerHTML =
+          'Campos inválidos';
+        document.getElementById('mensagem-campos-invalidos').style.color =
+          'red';
+        event.preventDefault();
+      } else {
+        verificaVazio += 1;
+        console.log(verificaVazio)
+      }
+    }
+    rightSideChange();
+  });
+}
+formsCheck();
 
 function rightSideChange() {
-  if (verificaVazio === 0) {
+  if (verificaVazio >= 5) {
     const firstName = document.getElementById('first-name').value;
     const lastName = document.getElementById('last-name').value;
     const email = document.getElementById('email').value;
@@ -40,31 +67,6 @@ function rightSideChange() {
   }
 }
 
-function formsCheck() {
-  const btnSubmit = document.getElementById('facebook-register');
-  btnSubmit.addEventListener('click', function (event) {
-    for (let i = 0; i < formsContent.length; i += 1) {
-      if (formsContent[i].value === '') {
-        formsContent[0].placeholder = 'Preencha seu nome';
-        formsContent[1].placeholder = 'Preencha seu sobrenome';
-        formsContent[2].placeholder = 'Preencha celular ou e-mail';
-        formsContent[3].placeholder = 'Preencha sua senha';
-        formsContent[4].placeholder = 'Preencha seu nascimento';
-        document.getElementById('mensagem-campos-invalidos').innerHTML =
-          'Campos inválidos';
-        document.getElementById('mensagem-campos-invalidos').style.color =
-          'red';
-        verificaVazio += 1;
-        event.preventDefault();
-      } else {
-        rightSideChange();
-      }
-    }
-    verificaVazio = 0;
-  });
-}
-formsCheck();
-
 function personalizeCheck() {
   const personaBtn = document.getElementById('btn-personalizado');
   const gndrContent = document.querySelector('.gender-content');
@@ -80,4 +82,3 @@ function personalizeCheck() {
     }
   });
 }
-personalizeCheck();

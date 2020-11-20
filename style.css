@@ -5,8 +5,8 @@
 }
 
 .facebook-login {
-  display: flex;
   border: black solid 1px;
+  display: flex;
 }
 
 .form-group {

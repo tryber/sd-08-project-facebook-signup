@@ -184,3 +184,7 @@ body {
   margin-top: 5px;
   width: 150px;
 }
+
+.display-none {
+  display: none;
+}

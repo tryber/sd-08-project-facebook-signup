@@ -42,10 +42,15 @@ function obrigado() {
     bancoDeDados[chave] = valor;
   });
 
-  form2Local[0].innerHTML = `<br><br> Olá, ${bancoDeDados.firstname} ${bancoDeDados.lastname}`;
-  form2Local[0].innerHTML += `<br><br> Celular / E-mail: ${bancoDeDados.phone_email}`;
-  form2Local[0].innerHTML += `<br><br> Data de Nascimento: ${bancoDeDados.birthdate}`;
-  form2Local[0].innerHTML += `<br><br> Gênero: ${bancoDeDados.gender}`;
+  const divObg = document.getElementById('msg-obrigado');
+  const divFormulario = document.getElementById('formulario');
+  divObg.className = '';
+  divFormulario.className = 'display-none';
+
+  form2Local[0].insertAdjacentHTML('afterbegin', `<br><br> Olá, ${bancoDeDados.firstname} ${bancoDeDados.lastname}`);
+  form2Local[0].insertAdjacentHTML('beforeend', `<br><br> Celular / E-mail: ${bancoDeDados.phone_email}`);
+  form2Local[0].insertAdjacentHTML('beforeend', `<br><br> Data de Nascimento: ${bancoDeDados.birthdate}`);
+  form2Local[0].insertAdjacentHTML('beforeend', `<br><br> Gênero: ${bancoDeDados.gender}`);
 }
 
 function validar() {

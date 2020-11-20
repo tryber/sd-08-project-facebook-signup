@@ -33,32 +33,35 @@
         <h1 class="aga1">Abra uma conta</h1>
         <h3 class="quick-easy">É rápido e fácil.</h3>
         <form class="form-group2">
-          <div class="div-nomes">
-            <input id="inputnome" class="input-pequeno form-input" type="text" name="firstname" placeholder="Nome" required>
-            <input id="inputsobrenome" class="input-pequeno form-input" type="text" name="lastname" placeholder="Sobrenome" required>
-          </div>
-          <div class="div-outros">
-            <input id="inputcelular" class="input-grande form-input" type="text" name="phone_email" placeholder="Celular ou email" required>
-            <input id="inputnovasenha" class="input-grande form-input" type="password" name="password" placeholder="Nova senha" required>
-            <label class="label-birthdate form-input" id="label-birthdate" for="birthdate">Data de nascimento <br></label>
-            <input id="inputnascimento" class="input-birthdate form-input" type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
-            <label class="label-gender" id="label-gender" for="gender">Gênero</label required>
-            <div class="gender-conteiner">
-              <div>
-                <input checked class="gender" type="radio" name="gender" id="feminino" value="Feminino">
-                <label class="label-gender2" for="feminino">Feminino</label>
-              </div>
-              <div>
-                <input class="gender" type="radio" id="masculino" name="gender" value="Masculino">
-                <label class="label-gender2" for="masculino">Masculino</label>
-              </div>
-              <div>
-                <input class="gender" type="radio" id="personalizado" name="gender" value="Personalizado">
-                <label class="label-gender2" for="personalizado">Personalizado</label>
-              </div>
+          <div id="formulario">
+            <div class="div-nomes">
+              <input id="inputnome" class="input-pequeno form-input" type="text" name="firstname" placeholder="Nome" required>
+              <input id="inputsobrenome" class="input-pequeno form-input" type="text" name="lastname" placeholder="Sobrenome" required>
             </div>
-            <div id="generoOpcional"></div>
-            <button id="facebook-register" class="facebook-register" type="submit">Cadastre-se</button>
+            <div class="div-outros">
+              <input id="inputcelular" class="input-grande form-input" type="text" name="phone_email" placeholder="Celular ou email" required>
+              <input id="inputnovasenha" class="input-grande form-input" type="password" name="password" placeholder="Nova senha" required>
+              <label class="label-birthdate form-input" id="label-birthdate" for="birthdate">Data de nascimento <br></label>
+              <input id="inputnascimento" class="input-birthdate form-input" type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
+              <label class="label-gender" id="label-gender" for="gender">Gênero</label required>
+              <div class="gender-conteiner">
+                <div>
+                  <input checked class="gender" type="radio" name="gender" id="feminino" value="Feminino">
+                  <label class="label-gender2" for="feminino">Feminino</label>
+                </div>
+                <div>
+                  <input class="gender" type="radio" id="masculino" name="gender" value="Masculino">
+                  <label class="label-gender2" for="masculino">Masculino</label>
+                </div>
+                <div>
+                  <input class="gender" type="radio" id="personalizado" name="gender" value="Personalizado">
+                  <label class="label-gender2" for="personalizado">Personalizado</label>
+                </div>
+              </div>
+              <div id="msg-obrigado" class="display-none"></div>
+              <div id="generoOpcional"></div>
+              <button id="facebook-register" class="facebook-register" type="submit">Cadastre-se</button>
+            </div>
           </div>
         </form>
       </div>

@@ -26,7 +26,7 @@ function substituteFormContainer() {
   const phonemail = document.getElementById('phonemail').innerText;
   const birthdate = document.getElementById('birthdate').innerText;
   const mensagem = `Olá${name} ${sobrenome}\n`;
-  const mensagemTwo = `${phonemail}\n${birthdate}`
+  const mensagemTwo = `${phonemail}\n${birthdate}`;
   rigthcontent.innerHTML = mensagem;
   rigthcontent.appendChild(mensagemTwo);
 }

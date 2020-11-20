@@ -1,4 +1,5 @@
 const entrar = document.getElementById('button-login');
+const invalido = document.getElementById('invalidos');
 
 entrar.addEventListener('click', function () {
   const email = document.getElementById('user-email-phone');
@@ -21,7 +22,7 @@ const cadastre = document.getElementById('facebook-register');
 
 const form = document.querySelectorAll('.form input');
 
-const formulario = document.querySelector('.form');
+// const formulario = document.querySelector('.form');
 
 cadastre.addEventListener('click', function () {
   let contador = 0;
@@ -31,9 +32,6 @@ cadastre.addEventListener('click', function () {
     }
   }
   if (contador !== 0) {
-    const alerta = document.createElement('div');
-    alerta.innerText = 'Campos inválidos';
-    alerta.className = 'alerta';
-    formulario.appendChild(alerta);
+    invalido.innerText = 'Campos inválidos';
   }
 });

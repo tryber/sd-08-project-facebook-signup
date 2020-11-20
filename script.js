@@ -10,7 +10,7 @@ enterBtn.addEventListener('click', (event) => {
 });
 
 
-customGender.addEventListener('change', () => {  
+customGender.addEventListener('change', () => {
   const customInput = document.createElement('input');
   const formGroup = document.querySelector('#facebook-register').parentNode;
   customInput.type = 'text';

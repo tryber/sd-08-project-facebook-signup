@@ -47,7 +47,7 @@
   flex-flow: row nowrap;
 }
 
-.right-content  div  button[ type = submit ]{
+.right-content div button[ type = "submit" ]{
   display: block;
   margin-top: 5px;
 }

@@ -1,4 +1,4 @@
-body {
+body , input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -25,4 +25,25 @@ body {
 
 .right-content {
   width: 300px;
+}
+
+.singup {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.full-name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.full-name-wrapper input {
+  width: 47%;
+}
+
+.singup > input:nth-child( 2 ) , .singup > input:nth-child( 3 ) {
+  margin: 10px auto 0;
+  width: 95%;
 }

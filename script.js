@@ -12,7 +12,6 @@ const phoneMail = document.getElementById('phone_email').value;
 const password = document.getElementById('password').value;
 const birthdate = document.getElementById('label-birthdate').value;
 const gender = document.getElementsByClassName('gender');
-const registrationArray = [firstName, lastName, phoneMail, password, birthdate];
 const signUpForm = document.querySelector('.signUp');
 
 function finishForm() {

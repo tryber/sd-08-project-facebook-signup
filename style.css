@@ -76,3 +76,8 @@ body {
   justify-content: space-between;
   margin-top: 10px;
 }
+
+.submit-button {
+  align-self: center;
+  display: flex;
+}

@@ -47,3 +47,11 @@ header {
   align-self: flex-end;
   margin-left: 10px;
 }
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}

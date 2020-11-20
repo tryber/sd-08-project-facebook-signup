@@ -36,21 +36,21 @@ function obrigado() {
   const urlData = location.search.slice(1).split('&');
   const bancoDeDados = {};
   urlData.forEach(function (parte) {
-    let chaveValor = parte.split('=');
+    const chaveValor = parte.split('=');
     const chave = decodeURIComponent(chaveValor[0]);
     const valor = decodeURIComponent(chaveValor[1]);
     bancoDeDados[chave] = valor;
   });
 
-  form2Local[0].innerHTML = ('<br><br> Olá, ' + bancoDeDados['firstname'] + ' ' + bancoDeDados['lastname']);
-  form2Local[0].innerHTML += ('<br><br> Celular / E-mail: ' + bancoDeDados['phone_email']);
-  form2Local[0].innerHTML += ('<br> Data de Nascimento: ' + bancoDeDados['birthdate']);
-  form2Local[0].innerHTML += ('<br> Celular - Gênero: ' + bancoDeDados['gender']);
+  form2Local[0].innerHTML = `<br><br> Olá, ${bancoDeDados.firstname} ${bancoDeDados.lastname}`;
+  form2Local[0].innerHTML += `<br><br> Celular / E-mail: ${bancoDeDados.phone_email}`;
+  form2Local[0].innerHTML += `<br> Data de Nascimento: ${bancoDeDados.birthdate}`;
+  form2Local[0].innerHTML += `<br> Celular - Gênero: ${bancoDeDados.gender}`;
 }
 
-function validar () {
+function validar() {
   if ((document.getElementById('inputnome').value === '') || (document.getElementById('inputsobrenome').value === '') || (document.getElementById('inputcelular').value === '') || (document.getElementById('inputnovasenha').value === '') || (document.getElementById('inputnascimento').value === '')) {
-    
+    localStorage.clear();
   } else {
     localStorage.clear();
     localStorage.setItem('ok', 'valido');
@@ -60,13 +60,13 @@ function validar () {
 btnSalvar.addEventListener('click', validar);
 
 function validado() {
-  let valido = localStorage.getItem('ok');
+  const valido = localStorage.getItem('ok');
   if (valido === 'valido') {
     obrigado();
   }
 }
 
-window.onload = function() {
+window.onload = function () {
   validado();
 };
 

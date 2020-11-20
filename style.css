@@ -7,12 +7,10 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  padding: 0 80px;
 }
 
 .facebook-login {
   display: flex;
-  margin-right: 100px;
 }
 
 .form-group {
@@ -28,13 +26,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 10px 180px;
 }
 
 .left-content {
-  box-sizing: border-box;
-  margin-left: -100px;
-  margin-right: 100px;
   width: 800px;
 }
 
@@ -48,43 +42,4 @@ body {
 
 .input-space {
   width: 45%;
-}
-
-.gender-label {
-  display: block;
-}
-
-.optional {
-  display: none;
-}
-
-.login {
-  margin-right: 10px;
-  width: 120px;
-}
-
-form {
-  width: 300px;
-}
-
-input {
-  margin-bottom: 5px;
-}
-
-.font-small {
-  font-size: 12px;
-  margin-top: -5px;
-}
-
-.margin-button {
-  margin-bottom: 15px;
-}
-
-.witdh-input {
-  width: 292px;
-}
-
-.img-width {
-  height: 150px;
-  width: 100%;
 }

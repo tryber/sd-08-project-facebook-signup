@@ -54,13 +54,16 @@ btSubmit.addEventListener('click', validateForm);
 let genderOption = document.getElementById('label-gender');
 
 genderOption.addEventListener('click', function () {
-    let btGenderPers = document.querySelector('#pers').checked;
-    if (btGenderPers) {
+    // let btGenderPers = document.querySelector('#pers').checked;
+    // console.log(btGenderPers);
+
+    let aux = document.forms['signUp-form']['gender'].value;
+
+    if (aux === 'Personalizado') {
         let inputPersGender = document.createElement('input');
         inputPersGender.type = 'text';
         inputPersGender.name = 'gender-custom';
         inputPersGender.placeholder = 'Gênero (opcional)';
         genderOption.appendChild(inputPersGender);
     }
-
 });

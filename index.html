@@ -40,11 +40,13 @@
             <input type="text" name="firstname" placeholder="Nome" required pattern="^[A-Za-z]+$">
             <input type="text" name="lastname" placeholder="Sobrenome" required pattern="[A-Za-z]+( ?[A-Za-z]+?)+$">
           </div>
-          <input type="text" name="phone_email" placeholder="Celular ou email" required pattern="(?:^[\w\-\.]+@([a-z]+\.)+[a-z]{2,4}$|^\(?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])\)? ?9[1-9][0-9]{3}-?[0-9]{4}$)">
+          <input type="text" name="phone_email" placeholder="Celular ou email" required
+            pattern="(?:^[\w\-\.]+@([a-z]+\.)+[a-z]{2,4}$|^\(?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])\)? ?9[1-9][0-9]{3}-?[0-9]{4}$)">
           <input type="password" name="password" placeholder="Nova senha" required>
           <div class="birthdate-wrapper">
             <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-            <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" required pattern="^(?:0[1-9]|[12]\d|3[01])\/(?:0[1-9]|1[0-2])\/(?:19\d{2}|20(?:[01]\d|20))$">
+            <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" required
+              pattern="^(?:0[1-9]|[12]\d|3[01])\/(?:0[1-9]|1[0-2])\/(?:19\d{2}|20(?:[01]\d|20))$">
           </div>
           <div class="gender-wrapper">
             <label id="label-gender">Gênero</label>

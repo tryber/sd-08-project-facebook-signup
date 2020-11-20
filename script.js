@@ -25,23 +25,11 @@ function substituteFormContainer() {
   const sobrenome = document.getElementById('sobrenome').innerText;
   const phonemail = document.getElementById('phonemail').innerText;
   const birthdate = document.getElementById('birthdate').innerText;
-  const mensagem = `Olá${name} ${sobrenome}\n`;
+  const mensagem = `Olá, ${name} ${sobrenome}\n`;
   const mensagemTwo = `${phonemail}\n${birthdate}`;
   rigthcontent.innerHTML = mensagem;
   rigthcontent.appendChild(mensagemTwo);
 }
-
-// setCustomValidity retirada do artigo: https://www.devmedia.com.br/html5-validator-validando-formularios-com-html5/28785
-function validateForm() {
-  const button = document.getElementById('facebook-register');
-  button.addEventListener('click', function () {
-    const input = document.querySelectorAll('.cadastro input');
-    for (let index = 0; index < input.length; index += 1) {
-      input[index].setCustomValidity('Campos inválidos');
-    }
-  });
-}
-validateForm();
 
 function registerMessage() {
   const form = document.getElementById('register');
@@ -49,4 +37,21 @@ function registerMessage() {
     substituteFormContainer();
   });
 }
-registerMessage();
+
+// setCustomValidity retirada do artigo: https://www.devmedia.com.br/html5-validator-validando-formularios-com-html5/28785
+function validateForm() {
+  const invalidField = 'Campos inválidos';
+  const form = document.getElementById('register');
+  const button = document.getElementById('facebook-register');
+  button.addEventListener('click', function () {
+    const input = document.querySelectorAll('.cadastro input');
+    for (let index = 0; index < input.length; index += 1) {
+      input[index].setCustomValidity('Campos inválidos');
+      if (input[index] === '') {
+        form.appendChild(invalidField);
+      }
+    }
+    registerMessage();
+  });
+}
+validateForm();

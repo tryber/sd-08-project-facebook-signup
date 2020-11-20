@@ -8,7 +8,7 @@ btnLogin.addEventListener('click', function () {
   alert(userId.value);
 });
 
-function DisableInput () {
+function DisableInput() {
   if (rbPers.checked) {
     persInput.innerHTML = '<input type="text" name="gender-custom" id="genderCustom" placeholder="Gênero (Opcional)">';
     return;

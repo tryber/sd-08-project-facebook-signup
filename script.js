@@ -35,6 +35,10 @@ function genderCustom() {
   newGender.setAttribute('placeholder', 'Gênero (opcional)');
 
   document.getElementById('select-gender').appendChild(newGender);
+
+  if (document.getElementById('select-gender').lastChild.className !== 'gender-custom') {
+    document.getElementById('select-gender').appendChild(newGender);
+  }
 }
 
 const custom = document.getElementById('Personalizado');

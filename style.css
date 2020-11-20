@@ -48,3 +48,8 @@ body {
 .name-sign-up input {
   margin-right: 6px;
 }
+
+.gender-sign-up {
+  display: flex;
+  justify-content: space-around;
+}

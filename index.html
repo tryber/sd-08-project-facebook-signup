@@ -37,30 +37,34 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form class="forms">
+        <form id="forms" class="forms">
           <input
             class="small"
             type="text"
             name="firstname"
             placeholder="Nome"
+            required
           />
           <input
             class="small"
             type="text"
             name="lastname"
             placeholder="Sobrenome"
+            required
           />
           <input
             class="large"
             type="text"
             name="phone_email"
             placeholder="Celular ou email"
+            required
           />
           <input
             class="large"
             type="password"
             name="password"
             placeholder="Nova senha"
+            required
           />
           <label class="large" id="label-birthdate">Data de nascimento</label>
           <input
@@ -68,6 +72,7 @@
             name="birthdate"
             class="large"
             placeholder="dd/mm/aaaa"
+            required
           />
           <label class="large" id="label-gender">Gênero</label>
           <input

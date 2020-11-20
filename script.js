@@ -8,15 +8,18 @@ btnLogin.addEventListener('click', function () {
 const filedForms = document.getElementById('forms');
 const btnSubmited = document.getElementById('facebook-register');
 
-function showData() {
-  const rightContent = document.getElementById('right-content');
-  const ola = document.createElement('p');
-  ola.innerText = `Olá, ${filedForms[0].value} ${filedForms[1].value}.`;
+const rightContent = document.getElementById('right-content');
 
+function cleanRight() {
   const rightSize = rightContent.children.length;
   for (let pos = 0; pos < rightSize; pos += 1) {
     rightContent.removeChild(rightContent.firstElementChild);
   }
+}
+function showData() {
+  cleanRight();
+  const ola = document.createElement('p');
+  ola.innerText = `Olá, ${filedForms[0].value} ${filedForms[1].value}.`;
   rightContent.appendChild(ola);
 
   for (let index = 2; index < filedForms.length - 1; index += 1) {

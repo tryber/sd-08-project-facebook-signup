@@ -58,3 +58,7 @@ body {
 .phoneEmail , .myPassword , .birthDate {
   width: 292px;
 }
+
+.invalid {
+  display: none;
+}

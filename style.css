@@ -32,7 +32,7 @@ body , input {
   flex-wrap: wrap;
 }
 
-.full-name-wrapper , .birthdate-wrapper {
+.full-name-wrapper , .birthdate-wrapper , .gender-wrapper {
   margin: 0 auto;
   width: 95%;
 }
@@ -51,11 +51,16 @@ body , input {
   width: 95%;
 }
 
-.birthdate-wrapper {
+.birthdate-wrapper , .gender-wrapper {
   margin-top: 10px;
 }
 
-.birthdate-wrapper input {
+.birthdate-wrapper input , .radio-wrapper {
   margin-top: 3px;
   width: 100%;
+}
+
+.radio-wrapper label {
+  font-size: 0.9em;
+  margin-right: 9px;
 }

@@ -17,7 +17,6 @@ function plotText() {
   const birthdate = document.forms.myForm.birthdate.value;
   const gender = document.forms.myForm.gender.value;
 
-  const formField = document.getElementById('.create-account');
   const boxText = document.querySelector('.right-content');
   boxText.innerHTML = '';
   boxText.innerHTML = `<p> Olá, ${firstName} ${lastName}

@@ -36,28 +36,29 @@
       <div class="quick-easy">É rápido e fácil.</div>
       <form>
         <div class="name-lastname">
-          <input name="firstname" type="text" placeholder="Nome">
-          <input name="lastname" type="text" placeholder="Sobrenome">
+          <input name="firstname" type="text" placeholder="Nome" required>
+          <input name="lastname" type="text" placeholder="Sobrenome" required>
         </div>
-        <input name="phone_email" type="text" placeholder="Celular ou email">
-        <input name="password" type="password" placeholder="Nova senha">
+        <input name="phone_email" type="text" placeholder="Celular ou email" required>
+        <input name="password" type="password" placeholder="Nova senha" required>
 
         <br />
 
         <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-        <input id="birthdate" name="birthdate" type="text" placeholder="dd/mm/aaaa">
+        <input id="birthdate" name="birthdate" type="text" placeholder="dd/mm/aaaa" required>
 
         <br />
 
         <label id="label-gender">Gênero</label>
         <div class="radios-gender">
-          <input id="gender-feminino" name="gender" type="radio" value="Feminino">
+          <input id="gender-feminino" name="gender" type="radio" value="Feminino" required>
           <label for="gender-feminino">Feminino</label>
-          <input id="gender-masculino" name="gender" type="radio" value="Masculino">
+          <input id="gender-masculino" name="gender" type="radio" value="Masculino" required>
           <label for="gender-masculino">Masculino</label>
-          <input id="gender-personalizado" name="gender" type="radio" value="Personalizado">
+          <input id="gender-personalizado" name="gender" type="radio" value="Personalizado" required>
           <label for="gender-personalizado">Personalizado</label>
         </div>
+        <div id="form-alert" class="form-alert d-none">Campos inválidos</div>
         <button id="facebook-register" type="submit">Cadastre-se</button>
       </form>
     </div>

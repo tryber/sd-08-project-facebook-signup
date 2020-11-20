@@ -42,3 +42,7 @@ body , header , img {
 .name-lastname {
   display: flex;
 }
+
+.d-none {
+  display: none;
+}

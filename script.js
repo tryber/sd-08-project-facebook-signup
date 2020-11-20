@@ -15,12 +15,7 @@ const btnRadioMasc = document.getElementsByName('gender')[1];
 btnRadioMasc.addEventListener('click', function () {
   document.getElementsByClassName('hide')[0].style.display = 'none';
 });
-function btnLogin() {
-  const login = document.getElementById('button-logion');
-  login.addEventListener('click', function () {
-    const alerta = document.querySelector('#user-email-phone').value;
-    alert(alerta);
-  });
-}
-
-btnLogin();
+document.getElementsByName('firstname')[0].style.width = '138px';
+document.getElementsByName('lastname')[0].style.width = '138px';
+document.getElementsByName('phone_email')[0].style.width = '300px';
+document.getElementsByName('password')[0].style.width = '300px';

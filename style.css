@@ -6,9 +6,11 @@ body {
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+  border: rgb(55, 92, 140) solid 1.5px;
   display: flex;
-  height: 70px;
+  height: 60px;
   justify-content: space-between;
+  padding: 10px 100px 0;
 }
 
 .top-bar p {
@@ -23,19 +25,18 @@ body {
   font-size: 0.8em;
 }
 
-.main-content {
+.facebook-logo {
+  height: 64px;
+}
+
+.facebook-login {
   display: flex;
-  justify-content: center;
+  align-items: flex-start;
 }
 
-.left-content p {
-  color: rgb(51, 85, 118);
-  font-size: 1.3em;
-  font-weight: 800;
-}
-
-.open , .quick-easy {
-  color: rgb(52, 52, 52);
+.facebook-login input {
+  border: rgb(55, 92, 140) solid 1.5px;
+  width: 115px;
 }
 
 .form-group {
@@ -45,34 +46,106 @@ body {
   padding-right: 10px;
 }
 
-.facebook-login {
-  display: flex;
-}
-
 .form-control {
   align-self: flex-end;
 }
 
 .form-control button {
-  background-color: rgb(66, 103, 178);
+  background-color: rgb(77, 123, 214);
+  border: rgb(55, 92, 140) solid 1.5px;
+  border-radius: 2px;
   color: white;
+  margin-bottom: 25px;
+}
+
+.main-content {
+  background: linear-gradient(rgb(254 , 254 , 254), rgb(212 , 217 , 232));
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 40px;
+}
+
+.left-content {
+  width: 800px;
+  padding-left: 120px;
+}
+
+.left-content p {
+  color: rgb(51, 85, 118);
+  font-size: 1.3em;
+  font-weight: 800;
+  width: 480px;
+}
+
+.right-content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-content h1 {
+  color: rgb(52, 52, 52);
+  margin-bottom: 10px;
+}
+
+.quick-easy {
+  color: rgb(52, 52, 52);
+  margin-top: 0;
 }
 
 .hide {
   display: none;
 }
 
-.right-content {
-  display: flex;
-  flex-direction: column;
-}
-
 .register {
   display: flex;
-  flex-direction: column;
+  flex-direction: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.register input {
+  border: rgb(136, 150, 168) solid 1px;
+  border-radius: 3px;
+  height: 1.5em;
+  margin-bottom: 10px;
 }
 
 .register button {
-  background-color: rgb(109, 166, 83);
-  color: white;
+  box-shadow:inset 1px 1px 8px 0px rgb(154, 204, 133);
+	background:linear-gradient(to bottom, rgb(116, 173, 90) 5%, rgb(104, 165, 75) 100%);
+	background-color: rgb(116,173,90);
+	border-radius:4px;
+	border: rgb(95, 153, 75) solid 1px;
+	display:inline-block;
+	cursor:pointer;
+	color: white;
+	font-size:13px;
+	font-weight:bold;
+	padding:10px 40px;
+  text-decoration:none;
+}
+
+.register label {
+  color: rgb(132, 134, 141);
+  font-weight: 800;
+}
+
+.radio {
+  font-size: 0.9em;
+  vertical-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  margin: 10px 5px;
+  font-size: 0.8em;
+  color: rgb(51, 85, 118); 
+}
+
+.pt-br {
+  color: rgb(132, 134, 141)
 }

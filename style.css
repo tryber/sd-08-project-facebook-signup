@@ -33,9 +33,16 @@ body {
 }
 
 .right-content {
+  display: flex;
+  flex-direction: column;
   width: 300px;
 }
 
 .full-name {
   display: flex;
+}
+
+.birth-date {
+  display: flex;
+  flex-direction: column;
 }

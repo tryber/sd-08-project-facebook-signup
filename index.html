@@ -31,7 +31,7 @@
       <aside class="left-content">
         <p id="facebook-slogan"> O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
           sua vida. </p>
-        <img src="imgs/networking.png" alt="networking" id="facebook-network" />
+        <img src="imgs/networking.png" alt="networking" id="facebook-networking" />
       </aside>
       <aside class="right-content">
         <h1>Abra uma conta</h1>
@@ -44,10 +44,10 @@
           <input type="text" name="phone_email" placeholder="Celular ou email" id="phone-email" required />
           <input type="password" name="password" placeholder="Nova senha" required />
           <div class="birthdate">
-            <p id="label-birthdate">Data de nascimento</p>
+            <label id="label-birthdate">Data de nascimento</label>
             <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required />
           </div>
-          <p id="label-gender">Gênero</p>
+          <label id="label-gender">Gênero</label>
           <div class="gender">
             <input type="radio" name="gender" id="female" value="Feminino" checked />
             <label for="female">Feminino</label>
@@ -56,7 +56,8 @@
             <input type="radio" name="gender" id="custom" value="Personalizado" />
             <label for="custom">Personalizado</label>
           </div>
-          <input type="text" name="custom-gender" id="custom-gender" class="custom-gender"
+          <p class="invalid">Campos inválidos</p>
+          <input type="text" name="gender-custon" id="gender-custon" class="gender-custon"
             placeholder="Gênero (opcional)" />
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>

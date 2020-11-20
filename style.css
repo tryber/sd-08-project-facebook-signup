@@ -50,6 +50,6 @@ body {
   display: flex;
 }
 
-.custom-gender {
+.gender-custom , .invalid {
   display: none;
 }

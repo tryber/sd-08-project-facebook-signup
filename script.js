@@ -1,4 +1,5 @@
 const btEntrar = document.getElementById('button-login');
+const signUpForm = document.forms['signUp-form'];
 
 btEntrar.addEventListener('click', function () {
   const m = document.getElementById('user-email-phone').value;
@@ -13,7 +14,18 @@ function showForm(value) {
   dataInput.appendChild(createSpan);
 }
 
-const signUpForm = document.forms['signUp-form'];
+function exibirTexto() {
+  const inputValueName = `Olá ${signUpForm.firstname.value} ${signUpForm.lastname.value}`;
+  showForm(inputValueName);
+  const inputValueContact = `Celular ou email: ${signUpForm.phone_email.value}`;
+  showForm(inputValueContact);
+  const inputValueBday = `Data de nascimento: ${signUpForm.birthdate.value}`;
+  showForm(inputValueBday);
+  const inputValueGender = `Gênero: ${signUpForm.gender.value}`;
+  showForm(inputValueGender);
+
+  document.querySelector('.form-style').style.display = 'none';
+}
 
 function validateForm(event) {
   event.preventDefault();
@@ -24,30 +36,25 @@ function validateForm(event) {
   const passwordValue = signUpForm.password.value;
   const birthdayValue = signUpForm.birthdate.value;
   const genderValue = signUpForm.gender.value;
+  const values = [firstNameValue,
+    lastNameValue,
+    phoneValue,
+    passwordValue,
+    birthdayValue,
+    genderValue];
 
-  if (firstNameValue === '') {
-    alert('Campos inválidos');
-  } else if (lastNameValue === '') {
-    alert('Campos inválidos');
-  } else if (phoneValue === '') {
-    alert('Campos inválidos');
-  } else if (passwordValue === '') {
-    alert('Campos inválidos');
-  } else if (birthdayValue === '') {
-    alert('Campos inválidos');
-  } else if (genderValue === '') {
+  let notValid = false;
+
+  for (let i = 0; i < values.length; i += 1) {
+    if (values[i] === '') {
+      notValid = true;
+    }
+  }
+
+  if (notValid) {
     alert('Campos inválidos');
   } else {
-    const inputValueName = `Olá ${firstNameValue} ${lastNameValue}`;
-    showForm(inputValueName);
-    const inputValueContact = `Celular ou email: ${phoneValue}`;
-    showForm(inputValueContact);
-    const inputValueBday = `Data de nascimento: ${birthdayValue}`;
-    showForm(inputValueBday);
-    const inputValueGender = `Gênero: ${genderValue}`;
-    showForm(inputValueGender);
-
-    document.querySelector('.form-style').style.display = 'none';
+    exibirTexto();
   }
 }
 
@@ -57,7 +64,7 @@ btSubmit.addEventListener('click', validateForm);
 
 
 const genderOption = document.getElementById('test');
-let inputPersGender = document.createElement('input');
+const inputPersGender = document.createElement('input');
 inputPersGender.type = 'text';
 inputPersGender.name = 'gender-custom';
 inputPersGender.placeholder = 'Gênero (opcional)';

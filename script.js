@@ -30,11 +30,11 @@ function addGenderText() {
 }
 addGenderText();
 
-  function registerMessage(){
-    const button = document.getElementById('facebook-register');
-    button.addEventListener('click', function () {
-      substituteFormContainer ();
-  });
+function registerMessage(){
+  const button = document.getElementById('facebook-register');
+  button.addEventListener('click', function () {
+    substituteFormContainer();
+});
 /*
   function substituteFormContainer () {
   const input = document.querySelectorAll('.cadastro input');

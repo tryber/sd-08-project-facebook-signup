@@ -1,6 +1,5 @@
 body {
-  margin: auto;
-  width: 80%;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 header {
@@ -12,6 +11,13 @@ header {
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
 }
 
 .facebook-logo {
@@ -48,18 +54,48 @@ header {
   margin-left: 10px;
 }
 
+.button-header {
+  background-color: blue;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .main-content {
   display: flex;
+  margin: auto;
+  width: 80%;
 }
 
 .left-content {
   width: 800px;
 }
 
+.left-content p {
+  font-weight: 600;
+  width: 300px;
+}
+
 .img-left {
   width: 380px;
 }
 
-/* .right-content {
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 300px;
-} */
+}
+
+.name-lastname {
+  display: flex;
+  height: 35px;
+}
+
+.name {
+  margin-right: 5px;
+  width: 150px;
+}
+
+.lastname {
+  width: 150px;
+}

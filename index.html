@@ -10,34 +10,38 @@
 
   <body>
     <header class="top-bar">
-      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo facebook">
-      <form class="facebook-login" action="">
-        <div class="form-group">
-            <label for="email-telefone" id="user-email-phone-label" class="fonte-padrao">Email ou telefone</label>
-            <input id="user-email-phone" type="text" name="email-telefone" required>
-        </div>
-          <div class="input-password">
-            <label for="senha" id="user-password-label" class="fonte-padrao">Senha</label>
-            <input id="user-password" type="password" name="senha" required>
+      <div class="header-content">
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo facebook">
+        <form class="facebook-login" action="">
+          <div class="form-group">
+              <label for="email-telefone" id="user-email-phone-label" class="fonte-padrao">Email ou telefone</label>
+              <input id="user-email-phone" type="text" name="email-telefone" required>
           </div>
-          <div class="form-control">
-            <button type="submit" id="button-login">Entrar</button>
-          </div>
-      </form>
+            <div class="input-password">
+              <label for="senha" id="user-password-label" class="fonte-padrao">Senha</label>
+              <input id="user-password" type="password" name="senha" required>
+            </div>
+            <div class="form-control">
+              <button type="submit" id="button-login" class="button-header" >Entrar</button>
+            </div>
+        </form>
+      </div>
     </header>
     <main class="main-content">
       <div class="left-content">
         <p id="facebook-slogan" class="paragrafo-esquerdo">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
         <img class="img-left" id="facebook-networking" src="imgs/networking.png" alt="networking">
       </div>
-      <!-- <div class="right-content">
+      <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil</p>
-      </div> -->
-      <!-- <div class="input-firstname">
-        <label for="firstname"></label>
-        <input type="text" name="firstname" placeholder="Nome">
-      </div> -->
+        <form action="">
+          <div class="name-lastname">
+            <input type="text" placeholder="Nome" name="firstname" class="name">
+            <input type="text" placeholder="Sobrenome" name="lastname" class="lastname">
+            </div>
+       </form>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>

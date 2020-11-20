@@ -13,19 +13,21 @@ const password = document.getElementById('password').value;
 const birthdate = document.getElementById('label-birthdate').value;
 const gender = document.getElementsByClassName('gender');
 
-function checkRegistration() {
-  const registrationArray = [firstName, lastName, phoneMail, password, birthdate];
+const registrationArray = [firstName, lastName, phoneMail, password, birthdate];
 
+function checkRegistration(registrationArray) {
   let invalidInput = 0;
   for (let index = 0; index < 5; index += 1) {
     if (registrationArray[index] === '') {
       invalidInput += 1;
     }
   }
-  if (gender[0].checked || gender[1].checked || gender[2].checked) {
-      alert('funcionou');
-  }
   if (invalidInput > 0) {
+    alert('Campos inválidos');
+  }
+  if (gender[0].checked || gender[1].checked || gender[2].checked) {
+    return;
+  } else {
     alert('Campos inválidos');
   }
 }

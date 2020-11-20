@@ -44,3 +44,26 @@ function removeCustomGenderInput() {
 }
 
 removeCustomGenderInput();
+
+function errorMessage() {
+  const createAccountButton = document.querySelector('#facebook-register');
+  createAccountButton.addEventListener('click', function () {
+    const getFormNewAccount = document.querySelector('#register-form');
+    const getAllInputs = getFormNewAccount.getElementsByTagName('input');
+    const p = document.querySelector('#error-message');
+    let count = 0;
+    for (let index = 0; index < getAllInputs.length; index += 1) {
+      if (getAllInputs[index].type === 'text' && getAllInputs[index].value === '') {
+        count += 1;
+      }
+      if (getAllInputs[index].type === 'radio' && !getAllInputs[index].checked) {
+        count += 1;
+      }
+    }
+    if (count > 0) {
+      p.innerHTML = 'Campos inválidos';
+    }
+  });
+}
+
+errorMessage();

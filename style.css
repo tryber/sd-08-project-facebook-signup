@@ -56,3 +56,8 @@
 .label-gender {
   flex-basis: 100%;
 }
+
+.gender-option {
+  display: flex;
+  flex-direction: row;
+}

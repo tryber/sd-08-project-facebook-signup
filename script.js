@@ -68,16 +68,6 @@ function validateGender() {
   }
 }
 
-function plotText() {
-  const formField = document.querySelector('.create-account');
-  const formValues = new FormData(formField);
-  const boxText = document.querySelector('.right-content');
-  boxText.innerHTML = '';
-  boxText.innerHTML = `<p> Olá, ${formValues.get('firstname')} ${formValues.get('lastname')}
-  ${formValues.get('phone_email')} ${formValues.get('birthdate')} ${formValues.get('gender')}
-  </p>`;
-}
-
 function validateForm() {
   counter = 0;
 

@@ -13,23 +13,25 @@
         src="imgs/facebook-logo.png"
         alt="logo marca do facebook"
       />
-      <div class="facebook-login">
-        <div class="form-control">
-          <div class="form-group">
-            <label id="user-email-phone-label" for="login">Email ou telefone</label><input id="user-email-phone" type="text"/>
-          </div>
-          <div class="form-group">
-            <label id="user-password-label" for="senha">Senha</label><input id="user-password" type="text" />
-          </div>
-          <button id="button-login">Entrar</button>
+      <form class="facebook-login">
+        <div class="form-group">
+          <label id="user-email-phone-label" for="login">Email ou telefone</label>
+          <input id="user-email-phone" type="text"/>
         </div>
-        <p>Esqueceu a conta?</p>
-      </div>
+        <div class="form-group">
+          <label id="user-password-label" for="senha">Senha</label>
+          <input id="user-password" type="text" />
+          <p>Esqueceu a conta?</p>
+        </div>
+        <div class="form-control"></div>
+          <button id="button-login">Entrar</button>
+        </form>
+      </form>
     </header>
     <section class="main-content">
       <div class="left-content">
         <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-        <img id="id facebook-networking" src="imgs/networking.png" alt="">
+        <img id="id facebook-networking" src="imgs/networking.png" alt="Imagem mostrando um grupo de conexões pessoais">
       </div>
       <div class="right-content">
         <h1>Abra uma conta</h1>
@@ -45,13 +47,18 @@
             <label id="label-birthdate" for="birthdate">Data nascimento</label>
             <input type="text" name="birthdate" placeholder="dd/mm/aaaa"/>
 
-            <label for="label-gender">Gênero</label>
+            <label id="label-gender" for="label-gender">Gênero</label>
+
             <div class="form-group-genere">
-              <input type="radio" name="gender" placeholder="Feminino"/><label for="gender">Feminino</label>
-              <input type="radio" name="gender" placeholder="Masculino"/><label for="gender">Masculino</label>
-              <input type="radio" id="personalizado" name="gender" placeholder="Personalizado"/><label for="gender">Personalizado</label>
+              <input id="feminino" type="radio" name="gender" value="feminino" checked />
+              <label for="feminino">Feminino</label>
+              <input id="masculino" type="radio" name="gender" value="masculino" />
+              <label for="masculino">Masculino</label>
+              <input id="personalizado" type="radio" name="gender" value="personalizado" />
+              <label for="personalizado">Personalizado</label>
             </div>
-            <div id="genero-personalizado"></div>
+
+            <div id="genero-Personalizado"></div>
             <button id="facebook-register" type="submit">Cadastre-se</button>
         </form>
       </div>

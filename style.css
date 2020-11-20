@@ -7,14 +7,10 @@ html , body {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .facebook-logo {
-  display: flex;
-}
-
-.top-bar img {
   background-size: cover;
 }
 
@@ -22,15 +18,21 @@ html , body {
   align-items: center;
   background-color: aqua;
   display: flex;
-  flex-direction: column;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.form-group p {
+  margin: 0;
 }
 
 .form-control {
+  align-self: flex-end;
   display: flex;
 }
 
@@ -47,11 +49,11 @@ html , body {
   width: 300px;
 }
 
-form input {
+.right-content input {
   width: 100%;
 }
 
-form label {
+.right-content label {
   display: flex;
 }
 

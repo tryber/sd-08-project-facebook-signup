@@ -5,7 +5,7 @@ const getGenderPersonalizado = document.getElementById('personalizado');
 const getGenderPersonalizadoContainer = document.getElementById('genero-personalizado');
 
 function createInputGenderPersonalizado() {
-  const genderCustom = '<input name="gender-custom type="text" placeholder="Gênero (opcional)"></input>';
+  const genderCustom = '<input name="gender-custom" type="text" placeholder="Gênero (opcional)"></input>';
   getGenderPersonalizadoContainer.innerHTML += genderCustom;
 }
 
@@ -18,7 +18,8 @@ getButtonSubmit.onclick = function (event) {
   const inputForm = document.querySelectorAll('#form-create input');
   let check = false;
   inputForm.forEach((element) => {
-    if (element.value === '') check = true;
+    const valueElement = element.value;
+    if (valueElement) check = true;
   });
   if (check) alert('Campos inválidos');
 };

@@ -11,12 +11,17 @@ buttonLoginBtn.addEventListener('click', function () {
 let counter = 0;
 
 function plotText() {
+  let firstName = document.forms.myForm.firstname.value;
+  let lastName = document.forms.myForm.lastname.value;
+  let phoneEmail = document.forms.myForm.phone_email.value;
+  let birthdate = document.forms.myForm.birthdate.value;
+  let gender = document.forms.myForm.gender.value;
+
   const formField = document.getElementById('.create-account');
-  const formValues = new FormData(formField);
   const boxText = document.querySelector('.right-content');
   boxText.innerHTML = '';
-  boxText.innerHTML = `<p> Olá, ${formValues.get('firstname')} ${formValues.get('lastname')}
-  ${formValues.get('phone_email')} ${formValues.get('birthdate')} ${formValues.get('gender')}
+  boxText.innerHTML = `<p> Olá, ${firstName} ${lastName}
+  ${phoneEmail} ${birthdate} ${gender}
   </p>`;
 }
 

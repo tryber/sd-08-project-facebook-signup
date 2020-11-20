@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bulma-0.9.1/bulma/css/bulma.css">
+  </head>
+
+  <body>
+    <header class="top-bar">
+      <div>
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do facebook" />
+      </div>
+      <form action="" class="facebook-login">
+        <div class="form-group alinha">
+          <label for="user-email-phone" id="user-email-phone-label" class="label">Email ou telefone</label>
+          <input type="text" name="login" id="user-email-phone" class="input" required />
+        </div>
+        <div class="form-group alinha">
+          <label for="user-password" id="user-password-label" class="label">Senha</label>
+          <input type="password" name="password" id="user-password" class="input" required />
+        </div>
+        <div class="form-control alinha">
+          <button id="button-login" class="button">Entrar</button>
+        </div>
+      </form>
+    </header>
+    <main class="main-content">
+      <div class="left-content">
+        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+          vida.</p>
+        <img id="facebook-networking" src="imgs/networking.png" alt="imagem networking">
+      </div>
+      <div class="right-content">
+        <h1 class="divsforms title">Abra uma conta</h1>
+        <h2 class="quick-easy subtitle divsforms">É rápido e fácil.</h2>
+        <form action="" method="GET" id="limpa-forms">
+          <div class="forms-nome divsforms">
+            <input type="text" name="firstname" placeholder="Nome" required class="inputs input">
+            <input type="text" name="lastname" placeholder="Sobrenome" required class="inputs input">
+          </div>
+          <div class="divsforms">
+            <input type="text" name="phone_email" placeholder="Celular ou email" required class="inputs input">
+          </div>
+          <div class="divsforms">
+            <input type="password" name="password" placeholder="Nova senha" required class="inputs input">
+          </div>
+          <div class="divsforms">
+            <label for="" id="label-birthdate" class="label">Data de nascimento</label>
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required class="inputs input">
+          </div>
+          <div class="divsforms">
+            <label id="label-gender" class="label">Gênero</label>
+            <div class="button-radio divsforms">
+              <input type="radio" name="gender" checked class="radioperso radio" value="Feminino">Feminino <input
+                type="radio" name="gender" class="radioperso radio" value="Masculino">Masculino <input type="radio"
+                name="gender" class="radioperso radio" value="Personalizado">Personalizado </div>
+          </div>
+          <div id="botaopersonalizado"></div>
+          <div class="divsforms">
+            <button id="facebook-register" type="submit" class="button">Cadastre-se</button>
+          </div>
+          <div id="div-vazia"></div>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+
+</html>

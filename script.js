@@ -15,15 +15,11 @@ function checkRegistration() {
   const gender = document.getElementsByClassName('gender');
 
   const registrationArray = [firstName, lastName, phoneMail, password, birthdate];
-  
-  let invalidInput = 0;
+
   for (let index = 0; index < 5; index += 1) {
     if (registrationArray[index] === '') {
-      invalidInput += 1;
+      alert('Campos inválidos');
     }
-  }
-  if (invalidInput > 0) {
-    alert('Campos inválidos');
   }
   if (!(gender[0].checked || gender[1].checked || gender[2].checked)) {
     alert('Campos inválidos');

@@ -41,7 +41,7 @@ body {
   width: 300px;
 }
 
-.right-content > h1 {
+.open-account {
   color: #333;
 }
 
@@ -49,28 +49,28 @@ body {
   margin: 10px 0;
 }
 
-#facebook-slogan {
+.facebook-slogan {
   color: #0e385f;
   font-weight: 800;
   margin-left: 10px;
 }
 
-#fullname {
+.fullname {
   display: flex;
 }
 
-#birthdate {
+.birthdate {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
 }
 
-#gender {
+.gender {
   display: flex;
   flex-direction: column;
 }
 
-#label-gender {
+label #label-gender {
   margin: 9px 0;
   margin-left: 4px;
   color: #989ca4;
@@ -103,18 +103,18 @@ body {
   box-sizing: border-box;
 }
 
-.facebook-signin input[ name='firstname' ] {
+.facebook-signin input[ name = 'firstname' ] {
   margin-right: 10px;
 }
 
-.facebook-signin input[ type='text' ] {
+.facebook-signin input[ type = 'text' ] {
   padding: 6px 8px;
   border-radius: 5px;
   border: 2px solid #d4dae6;
   width: 100%;
 }
 
-.facebook-signin input[ type='password' ] {
+.facebook-signin input[ type = 'password' ] {
   padding: 6px 8px;
   border-radius: 5px;
   border: 2px solid #d4dae6;

@@ -6,11 +6,13 @@ function logInButton() {
 const logInClick = document.getElementById('button-login');
 logInClick.addEventListener('click', logInButton);
 
-const firstName = document.getElementById('firstname').value;
-const lastName = document.getElementById('lastname').value;
-const phoneMail = document.getElementById('phone_email').value;
-const birthdate = document.getElementById('label-birthdate').value;
-const gender = document.getElementsByClassName('gender');
+const firstName = document.getElementById('firstname');
+const lastName = document.getElementById('lastname');
+const phoneMail = document.getElementById('phone_email');
+const birthdate = document.getElementById('birthdate');
+const genderFemale = document.getElementById('Feminino');
+const genderMale = document.getElementById('Masculino');
+const gender = document.getElementById('Personalizado');
 const signUpForm = document.querySelector('.signUp');
 
 function finishForm() {
@@ -21,13 +23,20 @@ function finishForm() {
   document.querySelector('.main-content').appendChild(newMessage);
 
   const helloLog = document.createElement('h1');
-  helloLog.innerHTML = `Olá, ${firstName} ${lastName}`;
+  helloLog.innerHTML = `Olá, ${firstName.value} ${lastName.value}`;
   const emailLog = document.createElement('p');
-  emailLog.innerHTML = `E-mail ou telefone: ${phoneMail}`;
+  emailLog.innerHTML = `E-mail ou telefone: ${phoneMail.value}`;
   const birthLog = document.createElement('p');
-  birthLog.innerHTML = `Data de nascimento: ${birthdate}`;
+  birthLog.innerHTML = `Data de nascimento: ${birthdate.value}`;
+
   const genderLog = document.createElement('p');
-  genderLog.innerHTML = `Gênero: ${gender.checked}`;
+  if (genderFemale.checked) {
+    genderLog.innerHTML = `Gênero: ${genderFemale.value}`;
+  } else if (genderMale.checked) {
+    genderLog.innerHTML = `Gênero: ${genderMale.vallue}`;
+  } else if (gender.checked) {
+    genderLog.innerHTML = `Gênero: ${gender.value}`;
+  }
 
   newMessage.appendChild(helloLog);
   newMessage.appendChild(emailLog);

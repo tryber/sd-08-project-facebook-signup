@@ -11,10 +11,10 @@ loginCheck();
 
 const rightContent = document.querySelector('.right-content');
 const formsContent = rightContent.querySelectorAll('input');
+let verificaVazio = 0;
 function formsCheck() {
   const btnSubmit = document.getElementById('facebook-register');
   btnSubmit.addEventListener('click', function (event) {
-    let verificaVazio = 0;
     for (let i = 0; i < formsContent.length; i += 1) {
       if (formsContent[i].value === '') {
         formsContent[0].placeholder = 'Preencha seu nome';
@@ -29,35 +29,38 @@ function formsCheck() {
         verificaVazio += 1;
         event.preventDefault();
       }
-    }
-    if (verificaVazio === 0) {
-      const firstName = document.getElementById('first-name').value;
-      const lastName = document.getElementById('last-name').value;
-      const email = document.getElementById('email').value;
-      const birthDate = document.getElementById('birth-date').value;
-      let genderValue = '';
-      const btnMasculino = document.getElementById('btn-masculino');
-      const btnFeminino = document.getElementById('btn-feminino');
-      const btnPersonalizado = document.getElementById('btn-personalizado');
-      if (btnMasculino.checked) {
-        genderValue = btnMasculino.value;
-      } else if (btnFeminino.checked) {
-        genderValue = btnFeminino.value;
-      } else if (btnPersonalizado.checked) {
-        genderValue = btnPersonalizado.value;
-      }
-      let rightSide = document.querySelector('.right-content');
-      rightSide.innerHTML = '';
-      let rightSideText = document.createElement('h1');
-      const text = 'Nome: ' + firstName + ' Sobrenome: ' + lastName +  '\nEmail ou Telefone: ' + email + '\nData de Nascimento: ' + birthDate + '\nGênero: ' + genderValue
-      let rightSideTextContent = document.createTextNode(text);
-      rightSideText.appendChild(rightSideTextContent);
-      rightSide.appendChild(rightSideText);
-      event.preventDefault();
+      rightSideChange();
     }
   });
 }
 formsCheck();
+
+function rightSideChange () {
+  if (verificaVazio === 0) {
+    const firstName = document.getElementById('first-name').value;
+    const lastName = document.getElementById('last-name').value;
+    const email = document.getElementById('email').value;
+    const birthDate = document.getElementById('birth-date').value;
+    let genderValue = '';
+    const btnMasculino = document.getElementById('btn-masculino');
+    const btnFeminino = document.getElementById('btn-feminino');
+    const btnPersonalizado = document.getElementById('btn-personalizado');
+    if (btnMasculino.checked) {
+      genderValue = btnMasculino.value;
+    } else if (btnFeminino.checked) {
+      genderValue = btnFeminino.value;
+    } else if (btnPersonalizado.checked) {
+      genderValue = btnPersonalizado.value;
+    }
+    const rightSide = document.querySelector('.right-content');
+    rightSide.innerHTML = '';
+    const rightSideText = document.createElement('h1');
+    const text = `Nome: ${firstName} Sobrenome: ${lastName} Email ou Telefone: ${email} Data de Nascimento: ${birthDate} Gênero: ${genderValue}`;
+    const rightSideTextContent = document.createTextNode(text);
+    rightSideText.appendChild(rightSideTextContent);
+    rightSide.appendChild(rightSideText);
+  }
+}
 
 function personalizeCheck() {
   const personaBtn = document.getElementById('btn-personalizado');

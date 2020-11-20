@@ -39,3 +39,43 @@ function clickSubmit(event) {
   }
 }
 document.querySelector('.facebook-register').addEventListener('click', clickSubmit);
+
+function customGender() {
+  let radioButtons = document.querySelector('.radio-button-container');
+  if (document.querySelector('.radio-button-container input#custom-input') === null) {  
+    let customInput = document.createElement('input');
+    customInput.type = 'text';
+    customInput.id = 'custom-input'
+    customInput.name = 'gender-custom';
+    customInput.placeholder = 'Gênero';
+    radioButtons.appendChild(customInput);
+  }
+}
+document.querySelector('input#custom').addEventListener('click',customGender);
+
+function clearCustomGender() {
+  let radioButtons = document.querySelector('.radio-button-container');
+  if (document.querySelector('.radio-button-container input#custom-input')) { 
+    radioButtons.removeChild(document.querySelector('.radio-button-container input#custom-input'));
+  }
+}
+document.querySelector('input#male').addEventListener('click',clearCustomGender);
+document.querySelector('input#female').addEventListener('click',clearCustomGender);
+
+function verForm () {
+  const form = document.querySelectorAll('.form input');
+  let flag1 = 0;
+  let flag2 = 0;
+  for (let index = 0; index < form.length; index += 1) {
+    if (index < 5 || index > 7){
+      if (form[index].value === '') {
+        flag1 = 1;
+      }
+    } else {
+      if (form[index].checked === true) {
+        flag2 = 1;
+      }
+    }
+  }
+  return ([flag1, flag2]);
+}

@@ -36,6 +36,7 @@ body {
 
 .signup {
   display: flex;
+  flex-direction: column;
 }
 
 .right-content {
@@ -57,6 +58,5 @@ body {
 
 .lastname {
   display: flex;
-  justify-content: flex-end;
   width: 45%;
 }

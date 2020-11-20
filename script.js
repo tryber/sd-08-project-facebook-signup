@@ -83,3 +83,8 @@ document.getElementById('personalizado').addEventListener('click', function () {
   newInput.placeholder = 'Gênero (opcional)';
   document.getElementById('generoOpcional').appendChild(newInput);
 });
+
+function validateRadio() {
+  const radio = document.querySelectorAll('gender')[1].querySelectorAll('input[type=radio]');
+  return radio[0].checked || radio[1].checked || radio[2].checked;
+}

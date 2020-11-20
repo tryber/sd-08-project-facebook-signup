@@ -33,6 +33,8 @@ function personalizeCheck() {
   const gndrContent = document.querySelector('.gender-content');
   const newInput = document.createElement('input');
   newInput.type = 'text';
+  newInput.name = 'gender-custom';
+  newInput.placeholder = 'Gênero (opcional)';
   gndrContent.addEventListener('change', function () {
     if (personaBtn.checked) {
       gndrContent.appendChild(newInput);

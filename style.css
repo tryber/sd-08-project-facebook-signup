@@ -34,3 +34,11 @@
 .right-content form div {
   display: flex;
 }
+
+.chec-return {
+  display: none;
+}
+
+#gender-custom {
+  display: none;
+}

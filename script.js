@@ -7,15 +7,15 @@ function loginCheck() {
   btnEntrar.addEventListener('click', entrar);
 }
 loginCheck();
-const btncadastro = document.getElementById('facebook-register');
-function validar() {
-  if ((document.getElementById('inputnome').value == null) || (document.getElementById('inputsobrenome').value == null)
-  || (document.getElementById('inputcelular').value == null) || (document.getElementById('inputnovasenha').value == null)
-  || (document.getElementById('inputnascimento').value == null)) {
-    alert('Campos inválidos');
-  } else {
-    return true;
+const cadastro = document.getElementById('facebook-register');
+const form = document.querySelector('.form-group2');
+cadastro.addEventListener('click', function() {
+  for(let index = 0; index < form.length; index+=1) {
+    if(form[index].innerText === ''){
+      alert('Campos inválidos')
+      break;
+    }else{
+      alert('Cadastro efetuado')
+    }
   }
-}
-btncadastro.addEventListener('click', validar);
-validar();
+})

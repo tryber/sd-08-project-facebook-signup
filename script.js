@@ -40,9 +40,8 @@ const form = document.querySelector('.form-register');
 function checkRadio() {
   const inputRadio = document.querySelectorAll('.inputRadio');
   for (let index = 0; index < inputRadio.length; index += 1) {
-    if (!inputRadio[index].checked) {   
+    if (!inputRadio[index].checked) {
       invalid.innerHTML = 'Campos inválidos';
-      console.log(invalid)
       form.appendChild(invalid);
       break;
     }

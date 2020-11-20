@@ -50,11 +50,11 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form>
 
-        <fieldset class="row-group">
+        <div class="row-group">
 
           <input type="text" name="firstname" placeholder="Nome">
           <input type="text" name="lastname" placeholder="Sobrenome">
-        </fieldset>
+        </div>
         <input type="text" name="phone_email" placeholder="Celular ou email">
         <input type="password" name="password" placeholder="Nova senha">
         <fieldset class="clear-padding">
@@ -65,7 +65,7 @@
         <fieldset class="form-group clear-padding">
 
           <label id="label-gender" for="gender">Gênero</label>
-          <fieldset class="row-group">
+          <div class="row-group">
 
             <input type="radio" id="feminino" name="gender" value="Feminino">
             <label for="feminino">Feminino</label>
@@ -73,7 +73,7 @@
             <label for="masculino">Masculino</label>
             <input type="radio" id="personalizado" name="gender" value="Personalizado">
             <label for="personalizado">Personalizado</label>
-          </fieldset>
+          </div>
           <div id="persInput"><input type="text" name="gender-custom" id="genderCustom" placeholder="Gênero (Opcional)"></div>
         </fieldset>
         <button type="submit" id="facebook-register">Cadastre-se</button>

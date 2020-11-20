@@ -12,9 +12,9 @@ function addCustomGenderInput() {
   const customGenderRadio = document.querySelector('#custom');
   const registerButton = document.querySelector('#facebook-register');
   const form = document.querySelector('#register-form');
-  customGenderRadio.addEventListener('click', function (event) {
+  customGenderRadio.addEventListener('click', function () {
     const allGenderElements = document.querySelectorAll('#gender-custom')[0];
-    if ((typeof allGenderElements) == 'undefined') {
+    if ((typeof allGenderElements) === 'undefined') {
       const customGender = document.createElement('input');
       customGender.setAttribute('type', 'text');
       customGender.setAttribute('name', 'gender-custom');
@@ -44,3 +44,7 @@ function removeCustomGenderInput() {
 }
 
 removeCustomGenderInput();
+
+function errorMessage() {
+
+}

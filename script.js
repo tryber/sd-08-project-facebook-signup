@@ -32,7 +32,7 @@ function handleFormMessage() {
   const Forms = document.getElementById('signup-container');
   Forms.innerHTML = 'Olá, ';
   for (let index = 0; index < InputAll.length; index += 1) {
-    if (!InputAll[index].value) {
+    if (!InputAll[index].value && InputAll[index].id !== 'custom-input') {
       Forms.innerHTML = 'Campos inválidos';
       break;
     } else if (!validateInputElement(InputAll[index])) {

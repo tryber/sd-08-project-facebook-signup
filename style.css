@@ -21,9 +21,9 @@ header {
 }
 
 .facebook-login {
+  align-self: baseline;
   display: flex;
   margin-top: 5px;
-  align-self: end;
 }
 
 .form-group {

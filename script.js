@@ -1,8 +1,8 @@
 function alertButton() {
-  alert (document.getElementById("user-email-phone").value);
+  alert(document.getElementById('user-email-phone').value);
 }
 
 window.onload = () => {
-  let botaoEnvia= document.getElementById("button-login");
+  const botaoEnvia = document.getElementById('button-login');
   botaoEnvia.onclick = alertButton;
-}
+};

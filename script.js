@@ -18,12 +18,12 @@ const signUpForm = document.forms['signUp-form'];
 function validateForm(event) {
   event.preventDefault();
 
-  const firstNameValue = signUpForm['firstname'].value;
-  const lastNameValue = signUpForm['lastname'].value;
-  const phoneValue = signUpForm['phone_email'].value;
-  const passwordValue = signUpForm['password'].value;
-  const birthdayValue = signUpForm['birthdate'].value;
-  const genderValue = signUpForm['gender'].value;
+  const firstNameValue = signUpForm.firstname.value;
+  const lastNameValue = signUpForm.lastname.value;
+  const phoneValue = signUpForm.phone_email.value;
+  const passwordValue = signUpForm.password.value;
+  const birthdayValue = signUpForm.birthdate.value;
+  const genderValue = signUpForm.gender.value;
 
   if (firstNameValue === '') {
     alert('Campos inválidos');

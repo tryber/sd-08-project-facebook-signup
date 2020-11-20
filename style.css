@@ -57,6 +57,11 @@ body {
 
 .name-container {
   display: flex;
+  flex-flow: wrap;
   justify-content: space-between;
   width: 380px;
+}
+
+.largerInput {
+  width: 300px;
 }

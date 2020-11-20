@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -43,9 +48,13 @@
 }
 
 .inputName {
-  display: flex;
   margin-right: 5px;
-  width: 145px;
+  width: 130px;
+}
+
+.email-senha {
+  flex-basis: 90%;
+  margin-top: 10px;
 }
 
 .inputLogin {
@@ -53,11 +62,16 @@
   margin-right: 10px;
 }
 
-.label-gender {
+.label {
   flex-basis: 100%;
 }
 
 .gender-option {
+  display: flex;
+  flex-direction: row;
+}
+
+.others {
   display: flex;
   flex-direction: row;
 }

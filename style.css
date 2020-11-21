@@ -1,6 +1,7 @@
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
+  color: white;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -47,4 +48,24 @@
 
 .registration {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.registration input {
+  margin-bottom: 3px;
+}
+
+.registration label {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+#lastName, #firstName {
+  width: 46%;
+}
+
+#phone_email, #password, #birthdate {
+  width: 100%;
 }

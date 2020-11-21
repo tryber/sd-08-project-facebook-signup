@@ -1,0 +1,106 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.facebook-login {
+  align-items: center;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.form-group input {
+  height: 10px;
+  width: 100px;
+}
+
+.names {
+  display: flex;
+}
+
+.names input {
+  width: 80px;
+}
+
+.form-group label {
+  color: aliceblue;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+.label-style {
+  height: 18px;
+  width: 140px;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-control button {
+  background-color: rgb(46, 74, 177);
+  border: 2px solid rgb(71, 71, 71);
+  border-radius: 2px;
+  color: aliceblue;
+  font-weight: 700;
+  line-height: 19px;
+  padding: 0 8px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+}
+
+.slogan-container {
+  color: rgb(66, 103, 178);
+  font-weight: 700;
+  margin-top: 40px;
+  width: 44%;
+}
+
+.slogan-container img {
+  width: 120%;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+}
+
+.validated-form {
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 5px 10px;
+}
+
+.gender-style {
+  display: flex;
+  flex-direction: row;
+}
+
+.radioBtn {
+  font-size: 9px;
+}

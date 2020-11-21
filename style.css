@@ -62,6 +62,7 @@ header .form-group label {
 }
 
 .left-content {
+  padding-left: 270px;
   width: 800px;
 }
 
@@ -73,7 +74,7 @@ header .form-group label {
 }
 
 .right-content {
-  
+  margin-right: 270px;
   width: 300px;
 }
 

@@ -6,9 +6,9 @@ body {
 header {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: center;
-  width: 100%;
   height: 70px;
+  justify-content: center;
+  width: 100%;  
 }
 
 .header-center {
@@ -34,9 +34,9 @@ header .form-group label {
 }
 
 .btn-login {
+  background-color: rgb(60, 101, 184);
   border: solid 1px darkblue;
   border-radius: 2px;
-  background-color: rgb(60, 101, 184);
   color: white;
   font-size: 12px;
   font-weight: 600;
@@ -44,9 +44,9 @@ header .form-group label {
 }
 
 .form-control {
+  align-self: center;
   margin: 5px;
   padding-top: 27px;
-  align-self: center;
 }
 
 .main-content {
@@ -63,8 +63,8 @@ header .form-group label {
 }
 
 .left-content {
-  width: 800px;
   margin-right: 70px;
+  width: 800px;
 }
 
 .left-content p {
@@ -75,8 +75,8 @@ header .form-group label {
 }
 
 .right-content {
-  width: 300px;
   margin-right: 150px;
+  width: 300px;
 }
 
 .right-content input {
@@ -84,7 +84,7 @@ header .form-group label {
   border-radius: 4px;
   color: gray;
   margin: 5px;
-  padding: 5px;  
+  padding: 5px;
 }
 
 .right-content p {

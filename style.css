@@ -13,18 +13,13 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 60px;
-  justify-content: center;
+  justify-content: space-between;
+  min-width: 800px;
+  padding: 0 15%;
 }
 
 .top-bar img {
   min-width: 190px;
-}
-
-.top-bar .top-bar-container {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  min-width: 800px;
 }
 
 .top-bar form {
@@ -64,7 +59,7 @@ body {
   background-image: linear-gradient(to bottom, white, #d3d8e8);
   display: flex;
   height: 65vh;
-  justify-content: flex-start;
+  justify-content: space-around;
   padding: 20px 0 0 20px;
 }
 
@@ -131,4 +126,8 @@ h1 {
 .quick-easy {
   font-weight: 700;
   margin-bottom: 15px;
+}
+
+.radios-gender {
+  display: flex;
 }

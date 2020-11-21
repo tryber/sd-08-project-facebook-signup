@@ -4,7 +4,7 @@ const buttonCadastro = document.querySelector('#facebook-register');
 const novoUsuario = document.querySelector('.novoUsuario');
 const personalizado = document.querySelector('.personalizado');
 const generos = document.querySelector('.generos');
-let selecionado = document.querySelector('input[name="gender"]:checked').value;
+// let selecionado = document.querySelector('input[name="gender"]:checked').value;
 
 buttonEntrar.addEventListener('click', function () {
   alert(emailOuTelefone.value);
@@ -21,7 +21,7 @@ buttonCadastro.addEventListener('click', function (event) {
 });
 
 generos.addEventListener('click', function () {
-  selecionado = document.querySelector('input[name="gender"]:checked').value;
+  const selecionado = document.querySelector('input[name="gender"]:checked').value;
   if (selecionado === 'Personalizado') {
     personalizado.style.display = 'flex';
   } else {

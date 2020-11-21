@@ -8,7 +8,7 @@ header {
   display: flex;
   height: 70px;
   justify-content: center;
-  width: 100%;  
+  width: 100%;
 }
 
 .header-center {
@@ -69,8 +69,8 @@ header .form-group label {
 
 .left-content p {
   color: rgb(14, 14, 82);
-  font-weight: 600;
   font-size: 25px;
+  font-weight: 600;
   margin-left: 18px;
 }
 
@@ -109,7 +109,7 @@ header .form-group label {
   display: flex;
 }
 
-input[type='radio'] {
+.field input {
   margin: 10px 5px;
 }
 
@@ -140,7 +140,7 @@ h5 {
 }
 
 .create-page {
-  color:  rgb(66, 103, 178);
+  color: rgb(66, 103, 178);
   text-decoration: none;
 }
 
@@ -156,6 +156,6 @@ header img {
 }
 
 .terms a {
-  color:  rgb(66, 103, 178);
+  color: rgb(66, 103, 178);
   text-decoration: none;
 }

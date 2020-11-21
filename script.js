@@ -9,12 +9,11 @@ let contador = 0;
 function createCustomGender(event) {
   const genderCustom = document.querySelector('.hidden-input');
 
-  if (event.target.value === 'Personalizado') {    
+  if (event.target.value === 'Personalizado') {
     genderCustom.innerHTML = '<input name="gender-custom" placeholder="Gênero (opcional)" type="text">';
   } else {
     genderCustom.innerHTML = '';
   }
-  
 }
 
 function plotText() {

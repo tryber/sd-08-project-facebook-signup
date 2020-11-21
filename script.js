@@ -20,7 +20,7 @@ function cadastrar() {
       const arrayInput = inputs[index];
       if (arrayInput.value === '' || genero === '') {
         arrayInput.className = 'erro';
-        p.innerText = 'Campos inválidos';
+        p.innerText = 'Campos inválidos'; p.classList.add('field-invalid');
         resultado += 'Favor preencher o campo .\n';
       } else {
         arrayInput.className = '';
@@ -28,7 +28,7 @@ function cadastrar() {
       formUser.appendChild(p);
     }
     if (resultado === '') {
-      formUser.innerHTML = `<p>Olá, ${nome} ${sobrenome}</p> <p>Email: ${email}</p> <p>Data de Nascimento: ${data}</p> <p>Gênero: ${genero}`;
+      formUser.innerHTML = `<div class="show-container-data"><p class="show-name">Olá, ${nome} ${sobrenome}</p> <p class="show-email">Email: ${email}</p> <p class="show-date">Data de Nascimento: ${data}</p> <p class="show-gender">Gênero: ${genero}</div>`;
     }
   });
 }

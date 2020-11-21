@@ -9,7 +9,7 @@ const invalidField = document.createElement('p');
 
 getEnter.addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
-})
+});
 
 submitButton.addEventListener('click', function (event) {
   if (invalidDiv.hasChildNodes() === true) {

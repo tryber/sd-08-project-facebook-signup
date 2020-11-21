@@ -35,31 +35,41 @@ function apagarDiv() {
 const btnSalvar = document.getElementById('facebook-register');
 const form2Local = document.getElementsByClassName('form-group2');
 
+let variaveis = {
+  inputnome: '',
+  inputsobrenome: '',
+  inputcelular: '',
+  inputnovasenha: '',
+  inputnascimento: ''
+};
+const chaves = Object.keys(variaveis);
+
 function validar() {
-  if ((document.getElementById('inputnome').value === '') || (document.getElementById('inputsobrenome').value === '') || (document.getElementById('inputcelular').value === '') || (document.getElementById('inputnovasenha').value === '') || (document.getElementById('inputnascimento').value === '')) {
-    form2Local[0].firstChild.remove();
-    form2Local[0].insertAdjacentHTML('afterbegin', 'Campos inválidos');
-  } else {
-    // insere os dados dos inputs em variáveis
-    form2Local[0].firstChild.remove();
-    apagarDiv();
-    const firstName = document.getElementById('inputnome').value;
-    const lastName = document.getElementById('inputsobrenome').value;
-    const phoneEmail = document.getElementById('inputcelular').value;
-    const birthdate = document.getElementById('inputnascimento').value;
-    let gender = '';
-    if (document.getElementById('feminino').checked === true) {
-      gender = 'Feminino';
-    } else if (document.getElementById('masculino').checked === true) {
-      gender = 'Masculino';
+  for (let index = 0; index < chaves.length; index += 1) {
+    let divLocal = document.getElementById(chaves[index]); 
+    if (divLocal.value === '') {
+      form2Local[0].firstChild.remove();
+      form2Local[0].insertAdjacentHTML('afterbegin', 'Campos inválidos');
     } else {
-      gender = 'Personalizado';
+    // insere os dados dos inputs em variáveis  
+    let vari = chaves[index];
+    variaveis[vari] = divLocal.value;
     }
-    divObg.insertAdjacentHTML('afterbegin', `<br><br> Olá, ${firstName} ${lastName}`);
-    divObg.insertAdjacentHTML('beforeend', `<br><br> Celular / E-mail: ${phoneEmail}`);
-    divObg.insertAdjacentHTML('beforeend', `<br><br> Data de Nascimento: ${birthdate}`);
-    divObg.insertAdjacentHTML('beforeend', `<br><br> Gênero: ${gender}`);
   }
+  form2Local[0].firstChild.remove();
+  apagarDiv();
+  let gender = '';
+  if (document.getElementById('feminino').checked === true) {
+    gender = 'Feminino';
+  } else if (document.getElementById('masculino').checked === true) {
+    gender = 'Masculino';
+  } else {
+    gender = 'Personalizado';
+  }
+  divObg.insertAdjacentHTML('afterbegin', `<br><br> Olá, ${variaveis['inputnome']} ${variaveis['inputsobrenome']}`);
+  divObg.insertAdjacentHTML('beforeend', `<br><br> Celular / E-mail: ${variaveis['inputcelular']}`);
+  divObg.insertAdjacentHTML('beforeend', `<br><br> Data de Nascimento: ${variaveis['inputnascimento']}`);
+  divObg.insertAdjacentHTML('beforeend', `<br><br> Gênero: ${gender}`);
 }
 
 btnSalvar.addEventListener('click', validar);

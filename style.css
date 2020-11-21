@@ -1,17 +1,25 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
-  padding: 10px 250px;
+  padding: 10px 50px 5px;
 }
 
 .facebook-logo {
   align-items: flex-start;
+  height: 55px;
+  margin-left: 150px;
 }
 
 .facebook-login {
   align-items: flex-end;
   display: flex;
+  margin-left: 380px;
 }
 
 .facebook-login div {
@@ -21,6 +29,31 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
+}
+
+.top-bar #button-login {
+  background-color: rgb(59, 101, 187);
+  border: 1px solid darkblue;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  padding: 3px 5px;
+  margin-bottom: 20px;
+}
+
+.top-bar p {
+  color: rgb(170, 196, 221);
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+}
+
+input {
+  border: 1px solid lightsteelblue;
+  border-radius: 3px;
+  line-height: 20px;
+  margin: 5px 0;
 }
 
 .form-control {
@@ -38,30 +71,84 @@
   font-weight: 700;
 }
 
-.form-group input {
-  width: 130px;
-}
-
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .left-content {
+  box-sizing: border-box;
+  color: rgb(8, 8, 92);
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  padding-left: 250px;
+  padding-right: 100px;
   width: 800px;
 }
 
-.right-content {
-  width: 300px;
+.left-content img {
+  width: 420px;
 }
 
-.inputs {
+.right-content {
+  box-sizing: border-box;
+  width: 300px;
+  margin-right: 350px;
+}
+
+h1 {
+  font-size: 25px;
+  margin-bottom: -5px;
+}
+
+.inputName {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
-.input2 {
+.inputName input {
+  box-sizing: border-box;
+  margin-right: 10px;
+  width: 145px;
+}
+
+.inputData {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.select-gender .gender {
+  margin: 0 0 0 5px;
+}
+
+.select-gender label {
+  font-size: 14px;
+}
+
+.signUp #label-gender, #label-birthdate {
+  color: grey;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.another-gender {
+  box-sizing: border-box;
+  display: none;
+  margin: 0;
+  width: 100%;
+}
+
+.signUp #facebook-register {
+  background-color: #44a032;
+  border: 1px solid darkgreen;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 0;
+  margin-top: 10px;
 }

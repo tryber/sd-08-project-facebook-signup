@@ -1,19 +1,18 @@
+const signUpForm = document.querySelector('.signUp');
+const signUpFormInputs = document.querySelector('.signUp').querySelectorAll('input');
+
 function logInButton() {
   const alertText = document.getElementById('user-email-phone').value;
   alert(alertText);
 }
 
-const logInClick = document.getElementById('button-login');
-logInClick.addEventListener('click', logInButton);
+function addGender() {
+  document.querySelector('.another-gender').style.display = 'flex';
+}
 
-const firstName = document.getElementById('firstname');
-const lastName = document.getElementById('lastname');
-const phoneMail = document.getElementById('phone_email');
-const birthdate = document.getElementById('birthdate');
-const genderFemale = document.getElementById('Feminino');
-const genderMale = document.getElementById('Masculino');
-const gender = document.getElementById('Personalizado');
-const signUpForm = document.querySelector('.signUp');
+function removeCustom() {
+  document.querySelector('.another-gender').style.display = 'none';
+}
 
 function finishForm() {
   document.querySelector('.right-content').removeChild(document.querySelector('.signUpForm'));
@@ -21,19 +20,19 @@ function finishForm() {
   const newMessage = document.querySelector('.right-content');
 
   const helloLog = document.createElement('h1');
-  helloLog.innerHTML = `Olá, ${firstName.value} ${lastName.value}`;
+  helloLog.innerHTML = `Olá, ${signUpFormInputs[0].value} ${signUpFormInputs[1].value}`;
   const emailLog = document.createElement('p');
-  emailLog.innerHTML = `E-mail ou telefone: ${phoneMail.value}`;
+  emailLog.innerHTML = `E-mail ou telefone: ${signUpFormInputs[2].value}`;
   const birthLog = document.createElement('p');
-  birthLog.innerHTML = `Data de nascimento: ${birthdate.value}`;
+  birthLog.innerHTML = `Data de nascimento: ${signUpFormInputs[4].value}`;
 
   const genderLog = document.createElement('p');
-  if (genderFemale.checked) {
-    genderLog.innerHTML = `Gênero: ${genderFemale.value}`;
-  } else if (genderMale.checked) {
-    genderLog.innerHTML = `Gênero: ${genderMale.value}`;
-  } else if (gender.checked) {
-    genderLog.innerHTML = `Gênero: ${gender.value}`;
+  if (signUpFormInputs[5].checked) {
+    genderLog.innerHTML = `Gênero: ${signUpFormInputs[5].value}`;
+  } else if (signUpFormInputs[6].checked) {
+    genderLog.innerHTML = `Gênero: ${signUpFormInputs[6].value}`;
+  } else if (signUpFormInputs[7].checked) {
+    genderLog.innerHTML = `Gênero: ${signUpFormInputs[7].value}`;
   }
 
   newMessage.appendChild(helloLog);
@@ -49,22 +48,11 @@ function checkRegistration() {
     document.getElementById('invalid').innerHTML = '';
     finishForm();
   }
+// Eu pensei que tinha visto a função no material da Trybe no dia de forms, mas parece que vi em outro lugar. De qualquer forma, eu revisei sobre ela aqui: https://www.w3schools.com/js/js_validation_api.asp
 }
 
-const cadastro = document.getElementById('facebook-register');
-cadastro.addEventListener('click', checkRegistration);
-
-function genderCustom() {
-  const newGender = document.createElement('input');
-  newGender.setAttribute('name', 'gender-custom');
-  newGender.setAttribute('placeholder', 'Gênero (opcional)');
-
-  document.getElementById('select-gender').appendChild(newGender);
-
-  if (document.getElementById('select-gender').lastChild.className !== 'gender-custom') {
-    document.getElementById('select-gender').appendChild(newGender);
-  }
-}
-
-const custom = document.getElementById('Personalizado');
-custom.addEventListener('click', genderCustom);
+const logInClick = document.getElementById('button-login').addEventListener('click', logInButton);
+const cadastro = document.getElementById('facebook-register').addEventListener('click', checkRegistration);
+const genderCustom = document.getElementById('Personalizado').addEventListener('click', addGender);
+const genderFemale = document.getElementById('Feminino').addEventListener('click', removeCustom);
+const genderMale = document.getElementById('Masculino').addEventListener('click', removeCustom);

@@ -17,6 +17,7 @@
       <div class="form-group">
         <label id="user-password-label" for="">Senha</label>
         <input type="text" id="user-password">
+        <p>Esqueceu a conta?</p>
       </div>
       <div class="form-control">
         <button id="button-login">Entrar</button>
@@ -33,21 +34,21 @@
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <form class="signUp" action="">
-          <section class="inputs">
+          <section class="inputName">
             <input id="firstname" type="text" name="firstname" placeholder="Nome" required>
             <input id="lastname" type="text" name="lastname" placeholder="Sobrenome" required>
           </section>
-          <section class="input2">
+          <section class="inputData">
             <input id="phone_email" class ="input2" type="text" name="phone_email" placeholder="Celular ou email" required>
           </section>
-          <section class="input2">
+          <section class="inputData">
             <input id="password" type="password" name="password" placeholder="Nova senha" required></input>
           </section>
-          <section class="input2">
+          <section class="inputData">
             <label  id="label-birthdate">Data de nascimento</label>
             <input  type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required>
           </section>
-          <section id="select-gender">
+          <section id="select-gender" class="select-gender">
             <div>
               <label id="label-gender">Gênero</label>
             </div>
@@ -57,8 +58,9 @@
             <label for="Masculino">Masculino</label>
             <input class="gender" type="radio" name="gender" id="Personalizado" value="Personalizado" required></input>
             <label for="Personalizado">Personalizado</label>
+            <input type="text" class="another-gender" placeholder="Gênero (opcional)">
           </section>
-            <section class="input2">
+            <section class="inputData">
               <button type="submit" id="facebook-register">Cadastre-se</button>
             </section>
             <p id="invalid"></p>

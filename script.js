@@ -15,8 +15,7 @@ buttonEntrar.addEventListener('click', function () {
 
 function guardarTexto() {
   selecionado = document.querySelector('input[name="gender"]:checked').value;
-  // console.log('Olá, ' + entradas[0].value + ' ' + entradas[1].value + ', e-mail ou telefone ' + entradas[2].value + ', data de nascimento ' + entradas[3].value + ' ' + selecionado);
-  paragrafoBoasVindas.innerHTML = 'Olá, ' + entradas[0].value + ' ' + entradas[1].value + ', e-mail ou telefone ' + entradas[2].value + ', data de nascimento ' + entradas[3].value + ' ' + selecionado;
+  paragrafoBoasVindas.innerHTML = `Olá, ${entradas[0].value} ${entradas[1].value} e-mail ou telefone ${entradas[2].value}, data de nascimento ${entradas[3].value} genero ${selecionado}`;
 }
 
 function remover() {

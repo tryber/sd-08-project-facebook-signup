@@ -44,24 +44,12 @@ const variaveis = {
 };
 const chaves = Object.keys(variaveis);
 
-function preencheVariaveis() {
+function preencheVariaveis() {  
   for (let index = 0; index < chaves.length; index += 1) {
     const divLocal = document.getElementById(chaves[index]);
-    if (divLocal.value === '') {
-      form2Local[0].firstChild.remove();
-      form2Local[0].insertAdjacentHTML('afterbegin', 'Campos inválidos');
-    } else {
-// insere os dados dos inputs em variáveis
-      const vari = chaves[index];
-      variaveis[vari] = divLocal.value;
-    }
+    const vari = chaves[index];
+    variaveis[vari] = divLocal.value;
   }
-}
-
-function validar() {
-  preencheVariaveis();
-  form2Local[0].firstChild.remove();
-  apagarDiv();
   let gender = '';
   if (document.getElementById('feminino').checked === true) {
     gender = 'Feminino';
@@ -70,13 +58,36 @@ function validar() {
   } else {
     gender = 'Personalizado';
   }
+  form2Local[0].firstChild.remove();
+  apagarDiv();
   divObg.insertAdjacentHTML('afterbegin', `<br><br> Olá, ${variaveis.inputnome} ${variaveis.inputsobrenome}`);
   divObg.insertAdjacentHTML('beforeend', `<br><br> Celular / E-mail: ${variaveis.inputcelular}`);
   divObg.insertAdjacentHTML('beforeend', `<br><br> Data de Nascimento: ${variaveis.inputnascimento}`);
   divObg.insertAdjacentHTML('beforeend', `<br><br> Gênero: ${gender}`);
 }
 
-btnSalvar.addEventListener('click', validar);
+function validar() {
+  for (let index = 0; index < chaves.length; index += 1) {
+    const divLocal = document.getElementById(chaves[index]);
+    if (divLocal.value === '') {
+      return false;
+    } else {
+      return true;
+    }
+  }
+}
+
+function validaTudo() {
+  if (validar() === false) {
+    form2Local[0].firstChild.remove();
+    form2Local[0].insertAdjacentHTML('afterbegin', 'Campos inválidos');
+  } else {
+    form2Local[0].firstChild.remove();
+    preencheVariaveis();
+  }
+}
+
+btnSalvar.addEventListener('click', validaTudo);
 
 document.getElementById('personalizado').addEventListener('click', function () {
   const newInput = document.createElement('input');

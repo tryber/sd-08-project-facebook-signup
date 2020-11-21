@@ -28,26 +28,25 @@ function Substitute() {
     const container = document.querySelector('.right-content');
     let array = [];
     array = container.children;
-    for (let index = 0; index < array.length; index++) {
+    for (let index = 0; index < array.length; index += 1) {
       array[index].classList.add('clear');
     }
-    const url_string = window.location.href;
-    const url = new URL(url_string);
+    const url = new URL(window.location.href);
 
     const textName = document.createElement('h2');
-    textName.innerText = 'Olá, ' + url.searchParams.get("firstname") + ' ' + url.searchParams.get("lastname");
+    textName.innerText = `Olá, ${url.searchParams.get('firstname')} ${url.searchParams.get('lastname')}`;
     container.appendChild(textName);
 
     const textPhoneEmail = document.createElement('h4');
-    textPhoneEmail.innerText = url.searchParams.get("phone_email");
+    textPhoneEmail.innerText = url.searchParams.get('phone_email');
     container.appendChild(textPhoneEmail);
 
     const textBirthdate = document.createElement('h4');
-    textBirthdate.innerText = url.searchParams.get("birthdate");
+    textBirthdate.innerText = url.searchParams.get('birthdate');
     container.appendChild(textBirthdate);
 
     const textGender = document.createElement('h4');
-    textGender.innerText = url.searchParams.get("gender");
+    textGender.innerText = url.searchParams.get('gender');
     container.appendChild(textGender);
     localStorage.setItem('setClear', 'false');
   }

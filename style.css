@@ -57,15 +57,15 @@
 }
 
 .registration label {
-  margin-top: 10px;
   margin-bottom: 6px;
+  margin-top: 10px;
   width: 100%;
 }
 
-#lastName, #firstName {
+.lastName , .firstName {
   width: 46%;
 }
 
-#phone_email, #password, #birthdate {
+.phone_email , .password , .birthdate {
   width: 100%;
 }

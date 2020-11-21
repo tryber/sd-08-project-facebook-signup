@@ -25,9 +25,10 @@ function changeContent() {
   const emailPhone = document.getElementById('phone_email').value;
   const birthdate = document.getElementById('birthdate').value;
   const gender = document.querySelector('input[type=radio]:checked').value;
+  const fullname = `${firstname} ${lastname}`;
 
   const rightContent = document.querySelector('.right-content');
-  rightContent.innerHTML = `<p>Olá, ${firstname} ${lastname}</p>
+  rightContent.innerHTML = `<p>Olá, ${fullname}</p>
 <p>E-mail ou telefone: ${emailPhone}</p>
 <p>Data de nascimento: ${birthdate}</p>
 <p>Gênero: ${gender}</p>`;

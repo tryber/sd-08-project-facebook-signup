@@ -134,3 +134,9 @@ a {
   visibility: hidden;
   width: 70%;
 }
+
+.camposInvalidos {
+  font-size: 20px;
+  margin: 20px 0 0 70px;
+  width: 100%;
+}

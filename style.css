@@ -27,19 +27,19 @@ body {
 }
 
 .form-group {
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
 }
 
-.top-bar #button-login {
+.top-bar button {
   background-color: rgb(59, 101, 187);
   border: 1px solid darkblue;
   border-radius: 3px;
   color: white;
   font-weight: 700;
-  padding: 3px 5px;
   margin-bottom: 20px;
+  padding: 3px 5px;
 }
 
 .top-bar p {
@@ -94,8 +94,8 @@ input {
 
 .right-content {
   box-sizing: border-box;
-  width: 300px;
   margin-right: 350px;
+  width: 300px;
 }
 
 h1 {
@@ -129,7 +129,13 @@ h1 {
   font-size: 14px;
 }
 
-.signUp #label-gender, #label-birthdate {
+.signUp .inputData label {
+  color: grey;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.signUp .select-gender label {
   color: grey;
   font-size: 14px;
   font-weight: 700;
@@ -142,13 +148,13 @@ h1 {
   width: 100%;
 }
 
-.signUp #facebook-register {
+.signUp button {
   background-color: #44a032;
   border: 1px solid darkgreen;
   border-radius: 5px;
   color: white;
   font-size: 16px;
   font-weight: 700;
-  padding: 10px 0;
   margin-top: 10px;
+  padding: 10px 0;
 }

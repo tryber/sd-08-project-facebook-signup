@@ -51,8 +51,8 @@ function checkRegistration() {
 // Eu pensei que tinha visto a função no material da Trybe no dia de forms, mas parece que vi em outro lugar. De qualquer forma, eu revisei sobre ela aqui: https://www.w3schools.com/js/js_validation_api.asp
 }
 
-const logInClick = document.getElementById('button-login').addEventListener('click', logInButton);
-const cadastro = document.getElementById('facebook-register').addEventListener('click', checkRegistration);
-const genderCustom = document.getElementById('Personalizado').addEventListener('click', addGender);
-const genderFemale = document.getElementById('Feminino').addEventListener('click', removeCustom);
-const genderMale = document.getElementById('Masculino').addEventListener('click', removeCustom);
+document.getElementById('button-login').addEventListener('click', logInButton);
+document.getElementById('facebook-register').addEventListener('click', checkRegistration);
+document.getElementById('Personalizado').addEventListener('click', addGender);
+document.getElementById('Feminino').addEventListener('click', removeCustom);
+document.getElementById('Masculino').addEventListener('click', removeCustom);

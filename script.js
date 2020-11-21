@@ -20,6 +20,25 @@ function criarMensagemCamposInvalidos(reference) {
     reference.insertBefore(msg, reference.firstChild);
   }
 }
+function mensagemCadastro() {
+  const inputsCadastro = document.querySelectorAll('.signup input');
+  const inputsValues = [];
+  inputsCadastro.forEach((elemento) => {
+    if (elemento.type !== 'radio') {
+      inputsValues.push(elemento.value);
+    } else if (elemento.checked) {
+      inputsValues.push(elemento.value);
+    }
+  });
+  const mensagemInner = `<p>Olá, ${inputsValues[0]} ${inputsValues[1]} \n ${inputsValues[2]} \n ${inputsValues[4]} \n ${inputsValues[5]}</p>`;
+  return mensagemInner;
+}
+function trocarRightContent() {
+  const rightContent = document.querySelector('.right-content');
+  const mensagem = mensagemCadastro();
+  rightContent.innerHTML = '';
+  rightContent.innerHTML = mensagem;
+}
 function checarFormulario(evento) {
   evento.preventDefault();
   const formulario = document.querySelector('.signup');
@@ -40,28 +59,6 @@ function criaCampoPersonalizado() {
     genderElemento.parentElement
       .insertBefore(campoPersonalizado, genderElemento.nextElementSibling);
   }
-}
-function trocarRightContent() {
-  const rightContent = document.querySelector('.right-content');
-  const mensagem = mensagemCadastro();
-  rightContent.innerHTML = '';
-  console.log(mensagem);
-  rightContent.innerHTML = mensagem;
-}
-
-function mensagemCadastro() {
-  const inputsCadastro = document.querySelectorAll('.signup input');
-  const inputsValues = [];
-  inputsCadastro.forEach((elemento) => {
-    if (elemento.type !== 'radio') {
-      inputsValues.push(elemento.value);
-    } else if (elemento.checked) {
-      console.log('entrou if');
-      inputsValues.push(elemento.value);
-    }
-  });
-  const mensagemInner = `<p>Olá, ${inputsValues[0]} ${inputsValues[1]} \n ${inputsValues[2]} \n ${inputsValues[4]} \n ${inputsValues[5]}</p>`;
-  return mensagemInner;
 }
 
 capturaEvento('#facebook-register', 'click', checarFormulario);

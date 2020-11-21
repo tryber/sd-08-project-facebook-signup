@@ -22,14 +22,15 @@ for (let index = 0; index < formInputLocal.length; index += 1) {
     }
   };
 }
+
+const divFormulario = document.getElementById('formulario');
+const divObg = document.getElementById('msg-obrigado');
+
 function apagarDiv() {
   // muda a classe das divs pra elas não aparecerem
-  const divObg = document.getElementById('msg-obrigado');
-  const divFormulario = document.getElementById('formulario');
   divObg.className = '';
   divFormulario.className = 'display-none';
 }
-    
 
 const btnSalvar = document.getElementById('facebook-register');
 const form2Local = document.getElementsByClassName('form-group2');
@@ -41,7 +42,7 @@ function validar() {
   } else {
     // insere os dados dos inputs em variáveis
     form2Local[0].firstChild.remove();
-    apagarDiv()
+    apagarDiv();
     const firstName = document.getElementById('inputnome').value;
     const lastName = document.getElementById('inputsobrenome').value;
     const phoneEmail = document.getElementById('inputcelular').value;

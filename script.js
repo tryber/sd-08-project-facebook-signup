@@ -9,16 +9,13 @@ botaoEntrar.addEventListener('click', alertaBotao);
 const genderPersonalized = document.getElementById('gender3');
 const textSpace = document.getElementById('personalizedText');
 genderPersonalized.addEventListener('click', function () {
-  const input = document.createElement('input');
-  input.type = 'text';
-  input.placeholder = 'Gênero';
-  textSpace.appendChild(input);
+  textSpace.style.visibility = 'visible';
 });
-function removeGenderPersonalized() {
-  textSpace.innerHTML = '';
-}
 const genderFemale = document.getElementById('gender1');
 const genderMale = document.getElementById('gender2');
+function removeGenderPersonalized() {
+  textSpace.style.visibility = 'hidden';
+}
 genderFemale.addEventListener('click', removeGenderPersonalized);
 genderMale.addEventListener('click', removeGenderPersonalized);
 
@@ -30,8 +27,7 @@ function changeContent() {
   const gender = document.querySelector('input[type=radio]:checked').value;
 
   const rightContent = document.querySelector('.right-content');
-
-  rightContent.innerHTML = `<p>Olá, ${firstname} ${lastname}!</p>
+  rightContent.innerHTML = `<p>Olá, ${firstname} ${lastname}</p>
 <p>E-mail ou telefone: ${emailPhone}</p>
 <p>Data de nascimento: ${birthdate}</p>
 <p>Gênero: ${gender}</p>`;

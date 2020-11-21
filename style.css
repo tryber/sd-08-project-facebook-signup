@@ -30,12 +30,12 @@
 }
 
 .subform {
-    display: flex;
-
-}
-.top-bar {
   display: flex;
+}
+
+.top-bar {
   background-color: rgb(66,103,178);
+  display: flex;
   margin: 0;
   padding: 0;
 }

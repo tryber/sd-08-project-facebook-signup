@@ -1,15 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .facebook-login {
+  align-items: center;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  align-content: center;
+}
+
+.form-group label {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 80%;
 }
 
 .form-control {
   align-self: flex-end;
   display: flex;
+  margin-bottom: 10px;
+}
+
+.form-control button {
+  background-color: rgb(55, 92, 165);
+  color: white;
 }
 
 .gender {
@@ -20,14 +43,23 @@
   max-width: 800px;
 }
 
+.left-content p {
+  align-self: baseline;
+  color: rgb(44, 86, 170);
+  display: flex;
+  font-weight: bolder;
+  margin: 0;
+  width: 50%;
+}
+
 .main-content {
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin: 0;
 }
 
 .right-content {
-  width: 300px;
+  max-width: 300px;
 }
 
 .subform {
@@ -37,6 +69,8 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  height: 50px;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }

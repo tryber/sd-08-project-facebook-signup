@@ -29,11 +29,15 @@ function radioButtons() {
     inputTexto.appendChild(newInput);
     const btnMasculino = document.getElementById('masculino');
     btnMasculino.addEventListener('click', () => {
-      inputTexto.removeChild(newInput);
+      if (inputTexto.appendChild(newInput)) {
+        inputTexto.removeChild(newInput);
+      }  
     });
     const btnFeminino = document.getElementById('feminino');
     btnFeminino.addEventListener('click', () => {
-      inputTexto.removeChild(newInput);
+      if (inputTexto.appendChild(newInput)) {
+        inputTexto.removeChild(newInput);
+      }  
     });
   });
 }

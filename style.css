@@ -11,21 +11,21 @@
   align-self: flex-end;
   display: flex;
 }
-.gender{
-  display: flex;  
+.gender {
+  display: flex;
 }
 
-.left-content{
+.left-content {
   max-width: 800px;
 }
 
 .main-content {
   display: flex;
-  margin: auto;
   justify-content: center;
+  margin: auto;
 }
 
-.right-content{
+.right-content {
   width: 300px;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .top-bar {
-  background-color: rgb(66,103,178);
+  background-color: rgb(66, 103, 178);
   display: flex;
   margin: 0;
   padding: 0;

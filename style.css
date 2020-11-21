@@ -1,15 +1,20 @@
-.top-bar {
-    display: flex;
-    background-color: rgb(66, 103, 178);
-    margin: 0px;
-    padding: 0px;
-}
-
 .facebook-login {
-    display: flex;
+  display: flex;
 }
 
 .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+    align-self: flex-end;
     display: flex;
-    justify-content: column;
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66,103,178);
+  margin: 0;
+  padding: 0;
 }

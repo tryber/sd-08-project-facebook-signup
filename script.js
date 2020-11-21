@@ -4,11 +4,13 @@ function funcaoAlert() {
 
 document.getElementById('button-login').addEventListener('click', funcaoAlert);
 
-const textInputs = document.querySelectorAll('input[type=text]');
+const invalidMsg = document.querySelector('.mensagem-invalidos');
 
 function showInvalidos() {
-  document.querySelector('.mensagem-invalidos').style.display = 'block';
+  invalidMsg.style.display = 'flex';
 }
+
+const textInputs = document.querySelectorAll('input[type=text]');
 
 document.querySelector('#facebook-register').addEventListener('click', function (event) {
   for (let i = 0; i < textInputs.length - 1; i += 1) {

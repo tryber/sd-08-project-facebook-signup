@@ -40,7 +40,7 @@ body , input {
 }
 
 .left-content {
-  max-width: 800px;
+  width: 800px;
 }
 
 .left-content p {

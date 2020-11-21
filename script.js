@@ -21,6 +21,20 @@ document.querySelector('#facebook-register').addEventListener('click', function 
       showInvalidos();
       event.preventDefault();
     } else {
+      const helloFullName = document.createElement('p');
+      helloFullName.innerHTML = `Olá, ${allInputs[0].value} ${allInputs[1].value}`;
+      const userEmail = document.createElement('p');
+      userEmail.innerHTML = allInputs[2].value;
+      const userBirthDate = document.createElement('p');
+      userBirthDate.innerHTML = allInputs[3].value;
+      const userGender = document.createElement('p');
+      userGender.innerHTML = document.querySelector('input[type="radio"]:checked').value;
+      const validationContainer = document.querySelector('.register-validation');
+      validationContainer.innerHTML = '';
+      validationContainer.appendChild(helloFullName);
+      validationContainer.appendChild(userEmail);
+      validationContainer.appendChild(userBirthDate);
+      validationContainer.appendChild(userGender);
       document.querySelector('.right-content').innerHTML = document.querySelector('.register-validation').innerHTML;
     }
   }

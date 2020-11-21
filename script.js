@@ -38,7 +38,7 @@ function addGender() {
       input.type = 'text';
       input.name = 'gender-custom';
       input.placeholder = 'Gênero (opcional)';
-      input.id = 'genderPersonalizado'
+      input.id = 'genderPersonalizado';
       if (document.querySelector('#genderPersonalizado') === null) {
         divGender.appendChild(input);
       }

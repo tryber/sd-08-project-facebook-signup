@@ -47,6 +47,6 @@
   flex-direction: column;
 }
 
-.cadastro button, span {
+.cadastro button , span {
   margin: 15px;
 }

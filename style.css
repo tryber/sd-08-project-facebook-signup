@@ -4,3 +4,12 @@
     margin: 0px;
     padding: 0px;
 }
+
+.facebook-login {
+    display: flex;
+}
+
+.form-group {
+    display: flex;
+    justify-content: column;
+}

@@ -14,8 +14,6 @@ body {
   display: flex;
   height: 60px;
   justify-content: space-between;
-  min-width: 800px;
-  padding: 0 15%;
 }
 
 .top-bar img {

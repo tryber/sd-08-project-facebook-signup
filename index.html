@@ -38,19 +38,19 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <h3 class="quick-easy">É rápido e fácil.</h3>
-        <form action="" class="signup">
+        <form action="" class="signup" method="POST">
           <div class="nome-sobrenome">
-            <input type="text" name="firstname" id="firstname" class="name" placeholder="Nome">
-            <input type="text" name="lastname" id="lastname" class="lastname" placeholder="Sobrenome">
+            <input type="text" name="firstname" id="firstname" class="name" placeholder="Nome" required>
+            <input type="text" name="lastname" id="lastname" class="lastname" placeholder="Sobrenome" required>
           </div>
-          <input type="text" name="phone_email" placeholder="Celular ou email" class="phoneemail">
-          <input type="password" name="password" placeholder="Nova senha" id="password" class="password">
+          <input type="text" name="phone_email" placeholder="Celular ou email" class="phoneemail" required>
+          <input type="password" name="password" placeholder="Nova senha" id="password" class="password" required>
           <label id="label-birthdate" for="birthdate" class="label-birthdate">Data de nascimento</label>
-          <input type="date" name="birthdate" id="birthdate" class="birthdate" placeholder="dd/mm/aaaa">
+          <input type="date" name="birthdate" id="birthdate" class="birthdate" placeholder="dd/mm/aaaa" required>
           <div class="gender">
             <label for="" id="label-gender">Gênero</label>
             <div class="radio-buttons">
-              <input type="radio" name="gender" value="Feminino">
+              <input type="radio" name="gender" value="Feminino" checked>
               <label for="">Feminino</label>
               <input type="radio" name="gender" value="Masculino">
               <label for="">Masculino</label>

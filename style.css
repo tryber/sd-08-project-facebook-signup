@@ -108,14 +108,11 @@ input:focus {
 }
 
 .label-birthdate {
-  /* border: 1px solid black; */
   color: #8a8d91;
-  /* margin: 4px; */
-  padding: 4px 0; 
+  padding: 4px 0 8px 0;
 }
 
 .label-input-birthdate {
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -123,13 +120,9 @@ input:focus {
   padding-top: 10px;
 }
 
-/* .label-input-birthdate label, input {
-  margin: 4px;
-  padding: 7px 0;
-} */
-
 .input-birthdate {
   border: 1px solid rgb(202, 209, 223);
   border-radius: 2px;
   padding: 7px;
+  max-width: 6em;
 }

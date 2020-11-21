@@ -25,7 +25,6 @@ const form = document.querySelectorAll('.form input');
 // const formulario = document.querySelector('.form');
 
 cadastre.addEventListener('click', function (event) {
-  event.preventDefault();
   let contador = 0;
   for (let index = 0; index < form.length; index += 1) {
     if (form[index].value === '') {
@@ -33,6 +32,7 @@ cadastre.addEventListener('click', function (event) {
     }
   }
   if (contador !== 0) {
+    event.preventDefault();
     invalido.innerHTML = 'Campos inválidos';
   }
 });

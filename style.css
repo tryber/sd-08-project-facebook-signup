@@ -44,9 +44,8 @@ header .form-group label {
 }
 
 .form-control {
-  align-self: center;
-  margin: 5px;
-  padding-top: 27px;
+  align-self: flex-end;
+  margin: 0 0 8px 5px;
 }
 
 .main-content {
@@ -63,7 +62,6 @@ header .form-group label {
 }
 
 .left-content {
-  margin-right: 70px;
   width: 800px;
 }
 
@@ -75,7 +73,7 @@ header .form-group label {
 }
 
 .right-content {
-  margin-right: 150px;
+  
   width: 300px;
 }
 

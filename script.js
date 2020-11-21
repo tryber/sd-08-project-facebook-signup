@@ -74,7 +74,8 @@ function validateGender() {
   }
 }
 
-function validateForm() {
+function validateForm(event) {
+  event.preventDefault();
   contador = 0;
 
   validateFirstName();

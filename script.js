@@ -27,6 +27,19 @@ function checarFormulario(evento) {
     criarMensagemCamposInvalidos(formulario);
   }
 }
+function criaCampoPersonalizado() {
+  const genderElemento = document.querySelector('.gender');
+  if (!document.querySelector('#gender-custom')) {
+    const campoPersonalizado = document.createElement('input');
+    campoPersonalizado.setAttribute('type', 'text');
+    campoPersonalizado.setAttribute('placeholder', 'Gênero(opcional)');
+    campoPersonalizado.name = 'gender-custom';
+    campoPersonalizado.id = 'gender-custom';
+    genderElemento.parentElement
+      .insertBefore(campoPersonalizado, genderElemento.nextElementSibling);
+  }
+}
 
 capturaEvento('#facebook-register', 'click', checarFormulario);
 capturaEvento('#button-login', 'click', alertarMensagem);
+capturaEvento('#custom-gender', 'click', criaCampoPersonalizado);

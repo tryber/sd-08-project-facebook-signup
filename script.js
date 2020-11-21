@@ -25,6 +25,8 @@ function checarFormulario(evento) {
   const formulario = document.querySelector('.signup');
   if (!formulario.checkValidity()) {
     criarMensagemCamposInvalidos(formulario);
+  } else {
+    trocarRightContent();
   }
 }
 function criaCampoPersonalizado() {
@@ -39,7 +41,29 @@ function criaCampoPersonalizado() {
       .insertBefore(campoPersonalizado, genderElemento.nextElementSibling);
   }
 }
+function trocarRightContent() {
+  const rightContent = document.querySelector('.right-content');
+  const mensagem = mensagemCadastro();
+  rightContent.innerHTML = '';
+  console.log(mensagem);
+  rightContent.innerHTML = mensagem;
+}
+
+function mensagemCadastro() {
+  const inputsCadastro = document.querySelectorAll('.signup input');
+  const inputsValues = [];
+  inputsCadastro.forEach((elemento) => {
+    if (elemento.type !== 'radio') {
+      inputsValues.push(elemento.value);
+    } else if (elemento.checked) {
+      console.log('entrou if');
+      inputsValues.push(elemento.value);
+    }
+  });
+  const mensagemInner = `<p>Olá, ${inputsValues[0]} ${inputsValues[1]} \n ${inputsValues[2]} \n ${inputsValues[4]} \n ${inputsValues[5]}</p>`;
+  return mensagemInner;
+}
 
 capturaEvento('#facebook-register', 'click', checarFormulario);
 capturaEvento('#button-login', 'click', alertarMensagem);
-capturaEvento('#custom-gender', 'click', criaCampoPersonalizado);
+capturaEvento('#custom-gender-input', 'click', criaCampoPersonalizado);

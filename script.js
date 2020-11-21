@@ -28,7 +28,7 @@ const genderContainerInput = document.getElementsByClassName('teste');
 
 genderContainer.addEventListener('click', function (event) {
   if (event.target.className === 'teste') {
-    for (let index = 0; index < genderContainerInput.length; index += 1 ) {
+    for (let index = 0; index < genderContainerInput.length; index += 1) {
       genderContainerInput[index].className = 'teste';
     }
     event.target.className = 'teste marked';
@@ -40,7 +40,7 @@ function eraseRightContent() {
   rightContent.remove();
 }
 
-// let marco = document.querySelector('.marked');
+const marco = document.querySelector('.marked');
 
 
 function createRightContent() {

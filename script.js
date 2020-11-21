@@ -10,14 +10,17 @@ function showInvalidos() {
   invalidMsg.style.display = 'flex';
 }
 
-const textInputs = document.querySelectorAll('input[type=text]');
+const allInputs = document.querySelectorAll('input[type=text], input[type=radio]');
 
 document.querySelector('#facebook-register').addEventListener('click', function (event) {
-  for (let i = 0; i < textInputs.length - 1; i += 1) {
-    if (textInputs[i].value === '') {
+  for (let i = 0; i < allInputs.length - 1; i += 1) {
+    if (allInputs[i].value === '') {
       showInvalidos();
       event.preventDefault();
-    } else if (textInputs[i].value !== '') {
+    } else if (allInputs[i].checked === false) {
+      showInvalidos();
+      event.preventDefault();
+    } else {
       document.querySelector('.right-content').innerHTML = document.querySelector('.register-validation').innerHTML;
     }
   }

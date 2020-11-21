@@ -46,13 +46,13 @@ body {
 }
 
 .left-content {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 500px;
   width: 800px;
 }
 
 .right-content {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 300px;
   padding: 5px;
   width: 300px;
@@ -84,6 +84,11 @@ body {
   padding: 7px;
 }
 
+.login-input {
+  border: 1px solid rgb(202, 209, 223);
+  border-radius: 1px;
+}
+
 .style-input {
   border: 1px solid rgb(202, 209, 223);
   border-radius: 2px;
@@ -92,4 +97,11 @@ body {
 input:focus {
   border: 1px solid #b8b8b8;
   outline: none;
+}
+
+.password-input {
+  border: 1px solid rgb(202, 209, 223);
+  border-radius: 2px;
+  margin: 4px;
+  padding: 7px;
 }

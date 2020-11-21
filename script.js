@@ -1,3 +1,4 @@
+const getEnter = document.querySelector('#button-login');
 const submitButton = document.getElementById('facebook-register');
 const formFields = ['firstname', 'lastname', 'phone_email', 'password', 'birthdate', 'gender'];
 const formValidation = document.forms.cadastro;
@@ -6,12 +7,9 @@ const opcionalInput = document.getElementById('campo-opicional');
 const invalidDiv = document.getElementsByClassName('invalidField')[0];
 const invalidField = document.createElement('p');
 
-function sendAlert() {
+getEnter.addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
-}
-
-const getEnter = document.querySelector('#button-login');
-getEnter.addEventListener('click', sendAlert);
+})
 
 submitButton.addEventListener('click', function (event) {
   if (invalidDiv.hasChildNodes() === true) {
@@ -32,7 +30,7 @@ submitButton.addEventListener('click', function (event) {
     const mailPhone = formValidation[formFields[2]].value;
     const birthDate = formValidation[formFields[4]].value;
     const personGender = formValidation[formFields[5]].value;
-    const fullForm = `Olá,  ${fullName} ${mailPhone} ${birthDate} ${personGender}`;
+    const fullForm = `Olá,  ${fullName} <br> ${mailPhone} <br> ${birthDate} <br> ${personGender}`;
     invalidField.innerHTML = fullForm;
     document.getElementsByClassName('right-content')[0].appendChild(invalidField);
     event.preventDefault();

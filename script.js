@@ -4,40 +4,39 @@ function funcaoAlert() {
 
 document.getElementById('button-login').addEventListener('click', funcaoAlert);
 
-const allInputs = document.querySelectorAll('.right-content input');
+const textInputs = document.querySelectorAll('input[type=text]');
 
 function showInvalidos() {
   document.querySelector('.mensagem-invalidos').style.display = 'block';
 }
 
 document.querySelector('#facebook-register').addEventListener('click', function (event) {
-  for (let i = 0; i < allInputs.length - 1; i += 1) {
-    if (allInputs[i].value === '') {
+  for (let i = 0; i < textInputs.length - 1; i += 1) {
+    if (textInputs[i].value === '') {
       showInvalidos();
       event.preventDefault();
-    }
-  }
-  for (let i = 0; i < 5; i += 1) {
-    if (allInputs[i].value !== '') {
+    } else if (textInputs[i].value !== '') {
       document.querySelector('.right-content').innerHTML = document.querySelector('.register-validation').innerHTML;
     }
   }
 });
 
-allInputs[7].addEventListener('change', function () {
-  if (allInputs[7].checked === true) {
+const radioInputs = document.querySelectorAll('input[type=radio]');
+
+radioInputs[2].addEventListener('change', function () {
+  if (radioInputs[2].checked === true) {
     document.querySelector('.custom').style.display = 'flex';
   }
 });
 
-allInputs[6].addEventListener('change', function () {
-  if (allInputs[6].checked === true) {
+radioInputs[1].addEventListener('change', function () {
+  if (radioInputs[1].checked === true) {
     document.querySelector('.custom').style.display = 'none';
   }
 });
 
-allInputs[5].addEventListener('change', function () {
-  if (allInputs[5].checked === true) {
+radioInputs[0].addEventListener('change', function () {
+  if (radioInputs[0].checked === true) {
     document.querySelector('.custom').style.display = 'none';
   }
 });

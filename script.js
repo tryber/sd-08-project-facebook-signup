@@ -4,11 +4,30 @@ const buttonCadastro = document.querySelector('#facebook-register');
 const novoUsuario = document.querySelector('.novoUsuario');
 const personalizado = document.querySelector('.personalizado');
 const generos = document.querySelector('.generos');
-// let selecionado = document.querySelector('input[name="gender"]:checked').value;
+const conteudoPrincipal = document.querySelector('.main-content');
+const paragrafoBoasVindas = document.createElement('p');
+const entradas = document.querySelectorAll('.entradas');
+let selecionado = document.querySelector('input[name="gender"]');
 
 buttonEntrar.addEventListener('click', function () {
   alert(emailOuTelefone.value);
 });
+
+function guardarTexto() {
+  selecionado = document.querySelector('input[name="gender"]:checked').value;
+  // console.log('Olá, ' + entradas[0].value + ' ' + entradas[1].value + ', e-mail ou telefone ' + entradas[2].value + ', data de nascimento ' + entradas[3].value + ' ' + selecionado);
+  paragrafoBoasVindas.innerHTML = 'Olá, ' + entradas[0].value + ' ' + entradas[1].value + ', e-mail ou telefone ' + entradas[2].value + ', data de nascimento ' + entradas[3].value + ' ' + selecionado;
+}
+
+function remover() {
+  const direita = document.querySelector('.right-content');
+  direita.remove();
+}
+
+function preencher() {
+  paragrafoBoasVindas.className = 'right-content';
+  conteudoPrincipal.appendChild(paragrafoBoasVindas);
+}
 
 buttonCadastro.addEventListener('click', function (event) {
   const mensagemErro = document.createTextNode('Campos inválidos');
@@ -17,11 +36,15 @@ buttonCadastro.addEventListener('click', function (event) {
   const resultado = novoUsuario.checkValidity();
   if (resultado === false) {
     novoUsuario.appendChild(mensagemErro);
+  } else {
+    guardarTexto();
+    remover();
+    preencher();
   }
 });
 
 generos.addEventListener('click', function () {
-  const selecionado = document.querySelector('input[name="gender"]:checked').value;
+  selecionado = document.querySelector('input[name="gender"]:checked').value;
   if (selecionado === 'Personalizado') {
     personalizado.style.display = 'flex';
   } else {

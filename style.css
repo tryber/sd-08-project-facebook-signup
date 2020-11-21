@@ -24,7 +24,9 @@ body {
 }
 
 .main-content {
+  background: linear-gradient(white, white, #ccf);
   display: flex;
+  height: 500px;
   justify-content: space-around;
 }
 
@@ -76,4 +78,9 @@ body {
 
 .register {
   margin-right: 100px;
+}
+
+footer {
+  height: 100px;
+  margin-bottom: 0;
 }

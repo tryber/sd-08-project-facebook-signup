@@ -44,18 +44,22 @@ const variaveis = {
 };
 const chaves = Object.keys(variaveis);
 
-function validar() {
+function preencheVariaveis() {
   for (let index = 0; index < chaves.length; index += 1) {
-    const divLocal = document.getElementById(chaves[index]); 
+    const divLocal = document.getElementById(chaves[index]);
     if (divLocal.value === '') {
       form2Local[0].firstChild.remove();
       form2Local[0].insertAdjacentHTML('afterbegin', 'Campos inválidos');
     } else {
-    // insere os dados dos inputs em variáveis  
+// insere os dados dos inputs em variáveis
       const vari = chaves[index];
       variaveis[vari] = divLocal.value;
     }
   }
+}
+
+function validar() {
+  preencheVariaveis();
   form2Local[0].firstChild.remove();
   apagarDiv();
   let gender = '';

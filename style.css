@@ -8,10 +8,31 @@
 }
 
 .form-control {
-    align-self: flex-end;
-    display: flex;
+  align-self: flex-end;
+  display: flex;
+}
+.gender{
+  display: flex;  
 }
 
+.left-content{
+  max-width: 800px;
+}
+
+.main-content {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.right-content{
+  width: 300px;
+}
+
+.subform {
+    display: flex;
+
+}
 .top-bar {
   display: flex;
   background-color: rgb(66,103,178);

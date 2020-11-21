@@ -131,5 +131,7 @@ a {
 }
 
 .personalizedText {
-  width: 100%;
+  visibility: hidden;
+  width: 70%;
 }
+

@@ -6,18 +6,19 @@ buttonID.addEventListener('click', function () {
   alert(inputValue);
 });
 
-const buttonCadastro = document.getElementById('facebook-register');
-
-buttonCadastro.addEventListener('click', function () {
+function ErrorMessage() {
   const inputsCadastro = document.getElementsByClassName('inputsSign');
-
+  const findError = document.getElementById('Error');
   for (let i = 0; i < inputsCadastro.length; i += 1) {
     if (inputsCadastro[i].value === '') {
-      alert('Campos inválidos');
+      findError.innerHTML = 'Campos inválidos';
       break;
     }
   }
-});
+}
+
+const buttonCadastro = document.getElementById('facebook-register');
+buttonCadastro.addEventListener('click', ErrorMessage());
 
 function PersonalizadoButton() {
   const buttonPersonalizado = document.getElementById('Personalizado');

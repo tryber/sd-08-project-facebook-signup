@@ -13,7 +13,7 @@ function validate() {
   const validacao = document.getElementById('invalideField');
   botao.addEventListener('click', function () {
     for (let index = 2; index < formList.length - 3; index += 1) {
-      let valorCampos = formList[index].value;
+      const valorCampos = formList[index].value;
       if (valorCampos === '') {
         validacao.innerText = 'Campos Inválidos';
       }

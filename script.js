@@ -15,6 +15,8 @@ document.querySelector('#facebook-register').addEventListener('click', function 
     if (allInputs[i].value === "") {
       showInvalidos();
       event.preventDefault();
+    } else {
+      document.querySelector('.right-content').innerHTML = document.querySelector('.register-validation').innerHTML;
     }
   }
 });

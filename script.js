@@ -12,7 +12,7 @@ function showInvalidos() {
 
 document.querySelector('#facebook-register').addEventListener('click', function (event) {
   for (let i = 0; i < allInputs.length - 1; i += 1) {
-    if (allInputs[i].value === "") {
+    if (allInputs[i].value === '') {
       showInvalidos();
       event.preventDefault();
     } else {

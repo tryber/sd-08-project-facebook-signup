@@ -109,7 +109,7 @@ input:focus {
 
 .label-birthdate {
   color: #8a8d91;
-  padding: 4px 0 8px 0;
+  padding: 4px 0 8px;
 }
 
 .label-input-birthdate {
@@ -123,6 +123,6 @@ input:focus {
 .input-birthdate {
   border: 1px solid rgb(202, 209, 223);
   border-radius: 2px;
-  padding: 7px;
   max-width: 6em;
+  padding: 7px;
 }

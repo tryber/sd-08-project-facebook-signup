@@ -25,57 +25,40 @@ for (let index = 0; index < formInputLocal.length; index += 1) {
 
 const btnSalvar = document.getElementById('facebook-register');
 const form2Local = document.getElementsByClassName('form-group2');
-btnSalvar.addEventListener('click', function () {
-  form2Local[0].firstChild.remove();
-  form2Local[0].insertAdjacentHTML('afterbegin', 'Campos inválidos');
-});
-
-// resolvido utilizando dados do site https://pt.stackoverflow.com/questions/65696/como-capturar-par%C3%A2metros-passados-pela-url-usando-javascript contudo, foi bem compreendido o funcionamento.
-
-function obrigado() {
-// coloca as informaçõess da url dentro de um object
-  const urlData = location.search.slice(1).split('&');
-  const bancoDeDados = {};
-  urlData.forEach(function (parte) {
-    const chaveValor = parte.split('=');
-    const chave = decodeURIComponent(chaveValor[0]);
-    const valor = decodeURIComponent(chaveValor[1]);
-    bancoDeDados[chave] = valor;
-  });
-
-// muda a classe das divs pra elas não aparecerem
-  const divObg = document.getElementById('msg-obrigado');
-  const divFormulario = document.getElementById('formulario');
-  divObg.className = '';
-  divFormulario.className = 'display-none';
-
-  divObg.insertAdjacentHTML('afterbegin', `<br><br> Olá, ${bancoDeDados.firstname} ${bancoDeDados.lastname}`);
-  divObg.insertAdjacentHTML('beforeend', `<br><br> Celular / E-mail: ${bancoDeDados.phone_email}`);
-  divObg.insertAdjacentHTML('beforeend', `<br><br> Data de Nascimento: ${bancoDeDados.birthdate}`);
-  divObg.insertAdjacentHTML('beforeend', `<br><br> Gênero: ${bancoDeDados.gender}`);
-}
 
 function validar() {
   if ((document.getElementById('inputnome').value === '') || (document.getElementById('inputsobrenome').value === '') || (document.getElementById('inputcelular').value === '') || (document.getElementById('inputnovasenha').value === '') || (document.getElementById('inputnascimento').value === '')) {
-    localStorage.clear();
+    form2Local[0].firstChild.remove();
+    form2Local[0].insertAdjacentHTML('afterbegin', 'Campos inválidos');
   } else {
-    localStorage.clear();
-    localStorage.setItem('ok', 'valido');
+    // insere os dados dos inputs em variáveis
+    form2Local[0].firstChild.remove();
+    const firstName = document.getElementById('inputnome').value;
+    const lastName = document.getElementById('inputsobrenome').value;
+    const phone_email = document.getElementById('inputcelular').value;
+    const birthdate = document.getElementById('inputnascimento').value;
+    let gender = '';
+    if (document.getElementById('feminino').checked === true) {
+      gender = 'Feminino';
+    } else if (document.getElementById('masculino').checked === true) {
+      gender = 'Masculino';
+    } else {
+      gender = 'Personalizado';
+    }
+    // muda a classe das divs pra elas não aparecerem
+    const divObg = document.getElementById('msg-obrigado');
+    const divFormulario = document.getElementById('formulario');
+    divObg.className = '';
+    divFormulario.className = 'display-none';
+
+    divObg.insertAdjacentHTML('afterbegin', `<br><br> Olá, ${firstName} ${lastName}`);
+    divObg.insertAdjacentHTML('beforeend', `<br><br> Celular / E-mail: ${phone_email}`);
+    divObg.insertAdjacentHTML('beforeend', `<br><br> Data de Nascimento: ${birthdate}`);
+    divObg.insertAdjacentHTML('beforeend', `<br><br> Gênero: ${gender}`);
   }
 }
 
 btnSalvar.addEventListener('click', validar);
-
-function validado() {
-  const valido = localStorage.getItem('ok');
-  if (valido === 'valido') {
-    obrigado();
-  }
-}
-
-window.onload = function () {
-  validado();
-};
 
 document.getElementById('personalizado').addEventListener('click', function () {
   const newInput = document.createElement('input');

@@ -73,3 +73,7 @@ body {
 .invalidos {
   color: red;
 }
+
+#facebook-register{
+  margin-right: 100px;
+}

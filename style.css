@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.blue-top-bar {
+  background-color: rgb(66, 103, 178);
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+}
+
+.facebook-login {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.fullname {
+  display: flex;
+}
+
+.gender {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gender-custom {
+  display: block;
+  width: 100%;
+}

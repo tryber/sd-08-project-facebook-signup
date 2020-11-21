@@ -44,7 +44,7 @@ const variaveis = {
 };
 const chaves = Object.keys(variaveis);
 
-function preencheVariaveis() {  
+function preencheVariaveis() {
   for (let index = 0; index < chaves.length; index += 1) {
     const divLocal = document.getElementById(chaves[index]);
     const vari = chaves[index];
@@ -67,14 +67,16 @@ function preencheVariaveis() {
 }
 
 function validar() {
+  let validado = false;
   for (let index = 0; index < chaves.length; index += 1) {
     const divLocal = document.getElementById(chaves[index]);
     if (divLocal.value === '') {
-      return false;
+      validado = false;
     } else {
-      return true;
+      validado = true;
     }
   }
+  return validado
 }
 
 function validaTudo() {

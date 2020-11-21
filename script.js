@@ -22,6 +22,14 @@ for (let index = 0; index < formInputLocal.length; index += 1) {
     }
   };
 }
+function apagarDiv() {
+  // muda a classe das divs pra elas não aparecerem
+  const divObg = document.getElementById('msg-obrigado');
+  const divFormulario = document.getElementById('formulario');
+  divObg.className = '';
+  divFormulario.className = 'display-none';
+}
+    
 
 const btnSalvar = document.getElementById('facebook-register');
 const form2Local = document.getElementsByClassName('form-group2');
@@ -33,9 +41,10 @@ function validar() {
   } else {
     // insere os dados dos inputs em variáveis
     form2Local[0].firstChild.remove();
+    apagarDiv()
     const firstName = document.getElementById('inputnome').value;
     const lastName = document.getElementById('inputsobrenome').value;
-    const phone_email = document.getElementById('inputcelular').value;
+    const phoneEmail = document.getElementById('inputcelular').value;
     const birthdate = document.getElementById('inputnascimento').value;
     let gender = '';
     if (document.getElementById('feminino').checked === true) {
@@ -45,14 +54,8 @@ function validar() {
     } else {
       gender = 'Personalizado';
     }
-    // muda a classe das divs pra elas não aparecerem
-    const divObg = document.getElementById('msg-obrigado');
-    const divFormulario = document.getElementById('formulario');
-    divObg.className = '';
-    divFormulario.className = 'display-none';
-
     divObg.insertAdjacentHTML('afterbegin', `<br><br> Olá, ${firstName} ${lastName}`);
-    divObg.insertAdjacentHTML('beforeend', `<br><br> Celular / E-mail: ${phone_email}`);
+    divObg.insertAdjacentHTML('beforeend', `<br><br> Celular / E-mail: ${phoneEmail}`);
     divObg.insertAdjacentHTML('beforeend', `<br><br> Data de Nascimento: ${birthdate}`);
     divObg.insertAdjacentHTML('beforeend', `<br><br> Gênero: ${gender}`);
   }

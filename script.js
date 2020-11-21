@@ -14,7 +14,9 @@ function validateFields() {
     const inputs = document.querySelectorAll('.cadastro input');
     for (let index = 0; index < inputs.length; index += 1) {
       if (inputs[index].value === '') {
-        alert('Campos inválidos');
+        let p = document.createElement('p');
+        p.innerHTML = 'Campos inválidos';
+        document.querySelector('.cadastro').appendChild(p);
         break;
       }
     }

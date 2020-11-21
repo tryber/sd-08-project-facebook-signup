@@ -39,21 +39,30 @@ buttonCadastro.addEventListener('click', function (event) {
   }
 
   const formFields = new FormData(signUpForm);
+  const preview = document.createElement('div');
+  preview.classList.add('right-content');
 
-  let previewData = '';
-
+  const previewName = document.createElement('p');
   const firstname = formFields.get('firstname');
   const lastname = formFields.get('lastname');
-  previewData += `Olá, ${firstname} ${lastname} `;
+  previewName.textContent = `Olá, ${firstname} ${lastname}`;
+  preview.appendChild(previewName);
 
+  const previewEmail = document.createElement('p');
   const email = formFields.get('phone_email');
-  previewData += `Email: ${email} `;
+  previewEmail.textContent = `Email: ${email}`;
+  preview.appendChild(previewEmail);
 
+  const previewBirthdate = document.createElement('p');
   const birthdate = formFields.get('birthdate');
-  previewData += `Data de nascimento: ${birthdate} `;
+  previewBirthdate.textContent = `Data de nascimento: ${birthdate}`;
+  preview.appendChild(previewBirthdate);
 
+  const previewGender = document.createElement('p');
   const gender = formFields.get('gender');
-  previewData += `Gênero: ${gender} `;
+  previewGender.textContent += `Gênero: ${gender} `;
+  preview.appendChild(previewGender);
 
-  rightContent.innerHTML = previewData;
+  const parent = rightContent.parentNode;
+  parent.replaceChild(preview, rightContent);
 });

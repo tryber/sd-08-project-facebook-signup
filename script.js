@@ -12,21 +12,19 @@ function alertarMensagem() {
     alert('Digite seu email ou telefone!');
   }
 }
-
-function checarFormulario(evento) {
-  evento.preventDefault();
-  const formulario = document.querySelector('.signup');
-  if (!formulario.checkValidity()) {
-    criarMensagemCamposInvalidos(formulario);
-  }
-}
-
 function criarMensagemCamposInvalidos(reference) {
   const msg = document.createElement('p');
   if (document.querySelector('.msg-campo-invalido') === null) {
     msg.innerText = 'Campos inválidos';
     msg.className = 'msg-campo-invalido';
     reference.insertBefore(msg, reference.firstChild);
+  }
+}
+function checarFormulario(evento) {
+  evento.preventDefault();
+  const formulario = document.querySelector('.signup');
+  if (!formulario.checkValidity()) {
+    criarMensagemCamposInvalidos(formulario);
   }
 }
 

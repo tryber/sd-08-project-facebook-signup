@@ -23,6 +23,36 @@ Array.from(input).forEach(function (inputArray) {
   });
 });
 
+function Substitute() {
+  if (localStorage.getItem('setClear') === 'true') {
+    const container = document.querySelector('.right-content');
+    let array = [];
+    array = container.children;
+    for (let index = 0; index < array.length; index++) {
+      array[index].classList.add('clear');
+    }
+    const url_string = window.location.href;
+    const url = new URL(url_string);
+
+    const textName = document.createElement('h2');
+    textName.innerText = 'Olá, ' + url.searchParams.get("firstname") + ' ' + url.searchParams.get("lastname");
+    container.appendChild(textName);
+
+    const textPhoneEmail = document.createElement('h4');
+    textPhoneEmail.innerText = url.searchParams.get("phone_email");
+    container.appendChild(textPhoneEmail);
+
+    const textBirthdate = document.createElement('h4');
+    textBirthdate.innerText = url.searchParams.get("birthdate");
+    container.appendChild(textBirthdate);
+
+    const textGender = document.createElement('h4');
+    textGender.innerText = url.searchParams.get("gender");
+    container.appendChild(textGender);
+    localStorage.setItem('setClear', 'false');
+  }
+}
+
 function showMessage() {
   document.querySelector('span');
   if (document.querySelector('span') != null) {
@@ -40,6 +70,7 @@ function verificaRadio(formInput) {
   for (let i = 0; i < radio.length; i += 1) {
     if (radio[i].checked === true) {
       formInput[i].setCustomValidity('');
+      localStorage.setItem('setClear', 'true');
       return;
     }
   }
@@ -61,3 +92,4 @@ function checaValidacao() {
 
 const submit = document.querySelector('#facebook-register');
 submit.addEventListener('click', checaValidacao);
+Substitute();

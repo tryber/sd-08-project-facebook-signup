@@ -64,3 +64,8 @@ body {
 .radio-content {
   display: flex;
 }
+
+.clear {
+  display: none;
+}
+

@@ -76,7 +76,7 @@ function validar() {
       validado = true;
     }
   }
-  return validado
+  return validado;
 }
 
 function validaTudo() {

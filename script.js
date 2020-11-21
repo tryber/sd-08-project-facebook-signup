@@ -1,4 +1,4 @@
-function alerta() {
+function alerta () {
   const botao = document.getElementById('button-login');
   botao.addEventListener('click', function () {
     const email = document.getElementById('user-email-phone');
@@ -7,31 +7,39 @@ function alerta() {
 }
 alerta();
 
-function validate () {
+function validate(){
   const formList = document.querySelectorAll('input');
-  let contador = 0
-  let botao = document.getElementById('facebook-register');
-  botao.addEventListener('click', function() {
-    for (let index = 2; index < formList.length; index +=1) {
-      let valorCampos = formList[index].value;
-      if (valorCampos === '') {
-        contador += 1;
-      }
+  let contador = 0;
+  const botao = document.getElementById('facebook-register');
+  const validacao = document.getElementById('validacao');
+  botao.addEventListener('click', function () {
+    for (let index = 2; index < formList.length -3; index +=1){
+      const valorCampos = formList[index].value;
+      console.log(valorCampos);
+      if (valorCampos === ''){
+        validacao.innerText = 'Campos inválidos';
+      //   if (contador > 0){
+      
+      //     validacao.innerText = 'Campos inválidos';
+      //     return false;
+      // }
+    // } else {
+    //   contador += 1;
     }
-    if (contador > 0 ){
-      alert('Campos inválidos')
+    
   }    
   })
 }
 validate();
 
-let personal = document.getElementById('personal');
-personal.addEventListener('click', function(){
-  if (personal.checked === true) {
-    let inputPersonal = personal.appendChild(document.createElement('input'));
+const personal = document.getElementById('personal');
+personal.addEventListener('click', function () {
+  if (personal.checked === true){
+    const inputPersonal = document.createElement('input');
     inputPersonal.className = 'input-personal';
-    inputPersonal.type = "text";
+    inputPersonal.type = 'text';
     inputPersonal.placeholder = 'Gênero (opcional)';
     inputPersonal.name = 'gender-custom';
+    document.querySelector('.container-input').appendChild(inputPersonal);
   }
 })

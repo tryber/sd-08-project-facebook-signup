@@ -31,13 +31,13 @@ function radioButtons() {
     btnMasculino.addEventListener('click', () => {
       if (inputTexto.appendChild(newInput)) {
         inputTexto.removeChild(newInput);
-      }  
+      }
     });
     const btnFeminino = document.getElementById('feminino');
     btnFeminino.addEventListener('click', () => {
       if (inputTexto.appendChild(newInput)) {
         inputTexto.removeChild(newInput);
-      }  
+      }
     });
   });
 }

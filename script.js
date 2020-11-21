@@ -1,8 +1,7 @@
-function alertMensage(){
-  const button = document.querySelector('#button-login');
-  button.addEventListener('click', ()=>{
-    const mensage = document.querySelector('#user-email-phone');
-    alert(mensage.value);
+window.onload = function () {
+  const buttonEnter = document.querySelector('#button-login');
+  buttonEnter.addEventListener('click', function () {
+    const emailPhone = document.querySelector('#user-email-phone');
+    alert(emailPhone.value);
   });
 };
-alertMensage()

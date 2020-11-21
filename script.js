@@ -46,3 +46,27 @@ function addGender() {
   });
 }
 addGender();
+
+function cadastroConcluido() {
+  const btnCadastrar = document.querySelector('#facebook-register');
+  btnCadastrar.addEventListener('click', function (event) {
+    event.preventDefault();
+    let valido = true;
+    const inputs = document.querySelectorAll('.cadastro input');
+    for (let index = 0; index < inputs.length; index += 1) {
+      if (inputs[index].value === '') {
+        valido = false;
+      }
+    }
+    if (valido) {
+      const nome = document.querySelector('#firstname').value;
+      const sobrenome = document.querySelector('#lastname').value;
+      const email = document.querySelector('#phone_email').value;
+      const data = document.querySelector('#birthdate').value;
+      const genero = document.querySelector('input[type="radio"]:checked').value;
+      const rightcontent = document.querySelector('.right-content');
+      rightcontent.innerHTML = `Olá, ${nome} ${sobrenome}, ${email}, ${data}, ${genero}`;
+    }
+  });
+}
+cadastroConcluido();

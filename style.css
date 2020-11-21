@@ -50,3 +50,16 @@
   flex-direction: column;
   width: auto;
 }
+
+.fisrtName {
+  align-items: flex-start;
+  display: flex;
+  flex-basis: 45%;
+}
+
+.lastName {
+  align-items: flex-end;
+  display: flex;
+  flex-basis: 45%;
+  justify-content: right;
+}

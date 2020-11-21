@@ -1,6 +1,7 @@
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
+  color: white;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -47,19 +48,24 @@
 
 .registration {
   display: flex;
-  flex-direction: column;
-  width: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.fisrtName {
-  align-items: flex-start;
-  display: flex;
-  flex-basis: 45%;
+.registration input {
+  margin-bottom: 3px;
 }
 
-.lastName {
-  align-items: flex-end;
-  display: flex;
-  flex-basis: 45%;
-  justify-content: right;
+.registration label {
+  margin-bottom: 6px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.lastName , .firstName {
+  width: 46%;
+}
+
+.phone_email , .password , .birthdate {
+  width: 100%;
 }

@@ -24,9 +24,24 @@ const cadastre = document.getElementById('facebook-register');
 
 const form = document.querySelectorAll('.form input');
 
+const genderContainerInput = document.getElementsByClassName('teste');
+
+genderContainer.addEventListener('click', function (event) {
+  if (event.target.className === 'teste') {
+    for (let index = 0; index < genderContainerInput.length; index += 1 ) {
+      genderContainerInput[index].className = 'teste';
+    }
+    event.target.className = 'teste marked';
+  }
+});
+
+
 function eraseRightContent() {
   rightContent.remove();
 }
+
+// let marco = document.querySelector('.marked');
+
 
 function createRightContent() {
   const newRightDiv = document.createElement('div');
@@ -35,7 +50,7 @@ function createRightContent() {
   newRightDiv.innerText = `Olá, ${form[0].value} ${form[1].value} \n
   ${form[2].value} \n
   ${form[4].value} \n
-  `;
+  ${marco.value}`;
 }
 
 cadastre.addEventListener('click', function (event) {

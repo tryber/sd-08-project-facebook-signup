@@ -5,6 +5,7 @@ body {
 }
 
 .top-bar {
+  align-content: stretch;
   background-color: rgb(66, 103, 178);
   display: flex;
   padding: 10px 50px 5px;

@@ -1,18 +1,20 @@
-const buttonLogin = document.querySelector('#button-login');
-const buttonCustomGender = document.querySelector('#Personalizado');
-const buttonRegister = document.querySelector('#facebook-register');
+const buttonLogin = document.getElementById('button-login');
+const buttonCustomGender = document.getElementById('Personalizado');
+const buttonMaleGender = document.getElementById('Masculino');
+const buttonFemaleGender = document.getElementById('Feminino');
+const buttonRegister = document.getElementById('facebook-register');
 const invalidField = document.getElementById('invalid-field');
 let contador = 0;
 
-
-buttonLogin.addEventListener('click', () => {
-  const emailValue = document.querySelector('#user-email-phone');
-  alert(emailValue.value);
-});
-
-function createCustomGender() {
+function createCustomGender(event) {
   const genderCustom = document.querySelector('.hidden-input');
-  genderCustom.innerHTML = '<input name="gender-custom" placeholder="Gênero (opcional)" type="text">';
+
+  if (event.target.value === 'Personalizado') {    
+    genderCustom.innerHTML = '<input name="gender-custom" placeholder="Gênero (opcional)" type="text">';
+  } else {
+    genderCustom.innerHTML = '';
+  }
+  
 }
 
 function plotText() {
@@ -89,4 +91,11 @@ function validateForm() {
 }
 
 buttonCustomGender.addEventListener('click', createCustomGender);
+buttonMaleGender.addEventListener('click', createCustomGender);
+buttonFemaleGender.addEventListener('click', createCustomGender);
 buttonRegister.addEventListener('click', validateForm);
+
+buttonLogin.addEventListener('click', () => {
+  const emailValue = document.querySelector('#user-email-phone');
+  alert(emailValue.value);
+});

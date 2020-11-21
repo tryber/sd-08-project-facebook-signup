@@ -6,38 +6,156 @@ body {
 header {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+  height: 70px;
+}
+
+.header-center {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
 }
 
 .facebook-login {
   display: flex;
 }
 
-.form-group {
+header .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+}
+
+header .form-group label {
+  color: white;
+  margin: 5px 0;
+}
+
+.btn-login {
+  border: solid 1px darkblue;
+  border-radius: 2px;
+  background-color: rgb(60, 101, 184);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 7px;
 }
 
 .form-control {
-  align-self: flex-end;
+  margin: 5px;
+  padding-top: 27px;
+  align-self: center;
 }
 
 .main-content {
   background: linear-gradient(white, #d3d8e8);
   display: flex;
   justify-content: center;
-  padding: 300px 0;
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
 }
 
 .left-content {
   width: 800px;
+  margin-right: 70px;
+}
+
+.left-content p {
+  color: rgb(14, 14, 82);
+  font-weight: 600;
+  font-size: 25px;
+  margin-left: 18px;
 }
 
 .right-content {
   width: 300px;
+  margin-right: 150px;
+}
+
+.right-content input {
+  border: solid 1px lightslategray;
+  border-radius: 4px;
+  color: gray;
+  margin: 5px;
+  padding: 5px;  
+}
+
+.right-content p {
+  margin: 5px;
+}
+
+.create-account .form-group label {
+  color: lightslategray;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.bigger-input {
+  width: 900px;
+}
+
+.taller-input {
+  width: 128px;
 }
 
 .field {
   display: flex;
+}
+
+input[type='radio'] {
+  margin: 10px 5px;
+}
+
+.btn-radio {
+  margin: 10px;
+}
+
+.signup {
+  background-color: rgb(57, 175, 57);
+  border: solid 1px black;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  height: 35px;
+  text-shadow: black 2px;
+  width: 200px;
+}
+
+h1 {
+  font-size: 33px;
+}
+
+h5 {
+  color: rgb(88, 88, 88);
+  margin: 35px 0;
+  width: 350px;
+}
+
+.create-page {
+  color:  rgb(66, 103, 178);
+  text-decoration: none;
+}
+
+header img {
+  height: 70px;
+}
+
+.terms p {
+  color: rgb(145, 145, 145);
+  font-size: 13px;
+  font-weight: 600;
+  width: 330px;
+}
+
+.terms a {
+  color:  rgb(66, 103, 178);
+  text-decoration: none;
 }

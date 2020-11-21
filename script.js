@@ -59,9 +59,7 @@ function validateForm(event) {
 }
 
 const btSubmit = document.getElementById('facebook-register');
-
 btSubmit.addEventListener('click', validateForm);
-
 
 const genderOption = document.getElementById('test');
 const inputPersGender = document.createElement('input');

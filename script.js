@@ -17,12 +17,35 @@ function criarMensagem() {
   }
 }
 
+const rightContent = document.querySelector('.right-content');
+const name = document.getElementById('name-input');
+const lastName = document.getElementById('last-name-input');
+const showName = document.createElement('p');
+const bDay = document.getElementById('bday');
+const showBday = document.createElement('p');
+const emailOrTel = document.getElementById('email-or-tel');
+const showEmailOrTel = document.createElement('p');
+
+function exibirDados() {
+  showName.innerText = `Olá, ${name.value} ${lastName.value}`;
+  showBday.innerText = bDay.value;
+  showEmailOrTel.innerText = emailOrTel.value;
+  name.remove();
+  emailOrTel.remove();
+  lastName.remove();
+  rightContent.appendChild(showName);
+  rightContent.appendChild(showEmailOrTel);
+  rightContent.appendChild(showBday);
+}
+
 function validarCadastro() {
   const submitBtn = document.getElementById('facebook-register');
   submitBtn.addEventListener('click', function (event) {
     event.preventDefault();
     if (!formContent.checkValidity()) {
       criarMensagem();
+    } else {
+      exibirDados();
     }
   });
 }
@@ -36,7 +59,6 @@ function criarCampoGenero() {
     inputParaGenero.name = 'gender-custom';
     inputParaGenero.placeholder = 'Gênero (opcional)';
     inputParaGenero.className = 'gender-custom';
-
     formContent.insertBefore(inputParaGenero, labelBirth);
   }
 }

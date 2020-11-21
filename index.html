@@ -44,12 +44,19 @@
         <p class="quick-easy">É rápido e fácil.</p>
         <form action="GET" class="cadastro-nome" id="form-content">
           <div class="fullname">
-            <input type="text" placeholder="Nome" name="firstname" required />
+            <input
+              type="text"
+              placeholder="Nome"
+              name="firstname"
+              required
+              id="name-input"
+            />
             <input
               type="text"
               placeholder="Sobrenome"
               name="lastname"
               required
+              id="last-name-input"
             />
           </div>
           <input
@@ -57,17 +64,39 @@
             name="phone_email"
             placeholder="Celular ou email"
             required
+            id="email-or-tel"
           />
-          <input type="password" name="password" placeholder="Nova senha" required/>
+          <input
+            type="password"
+            name="password"
+            placeholder="Nova senha"
+            id="password-input"
+            required
+          />
           <br />
           <div class="gender-sign-up">
             <label id="label-gender">Gênero</label>
             <div class="gender">
-              <input type="radio" value="Feminino" name="gender" id="feminino">
+              <input
+                type="radio"
+                value="Feminino"
+                name="gender"
+                id="feminino"
+              />
               <label for="feminino">Feminino</label>
-              <input type="radio" value="Masculino" name="gender" id="masculino">
+              <input
+                type="radio"
+                value="Masculino"
+                name="gender"
+                id="masculino"
+              />
               <label for="masculino">Masculino</label>
-              <input type="radio" value="Personalizado" name="gender" id="personalizado">
+              <input
+                type="radio"
+                value="Personalizado"
+                name="gender"
+                id="personalizado"
+              />
               <label for="personalizado">Personalizado</label>
             </div>
           </div>

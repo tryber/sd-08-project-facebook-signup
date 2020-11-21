@@ -13,7 +13,7 @@ function validate(){
   const botao = document.getElementById('facebook-register');
   const validacao = document.getElementById('validacao');
   botao.addEventListener('click', function () {
-    for (let index = 2; index < formList.length -3; index +=1){
+    for (let index = 2; index < formList.length -3; index +=1) {
       const valorCampos = formList[index].value;
       console.log(valorCampos);
       if (valorCampos === ''){

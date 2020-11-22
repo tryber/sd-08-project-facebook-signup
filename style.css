@@ -1,29 +1,13 @@
 body {
   background-color: white;
-  border: 0;
   color: black;
+  font-family: sans-serif;
+  font-size: 0.7em;
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
-/* Posicionamento */
-.container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-}
-
-/* general */
-
-/* form */
 input {
   border: 1px solid rgba(0, 0, 0, 0.452);
   color: rgba(0, 0, 0, 0.767);
@@ -44,9 +28,7 @@ button {
   font-size: 1em;
 }
 
-/* header */
 .top-bar {
-  max-width: 1366;
   display: flex;
   font-size: 0.9em;
   justify-content: space-around;
@@ -55,7 +37,6 @@ button {
   align-items: center;
   border: 1px solid rgba(35, 70, 141, 0.198);
   color: white;
-  width: 100%;
 }
 
 .facebook-logo {
@@ -63,22 +44,10 @@ button {
   width: 117px;
 }
 
-.facebook-login {
+.facebook-login-form {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin: 1%;
-  padding: 1%;
-}
-
-.btn-login {
-
-  /* align-self: start; */
 }
 
 .login-input {
@@ -86,25 +55,126 @@ button {
   width: 120px;
 }
 
-/* Outros  */
-.box {
-  border: 1px solid black;
-  height: 100px;
+.form-group {
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  padding: 1%;
+}
+
+.login-label {
+  font-size: 1em;
+  margin-bottom: 3px;
+  margin-left: 2px;
+}
+
+.form-control {
+  align-self: center;
+}
+
+.forgot-account {
+  margin-top: 1px;
+  color: #ffffff8a;
+  font-size: 1em;
+  padding-left: 1px;
+  text-decoration: none;
+}
+
+.btn-login {
+  background-color: #436eac;
+  font-weight: 600;
+  height: 22px;
+  margin-top: 10px;
+  padding: 2px;
+  width: 44px;
+}
+
+.btn-login:hover {
+  background-color: #3362a5;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+}
+
+.main-content {
+  color: rgba(0, 0, 0, 0.74);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.nome {
+  display: flex;
+}
+
+.facebook-ss {
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.open-account {
+  margin-bottom: 0;
+  margin-left: 4px;
+}
+
+.quick-easy {
+  margin-left: 6px;
+}
+
+.form-group-gender {
+  margin-top: 4px;
+}
+
+.form-group-gender * {
+  margin-top: 10px;
+}
+
+.form-group-gender input {
+  margin-left: 10px;
+}
+
+.form-input {
+  margin-bottom: 8px;
+  margin-left: 4px;
+  width: 120px;
+}
+
+.btn-signup {
+  background-color: #589651;
+  font-size: 1em;
+  font-weight: 600;
+  height: 30px;
+  margin-top: 2px;
+  padding: 2px;
   width: 100px;
 }
 
-.red {
-  background-color: rgb(235, 8, 8);
+.btn-signup:hover {
+  background-color: #3f8f37;
+  color: #ffffffea;
 }
 
-.blue {
-  background-color: rgb(23, 8, 235);
-}
-
-.yellow {
-  background-color: rgb(201, 235, 8);
-}
-
-.green {
-  background-color: rgb(15, 180, 15);
+.form-error {
+  color: rgba(230, 42, 42, 0.678);
+  font-size: 1.2em;
+  margin-left: 2px;
+  margin-top: 1px;
+  padding: 5px;
 }

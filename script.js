@@ -16,8 +16,8 @@ function pegarRadioValor(name) {
   for (let index = 0; index < rads.length; index += 1) {
     if (rads[index].checked) {
       return rads[index].value;
-      }
     }
+  }
   return null;
 }
 

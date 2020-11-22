@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 70px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+header .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+}
+
+header .form-group label {
+  color: white;
+  margin: 5px 0;
+}
+
+.btn-login {
+  background-color: rgb(60, 101, 184);
+  border: solid 1px darkblue;
+  border-radius: 2px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 7px;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin: 0 0 8px 5px;
+}
+
+.main-content {
+  background: linear-gradient(white, #d3d8e8);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.left-content {
+  margin-left: 270px;
+  width: 800px;
+}
+
+.left-content p {
+  color: rgb(14, 14, 82);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.right-content {
+  margin-right: 270px;
+  width: 300px;
+}
+
+.right-content input {
+  border: solid 1px lightslategray;
+  border-radius: 4px;
+  color: gray;
+  margin: 5px;
+  padding: 5px;
+}
+
+.right-content p {
+  margin: 5px;
+}
+
+.create-account .form-group label {
+  color: lightslategray;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.bigger-input {
+  width: 900px;
+}
+
+.taller-input {
+  width: 128px;
+}
+
+.field {
+  display: flex;
+}
+
+.field input {
+  margin: 10px 5px;
+}
+
+.btn-radio {
+  margin: 10px;
+}
+
+.signup {
+  background-color: rgb(57, 175, 57);
+  border: solid 1px black;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  height: 35px;
+  text-shadow: black 2px;
+  width: 200px;
+}
+
+h1 {
+  font-size: 33px;
+}
+
+h5 {
+  color: rgb(88, 88, 88);
+  margin: 35px 0;
+  width: 350px;
+}
+
+.create-page {
+  color: rgb(66, 103, 178);
+  text-decoration: none;
+}
+
+header img {
+  height: 70px;
+}
+
+.terms p {
+  color: rgb(145, 145, 145);
+  font-size: 13px;
+  font-weight: 600;
+  width: 330px;
+}
+
+.terms a {
+  color: rgb(66, 103, 178);
+  text-decoration: none;
+}
+
+.moreInfo {
+  background-color: gray;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  width: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-div {
+  width: 70%;
+}
+
+.footer-div hr {
+  width: 85%;
+}
+
+.languages {
+  display: flex;
+  list-style: none;
+}
+
+.languages li {
+  align-items: baseline;
+  color: rgb(66, 103, 178);
+  font-size: 15px;
+  margin: 10px;
+}
+
+.languages:nth-child( 1 ) {
+  color: black;
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+.footer-links-style {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 70px;
+  width: 105%;
+}
+
+.footer-links-style a {
+  color: rgb(66, 103, 178);
+  font-size: 15px;
+  margin: 5px 10px;
+  text-decoration: none;
+}

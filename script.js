@@ -3,7 +3,6 @@ function fBtnLogin() {
   alert(inputUserEmail.value);
 }
 document.getElementById('button-login').addEventListener('click', fBtnLogin);
-document.getElementById('facebook-register').addEventListener('click', fBtnRegister);
 function fBtnRegister() {
   const firstname = formSignin.firstname.value;
   const lastname = formSignin.lastname.value;
@@ -22,3 +21,4 @@ function fBtnRegister() {
     alert('Campos inválidos');
   }
 }
+document.getElementById('facebook-register').addEventListener('click', fBtnRegister);

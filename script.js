@@ -18,6 +18,17 @@ customGender.addEventListener('change', () => {
   formGroup.insertBefore(customInput, formGroup.lastElementChild);
 });
 
+
+//req20
+
+const rightContent = document.querySelector('.right-content');
+function signupSuccess(trueInfos, radioValue) {
+  rightContent.innerHTML = '';
+  const successText = document.createElement('p');
+  successText.innerText = 'Olá, ' + trueInfos[0].value + ' ' + trueInfos[1].value + ' ' + trueInfos[2].value + ' ' + trueInfos[4].value + ' ' + radioValue;
+  rightContent.appendChild(successText);
+}
+
 registerBtn.addEventListener('click', (event) => {
   event.preventDefault();
   const formInputs = document.querySelectorAll('.signup-input');
@@ -39,7 +50,7 @@ registerBtn.addEventListener('click', (event) => {
   } else {
     signupForm.appendChild(message);
   }
-  let trueInfos = [];
+  const trueInfos = [];
   if (bool === true) {
     for (let index = 0; index < formInputs.length; index += 1) {
       if (formInputs[index].value === '') {
@@ -55,11 +66,3 @@ registerBtn.addEventListener('click', (event) => {
   }
 });
 
-let rightContent = document.querySelector(".right-content");
-function signupSuccess (trueInfos, radioValue) {
-  rightContent.innerHTML = "";
-  let successText = document.createElement("p");
-  successText.innerText = "Olá, " + trueInfos[0].value + " " + trueInfos[1].value + " " + trueInfos[2].value + " " + trueInfos[4].value + " " + radioValue;
-  rightContent.appendChild(successText);
-  console.log(sucessText);
-}

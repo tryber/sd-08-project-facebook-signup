@@ -1,14 +1,12 @@
 const enterBtn = document.querySelector('.form-control');
 const customGender = document.querySelector('#custom');
 const registerBtn = document.querySelector('#facebook-register');
-let inputValues = [];
 
 enterBtn.addEventListener('click', (event) => {
   event.preventDefault();
   const emailValue = document.getElementById('user-email-phone');
   alert(emailValue.value);
 });
-
 
 customGender.addEventListener('change', () => {
   const customInput = document.createElement('input');
@@ -20,11 +18,9 @@ customGender.addEventListener('change', () => {
   formGroup.insertBefore(customInput, formGroup.lastElementChild);
 });
 
-
-registerBtn.addEventListener("click", (event) => {
-  event.preventDefault()
+registerBtn.addEventListener('click', (event) => {
+  event.preventDefault();
   const formInputs = document.querySelectorAll('.signup-input');
-  
   const message = document.createElement('p');
   const signupForm = document.getElementById('form-signup');
   message.innerText = 'Campos inválidos';
@@ -32,12 +28,12 @@ registerBtn.addEventListener("click", (event) => {
     if (formInputs[index].value === '') {
       event.preventDefault();
       signupForm.appendChild(message);
-    } 
+    }
   }
   const show = document.querySelectorAll('.show');
-  for(let x = 0; x < show.length; x++){
-    if(show[x].checked){
-      console.log(show[x].value)
+  for (let x = 0; x < show.length; x += 1) {
+    if (show[x].checked) {
+      console.log(show[x].value);
     }
   }
 });

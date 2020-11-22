@@ -18,14 +18,13 @@ customGender.addEventListener('change', () => {
   formGroup.insertBefore(customInput, formGroup.lastElementChild);
 });
 
-
-//req20
+//  req20
 
 const rightContent = document.querySelector('.right-content');
 function signupSuccess(trueInfos, radioValue) {
   rightContent.innerHTML = '';
   const successText = document.createElement('p');
-  successText.innerText = 'Olá, ' + trueInfos[0].value + ' ' + trueInfos[1].value + ' ' + trueInfos[2].value + ' ' + trueInfos[4].value + ' ' + radioValue;
+  successText.innerText = `Olá, ${trueInfos[0].value} ${trueInfos[1].value} ${trueInfos[2].value} ${trueInfos[4].value} ${radioValue}`;
   rightContent.appendChild(successText);
 }
 
@@ -65,4 +64,3 @@ registerBtn.addEventListener('click', (event) => {
     signupSuccess(trueInfos, radioValue);
   }
 });
-

@@ -10,30 +10,39 @@ body , input {
   justify-content: space-between;
 }
 
+
+.facebook-logo {
+  margin-left: 150px;
+}
+
 .form-group {
-  align-content: center;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  /* margin: 10px; */
 }
 
 .form-group label {
   color: white;
   display: flex;
   flex-direction: column;
-  height: 50px;
-  width: 80%;
+  /* height: 50px; */
+  /* width: 80%; */
+  
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
   display: flex;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .form-control button {
   background-color: rgb(55, 92, 165);
   color: white;
-}
+  margin: 16px 10px;
+} 
+
 
 .gender {
   display: flex;
@@ -41,6 +50,9 @@ body , input {
 
 .left-content {
   width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .left-content p {
@@ -48,7 +60,7 @@ body , input {
   color: rgb(44, 86, 170);
   display: flex;
   font-weight: 800;
-  margin: 0;
+  margin: 10px 0px;
   width: 50%;
 }
 
@@ -56,6 +68,7 @@ body , input {
   display: flex;
   justify-content: center;
   margin: 0;
+  max-width: 80%;
 }
 
 .right-content {
@@ -70,7 +83,7 @@ body , input {
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 50px;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 }

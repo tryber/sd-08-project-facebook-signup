@@ -11,11 +11,11 @@ function showClearInput() {
     const allInputs = document.getElementsByTagName('input');
     for (let a = 0; a < allInputs.length; a += 1) {
       if (allInputs[a].value === '') {
-      const alertA = document.createElement('p');
-      const pai = document.querySelector('#label-gender');
-      alertA.innerHTML = 'Campos Invalidos';
-      alertA.class = 'label';
-      pai.appendChild(alertA);
+        const alertA = document.createElement('p');
+        const pai = document.querySelector('#label-gender');
+        alertA.innerHTML = 'Campos Invalidos';
+        alertA.class = 'label';
+        pai.appendChild(alertA);
       }
     }
   });

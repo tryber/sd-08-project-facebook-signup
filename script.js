@@ -25,9 +25,17 @@ registerBtn.addEventListener('click', (event) => {
   const signupForm = document.getElementById('form-signup');
   message.innerText = 'Campos inválidos';
   const show = document.querySelectorAll('.show');
+  let radioValue;
   let bool = false;
-  if (show[0].checked || show[1].checked || show[2].checked) {
+  if (show[0].checked) {
     bool = true;
+    radioValue = show[0].value;
+  } else if (show[1].checked) {
+    bool = true;
+    radioValue = show[1].value;
+  } else if (show[2].checked) {
+    bool = true;
+    radioValue = show[2].value;
   } else {
     signupForm.appendChild(message);
   }

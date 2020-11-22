@@ -1,2 +1,5 @@
 node_modules/
 old
+package-lock.json
+package.json
+fix.sh

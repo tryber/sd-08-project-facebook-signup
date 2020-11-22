@@ -1,13 +1,12 @@
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border: 0;
-  color: rgb(0, 0, 0);
+  color: black;
   margin: 0;
   padding: 0;
 }
 
 /* Posicionamento */
-
 .container {
   align-items: center;
   display: flex;
@@ -20,7 +19,6 @@ body {
 }
 
 /* Outros  */
-
 .box {
   border: 1px solid black;
   height: 100px;
@@ -28,17 +26,17 @@ body {
 }
 
 .red {
-  background-color: rgb(235, 8, 8)
+  background-color: rgb(235, 8, 8);
 }
 
 .blue {
-  background-color: rgb(23, 8, 235)
+  background-color: rgb(23, 8, 235);
 }
 
 .yellow {
-  background-color: rgb(201, 235, 8)
+  background-color: rgb(201, 235, 8);
 }
 
 .green {
-  background-color: rgb(15, 180, 15)
+  background-color: rgb(15, 180, 15);
 }

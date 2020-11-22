@@ -40,7 +40,7 @@ registerBtn.addEventListener('click', (event) => {
     signupForm.appendChild(message);
   }
 
-  if (bool === true) {
+  if (bool === true || radioValue === radioValue) {
     for (let index = 0; index < formInputs.length; index += 1) {
       if (formInputs[index].value === '') {
         event.preventDefault();

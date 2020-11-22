@@ -1,4 +1,6 @@
 const buttonID = document.getElementById('button-login');
+const findError = document.getElementById('Error');
+const inputsRegister = document.getElementsByClassName('inputsSign');
 
 buttonID.addEventListener('click', function () {
   const inputValue = document.getElementById('user-email-phone').value;
@@ -7,18 +9,16 @@ buttonID.addEventListener('click', function () {
 });
 
 function ErrorMessage() {
-  const inputsCadastro = document.getElementsByClassName('inputsSign');
-  const findError = document.getElementById('Error');
-  for (let i = 0; i < inputsCadastro.length; i += 1) {
-    if (inputsCadastro[i].value === '') {
+  for (let index = 0; index < inputsRegister.length; index += 1) {
+    if (inputsRegister[index].value === '') {
       findError.innerHTML = 'Campos inválidos';
       break;
     }
   }
 }
 
-const buttonCadastro = document.getElementById('facebook-register');
-buttonCadastro.addEventListener('click', ErrorMessage());
+const buttonRegister = document.getElementById('facebook-register');
+buttonRegister.addEventListener('click', ErrorMessage());
 
 const buttonPersonalizado = document.getElementById('personalizado');
 buttonPersonalizado.addEventListener('click', function () {

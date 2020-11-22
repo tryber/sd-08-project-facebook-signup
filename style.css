@@ -19,22 +19,17 @@ body , input {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* margin: 10px; */
 }
 
 .form-group label {
   color: white;
   display: flex;
-  flex-direction: column;
-  /* height: 50px; */
-  /* width: 80%; */
-  
+  flex-direction: column; 
 }
 
 .form-control {
   align-self: center;
   display: flex;
-  /* margin-bottom: 10px; */
 }
 
 .form-control button {

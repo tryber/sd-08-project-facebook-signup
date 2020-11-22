@@ -22,7 +22,7 @@
         <div class="form-control">
           <button type="submit" id="button-login">Entrar</button>
         </div>
-      </form>
+      </form method="GET">
       <div></div>
     </header>
     <section class="main-content">
@@ -40,25 +40,27 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">Abra uma conta</p>
+        <p class="quick-easy">É rápido e fácil.</p>
         <form id="right-content-form">
-          <p class="quick-easy">É rápido e fácil.</p>
           <div class="subform">
-            <input type="text" name="firstname" placeholder="Nome" required/>
-            <input type="text" name="lastname" placeholder="Sobrenome" required/>
+            <input type="text" name="firstname" placeholder="Nome" id="form-firstname" required/>
+            <input type="text" name="lastname" placeholder="Sobrenome" id="form-lastname" required/>
           </div>
           <input
             type="text"
             name="phone_email"
             placeholder="Celular ou email"
+            id="form-phone-email"
             required
           />
-          <input type="password" name="password" placeholder="Nova senha" required/><br>
+          <input type="password" name="password" placeholder="Nova senha" id="form-password" required/><br>
           <label id="label-birthdate">Data de nascimento</label>
           <input
             type="text"
             name="birthdate"
             placeholder="dd/mm/aaaa"
             id="label-birthdate"
+            class="form-birthdate"
             required
           />
           <div class="gender-form">

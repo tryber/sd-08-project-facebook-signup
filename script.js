@@ -16,7 +16,7 @@ genderUndefined.addEventListener('click', function () {
 });
 buttonCadastro.addEventListener('click', function () {
   for (let index = 0; index < required.length; index += 1) {
-    if (required[key].value === '') {
+    if (required[index].value === '') {
       alert('Campos inválidos');
     }
   }

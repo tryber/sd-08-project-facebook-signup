@@ -10,13 +10,13 @@ function fBtnRegister() {
   const password = formSignin.password.value;
   const birthdate = formSignin.birthdate.value;
   const gender = formSignin.gender.value;
-  const checkFirstname = firstname !== '';
-  const checkLastname = lastname !== '';
-  const checkPhoneEmail = phoneEmail !== '';
-  const checkPassword = password !== '';
-  const checkBirthdate = birthdate !== '';
-  const checkGender = gender !== '';
-  const checkAll = (checkFirstname && checkLastname && checkPhoneEmail && checkPassword && checkBirthdate && checkGender);
+  const ch1 = firstname !== '';
+  const ch2 = lastname !== '';
+  const ch3 = phoneEmail !== '';
+  const ch4 = password !== '';
+  const ch5 = birthdate !== '';
+  const ch6 = gender !== '';
+  const checkAll = (ch1 && ch2 && ch3 && ch4 && ch5 && ch6);
   if (checkAll === false) {
     alert('Campos inválidos');
   }

@@ -1,9 +1,9 @@
-//Variáveis
+// Variáveis
 const buttonLogin = document.getElementById('button-login');
 const emailPhone = document.getElementById('user-email-phone');
 const genderUndefined = document.getElementById('undefined');
 const genderForm = document.querySelector('.radio-form');
-const buttonCadastro = document.getElementById('facebook-register'); 
+const buttonCadastro = document.getElementById('facebook-register');
 const required = document.querySelectorAll('[required]');
 
 buttonLogin.addEventListener('click', function (event) {
@@ -12,7 +12,7 @@ buttonLogin.addEventListener('click', function (event) {
 });
 
 genderUndefined.addEventListener('click', function () {
-  let genderCustom = document.createElement('input');
+  const genderCustom = document.createElement('input');
   genderCustom.name = 'gender-custom';
   genderCustom.placeholder = 'Gênero (opcional)';
 

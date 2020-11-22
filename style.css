@@ -9,23 +9,21 @@ body {
 }
 
 input {
-  border: 1px solid rgb(0, 0, 0, 0.452);
-  color: rgb(0, 0, 0, 0.767);
+  border: 1px solid black;
+  color: white;
   font-size: 1em;
 }
 
 input:focus {
-  color: rgba(0, 0, 0, 0.931);
   outline: none;
   transition: 0.2s ease-in-out;
 }
 
 button {
   background-color: #436eac;
-
-  /* border-radius: 2px; */
-  border: 1px solid rgba(0, 0, 0, 0.274);
-  color: #ffffffea;
+  border-radius: 2px;
+  border: 1px solid black;
+  color: white;
   font-size: 1em;
 }
 

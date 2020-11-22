@@ -3,8 +3,8 @@ window.onload = function () {
   warning.addEventListener('click', function () {
   const emailPhone = document.getElementById('user-email-phone');
      alert(emailPhone.value);
-    });
-  };
+  });
+};
 function changeRightContainer() {
   const firstName = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;

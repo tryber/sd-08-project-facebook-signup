@@ -20,24 +20,39 @@ function criarMensagemCamposInvalidos(reference) {
     reference.insertBefore(msg, reference.firstChild);
   }
 }
-function mensagemCadastro() {
+function inputValues() {
   const inputsCadastro = document.querySelectorAll('.signup input');
   const inputsValues = [];
   inputsCadastro.forEach((elemento) => {
-    if (elemento.type !== 'radio') {
-      inputsValues.push(elemento.value);
-    } else if (elemento.checked) {
+    if ((elemento.type !== 'radio' && elemento.type !== 'password') || elemento.checked) {
       inputsValues.push(elemento.value);
     }
   });
-  const mensagemInner = `<p>Olá, ${inputsValues[0]} ${inputsValues[1]} \n ${inputsValues[2]} \n ${inputsValues[4]} \n ${inputsValues[5]}</p>`;
-  return mensagemInner;
+  return inputsValues;
 }
-function trocarRightContent() {
+function criaMensagem(msg, position, datas) {
+  let output = '';
+  if (position === 0) {
+    if (document.querySelector('.msg-cadastro-final') === null) {
+      output = `Olá, ${datas[0]} ${datas[1]}`;
+    }
+  } else {
+    output = msg;
+  }
+  return output;
+}
+function mensagemCadastro() {
   const rightContent = document.querySelector('.right-content');
-  const mensagem = mensagemCadastro();
+  const userData = inputValues();
   rightContent.innerHTML = '';
-  rightContent.innerHTML = mensagem;
+  userData.forEach((data, key, datas) => {
+    if (key !== 1) {
+      const newUserElement = document.createElement('p');
+      newUserElement.innerText += `${criaMensagem(data, key, datas)}`;
+      newUserElement.className = 'msg-cadastro-final';
+      rightContent.appendChild(newUserElement);
+    }
+  });
 }
 function checarFormulario(evento) {
   evento.preventDefault();
@@ -45,7 +60,7 @@ function checarFormulario(evento) {
   if (!formulario.checkValidity()) {
     criarMensagemCamposInvalidos(formulario);
   } else {
-    trocarRightContent();
+    mensagemCadastro();
   }
 }
 function criaCampoPersonalizado() {

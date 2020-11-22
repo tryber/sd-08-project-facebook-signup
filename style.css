@@ -66,6 +66,13 @@ body {
   flex-basis: 100%;
 }
 
+.labelGender {
+  display: none;
+  flex-basis: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .gender {
   display: flex;
   flex-direction: row;
@@ -81,11 +88,4 @@ body {
   display: none;
   font-style: italic;
   margin-top: 10px;
-}
-
-.labelGender {
-  display: none;
-  flex-basis: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }

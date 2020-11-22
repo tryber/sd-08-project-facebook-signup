@@ -1,6 +1,6 @@
 .facebook-logo {
   display: flex;
-  align-self: start;
+  align-self: flex-start;
 }
 
 .facebook-login {
@@ -29,7 +29,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 1px solid black;
   color: aliceblue;
   padding: 10px;
 }

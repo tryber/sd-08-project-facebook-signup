@@ -17,42 +17,35 @@ body , input {
 
 .form-group {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  /* margin: 10px; */
+  flex-flow: column wrap;
 }
 
 .form-group label {
   color: white;
   display: flex;
   flex-direction: column;
-  /* height: 50px; */
-  /* width: 80%; */
-  
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
   display: flex;
-  /* margin-bottom: 10px; */
 }
 
 .form-control button {
   background-color: rgb(55, 92, 165);
   color: white;
   margin: 16px 10px;
-} 
-
+}
 
 .gender {
   display: flex;
 }
 
 .left-content {
-  width: 800px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 800px;
 }
 
 .left-content p {
@@ -60,7 +53,7 @@ body , input {
   color: rgb(44, 86, 170);
   display: flex;
   font-weight: 800;
-  margin: 10px 0px;
+  margin: 0;
   width: 50%;
 }
 
@@ -83,7 +76,7 @@ body , input {
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 50px;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }

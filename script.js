@@ -17,3 +17,18 @@ function showClearInput() {
   });
 }
 showClearInput();
+function gender(){
+  const genderSelect = document.querySelector("#Personalizado");
+  genderSelect.addEventListener('change', function () {
+    document.querySelector('.label2').style.display = 'block';
+  });
+  const othersGender = document.querySelector('#Feminino');
+  othersGender.addEventListener('change', function () {
+    document.querySelector('.label2').style.display = 'none';
+  });
+  const othersGender2 = document.querySelector('#Masculino');
+  othersGender2.addEventListener('change', function () {
+    document.querySelector('.label2').style.display = 'none';
+  });
+}
+gender();

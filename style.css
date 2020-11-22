@@ -73,5 +73,7 @@ body {
 
 .others {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
 }
+

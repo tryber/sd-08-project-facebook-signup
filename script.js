@@ -37,21 +37,20 @@ cheksInput(); */
 const invalid = document.createElement('p');
 const form = document.querySelector('.form-register');
 let contador = 0;
+const inputRadio = document.querySelectorAll('.inputRadio');
+
 function checkRadio() {
-  const inputRadio = document.querySelectorAll('.inputRadio');
-  for (let index = 0; index < inputRadio.length; index += 1) {  
+  for (let index = 0; index < inputRadio.length; index += 1) {
     if (inputRadio[index].checked) {
-      contador += 1;  
-      console.log(contador)
-    } 
+      contador += 1;
+    }
     if (contador === 1) {
       invalid.innerHTML = '';
       form.appendChild(invalid);
-    }else {
+    } else {
       invalid.innerHTML = 'Campos inválidos';
       form.appendChild(invalid);
     }
-  
   }
 }
 

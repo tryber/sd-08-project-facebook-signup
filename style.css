@@ -10,9 +10,8 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  width: 100%;
   height: 85px;
-
+  width: 100%;
 }
 
 /* .facebook-logo {
@@ -40,7 +39,6 @@ body {
 .main-content {
   background-color: #f0f2f5;
   height: 500px;
-
 }
 
 .right-content {
@@ -51,7 +49,6 @@ body {
 .left-content {
   display: inline-block;
   width: 800px;
-  float: left;
 }
 
 .firstName {
@@ -61,7 +58,6 @@ body {
 
 .lastName {
   display: inline-block;
-  float: right;
   max-width: 46%;
 }
 
@@ -72,7 +68,7 @@ body {
   border-style: inset;
   border-width: 2px;
   font-size: 90%;
-  height: 30px;
+  height: 25px;
   margin-top: 8px;
   padding: 1px 2px;
 }
@@ -82,53 +78,51 @@ body {
 }
 
 .text {
+  color: rgb(66, 103, 178);
   font-weight: bold;
   max-width: 350px;
-  color:  rgb(66, 103, 178);
-
 }
 
-/*.align-left {
-  left: 200px;
-  position: relative;
-}  */
-
 .tag {
-  display: block;
   color: #606770;
+  display: block;
   font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 20px;
-  margin-bottom: 0;
-  margin-top: 2px;
+  margin-bottom: 0px;
+  margin-top: 4px;
 }
 
 .radio {
-  max-width: 27%;
   display: inline-block;
   font-size: 14px;
   font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
-
+  max-width: 27%;
 }
 
 .button-submit {
-  border-radius: 5px;
-  font-size: 90%;
-  height: 30px;
-  margin-top: 8px;
-  padding: 1px 2px;
   background-color: green;
-  color:  white;
   border: none;
+  border-color: transparent;
+  border-image: initial;
+  border-radius: 5px;
+  border-style: inset;
+  border-width: 2px;
+  color: white;
+  font-size: 90%;
+  font-weight: 400;
+  height: 30px;
+  margin-top: 10px;
+  padding: 1px 2px;
   width: 200px;
-  font-weight: bold;
 }
 
 .space-arround{
   margin-bottom: 2px;
+  margin-top: 2px;
 }
 
- 
-  
-
+.space-top {
+  margin-top: 10px;
+}
  

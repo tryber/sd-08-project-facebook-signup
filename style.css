@@ -9,8 +9,8 @@ body {
 }
 
 input {
-  border: 1px solid rgba(0, 0, 0, 0.452);
-  color: rgba(0, 0, 0, 0.767);
+  border: 1px solid rgb(0, 0, 0, 0.452);
+  color: rgb(0, 0, 0, 0.767);
   font-size: 1em;
 }
 
@@ -22,7 +22,8 @@ input:focus {
 
 button {
   background-color: #436eac;
-  border-radius: 2px;
+
+  /* border-radius: 2px; */
   border: 1px solid rgba(0, 0, 0, 0.274);
   color: #ffffffea;
   font-size: 1em;

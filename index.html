@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook</title>
+    <title>Facebook login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="top-bar">
-        <img src="imgs/facebook-logo.png" alt="Logo do Facebook" class="facebook-logo">   
-        <div class="form-group">
-            <form class="facebook-login">
-               <input type="text"> 
-               <input type="text">
-               <button>Entrar</button>
-            </form>
-        </div>
+        <img class="facebook-logo"src="/imgs/facebook-logo.png" alt="Logo facebook">
+        <form class="facebook-login">
+            <div class="form-group">
+                <label id="user-email-phone-label"for="">Email ou telefone</label>
+                <input id="user-email-phone"type="email phone">
+            </div>
+            <div class="form-group">
+                <label id="user-password-label"for="">Senha</label>
+                <input id="user-password"type="password">
+            </div>
+            <div class="form-control">
+                <button id="button-login">Entrar</button>
+            </div>
+        </form>
     </header>
-    <script src="script.js"></script>
+    <main class="main-content">
+        <div class="left-content">
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <img id="facebook-networking"src="imgs/networking.png" alt="">
+        </div>
+        <div class="right-content">div 02</div>
+
+    </main>
+<script src="script.js"></script>
 </body>
 </html>

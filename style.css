@@ -1,29 +1,63 @@
 /*RESET*/
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-.top-bar {
-    background-color: rgb(66, 103, 178);
     display: flex;
+    flex-direction: column;
+}
+.top-bar {
+    display: flex;
+    border: 1px solid;
+    background-color: rgb(66, 103, 178);
+    width: 100%;
     justify-content: space-around;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-.facebook-logo {
-
 } 
-
-.facebook-login {
-    background-color: azure;
+.facebook-logo {
+    display: flex;
 }
-
+.facebook-login {
+    display: flex;
+}
 .form-group {
     display: flex;
     flex-direction: column;
+}
+.form-control {
+    border: 1px solid;
+    display: flex;
+    align-self: flex-end;
+}
+#button-login {
+    display: flex;
+    
+}
+#user-email-phone-label {
+
+}
+#user-email-phone {
+
+}
+#user-password-label {
+
+}
+#user-password {
+
+}
+.main-content {
+    display: flex;
     justify-content: center;
+}
+.left-content {
+    border: 1px solid;
+    width: 800px;
+}
+#facebook-slogan {
+
+}
+#facebook-networking {
+
+}
+.right-content {
+    border: 1px solid;
+    width: 300px;
 }

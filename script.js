@@ -67,26 +67,26 @@ function setArrayDate(elements) {
   return arrayD;
 }
 
-const supSetView = (newLi, arrayD, index) => {
+const supSetView = (newP, arrayD, index) => {
   if (index === 0) {
-    newLi.innerText = `Olá ${arrayD[index]} ${arrayD[index + 1]}`;
+    newP.innerText = `Olá, ${arrayD[index]} ${arrayD[index + 1]}`;
+    newP.style.display = 'block';
   }
   if (index > 1) {
-    newLi.innerText = arrayD[index];
+    newP.innerText = arrayD[index];
+    newP.style.display = 'block';
   }
-  return newLi;
+  return newP;
 };
 
 function setView(arrayD) {
-  const newUl = document.createElement('ul');
   for (let index = 0; index < arrayD.length; index += 1) {
-    if (index !== 3) {
-      const newLi = document.createElement('li');
-      const newEl = supSetView(newLi, arrayD, index);
-      newUl.appendChild(newEl);
+    if (index !== 3 && index !== 1) {
+      const newP = document.createElement('p');
+      const newEl = supSetView(newP, arrayD, index);
+      rightContent.appendChild(newEl);
     }
   }
-  rightContent.appendChild(newUl);
 }
 
 function mainFormRegister() {

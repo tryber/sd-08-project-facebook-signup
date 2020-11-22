@@ -8,14 +8,9 @@ const languagesList = document.getElementById('languages-list');
 const footerLinks = document.getElementById('footer-links');
 let contador = 0;
 
-const languages = ['Português (Brasil)', 'English (US)', 'Español', 'Français (France)', 
-'Italiano', 'العربية', 'Deutsch', 'हिन्दी', '中文(简体)', '日本語'];
+const languages = ['Português (Brasil)', 'English (US)', 'Español', 'Français (France)', 'Italiano', 'العربية', 'Deutsch', 'हिन्दी', '中文(简体)', '日本語'];
 
-const arrayFooterLinks = ['Cadastre-se', 'Entrar', 'Messenger', 'Facebook Lite', 'Watch', 'Pessoas', 
-'Páginas', 'Categorias de Página', 'Locais', 'Jogos', 'Locais', 'Marketplace', 'Facebook Pay', 'Grupos', 
-'Vagas de emprego', 'Oculus', 'Portal', 'Instagram', 'Local', 'Campanhas de arrecadação de fundos', 
-'Serviços', 'Central de Informações de Votação', 'Sobre', 'Criar anúncio', 'Criar Página', 'Desenvolvedores', 
-'Carreiras', 'Privacidade', 'Cookies', 'Escolhas para anúncios', 'Termos', 'Ajuda', 'Configurações', 'Registro de Atividades'];
+const arrayFooterLinks = ['Cadastre-se', 'Entrar', 'Messenger', 'Facebook Lite', 'Watch', 'Pessoas', 'Páginas', 'Categorias de Página', 'Locais', 'Jogos', 'Locais', 'Marketplace', 'Facebook Pay', 'Grupos', 'Vagas de emprego', 'Oculus', 'Portal', 'Instagram', 'Local', 'Campanhas de arrecadação de fundos', 'Serviços', 'Central de Informações de Votação', 'Sobre', 'Criar anúncio', 'Criar Página', 'Desenvolvedores', 'Carreiras', 'Privacidade', 'Cookies', 'Escolhas para anúncios', 'Termos', 'Ajuda', 'Configurações', 'Registro de Atividades'];
 
 for (let index = 0; index < languages.length; index += 1) {
   const newLanguageItem = document.createElement('li');
@@ -25,7 +20,7 @@ for (let index = 0; index < languages.length; index += 1) {
 
 for (let index = 0; index < arrayFooterLinks.length; index += 1) {
   const newFooterLink = document.createElement('a');
-  newFooterLink.href = "www.facebook.com";
+  newFooterLink.href = 'www.facebook.com';
   newFooterLink.innerText = arrayFooterLinks[index];
   footerLinks.append(newFooterLink);
 }

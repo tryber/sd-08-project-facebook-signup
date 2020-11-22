@@ -194,7 +194,7 @@ footer {
   margin: 10px;
 }
 
-.languages:nth-child(1) {
+.languages:nth-child( 1 ) {
   color: black;
   font-size: 15px;
   margin-left: 30px;

@@ -9,10 +9,7 @@ function fBtnRegister() {
   const female = document.getElementById('female');
   const other = document.getElementById('other');
   let check1 = true;
-  let check2 = false;
-  if (male.checked || female.checked || other.checked) {
-    check2 = true;
-  }
+  let check2 = male.checked || female.checked || other.checked;
   for (let index = 0; index < formSigninInput.length; index += 1) {
     if (formSigninInput[index].value === '') {
       check1 = false;

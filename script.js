@@ -1,12 +1,11 @@
 const botaoLogin = document.getElementById('button-login');
 const entradaEmailTelefone = document.getElementById('user-email-phone');
-
+const radio = document.getElementById('personal');
+const btnRegister = document.getElementById('facebook-register');
 botaoLogin.addEventListener('click', function () {
   alert(entradaEmailTelefone.value);
 });
-
 function otherGender() {
-  const radio = document.getElementById('personal');
   radio.addEventListener('change', function () {
     const gender = document.createElement('input');
     const divGender = document.querySelector('.other-gender');
@@ -35,7 +34,6 @@ function printResult(user) {
   div.appendChild(gender);
   return div;
 }
-
 function getValues() {
   const name = document.querySelector('.name');
   const fullName = document.querySelector('.last-name');
@@ -72,9 +70,7 @@ function validate() {
   }
   return result;
 }
-
 function signIn() {
-  const btnRegister = document.getElementById('facebook-register');
   const form = document.querySelector('.form-register');
   btnRegister.addEventListener('click', function (event) {
     const rightContent = document.querySelector('.right-content');

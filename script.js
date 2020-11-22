@@ -20,15 +20,13 @@ function ErrorMessage() {
 const buttonCadastro = document.getElementById('facebook-register');
 buttonCadastro.addEventListener('click', ErrorMessage());
 
-function PersonalizadoButton() {
-  const buttonPersonalizado = document.getElementById('Personalizado');
-
-  buttonPersonalizado.addEventListener('changed', function () {
-    const createInput = document.createElement('input');
-
-    createInput.name = 'gender-custom';
-    createInput.placeholder = 'Gênero (opcional)';
-    createInput.className = 'radio-buttons';
-  });
-}
-PersonalizadoButton();
+const buttonPersonalizado = document.getElementById('personalizado');
+buttonPersonalizado.addEventListener('click', function () {
+  const createInput = document.createElement('input');
+  createInput.name = 'gender-custom';
+  createInput.type = 'text';
+  createInput.placeholder = 'Gênero (opcional)';
+  createInput.className = 'radio-buttons';
+  const father = document.getElementById('genderPersonalizado');
+  father.appendChild(createInput);
+});

@@ -71,7 +71,7 @@ button {
   width: 300px;
 }
 
-.input-name-lastname {
+.fullname {
   display: flex;
 }
 
@@ -83,8 +83,4 @@ button {
 .right-form {
   display: flex;
   flex-direction: column;
-}
-
-.name-lastname {
-  display: flex;
 }

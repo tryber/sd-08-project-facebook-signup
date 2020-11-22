@@ -1,26 +1,54 @@
 const buttonID = document.getElementById('button-login');
 const findError = document.getElementById('Error');
-const inputsRegister = document.getElementsByClassName('inputsSign');
+const inputRegister = document.getElementsByClassName('inputsSign');
 const buttonRegister = document.getElementById('facebook-register');
-const buttonPersonalizado = document.getElementById('personalizado');
+const customGenderButton = document.getElementById('personalizado');
 const createInput = document.createElement('input');
+const getRightContent = document.querySelector('.right-content');
+const getRadioChecked = document.getElementsByName('gender');
+
+function getGender() {
+  let genderValue = '';
+  for (let index = 0; index < getRadioChecked.length; index += 1) {
+    if (getRadioChecked[index].checked) {
+      genderValue = getRadioChecked[index].value;
+    }
+  }
+  return genderValue;
+}
 
 buttonID.addEventListener('click', function () {
   const inputValue = document.getElementById('user-email-phone').value;
   alert(inputValue);
 });
 
-buttonRegister.addEventListener('click', ErrorMessage());
+function validatedMessageInput() {
+  const inputArray = [];
+  for (let index = 0; index < inputRegister.length; index += 1) {
+    inputArray.push(inputRegister[index].value);
+  }
+  getRightContent.innerHTML = `<p>Olá, ${inputArray[0]} ${inputArray[1]}
+    <br> Celular/Email: ${inputArray[2]}
+    <br> Data de Nascimento: ${inputArray[4]}
+    <br> Gênero: ${getGender()}</p>`;
+}
+
 function ErrorMessage() {
-  for (let index = 0; index < inputsRegister.length; index += 1) {
-    if (inputsRegister[index].value === '') {
+  for (let index = 0; index < inputRegister.length; index += 1) {
+    if (inputRegister[index].value === '') {
       findError.innerHTML = 'Campos inválidos';
-      break;
+    } else {
+      validatedMessageInput();
     }
   }
 }
 
-buttonPersonalizado.addEventListener('click', function () {
+buttonRegister.addEventListener('click', ErrorMessage);
+buttonRegister.addEventListener('click', (event) => {
+  event.preventDefault();
+});
+
+customGenderButton.addEventListener('click', function () {
   createInput.name = 'gender-custom';
   createInput.type = 'text';
   createInput.placeholder = 'Gênero (opcional)';

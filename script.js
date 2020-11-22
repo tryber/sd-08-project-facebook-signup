@@ -11,12 +11,7 @@ function showClearInput() {
     const allInputs = document.getElementsByTagName('input');
     for (let a = 0; a < allInputs.length; a += 1) {
       if (allInputs[a].value === '') {
-        const alertA = document.createElement('label');
-        const pai = document.querySelector('#label-gender');
-        alertA.innerHTML = 'Campos Invalidos';
-        alertA.class = 'labelA';
-        pai.appendChild(alertA);
-        alert('Campos Invalidos');
+        document.querySelector('.false').style.display = 'block';
       }
     }
   });

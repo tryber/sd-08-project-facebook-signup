@@ -8,11 +8,11 @@ function fBtnRegister() {
   const male = document.getElementById('male');
   const female = document.getElementById('female');
   const other = document.getElementById('other');
-  const check1 = true;
-  const check2 = false;
-    if (male.checked || female.checked || other.checked) {
+  let check1 = true;
+  let check2 = false;
+  if (male.checked || female.checked || other.checked) {
     check2 = true;
-    }
+  }
   for (let index = 0; index < formSigninInput.length; index += 1) {
     if (formSigninInput[index].value === '') {
     check1 = false;

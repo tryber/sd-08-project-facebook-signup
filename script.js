@@ -57,7 +57,6 @@ function checkRadio() {
   }
 }
 
-
 function signIt() {
   const inputs = document.querySelectorAll('.inputText');
   for (let index = 0; index < inputs.length; index += 1) {

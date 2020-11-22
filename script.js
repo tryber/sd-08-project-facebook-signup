@@ -5,6 +5,7 @@ const genderUndefined = document.getElementById('undefined');
 const genderForm = document.querySelector('.radio-form');
 const buttonCadastro = document.getElementById('facebook-register');
 const required = document.querySelectorAll('[required]');
+const rightContentForm = document.getElementById('right-content-form');
 
 buttonLogin.addEventListener('click', function (event) {
   event.preventDefault();
@@ -20,9 +21,12 @@ genderUndefined.addEventListener('click', function () {
 });
 
 buttonCadastro.addEventListener('click', function () {
+  const invalidInput = document.createElement('p');
+  
   for (let index = 0; index < required.length; index += 1) {
     if (required[index].value === '') {
-      alert('Campos inválidos');
+      rightContentForm.appendChild(invalidInput);
+      invalidInput.innerText = 'Campos inválidos';
     }
   }
 });

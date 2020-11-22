@@ -25,22 +25,22 @@ registerBtn.addEventListener('click', (event) => {
   const signupForm = document.getElementById('form-signup');
   message.innerText = 'Campos inválidos';
   const show = document.querySelectorAll('.show');
-  let radioValue;
+  // let radioValue;
   let bool = false;
   if (show[0].checked) {
     bool = true;
-    radioValue = show[0].value;
+    // radioValue = show[0].value;
   } else if (show[1].checked) {
     bool = true;
-    radioValue = show[1].value;
+    // radioValue = show[1].value;
   } else if (show[2].checked) {
     bool = true;
-    radioValue = show[2].value;
+    // radioValue = show[2].value;
   } else {
     signupForm.appendChild(message);
   }
 
-  if (bool === true || radioValue === radioValue) {
+  if (bool === true) {
     for (let index = 0; index < formInputs.length; index += 1) {
       if (formInputs[index].value === '') {
         event.preventDefault();

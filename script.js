@@ -2,12 +2,6 @@ function fBtnLogin() {
   const inputUserEmail = document.getElementById('user-email-phone');
   alert(inputUserEmail.value);
 }
-  const firstname = ('');
-  const lastname = ('');
-  const phoneEmail = ('');
-  const password = ('');
-  const birthdate = ('');
-  const gender = ('');
 document.getElementById('button-login').addEventListener('click', fBtnLogin);
 function fBtnRegister() {
   const firstname = formSignin.firstname.value;

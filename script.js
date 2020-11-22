@@ -2,21 +2,20 @@ function fBtnLogin() {
   const inputUserEmail = document.getElementById('user-email-phone');
   alert(inputUserEmail.value);
 }
+
 document.getElementById('button-login').addEventListener('click', fBtnLogin);
-function fBtnRegister() {
-  const formSigninInput = document.getElementsByClassName('input-style');
-  const male = document.getElementById('male');
-  const female = document.getElementById('female');
-  const other = document.getElementById('other');
-  let check1 = true;
-  const check2 = male.checked || female.checked || other.checked;
-  for (let index = 0; index < formSigninInput.length; index += 1) {
-    if (formSigninInput[index].value === '') {
-      check1 = false;
-    }
-  }
-  if (check1 === false && check2 === false) {
-    alert('Campos inválidos');
+
+function fBtnRegister(event) {
+  event.preventDefault();
+  const form = document.getElementsByClassName('facebook-signin')[0];
+  const message = document.getElementById('message');
+  const validacao = form.checkValidity();
+  form.reportValidity();
+  if (validacao) {
+    message.innerText = '';
+  } else {
+    message.innerText = 'Campos inválidos';
   }
 }
+
 document.getElementById('facebook-register').addEventListener('click', fBtnRegister);

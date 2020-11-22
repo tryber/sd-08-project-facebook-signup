@@ -1,6 +1,6 @@
 body {
   background-image: linear-gradient(white, #d3d8e8);
-  height: 75vh;
+  height: 100vh;
   margin: 0;
 }
 
@@ -22,7 +22,6 @@ body {
 
 .form-control {
   align-self: flex-end;
-  display: flex;
 }
 
 .main-content {
@@ -57,6 +56,11 @@ body {
 
 .fullname {
   display: flex;
+  justify-content: space-between;
+}
+
+.fullname input {
+  width: 48.5%;
 }
 
 .birthdate {
@@ -68,6 +72,11 @@ body {
 .gender {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
+}
+
+.gender label {
+  font-size: 13.5px;
 }
 
 .label-style {
@@ -84,21 +93,29 @@ body {
   box-shadow: inset 0 0.5px 0.5px rgba(255, 255, 255, 0.8);
   color: white;
   font-weight: 600;
-  margin-top: 60px;
+  margin-top: 70px;
   padding: 6px 30px;
   text-shadow: 0.5px 0.5px 0.5px grey;
 }
 
 .facebook-signin input {
   background-color: white;
-  box-sizing: border-box;
   margin: 5px 0;
 }
 
 .input-style {
   border: 2px solid #d4dae6;
   border-radius: 5px;
+  box-sizing: border-box;
   justify-content: space-between;
   padding: 6px 8px;
+  width: 100%;
+}
+
+.white-block {
+  background-color: white;
+  bottom: 0;
+  height: 25%;
+  position: absolute;
   width: 100%;
 }

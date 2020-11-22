@@ -7,3 +7,4 @@ tests
 .vscode
 debug.js
 sequelize-ui
+old

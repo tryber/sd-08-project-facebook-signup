@@ -6,6 +6,34 @@ function alertBotao() {
 }
 botaoLogin.addEventListener('click', alertBotao);
 
+const rightContent = document.querySelector('.right-content');
+const nome = document.querySelector('[name=firstname]');
+const sobreNome = document.querySelector('[name=lastname]');
+const emailOuTel = document.querySelector('[name=phone_email]');
+const dataNasc = document.querySelector('[name=birthdate]');
+function pegarRadioValor(name) {
+
+  const rads = document.getElementsByName(name);
+  for (let index = 0; index < rads.length; index += 1) {
+    if (rads[index].checked) {
+      return rads[index].value;
+        }
+  }
+
+  return null;
+}
+
+function exibirDados() {
+
+  const genero = pegarRadioValor('gender');
+  let str = '';
+  str += `Olá, ${nome.value} ${sobreNome.value}<br><br>`;
+  str += `${emailOuTel.value} <br><br>`;
+  str += `${dataNasc.value} <br><br>`;
+  str += `${genero}`;
+  rightContent.innerHTML = str;
+}
+
 const botaoEnviar = document.querySelector('#facebook-register');
 const divVazia = document.getElementById('div-vazia');
 botaoEnviar.addEventListener('click', function (event) {
@@ -35,32 +63,4 @@ for (let index = 0; index < radioPerso.length; index += 1) {
       botaoPer.innerHTML = '';
     }
   });
-}
-
-const rightContent = document.querySelector('.right-content');
-const nome = document.querySelector('[name=firstname]');
-const sobreNome = document.querySelector('[name=lastname]');
-const emailOuTel = document.querySelector('[name=phone_email]');
-const dataNasc = document.querySelector('[name=birthdate]');
-function pegarRadioValor(name) {
-  
-  const rads = document.getElementsByName(name);
-  for (let index = 0; index < rads.length; index += 1) {
-    if (rads[index].checked) {
-      return rads[index].value;
-}
-  }
-
-  return null;
-}
-
-function exibirDados() {
-
-  const genero = pegarRadioValor('gender');
-  let str = '';
-  str += `Olá, ${nome.value} ${sobreNome.value}<br><br>`;
-  str += `${emailOuTel.value} <br><br>`;
-  str += `${dataNasc.value} <br><br>`;
-  str += `${genero}`;
-  rightContent.innerHTML = str;
 }

@@ -12,19 +12,16 @@ const sobreNome = document.querySelector('[name=lastname]');
 const emailOuTel = document.querySelector('[name=phone_email]');
 const dataNasc = document.querySelector('[name=birthdate]');
 function pegarRadioValor(name) {
-
   const rads = document.getElementsByName(name);
   for (let index = 0; index < rads.length; index += 1) {
     if (rads[index].checked) {
       return rads[index].value;
         }
-  }
-
+        }
   return null;
 }
 
 function exibirDados() {
-
   const genero = pegarRadioValor('gender');
   let str = '';
   str += `Olá, ${nome.value} ${sobreNome.value}<br><br>`;

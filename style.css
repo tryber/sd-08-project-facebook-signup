@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);

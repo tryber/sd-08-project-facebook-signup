@@ -63,3 +63,4 @@ buttonCadastro.addEventListener('click', function (event) {
     rightContentForm.innerHTML = `<p>Olá, ${name} ${lastname}</p> <p>Email: ${email}</p> <p>Data de Nascimento: ${date}</p> <p>Gênero: ${genero}`;
   }
 });
+

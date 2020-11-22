@@ -17,8 +17,7 @@ body , input {
 
 .form-group {
   display: flex;
-  flex-direction: column;
-  flex-flow: wrap;
+  flex-flow: column wrap;
 }
 
 .form-group label {
@@ -54,7 +53,7 @@ body , input {
   color: rgb(44, 86, 170);
   display: flex;
   font-weight: 800;
-  margin: 10, 0;
+  margin: 0;
   width: 50%;
 }
 

@@ -18,13 +18,13 @@ body , input {
 .form-group {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: wrap;
 }
 
 .form-group label {
   color: white;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .form-control {
@@ -36,18 +36,17 @@ body , input {
   background-color: rgb(55, 92, 165);
   color: white;
   margin: 16px 10px;
-} 
-
+}
 
 .gender {
   display: flex;
 }
 
 .left-content {
-  width: 800px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 800px;
 }
 
 .left-content p {
@@ -55,7 +54,7 @@ body , input {
   color: rgb(44, 86, 170);
   display: flex;
   font-weight: 800;
-  margin: 10px 0px;
+  margin: 10, 0;
   width: 50%;
 }
 

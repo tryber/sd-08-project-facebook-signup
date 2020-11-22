@@ -22,7 +22,6 @@ genderUndefined.addEventListener('click', function () {
 
 buttonCadastro.addEventListener('click', function () {
   const invalidInput = document.createElement('p');
-  
   for (let index = 0; index < required.length; index += 1) {
     if (required[index].value === '') {
       rightContentForm.appendChild(invalidInput);

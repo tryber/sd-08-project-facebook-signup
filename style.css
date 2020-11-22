@@ -41,9 +41,6 @@ body , input {
 }
 
 .left-content {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center; */
   width: 800px;
 }
 

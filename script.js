@@ -9,7 +9,7 @@ function showClearInput() {
   const buttonInput = document.querySelector('#facebook-register');
   buttonInput.addEventListener('click', function () {
     const allInputs = document.getElementsByTagName('input');
-    for (let a = 0;a < allInputs.length;a += 1) {
+    for (let a = 0; a < allInputs.length; a += 1) {
       if (allInputs[a].value === '') {
         alert('Campos inválidos');
       }

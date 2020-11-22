@@ -39,20 +39,24 @@ const form = document.querySelector('.form-register');
 let contador = 0;
 const inputRadio = document.querySelectorAll('.inputRadio');
 
-function checkRadio() {
+function contagem() {
   for (let index = 0; index < inputRadio.length; index += 1) {
     if (inputRadio[index].checked) {
       contador += 1;
     }
-    if (contador === 1) {
-      invalid.innerHTML = '';
-      form.appendChild(invalid);
-    } else {
-      invalid.innerHTML = 'Campos inválidos';
-      form.appendChild(invalid);
-    }
   }
 }
+
+function checkRadio() {
+  if (contador === 1) {
+    invalid.innerHTML = '';
+    form.appendChild(invalid);
+  } else {
+    invalid.innerHTML = 'Campos inválidos';
+    form.appendChild(invalid);
+  }
+}
+
 
 function signIt() {
   const inputs = document.querySelectorAll('.inputText');
@@ -68,6 +72,7 @@ function signIt() {
 function addRegisterEvent() {
   const register = document.querySelector('#facebook-register');
   register.addEventListener('click', function () {
+    contagem();
     checkRadio();
     signIt();
   });

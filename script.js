@@ -34,17 +34,10 @@ registerBtn.addEventListener('click', (event) => {
 
   if (bool === true) {
     for (let index = 0; index < formInputs.length; index += 1) {
-      if (formInputs[index].value == '') {
+      if (formInputs[index].value === '') {
         event.preventDefault();
         signupForm.appendChild(message);
       }
     }
   }
 });
-
-function getValues() {
-  const formValues = document.querySelectorAll('.signup-input');
-  for (let index = 0; index < formValues.length; index += 1) {
-    console.log(formValues[index].value);
-  }
-}

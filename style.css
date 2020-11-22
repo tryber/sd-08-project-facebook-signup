@@ -1,4 +1,13 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
+  }
+
+.facebook-logo{
+  display: flex;
+  justify-self: flex-start;
 }
+
+
+
+

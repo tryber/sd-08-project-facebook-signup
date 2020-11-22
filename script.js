@@ -4,12 +4,12 @@ function fBtnLogin() {
 }
 document.getElementById('button-login').addEventListener('click', fBtnLogin);
 function fBtnRegister() {
-  let formSigninInput = document.getElementsByClassName('input-style');
-  let male = document.getElementById('male');
-  let female = document.getElementById('female');
-  let other = document.getElementById('other');
-  let check1 = true;
-  let check2 = false;
+  const formSigninInput = document.getElementsByClassName('input-style');
+  const male = document.getElementById('male');
+  const female = document.getElementById('female');
+  const other = document.getElementById('other');
+  const check1 = true;
+  const check2 = false;
     if (male.checked || female.checked || other.checked) {
     check2 = true;
     }

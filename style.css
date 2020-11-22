@@ -9,7 +9,7 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178); /* Obrigatório */
   display: flex; /* Obrigatório */
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .facebook-login {
@@ -34,22 +34,20 @@ body {
 }
 
 .main-content {
-  background: rgb(255,255,255);
-  background: linear-gradient(190deg, rgba(255,255,255,1) 4%, rgba(212,217,232,1) 100%);
+  background: linear-gradient(180deg, rgb(254, 253, 252) 15%, rgb(212, 217, 232) 100%);
   display: flex;
   flex-direction: row;
-  justify-content:; /* Propriedade obrigatória - Valor a definir */
 }
 
 .left-content {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   width: 800px;
 }
 
 .left-content img {
-  width: 100%;
+  width: 90%;
 }
 
 .quick-easy {
@@ -58,14 +56,14 @@ body {
 }
 
 .slogan-container {
-  align-self: center;
+  align-self: flex-end;
 }
 
 .slogan-container p {
   color: rgb(17, 56, 95);
   font-size: 18px;
   font-weight: 700;
-  padding: 30px 0 0 0;
+  padding: 30px 0 0;
 }
 
 .right-content {
@@ -86,7 +84,7 @@ h1 {
 
 .input-fisrt-name { /* Tratar individualmente */
   flex: 1;
-  height: 30px;
+  height: 25px;
   width: 50%;
 }
 
@@ -106,7 +104,7 @@ h1 {
 }
 
 .input-contact {
-  height: 30px;
+  height: 25px;
   margin: 0 10px 10px 0;
   width: 97.5%;
 }
@@ -116,7 +114,7 @@ h1 {
 }
 
 .genero-container input {
-  height: 30px;
+  height: 25px;
 }
 
 .genero {
@@ -130,13 +128,13 @@ h1 {
 }
 
 .user-born input {
-  height: 30px;
+  height: 25px;
 }
 
 .register-button {
   background-color: rgb(95, 155, 76);
   border-radius: 5px;
-  box-shadow: 2px 2px rgb(217, 217, 217);
+  box-shadow: 1px 1px rgb(217, 217, 217);
   color: white;
   font-size: 18px;
   height: 35px;
@@ -154,5 +152,5 @@ h1 {
 
 .error {
   border: 1px solid red;
-  border-radius: 2px;
+  border-radius: 3px;
 }

@@ -9,14 +9,14 @@ buttonLogin.addEventListener('click', function (event) {
   alert(emailPhone.value);
 });
 genderUndefined.addEventListener('click', function () {
-  let genderCustom = document.createElement('input');
+  const genderCustom = document.createElement('input');
   genderCustom.name = 'gender-custom';
   genderCustom.placeholder = 'Gênero (opcional)';
   genderForm.appendChild(genderCustom);
 });
 buttonCadastro.addEventListener('click', function () {
-  for (let key in required) {
-    if (required[key].value == '') {
+  for (let index = 0; index < required.length; index += 1) {
+    if (required[key].value === '') {
       alert('Campos inválidos');
     }
   }

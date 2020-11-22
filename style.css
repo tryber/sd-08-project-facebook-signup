@@ -1,9 +1,32 @@
-.top-bar {
-  display: flex;
-  background-color: rgb(66, 103, 178);
-  }
 
 .facebook-logo {
   display: flex;
-  align-self: flex-start;
+   
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  justify-content: space-around;
+  color: aliceblue;
+}
+
+.facebook-login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.form-control {
+      align-self: flex-end;
+      margin: 5px;
+}
+#button-login {
+  color: aliceblue;
+  background-color: rgb(66, 103, 178);
 }

@@ -19,3 +19,18 @@ function fBtnRegister(event) {
 }
 
 document.getElementById('facebook-register').addEventListener('click', fBtnRegister);
+
+const radios = document.querySelectorAll('input[type=radio]');
+const input = document.querySelector('.gender-custom');
+
+function offOtherField() {
+  input.style.display = 'none';
+}
+
+function onOtherField() {
+  input.style.display = 'inline-block';
+}
+
+radios[0].addEventListener('click', offOtherField);
+radios[1].addEventListener('click', offOtherField);
+radios[2].addEventListener('click', onOtherField);

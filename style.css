@@ -1,0 +1,55 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.facebook-login {
+  align-items: center;
+  color: white;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6px;
+}
+
+.form-control {
+  align-self: flex-end;
+  justify-content: center;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.name-sign-up {
+  display: flex;
+}
+
+.name-sign-up input {
+  margin-right: 6px;
+}
+
+.gender {
+  display: flex;
+  justify-content: space-around;
+}

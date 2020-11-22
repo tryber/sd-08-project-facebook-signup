@@ -34,7 +34,7 @@ function substituirForm() {
   const erro = verificaCamposInvalidos();
   if (erro === 0) {
     const section = document.createElement('section');
-    section.className = 'rigth-content';
+    section.className = 'right-content';
     mainContent.appendChild(section);
     const name = document.createElement('p');
     name.innerHTML = `Olá, ${inputText[0].value} ${inputText[1].value}`;

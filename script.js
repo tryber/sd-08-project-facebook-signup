@@ -15,7 +15,7 @@ function fBtnRegister() {
   }
   for (let index = 0; index < formSigninInput.length; index += 1) {
     if (formSigninInput[index].value === '') {
-    check1 = false;
+      check1 = false;
     }
   }
   if (check1 === false && check2 === false) {

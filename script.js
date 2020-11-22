@@ -20,7 +20,7 @@ botaoEnviar.addEventListener('click', function (event) {
       }
     }
   }
-  if(divVazia.innerHTML === '') exibirDados();
+  if (divVazia.innerHTML === '') exibirDados();
 });
 
 const botaoPer = document.querySelector('#botaopersonalizado');
@@ -40,28 +40,24 @@ for (let index = 0; index < radioPerso.length; index += 1) {
 const rightContent = document.querySelector('.right-content');
 const nome = document.querySelector('[name=firstname]');
 const sobreNome = document.querySelector('[name=lastname]');
-const mostreNome = document.createElement('p');
 const emailOuTel = document.querySelector('[name=phone_email]');
 const dataNasc = document.querySelector('[name=birthdate]');
-const genero = document.getElementsByClassName('radioperso');
-
-
-function pegarRadioValor(name){
+function pegarRadioValor(name) {
   
   const rads = document.getElementsByName(name);
-  for(let index = 0; i < rads.length; i += 1){
-    if(rads[index].checked){
+  for (let index = 0; index < rads.length; index += 1) {
+    if (rads[index].checked) {
       return rads[index].value;
-    }  
+}
   }
-    
+
   return null;
 }
 
 function exibirDados() {
 
-  let genero = pegarRadioValor('gender');
-  let str = ''
+  const genero = pegarRadioValor('gender');
+  let str = '';
   str += `Olá, ${nome.value} ${sobreNome.value}<br><br>`;
   str += `${emailOuTel.value} <br><br>`;
   str += `${dataNasc.value} <br><br>`;

@@ -6,24 +6,25 @@ body {
   font-weight: 600;
   margin: 0;
   padding: 0;
+  border: 0;
+  min-width: 600px;
 }
-
-/*  */
 
 .top-bar-container {
   background-color: rgb(66, 103, 178);
-  border: 1px solid rgba(35, 70, 141, 0.287);
+  border: 1px solid rgba(35, 70, 141, 0.198);
 }
 
 .top-bar {
-  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   font-size: 0.9em;
   justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
+  max-width: 1366px;
+  flex-direction: row;
+  align-items: center;
 }
 
 .facebook-logo {
@@ -31,11 +32,10 @@ body {
   width: 117px;
 }
 
-.facebook-login {
+.facebook-login-form {
   display: flex;
   flex-direction: row;
-  margin-bottom: 2px;
-  margin-top: 2px;
+  align-items: baseline;
 }
 
 .login-input {
@@ -47,7 +47,8 @@ body {
   align-items: baseline;
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  margin: 1%;
+  padding: 1%;
 }
 
 input {
@@ -68,18 +69,16 @@ input:focus {
   margin-left: 2px;
 }
 
-.form-group p {
-  margin: 0;
-}
-
 .form-control {
   align-self: center;
 }
 
 .forgot-account {
+  margin-top: 1px;
   color: #ffffff8a;
   font-size: 1em;
   padding-left: 1px;
+  text-decoration: none;
 }
 
 .btn-login {
@@ -101,21 +100,9 @@ input:focus {
 }
 
 .main-conteiner {
-  background: -moz-linear-gradient(
-    top,
-    rgb(255, 255, 255) 41%,
-    rgba(239, 239, 239, 0.65) 100%
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgb(255, 255, 255) 41%,
-    rgba(239, 239, 239, 0.609) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgb(255, 255, 255) 41%,
-    rgba(239, 239, 239, 0.534) 100%
-  );
+  background: -moz-linear-gradient( top, rgb(255, 255, 255) 41%, rgba(239, 239, 239, 0.65) 100%);
+  background: -webkit-linear-gradient( top, rgb(255, 255, 255) 41%, rgba(239, 239, 239, 0.609) 100%);
+  background: linear-gradient( to bottom, rgb(255, 255, 255) 41%, rgba(239, 239, 239, 0.534) 100%);
   border: 1px solid black;
 }
 

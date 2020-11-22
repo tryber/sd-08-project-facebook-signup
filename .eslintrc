@@ -8,7 +8,11 @@
       2,
       "always"
     ],
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "quotes": [
+      "error",
+      "single"
+    ]
   },
   "env": {
     "browser": true,

@@ -12,6 +12,7 @@ body {
   justify-content: space-between;
   width: 100%;
   height: 85px;
+
 }
 
 /* .facebook-logo {
@@ -38,20 +39,19 @@ body {
 
 .main-content {
   background-color: #f0f2f5;
-  display: flex;
-  height: 400px;
-  justify-content: center;
+  height: 500px;
+
 }
 
 .right-content {
-  display: inline-flex;
-  float: left;
+  display: inline-block;
   width: 300px;
 }
 
 .left-content {
   display: inline-block;
   width: 800px;
+  float: left;
 }
 
 .firstName {
@@ -60,7 +60,7 @@ body {
 }
 
 .lastName {
-  display: inline-flex;
+  display: inline-block;
   float: right;
   max-width: 46%;
 }
@@ -81,7 +81,20 @@ body {
   width: 100%;
 }
 
-.birthdate {
+.text {
+  font-weight: bold;
+  max-width: 350px;
+  color:  rgb(66, 103, 178);
+
+}
+
+/*.align-left {
+  left: 200px;
+  position: relative;
+}  */
+
+.tag {
+  display: block;
   color: #606770;
   font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -89,3 +102,33 @@ body {
   margin-bottom: 0;
   margin-top: 2px;
 }
+
+.radio {
+  max-width: 27%;
+  display: inline-block;
+  font-size: 14px;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+
+}
+
+.button-submit {
+  border-radius: 5px;
+  font-size: 90%;
+  height: 30px;
+  margin-top: 8px;
+  padding: 1px 2px;
+  background-color: green;
+  color:  white;
+  border: none;
+  width: 200px;
+  font-weight: bold;
+}
+
+.space-arround{
+  margin-bottom: 2px;
+}
+
+ 
+  
+
+ 

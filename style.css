@@ -9,7 +9,7 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178); /* Obrigatório */
   display: flex; /* Obrigatório */
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .facebook-login {

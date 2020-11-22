@@ -34,13 +34,38 @@ body {
 }
 
 .main-content {
+  background: rgb(255,255,255);
+  background: linear-gradient(190deg, rgba(255,255,255,1) 4%, rgba(212,217,232,1) 100%);
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Propriedade obrigatória - Valor a definir */
+  justify-content:; /* Propriedade obrigatória - Valor a definir */
 }
 
 .left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 800px;
+}
+
+.left-content img {
+  width: 100%;
+}
+
+.quick-easy {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.slogan-container {
+  align-self: center;
+}
+
+.slogan-container p {
+  color: rgb(17, 56, 95);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 30px 0 0 0;
 }
 
 .right-content {
@@ -113,7 +138,7 @@ h1 {
   border-radius: 5px;
   box-shadow: 2px 2px rgb(217, 217, 217);
   color: white;
-  font-weight: 900;
+  font-size: 18px;
   height: 35px;
   margin: 20px 20px 20px 0;
   width: 50%;
@@ -125,4 +150,9 @@ h1 {
 
 .form-content {
   width: 290px;
+}
+
+.error {
+  border: 1px solid red;
+  border-radius: 2px;
 }

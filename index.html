@@ -26,25 +26,28 @@
     </header>
     <main class="main-content">
         <div class="left-content">
-            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-            <img src="imgs/networking.png" alt="Facebook networking" id="facebook-networking">
+            <div class="slogan-container">
+                <p id="facebook-slogan">O Facebook ajuda você a se conectar e <br> compartilhar com as pessoas que fazem parte <br> da sua vida.</p>
+                <img src="imgs/networking.png" alt="Facebook networking" id="facebook-networking">
+            </div>
         </div>
         <div class="right-content">
             <div class="form-content">
                 <h1>Abra uma conta</h1>
-                <p class="quick-easy">É rápido e fácil.</p>
+                <h2 class="quick-easy">É rápido e fácil.</h2>
                 <form action="" method="get">
+                    <p id="error-warning" class="input-display"><strong>Campos inválidos</strong></p>
                     <div class="new-user-name">
-                        <input type="text" name="firstname" placeholder="Nome" class="input-fisrt-name" required>
-                        <input type="text" name="lastname" placeholder="Sobrenome" class="input-fisrt-name teste" required>
+                        <input type="text" name="firstname" placeholder="Nome" class="input-fisrt-name">
+                        <input type="text" name="lastname" placeholder="Sobrenome" class="input-fisrt-name teste">
                     </div>
                     <div class="new-user-contact">
-                        <input type="text" name="phone_email" placeholder="Celular ou email" class="input-contact" required>
-                        <input type="password" name="password" placeholder="Nova senha" class="input-contact" required>
+                        <input type="text" name="phone_email" placeholder="Celular ou email" class="input-contact">
+                        <input type="password" name="password" placeholder="Nova senha" class="input-contact">
                     </div>
                     <div class="user-born">
                         <label for="" id="label-birthdate">Data de nascimento</label>
-                        <input type="text" name="birthdate" id="birthdate" maxlength="10" placeholder="dd/mm/aaaa" required>
+                        <input type="text" name="birthdate" id="birthdate" maxlength="10" minlength="10" placeholder="dd/mm/aaaa">
                     </div>
                     <div class="genero-container">
                         <label for="" id="label-gender" class="gender">Gênero</label>
@@ -58,16 +61,16 @@
                         </div>
                         <input type="text" name="gender-custom" placeholder="Gênero(opcional)" id="option" class="input-display">
                     </div>
-                    <button type="submit" id="facebook-register" class="register-button">Cadastre-se</button>
+                    <button type="submit" id="facebook-register" class="register-button"><strong>Cadastre-se</strong></button>
                 </form>
             </div>
-            <div class="hidden-content">
+            <!-- <div class="hidden-content">
                 <p class="hello-user"></p>
                 <ul>
                     <li></li>
                     <li></li>
                     <li></li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </main>

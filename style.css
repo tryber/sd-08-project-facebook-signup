@@ -1,5 +1,6 @@
 .facebook-logo {
   display: flex;
+  align-self: start;
 }
 
 .facebook-login {
@@ -10,6 +11,7 @@
 .form-control {
   align-self: flex-end;
   display: flex;
+  padding: 0px 0px 2px 0px;
 }
 
 .top-bar {
@@ -25,12 +27,33 @@
 .form-group {
   align-self: flex-start;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  color: aliceblue;
+  padding: 10px;
 }
 
-.main-content{
+.main-content {
   display: flex;
 }
 
-.left-content{
+.left-content {
   width: 800px;
+}
+
+.form-group >label {
+  color: white;
+}
+
+.eml{
+  display:flex;
+  flex-direction: column;
+  margin: 2px;
+}
+
+.sen{
+  display:flex;
+  flex-direction: column;
+  margin: 2px;
 }

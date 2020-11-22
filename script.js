@@ -25,27 +25,41 @@ registerBtn.addEventListener('click', (event) => {
   const signupForm = document.getElementById('form-signup');
   message.innerText = 'Campos inválidos';
   const show = document.querySelectorAll('.show');
-  // let radioValue;
+  let radioValue;
   let bool = false;
   if (show[0].checked) {
     bool = true;
-    // radioValue = show[0].value;
+    radioValue = show[0].value;
   } else if (show[1].checked) {
     bool = true;
-    // radioValue = show[1].value;
+    radioValue = show[1].value;
   } else if (show[2].checked) {
     bool = true;
-    // radioValue = show[2].value;
+    radioValue = show[2].value;
   } else {
     signupForm.appendChild(message);
   }
-
+  let trueInfos = [];
   if (bool === true) {
     for (let index = 0; index < formInputs.length; index += 1) {
       if (formInputs[index].value === '') {
         event.preventDefault();
         signupForm.appendChild(message);
+      } else {
+        trueInfos.push(formInputs[index]);
       }
     }
   }
+  if (trueInfos.length === formInputs.length) {
+    signupSuccess(trueInfos, radioValue);
+  }
 });
+
+let rightContent = document.querySelector(".right-content");
+function signupSuccess (trueInfos, radioValue) {
+  rightContent.innerHTML = "";
+  let successText = document.createElement("p");
+  successText.innerText = "Olá, " + trueInfos[0].value + " " + trueInfos[1].value + " " + trueInfos[2].value + " " + trueInfos[4].value + " " + radioValue;
+  rightContent.appendChild(successText);
+  console.log(sucessText);
+}

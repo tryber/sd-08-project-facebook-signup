@@ -21,7 +21,7 @@ for (let index = 0; index < languages.length; index += 1) {
 for (let index = 0; index < arrayFooterLinks.length; index += 1) {
   const newFooterLink = document.createElement('a');
   newFooterLink.href = 'https://www.facebook.com';
-  newFooterLink.target = '_blank'
+  newFooterLink.target = '_blank';
   newFooterLink.innerText = arrayFooterLinks[index];
   footerLinks.append(newFooterLink);
 }

@@ -4,20 +4,21 @@ function fBtnLogin() {
 }
 document.getElementById('button-login').addEventListener('click', fBtnLogin);
 function fBtnRegister() {
-  const firstname = formSignin.firstname.value;
-  const lastname = formSignin.lastname.value;
-  const phoneEmail = formSignin.phone_email.value;
-  const password = formSignin.password.value;
-  const birthdate = formSignin.birthdate.value;
-  const gender = formSignin.gender.value;
-  const ch1 = firstname !== '';
-  const ch2 = lastname !== '';
-  const ch3 = phoneEmail !== '';
-  const ch4 = password !== '';
-  const ch5 = birthdate !== '';
-  const ch6 = gender !== '';
-  const checkAll = (ch1 && ch2 && ch3 && ch4 && ch5 && ch6);
-  if (checkAll === false) {
+  let formSigninInput = document.getElementsByClassName('input-style');
+  let male = document.getElementById('male');
+  let female = document.getElementById('female');
+  let other = document.getElementById('other');
+  let check1 = true;
+  let check2 = false;
+    if (male.checked || female.checked || other.checked) {
+    check2 = true;
+    }
+  for (let index = 0; index < formSigninInput.length; index += 1) {
+    if (formSigninInput[index].value === '') {
+    check1 = false;
+    }
+  }
+  if (check1 === false && check2 === false) {
     alert('Campos inválidos');
   }
 }

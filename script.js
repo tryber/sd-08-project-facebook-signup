@@ -24,16 +24,27 @@ registerBtn.addEventListener('click', (event) => {
   const message = document.createElement('p');
   const signupForm = document.getElementById('form-signup');
   message.innerText = 'Campos inválidos';
-  for (let index = 0; index < formInputs.length; index += 1) {
-    if (formInputs[index].value === '') {
-      event.preventDefault();
-      signupForm.appendChild(message);
-    }
-  }
   const show = document.querySelectorAll('.show');
-  for (let x = 0; x < show.length; x += 1) {
-    if (show[x].checked) {
-      console.log(show[x].value);
+  let bool = false;
+  if (show[0].checked || show[1].checked || show[2].checked) {
+    bool = true;
+  } else {
+    signupForm.appendChild(message);
+  }
+
+  if (bool === true) {
+    for (let index = 0; index < formInputs.length; index += 1) {
+      if (formInputs[index].value == '') {
+        event.preventDefault();
+        signupForm.appendChild(message);
+      }
     }
   }
 });
+
+function getValues() {
+  const formValues = document.querySelectorAll('.signup-input');
+  for (let index = 0; index < formValues.length; index += 1) {
+    console.log(formValues[index].value);
+  }
+}

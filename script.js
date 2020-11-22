@@ -34,12 +34,14 @@ function validatedMessageInput() {
 }
 
 function ErrorMessage() {
+  const fieldArray = [];
   for (let index = 0; index < inputRegister.length; index += 1) {
-    if (inputRegister[index].value === '') {
-      findError.innerHTML = 'Campos inválidos';
-    } else {
-      validatedMessageInput();
-    }
+    fieldArray.push(inputRegister[index].value);
+  }
+  if (fieldArray.includes('')) {
+    findError.innerHTML = 'Campos inválidos';
+  } else {
+    validatedMessageInput();
   }
 }
 

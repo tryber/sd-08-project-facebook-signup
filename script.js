@@ -20,7 +20,7 @@ function Req20(num, obj, form) {
     return;
   }
   labelEmpty[0].style.display = 'block';
-  labelEmpty[0].innerHTML = 'Campos Inválidos';
+  labelEmpty[0].innerHTML = 'Campos inválidos';
 }
 
 btnRegister.addEventListener('click', function () {

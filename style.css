@@ -30,3 +30,24 @@
   color: aliceblue;
   background-color: rgb(66, 103, 178);
 }
+
+.main-content{
+  display: flex;
+  justify-content: space-around;
+}
+.left-content{
+  width: 800px;
+}
+
+.right-content{
+  width: 300px;
+  margin: 0px 60px 0px 0px;
+  border: 1px solid black;
+  }
+
+.inpnm {
+  display: flex;
+  justify-content: space-between;
+}
+
+  }

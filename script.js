@@ -13,7 +13,7 @@ buttonLogin();
 2- selecionando o botão personalizado ele aparece
 3- ao clickar em outro botão o campo de texto desaparece
 */
-document.getElementById('genderAll').addEventListener('click', (e)=> {
+document.getElementById('genderAll').addEventListener('click', (e) => {
   if (e.target.classList.contains('gender-sel')) {
     document.getElementById('genderText').classList.add('hidden');
     if (e.target.classList.contains('gender-personalized')) {

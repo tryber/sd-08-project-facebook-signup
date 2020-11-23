@@ -16,7 +16,7 @@
   background-color: rgb(66, 103, 178);
   color: aliceblue;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .facebook-login {

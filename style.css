@@ -74,7 +74,8 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and ( max-width : 360px ) {
+
   .left-content {
     display: none;
   }
@@ -132,6 +133,7 @@ body {
     margin: 8%;
     margin-top: 0;
   }
+  
   .footer {
     align-content: space-around;
     color: #546eb3;

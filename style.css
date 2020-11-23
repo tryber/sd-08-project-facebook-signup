@@ -5,10 +5,8 @@ body , input {
 }
 
 .facebook-login {
-  align-self: center;
   display: flex;
-  border: solid;
-  max-height: 40px;
+  justify-content: space-around;
 }
 
 .facebook-logo {
@@ -34,7 +32,7 @@ body , input {
 .form-control button {
   background-color: rgb(55, 92, 165);
   color: white;
-  margin: 16px 10px;
+  margin: 10px 15px;
 }
 
 .gender {
@@ -76,4 +74,3 @@ body , input {
   margin: 0;
   padding: 0;
 }
-

@@ -1,1 +1,7 @@
 node_modules/
+lint-gen.sh
+package.json
+package-lock.json
+.stylelintignore
+fix
+.eslintignore

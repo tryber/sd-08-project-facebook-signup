@@ -89,9 +89,11 @@ body {
 }
 
 .label {
+  display: flex;
   flex-basis: 100%;
+  flex-direction: column;
   margin: 10px 0;
-  width: 300px;
+  width: 400px;
 }
 
 .labelGender {

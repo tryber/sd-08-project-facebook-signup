@@ -6,7 +6,7 @@ function getRadioValueFromInputs(genders) {
   if (genders === undefined) {
     return '';
   }
-  for (let gender = 0; gender < genders.lenght; gender += 1) {
+  for (let gender = 0; gender < genders.length; gender += 1) {
     if (genders[gender].checked) {
       return genders[gender].value;
     }
@@ -20,12 +20,13 @@ function checkForm() {
   const lastname = document.getElementById('lastname-input').value;
   const phoneEmail = document.getElementById('phone-email').value;
   const password = document.getElementById('password-input').value;
-  const genders = document.querySelectorAll('input[name="gender"]').value;
+  const genders = document.querySelectorAll('input[name="gender"]');
   const selectedGenderValue = getRadioValueFromInputs(genders);
 
   if (name === '' || lastname === '' || phoneEmail === '' || password === '' || selectedGenderValue === '') {
-    alert('Campos inválidos.');
+    document.getElementById('erro').innerHTML = "Campos inválidos."
   } else {
+    document.getElementById('erro').innerHTML = ""
     document.getElementById('form-registry').submit();
   }
 }

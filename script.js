@@ -19,9 +19,7 @@ function replaceDiv(event) {
   event.preventDefault();
   const forms = document.querySelectorAll('.form-register input');
   const divRight = document.querySelector('.right-content');
-  const h1 = document.querySelector('.right-content h1');
-  const p = document.querySelector('.right-content .quick-easy');
-  const formsAll = document.querySelector('.right-content form');
+  const divRemove = document.querySelector('.remove');
 
   for (let index = 0; index < forms.length; index += 1) {
     if (index === 0) {
@@ -39,9 +37,7 @@ function replaceDiv(event) {
     }
   }
 
-  divRight.removeChild(h1);
-  divRight.removeChild(p);
-  divRight.removeChild(formsAll);
+  divRight.removeChild(divRemove);
 }
 
 function cheksInput() {

@@ -71,7 +71,7 @@ button {
   width: 300px;
 }
 
-.input-name-lastname {
+.fullname {
   display: flex;
 }
 
@@ -85,6 +85,11 @@ button {
   flex-direction: column;
 }
 
-.name-lastname {
-  display: flex;
+.styling {
+  color: darkblue;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
 }

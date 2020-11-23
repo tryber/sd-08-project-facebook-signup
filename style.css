@@ -66,8 +66,7 @@ body {
 .lower {
   display: flex;
   flex-basis: 53%;
-  flex-direction: column;
-  flex-flow: wrap;
+  flex-wrap: wrap;
 }
 
 .quick-easy form {

@@ -11,14 +11,11 @@ showAlert();
 
 const formText = document.querySelectorAll('#sign-up input[type=text], #sign-up input[type=password]');
 function verifyText() {
-<<<<<<< HEAD
   const formText = document.querySelectorAll(
     '#sign-up input[type=text], #sign-up input[type=password]'
   );
 }
 
-=======
->>>>>>> d62be99a19c89ce063d28102574eb02be359f038
   for (let index = 0; index < formText.length; index += 1) {
     if (formText[index].value === '' || formText[index].value === null) {
       return true;

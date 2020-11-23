@@ -91,19 +91,19 @@ body {
   }
 
   .moblie {
+    border-radius: 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
-    border-radius: 2px;
   }
 
   .input-n-p {
     background-color: #ebe7e7;
+    border-color: #ffffff;
+    border-width: 1px;
     padding: 2%;
     width: 70%;
-    border-width: 1px;
-    border-color: #ffffff;
   }
 
   .button-moblie {
@@ -118,13 +118,12 @@ body {
 
   .button-moblie-register {
     background-color: #42b72a;
-    color: white;
-    width: 150px;
-    border-radius: 2px;
-    margin: 5%;
-    color: white;
-    padding: 2%;
     border: none;
+    border-radius: 2px;
+    color: white;
+    margin: 5%;
+    padding: 2%;
+    width: 150px;
   }
 
   .esqueceu {

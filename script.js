@@ -18,9 +18,20 @@ document.getElementById('gender-select').addEventListener('click', (e) => {
   }
 });
 
-const validate = (e) => {
+const validate = (data) => {
   const registerError = document.getElementById('error');
-  if (e.value.trim() === '') {
+
+  const val = {
+    errors: 0,
+  };
+
+  Object.values(data).forEach((value) => {
+    // console.log(value);
+    if (value.trim() === '') {
+      val.errors += 1;
+    }
+  });
+  if (val.errors > 0) {
     registerError.classList.remove('hidden');
     setTimeout(() => {
       registerError.classList.add('hidden');
@@ -41,22 +52,14 @@ const registerAction = (data = {}) => {
 
 document.getElementById('facebook-register').addEventListener('click', (e) => {
   e.preventDefault();
-
-  if (
-    validate(document.forms.signup.firstname)
-    && validate(document.forms.signup.lastname)
-    && validate(document.forms.signup.phone_email)
-    && validate(document.forms.signup.birthdate)
-    && validate(document.forms.signup.gendersel)
-  ) {
-    const data = {
-      firstname: document.forms.signup.firstname.value || '',
-      lastname: document.forms.signup.lastname.value || '',
-      phonemail: document.forms.signup.phone_email.value || '',
-      birthdate: document.forms.signup.birthdate.value || '',
-      gender: document.forms.signup.gendersel.value || '',
-    };
-
+  const data = {
+    firstname: document.forms.signup.firstname.value || '',
+    lastname: document.forms.signup.lastname.value || '',
+    phonemail: document.forms.signup.phone_email.value || '',
+    birthdate: document.forms.signup.birthdate.value || '',
+    gender: document.forms.signup.gendersel.value || '',
+  };
+  if (validate(data)) {
     registerAction(data);
   }
 });

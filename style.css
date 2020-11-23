@@ -4,7 +4,7 @@
   color: aliceblue;
 }
 
-.genop{
+.genop {
   visibility: hidden;
 }
 
@@ -35,7 +35,7 @@
   margin: 5px;
 }
 
-.main-content{
+.main-content {
   display: flex;
   justify-content: space-around;
 }
@@ -45,7 +45,7 @@
   width: 800px;
 }
 
-.right-content{
+.right-content {
   background-color: rgb(182, 195, 206);
   margin: 0 60px 0 0;
   width: 300px;
@@ -60,7 +60,7 @@
   margin: 4px 4px 4px 0;
 }
 
-.emlcel > input{
+.emlcel > input {
   margin: 4px 2px 4px 0;
 }
 
@@ -69,6 +69,6 @@
   color: aliceblue;
 }
 
-body{
+body {
   background-color: rgb(182, 195, 206);
 }

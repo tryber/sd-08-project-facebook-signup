@@ -41,14 +41,14 @@
 }
 
 .left-content{
-  width: 800px;
   background-color: rgb(182, 195, 206);
+  width: 800px;
 }
 
 .right-content{
-  width: 300px;
-  margin: 0 60px 0 0;
   background-color: rgb(182, 195, 206);
+  margin: 0 60px 0 0;
+  width: 300px;
 }
 
 .inpnm {

@@ -23,16 +23,16 @@ function radiocheck(){
   }
   else {document.getElementById("genop").style.visibility = "hidden"
   }
-}; 
+};
 
-  //botão cadastre-se checando valores antes
+//botão cadastre-se checando valores antes
 let submete =document.getElementById("facebook-register")
 submete.addEventListener("click", checksubmit)
 
 function checksubmit(){
- let frn = document.getElementsByName("firstname").value;
+  let frn = document.getElementsByName("firstname").value;
   if (frn === ""){ alert('Campos inválidos')}
-  
+
   let scn = document.getElementsByName("fastname").value;
   if (scn === ""){ alert('Campos inválidos')}
 

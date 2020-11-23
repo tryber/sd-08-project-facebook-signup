@@ -3,10 +3,6 @@ body {
   padding: 0;
 }
 
-* {
-  margin: 0;
-}
-
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -72,11 +68,11 @@ body {
   width: 100%;
 } */
 
-.lastName, .firstName {
+.lastName , .firstName {
   width: 46%;
 }
 
-.phone_email, .password, .birthdate {
+.phone_email , .password , .birthdate {
   width: 100%;
 }
 

@@ -47,7 +47,7 @@ plugins:
   editorconfig:
     enabled: true
   eslint:
-    enabled: false
+    enabled: true
   fixme:
     enabled: true
   nodesecurity:
@@ -55,4 +55,4 @@ plugins:
   shellcheck:
     enabled: true
   stylelint:
-    enabled: false
+    enabled: true

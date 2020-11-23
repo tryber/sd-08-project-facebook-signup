@@ -78,7 +78,7 @@ body {
 .campos-invalidos {
   align-items: center;
   align-self: center;
-  background-color: rgba(127, 148, 148, 0.856);
+  background-color: rgba(127, 148, 148, 0.855);
   border-radius: 16px;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.616);
   display: flex;

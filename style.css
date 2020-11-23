@@ -17,8 +17,8 @@ body {
 .main-content {
   background: linear-gradient(rgb(254, 254, 254), rgb(212, 217, 232));
   display: flex;
-  padding-bottom: 40px;
   justify-content: space-between;
+  padding-bottom: 40px;
 }
 
 .inputBtn {
@@ -45,8 +45,8 @@ body {
   color: white;
   display: flex;
   padding-top: 5px;
-  margin: auto;
   flex-direction: column;
+  margin: auto;
 }
 
 .form-control {

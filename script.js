@@ -21,5 +21,3 @@ document.getElementById('genderAll').addEventListener('click', (e) => {
     }
   }
 });
-
-

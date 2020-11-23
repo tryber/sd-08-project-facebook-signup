@@ -1,15 +1,15 @@
 // botão entrar mostrando o valor do input nome-email
 function bntclick() {
-  let btnentrar = document.getElementById('user-email-phone').value;
+  const btnentrar = document.getElementById('user-email-phone').value;
   alert(btnentrar);
-  };
+}
 const btn = document.getElementById('button-login');
-btn.addEventListener('click', bntclick)
-
+btn.addEventListener('click', bntclick);
 
 // se for outros mostra campo se não invisivel
+let radioot =document.getElementById("other");
 function radiocheck() {
-  if(radioot.checked === true){
+  if (radioot.checked === true){
     document.getElementById("genop").style.visibility = "visible";
   }
   else {document.getElementById("genop").style.visibility = "hidden"
@@ -17,7 +17,6 @@ function radiocheck() {
 };
 
 // tres escutas para os tipos de genero
-let radioot =document.getElementById("other");
 radioot.addEventListener("click", radiocheck);
 
 let radiofm =document.getElementById("female");

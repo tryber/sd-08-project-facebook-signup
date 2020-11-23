@@ -22,7 +22,7 @@ function replaceDiv(event) {
   const divRemove = document.querySelector('.remove');
 
   const tagP = document.createElement('p');
-  tagP.innerText =`Olá, ${ forms[ 0 ].value } ${ forms[ 1 ].value }`;
+  tagP.innerText = `Olá, ${forms[0].value} ${forms[1].value}`;
   divRight.appendChild(tagP);
 
   const tagP1 = document.createElement('p');

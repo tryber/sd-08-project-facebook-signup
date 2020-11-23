@@ -1,11 +1,6 @@
 const btnLogin = document.getElementById('button-login');
 const rbPers = document.getElementById('personalizado');
 const persInput = document.getElementById('persInput');
-const firstname = document.getElementById('firstname');
-const lastname = document.getElementById('lastname');
-const phoneEmail = document.getElementById('phone_email');
-const password = document.getElementById('password');
-const birthdate = document.getElementById('birthdate');
 const btnRegister = document.getElementById('facebook-register');
 const labelEmpty = document.getElementById('labelEmpty');
 let userId;
@@ -15,10 +10,26 @@ btnLogin.addEventListener('click', function () {
   alert(userId.value);
 });
 
-btnRegister.addEventListener('click', function () {
-  if (firstname.value === '' || lastname.value === '' || phoneEmail === '' || password === '' || birthdate === '') {
-    labelEmpty.innerHTML = '<p>Campos inválidos</p>';
+function Req20 (num, obj) {
+  if (num === 5 && obj !== null) {
+    console.log(num);
+    return;
   }
+  labelEmpty.innerText = 'Campos Inválidos';
+}
+
+btnRegister.addEventListener('click', function () {
+  const checkForm = getElementsByClassName('check-form');
+  const radioBtn = document.querySelector('input[name="gender"]:checked')
+  let calc = 0;
+  for (let i = 0; i < checkForm.length; i += 1) {
+    if(checkForm[i].value != '') {
+      calc += 1;
+      console.log(calc);
+    }
+  }
+
+  Req20(calc, radioBtn);
 });
 
 function DisableInput() {

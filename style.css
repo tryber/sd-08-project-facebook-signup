@@ -111,11 +111,6 @@ button:hover {
   padding: 1%;
 }
 
-.sel-gender {
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
 .form-group-inline {
   display: flex;
   flex-direction: row;

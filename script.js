@@ -9,66 +9,63 @@ function alertEmail() {
 
 alertEmail();
 
-function createTagP(value) {
-  const tagP = document.createElement('p');
-  tagP.innerText = value;
-  return tagP;
+function replaceDiv() {
+  const check = checksInput();
+  if (check === 0) {
+    const forms = document.querySelectorAll('.form-register input');
+    const divRight = document.querySelector('.right-content');
+    const divRemove = document.querySelector('.remove');
+  
+    const tagP = document.createElement('p');
+    tagP.innerText = `Olá, ${forms[0].value} ${forms[1].value}`;
+    divRight.appendChild(tagP);
+  
+    const tagP1 = document.createElement('p');
+    tagP1.innerText = forms[2].value;
+    divRight.appendChild(tagP1);
+  
+    const tagP2 = document.createElement('p');
+    tagP2.innerText = forms[4].value;
+    divRight.appendChild(tagP2);
+  
+    const tagP3 = document.createElement('p');
+    tagP3.innerText = document.querySelector('input[type=radio]:checked').id;
+    divRight.appendChild(tagP3);
+  
+    divRight.removeChild(divRemove);
+  }
 }
 
-function replaceDiv(event) {
-  event.preventDefault();
-  const forms = document.querySelectorAll('.form-register input');
-  const divRight = document.querySelector('.right-content');
-  const divRemove = document.querySelector('.remove');
-
-  const tagP = document.createElement('p');
-  tagP.innerText = `Olá, ${forms[0].value} ${forms[1].value}`;
-  divRight.appendChild(tagP);
-
-  const tagP1 = document.createElement('p');
-  tagP1.innerText = forms[2].value;
-  divRight.appendChild(tagP1);
-
-  const tagP2 = document.createElement('p');
-  tagP2.innerText = forms[4].value;
-  divRight.appendChild(tagP2);
-
-  const tagP3 = document.createElement('p');
-  tagP3.innerText = document.querySelector('input[type=radio]:checked').id;
-  divRight.appendChild(tagP3);
-
-  divRight.removeChild(divRemove);
-}
-
-function cheksInput() {
-  const button = document.querySelector('#facebook-register');
-  button.addEventListener('click', function (event) {
-    const formsInput = document.querySelectorAll('.form-register input');
-    let contador = 0;
-    let radio = false;
-    for (let index = 0; index < formsInput.length; index += 1) {
-      if (formsInput[index].value === '') {
-        contador += 1;
-      } else if (formsInput[index].checked === true && formsInput[index].type === 'radio') {
-        radio = true;
-      }
+function checksInput() {
+  const formsInput = document.querySelectorAll('.form-register input');
+  let contador = 0;
+  let radio = false;
+  for (let index = 0; index < formsInput.length; index += 1) {
+    if (formsInput[index].value === '') {
+      contador += 1;
+    } else if (formsInput[index].checked === true && formsInput[index].type === 'radio') {
+      radio = true;
     }
-    if (contador !== 0 || radio !== true) {
-      const formsTagP = document.querySelector('.form-register p');
-      const forms = document.querySelector('.form-register');
-      if (formsTagP !== null) {
-        forms.removeChild(formsTagP);
-      }
-      event.preventDefault();
-      const tagP = createTagP('Campos inválidos');
-      forms.appendChild(tagP);
-    } else {
-      replaceDiv(event);
-    }
-  });
+  }
+  if (radio === false) {
+    contador += 1;
+  }
+  return contador;
 }
 
-cheksInput();
+function checksInputText() {
+  const check = checksInput();
+  if (check !== 0) {
+    const p = document.querySelector('.form-register p');
+    const forms = document.querySelector('.form-register');
+    if (p !== null) {
+      forms.removeChild(p);
+    }
+    const tagP = document.createElement('p');
+    tagP.innerText = 'Campos inválidos';
+    forms.appendChild(tagP);
+  }
+}
 
 function radioCustom() {
   const forms = document.querySelector('.custom');
@@ -82,7 +79,7 @@ function radioCustom() {
       const textArea = document.createElement('input');
       textArea.type = 'text';
       textArea.name = 'gender-custom';
-      textArea.placeholder = 'Gênero';
+      textArea.placeholder = 'Gênero (opcional)';
       textArea.id = 'gender';
       custom.appendChild(textArea);
     } else if (event.target.id !== 'gender') {
@@ -96,6 +93,15 @@ function radioCustom() {
 }
 
 radioCustom();
+
+
+const register = document.querySelector('#facebook-register');
+register.addEventListener('click', function (event) {
+  event.preventDefault();
+  checksInputText();
+  replaceDiv();
+});
+
 
 // const invalid = document.createElement('p');
 // const form = document.querySelector('.form-register');

@@ -31,7 +31,7 @@ function checksubmit() {
   const phe = document.getElementsByName('phone_email').value;
   const pass = document.getElementsByName('password').value;
   const nasc = document.getElementsByName('birthdate').value;
-  if (frn === '' || len === '' || phe === '' || pass === '' || nasc === '' ) { alert('Campos inválidos'); }
+  if (frn ==='' || len ==='' || phe ==='' || pass ==='' || nasc ==='') { alert('Campos inválidos'); }
 }
 // botão cadastre-se checando valores antes
 const submete = document.getElementById('facebook-register');

@@ -42,29 +42,21 @@ const registerAction = (data = {}) => {
 document.getElementById('facebook-register').addEventListener('click', (e) => {
   e.preventDefault();
 
-  if (validate(document.forms.signup.firstname)) {
-    return false;
-  }
-  if (validate(document.forms.signup.lastname)) {
-    return false;
-  }
-  if (validate(document.forms.signup.phone_email)) {
-    return 1;
-  }
-  if (validate(document.forms.signup.birthdate)) {
-    return false;
-  }
-  if (validate(document.forms.signup.gendersel)) {
-    return false;
-  }
-  const data = {
-    firstname: document.forms.signup.firstname.value,
-    lastname: document.forms.signup.lastname.value,
-    phonemail: document.forms.signup.phone_email.value,
-    birthdate: document.forms.signup.birthdate.value,
-    gender: document.forms.signup.gendersel.value,
-  };
+  if (
+    validate(document.forms.signup.firstname)
+    && validate(document.forms.signup.lastname)
+    && validate(document.forms.signup.phone_email)
+    && validate(document.forms.signup.birthdate)
+    && validate(document.forms.signup.gendersel)
+  ) {
+    const data = {
+      firstname: document.forms.signup.firstname.value || '',
+      lastname: document.forms.signup.lastname.value || '',
+      phonemail: document.forms.signup.phone_email.value || '',
+      birthdate: document.forms.signup.birthdate.value || '',
+      gender: document.forms.signup.gendersel.value || '',
+    };
 
-  registerAction(data);
-  return true;
+    registerAction(data);
+  }
 });

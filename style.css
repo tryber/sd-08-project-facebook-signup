@@ -44,9 +44,9 @@ body {
 .form-group {
   color: white;
   display: flex;
+  margin: auto;
   padding-top: 5px;
   flex-direction: column;
-  margin: auto;
 }
 
 .form-control {
@@ -82,8 +82,8 @@ body {
 
 .inputName {
   height: 20px;
-  flex-basis: 20%;
   margin-right: 8px;
+  flex-basis: 20%;
   width: 300px;
 }
 

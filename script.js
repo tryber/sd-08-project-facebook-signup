@@ -14,7 +14,7 @@ function validate() {
   botao.addEventListener('click', function (event) {
     for (let index = 2; index < formList.length - 3; index += 1) {
       const valorCampos = formList[index].value;
-      if (valorCampos === "") {
+      if (valorCampos === '') {
         validacao.textContent = 'Campos Inválidos';
         event.preventDefault();
       }

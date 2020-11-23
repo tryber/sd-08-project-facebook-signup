@@ -24,14 +24,14 @@ function validate() {
 
 validate();
 
-const personal = document.getElementById("personal");
-personal.addEventListener("click", function () {
+const personal = document.getElementById('personal');
+personal.addEventListener('click', function () {
   if (personal.checked === true) {
-    const inputPersonal = document.createElement("input");
-    inputPersonal.className = "input-personal";
-    inputPersonal.type = "text";
-    inputPersonal.placeholder = "Gênero (opcional)";
-    inputPersonal.name = "gender-custom";
-    document.querySelector(".container-input").appendChild(inputPersonal);
+    const inputPersonal = document.createElement('input');
+    inputPersonal.className = 'input-personal';
+    inputPersonal.type = 'text';
+    inputPersonal.placeholder = 'Gênero (opcional)';
+    inputPersonal.name = 'gender-custom';
+    document.querySelector('.container-input').appendChild(inputPersonal);
   }
 });

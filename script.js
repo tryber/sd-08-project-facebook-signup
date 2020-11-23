@@ -1,7 +1,8 @@
 function buttonEnter () {
-    let selectButton = document.getElementById('button-login')
+    let selectButton = document.getElementById("button-login")
     selectButton.addEventListener('click', event=> {
-        alert('Email ou telefone')
+        let selectValue = document.getElementById('user-email-phone').value;
+        alert(selectValue);
     })
 }
 buttonEnter();

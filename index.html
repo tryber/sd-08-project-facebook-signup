@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="top-bar">
-        <img class="facebook-logo"src="/imgs/facebook-logo.png" alt="Logo facebook">
+        <img class="facebook-logo"src="imgs/facebook-logo.png" alt="Logo facebook">
         <form class="facebook-login">
             <div class="form-group">
                 <label id="user-email-phone-label"for="">Email ou telefone</label>
@@ -17,6 +17,7 @@
             <div class="form-group">
                 <label id="user-password-label"for="">Senha</label>
                 <input id="user-password"type="password">
+                <a class="link-password" href="#">Esqueceu a conta?</a>
             </div>
             <div class="form-control">
                 <button id="button-login">Entrar</button>
@@ -28,8 +29,17 @@
             <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
             <img id="facebook-networking"src="imgs/networking.png" alt="">
         </div>
-        <div class="right-content">div 02</div>
-
+        <div class="right-content">
+            <h1>Abra uma conta</h1>
+            <h3 class="quick-easy">É rápido e fácil.</h3>
+            <form class="create-account">
+                <div class="input-name">
+                    <input type="text" name="firstname" placeholder="Nome">
+                    <input type="text" name="lastname" placeholder="Sobrenome">   
+                </div>
+                <input type="email phone" name="phone_email" placeholder="Celular ou email">
+                <input type="password" name="password" placeholder="Nova senha"> 
+            </form>
     </main>
 <script src="script.js"></script>
 </body>

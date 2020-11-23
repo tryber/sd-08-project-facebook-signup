@@ -16,6 +16,7 @@ alertButton.addEventListener('click', alertLogin);
 function customInput() {
   if (genderInput.value === 'personalizado') {
     const newInput = document.createElement('input');
+    newInput.type = 'text';
     newInput.name = 'gender-custom';
     newInput.placeholder = 'Gênero (opcional)';
     newInput.id = 'newInput';

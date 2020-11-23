@@ -39,24 +39,18 @@ button {
 }
 
 .facebook-login {
+  align-items: flex-end;
   display: flex;
-  flex-direction: row;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  align-self: baseline;
-  margin: 0.5%;
-  padding: 0.5%;
 }
 
 .form-control {
-  display: flex;
-  flex-direction: column;
   align-self: flex-end;
-  margin: 0.5%;
-  padding: 0.5%;
+  display: flex;
 }
 
 .login-input {

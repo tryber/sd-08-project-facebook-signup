@@ -8,8 +8,8 @@ addEventListener('click', (event) => {
   if (event.target === button) {
     alert(label.value);
   } else if (event.target.id === 'facebook-register') {
-    for (let key in required) {
-      let input = required[key];
+    for (let key = 0; key < required.length; key += 1) {
+      const input = required[key];
       if (input.required) {
         if (input.value === '') {
           erro.innerText = 'Campos inválidos';

@@ -8,14 +8,18 @@ function buttonLogin() {
 
 buttonLogin();
 
-// const btnSubmit = document.getElementeById('facebook-register');
-// btnSubmit.addEventListener('click', (e)=> {
-//   e.preventDefaut();
-//   const inputList = document.querySelectorAll('[input]');
-//   for (let index=0; index<inputList.length; index=+1) {
-//     if (!inputList[index].value) {
-//       document.querySelectorAll('[input]')[index].style.display = 'block';
-//       return;
-//     }
-//   }
-// })
+/*
+1- o campo de texto personalizado deve começar escondido
+2- selecionando o botão personalizado ele aparece
+3- ao clickar em outro botão o campo de texto desaparece
+*/
+document.getElementById('genderAll').addEventListener('click', (e)=> {
+  if (e.target.classList.contains('gender-sel')) {
+    document.getElementById('genderText').classList.add('hidden');
+    if (e.target.classList.contains('gender-personalized')) {
+      document.getElementById('genderText').classList.remove('hidden');
+    }
+  }
+});
+
+

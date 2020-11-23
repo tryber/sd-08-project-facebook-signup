@@ -22,6 +22,10 @@ body {
   flex-direction: column;
 }
 
+.form-group-inline {
+  display: flex;
+}
+
 .form-control {
   align-self: flex-end;
   display: flex;
@@ -51,28 +55,17 @@ body {
   flex-direction: column;
 }
 
-.registration {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.registration input {
-  margin-bottom: 3px;
-}
-
-.registration label {
-  margin-bottom: 6px;
-  margin-top: 10px;
-  width: 100%;
-}
-
 .lastName , .firstName {
   width: 46%;
 }
 
 .phone_email , .password , .birthdate {
   width: 100%;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
 }
 
 .buttonSubmit {
@@ -83,4 +76,8 @@ body {
 .gender-selection {
   display: flex;
   justify-content: space-around;
+}
+
+.hidden {
+  display: none;
 }

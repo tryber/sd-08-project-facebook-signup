@@ -32,7 +32,6 @@ button {
   border: 1px solid rgba(35, 70, 141, 0.198);
   color: white;
   display: flex;
-  flex-direction: row;
   font-size: 0.9em;
   justify-content: space-around;
 }
@@ -42,8 +41,7 @@ button {
   width: 117px;
 }
 
-.facebook-login-form {
-  align-items: baseline;
+.facebook-login {
   display: flex;
   flex-direction: row;
 }

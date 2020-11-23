@@ -18,7 +18,6 @@ body {
   background: linear-gradient(rgb(254, 254, 254), rgb(212, 217, 232));
   display: flex;
   padding-bottom: 40px;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -45,8 +44,8 @@ body {
 .form-group {
   color: white;
   display: flex;
-  margin: auto;
   padding-top: 5px;
+  margin: auto;
   flex-direction: column;
 }
 
@@ -83,9 +82,9 @@ body {
 
 .inputName {
   height: 20px;
-  width: 300px;
   flex-basis: 20%;
   margin-right: 8px;
+  width: 300px;
 }
 
 .email-senha {

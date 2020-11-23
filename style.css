@@ -18,10 +18,10 @@ body {
 }
 
 .forget-element {
-  padding: 3px 0 0;
-  margin: 0;
-  font-size: x-small;
   color: rgb(190, 208, 245);
+  font-size: x-small;
+  margin: 0;
+  padding: 3px 0 0;
 }
 
 .form-control {
@@ -45,7 +45,7 @@ body {
   background-color: rgb(80, 121, 204);
   border: 0;
   border-radius: 1px;
-  box-shadow: .3px .3px .1px rgb(109, 109, 109);
+  box-shadow: 0.3px 0.3px 0.1px rgb(109, 109, 109);
   color: white;
   cursor: pointer;
 }
@@ -65,7 +65,7 @@ body {
 }
 
 .facebook-slogan {
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .right-content {
@@ -92,8 +92,8 @@ body {
 .name-input {
   border: 1px solid rgb(202, 209, 223);
   border-radius: 4px;
-  padding: 7px;
   margin: 4px;
+  padding: 7px;
 }
 
 .phone-email-input {
@@ -153,6 +153,6 @@ input:focus {
 
 .gender-radio-input {
   font-size: small;
-  font-weight: bolder;
+  font-weight: 900;
   margin-top: 8px;
 }

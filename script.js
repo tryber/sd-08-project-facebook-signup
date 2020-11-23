@@ -27,10 +27,11 @@ radioma.addEventListener('click', radiocheck);
 
 function checksubmit() {
   const frn = document.getElementsByName('firstname').value;
-  if (frn === '') { alert('Campos inválidos'); }
-
-  const scn = document.getElementsByName('fastname').value;
-  if (scn === '') { alert('Campos inválidos'); }
+  const len = document.getElementsByName('lastname').value;
+  const phe = document.getElementsByName('phone_email').value;
+  const pass = document.getElementsByName('password').value;
+  const nasc = document.getElementsByName('birthdate').value;
+  if (frn === '' || len === '' || phe === '' || pass === '' || nasc === '' ) { alert('Campos inválidos'); }
 }
 // botão cadastre-se checando valores antes
 const submete = document.getElementById('facebook-register');

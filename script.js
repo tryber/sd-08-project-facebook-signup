@@ -53,8 +53,8 @@ cadast.addEventListener('click', () => {
   let ok;
   for (let i = 0; i < 5; i += 1) {
     if (input.length < 1 ||
-  (inputGender.style.display === 'block' && inputGender.value === '')
-  || formsValue[i].value === '') {
+      (inputGender.style.display === 'block' && inputGender.value === '')
+      || formsValue[i].value === '') {
       document.querySelector('.chec-return').style.display = 'block';
     } else {
       ok = true;

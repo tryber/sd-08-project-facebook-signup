@@ -15,7 +15,6 @@ function validate() {
     for (let index = 2; index < formList.length - 3; index += 1) {
       const valorCampos = formList[index].value;
       if (valorCampos === '') {
-        validacao.innerText = 'Campos Inválidos';
         validacao.textContent = 'Campos Inválidos';
       }
     }

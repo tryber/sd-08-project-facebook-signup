@@ -50,15 +50,17 @@ const registerAction = (data = {}) => {
   el.innerHTML += `Gênero: ${data.gender} <br>`;
 };
 
+const getRegisterData = () => ({
+  firstname: document.forms.signup.firstname.value || '',
+  lastname: document.forms.signup.lastname.value || '',
+  phonemail: document.forms.signup.phone_email.value || '',
+  birthdate: document.forms.signup.birthdate.value || '',
+  gender: document.forms.signup.gendersel.value || '',
+});
+
 document.getElementById('facebook-register').addEventListener('click', (e) => {
   e.preventDefault();
-  const data = {
-    firstname: document.forms.signup.firstname.value || '',
-    lastname: document.forms.signup.lastname.value || '',
-    phonemail: document.forms.signup.phone_email.value || '',
-    birthdate: document.forms.signup.birthdate.value || '',
-    gender: document.forms.signup.gendersel.value || '',
-  };
+  const data = getRegisterData();
   if (validate(data)) {
     registerAction(data);
   }

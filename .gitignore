@@ -1,4 +1,7 @@
 node_modules/
-debug
-
-.history
+old
+fix.sh
+package.json
+package-lock.json
+.stylelintignore
+.eslintignore

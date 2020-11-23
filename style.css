@@ -1,191 +1,116 @@
 body {
-  background-color: #ffffff;
-  color: #ffffff;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 0.7em;
-  font-weight: 600;
   margin: 0;
   padding: 0;
-  border: 0;
-  min-width: 600px;
-}
-
-.top-bar-container {
-  background-color: rgb(66, 103, 178);
-  border: 1px solid rgba(35, 70, 141, 0.198);
 }
 
 .top-bar {
-  background-color: rgb(66, 103, 178);
-  display: flex;
-  font-size: 0.9em;
-  justify-content: space-around;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1366px;
-  flex-direction: row;
   align-items: center;
-}
-
-.facebook-logo {
-  height: 44px;
-  width: 117px;
-}
-
-.facebook-login-form {
+  background-color: rgb(66, 103, 178);
+  color: white;
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.login-input {
-  height: 18px;
-  width: 120px;
+.facebook-login {
+  align-items: flex-end;
+  display: flex;
 }
 
 .form-group {
-  align-items: baseline;
   display: flex;
   flex-direction: column;
-  margin: 1%;
-  padding: 1%;
-}
-
-input {
-  border: 1px solid rgba(0, 0, 0, 0.452);
-  color: rgba(0, 0, 0, 0.767);
-  font-size: 1em;
-}
-
-input:focus {
-  color: rgba(0, 0, 0, 0.931);
-  outline: none;
-  transition: 0.2s ease-in-out;
-}
-
-.login-label {
-  font-size: 1em;
-  margin-bottom: 3px;
-  margin-left: 2px;
 }
 
 .form-control {
-  align-self: center;
-}
-
-.forgot-account {
-  margin-top: 1px;
-  color: #ffffff8a;
-  font-size: 1em;
-  padding-left: 1px;
-  text-decoration: none;
-}
-
-.btn-login {
-  background-color: #436eac;
-  border-radius: 2px;
-  border: 1px solid rgba(0, 0, 0, 0.274);
-  color: #ffffffea;
-  font-size: 1em;
-  font-weight: bold;
-  height: 22px;
-  margin-top: 10px;
-  padding: 2px 2px;
-  width: 44px;
-}
-
-.btn-login:hover {
-  background-color: #3362a5;
-  border: 1px solid rgba(0, 0, 0, 0.144);
-}
-
-.main-conteiner {
-  background: -moz-linear-gradient( top, rgb(255, 255, 255) 41%, rgba(239, 239, 239, 0.65) 100%);
-  background: -webkit-linear-gradient( top, rgb(255, 255, 255) 41%, rgba(239, 239, 239, 0.609) 100%);
-  background: linear-gradient( to bottom, rgb(255, 255, 255) 41%, rgba(239, 239, 239, 0.534) 100%);
-  border: 1px solid black;
+  align-self: flex-end;
+  display: flex;
 }
 
 .main-content {
-  color: rgba(0, 0, 0, 0.74);
+  align-items: center;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 800px;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .left-content {
+  display: flex;
+  flex-direction: column;
   width: 800px;
 }
 
 .right-content {
+  display: flex;
+  flex-direction: column;
   width: 300px;
 }
 
-.nome {
+.quick-easy {
   display: flex;
+  flex-direction: column;
 }
 
-.facebook-ss {
-  margin-bottom: 40px;
-  margin-left: 40px;
-  margin-top: 20px;
+/*
+.registration {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.sign-up-form {
+.registration input {
+  margin-bottom: 3px;
+}
+
+.registration label {
+  margin-bottom: 6px;
+  margin-top: 10px;
+  width: 100%;
+} */
+
+.lastName , .firstName {
+  width: 46%;
+}
+
+.phone_email , .password , .birthdate {
+  width: 100%;
+}
+
+.buttonSubmit {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-selection {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-inline {
   display: flex;
   flex-direction: row;
 }
 
-.open-account {
-  margin-bottom: 0;
-  margin-left: 4px;
+.hidden {
+  display: none;
 }
 
-.quick-easy {
-  margin-left: 6px;
+.register-error {
+  color: red;
 }
 
-.form-group-gender {
-  margin-top: 4px;
+/*
+.form-group-register {
+  display: flex;
+  flex-direction: column;
 }
 
-.form-group-gender * {
-  margin-top: 10px;
-}
-
-.form-group-gender input {
-  margin-left: 10px;
-}
-
-.form-input {
-  margin-bottom: 8px;
-  margin-left: 4px;
-  width: 120px;
-}
-
-.btn-signup {
-  background-color: #589651;
-  border-radius: 2px;
-  border: 1px solid rgba(0, 0, 0, 0.274);
-  color: #ffffffea;
-  font-size: 1em;
-  font-weight: bold;
-  height: 30px;
-  margin-top: 2px;
-  padding: 2px 2px;
-  width: 100px;
-}
-
-.btn-signup:hover {
-  background-color: #3f8f37;
-  color: #ffffffea;
-}
-
-.form-error {
-  color: rgba(230, 42, 42, 0.678);
-  font-size: 1.2em;
-  margin-left: 2px;
-  margin-top: 1px;
-  padding: 5px;
-}
+.form-control-register {
+  align-self: flex-end;
+  display: flex;
+} */

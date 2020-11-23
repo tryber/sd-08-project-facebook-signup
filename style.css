@@ -1,5 +1,10 @@
+.button-login {
+  background-color: rgb(66, 103, 178);
+  border-radius: 5px;
+  color: aliceblue;
+}
 
- .right-content > #genop{
+.genop{
   visibility: hidden;
 }
 
@@ -30,12 +35,6 @@
   margin: 5px;
 }
 
-#button-login {
-  background-color: rgb(66, 103, 178);
-  border-radius: 5px;
-  color: aliceblue;
-}
-
 .main-content{
   display: flex;
   justify-content: space-around;
@@ -60,11 +59,12 @@
 .inpnm > input {
   margin: 4px 4px 4px 0;
 }
- 
+
 .emlcel > input{
   margin: 4px 2px 4px 0;
 }
-#facebook-register{
+
+.facebook-register{
   background-color: rgb(99, 153, 88);
   color: aliceblue;
 }

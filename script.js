@@ -14,14 +14,13 @@ function verifyText() {
   const formText = document.querySelectorAll(
     '#sign-up input[type=text], #sign-up input[type=password]'
   );
-}
 
   for (let index = 0; index < formText.length; index += 1) {
     if (formText[index].value === '' || formText[index].value === null) {
       return true;
     }
-  
   return false;
+}
 }
 
 const formRadio = document.querySelectorAll('#sign-up input[type=radio]');

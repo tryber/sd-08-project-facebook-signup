@@ -82,7 +82,7 @@ h1 {
   flex-direction: column;
 }
 
-.input-fisrt-name { /* Tratar individualmente */
+.input-first-name { /* Tratar individualmente */
   flex: 1;
   height: 25px;
   width: 50%;
@@ -91,10 +91,14 @@ h1 {
 .new-user-name {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
-.teste {
+.input-last-name {
+  flex: 1;
   margin-left: 12px;
+  height: 25px;
+  width: 50%;
 }
 
 .new-user-contact {

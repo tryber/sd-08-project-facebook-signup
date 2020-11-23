@@ -35,19 +35,19 @@
             <div class="form-content">
                 <h1>Abra uma conta</h1>
                 <h2 class="quick-easy">É rápido e fácil.</h2>
-                <form action="" method="get">
+                <form action="" method="get" class="form-register">
                     <p id="error-warning" class="input-display"><strong>Campos inválidos</strong></p>
                     <div class="new-user-name">
-                        <input type="text" name="firstname" placeholder="Nome" class="input-fisrt-name">
-                        <input type="text" name="lastname" placeholder="Sobrenome" class="input-fisrt-name teste">
+                        <input type="text" name="firstname" placeholder="Nome" class="input-first-name" required>
+                        <input type="text" name="lastname" placeholder="Sobrenome" class="input-last-name" required>
                     </div>
                     <div class="new-user-contact">
-                        <input type="text" name="phone_email" placeholder="Celular ou email" class="input-contact">
-                        <input type="password" name="password" placeholder="Nova senha" class="input-contact">
+                        <input type="text" name="phone_email" placeholder="Celular ou email" class="input-contact" required>
+                        <input type="password" name="password" placeholder="Nova senha" class="input-contact" required>
                     </div>
                     <div class="user-born">
                         <label for="" id="label-birthdate">Data de nascimento</label>
-                        <input type="text" name="birthdate" id="birthdate" maxlength="10" minlength="10" placeholder="dd/mm/aaaa">
+                        <input type="text" name="birthdate" id="birthdate" maxlength="10" minlength="10" placeholder="dd/mm/aaaa" required>
                     </div>
                     <div class="genero-container">
                         <label for="" id="label-gender" class="gender">Gênero</label>
@@ -64,13 +64,13 @@
                     <button type="submit" id="facebook-register" class="register-button"><strong>Cadastre-se</strong></button>
                 </form>
             </div>
-            <!-- <div class="hidden-content">
+            <div class="hidden-content input-display">
                 <p class="hello-user"></p>
-                <ul>
+                <ul class="user-data">
                     <li></li>
                     <li></li>
                     <li></li>
-                </ul> -->
+                </ul>
             </div>
         </div>
     </main>

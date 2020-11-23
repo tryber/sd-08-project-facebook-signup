@@ -11,11 +11,13 @@ function validate() {
   const formList = document.querySelectorAll('input');
   const botao = document.getElementById('facebook-register');
   const validacao = document.getElementById('invalideField');
-  botao.addEventListener('click', function () {
+  botao.addEventListener('click', function (event) {
     for (let index = 2; index < formList.length - 3; index += 1) {
       const valorCampos = formList[index].value;
       if (valorCampos === '') {
         validacao.textContent = 'Campos Inválidos';
+        event.preventDefault();
+        console.log(validacao)
       }
     }
   });

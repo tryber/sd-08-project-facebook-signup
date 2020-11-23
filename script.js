@@ -15,26 +15,27 @@ function createTagP(value) {
   return tagP;
 }
 
-function replaceDiv() {
+function replaceDiv(event) {
+  event.preventDefault();
   const forms = document.querySelectorAll('.form-register input');
   const divRight = document.querySelector('.right-content');
   const divRemove = document.querySelector('.remove');
 
-  for (let index = 0; index < forms.length; index += 1) {
-    if (index === 0) {
-      const tagP = document.createElement('p');
-      tagP.innerText =`Olá, ${forms[index].value} ${forms[index+1].value}`;
-      divRight.appendChild(tagP);
-    } else if (index === 2 || index === 4) {
-      const tagP = createTagP(forms[index].value);
-      divRight.appendChild(tagP);
-    } else if (index > 4) {
-      if (forms[index].checked === true) {
-        const tagP = createTagP(forms[index].id);
-        divRight.appendChild(tagP);
-      }
-    }
-  }
+  const tagP = document.createElement('p');
+  tagP.innerText =`Olá, ${forms[0].value} ${forms[1].value}`;
+  divRight.appendChild(tagP);
+
+  const tagP1 = document.createElement('p');
+  tagP1.innerText = forms[2].value;
+  divRight.appendChild(tagP1);
+
+  const tagP2 = document.createElement('p');
+  tagP2.innerText = forms[4].value;
+  divRight.appendChild(tagP2);
+
+  const tagP3 = document.createElement('p');
+  tagP3.innerText = document.querySelector('input[type=radio]:checked').id;
+  divRight.appendChild(tagP3);
 
   divRight.removeChild(divRemove);
 }
@@ -62,7 +63,7 @@ function cheksInput() {
       const tagP = createTagP('Campos inválidos');
       forms.appendChild(tagP);
     } else {
-      replaceDiv();
+      replaceDiv(event);
     }
   });
 }

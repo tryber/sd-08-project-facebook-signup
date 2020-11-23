@@ -5,7 +5,10 @@ body , input {
 }
 
 .facebook-login {
+  align-self: center;
   display: flex;
+  border: solid;
+  max-height: 40px;
 }
 
 .facebook-logo {
@@ -73,3 +76,4 @@ body , input {
   margin: 0;
   padding: 0;
 }
+

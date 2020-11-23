@@ -20,18 +20,13 @@ document.getElementById('gender-select').addEventListener('click', (e) => {
 
 const validate = (data) => {
   const registerError = document.getElementById('error');
-
-  const val = {
-    errors: 0,
-  };
-
+  data.errors = 0;
   Object.values(data).forEach((value) => {
-    // console.log(value);
-    if (value.trim() === '') {
-      val.errors += 1;
+    if (value === '') {
+      data.errors += 1;
     }
   });
-  if (val.errors > 0) {
+  if (data.errors > 0) {
     registerError.classList.remove('hidden');
     setTimeout(() => {
       registerError.classList.add('hidden');

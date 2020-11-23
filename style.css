@@ -5,14 +5,14 @@ body , input {
 }
 
 .facebook-login {
-  align-items: center;
+  align-self: center;
   display: flex;
-  justify-content: space-between;
+  border: solid;
+  max-height: 40px;
 }
 
-
 .facebook-logo {
-  margin-left: 150px;
+  margin-left: 0;
 }
 
 .form-group {
@@ -42,9 +42,6 @@ body , input {
 }
 
 .left-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   width: 800px;
 }
 
@@ -61,7 +58,6 @@ body , input {
   display: flex;
   justify-content: center;
   margin: 0;
-  max-width: 80%;
 }
 
 .right-content {
@@ -80,3 +76,4 @@ body , input {
   margin: 0;
   padding: 0;
 }
+

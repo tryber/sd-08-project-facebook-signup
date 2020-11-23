@@ -97,9 +97,18 @@ header {
   opacity: 0.5;
 }
 
+.title-form {
+  margin: 15px;
+}
+
 .gender-option {
   display: flex;
   font-size: 15px;
   justify-content: space-between;
-  margin-top: 10px;
+}
+
+.button-register {
+  background-color: green;
+  color: white;
+  margin: 20px;
 }

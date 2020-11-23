@@ -48,10 +48,9 @@
           <input class="birthdate" type="text" placeholder="dd/mm/aaaa" name="birthdate">
 
           <input class="password" type="password" placeholder="Nova senha" name="password" required>
-
           <label id="label-gender">Gênero:</label>
-
           <div id="gender-select" class="gender-selection">
+
             <label for="gender-female" id="label-gender"></label>
             <input id="gender-female" class="sel-gender gender-female" type="radio" name="gender" value="Feminino"
               checked>Feminino
@@ -61,14 +60,13 @@
             <label for="gender-personalized" id="label-gender">Personalizado</label>
             <input id="gender-personalized" class="sel-gender gender-personalized" type="radio" name="gender"
               value="Personalizado">
+
           </div>
           <input id="gender-personalized-input" class='hidden' type="text" name="gender-custom" value=""
             placeholder="Gênero (opcional)">
-
+          <input id="gendersel" class='hidden' type="text" name="gendersel" value="Feminino">
           <button type="submit" href="#" id="facebook-register">Cadastre-se</button>
           <div id="error" class='register-error hidden'>Campos inválidos</div>
-
-
         </form>
 
       </div>

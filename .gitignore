@@ -1,1 +1,4 @@
 node_modules/
+fix.sh
+package-lock.json
+package.json

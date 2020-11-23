@@ -25,8 +25,9 @@ body {
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
   display: flex;
+  margin-bottom: 13px;
   padding: 9px 7px;
 }
 

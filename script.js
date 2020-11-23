@@ -16,8 +16,7 @@ function validate() {
       const valorCampos = formList[index].value;
       if (valorCampos === '') {
         validacao.textContent = 'Campos Inválidos';
-        event.preventDefault();
-        console.log(validacao)
+        event.preventDefault();        
       }
     }
   });

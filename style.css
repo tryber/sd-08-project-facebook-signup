@@ -93,7 +93,7 @@ body {
 
 .form-group-inline {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .hidden {

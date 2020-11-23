@@ -1,0 +1,74 @@
+.button-login {
+  background-color: rgb(66, 103, 178);
+  border-radius: 5px;
+  color: aliceblue;
+}
+
+.genop {
+  visibility: hidden;
+}
+
+.facebook-logo {
+  display: flex;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin: 5px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  background-color: rgb(182, 195, 206);
+  width: 800px;
+}
+
+.right-content {
+  background-color: rgb(182, 195, 206);
+  margin: 0 60px 0 0;
+  width: 300px;
+}
+
+.inpnm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inpnm > input {
+  margin: 4px 4px 4px 0;
+}
+
+.emlcel > input {
+  margin: 4px 2px 4px 0;
+}
+
+.facebook-register {
+  background-color: rgb(99, 153, 88);
+  color: aliceblue;
+}
+
+body {
+  background-color: rgb(182, 195, 206);
+}

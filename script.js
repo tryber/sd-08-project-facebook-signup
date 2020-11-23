@@ -1,29 +1,39 @@
 const botaoLogin = document.getElementById('button-login');
 const entradaEmailTelefone = document.getElementById('user-email-phone');
 const radio = document.getElementById('personal');
+const radioMale = document.getElementById('male');
+const radioFemale = document.getElementById('female');
 const btnRegister = document.getElementById('facebook-register');
+const divGender = document.querySelector('.other-gender');
 botaoLogin.addEventListener('click', function () {
   alert(entradaEmailTelefone.value);
 });
-function otherGender() {
-  radio.addEventListener('change', function () {
-    const gender = document.createElement('input');
-    const divGender = document.querySelector('.other-gender');
-    if (radio.checked) {
-      gender.type = 'text';
-      gender.name = 'gender-custom';
-      gender.placeholder = 'Gênero';
-      divGender.appendChild(gender);
-    }
-  });
+function clearGender() {
+  divGender.innerHTML = '';
 }
-otherGender();
+function otherGender() {
+  const gender = document.createElement('input');
+  clearGender();
+  if (radio.checked) {
+    gender.type = 'text';
+    gender.name = 'gender-custom';
+    gender.placeholder = 'Gênero';
+    divGender.appendChild(gender);
+  }
+}
+radioMale.addEventListener('change', function () {
+  clearGender();
+});
+radioFemale.addEventListener('change', function () {
+  clearGender();
+});
+radio.addEventListener('change', otherGender);
 function printResult(user) {
+  const div = document.createElement('div');
   const name = document.createElement('h4');
   const email = document.createElement('h4');
   const birthdate = document.createElement('h4');
   const gender = document.createElement('h4');
-  const div = document.createElement('div');
   name.innerHTML += `Olá, ${user.name} ${user.fullName}`;
   div.appendChild(name);
   email.innerHTML += `Email ou Telefone: ${user.email}`;

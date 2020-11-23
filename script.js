@@ -1,12 +1,22 @@
-//botão entrar mostrando o valor do input nome-email
-let btn = document.getElementById('button-login');
-btn.addEventListener('click', bntclick)
+// botão entrar mostrando o valor do input nome-email
 function bntclick(){
-let btnentrar = document.getElementById('user-email-phone').value;
-alert(btnentrar);
+  let btnentrar = document.getElementById('user-email-phone').value;
+  alert(btnentrar);
+  };
+const btn = document.getElementById('button-login');
+btn.addEventListener('click', bntclick)
+
+
+// se for outros mostra campo se não invisivel
+function radiocheck(){
+  if(radioot.checked === true){
+    document.getElementById("genop").style.visibility = "visible";
+  }
+  else {document.getElementById("genop").style.visibility = "hidden"
+  }
 };
 
-//tres escutas para os tipos de genero
+// tres escutas para os tipos de genero
 let radioot =document.getElementById("other");
 radioot.addEventListener("click", radiocheck);
 
@@ -16,16 +26,7 @@ radiofm.addEventListener("click", radiocheck);
 let radioma =document.getElementById("male");
 radioma.addEventListener("click", radiocheck);
 
-//se for outros mostra campo se não invisivel
-function radiocheck(){
-  if(radioot.checked === true){
-    document.getElementById("genop").style.visibility = "visible";
-  }
-  else {document.getElementById("genop").style.visibility = "hidden"
-  }
-};
-
-//botão cadastre-se checando valores antes
+// botão cadastre-se checando valores antes
 let submete =document.getElementById("facebook-register")
 submete.addEventListener("click", checksubmit)
 

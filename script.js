@@ -15,8 +15,7 @@ function createTagP(value) {
   return tagP;
 }
 
-function replaceDiv(event) {
-  event.preventDefault();
+function replaceDiv() {
   const forms = document.querySelectorAll('.form-register input');
   const divRight = document.querySelector('.right-content');
   const divRemove = document.querySelector('.remove');
@@ -63,7 +62,7 @@ function cheksInput() {
       const tagP = createTagP('Campos inválidos');
       forms.appendChild(tagP);
     } else {
-      replaceDiv(event);
+      replaceDiv();
     }
   });
 }

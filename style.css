@@ -1,58 +1,62 @@
 
-#genop {
+ .right-content > #genop{
   visibility: hidden;
 }
+
 .facebook-logo {
   display: flex;
-   
 }
 
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
-  justify-content: space-around;
   color: aliceblue;
+  display: flex;
+  justify-content: space-around;
 }
 
 .facebook-login {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
 }
 
 .form-control {
-      align-self: flex-end;
-      margin: 5px;
+  align-self: flex-end;
+  margin: 5px;
 }
+
 #button-login {
-  color: aliceblue;
   background-color: rgb(66, 103, 178);
+  border-radius: 5px;
+  color: aliceblue;
 }
 
 .main-content{
   display: flex;
   justify-content: space-around;
 }
+
 .left-content{
   width: 800px;
+  background-color: rgb(182, 195, 206);
 }
 
 .right-content{
   width: 300px;
   margin: 0 60px 0 0;
-  border: 1px solid black;
   background-color: rgb(182, 195, 206);
-  }
+}
 
 .inpnm {
   display: flex;
   justify-content: space-between;
 }
+
 .inpnm > input {
   margin: 4px 4px 4px 0;
 }
@@ -61,8 +65,10 @@
   margin: 4px 2px 4px 0;
 }
 #facebook-register{
-background-color: rgb(99, 153, 88);
-color: aliceblue;
-
+  background-color: rgb(99, 153, 88);
+  color: aliceblue;
 }
 
+body{
+  background-color: rgb(182, 195, 206);
+}

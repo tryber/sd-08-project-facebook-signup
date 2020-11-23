@@ -32,23 +32,22 @@ function substituteFormContainer() {
   rigthcontent.appendChild(mensagemTwo);
 }
 
-// setCustomValidity retirada do artigo: https://www.devmedia.com.br/html5-validator-validando-formularios-com-html5/28785
 function validateForm() {
   const paragraph = document.createElement('p');
   const invalidField = 'Campos inválidos';
   paragraph.innerText = invalidField;
   const form = document.getElementById('register');
   const button = document.getElementById('facebook-register');
-  const mistakes = 0;
-    button.addEventListener('click', function (event) { 
-    event.preventDefault();   
-    const input = document.querySelectorAll('.cadastro input[type="text"]');    
-    for (let index = 0; index < input.length; index += 1) {
-      if (input[index].value === ''){
-        mistakes = mistakes + 1;
-      };
-    }  
-  if (mistakes != 0){
+  let mistakes = 0;
+  button.addEventListener('click', function (event) { 
+  event.preventDefault();   
+  const input = document.querySelectorAll('.cadastro input[type="text"]');    
+  for (let index = 0; index < input.length; index += 1) {
+    if (input[index].value === '') {
+      mistakes = mistakes + 1;
+    };
+  }  
+  if (mistakes != 0) {
     form.appendChild(paragraph);
   } else {
     substituteFormContainer();
@@ -56,3 +55,4 @@ function validateForm() {
 });
 }
 validateForm();
+// Ideia da variavel mistakes veio de uma dica da Rosiele.

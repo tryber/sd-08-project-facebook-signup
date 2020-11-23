@@ -48,7 +48,6 @@ const getRegisterData = () => ({
 });
 
 document.getElementById('facebook-register').addEventListener('click', (e) => {
-  //
   e.preventDefault();
   const data = getRegisterData();
   if (validate(data)) {

@@ -3,6 +3,31 @@ body {
   padding: 0;
 }
 
+input {
+  border: 1px solid rgba(0, 0, 0, 0.575);
+  color: black;
+  font-size: 1em;
+}
+
+input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.774);
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+
+button {
+  background-color: rgb(66, 103, 178);
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.239);
+  color: white;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: rgb(58, 96, 172);
+  border: 1px solid rgba(0, 0, 0, 0.342);
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -107,8 +132,13 @@ body {
 }
 
 .btn-register {
+  background-color: rgb(90, 155, 84);
   height: 24px;
   width: 100%;
+}
+
+.btn-register:hover {
+  background-color: rgb(77, 151, 70);
 }
 
 .image-networking {

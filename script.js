@@ -14,11 +14,9 @@ function checksInput() {
   let contador = 0;
   let radio = false;
   for (let index = 0; index < formsInput.length; index += 1) {
-    if (formsInput[index].value === '' && formsInput[index].type === 'text') {
+    if (formsInput[index].value === '') {
       contador += 1;
-    } else if (formsInput[index].value === '' && formsInput[index].type === 'password') {
-      contador += 1;
-    } else if (formsInput[index].checked === true && formsInput[index].type === 'radio') {
+    } else if (formsInput[index].checked === true) {
       radio = true;
     }
   }

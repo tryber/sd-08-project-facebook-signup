@@ -1,1 +1,7 @@
 node_modules/
+prettier.config.js
+cypress
+cypress.json
+package-lock.json
+package.json
+reporter.json

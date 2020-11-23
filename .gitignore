@@ -1,3 +1,7 @@
 node_modules/
 old
 fix.sh
+package.json
+package-lock.json
+.stylelintignore
+.eslintignore

@@ -1,0 +1,83 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 300px;
+}
+
+.nome-sobrenome {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  display: flex;
+  width: 45%;
+}
+
+.lastname {
+  display: flex;
+  width: 45%;
+}
+
+.phone-email {
+  margin-top: 5px;
+}
+
+.gender {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.submit-button {
+  align-self: center;
+  display: flex;
+}

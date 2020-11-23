@@ -24,10 +24,10 @@ function pegarRadioValor(name) {
 function exibirDados() {
   const genero = pegarRadioValor('gender');
   let str = '';
-  str += `Olá, ${nome.value} ${sobreNome.value}<br><br>`;
-  str += `${emailOuTel.value} <br><br>`;
-  str += `${dataNasc.value} <br><br>`;
-  str += `${genero}`;
+  str += `<p> Olá, ${nome.value} ${sobreNome.value}</p>`;
+  str += `<p> ${emailOuTel.value}</p>`;
+  str += `<p> ${dataNasc.value}</p>`;
+  str += `<p> ${genero} </p>`;
   rightContent.innerHTML = str;
 }
 
@@ -54,8 +54,7 @@ const radioPerso = document.getElementsByClassName('radioperso');
 for (let index = 0; index < radioPerso.length; index += 1) {
   radioPerso[index].addEventListener('click', function () {
     if (radioPerso[2].checked === true) {
-      botaoPer.innerHTML =
-        '<input type="text" name="gender-custom" placeholder="Gênero (opcional)">';
+      botaoPer.innerHTML = '<input type="text" name="gender-custom" placeholder="Gênero (opcional)">';
     } else {
       botaoPer.innerHTML = '';
     }

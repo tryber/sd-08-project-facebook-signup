@@ -11,7 +11,7 @@ const radioot = document.getElementById('other');
 function radiocheck() {
   if (radioot.checked === true) {
     document.getElementById('genop').style.visibility = 'visible';
-  }else {
+  } else {
     document.getElementById('genop').style.visibility = 'hidden';
   }
 }
@@ -27,10 +27,10 @@ radioma.addEventListener('click', radiocheck);
 
 function checksubmit() {
   const frn = document.getElementsByName('firstname').value;
-  if (frn === '') { alert('Campos inválidos'); };
+  if (frn === '') { alert('Campos inválidos'); }
 
   const scn = document.getElementsByName('fastname').value;
-  if (scn === '') { alert('Campos inválidos') }
+  if (scn === '') { alert('Campos inválidos'); }
 }
 // botão cadastre-se checando valores antes
 const submete = document.getElementById('facebook-register');

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doc</title>
+  <title>Projeto Facebook </title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,19 +34,39 @@
         <form>
           <input type="text" name="firstname" placeholder="Nome" class="inputName">
           <input type="text" name="lastname" placeholder="Sobrenome" class="inputName">
-          <input type="text" name="phone_email" placeholder="Celular ou email" class="email-senha">
-          <input type="password" name="password" placeholder="Nova senha" class="email-senha">
+          <div class="lower">
+            <input type="text" name="phone_email" placeholder="Celular ou email" class="email-senha">
+            <input type="password" name="password" placeholder="Nova senha" class="email-senha">
+          </div>
           <label id="label-birthdate" class="label">Data de nascimento</label>
           <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
           <label id="label-gender" class="label">Gênero</label>
-          <input type="radio" name="gender"><label>Masculino</label>
-          <input type="radio" name="gender"><label>Feminino</label>
-          <input type="radio" name="gender"><label>Personalizado</label>
-          <button id="facebook-register" type="submit">Cadastre-se</button>
+          <div class="others">
+            <input type="radio" id="Feminino" name="gender" value="Feminino" class="feminino"/>
+            <label for="Feminino">Feminino</label><br />
+            <input type="radio" id="Masculino" name="gender" value="Masculino" />
+            <label for="Masculino">Masculino</label><br />
+            <input type="radio" id="Personalizado" name="gender" value="Personalizado" />
+            <label for="Personalizado">Personalizado</label>
+            <input type="text" name="gender-custom" placeholder="Gênero(opcional)" class="labelGender"/>
+            <button id="facebook-register" type="submit" class="logBtn">Cadastre-se</button>
+          </div>
+          <div class="false">Campos inválidos</div>
         </form>
     </div>
   </main>
-
+  <footer>
+    <p>Português (Brasil) English (US) Español Français (France) Italiano العربية Deutsch हिन्दी 中文(简体) 日本語</p>
+    <hr />
+    <p>
+      Cadastre-seEntrarMessengerFacebook LiteWatchPessoasPáginasCategorias de PáginaLocaisJogosLocaisMarketplaceFacebook
+      PayGruposVagas de empregoOculusPortalInstagramLocalCampanhas de arrecadação de fundosServiçosCentral de Informações de
+      VotaçãoSobreCriar anúncioCriar PáginaDesenvolvedoresCarreirasPrivacidadeCookiesEscolhas para
+      anúnciosTermosAjudaConfiguraçõesRegistro de Atividades
+    </p>
+    <br />
+    <p>Facebook © 2020</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

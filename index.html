@@ -11,7 +11,7 @@
 
 <body>
   <header class="top-bar">
-    <img src="imgs/facebook-logo.png" alt="" class="facebook-logo">
+    <img src="imgs/facebook-logo.png" alt="" class="facebook-logo" width="140px">
     <form method="GET" class="facebook-login">
       <section class="form-group">
         <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
@@ -20,16 +20,17 @@
       <section class="form-group">
         <label for="user-password" id="user-password-label">Senha</label>
         <input type="text" id="user-password" class="login-input" size="13">
+        <a class="forget-element">Esqueceu a conta?</a>
       </section>
       <section class="form-control">
-        <button id="button-login" class="button-color">Entrar</button>
+        <button id="button-login" class="enter-button">Entrar</button>
       </section>
     </form>
   </header>
   <main class="main-content">
     <section class="left-content">
-      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as
-        pessoas que fazem parte da sua vida.</p>
+      <p id="facebook-slogan" class="facebook-slogan">O Facebook ajuda você a se conectar e<br> compartilhar com as
+        pessoas que fazem parte<br> da sua vida.</p>
       <img src="imgs/networking.png" alt="" id="facebook-networking">
     </section>
     <section class="right-content">
@@ -37,8 +38,8 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form method="GET">
         <div class="input-name">
-          <input type="text" name="firstname" class="style-input" placeholder="Nome" size="14">
-          <input type="text" name="lastname" class="style-input" placeholder="Sobrenome" size="14">
+          <input type="text" name="firstname" class="name-input" placeholder="Nome" size="14">
+          <input type="text" name="lastname" class="name-input" placeholder="Sobrenome" size="14">
         </div>
         <input type="text" name="phone_email" id="phone-email-input" class="phone-email-input"
           placeholder="Celular ou email" size="33">
@@ -46,6 +47,14 @@
         <div class="label-input-birthdate">
           <label for="input-birthdate" id="label-birthdate" class="label-birthdate"><b>Data de nascimento</b></label>
           <input type="text" name="birthdate" id="input-birthdate" class="input-birthdate" placeholder="dd/mm/aaaa">
+        </div>
+        <div class="gender-type">
+          <label for="" id="label-gender" class="label-gender">Gênero</label>
+          <div class="gender-radio-input">
+            <input type="radio" name="gender"> Feminino
+            <input type="radio" name="gender"> Masculino
+            <input type="radio" name="gender"> Personalizado
+          </div>
         </div>
       </form>
     </section>

@@ -8,7 +8,7 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  padding: 10px 300px;
+  padding: 15px 300px 0;
 }
 
 .form-group {
@@ -17,8 +17,15 @@ body {
   padding: 7px;
 }
 
+.forget-element {
+  padding: 3px 0 0;
+  margin: 0;
+  font-size: x-small;
+  color: rgb(190, 208, 245);
+}
+
 .form-control {
-  align-self: flex-end;
+  align-self: center;
   display: flex;
   padding: 9px 7px;
 }
@@ -34,27 +41,36 @@ body {
   padding-bottom: 0;
 }
 
-.button-color {
+.enter-button {
   background-color: rgb(80, 121, 204);
-  border: none;
+  border: 0;
+  border-radius: 1px;
+  box-shadow: .3px .3px .1px rgb(109, 109, 109);
   color: white;
+  cursor: pointer;
 }
 
 .main-content {
   background: linear-gradient(white, rgb(202, 209, 223));
   display: flex;
   justify-content: center;
+  padding-right: 250px;
 }
 
 .left-content {
   border: 1px solid black;
   height: 500px;
+  padding-left: 310px;
   width: 800px;
+}
+
+.facebook-slogan {
+  font-weight: bold;
 }
 
 .right-content {
   border: 1px solid black;
-  height: 300px;
+  height: fit-content;
   padding: 5px;
   width: 300px;
 }
@@ -73,14 +89,16 @@ body {
   display: flex;
 }
 
-.input-name input {
-  margin: 4px;
+.name-input {
+  border: 1px solid rgb(202, 209, 223);
+  border-radius: 4px;
   padding: 7px;
+  margin: 4px;
 }
 
 .phone-email-input {
   border: 1px solid rgb(202, 209, 223);
-  border-radius: 2px;
+  border-radius: 4px;
   margin: 4px;
   padding: 7px;
 }
@@ -90,11 +108,6 @@ body {
   border-radius: 1px;
 }
 
-.style-input {
-  border: 1px solid rgb(202, 209, 223);
-  border-radius: 2px;
-}
-
 input:focus {
   border: 1px solid #b8b8b8;
   outline: none;
@@ -102,13 +115,15 @@ input:focus {
 
 .password-input {
   border: 1px solid rgb(202, 209, 223);
-  border-radius: 2px;
+  border-radius: 4px;
   margin: 4px;
   padding: 7px;
 }
 
 .label-birthdate {
   color: #8a8d91;
+  font-size: small;
+  font-weight: 900;
   padding: 4px 0 8px;
 }
 
@@ -117,12 +132,27 @@ input:focus {
   flex-direction: column;
   justify-content: space-between;
   margin: 10px -1px 0 4px;
-  padding-top: 10px;
 }
 
 .input-birthdate {
   border: 1px solid rgb(202, 209, 223);
   border-radius: 2px;
-  max-width: 6em;
+  max-width: 12em;
   padding: 7px;
+}
+
+.gender-type {
+  margin: 10px 0 0 4px;
+}
+
+.label-gender {
+  color: #8a8d91;
+  font-size: small;
+  font-weight: 900;
+}
+
+.gender-radio-input {
+  font-size: small;
+  font-weight: bolder;
+  margin-top: 8px;
 }

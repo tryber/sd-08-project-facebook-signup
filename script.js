@@ -38,16 +38,6 @@ function verifyRadio() {
   return false;
 }
 
-const signUpForm = document.getElementById('sign-up');
-const errorMessage = document.createElement('p');
-signUpForm.appendChild(errorMessage);
-
-const mainContent = document.querySelector('.main-content');
-
-function eraseRightContent() {
-  mainContent.removeChild(mainContent.lastElementChild);
-}
-
 function selectedRadio() {
   let selectedGenre = '';
   for (let index = 0; index < formRadio.length; index += 1) {
@@ -58,11 +48,54 @@ function selectedRadio() {
   return selectedGenre;
 }
 
+const signUpForm = document.getElementById('sign-up');
+const newCustomInput = document.getElementById('custom-input');
+const newInput = document.createElement('input');
+newInput.name = 'gender-custom';
+newInput.placeholder = 'Gênero (opcional)';
+
+function createTextArea() {
+  newCustomInput.appendChild(newInput);
+}
+
+function eraseTextArea() {
+  if (signUpForm.length === 10) {
+    newCustomInput.removeChild(newCustomInput.lastElementChild);
+  }
+}
+
+
+function createBoxCustomGender() {
+  for (let index = 0; index < formRadio.length; index += 1) {
+    formRadio[index].addEventListener('click', function (event) {
+      if (event.target.value === 'Personalizado') {
+        createTextArea();
+      } else {
+        eraseTextArea();
+      }
+    });
+  }
+}
+createBoxCustomGender();
+
+const errorMessage = document.createElement('p');
+signUpForm.appendChild(errorMessage);
+
+const mainContent = document.querySelector('.main-content');
+
+function eraseRightContent() {
+  mainContent.removeChild(mainContent.lastElementChild);
+}
+
 function createRightContent() {
   const newRightContent = document.createElement('div');
   newRightContent.className = 'right-content';
   mainContent.appendChild(newRightContent);
-  newRightContent.innerText = `Olá, ${formText[0].value} ${formText[1].value} ${'\n'} ${formText[2].value} ${'\n'} ${formText[4].value} ${'\n'} ${selectedRadio()}`;
+  newRightContent.innerText = `Olá, ${formText[0].value} ${
+    formText[1].value
+  } ${'\n'} ${formText[2].value} ${'\n'} ${
+    formText[4].value
+  } ${'\n'} ${selectedRadio()}`;
 }
 
 function completeSignUp() {

@@ -26,7 +26,7 @@ function checkForm() {
   if (name === '' || lastname === '' || phoneEmail === '' || password === '' || selectedGenderValue === '') {
     document.getElementById('erro').innerHTML = 'Campos inválidos.'
   } else {
-    document.getElementById('erro').innerHTML = '''
+    document.getElementById('erro').innerHTML = '';
     document.getElementById('form-registry').submit();
   }
 }

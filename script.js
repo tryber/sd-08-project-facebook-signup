@@ -1,5 +1,5 @@
 // botão entrar mostrando o valor do input nome-email
-function bntclick (){
+function bntclick() {
   let btnentrar = document.getElementById('user-email-phone').value;
   alert(btnentrar);
   };
@@ -8,7 +8,7 @@ btn.addEventListener('click', bntclick)
 
 
 // se for outros mostra campo se não invisivel
-function radiocheck (){
+function radiocheck() {
   if(radioot.checked === true){
     document.getElementById("genop").style.visibility = "visible";
   }

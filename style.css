@@ -9,7 +9,13 @@ body {
   color: white;
   display: flex;
   justify-content: space-between;
+  min-height: 55px;
   width: 100%;
+}
+
+.facebook-logo {
+  max-height: 44px;
+  max-width: 117px;
 }
 
 .facebook-login {
@@ -51,12 +57,18 @@ body {
   flex-direction: column;
 }
 
-.lastName , .firstName {
-  width: 46%;
+.firstName {
+  margin-right: 1%;
+  width: 50%;
+}
+
+.lastName {
+  margin-left: 1%;
+  width: 50%;
 }
 
 .phone_email , .password , .birthdate {
-  width: 100%;
+  width: 97%;
 }
 
 .gender-selection {
@@ -67,6 +79,17 @@ body {
 .form-register {
   display: flex;
   flex-direction: column;
+}
+
+.form-item {
+  margin-bottom: 1%;
+  margin-top: 1%;
+  padding: 1%;
+}
+
+.sel-gender {
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .form-group-inline {
@@ -80,6 +103,12 @@ body {
 
 .register-error {
   color: red;
+  padding: 2%;
+}
+
+.btn-register {
+  height: 24px;
+  width: 100%;
 }
 
 .image-networking {

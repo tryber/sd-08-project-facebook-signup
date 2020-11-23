@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
+
+.quick-easy {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.main-content {
+  background: linear-gradient(rgb(254, 254, 254), rgb(212, 217, 232));
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.inputBtn {
+  margin-top: 5px;
+}
+
+.main-content input {
+  border: 1px solid #343a40;
+  border-radius: 5px;
+  margin: 10px 10px 10px 2px;
+  padding: 10px;
+}
+
+.facebook-login {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin-right: 30px;
+  padding-top: 20px;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.lower {
+  display: flex;
+  flex-basis: 53%;
+  flex-wrap: wrap;
+}
+
+.quick-easy form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputName {
+  border: solid 1px;
+  flex-basis: 30%;
+  width: 112px;
+}
+
+.email-senha {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.inputLogin {
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.label {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 400px;
+}
+
+.labelGender {
+  display: none;
+  flex-basis: 100%;
+}
+
+.gender {
+  display: flex;
+  flex-direction: row;
+}
+
+.others {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logBtn {
+  flex-basis: 100%;
+  height: 30px;
+  width: 10px;
+}
+
+.false {
+  color: red;
+  display: none;
+  flex-basis: 100%;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+footer p {
+  color: #4267b288;
+}
+
+footer {
+  padding: 0 20%;
+}

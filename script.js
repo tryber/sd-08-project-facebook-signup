@@ -32,7 +32,7 @@ function exibirDados() {
 
 const botaoEnviar = document.querySelector('#facebook-register');
 const divVazia = document.getElementById('div-vazia');
-botaoEnviar.addEventListener('click', function (event) {
+botaoEnviar.addEventListener('click', function () {
   const inputsText = document.getElementsByClassName('inputs');
   divVazia.innerHTML = '';
   for (let index = 0; index < inputsText.length; index += 1) {

@@ -5,13 +5,11 @@ body , input {
 }
 
 .facebook-login {
-  align-items: center;
   display: flex;
-  justify-content: space-between;
 }
 
 .facebook-logo {
-  margin-left: 150px;
+  margin-left: 0;
 }
 
 .form-group {

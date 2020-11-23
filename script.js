@@ -10,13 +10,17 @@ btnLogin.addEventListener('click', function () {
   alert(userId.value);
 });
 
-function Req20(num, obj) {
+function Req20(num, obj, form) {
   if (num === 5 && obj !== null) {
-    // Req 20
+    const right = document.getElementsByClassName('right-content')[0];
+    right.innerHTML = `<h1>Olá, ${form[0].value} ${form[1].value}</h1>
+    <p>${form[2].value}</p>
+    <p>${form[4].value}</p>
+    <p>${obj.value}</p>`;
     return;
   }
   labelEmpty[0].style.display = 'block';
-  labelEmpty[0].innerHTML = 'Campos Inválidos'
+  labelEmpty[0].innerHTML = 'Campos Inválidos';
 }
 
 btnRegister.addEventListener('click', function () {
@@ -29,7 +33,7 @@ btnRegister.addEventListener('click', function () {
     }
   }
 
-  Req20(calc, radioBtn);
+  Req20(calc, radioBtn, checkForm);
 });
 
 function DisableInput() {

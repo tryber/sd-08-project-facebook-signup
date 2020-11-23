@@ -23,7 +23,7 @@
             <input type="text" id="user-email-phone" name="login-name">
           </section>
 
-          <section class="form-group">
+          <section class="form-group password-container">
             <label id="user-password-label" for="user-password">Senha</label>
             <input id="user-password" type="password" name="login-pass">
           </section>
@@ -45,30 +45,33 @@
       <section class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form action="" id="register-form" onsubmit="return validateForm()">
+        <form action="" id="register-form">
           <section class="name-container">
             <label for="firstname">
-              <input type="text" name="firstname" id="firstname" placeholder="Nome" class="new-register">
+              <input type="text" name="firstname" id="firstname" placeholder="Nome" class="new-register" required>
             </label>
             <label for="lastname">
-              <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" class="new-register">
+              <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" class="new-register lastname" required>
             </label>
           </section>
           <label for="phone_email">
-            <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" class="new-register">
+            <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" class="new-register" required>
           </label>
           <label for="password">
-            <input type="password" name="password" id="password" placeholder="Nova senha" class="new-register">
+            <input type="password" name="password" id="password" placeholder="Nova senha" class="new-register" required>
           </label>
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" class="new-register">
+          <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" class="new-register" required>
           <label for="gender" id="label-gender" class="gender-label">Gênero</label>
           <label for="female">
-            <input type="radio" name="gender" id="female" value="Feminino">Feminino</label>
+            <input type="radio" name="gender" id="female" value="Feminino" required>Feminino</label>
           <label for="male">
             <input type="radio" name="gender" id="male" value="Masculino">Masculino</label>
           <label for="custom">
             <input type="radio" name="gender" id="custom" value="Personalizado">Personalizado</label>
+          <label for="gender-custom">
+            <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)" class="gender-input hidden">
+          </label>
           <button type="submit" id="facebook-register">Cadastre-se</button>
           <p id="error-message"></p>
         </form>

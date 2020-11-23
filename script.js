@@ -1,7 +1,6 @@
 const getFormNewAccount = document.querySelector('#register-form');
-const getAllInputs = getFormNewAccount.getElementsByTagName('input');
+const genderInput = document.querySelector('#gender-custom');
 const rightContentBox = document.querySelector('.right-content');
-const p = document.querySelector('#error-message');
 
 function alertPhoneOrMail() {
   const buttonEnterFacebook = document.querySelector('#button-login');
@@ -11,59 +10,22 @@ function alertPhoneOrMail() {
   });
 }
 
-function addCustomGenderInput() {
+function showCustomGenderInput() {
   const customGenderRadio = document.querySelector('#custom');
-  const registerButton = document.querySelector('#facebook-register');
-  const form = document.querySelector('#register-form');
   customGenderRadio.addEventListener('click', function () {
-    const allGenderElements = document.querySelectorAll('#gender-custom')[0];
-    if ((typeof allGenderElements) === 'undefined') {
-      const customGender = document.createElement('input');
-      customGender.setAttribute('type', 'text');
-      customGender.setAttribute('name', 'gender-custom');
-      customGender.setAttribute('id', 'gender-custom');
-      customGender.setAttribute('placeholder', 'Gênero (opcional)');
-      customGender.setAttribute('class', 'gender-input');
-      form.insertBefore(customGender, registerButton);
-    }
+    genderInput.classList.remove('hidden');
   });
 }
 
-function deleteGenderInput() {
-  const genderInput = document.querySelector('#gender-custom');
-  const form = document.querySelector('#register-form');
-  if (genderInput != null) {
-    form.removeChild(genderInput);
-  }
-}
-
-function removeCustomGenderInput() {
+function hideCustomGenderInput() {
   const customGenderFemale = document.querySelector('#female');
   const customGenderMale = document.querySelector('#male');
-  customGenderFemale.addEventListener('click', deleteGenderInput);
-  customGenderMale.addEventListener('click', deleteGenderInput);
-}
-
-function checkInputValues() {
-  for (let index = 0; index < getAllInputs.length; index += 1) {
-    if (getAllInputs[index].type === 'text' && getAllInputs[index].value === '' && getAllInputs[index].id !== 'gender-custom') {
-      p.innerHTML = 'Campos inválidos';
-      return false;
-    }
-  }
-  return true;
-}
-
-function checkRadioSelected() {
-  for (let index = 0; index < getAllInputs.length; index += 1) {
-    if (getAllInputs[index].type === 'radio' && getAllInputs[index].checked) {
-      return true;
-    }
-  }
-  return false;
+  customGenderFemale.addEventListener('click', function () { genderInput.classList.add('hidden') });
+  customGenderMale.addEventListener('click', function () { genderInput.classList.add('hidden') });
 }
 
 function getSelectedGender() {
+  const getAllInputs = getFormNewAccount.getElementsByTagName('input');
   let gender = 'none';
   for (let index = 0; index < getAllInputs.length; index += 1) {
     if (getAllInputs[index].type === 'radio' && getAllInputs[index].checked) {
@@ -80,38 +42,39 @@ function createP(text) {
 }
 
 function createNewUserInfo() {
-  const userName = document.querySelector('#firstname').value;
-  const userlastName = document.querySelector('#lastname').value;
   const helloText = document.createElement('h1');
-  helloText.innerHTML = `Olá, ${userName} ${userlastName}`;
+  helloText.innerHTML = `Olá, ${document.querySelector('#firstname').value} ${document.querySelector('#lastname').value}`;
   rightContentBox.appendChild(helloText);
-
   createP(document.querySelector('#phone_email').value);
   createP(document.querySelector('#birthdate').value);
   createP(getSelectedGender());
-
   rightContentBox.removeChild(getFormNewAccount);
   rightContentBox.removeChild(rightContentBox.querySelector('h1'));
   rightContentBox.removeChild(rightContentBox.querySelector('p'));
 }
 
 function validateForm() {
-  const allInputFilled = checkInputValues();
-  const radioSelected = checkRadioSelected();
-
-  if (!allInputFilled || !radioSelected) {
-    p.innerHTML = 'Campos inválidos';
-    return false;
+  const requiredInputs = getFormNewAccount.querySelectorAll('[required]');
+  for (let index = 0; index < requiredInputs.length; index += 1) {
+    const currentInput = requiredInputs[index];
+    if (!currentInput.checkValidity()) {
+      document.querySelector('#error-message').innerHTML = 'Campos inválidos';
+      return;
+    }
   }
-
   createNewUserInfo();
-  return false;
+}
+
+function registerButtonListener() {
+  document.querySelector('#facebook-register').addEventListener('click', function (event) {
+    event.preventDefault();
+    validateForm();
+  });
 }
 
 window.onload = function () {
   alertPhoneOrMail();
-  addCustomGenderInput();
-  removeCustomGenderInput();
-  validateForm();
-  p.innerHTML = '';
+  showCustomGenderInput();
+  hideCustomGenderInput();
+  registerButtonListener();
 };

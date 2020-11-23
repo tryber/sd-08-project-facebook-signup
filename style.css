@@ -1,9 +1,9 @@
 body {
-  margin: 0;
-  pad: 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .top-bar {
@@ -13,9 +13,9 @@ body {
 }
 
 .facebook-logo {
-  height: 100%;
-  display: flex;
   align-self: center;
+  display: flex;
+  height: 100%;
 }
 
 .facebook-login {
@@ -31,8 +31,13 @@ body {
   justify-content: center;
 }
 
+.password-container {
+  margin-left: 10px;
+}
+
 .form-control {
   align-self: flex-end;
+  margin-left: 10px;
 }
 
 .main-content {
@@ -58,6 +63,16 @@ body {
   width: 100%;
 }
 
+.lastname {
+  margin-left: 5px;
+  box-sizing: border-box;
+  width: calc(100% - 5px);
+}
+
 .gender-label {
   display: block;
+}
+
+.hidden {
+  display: none;
 }

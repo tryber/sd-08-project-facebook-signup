@@ -20,7 +20,7 @@ function verifyText() {
     if (formText[index].value === '' || formText[index].value === null) {
       return true;
     }
-  }
+  
   return false;
 }
 

@@ -78,18 +78,16 @@ body {
 .campos-invalidos {
   align-items: center;
   align-self: center;
-  animation-name: up;
-  animation-duration: .4s;
   background-color: rgba(127, 148, 148, 0.856);
   border-radius: 16px;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.616);
   display: flex;
   font-size: 25px;
-  font-weight: bolder;
+  font-weight: 800;
   height: 115px;
   justify-content: center;
-  position: absolute;
   padding: 16px;
+  position: absolute;
   right: 124px;
   width: 200px;
 }

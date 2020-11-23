@@ -44,9 +44,9 @@ body {
 .form-group {
   color: white;
   display: flex;
-  padding-top: 5px;
   flex-direction: column;
   margin: auto;
+  padding-top: 5px;
 }
 
 .form-control {

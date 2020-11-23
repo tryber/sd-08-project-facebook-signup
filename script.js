@@ -6,7 +6,6 @@ function alertBotao() {
 }
 botaoLogin.addEventListener('click', alertBotao);
 
-const rightContent = document.querySelector('.right-content');
 const nome = document.querySelector('[name=firstname]');
 const sobreNome = document.querySelector('[name=lastname]');
 const emailOuTel = document.querySelector('[name=phone_email]');
@@ -23,12 +22,12 @@ function pegarRadioValor(name) {
 
 function exibirDados() {
   const genero = pegarRadioValor('gender');
-  let str = '';
-  str += `<p> Olá, ${nome.value} ${sobreNome.value}</p>`;
-  str += `<p> ${emailOuTel.value}</p>`;
-  str += `<p> ${dataNasc.value}</p>`;
-  str += `<p> ${genero} </p>`;
-  rightContent.innerHTML = str;
+  const formulario = document.getElementById('limpa-forms');
+
+  formulario.innerHTML += `<p> Olá, ${nome.value} ${sobreNome.value}</p>`;
+  formulario.innerHTML += `<p> ${emailOuTel.value}</p>`;
+  formulario.innerHTML += `<p> ${dataNasc.value}</p>`;
+  formulario.innerHTML += `<p> ${genero} </p>`;
 }
 
 const botaoEnviar = document.querySelector('#facebook-register');

@@ -16,7 +16,7 @@ function replaceDiv(event) {
   for (let index = 0; index < forms.length; index += 1) {
     if (index === 0) {
       const tagP = document.createElement('p');
-      tagP.innerText = 'Olá, ${forms[index].value} ${forms[index+1].value}`;
+      tagP.innerText =`Olá, ${forms[index].value} ${forms[index+1].value}`;
       divRight.appendChild(tagP);
     } else if (index === 2 || index === 4) {
       const tagP = document.createElement('p');

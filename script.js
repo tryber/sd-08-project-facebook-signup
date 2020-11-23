@@ -20,8 +20,8 @@ function showCustomGenderInput() {
 function hideCustomGenderInput() {
   const customGenderFemale = document.querySelector('#female');
   const customGenderMale = document.querySelector('#male');
-  customGenderFemale.addEventListener('click', function () { genderInput.classList.add('hidden') });
-  customGenderMale.addEventListener('click', function () { genderInput.classList.add('hidden') });
+  customGenderFemale.addEventListener('click', function () { genderInput.classList.add('hidden'); });
+  customGenderMale.addEventListener('click', function () { genderInput.classList.add('hidden'); });
 }
 
 function getSelectedGender() {

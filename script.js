@@ -27,7 +27,7 @@ function substituteFormContainer() {
   const birthdate = document.getElementById('birthdate').value;
   const mensagem = `Olá, ${name} ${sobrenome}\n`;
   const mensagemTwo = document.createElement('span');
-  mensagemTwo.innerText= `${phonemail} \n ${birthdate}`;
+  mensagemTwo.innerText = `${phonemail} \n ${birthdate}`;
   rigthcontent.innerHTML = mensagem;
   rigthcontent.appendChild(mensagemTwo);
 }

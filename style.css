@@ -8,7 +8,7 @@ body {
   background-color: rgb(66, 103, 178);
   color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 

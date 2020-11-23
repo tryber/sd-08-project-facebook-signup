@@ -34,7 +34,6 @@ const botaoEnviar = document.querySelector('#facebook-register');
 const divVazia = document.getElementById('div-vazia');
 botaoEnviar.addEventListener('click', function (event) {
   const inputsText = document.getElementsByClassName('inputs');
-  event.preventDefault();
   divVazia.innerHTML = '';
   for (let index = 0; index < inputsText.length; index += 1) {
     const campoInput = inputsText[index];

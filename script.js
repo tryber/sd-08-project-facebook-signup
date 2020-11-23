@@ -1,7 +1,7 @@
-window.onload = () => {
-  // document.getElementById('gender-personalized-input').classList.add('hidden');
-  // document.getElementById('gender').value = 'Feminino';
-};
+// window.onload = () => {
+//   // document.getElementById('gender-personalized-input').classList.add('hidden');
+//   // document.getElementById('gender').value = 'Feminino';
+// };
 
 document.getElementById('button-login').addEventListener('click', () => {
   alert(document.getElementById('user-email-phone').value);
@@ -42,20 +42,20 @@ const registerAction = (data = {}) => {
 document.getElementById('facebook-register').addEventListener('click', (e) => {
   e.preventDefault();
 
-  if (!validate(document.forms.signup.firstname)) {
-    return;
+  if (validate(document.forms.signup.firstname)) {
+    return false;
   }
-  if (!validate(document.forms.signup.lastname)) {
-    return;
+  if (validate(document.forms.signup.lastname)) {
+    return false;
   }
-  if (!validate(document.forms.signup.phone_email)) {
-    return;
+  if (validate(document.forms.signup.phone_email)) {
+    return 1;
   }
-  if (!validate(document.forms.signup.birthdate)) {
-    return;
+  if (validate(document.forms.signup.birthdate)) {
+    return false;
   }
-  if (!validate(document.forms.signup.gendersel)) {
-    return;
+  if (validate(document.forms.signup.gendersel)) {
+    return false;
   }
   const data = {
     firstname: document.forms.signup.firstname.value,
@@ -66,4 +66,5 @@ document.getElementById('facebook-register').addEventListener('click', (e) => {
   };
 
   registerAction(data);
+  return true;
 });

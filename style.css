@@ -27,7 +27,7 @@ body , input {
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
   display: flex;
 }
 

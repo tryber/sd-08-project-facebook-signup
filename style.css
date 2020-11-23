@@ -17,8 +17,8 @@ body {
 .main-content {
   background: linear-gradient(rgb(254, 254, 254), rgb(212, 217, 232));
   display: flex;
-  justify-content: flex-start;
   padding-bottom: 40px;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -29,7 +29,7 @@ body {
 .main-content input {
   border: 1px solid #343a40;
   border-radius: 5px;
-  margin: 10px 10px 10px 0;
+  margin: 10px 10px 10px 2px;
   padding: 10px;
 }
 
@@ -45,9 +45,9 @@ body {
 .form-group {
   color: white;
   display: flex;
+  margin: auto;
   padding-top: 5px;
   flex-direction: column;
-  margin: auto;
 }
 
 .form-control {
@@ -82,10 +82,10 @@ body {
 }
 
 .inputName {
-  flex-basis: 20%;
-  margin-right: 8px;
   height: 20px;
   width: 300px;
+  flex-basis: 20%;
+  margin-right: 8px;
 }
 
 .email-senha {
@@ -141,9 +141,4 @@ footer p {
 
 footer {
   padding: 0 20%;
-}
-
-input {
-  height: 20px;
-  margin-bottom: 20px;
 }

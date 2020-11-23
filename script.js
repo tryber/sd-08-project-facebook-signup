@@ -18,8 +18,6 @@ function atribuiValorGenders(inputs) {
   return gender;
 }
 
-atribuiValorGenders(genderInputs);
-
 buttonLogin.addEventListener('click', function (event) {
   event.preventDefault();
   alert(emailPhone.value);
@@ -57,7 +55,8 @@ buttonCadastro.addEventListener('click', function (event) {
     const lastname = inputValues[1];
     const email = inputValues[2];
     const date = inputValues[3];
-    const genero = inputValues[4];
+    atribuiValorGenders(genderInputs);
+    const genero = gender;
     rightContentForm.innerHTML = `<p>Olá, ${name} ${lastname}</p> <p>Email: ${email}</p> <p>Data de Nascimento: ${date}</p> <p>Gênero: ${genero}`;
   }
 });

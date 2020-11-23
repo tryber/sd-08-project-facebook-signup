@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.facebook-login {
+  align-items: flex-end;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+.main-content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.quick-easy {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+.registration {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.registration input {
+  margin-bottom: 3px;
+}
+
+.registration label {
+  margin-bottom: 6px;
+  margin-top: 10px;
+  width: 100%;
+} */
+
+.lastName , .firstName {
+  width: 46%;
+}
+
+.phone_email , .password , .birthdate {
+  width: 100%;
+}
+
+.buttonSubmit {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-selection {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-inline {
+  display: flex;
+  flex-direction: row;
+}
+
+.hidden {
+  display: none;
+}
+
+.register-error {
+  color: red;
+}
+
+/*
+.form-group-register {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control-register {
+  align-self: flex-end;
+  display: flex;
+} */

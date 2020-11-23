@@ -3,6 +3,9 @@ function alertButton() {
 }
 
 function getRadioValueFromInputs(genders) {
+  if (genders === undefined) {
+    return '';
+  }
   for (let gender = 0; gender < genders.lenght; gender += 1) {
     if (genders[gender].checked) {
       return genders[gender].value;
@@ -22,8 +25,6 @@ function checkForm() {
 
   if (name === '' || lastname === '' || phoneEmail === '' || password === '' || selectedGenderValue === '') {
     alert('Por favor preencha todos os campos.');
-
-    name.focus();
   } else {
     document.getElementById('form-registry').submit();
   }

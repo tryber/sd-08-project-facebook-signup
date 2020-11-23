@@ -72,5 +72,3 @@ function criaInput(event) {
 }
 
 personalizado.addEventListener('click', criaInput);
-
-// Codigo revisado

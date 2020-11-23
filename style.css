@@ -9,9 +9,9 @@ body {
   justify-content: space-between;
 }
 
-.quick-easy{
+.quick-easy {
   font-size: 20px;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .main-content {
@@ -21,23 +21,18 @@ body {
   padding-bottom: 40px;
 }
 
-.inputBtn{
+.inputBtn {
   margin-top: 5px;
 }
 
-.main-content input{
+.main-content input {
     border: 1px solid #343a40;
     border-radius: 5px;
     margin: 10px 10px 10px 0;
     padding: 10px;
 }
 
-.right-content h1{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
-}
-
-.facebook-logo{
+.facebook-logo {
   margin: auto;
 }
 
@@ -61,8 +56,8 @@ body {
 
 .main-content {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 .left-content {
@@ -74,11 +69,11 @@ body {
   max-width: 800px;
 }
 
-.lower{
-  display: flex;;
+.lower {
+  display: flex;
+  flex-basis: 53%;
   flex-direction: column;
   flex-wrap: wrap;
-  flex-basis: 53%;
 }
 
 .quick-easy form {
@@ -92,16 +87,16 @@ body {
 }
 
 .inputName {
-  flex-basis: 20%;
   margin-right: 8px;
+  flex-basis: 20%;
   height: 20px;
   width: 300px;
 }
 
 .email-senha {
   display: flex;
-  flex-direction: column;
   flex-basis: 100%;
+  flex-direction: column;
   margin-top: 10px
 }
 
@@ -111,9 +106,9 @@ body {
 }
 
 .label {
-  margin:10px 0px;
-  width: 300px;
+  margin:10px 0;
   flex-basis: 100%;
+  width: 300px;
 }
 
 .labelGender {
@@ -133,14 +128,14 @@ body {
 
 .logBtn{
   flex-basis: 100%;
-  width: 10px;
   height: 30px;
+  width: 10px;
 }
 
 .false {
-  flex-basis: 100%;
   color: red;
   display: none;
+  flex-basis: 100%;
   font-style: italic;
   margin-top: 10px;
 }
@@ -153,7 +148,7 @@ footer {
   padding: 0 20%;
 }
 
-input{
+input {
   height: 20px;
   margin-bottom: 20px;
 }

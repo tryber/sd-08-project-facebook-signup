@@ -2,10 +2,6 @@ body {
   margin: 0;
 }
 
-input {
-  outline: none;
-}
-
 .facebook-login {
   display: flex;
 }

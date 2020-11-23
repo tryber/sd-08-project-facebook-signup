@@ -1,0 +1,28 @@
+{
+  "name": "sd-0x-block6-project-facebook-signup-tests",
+  "version": "1.0.0",
+  "description": "Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo e, se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betrybe/sd-0x-block6-project-facebook-signup-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/betrybe/sd-0x-block6-project-facebook-signup-tests/issues"
+  },
+  "homepage": "https://github.com/betrybe/sd-0x-block6-project-facebook-signup-tests#readme",
+  "dependencies": {
+    "@david-boydell/cypress-layout": "0.0.2",
+    "cypress": "^4.1.0",
+    "cypress-multi-reporters": "^1.2.4",
+    "mocha": "^7.1.0",
+    "mochawesome": "^5.0.0",
+    "mochawesome-merge": "^4.0.2",
+    "mochawesome-report-generator": "^4.1.0"
+  }
+}

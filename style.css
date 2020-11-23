@@ -60,7 +60,6 @@ body {
 .left-content {
   border: 1px solid black;
   height: 500px;
-  padding-left: 310px;
   width: 800px;
 }
 
@@ -71,7 +70,6 @@ body {
 .right-content {
   border: 1px solid black;
   height: fit-content;
-  padding: 5px;
   width: 300px;
 }
 

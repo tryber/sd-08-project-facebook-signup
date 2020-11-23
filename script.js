@@ -8,4 +8,3 @@ function showAlert() {
 }
 
 showAlert();
-

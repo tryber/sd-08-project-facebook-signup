@@ -11,13 +11,11 @@ function alertLogin() {
   }
 }
 
-
-
 alertButton.addEventListener('click', alertLogin);
 
 function customInput() {
   if (genderInput.value === 'personalizado') {
-    const newInput = document.createElement('input')
+    const newInput = document.createElement('input');
     newInput.name = 'gender-custom';
     newInput.placeholder = 'Gênero (opcional)';
     newInput.id = 'newInput';
@@ -27,4 +25,3 @@ function customInput() {
 }
 
 genderInput.addEventListener('click', customInput);
-

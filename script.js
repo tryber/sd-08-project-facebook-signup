@@ -16,6 +16,7 @@ function Req20(num, obj) {
     return;
   }
   labelEmpty[0].style.display = 'block';
+  labelEmpty[0].innerHTML = 'Campos Inválidos'
 }
 
 btnRegister.addEventListener('click', function () {

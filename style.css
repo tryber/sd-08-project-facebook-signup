@@ -74,7 +74,8 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and ( max-width : 360px ) {
+  
   .left-content {
     display: none;
   }

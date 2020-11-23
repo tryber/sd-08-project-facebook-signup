@@ -40,6 +40,7 @@ radioPersonalizado.addEventListener('click', function () {
   input.type = 'text';
   input.id = 'opcional';
   input.name = 'gender-custom';
+  input.className = 'input-form-right';
   input.placeholder = 'Gênero (opcional)';
   genderContainer.append(input);
 });

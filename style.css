@@ -51,6 +51,7 @@ body {
   flex-direction: column;
 }
 
+/*
 .registration {
   display: flex;
   flex-wrap: wrap;
@@ -65,7 +66,7 @@ body {
   margin-bottom: 6px;
   margin-top: 10px;
   width: 100%;
-}
+} */
 
 .lastName , .firstName {
   width: 46%;
@@ -84,3 +85,28 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-inline {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+/*
+.form-group-register {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control-register {
+  align-self: flex-end;
+  display: flex;
+} */

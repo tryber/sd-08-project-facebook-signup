@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -68,4 +73,14 @@
 
 .phone_email , .password , .birthdate {
   width: 100%;
+}
+
+.buttonSubmit {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-selection {
+  display: flex;
+  justify-content: space-around;
 }

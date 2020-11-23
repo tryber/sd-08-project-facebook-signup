@@ -7,3 +7,15 @@ function buttonLogin() {
 }
 
 buttonLogin();
+
+// const btnSubmit = document.getElementeById('facebook-register');
+// btnSubmit.addEventListener('click', (e)=> {
+//   e.preventDefaut();
+//   const inputList = document.querySelectorAll('[input]');
+//   for (let index=0; index<inputList.length; index=+1) {
+//     if (!inputList[index].value) {
+//       document.querySelectorAll('[input]')[index].style.display = 'block';
+//       return;
+//     }
+//   }
+// })

@@ -51,34 +51,12 @@ body {
   flex-direction: column;
 }
 
-/*
-.registration {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.registration input {
-  margin-bottom: 3px;
-}
-
-.registration label {
-  margin-bottom: 6px;
-  margin-top: 10px;
-  width: 100%;
-} */
-
 .lastName , .firstName {
   width: 46%;
 }
 
 .phone_email , .password , .birthdate {
   width: 100%;
-}
-
-.buttonSubmit {
-  display: flex;
-  flex-direction: column;
 }
 
 .gender-selection {
@@ -104,13 +82,7 @@ body {
   color: red;
 }
 
-/*
-.form-group-register {
-  display: flex;
-  flex-direction: column;
+.image-networking {
+  max-height: 195px;
+  max-width: 537px;
 }
-
-.form-control-register {
-  align-self: flex-end;
-  display: flex;
-} */

@@ -10,22 +10,21 @@ btnLogin.addEventListener('click', function () {
   alert(userId.value);
 });
 
-function Req20 (num, obj) {
+function Req20(num, obj) {
   if (num === 5 && obj !== null) {
-    console.log(num);
+    // Req 20
     return;
   }
   labelEmpty.innerText = 'Campos Inválidos';
 }
 
 btnRegister.addEventListener('click', function () {
-  const checkForm = getElementsByClassName('check-form');
-  const radioBtn = document.querySelector('input[name="gender"]:checked')
+  const checkForm = document.getElementsByClassName('check-form');
+  const radioBtn = document.querySelector('input[name="gender"]:checked');
   let calc = 0;
   for (let i = 0; i < checkForm.length; i += 1) {
-    if(checkForm[i].value != '') {
+    if (checkForm[i].value !== '') {
       calc += 1;
-      console.log(calc);
     }
   }
 

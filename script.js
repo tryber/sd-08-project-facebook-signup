@@ -17,14 +17,16 @@ function createTagP(value) {
 
 function replaceDiv(event) {
   event.preventDefault();
-
   const forms = document.querySelectorAll('.form-register input');
   const divRight = document.querySelector('.right-content');
+  const h1 = document.querySelector('.right-content h1');
+  const p = document.querySelector('.right-content .quick-easy');
+  const formsAll = document.querySelector('.right-content form');
 
   for (let index = 0; index < forms.length; index += 1) {
     if (index === 0) {
       const tagP = document.createElement('p');
-      tagP.innerText =`Olá, ${forms [index].value} ${forms [index+1].value}`;
+      tagP.innerText =`Olá, ${forms[index].value} ${forms[index+1].value}`;
       divRight.appendChild(tagP);
     } else if (index === 2 || index === 4) {
       const tagP = createTagP(forms[index].value);
@@ -37,9 +39,6 @@ function replaceDiv(event) {
     }
   }
 
-  const h1 = document.querySelector('.right-content h1');
-  const p = document.querySelector('.right-content .quick-easy');
-  const formsAll = document.querySelector('.right-content form');
   divRight.removeChild(h1);
   divRight.removeChild(p);
   divRight.removeChild(formsAll);
@@ -52,9 +51,7 @@ function cheksInput() {
     let contador = 0;
     let radio = false;
     for (let index = 0; index < formsInput.length; index += 1) {
-      if (formsInput[index].value === '' && formsInput[index].type === 'text') {
-        contador += 1;
-      } else if (formsInput[index].value === '' && formsInput[index].type === 'password') {
+      if (formsInput[index].value === '') {
         contador += 1;
       } else if (formsInput[index].checked === true && formsInput[index].type === 'radio') {
         radio = true;
@@ -67,8 +64,7 @@ function cheksInput() {
         forms.removeChild(formsTagP);
       }
       event.preventDefault();
-      const tagP = document.createElement('p');
-      tagP.innerText = 'Campos inválidos';
+      const tagP = createTagP('Campos inválidos');
       forms.appendChild(tagP);
     } else {
       replaceDiv(event);

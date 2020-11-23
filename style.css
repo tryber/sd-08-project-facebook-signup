@@ -155,3 +155,14 @@ input:focus {
   font-weight: 900;
   margin-top: 8px;
 }
+
+.facebook-register {
+  background-color: #059919;
+  border-radius: 5px;
+  color: white;
+  font-size: large;
+  font-weight: 800;
+  height: 45px;
+  margin: 20px 4px;
+  width: 170px;
+}

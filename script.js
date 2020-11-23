@@ -9,21 +9,26 @@ alerta();
 
 function validate() {
   const formList = document.querySelectorAll('input');
-  // let contador = 0;
+  let contador = true;
   const botao = document.getElementById('facebook-register');
   const validacao = document.getElementById('validacao');
-  botao.addEventListener('click', function () {
+  botao.addEventListener('click', function (event) {
     for (let index = 2; index < formList.length - 3; index += 1) {
       const valorCampos = formList[index].value;
       if (valorCampos === '') {
         validacao.innerText = 'Campos inválidos';
-        //   if (contador > 0){
-        //     validacao.innerText = 'Campos inválidos';
-        //     return false;
-        // }
-        // } else {
-        //   contador += 1;
+        event.preventDefault();
+        contador = false;
       }
+    }
+    if (contador) {
+      const nome = document.querySelector('#name').value;
+      const lastname = document.querySelector('#lastname').value;
+      const birthdate = document.querySelector('#birthdate').value;
+      const email = document.querySelector('#email').value;
+      const gender = document.querySelector('input[type="radio"]:checked').value;
+      const right = document.querySelector('.right-content');
+      right.innerHTML = `Olá, ${nome} ${lastname}, ${email}, ${birthdate}, ${gender}`;
     }
   });
 }

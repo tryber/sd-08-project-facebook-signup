@@ -24,9 +24,9 @@ function checkForm() {
   const selectedGenderValue = getRadioValueFromInputs(genders);
 
   if (name === '' || lastname === '' || phoneEmail === '' || password === '' || selectedGenderValue === '') {
-    document.getElementById('erro').innerHTML = "Campos inválidos."
+    document.getElementById('erro').innerHTML = 'Campos inválidos.'
   } else {
-    document.getElementById('erro').innerHTML = ""
+    document.getElementById('erro').innerHTML = '''
     document.getElementById('form-registry').submit();
   }
 }

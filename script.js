@@ -25,9 +25,16 @@ function substituteFormContainer() {
   const sobrenome = document.getElementById('sobrenome').value;
   const phonemail = document.getElementById('phonemail').value;
   const birthdate = document.getElementById('birthdate').value;
+  const gender = document.getElementsByName('gender');
+  let genderValue = '';
+  for (let index = 0; index < gender.length; index += 1) {
+    if (gender[index].checked) {
+      genderValue = gender[index].value;
+    }
+  }
   const mensagem = `Olá, ${name} ${sobrenome}\n`;
   const mensagemTwo = document.createElement('span');
-  mensagemTwo.innerText = `${phonemail} \n ${birthdate}`;
+  mensagemTwo.innerText = `${phonemail} \n ${birthdate} \n ${genderValue}`;
   rigthcontent.innerHTML = mensagem;
   rigthcontent.appendChild(mensagemTwo);
 }

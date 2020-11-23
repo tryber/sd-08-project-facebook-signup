@@ -78,6 +78,7 @@ body {
   .left-content {
     display: none;
   }
+
   .facebook-login {
     display: none;
   }
@@ -100,7 +101,7 @@ body {
 
   .input-n-p {
     background-color: #ebe7e7;
-    border-color: #ffffff;
+    border-color: white;
     border-width: 1px;
     padding: 2%;
     width: 70%;
@@ -108,12 +109,12 @@ body {
 
   .button-moblie {
     background-color: #1877f2;
-    width: 270px;
-    border-radius: 2px;
-    margin: 3%;
-    color: white;
-    padding: 2%;
     border: none;
+    border-radius: 2px;
+    color: white;
+    margin: 3%;
+    padding: 2%;
+    width: 270px;
   }
 
   .button-moblie-register {
@@ -132,10 +133,10 @@ body {
     margin-top: 0;
   }
   .footer {
-    display: flex;
     align-content: space-around;
-    flex-wrap: wrap;
     color: #546eb3;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .estilo {

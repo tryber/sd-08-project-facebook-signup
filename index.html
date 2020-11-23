@@ -46,12 +46,12 @@
           <input type="text" name="phone_email" placeholder="Celular ou email" class="phoneemail" required>
           <input type="password" name="password" placeholder="Nova senha" id="password" class="password" required>
           <label id="label-birthdate" for="birthdate" class="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" id="birthdate" class="birthdate" placeholder="dd/mm/aaaa" required
-            pattern="[0-9]{2}/[0-1][0-9]/[0-9]{4}">
+          <input type="text" name="birthdate" id="birthdate" class="birthdate" placeholder="dd/mm/aaaa"
+            pattern="^(0[1-9]|[1-2][0-9]|[3][0-1][-./])(0[1-9]|1[0-2][.-/])(19|20)\d\d$" required>
           <div class="gender">
             <label for="" id="label-gender">Gênero</label>
             <div class="radio-buttons">
-              <input type="radio" id="gender-feminino" name="gender" value="Feminino">
+              <input type="radio" id="gender-feminino" name="gender" value="Feminino" checked>
               <label for="">Feminino</label>
               <input type="radio" id="gender-masculino" name="gender" value="Masculino">
               <label for="">Masculino</label>

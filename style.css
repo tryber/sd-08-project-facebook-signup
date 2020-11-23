@@ -70,7 +70,11 @@ body {
   display: none;
 }
 
-/* @media screen and (max-width: 360px) {
+.moblie {
+  display: none;
+}
+
+@media screen and (max-width: 360px) {
   .left-content {
     display: none;
   }
@@ -143,4 +147,4 @@ body {
     display: flex;
     width: 40%;
   }
-} */
+}

@@ -2,7 +2,7 @@ const btnLogin = document.getElementById('button-login');
 const rbPers = document.getElementById('personalizado');
 const persInput = document.getElementById('persInput');
 const btnRegister = document.getElementById('facebook-register');
-const labelEmpty = document.getElementById('labelEmpty');
+const labelEmpty = document.getElementsByClassName('label-empty');
 let userId;
 
 btnLogin.addEventListener('click', function () {
@@ -15,7 +15,7 @@ function Req20(num, obj) {
     // Req 20
     return;
   }
-  labelEmpty.innerText = 'Campos Inválidos';
+  labelEmpty[0].style.display = 'block';
 }
 
 btnRegister.addEventListener('click', function () {

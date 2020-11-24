@@ -91,3 +91,7 @@ body {
   right: 124px;
   width: 200px;
 }
+
+.type-custom{
+  display: none;
+}

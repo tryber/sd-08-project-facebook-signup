@@ -4,6 +4,7 @@ const cadastro = document.getElementById('cadastro');
 const required = document.querySelectorAll('[required]');
 const erro = document.createElement('section');
 const erroButton = document.createElement('button');
+const inputGenderCustom = document.getElementsByClassName('type-custom')[0];
 addEventListener('click', (event) => {
   if (event.target === button) {
     alert(label.value);
@@ -24,5 +25,11 @@ addEventListener('click', (event) => {
     }
   } else if (event.target.id === 'erro-button') {
     erro.remove();
+  } else if (event.target.id === 'custom-gender') {
+    inputGenderCustom.style.display = 'block';
+  } else if (event.target.id === 'type-fem') {
+    inputGenderCustom.style.display = 'none';
+  } else if (event.target.id === 'type-masc') {
+    inputGenderCustom.style.display = 'none';
   }
 });

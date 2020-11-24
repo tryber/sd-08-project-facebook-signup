@@ -5,6 +5,10 @@ const signupInputs = document.querySelectorAll('#form-cadastro input');
 const radioPersonalizado = document.getElementById('radioPersonalizado');
 const radioPersonalized = document.getElementById('pers');
 const mensagem = document.getElementById('mensagem');
+const name = document.getElementById('name');
+const lastName = document.getElementById('last-name');
+const birthDate = document.getElementById('birthdate');
+const radioChecked = document.querySelector('input[type="radio"]:checked');
 
 function login() {
   alert(emailTelefone.value);
@@ -12,18 +16,38 @@ function login() {
 
 loginButton.addEventListener('click', login);
 
-function submitForm() {
-  for (let i = 0; i < signupInputs.length; i += 1) {
-    if (signupInputs[i].value === '') {
-      const campoMensagem = document.createElement('p');
-      campoMensagem.innerText = 'Campos inválidos';
-      mensagem.appendChild(campoMensagem);
-      break;
+btnFacebook.addEventListener('click', function (event) {
+  let erros = '';
+  for (let index = 2; index < signupInputs.length; index += 1) {
+    const input = signupInputs[index];
+    if (input.value === '') {
+      erros += 'Campos inválidos';
     }
   }
-}
-
-btnFacebook.addEventListener('click', submitForm);
+  if (erros !== '') {
+    // alert('Campos inválidos');
+    const mensagemErro = document.createElement('p');
+    mensagemErro.innerHTML = 'Campos inválidos';
+    mensagem.appendChild(mensagemErro);
+  } else {
+    const paragraphName = document.createElement('p');
+    paragraphName.innerHTML = `Olá, ${name.value} ${lastName.value}`;
+    const paragraphEmail = document.createElement('p');
+    paragraphEmail.innerHTML = emailTelefone.value;
+    const paragraphBirthDate = document.createElement('p');
+    paragraphBirthDate.innerHTML = birthDate.value;
+    const genero = document.createElement('p');
+    genero.innerHTML = radioChecked.value;
+    document.querySelector('.main-content').removeChild(document.querySelector('.right-content'));
+    const newDiv = document.createElement('div');
+    newDiv.className = 'right-content';
+    document.querySelector('.main-content').appendChild(newDiv);
+    newDiv.appendChild(paragraphName);
+    newDiv.appendChild(paragraphEmail);
+    newDiv.appendChild(paragraphBirthDate);
+    newDiv.appendChild(genero);
+  }
+});
 
 function createInput() {
   const radios = document.getElementsByName('gender');

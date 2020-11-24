@@ -45,7 +45,8 @@ button.addEventListener('click', function (event) {
   event.preventDefault();
   const formData = new FormData(form);
   let result = '';
-  result += `Nome: ${formData.get('name')}</br>`;
+  result += `Olá ${formData.get('firstname')}${formData.get('lastname')}</br>`;
+  result+= `${formData.get('phone_email')}`
   result += `Gênero: ${formData.get('gender')}`;
   rightContent.innerHTML = result;
 });

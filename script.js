@@ -44,26 +44,29 @@ function replaceDiv() {
   const check = checksInput();
   if (check === 0) {
     const forms = document.querySelectorAll('.form-register input');
+    const sectionMain = document.querySelector('.main-content');
     const divRight = document.querySelector('.right-content');
-    const divRemove = document.querySelector('.remove');
+    const sectionRightClass = document.createElement('section');
+    sectionRightClass.className = 'right-content';
 
     const tagP = document.createElement('p');
     tagP.innerText = `Olá, ${forms[0].value} ${forms[1].value}`;
-    divRight.appendChild(tagP);
+    sectionRightClass.appendChild(tagP);
 
     const tagP1 = document.createElement('p');
     tagP1.innerText = forms[2].value;
-    divRight.appendChild(tagP1);
+    sectionRightClass.appendChild(tagP1);
 
     const tagP2 = document.createElement('p');
     tagP2.innerText = forms[4].value;
-    divRight.appendChild(tagP2);
+    sectionRightClass.appendChild(tagP2);
 
     const tagP3 = document.createElement('p');
     tagP3.innerText = document.querySelector('input[type=radio]:checked').id;
-    divRight.appendChild(tagP3);
+    sectionRightClass.appendChild(tagP3);
 
-    divRight.removeChild(divRemove);
+    sectionMain.removeChild(divRight);
+    sectionMain.appendChild(sectionRightClass);
   }
 }
 

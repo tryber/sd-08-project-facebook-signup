@@ -6,11 +6,6 @@ function alertBotao() {
 }
 botaoLogin.addEventListener('click', alertBotao);
 
-function alertBotao() {
-  alert(emailOuTelefone.value);
-}
-botaoLogin.addEventListener('click', alertBotao);
-
 function pegarRadioValor(name) {
   const rads = document.getElementsByName(name);
   for (let index = 0; index < rads.length; index += 1) {

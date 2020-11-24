@@ -1,0 +1,160 @@
+body {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178); /* Obrigatório */
+  display: flex; /* Obrigatório */
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  color: white;
+  display: flex; /* Obrigatório */
+  flex-direction: column; /* Obrigatório */
+  margin: 10px;
+}
+
+.form-control {
+  align-self: flex-end; /* Obrigatório */
+  display: flex;
+  margin: 10px;
+}
+
+.form-control button {
+  align-self: flex-end; /* Obrigatório */
+}
+
+.main-content {
+  background: linear-gradient(180deg, rgb(254, 253, 252) 15%, rgb(212, 217, 232) 100%);
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.left-content img {
+  width: 90%;
+}
+
+.quick-easy {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.slogan-container {
+  align-self: flex-end;
+}
+
+.slogan-container p {
+  color: rgb(17, 56, 95);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 30px 0 0;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 300px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.form-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-first-name { /* Tratar individualmente */
+  flex: 1;
+  height: 25px;
+  width: 50%;
+}
+
+.new-user-name {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.input-last-name {
+  flex: 1;
+  height: 25px;
+  margin-left: 12px;
+  width: 50%;
+}
+
+.new-user-contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.input-contact {
+  height: 25px;
+  margin: 0 10px 10px 0;
+  width: 97.5%;
+}
+
+.genero-container {
+  margin-top: 10px;
+}
+
+.genero-container input {
+  height: 25px;
+}
+
+.genero {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.genero input {
+  margin-left: 20px;
+}
+
+.user-born input {
+  height: 25px;
+}
+
+.register-button {
+  background-color: rgb(95, 155, 76);
+  border-radius: 5px;
+  box-shadow: 1px 1px rgb(217, 217, 217);
+  color: white;
+  font-size: 18px;
+  height: 35px;
+  margin: 20px 20px 20px 0;
+  width: 50%;
+}
+
+.input-display {
+  display: none;
+}
+
+.form-content {
+  width: 290px;
+}
+
+.error {
+  border: 1px solid red;
+  border-radius: 3px;
+}

@@ -59,15 +59,15 @@ botaoEnviar.addEventListener('click', function (event) {
   if (divVazia.innerHTML === '') exibirDados();
 });
 
-const botaoPer = document.querySelector('#botaopersonalizado');
+const botaoPer = document.querySelector('#gender-custom');
 const radioPerso = document.getElementsByClassName('radioperso');
 
 for (let index = 0; index < radioPerso.length; index += 1) {
   radioPerso[index].addEventListener('click', function () {
     if (radioPerso[2].checked === true) {
-      botaoPer.innerHTML = '<input type="text" name="gender-custom" placeholder="Gênero (opcional)">';
+      botaoPer.classList.remove('hidden');
     } else {
-      botaoPer.innerHTML = '';
+      botaoPer.classList.add('hidden');
     }
   });
 }

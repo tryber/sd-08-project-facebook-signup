@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Facebook</title>
 </head>
 
@@ -19,7 +20,10 @@
             </div>
             <div class="form-group">
                 <label id="user-password-label" for="user-password">Senha</label>
-                <input type="text" name="email" id="user-password"/>
+                <input type="text" name="password" id="user-password"/>
+            </div>
+            <div class="form-group">
+                <button id="button-login" type="button" onclick="alertEmail()">Entrar</button>
             </div>
 
         </form>

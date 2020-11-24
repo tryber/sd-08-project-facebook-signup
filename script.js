@@ -46,15 +46,12 @@ const botaoEnviar = document.querySelector('#facebook-register');
 const divVazia = document.getElementById('div-vazia');
 botaoEnviar.addEventListener('click', function (event) {
   event.preventDefault();
-  const inputsText = document.querySelector('#limpa-forms').querySelectorAll('input');
-  divVazia.innerHTML = '';
-  for (let index = 0; index < inputsText.length; index += 1) {
-    const campoInput = inputsText[index];
-    if (campoInput.required) {
-      if (campoInput.value === '' && campoInput.type !== 'radio') {
-        divVazia.innerHTML = 'Campos inválidos';
-        return;
-      }
+  const requiredInputs = document.querySelector('#limpa-forms').querySelectorAll('[required]');
+  for (let index = 0; index < requiredInputs.length; index += 1) {
+    const currentInput = requiredInputs[index];
+    if (!currentInput.checkValidity()) {
+      document.getElementById('div-vazia').innerHTML = 'Campos inválidos';
+      return;
     }
   }
   exibirDados();

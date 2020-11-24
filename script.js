@@ -28,15 +28,15 @@ facebookRegister.addEventListener('click', function () {
 const radios = document.querySelectorAll('[type=radio]');
 const customGender = document.querySelector('#gender-custom');
 for (let index = 0; index < radios.length; index += 1) {
-      const radio = radios[index];
-      radio.addEventListener('click', function (event) {
-        if (event.target.id === 'personalizado') {
-          customGender.classList.remove('d-none');
-        } else {
-          customGender.classList.add('d-none');
+  const radio = radios[index];
+  radio.addEventListener('click', function (event) {
+    if (event.target.id === 'personalizado') {
+      customGender.classList.remove('d-none');
+      } else {
+        customGender.classList.add('d-none');
         }
-      });
-    }
+  });
+}
   // validação do cadastro
 const form = document.querySelector('form');
 const button = form.querySelector('button');

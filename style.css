@@ -50,6 +50,7 @@ body {
 .main-content {
   display: flex;
   justify-content: center;
+  background-image: url("./imgs/main-content-bg.png");
 }
 
 .left-content {
@@ -82,4 +83,17 @@ body {
 
 .hidden {
   display: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  width: 1100px;
+  font-size: 15px;
+}
+
+.footer hr {
+  width: 100%;
 }

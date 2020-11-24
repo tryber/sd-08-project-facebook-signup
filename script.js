@@ -6,6 +6,7 @@ const buttonEnterFacebook = document.querySelector('#button-login');
 document.querySelector('#female').addEventListener('click', function () { customGenderInput.classList.add('hidden'); });
 document.querySelector('#male').addEventListener('click', function () { customGenderInput.classList.add('hidden'); });
 document.querySelector('#custom').addEventListener('click', function () { customGenderInput.classList.remove('hidden'); });
+
 buttonEnterFacebook.addEventListener('click', function () {
   const urserMailOrPhone = document.querySelector('#user-email-phone').value;
   alert(urserMailOrPhone);

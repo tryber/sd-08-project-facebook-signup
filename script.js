@@ -50,7 +50,7 @@ botaoEnviar.addEventListener('click', function (event) {
   for (let index = 0; index < requiredInputs.length; index += 1) {
     const currentInput = requiredInputs[index];
     if (!currentInput.checkValidity()) {
-      document.getElementById('div-vazia').innerHTML = 'Campos inválidos';
+      divVazia.innerHTML = 'Campos inválidos';
       return;
     }
   }

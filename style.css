@@ -1,28 +1,28 @@
 .top-bar {
-    background-color: rgb(66, 103, 178);
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    left: 0;
-    padding: 20px 50px;
-    position: absolute;
-    top: 0;
-    width: 100%;
+  background-color: rgb(66, 103, 178);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 20px 50px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .facebook-login {
-    align-items: flex-end;
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-around;
-    width: 450px;
+  align-items: flex-end;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  width: 450px;
 }
 
 .form-group {
-    align-content: center;
-    align-items: center;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    height: 50px;
+  align-content: center;
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
 }

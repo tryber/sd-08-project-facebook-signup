@@ -17,7 +17,7 @@ const message = document.querySelector('#validation-message');
 form.appendChild(message);
 function emptyInput(event) {
   event.preventDefault();
-const inputArray = document.querySelectorAll('.input-validation');
+  const inputArray = document.querySelectorAll('.input-validation');
   for (let index = 0; index < inputArray.length; index += 1) {
     if (inputArray[index].value === '') {
       message.innerHTML = 'Campos inválidos';
@@ -30,7 +30,7 @@ const inputArray = document.querySelectorAll('.input-validation');
       const printAll = `Olá, ${firstName} ${lastName} ${gender} ${phoneMail} ${birthDay}`;
       message.innerHTML = `${printAll}`;
     }
-}
+  }
 }
 facebookRegister.addEventListener('click', emptyInput);
 

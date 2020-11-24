@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook-login {
+  align-self: center;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-last-name {
+  display: flex;
+}
+
+.gender-container {
+  display: flex;
+}
+
+.mensagem-invalidos {
+  color: red;
+  display: none;
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.custom {
+  align-self: flex-end;
+  display: none;
+}
+
+.register-validation {
+  display: none;
+}
+
+.moblie {
+  display: none;
+}
+
+@media screen and ( max-width : 800px ) {
+
+  .left-content {
+    display: none;
+  }
+
+  .facebook-login {
+    display: none;
+  }
+
+  .top-bar {
+    justify-content: center;
+  }
+
+  .main-content {
+    display: none;
+  }
+
+  .moblie {
+    border-radius: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .input-n-p {
+    background-color: #ebe7e7;
+    border-color: white;
+    border-width: 1px;
+    padding: 2%;
+    width: 70%;
+  }
+
+  .button-moblie {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    margin: 3%;
+    padding: 2%;
+    width: 270px;
+  }
+
+  .button-moblie-register {
+    background-color: #42b72a;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    margin: 5%;
+    padding: 2%;
+    width: 150px;
+  }
+
+  .esqueceu {
+    color: #546eb3;
+    margin: 8%;
+    margin-top: 0;
+  }
+
+  .footer {
+    align-content: space-around;
+    color: #546eb3;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .estilo {
+    color: #666969;
+  }
+
+  .final {
+    display: flex;
+    width: 40%;
+  }
+}

@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.d-none {
+  display: none;
+}
+
 .email-password {
   width: 100%;
 }

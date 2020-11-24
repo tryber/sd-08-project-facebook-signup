@@ -46,7 +46,7 @@ button.addEventListener('click', function (event) {
   const formData = new FormData(form);
   let result = '';
   result += `Olá ${formData.get('firstname')}${formData.get('lastname')}</br>`;
-  result+= `${formData.get('phone_email')}`
+  result += `${formData.get('phone_email')}`;
   result += `Gênero: ${formData.get('gender')}`;
   rightContent.innerHTML = result;
 });

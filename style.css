@@ -34,7 +34,7 @@ body {
 /* fiz este */
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 /* fiz este */

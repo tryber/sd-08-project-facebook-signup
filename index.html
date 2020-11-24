@@ -41,13 +41,15 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="">
         <div class="first-last-name"><!-- adicionei esta div para deixar os dois inputs na mesma lina como pede no reqsito 12. a idéia foi fazer o mesmo que os inputs email e senha no header -->
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <div class="erro">
+          </div>
+          <input type="text" name="firstname" placeholder="Nome" class="form">
+          <input type="text" name="lastname" placeholder="Sobrenome" class="form">
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input type="text" name="phone_email" placeholder="Celular ou email" class="form">
+        <input type="password" name="password" placeholder="Nova senha" class="form">
         <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+        <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" class="form">
         <!-- requisito 16 -->
         <label for="" id="label-gender">Gênero</label>
         <div class="gender"><!-- adicionei a div radio para aplicar o display flex e manter os radios na mesma linha conforme pede no requisito 16-->

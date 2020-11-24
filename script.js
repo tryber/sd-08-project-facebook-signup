@@ -8,7 +8,6 @@ const mensagem = document.getElementById('mensagem');
 const name = document.getElementById('name');
 const lastName = document.getElementById('last-name');
 const birthDate = document.getElementById('birthdate');
-const radioChecked = document.querySelector('input[type="radio"]:checked');
 const phone = document.getElementById('phone');
 
 function login() {
@@ -38,15 +37,16 @@ btnFacebook.addEventListener('click', function () {
     const paragraphBirthDate = document.createElement('p');
     paragraphBirthDate.innerHTML = birthDate.value;
     const genero = document.createElement('p');
-    genero.innerHTML = radioChecked.value;
+    const generoChecked = document.querySelector('input[type="radio"]:checked');
+    genero.innerHTML = generoChecked.value;
     document.querySelector('.main-content').removeChild(document.querySelector('.right-content'));
-    const newDiv = document.createElement('div');
-    newDiv.className = 'right-content';
-    document.querySelector('.main-content').appendChild(newDiv);
-    newDiv.appendChild(paragraphName);
-    newDiv.appendChild(paragraphEmail);
-    newDiv.appendChild(paragraphBirthDate);
-    newDiv.appendChild(genero);
+    const information = document.createElement('div');
+    information.className = 'right-content';
+    document.querySelector('.main-content').appendChild(information);
+    information.appendChild(paragraphName);
+    information.appendChild(paragraphEmail);
+    information.appendChild(paragraphBirthDate);
+    information.appendChild(genero);
   }
 });
 

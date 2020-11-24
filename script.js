@@ -12,19 +12,28 @@ addAlert();
 
 // validar input
 const facebookRegister = document.querySelector('#facebook-register');
+const form = document.querySelector('.register');
 const message = document.querySelector('#validation-message');
-
-facebookRegister.addEventListener('click', function () {
-  const inputArray = document.querySelectorAll('.input-validation');
+form.appendChild(message);
+function emptyInput(event) {
+  event.preventDefault();
+const inputArray = document.querySelectorAll('.input-validation');
   for (let index = 0; index < inputArray.length; index += 1) {
     if (inputArray[index].value === '') {
       message.innerHTML = 'Campos inválidos';
-      break;
+    } else {
+      const phoneMail = document.querySelector('.phone_email').value;
+      const birthDay = document.querySelector('.birthday').value;
+      const gender = document.querySelectorAll('input[name="gender"]').value;
+      const firstName = document.querySelector('.first-name').value;
+      const lastName = document.querySelector('.last-name').value;
+      const printAll = `Olá, ${firstName} ${lastName} ${gender} ${phoneMail} ${birthDay}`;
+      message.innerHTML = `${printAll}`;
     }
-  }
-});
+}
+}
+facebookRegister.addEventListener('click', emptyInput);
 
-// adiciona input pesonalizado
 const radios = document.querySelectorAll('[type=radio]');
 const customGender = document.querySelector('#gender-custom');
 for (let index = 0; index < radios.length; index += 1) {
@@ -37,16 +46,3 @@ for (let index = 0; index < radios.length; index += 1) {
     }
   });
 }
-  // validação do cadastro
-const form = document.querySelector('form');
-const button = form.querySelector('button');
-const rightContent = document.querySelector('.right-content');
-button.addEventListener('click', function (event) {
-  event.preventDefault();
-  const formData = new FormData(form);
-  let result = '';
-  result += `Olá ${formData.get('firstname')}${formData.get('lastname')}</br>`;
-  result += `${formData.get('phone_email')}`;
-  result += `Gênero: ${formData.get('gender')}`;
-  rightContent.innerHTML = result;
-});

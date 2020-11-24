@@ -35,15 +35,17 @@
         <h1>Abra uma conta</h1>
         <p class='quick-easy'>É rápido e fácil.</p>
         <form class='register'>
-          <input class='input-validation name-lastname' type="text" name='firstname' placeholder='Nome' required>
-          <input class='input-validation name-lastname' type="text" name="lastname" placeholder='Sobrenome' required>
-          <input class='input-validation email-password' type="text" name="phone_email" placeholder='Celular ou email'
+          <input class='input-validation name-lastname first-name' type="text" name='firstname' placeholder='Nome'
             required>
+          <input class='input-validation name-lastname last-name' type="text" name="lastname" placeholder='Sobrenome'
+            required>
+          <input class='input-validation email-password phone_email' type="text" name="phone_email"
+            placeholder='Celular ou email' required>
           <input class='input-validation email-password' type="password" name="password" placeholder="Nova senha"
             required>
           <div class='birthdate'>
             <label id='label-birthdate'>Data de nascimento</label>
-            <input class='input-validation' type="text" name="birthdate" placeholder='dd/mm/aaaa'>
+            <input class='input-validation birthday' type="text" name="birthdate" placeholder='dd/mm/aaaa'>
           </div>
           <div>
             <label id='label-gender'>Gênero</label>

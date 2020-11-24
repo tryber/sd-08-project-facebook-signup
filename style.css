@@ -1,8 +1,13 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
-  border: 1px solid green;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  left: 0;
+  padding: 20px 50px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .facebook-logo {

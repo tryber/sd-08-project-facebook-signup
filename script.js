@@ -42,10 +42,10 @@ const form = document.querySelector('form');
 const button = form.querySelector('button');
 const rightContent = document.querySelector('.right-content');
 button.addEventListener('click', function (event) {
-    event.preventDefault();
-    const formData = new FormData(form);
-    let result = '';
-    result += `Nome: ${formData.get('name')}</br>`;
-    result += `Gênero: ${formData.get('gender')}`;
-    rightContent.innerHTML = result;
+  event.preventDefault();
+  const formData = new FormData(form);
+  let result = '';
+  result += `Nome: ${formData.get('name')}</br>`;
+  result += `Gênero: ${formData.get('gender')}`;
+  rightContent.innerHTML = result;
 });

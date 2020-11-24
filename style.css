@@ -1,33 +1,50 @@
 .top-bar {
-  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  height: 17vh;
   justify-content: space-between;
-  width: 100%;
+  width: 1100px;
+}
+
+.top-container {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: center;
 }
 
 .facebook-logo {
+  align-self: center;
   display: flex;
+  max-width: 100%;
+}
+
+.facebook-login {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 0 5px 0 0;
+  box-sizing: border-box;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-.facebook-login {
-  display: flex;
-
+.password-container {
+  margin-left: 10px;
 }
 
 .form-control {
   align-self: flex-end;
+  margin-left: 10px;
 }
 
 .main-content {
   display: flex;
   justify-content: center;
+  background-image: url("./imgs/main-content-bg.png");
 }
 
 .left-content {
@@ -38,22 +55,39 @@
   width: 300px;
 }
 
-.forms-nome {
+.name-container {
   display: flex;
 }
 
-.button-radio {
-  display: flex;
+.new-register , .gender-input {
+  box-sizing: border-box;
+  margin-top: 5px;
+  width: 100%;
 }
 
-.divsforms {
-  margin-top: 15px;
+.lastname {
+  box-sizing: border-box;
+  margin-left: 5px;
+  width: calc(100% - 5px);
 }
 
-.divsforms1 {
-  margin-left: 10px;
+.gender-label {
+  display: block;
 }
 
-.botaopersonalizado {
+.hidden {
   display: none;
+}
+
+.middle-footer {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 15px;
+}
+
+.middle-footer hr {
+  width: 100%;
 }

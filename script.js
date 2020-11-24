@@ -22,7 +22,7 @@ function pegarRadioValor(name) {
 
 function exibirDados() {
   const genero = pegarRadioValor('gender');
-  const formulario = document.getElementById('limpa-forms');
+  const formulario = document.querySelector('.right-content');
   const h1 = document.querySelector('h1');
   const h2 = document.querySelector('h2');
   document.querySelector('.right-content').removeChild(h1);
@@ -36,7 +36,8 @@ function exibirDados() {
 
 const botaoEnviar = document.querySelector('#facebook-register');
 const divVazia = document.getElementById('div-vazia');
-botaoEnviar.addEventListener('click', function () {
+botaoEnviar.addEventListener('click', function (event) {
+  event.preventDefault();
   const inputsText = document.getElementsByClassName('inputs');
   divVazia.innerHTML = '';
   for (let index = 0; index < inputsText.length; index += 1) {

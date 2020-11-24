@@ -17,3 +17,18 @@ buttonRegister.addEventListener('click', (event) => {
     }
   }
 });
+
+
+const personalizado = document.getElementsByName('gender');
+const gender = document.querySelector('.gender');
+const campoPersonalizado = document.createElement('input');
+campoPersonalizado.name = 'gender-custom';
+campoPersonalizado.placeholder = 'Gênero (opcional)';
+
+for (let index = 0; index < personalizado.length; index += 1) {
+  personalizado[index].addEventListener('click', () => {
+    if (personalizado[index].value === 'Personalizado') {
+      gender.appendChild(campoPersonalizado);
+    }
+  });
+}

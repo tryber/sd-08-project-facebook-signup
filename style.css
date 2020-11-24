@@ -57,6 +57,20 @@
   display: none;
 }
 
+.name-container {
+  display: flex;
+}
+
+.new-register , .gender-input {
+  box-sizing: border-box;
+  margin-top: 5px;
+  width: 100%;
+}
+
 .hidden {
   display: none;
+}
+
+.gender-label {
+  display: block;
 }

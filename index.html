@@ -36,29 +36,32 @@
         <h1 class="divsforms">Abra uma conta</h1>
           <h2 class="quick-easy  divsforms">É rápido e fácil.</h2>
           <form action="" method="GET" id="limpa-forms">
-            <div class="forms-nome divsforms">
-              <input type="text" name="firstname" placeholder="Nome" required class="inputs">
-              <input type="text" name="lastname" placeholder="Sobrenome" required class="inputs">
-            </div>
-            <div class="divsforms">
-              <input type="text" name="phone_email" placeholder="Celular ou email" required class="inputs">
-            </div>
-            <div class="divsforms">
-              <input type="password" name="password" placeholder="Nova senha" required class="inputs">
-            </div>
-            <div class="divsforms">
-              <label for="" id="label-birthdate">Data de nascimento</label>
-              <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required class="inputs">
-            </div>
-            <div class="divsforms">
-              <label id="label-gender" >Gênero</label>
-              <div class="button-radio divsforms">
-                <input type="radio" name="gender" checked class="radioperso" value="Feminino" id="Feminino">Feminino
-                <input type="radio" name="gender" class="radioperso" value="Masculino" id="Masculino">Masculino
-                <input type="radio" name="gender" class="radioperso" value="Personalizado" id="Personalizado">Personalizado
-              </div>
+            <section class="name-container">
+              <label for="firstname">
+                <input type="text" name="firstname" id="firstname" placeholder="Nome" class="new-register" required>
+              </label>
+              <label for="lastname">
+                <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" class="new-register lastname" required>
+              </label>
+            </section>
+            <label for="phone_email">
+              <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" class="new-register" required>
+            </label>
+            <label for="password">
+              <input type="password" name="password" id="password" placeholder="Nova senha" class="new-register" required>
+            </label>
+            <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+            <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" class="new-register" required>
+            <label for="gender" id="label-gender" class="gender-label">Gênero</label>
+            <label for="female">
+              <input type="radio" name="gender" id="female" value="Feminino" checked>Feminino</label>
+            <label for="male">
+              <input type="radio" name="gender" id="male" value="Masculino">Masculino</label>
+            <label for="custom">
+              <input type="radio" name="gender" id="custom" value="Personalizado">Personalizado</label>
+            <label for="gender-custom">
               <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)" class="gender-input hidden">
-            </div>
+            </label>
               <button id="facebook-register" type="submit">Cadastre-se</button>
               <div id="div-vazia"></div>
           </form>

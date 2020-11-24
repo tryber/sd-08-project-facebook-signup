@@ -10,12 +10,13 @@ const botaoEnviar = document.querySelector('#facebook-register');
 const divVazia = document.getElementById('div-vazia');
 botaoEnviar.addEventListener('click', function (event) {
   event.preventDefault();
-  const inputsText = document.getElementsByClassName('inputs');
+  const inputsText = document.querySelector('#limpa-forms').querySelectorAll('input');
+  console.log(inputsText);
   divVazia.innerHTML = '';
   for (let index = 0; index < inputsText.length; index += 1) {
     const campoInput = inputsText[index];
     if (campoInput.required) {
-      if (campoInput.value === '') {
+      if (campoInput.value === '' && campoInput.type != 'radio') {
         divVazia.innerHTML = 'Campos inválidos';
         return;
       }
@@ -25,7 +26,7 @@ botaoEnviar.addEventListener('click', function (event) {
 });
 
 const botaoPer = document.querySelector('#gender-custom');
-const radioPerso = document.getElementsByClassName('radioperso');
+const radioPerso = document.getElementsByName('gender');
 
 for (let index = 0; index < radioPerso.length; index += 1) {
   radioPerso[index].addEventListener('click', function () {

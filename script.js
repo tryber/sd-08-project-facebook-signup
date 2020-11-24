@@ -15,6 +15,25 @@ persona.addEventListener('click', function () {
   inputGender.placeholder = 'Gênero (opcional)';
   genderContainer.appendChild(inputGender);
 });
+
+const selecionaGenero = document.querySelectorAll('.gender-container input');
+const generoID = document.getElementById('generoID');
+let receberMarked2 = document.querySelector('.marked').value;
+
+function receberMarked(evento) {
+  for (let index = 0; index < selecionaGenero.length; index += 1) {
+    if (selecionaGenero[index].classList.contains('teste')) {
+      selecionaGenero[index].classList.remove('marked');
+    } if (evento.target.classList.contains('teste')) {
+      evento.target.classList.add('marked');
+      receberMarked2 = document.querySelector('.marked').value;
+    }
+  }
+  return receberMarked2;
+}
+
+generoID.addEventListener('click', receberMarked);
+
 const cadastre = document.getElementById('facebook-register');
 const form = document.querySelectorAll('.form input');
 function eraseRightContent() {
@@ -44,17 +63,3 @@ cadastre.addEventListener('click', function (event) {
     createRightContent();
   }
 });
-const selecionaGenero = document.querySelectorAll('.gender-container input');
-const generoID = document.getElementById('generoID')
-let receberMarked2 = document.querySelector('.marked').value
-generoID.addEventListener('click', receberMarked)
-function receberMarked (evento) {
-  for (let index = 0; index < selecionaGenero.length; index += 1) {
-    if (selecionaGenero[index].classList.contains('teste')) {
-      selecionaGenero[index].classList.remove('marked');
-    } if (evento.target.classList.contains('teste'))
-    evento.target.classList.add('marked');
-    receberMarked2 = document.querySelector('.marked').value
-    return receberMarked2;
-}
-}

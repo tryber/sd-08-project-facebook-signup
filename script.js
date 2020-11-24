@@ -26,7 +26,7 @@ addEventListener('click', (event) => {
   } else if (event.target.id === 'erro-button') {
     erro.remove();
   } else if (event.target.id === 'custom-gender') {
-    inputGenderCustom.style.display = 'block';
+    inputGenderCustom.style.display = 'flex';
   } else if (event.target.id === 'type-fem') {
     inputGenderCustom.style.display = 'none';
   } else if (event.target.id === 'type-masc') {

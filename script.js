@@ -35,3 +35,25 @@ personalizadoGender.addEventListener('click', function () {
   createInput.placeholder = 'Gênero (opcional)';
   divGender.appendChild(createInput);
 });
+
+// req 20
+
+function removeRightContent() {
+  
+}
+removeRightContent();
+// const toRemove = document.querySelector('.to-remove');
+//   toRemove.remove();
+//   const name = document.querySelector('name').value;
+//   const email = document.querySelector('email').value;
+//   const lastname = document.querySelector('lastname').value;
+//   const birthdate = document.querySelector('birthdate').value;
+//   const rightContent = document.querySelector('.right-content');
+//   const createParagraph = document.createElement('p');
+//   createParagraph.innerText = `Olá ${name} +  + lastname.innerTEXT + , seja bem vindo! segue informações de cadastro email: email, data de nascimento: birthdate`
+
+//   rightContent.appendChild(createParagraph);
+
+
+
+

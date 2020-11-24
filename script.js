@@ -9,6 +9,7 @@ const name = document.getElementById('name');
 const lastName = document.getElementById('last-name');
 const birthDate = document.getElementById('birthdate');
 const radioChecked = document.querySelector('input[type="radio"]:checked');
+const phone = document.getElementById('phone');
 
 function login() {
   alert(emailTelefone.value);
@@ -18,7 +19,7 @@ loginButton.addEventListener('click', login);
 
 btnFacebook.addEventListener('click', function () {
   let erros = '';
-  for (let index = 2; index < signupInputs.length; index += 1) {
+  for (let index = 0; index < signupInputs.length; index += 1) {
     const input = signupInputs[index];
     if (input.value === '') {
       erros += 'Campos inválidos';
@@ -33,7 +34,7 @@ btnFacebook.addEventListener('click', function () {
     const paragraphName = document.createElement('p');
     paragraphName.innerHTML = `Olá, ${name.value} ${lastName.value}`;
     const paragraphEmail = document.createElement('p');
-    paragraphEmail.innerHTML = emailTelefone.value;
+    paragraphEmail.innerHTML = phone.value;
     const paragraphBirthDate = document.createElement('p');
     paragraphBirthDate.innerHTML = birthDate.value;
     const genero = document.createElement('p');

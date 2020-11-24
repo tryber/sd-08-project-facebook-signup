@@ -11,12 +11,11 @@ const divVazia = document.getElementById('div-vazia');
 botaoEnviar.addEventListener('click', function (event) {
   event.preventDefault();
   const inputsText = document.querySelector('#limpa-forms').querySelectorAll('input');
-  console.log(inputsText);
   divVazia.innerHTML = '';
   for (let index = 0; index < inputsText.length; index += 1) {
     const campoInput = inputsText[index];
     if (campoInput.required) {
-      if (campoInput.value === '' && campoInput.type != 'radio') {
+      if (campoInput.value === '' && campoInput.type !== 'radio') {
         divVazia.innerHTML = 'Campos inválidos';
         return;
       }

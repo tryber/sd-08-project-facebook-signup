@@ -16,7 +16,7 @@ function login() {
 
 loginButton.addEventListener('click', login);
 
-btnFacebook.addEventListener('click', function (event) {
+btnFacebook.addEventListener('click', function () {
   let erros = '';
   for (let index = 2; index < signupInputs.length; index += 1) {
     const input = signupInputs[index];

@@ -23,6 +23,10 @@ function pegarRadioValor(name) {
 function exibirDados() {
   const genero = pegarRadioValor('gender');
   const formulario = document.getElementById('limpa-forms');
+  const h1 = document.querySelector('h1');
+  const h2 = document.querySelector('h2');
+  document.querySelector('.right-content').removeChild(h1);
+  document.querySelector('.right-content').removeChild(h2);
   formulario.innerHTML = '';
   formulario.innerHTML += `<p> Olá, ${nome.value} ${sobreNome.value}</p>`;
   formulario.innerHTML += `<p> ${emailOuTel.value}</p>`;

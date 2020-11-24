@@ -92,7 +92,7 @@ body {
   display: none;
 }
 
-.gender-container{
+.gender-container {
   display: flex;
   flex-flow: column;
 }

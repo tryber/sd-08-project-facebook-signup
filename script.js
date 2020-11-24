@@ -65,7 +65,7 @@ function replaceDiv() {
     tagP3.innerText = document.querySelector('input[type=radio]:checked').id;
     sectionRightClass.appendChild(tagP3);
 
-    divRight.style.display = 'none';
+    sectionMain.removeChild(divRight);
     sectionMain.appendChild(sectionRightClass);
   }
 }

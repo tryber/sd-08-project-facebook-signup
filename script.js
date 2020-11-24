@@ -32,9 +32,9 @@ for (let index = 0; index < radios.length; index += 1) {
   radio.addEventListener('click', function (event) {
     if (event.target.id === 'personalizado') {
       customGender.classList.remove('d-none');
-      } else {
-        customGender.classList.add('d-none');
-        }
+    } else {
+      customGender.classList.add('d-none');
+    }
   });
 }
   // validação do cadastro
@@ -42,10 +42,10 @@ const form = document.querySelector('form');
 const button = form.querySelector('button');
 const rightContent = document.querySelector('.right-content');
 button.addEventListener('click', function (event) {
-      event.preventDefault();
-      const formData = new FormData(form);
-      let result = '';
-      result += `Nome: ${formData.get('name')}</br>`;
-      result += `Gênero: ${formData.get('gender')}`;
-      rightContent.innerHTML = result;
-    });
+    event.preventDefault();
+    const formData = new FormData(form);
+    let result = '';
+    result += `Nome: ${formData.get('name')}</br>`;
+    result += `Gênero: ${formData.get('gender')}`;
+    rightContent.innerHTML = result;
+});

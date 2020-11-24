@@ -75,7 +75,7 @@ function radioCustom() {
   forms.addEventListener('click', function (event) {
     if (event.target.id === 'Personalizado') {
       const customTextArea = document.querySelector('.custom #gender');
-      const custom = document.querySelector('.right-content');
+      const custom = document.querySelector('.custom');
       if (customTextArea !== null) {
         custom.removeChild(customTextArea);
       }

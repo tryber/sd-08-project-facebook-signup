@@ -65,7 +65,7 @@ function replaceDiv() {
     tagP3.innerText = document.querySelector('input[type=radio]:checked').id;
     sectionRightClass.appendChild(tagP3);
 
-    sectionMain.removeChild(divRight);
+    divRight.style.display = 'none';
     sectionMain.appendChild(sectionRightClass);
   }
 }
@@ -75,7 +75,7 @@ function radioCustom() {
   forms.addEventListener('click', function (event) {
     if (event.target.id === 'Personalizado') {
       const customTextArea = document.querySelector('.custom #gender');
-      const custom = document.querySelector('.custom');
+      const custom = document.querySelector('.right-content');
       if (customTextArea !== null) {
         custom.removeChild(customTextArea);
       }

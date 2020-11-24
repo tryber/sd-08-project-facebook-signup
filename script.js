@@ -150,19 +150,3 @@ register.addEventListener('click', function (event) {
 // }
 
 // addRegisterEvent();
-
-// function radioCustom() {
-//   const forms = document.querySelector('.form-register');
-//   forms.addEventListener('click', function (event) {
-//     if (event.target.id === 'personalizado') {
-//       const textArea = document.createElement('input');
-//       const personalizado = document.querySelector('.custom');
-//       textArea.type = 'text';
-//       textArea.name = 'gender-custom';
-//       textArea.placeholder = 'Gênero (opcional)';
-//       personalizado.appendChild(textArea);
-//     }
-//   });
-// }
-
-// radioCustom();

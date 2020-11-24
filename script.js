@@ -1,5 +1,5 @@
-const botaoLogin = document.getElementById('button-login');
-const emailOuTelefone = document.getElementById('user-email-phone');
+const botaoLogin = document.querySelector('#button-login');
+const emailOuTelefone = document.querySelector('#user-email-phone');
 
 function alertBotao() {
   alert(emailOuTelefone.value);
@@ -43,7 +43,7 @@ function exibirDados() {
 }
 
 const botaoEnviar = document.querySelector('#facebook-register');
-const divVazia = document.getElementById('div-vazia');
+const divVazia = document.querySelector('#div-vazia');
 botaoEnviar.addEventListener('click', function (event) {
   event.preventDefault();
   const requiredInputs = document.querySelector('#limpa-forms').querySelectorAll('[required]');

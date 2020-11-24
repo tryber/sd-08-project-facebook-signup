@@ -1,48 +1,73 @@
-const getFormNewAccount = document.querySelector('#register-form');
-const customGenderInput = document.querySelector('#gender-custom');
-const rightContentBox = document.querySelector('.right-content');
-const buttonEnterFacebook = document.querySelector('#button-login');
+const botaoLogin = document.getElementById('button-login');
+const emailOuTelefone = document.getElementById('user-email-phone');
 
-document.querySelector('#female').addEventListener('click', function () { customGenderInput.classList.add('hidden'); });
-document.querySelector('#male').addEventListener('click', function () { customGenderInput.classList.add('hidden'); });
-document.querySelector('#custom').addEventListener('click', function () { customGenderInput.classList.remove('hidden'); });
-
-buttonEnterFacebook.addEventListener('click', function () {
-  const urserMailOrPhone = document.querySelector('#user-email-phone').value;
-  alert(urserMailOrPhone);
-});
-
-function createP(text) {
-  const newP = document.createElement('p');
-  newP.innerHTML = text;
-  rightContentBox.appendChild(newP);
+function alertBotao() {
+  alert(emailOuTelefone.value);
 }
+botaoLogin.addEventListener('click', alertBotao);
 
-function createNewUserInfo() {
-  const helloText = document.createElement('h1');
-  helloText.innerHTML = `Olá, ${document.querySelector('#firstname').value} ${document.querySelector('#lastname').value}`;
-  rightContentBox.appendChild(helloText);
-  createP(document.querySelector('#phone_email').value);
-  createP(document.querySelector('#birthdate').value);
-  createP(document.querySelector('input[type="radio"]:checked').value);
-  rightContentBox.removeChild(getFormNewAccount);
-  rightContentBox.removeChild(rightContentBox.querySelector('h1'));
-  rightContentBox.removeChild(rightContentBox.querySelector('p'));
-}
-
-function validateForm() {
-  const requiredInputs = getFormNewAccount.querySelectorAll('[required]');
-  for (let index = 0; index < requiredInputs.length; index += 1) {
-    const currentInput = requiredInputs[index];
-    if (!currentInput.checkValidity()) {
-      document.querySelector('#error-message').innerHTML = 'Campos inválidos';
-      return;
+function pegarRadioValor(name) {
+  const rads = document.getElementsByName(name);
+  for (let index = 0; index < rads.length; index += 1) {
+    if (rads[index].checked) {
+      return rads[index].value;
     }
   }
-  createNewUserInfo();
+  return null;
 }
 
-document.querySelector('#facebook-register').addEventListener('click', function (event) {
+function exibirDados() {
+  const nome = document.querySelector('[name=firstname]').value;
+  const sobreNome = document.querySelector('[name=lastname]').value;
+  const emailOuTel = document.querySelector('[name=phone_email]').value;
+  const dataNasc = document.querySelector('[name=birthdate]').value;
+  const genero = pegarRadioValor('gender');
+  const formulario = document.querySelector('.right-content');
+  formulario.innerHTML = '';
+
+  const p1 = document.createElement('p');
+  p1.innerHTML = `Olá, ${nome} ${sobreNome}`;
+  formulario.appendChild(p1);
+
+  const p2 = document.createElement('p');
+  p2.innerHTML = emailOuTel;
+  formulario.appendChild(p2);
+
+  const p3 = document.createElement('p');
+  p3.innerHTML = dataNasc;
+  formulario.appendChild(p3);
+
+  const p4 = document.createElement('p');
+  p4.innerHTML = genero;
+  formulario.appendChild(p4);
+}
+
+const botaoEnviar = document.querySelector('#facebook-register');
+const divVazia = document.getElementById('div-vazia');
+botaoEnviar.addEventListener('click', function (event) {
   event.preventDefault();
-  validateForm();
+  const inputsText = document.getElementsByClassName('inputs');
+  divVazia.innerHTML = '';
+  for (let index = 0; index < inputsText.length; index += 1) {
+    const campoInput = inputsText[index];
+    if (campoInput.required) {
+      if (campoInput.value === '') {
+        divVazia.innerHTML = 'Campos inválidos';
+      }
+    }
+  }
+  if (divVazia.innerHTML === '') exibirDados();
 });
+
+const botaoPer = document.querySelector('#botaopersonalizado');
+const radioPerso = document.getElementsByClassName('radioperso');
+
+for (let index = 0; index < radioPerso.length; index += 1) {
+  radioPerso[index].addEventListener('click', function () {
+    if (radioPerso[2].checked === true) {
+      botaoPer.innerHTML = '<input type="text" name="gender-custom" placeholder="Gênero (opcional)">';
+    } else {
+      botaoPer.innerHTML = '';
+    }
+  });
+}

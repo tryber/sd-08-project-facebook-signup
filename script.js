@@ -10,7 +10,7 @@ const submitButton = document.getElementById('facebook-register');
 const getErrorWarning = document.getElementById('error-warning');
 function dateVerify() {
   const getInputBirthday = document.getElementById('birthdate').value;
-  const inputBirthday = document.getElementById('birthdate')
+  const inputBirthday = document.getElementById('birthdate');
   const arrayDate = getInputBirthday.split('/');
   const day = arrayDate[0];
   const month = arrayDate[1];
@@ -20,26 +20,26 @@ function dateVerify() {
     getErrorWarning.classList.remove('input-display');
   } else {
     inputBirthday.classList.remove('error');
-    getErrorWarning.classList.add('input-display');
-    return '';
+    // getErrorWarning.classList.add('input-display');
   }
+  return 0;
 }
 // Verifica campos
-const inputs = document.querySelectorAll('input');
+const inputs = document.querySelectorAll('.input-text');
 
 function emptyVerify() {
-  for (let index = 2; index < inputs.length; index += 1) {
+  for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].value === '') {
       inputs[index].classList.add('error');
       getErrorWarning.classList.remove('input-display');
-    } else if (inputs[index].value != '' || inputs[index].classList.contains('error')) {
-        inputs[index].classList.remove('error')
-        getErrorWarning.classList.add('input-display');
-        return '';
-      }
+    } else if (inputs[index].value !== '') {
+      inputs[index].classList.remove('error');
+      // getErrorWarning.classList.add('input-display');
+      dateVerify();
+      // return 0;
     }
   }
-
+}
 // Mostra um input de texto ao escolher personalizado no campo de gênero
 
 const customRadio = document.querySelectorAll('.checked-gender');
@@ -57,29 +57,32 @@ customRadio.forEach((element) => {
 });
 submitButton.addEventListener('click', function (event) {
   event.preventDefault();
-  const verifyUserFields = emptyVerify();
-  const verifyUserDate = dateVerify();
-  if (verifyUserDate === '' && verifyUserFields === '') {
-    let getFormContent = document.getElementsByClassName('form-content')[0];
-    let getHiddenContent = document.getElementsByClassName('hidden-content')[0];
-    let getHelloUser = document.getElementsByClassName('hello-user')[0];
-    let getUserName = document.querySelector('.input-first-name');
-    let getUserLastName = document.querySelector('.input-last-name');
+  emptyVerify();
+  // const verifyUserDate = dateVerify();
+  let validate = 0;
+  for (let index = 0; index < inputs.length; index += 1) {
+    if (inputs[index].classList.contains('error')) {
+      validate += 1;
+    }
+  }
+  if (validate === 0) {
+    const getFormContent = document.getElementsByClassName('form-content')[0];
+    const getHiddenContent = document.getElementsByClassName('hidden-content')[0];
+    const getHelloUser = document.getElementsByClassName('hello-user')[0];
+    const getUserName = document.querySelector('.input-first-name');
+    const getUserLastName = document.querySelector('.input-last-name');
+    const getUserEmailPhone = document.querySelector('.input-contact');
+    const getBirthday = document.getElementById('birthdate');
+    const getList = document.querySelectorAll('li');
     getFormContent.classList.add('input-display');
     getHiddenContent.classList.remove('input-display');
-    getHelloUser.innerText = `Olá, ${getUserName.value} ${getUserLastName.value}`
+    getHelloUser.innerText = `Olá, ${getUserName.value} ${getUserLastName.value}`;
+    getList[0].innerText = getUserEmailPhone.value;
+    getList[1].innerText = getBirthday.value;
+    for (let index = 0; index < customRadio.length; index += 1) {
+      if (customRadio[index].checked) {
+        getList[2].innerText = customRadio[index].value;
+      }
+    }
   }
-  // console.log(verifyUserFields);
-  console.log(verifyUserDate);
-  
-  
 });
-// const submitButton = document.getElementById('facebook-register');
-// submitButton.addEventListener('click', function () {
-//   const userRegister = document.querySelectorAll('input');
-//   const userName = document.getElementsByClassName('hello-user');
-// });
-
-
-
-

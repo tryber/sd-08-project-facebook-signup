@@ -18,9 +18,6 @@ registerButton.addEventListener('click', function () {
     } else if (inputValidation[input].type === 'radio') {
       if (inputValidation[input].checked === true) {
         somaValidacao += 1;
-        if (inputValidation[input].id !== 'custom') {
-          break;
-        }
       } else if (input === inputValidation.length - 1 &&
         registerButton.nextElementSibling === null) {
         const comunicate = document.createElement('p');
@@ -42,9 +39,9 @@ registerButton.addEventListener('click', function () {
     textEmail.innerText = inputValidation[2].value;
     rightContent.append(textEmail);
     const textDate = document.createElement('p');
-    textDate.innerText = inputValidation[4].value;
+    textDate.innerText = inputValidation[7].value;
     rightContent.append(textDate);
-    for (let input = 5; input <= 7; input += 1) {
+    for (let input = 4; input <= 6; input += 1) {
       if (inputValidation[input].checked) {
         const textGender = document.createElement('p');
         textGender.innerText = inputValidation[input].value;

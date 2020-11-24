@@ -72,11 +72,6 @@
   flex-direction: column;
 }
 
-.gender-class {
-  display: flex;
-  flex-direction: column;
-}
-
 .ed-form {
   display: flex;
   flex-direction: column;

@@ -7,18 +7,18 @@ const div = document.createElement('div');
 const welcome = document.createElement('p');
 
 function showInfo() {
-  for (const entrie of formData.entries()) {
+  Array.from(formData.entries()).forEach((entrie) => {
+    const field = document.createElement('p');
     if (entrie[0] === 'firstname') {
-      welcome.innerText = 'Olá, ' + entrie[1];
+      welcome.innerText = `Olá, ${entrie[1]}`;
     } else if (entrie[0] === 'lastname') {
-      welcome.innerText = welcome.innerText + ' ' + entrie[1];
+      welcome.innerText = `${welcome.innerText} ${entrie[1]}`;
       div.appendChild(welcome);
     } else if (entrie[0] !== 'password') {
-        let campo = document.createElement('p');
-        campo.innerText = entrie[1];
-        div.appendChild(campo);
-      }
+      field.innerText = entrie[1];
+      div.appendChild(field);
     }
+  });
   rightContent.innerHTML = '';
   rightContent.appendChild(div);
 }

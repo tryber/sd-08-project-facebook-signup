@@ -33,22 +33,22 @@
             <p class="quick-easy">É rápido e fácil</p>
             <form action="get" class="cadastro">
                 <div class="nome">
-                    <input type="text" name="firstname" class="entrada" placeholder="Nome">
-                    <input type="text" name="lastname" class="entrada" placeholder="Sobrenome">
+                    <input type="text" name="firstname" class="entrada inputs" placeholder="Nome" required>
+                    <input type="text" name="lastname" class="entrada inputs" placeholder="Sobrenome" required>
                 </div>
-                <input type="text" name="phone_email" placeholder="Celular ou email">
-                <input type="password" name="password" placeholder="Nova senha">
+                <input type="text" name="phone_email" class="dados inputs" placeholder="Celular ou email" required>
+                <input type="password" name="password" class="dados inputs" placeholder="Nova senha" required>
                 <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-                <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+                <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="inputs" required>
                 <label for="gender" id="label-gender">Gênero <br>
                     <label for="feminino">
-                        <input type="radio" name="gender" id="feminino">Feminino
+                        <input type="radio" name="gender" id="feminino" class="radio">Feminino
                     </label>
                     <label for="masculino">
-                        <input type="radio" name="gender" id="masculino">Masculino
+                        <input type="radio" name="gender" id="masculino" class="radio">Masculino
                     </label>
                     <label for="personalizado">
-                        <input type="radio" name="gender" id="personalizado">Personalizado
+                        <input type="radio" name="gender" id="personalizado" class="radio">Personalizado
                     </label>
                 </label>
                 <button type="submit" id="facebook-register">Cadastre-se</button>

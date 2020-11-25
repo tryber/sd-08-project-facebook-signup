@@ -134,8 +134,8 @@ body {
 }
 
 .radio-button {
-  display: flex;
   color: #525353;
+  display: flex;
   font-weight: 700;
 }
 
@@ -143,7 +143,7 @@ body {
   background-color: #55a53c;
   border: 1px solid #2a6318;
   color: white;
-  font-weight: bold;
+  font-weight: 700;
   height: 30px;
   margin-top: 20px;
   width: 150px;

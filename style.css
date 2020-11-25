@@ -60,8 +60,6 @@ h1 {
 .row-group {
   display: flex;
   flex-flow: row nowrap;
-
-  /* justify-content: space-between; */
   padding: 0;
   width: 100%;
 }

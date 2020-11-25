@@ -41,7 +41,6 @@ function emptyVerify() {
   }
 }
 // Mostra um input de texto ao escolher personalizado no campo de gênero
-
 const customRadio = document.querySelectorAll('.checked-gender');
 const inputOption = document.getElementById('option');
 customRadio.forEach((element) => {

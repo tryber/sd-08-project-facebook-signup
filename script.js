@@ -24,21 +24,21 @@ alertLogin();
 
 const inputRadio = document.querySelectorAll('inputRadio');
 const contagem = () => {
-  for(let index = 0; index < inputRadio.length; index +=1) {
+  for (let index = 0; index < inputRadio.length; index += 1) {
     if (inputRadio[index].checked) {
-      counting +=1;
+      counting += 1;
     }
-  } 
-}
+  }
+};
 
 const checkRadio = () => {
-  if(counting === 1) {
+  if (counting === 1) {
     missing.innerHTML = '';
-  }else {
-    missing.innerHTML = 'Campos Inválidos'
+  } else {
+    missing.innerHTML = 'Campos Inválidos';
     form.appendChild(missing);
   }
-} 
+};
 
 const validateTextInputs = () => {
   for (let index = 0; index < textInputs.length; index += 1) {
@@ -73,6 +73,6 @@ buttonSignUp.addEventListener('click', function (event) {
   validateTextInputs();
 });
 
-optionCustom.addEventListener('click', function() {
+optionCustom.addEventListener('click', function () {
   formGender.appendChild(inputCustomGender);
 });

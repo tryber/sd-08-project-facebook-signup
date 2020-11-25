@@ -8,6 +8,7 @@ enterBtn.addEventListener('click', (event) => {
   alert(emailValue.value);
 });
 
+
 customGender.addEventListener('change', () => {
   const customInput = document.createElement('input');
   const formGroup = document.querySelector('#facebook-register').parentNode;

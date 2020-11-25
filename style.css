@@ -28,8 +28,8 @@ body {
 
 .facebook-login input {
   border: 1px solid #263238;
-  max-width: 120px;
   height: 18px;
+  max-width: 120px;
 }
 
 .facebook-login label {

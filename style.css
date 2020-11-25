@@ -9,6 +9,7 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  padding: 0 100px;
 }
 
 .facebook-login {

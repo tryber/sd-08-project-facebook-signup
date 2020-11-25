@@ -1,22 +1,24 @@
 const form = document.getElementsByClassName('facebook-signin')[0];
-const input = document.querySelector('.gender-custom');
+const genderInput = document.querySelector('.gender-custom');
 const radios = document.querySelectorAll('input[type=radio]');
 const rightContent = document.getElementsByClassName('right-content')[0];
+const inputs = document.getElementsByTagName('input');
+const message = document.getElementById('message');
 
 function showInfo() {
-  const formData = new FormData(form);
-  const field = document.createElement('p');
-  rightContent.innerHTML = '';
-  Array.from(formData.entries()).forEach((entrie) => {
-    if (entrie[0] === 'firstname') {
-      field.innerText = `Olá, ${entrie[1]}`;
-    } else if (entrie[0] === 'lastname') {
-      field.innerText = `${field.innerText} ${entrie[1]}`;
-    } else if (entrie[0] !== 'password') {
-      field.innerText = `${field.innerText} ${entrie[1]}`;
+  let radioChecked;
+  const infos = document.createElement('p');
+  for (let radio of radios) {
+    if (radio.checked) {
+      radioChecked = radio.value;
     }
-  });
-  rightContent.appendChild(field);
+  }
+  infos.innerText = `Olá, ${inputs[2].value} ${inputs[3].value}
+  ${inputs[4].value}
+  ${inputs[6].value}
+  ${genderInput.style.display === '' ? radioChecked : genderInput.value}`;
+  rightContent.innerHTML = "";
+  rightContent.appendChild(infos);
 }
 
 function fBtnLogin() {
@@ -26,7 +28,6 @@ function fBtnLogin() {
 
 function fBtnRegister(event) {
   event.preventDefault();
-  const message = document.getElementById('message');
   const validate = form.checkValidity();
   form.reportValidity();
   if (validate) {
@@ -36,16 +37,20 @@ function fBtnRegister(event) {
   }
 }
 
-function offOtherField() {
-  input.style.display = 'none';
+function femaleField() {
+  genderInput.style.display = 'none';
 }
 
-function onOtherField() {
-  input.style.display = 'inline-block';
+function maleField() {
+  genderInput.style.display = 'none';
+}
+
+function otherField() {
+  genderInput.style.display = 'inline-block';
 }
 
 document.getElementById('facebook-register').addEventListener('click', fBtnRegister);
 document.getElementById('button-login').addEventListener('click', fBtnLogin);
-radios[0].addEventListener('click', offOtherField);
-radios[1].addEventListener('click', offOtherField);
-radios[2].addEventListener('click', onOtherField);
+radios[0].addEventListener('click', femaleField);
+radios[1].addEventListener('click', maleField);
+radios[2].addEventListener('click', otherField);

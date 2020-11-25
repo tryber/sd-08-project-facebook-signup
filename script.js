@@ -6,3 +6,17 @@ function buttonEnter() {
   });
 }
 buttonEnter();
+
+function buttonCadastro () {
+  const selectCadastrar = document.getElementById('facebook-register');
+  selectCadastrar.addEventListener('click', event=> {
+      let camposForm = document.getElementsByClassName('verificar');
+      for (index in camposForm) {
+        let valueCampos = camposForm[index].value;
+        if(valueCampos == '') {
+          alert('Campos inválidos');
+        }
+      }
+  })
+}
+buttonCadastro ();

@@ -17,7 +17,7 @@ const message = document.querySelector('#validation-message');
 form.appendChild(message);
 function emptyInput(event) {
   event.preventDefault();
-const inputArray = document.querySelectorAll('.input-validation');
+  const inputArray = document.querySelectorAll('.input-validation');
   for (let index = 0; index < inputArray.length; index += 1) {
     if (inputArray[index].value === '') {
       message.innerHTML = 'Campos inválidos';
@@ -30,7 +30,7 @@ const inputArray = document.querySelectorAll('.input-validation');
       const printAll = `Olá, ${firstName} ${lastName} ${gender} ${phoneMail} ${birthDay}`;
       message.innerHTML = `${printAll}`;
     }
-}
+  }
 }
 facebookRegister.addEventListener('click', emptyInput);
 
@@ -46,20 +46,3 @@ for (let index = 0; index < radios.length; index += 1) {
     }
   });
 }
-  // validação do cadastro
-const form = document.querySelector('form');
-const button = form.querySelector('button');
-const rightContent = document.querySelector('.right-content');
-button.addEventListener('click', function (event) {
-  event.preventDefault();
-  const formData = new FormData(form);
-  let result = '';
-  result += `Olá ${formData.get('firstname')}${formData.get('lastname')}</br>`;
-  result += `${formData.get('phone_email')}`;
-  result += `Gênero: ${formData.get('gender')}`;
-  rightContent.innerHTML = result;
-});
-
-
-
-

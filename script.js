@@ -55,3 +55,4 @@ customGender.addEventListener('click', function () {
   input.setAttribute('placeholder', 'Gênero (opcional)');
   form.insertBefore(input, registerButton);
 });
+

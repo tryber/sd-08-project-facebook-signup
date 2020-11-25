@@ -18,7 +18,8 @@ buttonRegister.addEventListener('click', (event) => {
   const div = document.querySelector('.erro');
 
   // const radioPersonalizado = document.getElementById('personalizado');
-  // adicionei essas duas referencias diretas para adicionar o value do input personalizado ao genero
+  // adicionei essas duas referencias diretas para adicionar o value
+  // do input personalizado ao genero
   // const inputPersonalizado = document.getElementById('input-personalizado');
 
   if (nome.value === '' || sobreNome.value === '' || email.value === '' || birthdate.value === '') {

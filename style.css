@@ -1,11 +1,11 @@
 /* RESET */
-body {
+body{
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
 }
-.top-bar {
+.top-bar{
   background-color: rgb(66, 103, 178);
   border: 1px solid;
   display: flex;

@@ -6,3 +6,17 @@ function buttonEnter() {
   });
 }
 buttonEnter();
+
+
+function campoInvalido() {
+  const selectSubmit = document.getElementById('facebook-register');
+  selectSubmit.addEventListener('click', event=> {
+    const inputName = document.querySelectorAll(input['text']);
+    if (inputName === "") {
+      event.preventDefault();
+      alert("campo nome obrigatório.")
+    }
+    
+  })
+}
+campoInvalido();

@@ -22,10 +22,10 @@ function validarCampos() {
         if (document.querySelector('#span-validator') === null) {
           document.querySelector('.create-account').appendChild(span);
         break;
+        }
+        break;
       }
-      break;
-  }
-  }
+      }
   });
 }
 validarCampos();

@@ -8,16 +8,24 @@ button.addEventListener('click', () => {
 const buttonRegister = document.querySelector('#facebook-register');
 
 buttonRegister.addEventListener('click', (event) => {
-  const form = document.querySelectorAll('.form');
+  const nome = document.getElementById('nome');
+  const sobreNome = document.getElementById('sobrenome');
+  const email = document.getElementById('email');
+  const birthdate = document.getElementById('birthdate');
+
   const div = document.querySelector('.erro');
-  for (let index = 0; index < form.length; index += 1) {
-    if (form[index].value === '') {
-      event.preventDefault();
-      div.innerText = 'Campos inválidos';
-    }
+  const rightContent = document.querySelector('.right-content').children[2];
+  event.preventDefault();
+  if (nome.value === '' || sobreNome.value === '' || email.value === '' || birthdate.value === '') {
+    div.innerText = 'Campos inválidos';
+  } else {
+    rightContent.innerText = `Olá ${nome.value} ${sobreNome.value}.
+
+    Celular ou email: ${email.value}
+    Data de Nascimento: ${birthdate.value}
+    `;
   }
 });
-
 
 const personalizado = document.getElementsByName('gender');
 const newField = document.querySelector('.new-field');

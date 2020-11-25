@@ -1,5 +1,5 @@
 body {
-  background-color: #E8EAF3;
+  background-color: #e8eaf3;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -71,7 +71,7 @@ body {
 .left-content p {
   color: rgb(40, 65, 114);
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: 30px;
   max-width: 400px;
 }
@@ -80,18 +80,18 @@ body {
   width: 300px;
 }
 
-.right-content h1 {
+.titileH1 {
   font-size: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-top: 15px;
 }
 
-.right-content h3 {
+.quick-easy {
   font-weight: 400;
   margin-top: 5px;
 }
 
-#formulario-abre-conta {
+.formulario-abre-conta {
   width: 100%;
 }
 
@@ -120,7 +120,7 @@ body {
 
 .birthdate-input label {
   color: #525353;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .birthdate-input input {
@@ -133,16 +133,13 @@ body {
   margin-top: 10px;
 }
 
-#label-gender {
-  color: #525353;
-  font-weight: bold;
-}
-
 .radio-button {
   display: flex;
+  color: #525353;
+  font-weight: 700;
 }
 
-#facebook-register {
+.bntRegister {
   background-color: #55a53c;
   border: 1px solid #2a6318;
   color: white;

@@ -8,7 +8,7 @@ const mensagem = document.getElementById('mensagem');
 const name = document.getElementById('name');
 const lastName = document.getElementById('last-name');
 const birthDate = document.getElementById('birthdate');
-const phone = document.getElementById('phone');
+const phoni = document.getElementById('phone');
 
 function login() {
   alert(emailTelefone.value);
@@ -33,7 +33,7 @@ btnFacebook.addEventListener('click', function () {
     const paragraphName = document.createElement('p');
     paragraphName.innerHTML = `Olá, ${name.value} ${lastName.value}`;
     const paragraphEmail = document.createElement('p');
-    paragraphEmail.innerHTML = phone.value;
+    paragraphEmail.innerHTML = phoni.value;
     const paragraphBirthDate = document.createElement('p');
     paragraphBirthDate.innerHTML = birthDate.value;
     const genero = document.createElement('p');

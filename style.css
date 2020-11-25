@@ -1,4 +1,5 @@
 body {
+  background-color: #E8EAF3;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -14,16 +15,17 @@ body {
   justify-content: space-between;
   margin: auto;
   max-width: 900px;
-  padding: 5px;
 }
 
-.container-center img {
+.top-bar img {
+  margin-top: 5px;
   width: 150px;
 }
 
 .facebook-login {
   display: flex;
   float: right;
+  margin-top: 5px;
 }
 
 .facebook-login input {
@@ -66,20 +68,86 @@ body {
   width: 800px;
 }
 
+.left-content p {
+  color: rgb(40, 65, 114);
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  max-width: 400px;
+}
+
 .right-content {
-  margin-top: 20px;
   width: 300px;
+}
+
+.right-content h1 {
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+.right-content h3 {
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+#formulario-abre-conta {
+  width: 100%;
 }
 
 .nome-sobrenome {
   display: flex;
+  justify-content: space-between;
+}
+
+.nome-sobrenome input {
+  height: 25px;
+  margin-bottom: 5px;
+  width: 46%;
+}
+
+.email-password input {
+  height: 25px;
+  margin-bottom: 5px;
+  width: 290px;
 }
 
 .birthdate-input {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
+}
+
+.birthdate-input label {
+  color: #525353;
+  font-weight: bold;
+}
+
+.birthdate-input input {
+  height: 25px;
+  margin: 5px 0;
+  width: 290px;
+}
+
+.gender-content {
+  margin-top: 10px;
+}
+
+#label-gender {
+  color: #525353;
+  font-weight: bold;
 }
 
 .radio-button {
   display: flex;
+}
+
+#facebook-register {
+  background-color: #55a53c;
+  border: 1px solid #2a6318;
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  margin-top: 20px;
+  width: 150px;
 }

@@ -1,61 +1,21 @@
-body {
-  background-color: #e8eaf3;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .top-bar {
   background-color: rgb(66, 103, 178);
-  height: 70px;
-}
-
-.container-center {
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  max-width: 900px;
-}
-
-.top-bar img {
-  margin-top: 5px;
-  width: 150px;
 }
 
 .facebook-login {
   display: flex;
   float: right;
-  margin-top: 5px;
-}
-
-.facebook-login input {
-  border: 1px solid #263238;
-  height: 18px;
-  max-width: 120px;
-}
-
-.facebook-login label {
-  color: #eceff1;
-  font-size: 13px;
-  margin: 5px 0;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
 }
 
 .form-control {
   align-self: flex-end;
-}
-
-.form-control button {
-  background-color: #4467ad;
-  border: 1px solid #2e4674;
-  color: white;
-  height: 22px;
-  margin-bottom: 8px;
 }
 
 .main-content {
@@ -68,83 +28,20 @@ body {
   width: 800px;
 }
 
-.left-content p {
-  color: rgb(40, 65, 114);
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 30px;
-  max-width: 400px;
-}
-
 .right-content {
+  margin-top: 20px;
   width: 300px;
-}
-
-.titileH1 {
-  font-size: 30px;
-  margin-bottom: 0;
-  margin-top: 15px;
-}
-
-.quick-easy {
-  font-weight: 400;
-  margin-top: 5px;
-}
-
-.formulario-abre-conta {
-  width: 100%;
 }
 
 .nome-sobrenome {
   display: flex;
-  justify-content: space-between;
-}
-
-.nome-sobrenome input {
-  height: 25px;
-  margin-bottom: 5px;
-  width: 46%;
-}
-
-.email-password input {
-  height: 25px;
-  margin-bottom: 5px;
-  width: 290px;
 }
 
 .birthdate-input {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
-}
-
-.birthdate-input label {
-  color: #525353;
-  font-weight: 700;
-}
-
-.birthdate-input input {
-  height: 25px;
-  margin: 5px 0;
-  width: 290px;
-}
-
-.gender-content {
-  margin-top: 10px;
 }
 
 .radio-button {
-  color: #525353;
   display: flex;
-  font-weight: 700;
-}
-
-.bntRegister {
-  background-color: #55a53c;
-  border: 1px solid #2a6318;
-  color: white;
-  font-weight: 700;
-  height: 30px;
-  margin-top: 20px;
-  width: 150px;
 }

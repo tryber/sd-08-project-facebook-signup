@@ -8,32 +8,30 @@
 </head>
 <body>
   <header class="top-bar">
-    <div class="container-center">
     <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
-      <form class="facebook-login">
-        <div class="form-group">
-          <label id="user-email-phone-label" for="user-email-phone-label">Email ou telefone</label>
-          <input id="user-email-phone" type="text">
-        </div>
-        <div class="form-group">
-          <label id="user-password-label" for="user-password-label">Senha</label>
-          <input type="password" id="user-password">
-        </div>
-        <div class="form-control">
-          <button id="button-login">Entrar</button>
-        </div>
-      </form>
-    </div>
+    <form class="facebook-login">
+      <div class="form-group">
+        <label id="user-email-phone-label" for="user-email-phone-label">Email ou telefone</label>
+        <input id="user-email-phone" type="text">
+      </div>
+      <div class="form-group">
+        <label id="user-password-label" for="user-password-label">Senha</label>
+        <input type="password" id="user-password">
+      </div>
+      <div class="form-control">
+        <button id="button-login">Entrar</button>
+      </div>
+    </form>
   </header>
-  <section class="main-content container-center">
+  <section class="main-content">
     <div class="left-content">
       <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
       <img id="facebook-networking" src="imgs/networking.png" alt="">
     </div>
     <div class="right-content">
-      <h1 class="titileH1">Abra uma conta</h1>
+      <h1>Abra uma conta</h1>
       <h3 class="quick-easy">É rápido e fácil.</h3>
-      <form class="formulario-abre-conta" id="formulario-abre-conta">
+      <form id="formulario-abre-conta">
         <div class="nome-sobrenome">
           <input type="text" name="firstname" placeholder="Nome">
           <input type="text" name="lastname" placeholder="Sobrenome">
@@ -46,7 +44,7 @@
           <label id="label-birthdate" for="">Data de nascimento</label>
           <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
         </div>
-        <div class="gender-content">
+        <div>
           <label id="label-gender" class="radio-button">Gênero</label>
             <label for="feminino">
               <input type="radio" id="feminino" name="gender" value="Feminino">Feminino
@@ -60,7 +58,7 @@
           </label>
         </div>
       </form>
-      <button class="bntRegister" type="submit" id="facebook-register">Cadastre-se</button>
+      <button type="submit" id="facebook-register">Cadastre-se</button>
     </div>
   </section>
   <script src="script.js"></script>

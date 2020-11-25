@@ -2,7 +2,7 @@ const btnLogin = document.getElementById('button-login');
 const rightContent = document.querySelector('.right-content');
 const inputTexto = document.getElementById('formulario-abre-conta');
 const btnCadastro = document.getElementById('facebook-register');
-let genero = String;
+let genero = '';
 
 btnLogin.addEventListener('click', () => {
   const email = document.getElementById('user-email-phone').value;
@@ -20,13 +20,13 @@ function qualGeneroEscolhido() {
 
 function verificaInputTexto() {
   for (let index = 0; index < 4; index += 1) {
+    qualGeneroEscolhido();
     if (inputTexto[index].value === '' || genero === '') {
       const camposInvalidos = document.createElement('p');
       camposInvalidos.innerHTML = 'Campos inválidos';
       inputTexto.appendChild(camposInvalidos);
       break;
     } else {
-      qualGeneroEscolhido();
       rightContent.innerHTML = `Olá, ${inputTexto[0].value} ${inputTexto[1].value},
       email: ${inputTexto[2].value},
       Nasc: ${inputTexto[4].value}

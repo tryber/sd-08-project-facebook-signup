@@ -6,6 +6,7 @@ const erro = document.createElement('section');
 const erroButton = document.createElement('button');
 const inputGenderCustom = document.getElementsByClassName('type-custom')[0];
 const cadastroInput = cadastro.querySelectorAll('input');
+const rightContent = document.querySelector('.right-content');
 addEventListener('click', (event) => {
   if (event.target === button) {
     alert(label.value);
@@ -24,6 +25,8 @@ addEventListener('click', (event) => {
         }
       }
     }
+    rightContent.classList.add('fonteMaior')
+    rightContent.innerHTML = `Olá ${cadastroInput[0].value} ${cadastroInput[1].value} ${cadastroInput[2].value} ${cadastroInput[4].value} ${cadastroInput[5].value}`;
   } else if (event.target.id === 'erro-button') {
     erro.remove();
   } else if (event.target.id === 'custom-gender') {
@@ -35,16 +38,6 @@ addEventListener('click', (event) => {
   }
 });
 
-
-function getInput() {
-  for (key in cadastroInput){
-    localStorage.setItem(cadastroInput[key].name, cadastroInput[key].value);
-  }
-}
-
-if(!localStorage.getItem(' ')){
-  cadastro.innerHTML = `Olá ${cadastroInput[0].value} ${cadastroInput[1].value} Bem vindo `;
- }
 
 
 

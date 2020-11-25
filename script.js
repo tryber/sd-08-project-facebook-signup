@@ -41,28 +41,6 @@ function handleFormMessage() {
   }
 }
 
-function handleIdioms() {
-  const idioms = ['Português (Brasil)', 'English (US)', 'Español', 'Français (France)', 'Italiano', 'العربية', 'Deutsch', '中文(中国)', '日本人'];
-  const idiomsElement = document.getElementById('idioms');
-
-  for (let i = 0; i < idioms.length; i += 1) {
-    const span = document.createElement('span');
-    span.innerText = idioms[i];
-    idiomsElement.appendChild(span);
-  }
-}
-
-function handleStuff() {
-  const stuff = ['Cadastre-se', 'Entrar', 'Messenger', 'Facebook Lite', 'Watch', 'Pessoas', 'Páginas', 'Categorias de Página', 'Locais', 'Jogos', 'Locais', 'Marketplace', 'Grupos', 'Portal', 'Instagram', 'Local', 'Campanhas de arrecadação de fundos', 'Serviços', 'Sobre', 'Criar anúncio', 'Criar Página', 'Desenvolvedores', 'Carreiras', 'Privacidade', 'Cookies', 'Opções de anúncio', 'Termos', 'Ajuda'];
-  const stuffElement = document.getElementById('stuff');
-
-  for (let i = 0; i < stuff.length; i += 1) {
-    const span = document.createElement('span');
-    span.innerText = stuff[i];
-    stuffElement.appendChild(span);
-  }
-}
-
 window.onload = () => {
   const loginBtn = document.getElementById('button-login');
   loginBtn.addEventListener('click', alertLogin);
@@ -77,7 +55,4 @@ window.onload = () => {
   const registerButton = document.getElementById('facebook-register');
 
   registerButton.addEventListener('click', handleFormMessage);
-
-  handleIdioms();
-  handleStuff();
 };

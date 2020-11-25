@@ -23,7 +23,7 @@ registerButton.addEventListener('click', function () {
       form.appendChild(message);
       break;
     }
-  };
+  }
   if (check) {
     const rightContent = document.getElementById('right-section');
     const firstName = document.getElementById('first').value;
@@ -45,7 +45,7 @@ registerButton.addEventListener('click', function () {
     rightContent.innerHTML = `<p> Olá, ${firstName} ${lastName}.
     Seu e-mail é o ${phoneMail}.
     Sua data de nascimento é ${birthDate}.
-    Você se identifica como alguém do sexo ${gender}.<\p>`;
+    Você se identifica como alguém do sexo ${gender}.</p>`;
   }
 });
 

@@ -17,8 +17,8 @@ function validarCampos() {
     const input = selectInput[index];
     if (input.value === '') {
       const span=document.createElement('span');
-      span.innerText='Campos inválidos';
-      span.id='span-validator'; 
+      span.innerText = 'Campos inválidos';
+      span.id = 'span-validator';
       if (document.querySelector('#span-validator') === null) {
         document.querySelector('.create-account').appendChild(span);
         break;
@@ -26,6 +26,6 @@ function validarCampos() {
       break;
   }
   }
-});
-}
+  });
+  }
 validarCampos();

@@ -51,4 +51,9 @@
 
 .cadastro {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.nome {
+  display: flex;
 }

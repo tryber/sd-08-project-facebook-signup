@@ -10,7 +10,7 @@ btnLogin.addEventListener('click', function () {
   alert(userId.value);
 });
 
-function Req20(num, obj, form) {
+function Req20(num, obj, form, e) {
   if (num === 5 && obj !== null) {
     const right = document.getElementsByClassName('right-content')[0];
     right.innerHTML = `<h1>Olá, ${form[0].value} ${form[1].value}</h1>
@@ -21,9 +21,10 @@ function Req20(num, obj, form) {
   }
   labelEmpty[0].style.display = 'block';
   labelEmpty[0].innerHTML = 'Campos inválidos';
+  e.preventDefault();
 }
 
-btnRegister.addEventListener('click', function () {
+btnRegister.addEventListener('click', function (e) {
   const checkForm = document.getElementsByClassName('check-form');
   const radioBtn = document.querySelector('input[name="gender"]:checked');
   let calc = 0;
@@ -33,7 +34,7 @@ btnRegister.addEventListener('click', function () {
     }
   }
 
-  Req20(calc, radioBtn, checkForm);
+  Req20(calc, radioBtn, checkForm, e);
 });
 
 function DisableInput() {

@@ -57,3 +57,7 @@
 .nome {
   display: flex;
 }
+
+.entrada {
+  width: 50%;
+}

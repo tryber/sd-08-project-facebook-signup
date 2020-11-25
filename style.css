@@ -9,8 +9,8 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
   height: 85px;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -79,7 +79,7 @@ body {
 
 .text {
   color: rgb(66, 103, 178);
-  font-weight: bold;
+  font-weight: 400;
   max-width: 350px;
 }
 
@@ -89,14 +89,13 @@ body {
   font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 20px;
-  margin-bottom: 0px;
   margin-top: 4px;
 }
 
-.options{
+.options {
   display: inline-block;
-  font-size: 14px;
   font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 14px;
   max-width: 27%;
 }
 
@@ -117,7 +116,7 @@ body {
   width: 200px;
 }
 
-.space-arround{
+.space-arround {
   margin-bottom: 2px;
   margin-top: 2px;
 }
@@ -125,4 +124,3 @@ body {
 .space-top {
   margin-top: 10px;
 }
- 

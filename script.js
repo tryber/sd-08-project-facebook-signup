@@ -1,29 +1,29 @@
 
-let buttonSignUp = document.getElementById('facebook-register');
-let missing = document.createElement('p');
-let form = document.querySelector('.form');
-let counting = 0;
+const buttonSignUp = document.getElementById('facebook-register');
+const missing = document.createElement('p');
+const form = document.querySelector('.form');
 const inputCustomGender = document.createElement('input');
-inputCustomGender.name = "gender-custom";
-inputCustomGender.placeholder = "Gênero (opcional)";
-inputCustomGender.type = "text";
-inputCustomGender.id = "gender";
-const formGender = document.querySelector(".form-gender");
-const optionCustom = document.querySelector("#personal");
+inputCustomGender.name = 'gender-custom';
+inputCustomGender.placeholder = 'Gênero (opcional)';
+inputCustomGender.type = 'text';
+inputCustomGender.id = 'gender';
+const formGender = document.querySelector('.form-gender');
+const optionCustom = document.querySelector('#personal');
 const firstName = document.querySelector('.firstName');
 const lastName = document.querySelector('.lastName');
 const email = document.querySelector('.email');
 const birthDate = document.querySelector('.birthdate');
-let textInputs = document.querySelectorAll('.input');
+const textInputs = document.querySelectorAll('.input');
 
 const alertLogin = () => {
-    const emailCelular = document.getElementById('user-email-phone');
-    alert(emailCelular.value);
-}
+  const emailCelular = document.getElementById('user-email-phone');
+  alert(emailCelular.value);
+};
+alertLogin();
 
 const validateTextInputs = () => {
-  for (index = 0; index < textInputs.length; index ++){
-    if (textInputs[index].value == ''){
+  for (let index = 0; index < textInputs.length; index += 1) {
+    if (textInputs[index].value === '') {
       missing.innerHTML = 'Campos Inválidos';
       form.appendChild(missing);
     } else {
@@ -45,13 +45,13 @@ const validateTextInputs = () => {
       data.appendChild(gender);
     }
   }
-}
+};
 
-buttonSignUp.addEventListener('click',function(event){
+buttonSignUp.addEventListener ('click', function(event) {
   event.preventDefault();
   validateTextInputs();
-})
+});
 
-optionCustom.addEventListener('click', function(){
+optionCustom.addEventListener ('click', function() {
   formGender.appendChild(inputCustomGender);
-})
+});

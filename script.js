@@ -47,11 +47,11 @@ const validateTextInputs = () => {
   }
 };
 
-buttonSignUp.addEventListener ('click', function(event) {
+buttonSignUp.addEventListener('click', function (event) {
   event.preventDefault();
   validateTextInputs();
 });
 
-optionCustom.addEventListener ('click', function() {
+optionCustom.addEventListener('click', function () {
   formGender.appendChild(inputCustomGender);
 });

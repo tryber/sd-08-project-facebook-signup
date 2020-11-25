@@ -4,6 +4,14 @@ const radioInputs = document.querySelectorAll('.radio');
 let buttonSignUp = document.getElementById('facebook-register');
 const alert = document.createElement('p');
 const form = document.querySelector('.form');
+let counting = 0;
+const inputCustomGender = document.createElement('input');
+inputCustomGender.name = "gender-custom";
+inputCustomGender.placeholder = "Gênero (opcional)";
+inputCustomGender.type = "text";
+inputCustomGender.id = "gender";
+const formGender = document.querySelector(".form-gender");
+const optionCustom = document.querySelector("#personal")
  
 
 function alertLogin() {
@@ -22,7 +30,6 @@ const validateTextInputs = () => {
   }
 }
 
-let counting = 0;
 const validateRadioInputs = () => {
   for (index = 0; index < radioInputs.length; index ++){
     if (radioInputs[index].checked){
@@ -47,4 +54,7 @@ buttonSignUp.addEventListener('click',function(event){
   event.preventDefault();
 })
 
+optionCustom.addEventListener('click', function(){
+  formGender.appendChild(inputCustomGender);
+})
 

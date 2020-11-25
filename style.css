@@ -38,7 +38,7 @@
 
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .left-content {
@@ -47,4 +47,8 @@
 
 .right-content {
   width: 300px;
+}
+
+.cadastro {
+  display: flex;
 }

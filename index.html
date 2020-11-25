@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook-login</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Facebook-login</title>
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="top-bar">
-        <img class="facebook-logo"src="imgs/facebook-logo.png" alt="Logo facebook">
-        <form class="facebook-login">
-            <div class="form-group">
-                <label id="user-email-phone-label"for="">Email ou telefone</label>
-                <input id="user-email-phone"type="email phone">
-            </div>
-            <div class="form-group">
-                <label id="user-password-label"for="">Senha</label>
-                <input id="user-password"type="password">
-                <a class="link-password" href="#">Esqueceu a conta?</a>
-            </div>
-            <div class="form-control">
-                <button id="button-login">Entrar</button>
-            </div>
-        </form>
-    </header>
-    <main class="main-content">
-        <div class="left-content">
-            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-            <img id="facebook-networking"src="imgs/networking.png" alt="">
-        </div>
-        <div class="right-content">
-            <h1>Abra uma conta</h1>
-            <h3 class="quick-easy">É rápido e fácil.</h3>
-            <form class="create-account">
-                <div class="input-name">
-                    <input id="teste" type="text" name="firstname" placeholder="Nome" required>
-                    <input type="text" name="lastname" placeholder="Sobrenome" required>   
-                </div>
-                <input type="email phone" name="phone_email" placeholder="Celular ou email" required>
-                <input type="password" name="password" placeholder="Nova senha" required> 
-                <label for="birth-date" id="label-birthdate">Data de nascimento</label>
-                <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birth-date" required>
-                <label for="" id="label-gender">Gênero</label>
-                <div class="gender">
-                    <input type="radio" name="gender" id="female" value="Feminino" checked required>Feminino
-                    <input type="radio" name="gender" id="male" value="Masculino" required>Masculino
-                    <input type="radio" name="gender" id="personalized" value="Personalizado" required>Personalizado
-                </div>
-                <!-- Source: https://pt.stackoverflow.com/questions/39139/como-impedir-o-submit-de-um-formul%C3%A1rio-vazio  -->
-                <button type="submit" id="facebook-register">Cadastre-se</button>
-            </form>
-    </main>
-<script src="script.js"></script>
+	<header class="top-bar">
+		<img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo facebook">
+		<form class="facebook-login">
+			<div class="form-group">
+				<label id="user-email-phone-label" for="">Email ou telefone</label>
+				<input id="user-email-phone" type="email phone">
+			</div>
+			<div class="form-group">
+				<label id="user-password-label" for="">Senha</label>
+				<input id="user-password" type="password">
+				<a class="link-password" href="#">Esqueceu a conta?</a>
+			</div>
+			<div class="form-control">
+				<button id="button-login" class="button-login">Entrar</button>
+			</div>
+		</form>
+	</header>
+	<main class="main-content">
+		<div class="left-content">
+			<p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+				vida.</p>
+			<img id="facebook-networking" src="imgs/networking.png" alt="">
+		</div>
+		<div class="right-content">
+			<h1>Abra uma conta</h1>
+			<h3 class="quick-easy">É rápido e fácil.</h3>
+			<form class="create-account">
+				<input type="text" name="firstname" placeholder="Nome" required>
+				<input type="text" name="lastname" placeholder="Sobrenome" required>
+				<input type="email phone" name="phone_email" placeholder="Celular ou email" required>
+				<input type="password" name="password" placeholder="Nova senha" required>
+				<label for="birth-date" id="label-birthdate">Data de nascimento</label>
+				<input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birth-date" required>
+				<label for="" id="label-gender">Gênero</label>
+				<div class="gender">
+					<input type="radio" name="gender" id="female" value="Feminino" checked required>Feminino
+					<input type="radio" name="gender" id="male" value="Masculino" required>Masculino
+					<input type="radio" name="gender" id="personalized" value="Personalizado" required>Personalizado
+				</div>
+				<!-- Source: https://pt.stackoverflow.com/questions/39139/como-impedir-o-submit-de-um-formul%C3%A1rio-vazio  -->
+				<button type="submit" id="facebook-register">Cadastre-se</button>
+			</form>
+	</main>
+	<script src="script.js"></script>
 </body>
+
 </html>

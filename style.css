@@ -38,16 +38,22 @@ body {
 
 .main-content {
   background-color: #f0f2f5;
+  display: flex;
   height: 500px;
+  justify-content: space-around;
 }
 
 .right-content {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   width: 300px;
+
 }
 
 .left-content {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  float: left;
   width: 800px;
 }
 

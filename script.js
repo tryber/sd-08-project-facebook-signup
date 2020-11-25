@@ -17,7 +17,7 @@ function showInfo() {
   ${inputs[4].value}
   ${inputs[6].value}
   ${genderInput.style.display === '' ? radioChecked : genderInput.value}`;
-  rightContent.innerHTML = "";
+  rightContent.innerHTML = '';
   rightContent.appendChild(infos);
 }
 

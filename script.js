@@ -1,11 +1,23 @@
 const btnLogin = document.getElementById('button-login');
+const mainContent = document.querySelector('.main-content');
+const rightContent = document.querySelector('.right-content');
+const inputTexto = document.getElementById('formulario-abre-conta');
+const btnCadastro = document.getElementById('facebook-register');
+let genero = String;
+
 btnLogin.addEventListener('click', () => {
   const email = document.getElementById('user-email-phone').value;
   alert(email);
 });
 
-const inputTexto = document.getElementById('formulario-abre-conta');
-const btnCadastro = document.getElementById('facebook-register');
+function qualGeneroEscolhido() {
+  const generos = document.getElementsByName('gender');
+  for (let index = 0; index < generos.length; index += 1) {
+    if (generos[index].checked === true) {
+      genero = generos[index].value;
+    }
+  }
+}
 
 function verificaInputTexto() {
   for (let index = 0; index < 4; index += 1) {
@@ -14,11 +26,15 @@ function verificaInputTexto() {
       camposInvalidos.innerHTML = 'Campos inválidos';
       inputTexto.appendChild(camposInvalidos);
       break;
+    } else {
+      qualGeneroEscolhido();
+      rightContent.innerHTML = `Olá, ${inputTexto[0].value} ${inputTexto[1].value},
+      email: ${inputTexto[2].value},
+      Nasc: ${inputTexto[4].value}
+      Genero: ${genero}`;
     }
   }
 }
-
-btnCadastro.addEventListener('click', verificaInputTexto);
 
 function radioButtons() {
   const btnPresonalizado = document.getElementById('personalizado');
@@ -42,3 +58,5 @@ function radioButtons() {
   });
 }
 radioButtons();
+
+btnCadastro.addEventListener('click', verificaInputTexto);

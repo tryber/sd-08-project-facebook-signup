@@ -12,18 +12,25 @@ buttonRegister.addEventListener('click', (event) => {
   const sobreNome = document.getElementById('sobrenome');
   const email = document.getElementById('email');
   const birthdate = document.getElementById('birthdate');
-
-  const div = document.querySelector('.erro');
+  const genero = document.getElementsByName('gender');
   const rightContent = document.querySelector('.right-content').children[2];
-  event.preventDefault();
+  const div = document.querySelector('.erro');
+
   if (nome.value === '' || sobreNome.value === '' || email.value === '' || birthdate.value === '') {
+    event.preventDefault();
     div.innerText = 'Campos inválidos';
   } else {
-    rightContent.innerText = `Olá ${nome.value} ${sobreNome.value}.
+    for (let index = 0; index < genero.length; index += 1) {
+      event.preventDefault();
+      if (genero[index].checked) {
+        rightContent.innerText = `Olá, ${nome.value} ${sobreNome.value}.
 
-    Celular ou email: ${email.value}
-    Data de Nascimento: ${birthdate.value}
-    `;
+        Celular ou email: ${email.value}
+        Data de Nascimento: ${birthdate.value}
+        Genero: ${genero[index].value}
+        `;
+      }
+    }
   }
 });
 

@@ -7,16 +7,17 @@ function buttonEnter() {
 }
 buttonEnter();
 
-function buttonCadastro () {
+function buttonCadastro() {
   const selectCadastrar = document.getElementById('facebook-register');
-  selectCadastrar.addEventListener('click', event=> {
-      let camposForm = document.getElementsByClassName('verificar');
-      for (index in camposForm) {
-        let valueCampos = camposForm[index].value;
-        if(valueCampos == '') {
+  selectCadastrar.addEventListener('click', ()=>{
+      const camposForm = document.getElementsByClassName('verificar');
+      for(let index in camposForm) {
+        const valueCampos = camposForm[index].value;
+        if (valueCampos === '') {
           alert('Campos inválidos');
         }
       }
-  })
+    }
+  )
 }
-buttonCadastro ();
+buttonCadastro();

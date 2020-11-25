@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   border: 1px solid;
@@ -12,45 +13,56 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+
 .facebook-logo {
   display: flex;
 }
+
 .facebook-login {
   display: flex;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
 }
+
 .form-control {
   align-self: flex-end;
   border: 1px solid;
   display: flex;
 }
+
 #button-login {
   display: flex;
 }
+
 .main-content {
   display: flex;
   justify-content: center;
 }
+
 .left-content {
   border: 1px solid;
   width: 800px;
 }
+
 .right-content {
   border: 1px solid;
   display: flex;
   flex-direction: column;
   width: 300px;
 }
+
 .create-account {
   display: flex;
   flex-direction: column;
 }
+
 .input-name {
   display: flex;
 }
+
 .gender {
   display: flex;
 }

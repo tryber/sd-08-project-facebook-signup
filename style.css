@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  align-items: center;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  background: linear-gradient(white, white, #ccf);
+  display: flex;
+  height: 500px;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form input:nth-child( 1 ) {
+  width: 135px;
+}
+
+.form input:nth-child( 2 ) {
+  width: 135px;
+}
+
+.birthdate {
+  margin-right: 80px;
+}
+
+.gender-container input:nth-child( 1 ) {
+  width: 10px;
+}
+
+.gender-container input:nth-child( 2 ) {
+  width: 10px;
+}
+
+.gender-container input:nth-child( 3 ) {
+  width: 10px;
+}
+
+.genderOpt {
+  margin-right: 40px;
+}
+
+.invalidos {
+  color: red;
+}
+
+.register {
+  margin-right: 100px;
+}
+
+footer {
+  height: 100px;
+  margin-bottom: 0;
+}

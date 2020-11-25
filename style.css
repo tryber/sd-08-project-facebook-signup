@@ -17,10 +17,6 @@ body {
   display: flex;
 }
 
-/* .facebook-login label {
-  flex-direction: column;
-} */
-
 .form-group {
   display: flex;
   flex-direction: column;
@@ -32,25 +28,22 @@ body {
   display: flex;
 }
 
-/* fiz este */
 .main-content {
   display: flex;
   justify-content: center;
 }
 
-/* fiz este */
 .left-content {
   width: 800px;
 }
 
-/* wagnermor */
 .right-content {
   display: flex;
   flex-direction: column;
   width: 300px;
 }
 
-.first-last-name { /* Simplificar as classes que recebem os mesmos estilos e atributos */
+.first-last-name {
   display: flex;
 }
 

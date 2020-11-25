@@ -8,7 +8,7 @@ button.addEventListener('click', () => {
 const buttonRegister = document.querySelector('#facebook-register');
 
 buttonRegister.addEventListener('click', (event) => {
-  event.preventDefault(); // movendo essa linha evitamos duplicidade
+  event.preventDefault();
   const nome = document.getElementById('nome');
   const sobreNome = document.getElementById('sobrenome');
   const email = document.getElementById('email');
@@ -17,25 +17,10 @@ buttonRegister.addEventListener('click', (event) => {
   const rightContent = document.querySelector('.right-content').children[2];
   const div = document.querySelector('.erro');
 
-  // const radioPersonalizado = document.getElementById('personalizado');
-  // adicionei essas duas referencias diretas para adicionar o value
-  // do input personalizado ao genero
-  // const inputPersonalizado = document.getElementById('input-personalizado');
-
   if (nome.value === '' || sobreNome.value === '' || email.value === '' || birthdate.value === '') {
-    // event.preventDefault(); pode ser apagado
     div.innerText = 'Campos inválidos';
   } else {
-    // <-------------------<< esse trecho verifica se o gênero personalizado foi digitado
-    // const generoPersonalizado = inputPersonalizado.value;
-    // if (generoPersonalizado !== '') {
-    //   radioPersonalizado.value = generoPersonalizado;
-    // } else {
-    //   radioPersonalizado.value = 'Personalizado';
-    // }
-    // >>------------------->
     for (let index = 0; index < genero.length; index += 1) {
-      // event.preventDefault(); pode ser apagado
       if (genero[index].checked) {
         rightContent.innerText = `Olá, ${nome.value} ${sobreNome.value}
 
@@ -57,7 +42,7 @@ campoPersonalizado.placeholder = 'Gênero (opcional)';
 
 for (let index = 0; index < personalizado.length; index += 1) {
   personalizado[index].addEventListener('click', () => {
-    if (personalizado[index].id === 'personalizado') { // alterei a referencia para o id
+    if (personalizado[index].id === 'personalizado') {
       newField.appendChild(campoPersonalizado);
     }
   });

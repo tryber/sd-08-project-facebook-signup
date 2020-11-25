@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Facebook</title>
   <link rel="stylesheet" href="./style.css">
-  <script src="script.js" defer></script> <!-- o defer faz com que o script JS rode apenas após o carregamento da DOM-->
+  <script src="script.js" defer></script>
   </head>
 <body>
   <header>
@@ -21,7 +21,6 @@
               <label id="user-password-label" for="user-password">Senha</label>
               <input type="password" id="user-password">
             </div>
-            <!-- fiz este -->
             <div class="form-control">
               <button id="button-login">Entrar</button>
             </div>
@@ -29,18 +28,16 @@
         </div>
     </div>
   </header>
-  <!-- fiz este -->
   <main class="main-content">
-    <!-- fiz este -->
     <div class="left-content">
       <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
       <img src="imgs/networking.png" alt="Slogan Facebook" id="facebook-networking">
     </div>
-    <div class="right-content"><!-- div adicionada wagnermor -->
+    <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="" class="forms">
-        <div class="first-last-name"><!-- adicionei esta div para deixar os dois inputs na mesma lina como pede no reqsito 12. a idéia foi fazer o mesmo que os inputs email e senha no header -->
+        <div class="first-last-name">
           <input type="text" name="firstname" placeholder="Nome" id="nome">
           <input type="text" name="lastname" placeholder="Sobrenome" id="sobrenome">
         </div>
@@ -48,19 +45,18 @@
         <input type="password" name="password" placeholder="Nova senha" class="form">
         <label for="birthdate" id="label-birthdate">Data de nascimento</label>
         <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" >
-        <!-- requisito 16 -->
         <label for="" id="label-gender">Gênero</label>
-        <div class="gender"><!-- adicionei a div radio para aplicar o display flex e manter os radios na mesma linha conforme pede no requisito 16-->
+        <div class="gender">
           <input type="radio" name="gender" id="feminino" value="Feminino">
           <label for="feminino">Feminino</label>
           <input type="radio" name="gender" id="masculino" value="Masculino">
           <label for="masculino">Masculino</label>
-          <input type="radio" name="gender" id="personalizado" value="Personalizado"> <!-- removi o value -->
+          <input type="radio" name="gender" id="personalizado" value="Personalizado">
           <label for="personalizado">Personalizado</label>
         </div>
         <div class="new-field"></div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
-        <div class="erro"></div><!-- Mensagem de erro posicionada após o button -->
+        <div class="erro"></div>
       </form>
     </div>
   </main>

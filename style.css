@@ -18,7 +18,7 @@ body {
 }
 
 .container-center img {
-  margin-top: 10px;
+  width: 150px;
 }
 
 .facebook-login {
@@ -49,11 +49,11 @@ body {
 }
 
 .form-control button {
-  margin-bottom: 6px;
-  height: 22px;
   background-color: #4467ad;
   border: 1px solid #2e4674;
   color: white;
+  height: 22px;
+  margin-bottom: 8px;
 }
 
 .main-content {

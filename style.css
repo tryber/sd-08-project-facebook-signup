@@ -1,10 +1,9 @@
-html,
-body {
+html , body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
   margin: 0;
-  overflow-y: hidden;
   overflow-x: hidden;
+  overflow-y: hidden;
   padding: 0;
   width: 100vw;
 }
@@ -30,7 +29,7 @@ footer span {
   margin-right: 20px;
 }
 
-.idioms span:first-child, .copyright {
+.idioms span:first-child , .copyright {
   color: #7e7e7e;
 }
 
@@ -130,11 +129,6 @@ footer span {
   width: 300px;
 }
 
-.right-content h1 {
-  font-size: 30px;
-  margin: 0;
-}
-
 .right-content p {
   margin-top: 10px;
 }
@@ -176,7 +170,8 @@ footer span {
   display: block;
 }
 
-@media (min-width: 1400px) {
+@media ( min-width : 1400px ) {
+
   .right-content {
     transform: scale(1);
   }

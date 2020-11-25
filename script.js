@@ -6,7 +6,6 @@ function alertLogin() {
 function handleInputGender(event) {
   const registerForm = document.getElementById('signup-container');
   const customInputField = document.getElementById('custom-input');
-  console.log('oi');
 
   if (event.target.value === 'Personalizado' && !customInputField) {
     const createCustomInput = document.createElement('input');

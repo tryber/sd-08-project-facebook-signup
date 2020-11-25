@@ -6,8 +6,19 @@ body {
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+  height: 70px;
+}
+
+.container-center {
   display: flex;
   justify-content: space-between;
+  margin: auto;
+  max-width: 900px;
+  padding: 5px;
+}
+
+.container-center img {
+  margin-top: 10px;
 }
 
 .facebook-login {
@@ -15,13 +26,34 @@ body {
   float: right;
 }
 
+.facebook-login input {
+  border: 1px solid #263238;
+  max-width: 120px;
+  height: 18px;
+}
+
+.facebook-login label {
+  color: #eceff1;
+  font-size: 13px;
+  margin: 5px 0;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-right: 10px;
 }
 
 .form-control {
   align-self: flex-end;
+}
+
+.form-control button {
+  margin-bottom: 6px;
+  height: 22px;
+  background-color: #4467ad;
+  border: 1px solid #2e4674;
+  color: white;
 }
 
 .main-content {

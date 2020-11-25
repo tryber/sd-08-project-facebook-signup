@@ -54,6 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   float: left;
+  margin-left: -100px;
   width: 800px;
 }
 
@@ -129,4 +130,8 @@ body {
 
 .space-top {
   margin-top: 10px;
+}
+
+.image {
+  max-width: 60%;
 }

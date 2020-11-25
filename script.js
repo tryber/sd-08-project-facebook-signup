@@ -25,7 +25,7 @@ function validarCampos() {
         }
         break;
       }
-      }
+    }
   });
 }
 validarCampos();

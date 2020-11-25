@@ -1,5 +1,4 @@
 const btnLogin = document.getElementById('button-login');
-const mainContent = document.querySelector('.main-content');
 const rightContent = document.querySelector('.right-content');
 const inputTexto = document.getElementById('formulario-abre-conta');
 const btnCadastro = document.getElementById('facebook-register');

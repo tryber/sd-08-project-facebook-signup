@@ -9,11 +9,6 @@ inputCustomGender.type = 'text';
 inputCustomGender.id = 'gender';
 const formGender = document.querySelector('.form-gender');
 const optionCustom = document.querySelector('#personal');
-const firstName = document.querySelector('.firstName');
-const lastName = document.querySelector('.lastName');
-const email = document.querySelector('.email');
-const birthDate = document.querySelector('.birthdate');
-const textInputs = document.querySelectorAll('.input');
 
 /* const alertLogin = () => {
     const emailCelular = document.getElementById('user-email-phone');
@@ -38,37 +33,35 @@ function checkRadio() {
   }
 }
 
-const validateTextInputs = () => {
-  for (let index = 0; index < textInputs.length; index += 1) {
-    if (textInputs[index].value === '') {
-      missing.innerHTML = 'Campos Inválidos';
-      form.appendChild(missing);
-    } else {
-      const pName = document.createElement('p');
-      pName.innerHTML = `Olá, ${firstName.value} ${lastName.value}`;
-      const pEmail = document.createElement('p');
-      pEmail.innerHTML = email.value;
-      const pBirthDate = document.createElement('p');
-      pBirthDate.innerHTML = birthDate.value;
-      const gender = document.createElement('p');
-      gender.innerText = document.querySelector('input[type=radio]:checked').value;
-      document.querySelector('.main-content').removeChild(document.querySelector('.right-content'));
-      const data = document.createElement('div');
-      data.className = 'right-content';
-      document.querySelector('.main-content').appendChild(data);
-      data.appendChild(pName);
-      data.appendChild(pEmail);
-      data.appendChild(pBirthDate);
-      data.appendChild(gender);
+function changeRightContainer() {
+  const firstName = document.getElementById('firstname').value;
+  const lastName = document.getElementById('lastname').value;
+  const phoneEmail = document.getElementById('phone-email').value;
+  const birthdate = document.getElementById('birthdate').value;
+  const selectedGender = document.querySelector('input[type="radio"]:checked')
+    .value;
+
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = `<p>Olá, ${firstName} ${lastName}!</p> <p>E-mail ou telefone: ${phoneEmail}</p> <p>Data de nascimento: ${birthdate}</p> <p>Gênero: ${selectedGender}</p>`;
+}
+const registerButton = document.getElementById('facebook-register');
+registerButton.addEventListener('click', function (event) {
+  event.preventDefault();
+  const input = document.querySelectorAll('[required]');
+  for (let index = 0; index < input.length; index += 1) {
+    if (!input[index].value) {
+      document.querySelector('.invalid').style.display = 'block';
+      return;
     }
   }
-};
+  changeRightContainer();
+});
+
 
 buttonSignUp.addEventListener('click', function (event) {
   event.preventDefault();
   contagem();
   checkRadio();
-  validateTextInputs();
 });
 
 optionCustom.addEventListener('click', function () {

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="bulma/css/bulma.min.css"> -->
+    <title>Facebook</title>
+</head>
+<body>
+    <header class="top-bar">
+        <img src="imgs/facebook-logo.png" alt="facebook logo" class="facebook-logo">
+        <form action="" method="GET" class="facebook-login">
+            <div class="form-group">
+                <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+                <input type="text" id="user-email-phone" name="user-email-phone">
+            </div>
+            <div class="form-group">
+                <label for="user-password" id="user-password-label">Senha</label>
+                <input type="password" id="user-password" name="user-password">
+            </div>
+            <div class="form-control">
+                <button type="submit" id="button-login">Entrar</button>
+            </div>
+        </form>
+    </header>
+    <main class="main-content">
+        <div class="left-content">
+            <div class="slogan-container">
+                <p id="facebook-slogan">O Facebook ajuda você a se conectar e <br> compartilhar com as pessoas que fazem parte <br> da sua vida.</p>
+                <img src="imgs/networking.png" alt="Facebook networking" id="facebook-networking">
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="form-content">
+                <h1>Abra uma conta</h1>
+                <h2 class="quick-easy">É rápido e fácil.</h2>
+                <form action="" method="get" class="form-register" novalidate>
+                    <p id="error-warning" class="input-display"><strong>Campos inválidos</strong></p>
+                    <div class="new-user-name">
+                        <input type="text" name="firstname" placeholder="Nome" class="input-first-name input-text" required>
+                        <input type="text" name="lastname" placeholder="Sobrenome" class="input-last-name input-text" required>
+                    </div>
+                    <div class="new-user-contact">
+                        <input type="text" name="phone_email" placeholder="Celular ou email" class="input-contact input-text" required>
+                        <input type="password" name="password" placeholder="Nova senha" class="input-contact input-text" required>
+                    </div>
+                    <div class="user-born">
+                        <label for="" id="label-birthdate">Data de nascimento</label>
+                        <input type="text" name="birthdate" id="birthdate" class="input-text" maxlength="10" minlength="10" placeholder="dd/mm/aaaa" required>
+                    </div>
+                    <div class="genero-container">
+                        <label for="" id="label-gender" class="gender">Gênero</label>
+                        <div class="genero">
+                            <input type="radio" name="gender" value="Feminino" class="checked-gender" id="female" checked>
+                            <label for="female">Feminino</label>
+                            <input type="radio" name="gender" value="Masculino" class="checked-gender" id="male">
+                            <label for="male">Masculino</label>
+                            <input type="radio" name="gender" value="Personalizado" class="checked-gender" id="custom">
+                            <label for="custom">Personalizado</label>
+                        </div>
+                        <input type="text" name="gender-custom" placeholder="Gênero(opcional)" id="option" class="input-display">
+                    </div>
+                    <button type="submit" id="facebook-register" class="register-button"><strong>Cadastre-se</strong></button>
+                </form>
+            </div>
+            <div class="hidden-content input-display">
+                <p class="hello-user"></p>
+                <ul class="user-data">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

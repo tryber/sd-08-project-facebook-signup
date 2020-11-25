@@ -1,5 +1,30 @@
+body{
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(192, 229, 238))
+}
+
+#button-login{
+background-color: rgb(80, 111, 184);
+color: white;
+margin: 5px;
+}
+
 .facebook-login {
   display: flex;
+}
+
+.facebook-logo {
+  width: auto;
+  height: 100%;
+}
+
+#facebook-register{
+  background-color: rgb(23, 153, 23);
+  border: 1px solid black;
+  margin: 5px;
+}
+
+#facebook-slogan {
+  color: rgb(28, 28, 88);
 }
 
 .form-control {
@@ -10,10 +35,15 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 5px;
 }
 
+.input {
+  margin: 5px;
+}
 .left-content {
   width: 800px;
+  padding: 30px;
 }
 
 .main-content {
@@ -30,8 +60,9 @@
 }
 
 .right-content {
-  justify-content: space-around;
   width: 300px;
+  padding: 30px;
+
 }
 
 .top-bar {
@@ -39,4 +70,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 70px;
 }
+
+#user-email-phone-label, #user-password-label{
+  color: white;
+}
+
+#user-email-phone, #user-password {
+  background-color: rgb(230, 232, 233);
+}
+

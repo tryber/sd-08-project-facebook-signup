@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Facebook</title>
+</head>
+<body>
+  <header>
+
+    <article class="top-bar">
+
+      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook Logo">
+      <form class="facebook-login">
+
+        <fieldset class="form-group">
+
+          <label for="" id="user-email-phone-label">Email ou telefone</label>
+          <input type="text" id="user-email-phone">
+        </fieldset>
+
+        <fieldset class="form-group">
+
+          <label for="" id="user-password-label">Senha</label>
+          <input type="text" id="user-password">
+        </fieldset>
+
+        <fieldset class="form-control">
+
+          <button id="button-login">Entrar</button>
+        </fieldset>
+
+      </form>
+    </article>
+  </header>
+
+  <article class="main-content">
+
+    <section class="left-content">
+
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img src="imgs/networking.png" alt="Facebook Networking" id="facebook-networking">
+    </section>
+
+    <section class="right-content">
+
+      <h1>Abra uma conta</h1>
+      <p class="quick-easy">É rápido e fácil.</p>
+      <form>
+
+        <div class="row-group">
+
+          <input class="check-form" type="text" id="firstname" name="firstname" placeholder="Nome">
+          <input class="check-form" type="text" id="lastname" name="lastname" placeholder="Sobrenome">
+        </div>
+        <input class="check-form" type="text" id="phone_email" name="phone_email" placeholder="Celular ou email">
+        <input class="check-form" type="password" id="password" name="password" placeholder="Nova senha">
+        <fieldset class="clear-padding">
+
+          <label id="label-birthdate" for="birthdate">Data de nascimento</label>
+          <input class="check-form" type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+        </fieldset>
+        <fieldset class="form-group clear-padding">
+
+          <label id="label-gender" for="gender">Gênero</label>
+          <div class="row-group">
+
+            <input type="radio" id="feminino" name="gender" value="Feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="masculino" name="gender" value="Masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="personalizado" name="gender" value="Personalizado">
+            <label for="personalizado">Personalizado</label>
+          </div>
+          <div id="persInput"><input type="text" name="gender-custom" id="genderCustom" placeholder="Gênero (Opcional)"></div>
+        </fieldset>
+        <button type="submit" id="facebook-register">Cadastre-se</button>
+        <p class="label-empty">Campos Inválidos</p>
+      </form>
+    </section>
+  </article>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+}
+
+.facebook-logo {
+  align-self: flex-start;
+}
+
+.facebook-login {
+  align-self: flex-end;
+  color: white;
+  display: flex;
+}
+
+fieldset {
+  border: none;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+.main-content {
+  background-color: rgb(240, 242, 245);
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+h1 {
+  color: rgb(24, 119, 242);
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.row-group {
+  display: flex;
+  flex-flow: row nowrap;
+
+  /* justify-content: space-between; */
+  padding: 0;
+  width: 100%;
+}
+
+.label-empty {
+  display: none;
+}
+
+.clear-padding {
+  padding: 0;
+}

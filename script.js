@@ -29,13 +29,13 @@ buttonRegister.addEventListener('click', (event) => {
     if (generoPersonalizado !== '') {
       radioPersonalizado.value = generoPersonalizado;
     } else {
-      radioPersonalizado.value = 'Prefiro não responder';
+      radioPersonalizado.value = 'Personalizado';
     }
     // >>------------------->
     for (let index = 0; index < genero.length; index += 1) {
       // event.preventDefault(); pode ser apagado
       if (genero[index].checked) {
-        rightContent.innerText = `Olá, ${nome.value} ${sobreNome.value}.
+        rightContent.innerText = `Olá, ${nome.value} ${sobreNome.value}
 
         Celular ou email: ${email.value}
         Data de Nascimento: ${birthdate.value}

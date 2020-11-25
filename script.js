@@ -18,15 +18,15 @@ function qualGeneroEscolhido() {
   }
 }
 
-function verificaInputTexto() {
+const verificaInputTexto = () => {
+  qualGeneroEscolhido();
   for (let index = 0; index < 4; index += 1) {
-    if (inputTexto[index].value === '') {
+    if (inputTexto[index].value === '' || genero === '') {
       const camposInvalidos = document.createElement('p');
       camposInvalidos.innerHTML = 'Campos inválidos';
       inputTexto.appendChild(camposInvalidos);
       break;
     } else {
-      qualGeneroEscolhido();
       rightContent.innerHTML = `Olá, ${inputTexto[0].value} ${inputTexto[1].value},
       email: ${inputTexto[2].value},
       Nasc: ${inputTexto[4].value}

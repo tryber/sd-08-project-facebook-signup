@@ -1,5 +1,3 @@
-//  req 7 - criar alert para o botão;
-
 const buttonEntrar = document.querySelector('#button-login');
 
 function addAlert() {
@@ -10,7 +8,6 @@ function addAlert() {
 }
 addAlert();
 
-// validar input
 const facebookRegister = document.querySelector('#facebook-register');
 const form = document.querySelector('.register');
 const message = document.querySelector('#validation-message');

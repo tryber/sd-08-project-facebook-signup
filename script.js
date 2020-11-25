@@ -17,8 +17,8 @@ buttonRegister.addEventListener('click', (event) => {
   const rightContent = document.querySelector('.right-content').children[2];
   const div = document.querySelector('.erro');
 
-  const radioPersonalizado = document.getElementById('personalizado'); // adicionei essas duas referencias diretas para adicionar
-  const inputPersonalizado = document.getElementById('input-personalizado'); // o value do input personalizado ao genero
+  // const radioPersonalizado = document.getElementById('personalizado'); // adicionei essas duas referencias diretas para adicionar
+  // const inputPersonalizado = document.getElementById('input-personalizado'); // o value do input personalizado ao genero
 
   if (nome.value === '' || sobreNome.value === '' || email.value === '' || birthdate.value === '') {
     // event.preventDefault(); pode ser apagado

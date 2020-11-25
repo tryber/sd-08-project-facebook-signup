@@ -25,12 +25,12 @@ buttonRegister.addEventListener('click', (event) => {
     div.innerText = 'Campos inválidos';
   } else {
     // <-------------------<< esse trecho verifica se o gênero personalizado foi digitado
-    const generoPersonalizado = inputPersonalizado.value;
-    if (generoPersonalizado !== '') {
-      radioPersonalizado.value = generoPersonalizado;
-    } else {
-      radioPersonalizado.value = 'Personalizado';
-    }
+    // const generoPersonalizado = inputPersonalizado.value;
+    // if (generoPersonalizado !== '') {
+    //   radioPersonalizado.value = generoPersonalizado;
+    // } else {
+    //   radioPersonalizado.value = 'Personalizado';
+    // }
     // >>------------------->
     for (let index = 0; index < genero.length; index += 1) {
       // event.preventDefault(); pode ser apagado

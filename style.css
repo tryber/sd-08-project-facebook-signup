@@ -33,7 +33,7 @@ body {
   display: flex;
 }
 
-#button-login {
+.button-login {
   display: flex;
 }
 

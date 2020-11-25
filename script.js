@@ -9,7 +9,7 @@ buttonEnter();
 
 function buttonCadastro() {
   const selectCadastrar = document.getElementById('facebook-register');
-  selectCadastrar.addEventListener('click', ()=>{
+  selectCadastrar.addEventListener('click', () => {
       const camposForm = document.getElementsByClassName('verificar');
       for(let index in camposForm) {
         const valueCampos = camposForm[index].value;

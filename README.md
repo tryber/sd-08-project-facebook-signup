@@ -145,7 +145,7 @@ Caso você faça o _download_ de bibliotecas externas, utilize o diretório _lib
 
   Pontos importantes:
   * O formulário deve estar alinhado a direita dentro da barra azul
-  * Existe formulário possui uma classe chamada facebook-login
+  * Este formulário possui uma classe chamada facebook-login
   * O formulário deve ser um flex container
 
 
@@ -184,7 +184,7 @@ Caso você faça o _download_ de bibliotecas externas, utilize o diretório _lib
   Pontos importantes:
   * Crie um elemento com a classe main-content
   * O elemento deve ser um flex container no eixo horizontal
-  * O elemento deve posicionado abaixo da barra azul
+  * O elemento deve está posicionado abaixo da barra azul
 
 
 ### 9 - Crie um subcontainer com a classe left-content para colocar o conteúdo do lado esquerdo dentro do container com a classe main-content

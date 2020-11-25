@@ -12,7 +12,7 @@ buttonRegister.addEventListener('click', () => {
   for (input of inputs) {
     console.log(input.value.length)
     if (input.value.length == 0) {
-      alert('Campos inválidos')
+      document.querySelector('#campos-invalidos').innerHTML = "Campos inválidos";
       return;
     }
   }

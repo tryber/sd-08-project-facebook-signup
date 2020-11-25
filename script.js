@@ -31,6 +31,19 @@ function checkForm() {
   }
 }
 
+function genderPers() {
+  const divPers = document.getElementById('undefinedGender');
+  const input = document.createElement('input');
+  input.type = 'text';
+  input.name = 'gender-custom';
+  input.placeholder = 'Gênero (opcional)';
+  divPers.appendChild(input);
+}
+
+function clearUndefinedGender() {
+  const divPers = document.getElementById('undefinedGender');
+  divPers.innerHTML = '';
+}
 
 window.onload = () => {
   const botaoEnvia = document.getElementById('button-login');
@@ -38,4 +51,13 @@ window.onload = () => {
 
   const botaoCadastro = document.getElementById('facebook-register');
   botaoCadastro.onclick = checkForm;
+
+  const genderPerso = document.getElementById('pers');
+  genderPerso.onclick = genderPers;
+
+  const genderMasculino = document.getElementById('mas');
+  genderMasculino.onclick = clearUndefinedGender;
+
+  const genderFeminino = document.getElementById('fem');
+  genderFeminino.onclick = clearUndefinedGender;
 };

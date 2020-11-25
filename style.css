@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.facebook-login {
+  align-content: center;
+  display: flex;
+}
+
+/* .facebook-login label {
+  flex-direction: column;
+} */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* fiz este */
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+/* fiz este */
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+/* fiz este */
+.left-content {
+  width: 800px;
+}
+
+/* wagnermor */
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.first-last-name { /* Simplificar as classes que recebem os mesmos estilos e atributos */
+  display: flex;
+}
+
+.right-content form label {
+  display: flex;
+}
+
+.gender {
+  display: flex;
+}

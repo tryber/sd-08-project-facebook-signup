@@ -1,6 +1,10 @@
-html , body {
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
   margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
   padding: 0;
   width: 100vw;
 }
@@ -9,48 +13,159 @@ label {
   display: block;
 }
 
+footer {
+  height: 30%;
+  padding: 0 200px;
+}
+
+footer hr {
+  border: 0;
+  border-bottom: 1px solid #d8dade;
+}
+
+footer span {
+  color: #31508b;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.idioms span:first-child, .copyright {
+  color: #7e7e7e;
+}
+
+.copyright {
+  font-size: 11px;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
+  color: white;
   display: flex;
-  justify-content: space-between;
+  height: 9%;
+  justify-content: space-around;
+  max-height: 50px;
+  padding: 10px;
   width: 100%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.form-group p {
+  color: #92acd1;
+  margin: 0;
+}
+
+.form-group input {
+  border: 1px solid #1b274f;
+  height: 20px;
+  margin-top: 5px;
 }
 
 .facebook-login {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
+}
+
+.facebook-logo {
+  max-width: 140px;
+  width: 10%;
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
+}
+
+.form-control button {
+  background-color: #3a5ea6;
+  border: 1px solid #093581;
+  border-radius: 1px;
+  color: white;
+  font-weight: 600;
+  height: 23px;
+  margin-top: 3px;
 }
 
 .main-content {
+  background: linear-gradient(to bottom, #fefefe, #cdd3e4);
   display: flex;
   flex-direction: row;
+  height: 60%;
   justify-content: center;
   margin: 20px 0;
 }
 
 .left-content {
   align-items: flex-start;
+  color: #103253;
   display: flex;
   flex-flow: column wrap;
+  font-size: 20px;
+  font-weight: 600;
+  height: 80%;
+  margin-left: 200px;
   max-width: 800px;
   width: 800px;
 }
 
+.left-content p {
+  max-width: 80%;
+}
+
 .right-content {
+  color: #2d2d2d;
   display: flex;
   flex-direction: column;
+  margin-right: 200px;
   max-width: 300px;
+  padding-right: 100px;
+  transform: scale(0.88);
   width: 300px;
+}
+
+.right-content h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.right-content p {
+  margin-top: 10px;
+}
+
+.right-content input {
+  border: 1px solid #b5c0d2;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+  padding: 10px;
+  width: 386px;
+}
+
+.right-content button {
+  background: linear-gradient(to bottom, #63a854, #4e7c3f);
+  border: 1px solid #356225;
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  height: 40px;
+  width: 180px;
+}
+
+.right-content .radios {
+  display: flex;
+  width: 380px;
+}
+
+.full-name input + input {
+  margin-left: 5px;
 }
 
 .full-name {
@@ -59,4 +174,10 @@ label {
 
 .custom-input {
   display: block;
+}
+
+@media (min-width: 1400px) {
+  .right-content {
+    transform: scale(1);
+  }
 }

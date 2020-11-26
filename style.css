@@ -113,21 +113,21 @@ body {
 
 .styleData {
   color: rgb(156, 155, 155);
-  font-weight: 600;
   font-size: 18px;
+  font-weight: 600;
   position: relative;
   top: 5px;
 }
 
 .styleLabelGenero {
   color: rgb(156, 155, 155);
-  font-weight: 600;
   font-size: 18px;
+  font-weight: 600;
   position: relative;
   top: 5px;
 }
 
-.positionGenero{
+.positionGenero {
   position: relative;
   top: 10px;
 }

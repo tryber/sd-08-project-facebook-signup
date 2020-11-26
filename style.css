@@ -1,0 +1,104 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.facebook-logo {
+  text-align: left;
+  width: 100px;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.main-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.main-content .left-content {
+  align-self: center;
+  width: 800px;
+}
+
+.main-content .right-content {
+  width: 300px;
+}
+
+.form {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.form .name-input {
+  margin: 0 auto;
+  padding: 5px;
+  width: 40%;
+}
+
+.form .lastname-input {
+  margin: 0 auto;
+  padding: 5px;
+  width: 40%;
+}
+
+.form .phoneemail-input {
+  margin: 10px auto;
+  padding: 5px;
+  width: 90%;
+}
+
+.form .password-input {
+  margin: 0 auto;
+  padding: 5px;
+  width: 90%;
+}
+
+.form .label-birthdate {
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.form .birthdate-input {
+  margin-left: 10px;
+}
+
+.form .label-gender {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.radio-button-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.form button {
+  margin: 10px;
+  padding: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}

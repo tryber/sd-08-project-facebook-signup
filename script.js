@@ -52,12 +52,12 @@ window.onload = () => {
   const botaoCadastro = document.getElementById('facebook-register');
   botaoCadastro.onclick = checkForm;
 
-  const genderPerso = document.getElementById('pers');
+  const genderPerso = document.getElementById('Personalizado');
   genderPerso.onclick = genderPers;
 
-  const genderMasculino = document.getElementById('mas');
+  const genderMasculino = document.getElementById('Masculino');
   genderMasculino.onclick = clearUndefinedGender;
 
-  const genderFeminino = document.getElementById('fem');
+  const genderFeminino = document.getElementById('Feminino');
   genderFeminino.onclick = clearUndefinedGender;
 };

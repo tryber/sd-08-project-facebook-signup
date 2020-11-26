@@ -73,6 +73,7 @@ function radioCustom() {
       textArea.name = 'gender-custom';
       textArea.placeholder = 'Gênero (opcional)';
       textArea.id = 'gender';
+      textArea.className = 'inputText'
       custom.appendChild(textArea);
     } else if (event.target.id !== 'gender') {
       const customTextArea = document.querySelector('.custom #gender');

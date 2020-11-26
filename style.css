@@ -76,7 +76,7 @@ body {
 .btnEntrar {
   background-color: rgb(66, 103, 178);
   border: 1px solid black;
-  border-radius: 2px;
+  border-radius: 4px;
   color: white;
   margin: 2px;
   padding: 4px 12px;
@@ -102,11 +102,43 @@ body {
 
 .inputText {
   border: 1px solid rgb(156, 155, 155);
-  border-radius: 2px;
+  border-radius: 4px;
   margin-top: 6px;
   padding: 8px;
 }
 
 .styleSenhaEmail {
   width: 148%;
+}
+
+.styleData {
+  color: rgb(156, 155, 155);
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  top: 5px;
+}
+
+.styleLabelGenero {
+  color: rgb(156, 155, 155);
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  top: 5px;
+}
+
+.positionGenero{
+  position: relative;
+  top: 10px;
+}
+
+.btnRegistrar {
+  background-color: #42b72a;
+  border: 1px solid #42b72a;
+  border-radius: 4px;
+  color: white;
+  position: relative;
+  top: 25px;
+  padding: 8px 30px;
+  font-size: 16px;
 }

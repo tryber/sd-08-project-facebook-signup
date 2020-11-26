@@ -59,7 +59,7 @@ body {
 .inputEntrar {
   border: 1px solid  rgb(156, 155, 155);
   border-radius: 2px;
-  margin: 0 8px 20px;
+  margin: 0 8px 18px;
   padding: 4px;
   position: relative;
   top: 6px;
@@ -81,7 +81,7 @@ body {
   margin: 2px;
   padding: 4px 12px;
   position: relative;
-  top: -12px;
+  top: -30px;
 }
 
 .slogan {
@@ -89,4 +89,13 @@ body {
   font-size: 24px;
   font-weight: 600;
   width: 530px;
+}
+
+.msgEsqueceu {
+  color: white;
+  font-weight: 100;
+  left: 7px;
+  opacity: .6;
+  position: relative;
+  top: -8px; 
 }

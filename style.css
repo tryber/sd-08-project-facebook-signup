@@ -23,7 +23,9 @@ body {
 }
 
 .main-content {
+  background-color: #e9ebee;
   display: flex;
+  height: 800px;
   justify-content: space-around;
 }
 
@@ -79,5 +81,12 @@ body {
   margin: 2px;
   padding: 4px 12px;
   position: relative;
-  top: -11px;
+  top: -12px;
+}
+
+.slogan {
+  color: rgb(66, 103, 178);
+  font-size: 24px;
+  font-weight: 600;
+  width: 530px;
 }

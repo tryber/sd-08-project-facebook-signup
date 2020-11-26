@@ -1,0 +1,42 @@
+.facebook-login {
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.nome {
+  display: flex;
+}
+
+.personalizado{
+  display: none;
+}
+
+.right-content {
+  justify-content: space-around;
+  width: 300px;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -11,60 +11,66 @@
     <img class="facebook-logo" src="imgs/facebook-logo.png">
     <form action="" class="facebook-login">
       <div class="form-group">
-        <label for="user-email-phone-label" id="user-email-phone-label">Email ou telefone</label>
-        <input type="texte" id="user-email-phone">
+        <label for="user-email-phone-label" class="textHeader" id="user-email-phone-label">Email ou telefone</label>
+        <input class="inputLogin" type="texte" id="user-email-phone">
       </div>
       <div class="form-group">
-        <label for="user-password-label" id="user-password-label">Senha</label>
-        <input type="password" id="user-password"/>
+        <label for="user-password-label" class="textHeader" id="user-password-label">Senha</label>
+        <input class="inputLogin" type="password" id="user-password"/>
       </div>
       <div class="form-control">
-        <button id="button-login">Entrar</button>
+        <button class="btn-entrar" id="button-login">Entrar</button>
       </div>
     </form>
   </header>
   <section class="main-content">
     <section class="left-content">
-      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-      <img src="imgs/networking.png" id="facebook-networking">
+      <p id="facebook-slogan" class="slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img src="imgs/networking.png" id="facebook-networking" class="imgNetworking">
     </section>
     <section class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form action="post" class="form-register">
+      <form action="" class="form-register">
         <div class="nome">
-          <input type="text" name="firstname" id="nome" placeholder="Nome" class="inputText">
+          <input type="text" class="styleInput" name="firstname" id="nome" placeholder="Nome" class="inputText">
         </div>
         <div class="nome">
-          <input type="text" name="lastname" id="sobrenome" placeholder="Sobrenome" class="inputText">
+          <input type="text" class="styleInput" name="lastname" id="sobrenome" placeholder="Sobrenome" class="inputText">
         </div>
         <div>
-          <input type="text" name="phone_email" id="emailCelular" placeholder="Celular ou email" class="inputText">
+          <input type="text" class="styleInput tamanho" name="phone_email" id="emailCelular" placeholder="Celular ou email" class="inputText">
         </div>
         <div>
-          <input type="password" name="password" id="senha" placeholder="Nova senha" class="inputText">
+          <input type="password" class="styleInput tamanho" name="password" id="senha" placeholder="Nova senha" class="inputText">
         </div>
         <div>
-          <label for="post" id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" id="" placeholder="dd/mm/aaaa" class="inputText">
+          <label class="dataText" for="post" id="label-birthdate">Data de nascimento</label>
+          <input type="text" class="styleInput" name="birthdate" id="" placeholder="dd/mm/aaaa" class="inputText">
         </div>
         <div>
-          <label for="" id="label-gender">Gênero</label>
+          <label for="" class="textGenero" id="label-gender">Gênero</label>
           <div class="custom">
-            <label for="feminino">Feminino</label>
-            <input type="radio" name="gender" id="feminino" class="inputRadio">
-            <label for="masculino">Masculino</label>
-            <input type="radio" name="gender" id="masculino" class="inputRadio">
-            <label for="personalizado">Personalizado</label>
-            <input type="radio" name="gender" id="personalizado" class="inputRadio">
+            <input type="radio" class="seletor" name="gender" id="Feminino" value="Feminino" class="inputRadio">
+            <label for="Feminino" class="labelGenero" >Feminino</label>
+            <input type="radio" name="gender" class="seletor" id="Masculino" value="Masculino" class="inputRadio">
+            <label for="Masculino" class="labelGenero">Masculino</label>
+            <input type="radio" name="gender" class="seletor" id="Personalizado" value="Personalizado" class="inputRadio">
+            <label for="Personalizado" class="labelGenero">Personalizado</label>
+            <span class="textTermos">Ao clicar em Cadastre-se, voce concorda com nossos Termos, Politica de Dados e Politica de Cookies. Voce pode receber notificacoes por SMS e pode cancelar isso quando quiser.</span>
           </div>
         </div>
         <div>
-          <button type="button" id="facebook-register">Cadastre-se</button>
+          <button type="submit" class="register" id="facebook-register">Cadastre-se</button>
         </div>
       </form>
     </section>
   </section>
+  <footer>
+    <div class="rodape">
+      
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

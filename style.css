@@ -21,19 +21,17 @@ body {
 }
 
 .main-content {
-  border: 2px solid black;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
 }
 
 .main-content .left-content {
-  border: 2px solid red;
   width: 800px;
+  align-self: center;
 }
 
 .main-content .right-content {
-  border: 2px solid red;
   width: 300px;
 }
 

@@ -4,12 +4,12 @@
 }
 
 .facebook-logo {
-  align-self: flex-start;
+  justify-self: left;
 }
 
 .facebook-login {
-  align-self: flex-end;
   display: flex;
+  justify-self: right;
 }
 
 .form-group {

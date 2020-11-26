@@ -8,6 +8,7 @@ const message = document.getElementById('message');
 function showInfo() {
   let radioChecked;
   const infos = document.createElement('p');
+
   for (let index = 0; index < radios.length; index += 1) {
     if (radios[index].checked) {
       radioChecked = radios[index].value;

@@ -4,9 +4,9 @@ body {
 }
 
 h1 , h3 {
-  width: 100%;
-  margin-top: 10px;
   margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
 }
 
 .top-bar {
@@ -83,6 +83,6 @@ h1 , h3 {
 }
 
 .label-in-form {
-  margin-top: 5px;
   margin-bottom: 5px;
+  margin-top: 5px;
 }

@@ -18,7 +18,7 @@
         </section>
         <section class='form-group'>
           <label id='user-password-label'>Senha</label>
-          <input type='text' id='user-password'>
+          <input type='password' id='user-password'>
         </section>
         <section class='form-control'>
           <button id='button-login'>Entrar</button>
@@ -47,13 +47,20 @@
             <label id='label-birthdate'>Data de nascimento</label>
             <input type='text' name='birthdate' placeholder='dd/mm/aaaa'>
           </section>
-          <section class='gender'>
-            <label id='label-gender'>Gênero</label>
-            <section>
-              <input type='radio' name='gender' value='Feminino'>Feminino <input type='radio' name='gender'
-                value='Masculino'>Masculino <input type='radio' name='gender' value='Personalizado'>Personalizado
-            </section>
-          </section>
+          <div class="form-gender">
+            <label id="label-gender">Gênero</label>
+            <div class="buttons-gender">
+              <label for="female">
+                <input type="radio" name="gender" id="female" value="Feminino" checked>Feminino
+              </label>
+              <label for="male">
+                <input type="radio" name="gender" id="male" value="Masculino">Masculino
+              </label>
+              <label for="custom">
+                <input type="radio" name="gender" id="custom" value="Personalizado">Personalizado
+              </label>
+            </div>
+          </div>
           <button id='facebook-register' type='submit'>Cadastre-se</button>
         </form>
       </section>

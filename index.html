@@ -33,29 +33,25 @@
       <h1>Abra uma conta</h1>
       <h3 class="quick-easy">É rápido e fácil.</h3>
       <div>
-        <form class="form-register" action="GET">
-          <div class="form-group-inline">
-            <input class="firstName" type="text" placeholder="Nome" name="firstname">
-            <input class="lastName" type="text" placeholder="Sobrenome" name="lastname">
+        <form class="form-register" action="get">
+          <input class="firstName" type="text" placeholder="Nome" name="firstname" required>
+          <input class="lastName" type="text" placeholder="Sobrenome" name="lastname" required>
+          <input class="phone_email" type="text" placeholder="Celular ou email" name="phone_email" required>
+          <input class="password" type="password" placeholder="Nova senha" name="password" required>
+          <label class="label-in-form" for="birthdate" id="label-birthdate">Data de nascimento</label>
+          <input class="birthdate" type="text" placeholder="dd/mm/aaaa" name="birthdate" required>
+          <label class="label-in-form" id="gender-selection">Gênero:</label>
+          <div id="genderAll" class="gender-selection">
+            <input id="gender-female" class="gender-sel gender-female" type="radio" name="gender" value="Feminino" checked>
+            <label for="gender-female" id="label-gender">Feminino</label>
+            <input id="gender-male" class="gender-sel gender-male" type="radio" name="gender" value="Masculino">
+            <label for="gender-male" id="label-gender">Masculino</label>
+            <input id="gender-personalized" class="gender-sel gender-personalized" type="radio" name="gender" value="Personalizado">
+            <label for="gender-personalized" id="label-gender">Personalizado</label>
           </div>
-            <input class="phone_email" type="text" placeholder="Celular ou email" name="phone_email" required>
-            <input class="password" type="password" placeholder="Nova senha" name="password" required>
-            <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-            <input class="birthdate" type="text" placeholder="dd/mm/aaaa" name="birthdate">
-            <label id="gender-selection">Gênero:</label>
-            <div id="genderAll" class="gender-selection">
-              <label for="gender-female" id="label-gender"></label>
-              <input id="gender-female" class="gender-sel gender-female" type="radio" name="gender" value="Feminino"
-                checked>Feminino
-              <label for="gender-male" id="label-gender"></label>
-              <input id="gender-male" class="gender-sel gender-male" type="radio" name="gender" value="Masculino">Masculino
-              <label for="gender-personalized" id="label-gender">Personalizado</label>
-              <input id="gender-personalized" class="gender-sel gender-personalized" type="radio" name="gender" value="Personalizado">
-            </div>
-            <input type="text" id="genderText" placeholder="" class="hidden">
-            <div class="buttonSubmit">
-              <button id="facebook-register" type="submit">Cadastre-se</button>
-            </div>
+          <input type="text" id="genderText" placeholder="Gênero (opcional)" class="input-gender-personalized hidden">
+          <div class="buttonSubmit">
+            <button id="facebook-register" type="submit">Cadastre-se</button>
           </div>
         </form>
       </div>

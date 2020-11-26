@@ -3,6 +3,12 @@ body {
   padding: 0;
 }
 
+h1 , h3 {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -20,10 +26,6 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
-}
-
-.form-group-inline {
-  display: flex;
 }
 
 .form-control {
@@ -46,38 +48,41 @@ body {
 
 .right-content {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 300px;
 }
 
-.quick-easy {
-  display: flex;
-  flex-direction: column;
-}
-
 .lastName , .firstName {
+  margin-bottom: 3px;
   width: 46%;
 }
 
-.phone_email , .password , .birthdate {
+.phone_email , .password , .birthdate , .input-gender-personalized {
+  margin-bottom: 3px;
   width: 100%;
 }
 
 .form-register {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .buttonSubmit {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .gender-selection {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .hidden {
   display: none;
+}
+
+.label-in-form {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

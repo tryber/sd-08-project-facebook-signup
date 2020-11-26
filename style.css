@@ -87,3 +87,7 @@ h1 , h3 {
   margin-top: 5px;
   width: 100%;
 }
+
+.invalid {
+  width: 100%;
+}

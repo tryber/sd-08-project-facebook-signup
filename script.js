@@ -16,3 +16,24 @@ document.getElementById('genderAll').addEventListener('click', (e) => {
     }
   }
 });
+
+document.querySelector('#facebook-register').addEventListener('click', () => {
+  const rightContent = document.querySelector('.right-content');
+  const firstName = document.querySelector('.firstName').value;
+  const lastName = document.querySelector('.lastName').value;
+  const phone_email = document.querySelector('.phone_email').value;
+  const password = document.querySelector('.password').value;
+  const birthdate = document.querySelector('.birthdate').value;
+  const gender = document.querySelector('input[type="radio"]:checked').value;
+  if (firstName === '' || lastName === '' || phone_email === '' || password === '' || birthdate === '' ) {
+    if (document.querySelector('.invalid') === null) {
+      const span = document.createElement('span');
+      span.innerHTML = 'Campos inválidos';
+      span.classList = 'invalid';
+      document.querySelector('.form-register').appendChild(span);
+    }
+  } else {
+    rightContent.innerHTML = ''
+    rightContent.innerHTML = `Olá, ${firstName} ${lastName}, ${phone_email}, ${birthdate}, ${gender}`;
+  }
+})

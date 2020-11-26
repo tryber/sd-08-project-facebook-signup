@@ -9,7 +9,7 @@
 <body>
   <header class="top-bar">
     <img src="imgs/facebook-logo.png" class="facebook-logo">
-    <form class="facebook-login" action="GET">
+    <form class="facebook-login" action="">
       <div class="form-group">
         <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
         <input type=text id="user-email-phone" name="user-email-phone">
@@ -33,13 +33,13 @@
       <h1>Abra uma conta</h1>
       <h3 class="quick-easy">É rápido e fácil.</h3>
       <div>
-        <form class="form-register" action="get">
-          <input class="firstName" type="text" placeholder="Nome" name="firstname" required>
-          <input class="lastName" type="text" placeholder="Sobrenome" name="lastname" required>
-          <input class="phone_email" type="text" placeholder="Celular ou email" name="phone_email" required>
-          <input class="password" type="password" placeholder="Nova senha" name="password" required>
+        <form class="form-register" action="">
+          <input class="firstName input" type="text" placeholder="Nome" name="firstname" required>
+          <input class="lastName input" type="text" placeholder="Sobrenome" name="lastname" required>
+          <input class="phone_email input" type="text" placeholder="Celular ou email" name="phone_email" required>
+          <input class="password input" type="password" placeholder="Nova senha" name="password" required>
           <label class="label-in-form" for="birthdate" id="label-birthdate">Data de nascimento</label>
-          <input class="birthdate" type="text" placeholder="dd/mm/aaaa" name="birthdate" required>
+          <input class="birthdate input" type="text" placeholder="dd/mm/aaaa" name="birthdate" required>
           <label class="label-in-form" id="label-gender">Gênero:</label>
           <div id="genderAll" class="gender-selection">
             <input id="gender-female" class="gender-sel gender-female" type="radio" name="gender" value="Feminino" checked>

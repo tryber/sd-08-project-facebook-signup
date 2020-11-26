@@ -55,29 +55,29 @@ body {
 }
 
 .inputEntrar {
+  border: 1px solid  rgb(156, 155, 155);
+  border-radius: 2px;
   margin: 0 8px 20px;
   padding: 4px;
-  border-radius: 2px;
-  border: 1px solid  rgb(156, 155, 155);
   position: relative;
   top: 6px;
 }
 
 .labelEmailSenha {
   color: white;
-  position: relative;
-  left: 8px;
   font-size: 18px;
+  left: 8px;
+  position: relative;
   top: 2px;
 }
 
 .btnEntrar {
   background-color: rgb(66, 103, 178);
+  border: 1px solid black;
+  border-radius: 2px;
+  color: white;
   margin: 2px;
   padding: 4px 12px;
   position: relative;
   top: -11px;
-  border: 1px solid black;
-  color: white;
-  border-radius: 2px;
 }

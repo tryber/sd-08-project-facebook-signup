@@ -33,4 +33,14 @@
 
 .new-user-form {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.new-user-form input{
+  width: 130px;
+}
+
+.new-user-form-control{
+  display: flex;
+  flex-direction: column;
 }

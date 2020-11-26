@@ -1,0 +1,59 @@
+.birthdate {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-none {
+  display: none;
+}
+
+.email-password {
+  width: 100%;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender {
+  font-size: 15px;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.name-lastname {
+  width: 45%;
+}
+
+.register {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}

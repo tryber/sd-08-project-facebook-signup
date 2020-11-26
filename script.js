@@ -7,14 +7,6 @@ const erroButton = document.createElement('button');
 const inputGenderCustom = document.getElementsByClassName('type-custom')[0];
 const cadastroInput = cadastro.querySelectorAll('input');
 const rightContent = document.querySelector('.right-content');
-const radioButton = document.getElementsByName('gender');
-// function evaluatorGender() {
-//   for (let key = 0; key < radioButton.length; key += 1) {
-//     if (radioButton[key].checked) {
-//       return radioButton[key].value;
-//     }
-//   }
-// }
 addEventListener('click', (event) => {
   if (event.target === button) {
     alert(label.value);

@@ -17,10 +17,6 @@ body {
   flex-direction: column;
 }
 
-.facebook-login {
-  display: flex;
-}
-
 .form-control {
   align-self: flex-end;
 }
@@ -75,7 +71,7 @@ body {
   margin-top: 4px;
 }
 
- #facebook-register {
+.facebook-register {
   background-color: green;
   border-color: transparent;
   border-radius: 5px;

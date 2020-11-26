@@ -7,7 +7,10 @@ const erroButton = document.createElement('button');
 const inputGenderCustom = document.getElementsByClassName('type-custom')[0];
 const cadastroInput = cadastro.querySelectorAll('input');
 const rightContent = document.querySelector('.right-content');
+const radioButton = document.getElementsByName('gender');
+
 addEventListener('click', (event) => {
+
   if (event.target === button) {
     alert(label.value);
   } else if (event.target.id === 'facebook-register') {
@@ -24,9 +27,12 @@ addEventListener('click', (event) => {
           erro.appendChild(erroButton);
         }
       }
-    }
+    }   
     rightContent.classList.add('fonteMaior')
-    rightContent.innerHTML = `Olá ${cadastroInput[0].value} ${cadastroInput[1].value} ${cadastroInput[2].value} ${cadastroInput[4].value} ${cadastroInput[5].value}`;
+    rightContent.innerText = `Olá ${cadastroInput[0].value} ${cadastroInput[1].value}
+    Fone: ${cadastroInput[2].value} 
+    Data: ${cadastroInput[4].value} 
+    Genero: ${evaluatorGender()}`;
   } else if (event.target.id === 'erro-button') {
     erro.remove();
   } else if (event.target.id === 'custom-gender') {
@@ -37,8 +43,10 @@ addEventListener('click', (event) => {
     inputGenderCustom.style.display = 'none';
   }
 });
-
-
-
-
-
+function evaluatorGender() {
+  for (key in radioButton) {
+    if (radioButton[key].checked) {
+      return radioButton[key].value;
+    }
+  }
+}

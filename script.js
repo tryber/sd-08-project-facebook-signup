@@ -10,7 +10,7 @@ function addAlert() {
 }
 addAlert();
 
-// validar input
+
 const facebookRegister = document.querySelector('#facebook-register');
 const form = document.querySelector('.register');
 const message = document.querySelector('#validation-message');

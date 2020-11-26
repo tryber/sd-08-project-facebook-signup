@@ -21,8 +21,8 @@ jobs:
         uses: betrybe/cypress-evaluator-action@v4
         if: steps.wait-for-build.outputs.conclusion == 'success'
         with:
-          repository-test-name: 'betrybe/sd-0x-block6-project-facebook-signup-tests'
-          repository-test-branch: 'master'
+          repository-test-name: "betrybe/sd-0x-block6-project-facebook-signup-tests"
+          repository-test-branch: "master"
       - name: Store evaluation step
         uses: betrybe/store-evaluation-action@v2
         if: steps.wait-for-build.outputs.conclusion == 'success'

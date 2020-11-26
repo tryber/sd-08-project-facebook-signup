@@ -4,8 +4,15 @@
     "no-alert": "off",
     "prefer-arrow-callback": "off",
     "func-names": "off",
-    "arrow-parens": [2, "always"],
-    "no-param-reassign": "off"
+    "arrow-parens": [
+      2,
+      "always"
+    ],
+    "no-param-reassign": "off",
+    "quotes": [
+      "error",
+      "single"
+    ]
   },
   "env": {
     "browser": true,

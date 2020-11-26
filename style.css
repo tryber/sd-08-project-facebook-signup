@@ -8,6 +8,7 @@
 }
 
 .facebook-login {
+  align-self: flex-end;
   display: flex;
 }
 

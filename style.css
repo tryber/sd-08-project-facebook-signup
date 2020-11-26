@@ -27,8 +27,8 @@ body {
 }
 
 .main-content .left-content {
-  width: 800px;
   align-self: center;
+  width: 800px;
 }
 
 .main-content .right-content {

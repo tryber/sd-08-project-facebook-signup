@@ -98,5 +98,8 @@ window.onload = function () {
 };
 
 const getLogin = document.getElementById('button-login');
-const alerta = () => alert('email-tel');
+const alerta = () => {
+  const inputLogin = document.getElementById('user-email-phone');
+  alert(inputLogin.value);
+}
 getLogin.addEventListener('click', alerta);

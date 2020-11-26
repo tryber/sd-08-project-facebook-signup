@@ -19,7 +19,7 @@
               <input type="password" id="user-password" />
             </div>
             <div class="form-control">
-              <button type="submit" id="button-login" onclick="alertLogin()">Entrar</button>
+              <button id="button-login" type="submit">Entrar</button>
             </div>
           </form>
     </header>
@@ -33,18 +33,18 @@
             <p class="quick-easy">É rápido e fácil.</p>
             <form class="form" id="container">
               <div class="space-arround ">
-                <input class="firstName borderStyle input " name="firstname" placeholder="Nome" type="text">
-                <input class="lastName borderStyle input" name="lastname"  placeholder="Sobrenome" type="text">
+                <input class="firstname borderStyle input " name="firstname" placeholder="Nome" type="text" required>
+                <input class="lastname borderStyle input" name="lastname"  placeholder="Sobrenome" type="text" required>
               </div>
               <div class="space-arround">
-                <input class="fullSize borderStyle input email " name="phone_email" placeholder="Celular ou email" type="text">
+                <input class="fullSize borderStyle input email " name="phone_email" placeholder="Celular ou email" type="text" required>
               </div>
               <div class="space-arround">
-                <input class="fullSize borderStyle input" name="password" placeholder="Nova senha" type="password">
+                <input class="fullSize borderStyle input" name="password" placeholder="Nova senha" type="password" required>
               </div>
               <div class="space-arround">
                 <label id="label-birthdate" class="tag">Data de nascimento</label>
-                <input class="fullSize borderStyle input birthdate" name="birthdate" type="text" placeholder="dd/mm/aaaa">
+                <input class="fullSize borderStyle input birthdate" name="birthdate" type="text" placeholder="dd/mm/aaaa" required>
               </div>
               <div class="space-arround">
                 <label id="label-gender" class="tag">Gênero</label>

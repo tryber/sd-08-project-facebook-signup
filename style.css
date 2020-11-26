@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  background-color: #e9ebee;
+  display: flex;
+  height: 800px;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.form-register {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nomeSobrenome {
+  width: 120px;
+}
+
+.nome input {
+  float: left;
+  margin-right: 10px;
+  width: 120px;
+}
+
+.custom label {
+  font-size: 15px;
+}
+
+.inputEntrar {
+  border: 1px solid  rgb(156, 155, 155);
+  border-radius: 2px;
+  margin: 0 8px 18px;
+  padding: 4px;
+  position: relative;
+  top: 6px;
+}
+
+.labelEmailSenha {
+  color: white;
+  font-size: 18px;
+  left: 8px;
+  position: relative;
+  top: 2px;
+}
+
+.btnEntrar {
+  background-color: rgb(66, 103, 178);
+  border: 1px solid black;
+  border-radius: 4px;
+  color: white;
+  margin: 2px;
+  padding: 4px 12px;
+  position: relative;
+  top: -30px;
+}
+
+.slogan {
+  color: rgb(66, 103, 178);
+  font-size: 24px;
+  font-weight: 600;
+  width: 530px;
+}
+
+.msgEsqueceu {
+  color: white;
+  font-weight: 100;
+  left: 7px;
+  opacity: 0.6;
+  position: relative;
+  top: -8px;
+}
+
+.inputText {
+  border: 1px solid rgb(156, 155, 155);
+  border-radius: 4px;
+  margin-top: 6px;
+  padding: 8px;
+}
+
+.styleSenhaEmail {
+  width: 148%;
+}
+
+.styleData {
+  color: rgb(156, 155, 155);
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  top: 5px;
+}
+
+.styleLabelGenero {
+  color: rgb(156, 155, 155);
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  top: 5px;
+}
+
+.positionGenero {
+  position: relative;
+  top: 10px;
+}
+
+.btnRegistrar {
+  background-color: #42b72a;
+  border: 1px solid #42b72a;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  padding: 8px 30px;
+  position: relative;
+  top: 25px;
+}

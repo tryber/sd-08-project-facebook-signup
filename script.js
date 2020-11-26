@@ -8,17 +8,18 @@ const inputGenderCustom = document.getElementsByClassName('type-custom')[0];
 const cadastroInput = cadastro.querySelectorAll('input');
 const rightContent = document.querySelector('.right-content');
 const radioButton = document.getElementsByName('gender');
-function evaluatorGender() {
-  for (let key = 0; key < radioButton.length; key += 1) {
-    if (radioButton[key].checked) {
-      return radioButton[key].value;
-    }
-  }
-}
+// function evaluatorGender() {
+//   for (let key = 0; key < radioButton.length; key += 1) {
+//     if (radioButton[key].checked) {
+//       return radioButton[key].value;
+//     }
+//   }
+// }
 addEventListener('click', (event) => {
   if (event.target === button) {
     alert(label.value);
   } else if (event.target.id === 'facebook-register') {
+    const evaluatorGender = document.querySelector('input[type="radio"]:checked').value;
     for (let key = 0; key < required.length; key += 1) {
       const input = required[key];
       if (input.required) {
@@ -37,7 +38,7 @@ addEventListener('click', (event) => {
     rightContent.innerText = `Olá ${cadastroInput[0].value} ${cadastroInput[1].value}
     Fone: ${cadastroInput[2].value}
     Data: ${cadastroInput[4].value}
-    Genero: ${evaluatorGender()}`;
+    Genero: ${evaluatorGender}`;
   } else if (event.target.id === 'erro-button') {
     erro.remove();
   } else if (event.target.id === 'custom-gender') {

@@ -3,8 +3,12 @@ body {
   margin: 0;
 }
 
+.mobile-container {
+  display: none;
+}
+
 footer p {
-  color: #4267b288;
+  color: #4267b2;
 }
 
 .top-bar {
@@ -13,6 +17,7 @@ footer p {
   display: flex;
   height: 100px;
   justify-content: space-between;
+  padding: 0 20%;
 }
 
 .top-bar img {
@@ -164,4 +169,20 @@ footer {
   font-size: 1em;
   font-style: italic;
   margin-top: 10px;
+}
+
+footer ul {
+  margin: 10px 0;
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+}
+
+footer ul li {
+  color: #4267b2;
+  margin: 0 2px;
+}
+
+.create-mobile p {
+  color: #4267b2;
 }

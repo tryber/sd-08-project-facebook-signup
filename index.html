@@ -5,81 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="style-mobile.css" />
   </head>
   <body>
-    <section class="top-bar">
-      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo" />
-      <form class="facebook-login" action="#">
-        <div class="form-group">
-          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-          <input type="text" id="user-email-phone" name="user-email-phone" />
-        </div>
-        <div class="form-group">
-          <label id="user-password-label" for="user-password">Senha</label>
-          <input type="text" id="user-password" name="user-email-phone" />
-          <p>Esqueceu a conta?</p>
-        </div>
-        <div class="form-control">
-          <button class="entrar-button" id="button-login">Entrar</button>
-        </div>
-      </form>
-    </section>
+    <div class="mobile-container">
+      <section class="top-bar-mobile">
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo" />
+      </section>
+      <div class="msg-conectar">Voce deve se conectar primeiro</div>
 
-    <section class="main-content">
-      <div class="left-content">
-        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-        <img id="facebook-networking" src="imgs/networking.png" alt="#" />
-      </div>
-
-      <div class="right-content">
-        <h1>Abra uma conta</h1>
-        <p class="quick-easy">É rápido e fácil.</p>
-        <form action="#">
-          <div class="nomecompleto">
-            <input type="text" name="firstname" id="firstname" placeholder="Nome" />
-            <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" />
-          </div>
-
-          <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" />
-          <input type="password" name="password" id="password" placeholder="Nova senha" />
-
-          <label class="bold-grey" id="label-birthdate" for="birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" />
-
-          <label class="bold-grey" id="label-gender" for="">Gênero</label>
-
-          <div class="radioButtons">
-            <input id="Feminino" type="radio" name="gender" value="Feminino" checked />
-            <label for="Feminino">Feminino</label>
-
-            <input id="Masculino" type="radio" name="gender" value="Masculino" />
-            <label for="Masculino">Masculino</label>
-
-            <input id="Personalizado" type="radio" name="gender" value="Personalizado" />
-            <label for="Personalizado">Personalizado</label>
-          </div>
-
-          <p>
-            Ao clicar em Cadastre-se, voce concorda com nossos
-            <span
-              >Termos, Politica de Dados e Politica de Cookies. Voce pode receber notificacoes por SMS e pode cancelar isso quando
-              quiser.</span
-            >
-          </p>
-
-          <input class="input-genero" type="text" name="gender-custom" placeholder="Gênero (opcional)" />
-
-          <button class="cadastrar-button" type="submit" id="facebook-register">Cadastre-se</button>
-
-          <div class="mensagem-invalidos">Campos inválidos</div>
+      <section class="content-mobile">
+        <form class="facebook-login-mobile" action="#">
+          <input type="text" name="email" id="email" placeholder="Numero de celular ou email" />
+          <input type="password" name="password" id="password" placeholder="Senha" />
+          <button type="submit">Entrar</button>
         </form>
-      </div>
-    </section>
+      </section>
 
+      <section class="separator">
+        <hr />
+        <p>ou</p>
+        <hr />
+      </section>
+
+      <section class="create-mobile">
+        <button class="cadastrar-button">Criar nova conta</button>
+        <p>Esqueceu a senha?</p>
+      </section>
+    </div>
+
+    <div class="not-mobile-container">
+      <section class="top-bar">
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo" />
+        <form class="facebook-login" action="#">
+          <div class="form-group">
+            <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+            <input type="text" id="user-email-phone" name="user-email-phone" />
+          </div>
+          <div class="form-group">
+            <label id="user-password-label" for="user-password">Senha</label>
+            <input type="text" id="user-password" name="user-email-phone" />
+            <p>Esqueceu a conta?</p>
+          </div>
+          <div class="form-control">
+            <button class="entrar-button" id="button-login">Entrar</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="main-content">
+        <div class="left-content">
+          <p id="facebook-slogan">
+            O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+          </p>
+          <img id="facebook-networking" src="imgs/networking.png" alt="#" />
+        </div>
+
+        <div class="right-content">
+          <h1>Abra uma conta</h1>
+          <p class="quick-easy">É rápido e fácil.</p>
+          <form action="#">
+            <div class="nomecompleto">
+              <input type="text" name="firstname" id="firstname" placeholder="Nome" />
+              <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" />
+            </div>
+
+            <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" />
+            <input type="password" name="password" id="password" placeholder="Nova senha" />
+
+            <label class="bold-grey" id="label-birthdate" for="birthdate">Data de nascimento</label>
+            <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" />
+
+            <label class="bold-grey" id="label-gender" for="">Gênero</label>
+
+            <div class="radioButtons">
+              <input id="Feminino" type="radio" name="gender" value="Feminino" checked />
+              <label for="Feminino">Feminino</label>
+
+              <input id="Masculino" type="radio" name="gender" value="Masculino" />
+              <label for="Masculino">Masculino</label>
+
+              <input id="Personalizado" type="radio" name="gender" value="Personalizado" />
+              <label for="Personalizado">Personalizado</label>
+            </div>
+
+            <p>
+              Ao clicar em Cadastre-se, voce concorda com nossos
+              <span
+                >Termos, Politica de Dados e Politica de Cookies. Voce pode receber notificacoes por SMS e pode cancelar isso
+                quando quiser.</span
+              >
+            </p>
+
+            <input class="input-genero" type="text" name="gender-custom" placeholder="Gênero (opcional)" />
+
+            <button class="cadastrar-button" type="submit" id="facebook-register">Cadastre-se</button>
+
+            <div class="mensagem-invalidos">Campos inválidos</div>
+          </form>
+        </div>
+      </section>
+    </div>
     <footer>
-      <p>Português (Brasil) English (US) Español Français (France) Italiano العربية Deutsch हिन्दी 中文(简体) 日本語</p>
+      <ul>
+        <li>Português (Brasil)</li>
+        <li>English (US)</li>
+        <li>Español</li>
+        <li>Français (France)</li>
+        <li>Italiano</li>
+        <li>العربية</li>
+        <li>Deutsch</li>
+        <li>हिन्दी</li>
+        <li>中文(简体)</li>
+        <li>日本語</li>
+      </ul>
       <hr />
-      <p>
+      <p class="long-text-footer">
         Cadastre-seEntrarMessengerFacebook LiteWatchPessoasPáginasCategorias de PáginaLocaisJogosLocaisMarketplaceFacebook
         PayGruposVagas de empregoOculusPortalInstagramLocalCampanhas de arrecadação de fundosServiçosCentral de Informações de
         VotaçãoSobreCriar anúncioCriar PáginaDesenvolvedoresCarreirasPrivacidadeCookiesEscolhas para

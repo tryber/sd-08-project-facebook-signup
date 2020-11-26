@@ -1,0 +1,99 @@
+.not-mobile-container {
+  display: none;
+}
+.long-text-footer {
+  display: none;
+}
+
+footer ul {
+  height: 120px;
+  flex-flow: column wrap;
+  overflow: hidden;
+}
+
+footer ul li {
+  box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+.mobile-container {
+  display: block;
+}
+
+.top-bar-mobile {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(66, 103, 178);
+}
+
+.top-bar-mobile img {
+  height: 60px;
+}
+
+.msg-conectar {
+  padding: 7px;
+  border-bottom: 1px solid gold;
+  color: rgb(78, 146, 78);
+  background-color: #ffd70022;
+}
+
+.content-mobile {
+  padding: 20px 70px;
+}
+
+.facebook-login-mobile {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.facebook-login-mobile input {
+  background-color: #d2d8e622;
+  border: 1px solid #80808022;
+  font-size: 1.1em;
+  height: 50px;
+  margin: 0;
+  padding: 7px;
+}
+
+.facebook-login-mobile button {
+  margin: 20px 0;
+  font-size: 1.3em;
+  padding: 10px 0;
+  font-weight: 900;
+  color: white;
+  background-color: rgb(58, 97, 182);
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+
+.separator {
+  margin-top: 0;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.separator hr {
+  flex-grow: 0.48;
+  margin: 0;
+}
+
+.separator p {
+  width: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.create-mobile {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 20px 70px;
+}

@@ -1,158 +1,55 @@
 body {
-  margin: 0;
-  padding: 0;
+margin: 0;
+padding: 0;
 }
 
 .top-bar {
-  align-items: center;
-  background-color: rgb(66, 103, 178);
-  display: flex;
-  height: 80px;
-  justify-content: space-between;
-  width: 100%;
+background-color: rgb(66, 103, 178);
+display: flex;
+justify-content: space-between;
 }
 
 .facebook-login {
-  display: flex;
+display: flex;
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
 .form-control {
-  align-self: flex-end;
+align-self: flex-end;
 }
 
 .main-content {
-  background-image: linear-gradient(to top, #d3d8e8, white);
-  display: flex;
-  height: 650px;
-  justify-content: space-around;
+display: flex;
+justify-content: space-around;
 }
 
 .left-content {
-  margin-top: 25px;
-  width: 300px;
+width: 800px;
 }
 
 .right-content {
-  position: relative;
-  top: 25px;
-  width: 300px;
+width: 300px;
 }
 
 .form-register {
-  display: flex;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
 
 .nomeSobrenome {
-  width: 120px;
+width: 120px;
 }
 
 .nome input {
-  float: left;
-  margin-right: 10px;
-  width: 120px;
+float: left;
+width: 120px;
+margin-right: 10px;
 }
 
 .custom label {
-  font-size: 15px;
-}
-
-.inputLogin {
-  border: solid 1px rgb(156, 155, 155);
-  border-radius: 4px;
-  font-size: 90%;
-  height: 25px;
-  margin: 10px;
-  padding: 3px;
-}
-
-.styleInput {
-  border: solid 1px rgb(156, 155, 155);
-  border-radius: 2px;
-  font-size: 90%;
-  height: 25px;
-  margin: 0 0 2px;
-}
-
-.slogan {
-  color: rgb(66, 103, 178);
-  font-size: 24px;
-  font-weight: 600;
-  width: 500px;
-}
-
-.btn-entrar {
-  background-color: rgb(66, 103, 178);
-  border: solid 1px  black;
-  border-radius: 2px;
-  color: white;
-  padding: 8px;
-  position: relative;
-  top: -10px;
-}
-
-.dataText {
-  color: rgb(156, 155, 155);
-  font-size: 20px;
-  position: relative;
-  top: 10px;
-}
-
-.textHeader {
-  color: white;
-  font-size: 18px;
-  left: 10px;
-  position: relative;
-  top: 2px;
-}
-
-.textGenero {
-  color: rgb(156, 155, 155);
-  font-size: 20px;
-  position: relative;
-}
-
-.labelGenero {
-  margin: 2px;
-}
-
-.labelGenero , .seletor {
-  position: relative;
-  top: 7px;
-}
-
-.register {
-  background-image: linear-gradient(to top, #5b9147, #65a953);
-  border: 1px solid #5b9147;
-  border-radius: 4px;
-  color: white;
-  font-size: 22px;
-  font-weight: 900;
-  position: relative;
-  top: 27px;
-}
-
-.textTermos {
-  color: #0008;
-  display: block;
-  font-size: 13px;
-  position: relative;
-  top: 15px;
-}
-
-.styleTextArea {
-  border: solid 1px rgb(156, 155, 155);
-  border-radius: 2px;
-  font-size: 90%;
-  height: 25px;
-  margin: 0 0 2px;
-  margin-top: 8px;
-  padding: 4px;
-  position: relative;
-  top: 15px;
+font-size: 15px;
 }

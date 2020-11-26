@@ -1,14 +1,11 @@
 function alertEmail() {
   const button = document.querySelector('#button-login');
-
   button.addEventListener('click', function () {
     const emailPhone = document.querySelector('#user-email-phone').value;
     alert(emailPhone);
   });
 }
-
 alertEmail();
-
 function checksInput() {
   const formsInput = document.querySelectorAll('.form-register input');
   let contador = 0;
@@ -25,7 +22,6 @@ function checksInput() {
   }
   return contador;
 }
-
 function checksInputText() {
   const check = checksInput();
   if (check !== 0) {
@@ -39,7 +35,6 @@ function checksInputText() {
     forms.appendChild(tagP);
   }
 }
-
 function replaceDiv() {
   const check = checksInput();
   if (check === 0) {
@@ -48,28 +43,22 @@ function replaceDiv() {
     const divRight = document.querySelector('.right-content');
     const sectionRightClass = document.createElement('section');
     sectionRightClass.className = 'right-content';
-
     const tagP = document.createElement('p');
     tagP.innerText = `Olá, ${forms[0].value} ${forms[1].value}`;
     sectionRightClass.appendChild(tagP);
-
     const tagP1 = document.createElement('p');
     tagP1.innerText = forms[2].value;
     sectionRightClass.appendChild(tagP1);
-
     const tagP2 = document.createElement('p');
     tagP2.innerText = forms[4].value;
     sectionRightClass.appendChild(tagP2);
-
     const tagP3 = document.createElement('p');
     tagP3.innerText = document.querySelector('input[type=radio]:checked').id;
     sectionRightClass.appendChild(tagP3);
-
-    sectionMain.removeChild(divRight);
+    divRight.style.display = 'none';
     sectionMain.appendChild(sectionRightClass);
   }
 }
-
 function radioCustom() {
   const forms = document.querySelector('.custom');
   forms.addEventListener('click', function (event) {
@@ -82,7 +71,6 @@ function radioCustom() {
       const textArea = document.createElement('input');
       textArea.type = 'text';
       textArea.name = 'gender-custom';
-      textArea.className = 'styleTextArea';
       textArea.placeholder = 'Gênero (opcional)';
       textArea.id = 'gender';
       custom.appendChild(textArea);
@@ -95,23 +83,17 @@ function radioCustom() {
     }
   });
 }
-
 radioCustom();
-
-
 const register = document.querySelector('#facebook-register');
 register.addEventListener('click', function (event) {
   event.preventDefault();
   checksInputText();
   replaceDiv();
 });
-
-
 // const invalid = document.createElement('p');
 // const form = document.querySelector('.form-register');
 // let contador = 0;
 // const inputRadio = document.querySelectorAll('.inputRadio');
-
 // function contagem() {
 //   for (let index = 0; index < inputRadio.length; index += 1) {
 //     if (inputRadio[index].checked) {
@@ -119,7 +101,6 @@ register.addEventListener('click', function (event) {
 //     }
 //   }
 // }
-
 // function checkRadio() {
 //   if (contador === 1) {
 //     invalid.innerHTML = '';
@@ -129,7 +110,6 @@ register.addEventListener('click', function (event) {
 //     form.appendChild(invalid);
 //   }
 // }
-
 // function signIt() {
 //   const inputs = document.querySelectorAll('.inputText');
 //   for (let index = 0; index < inputs.length; index += 1) {
@@ -140,7 +120,6 @@ register.addEventListener('click', function (event) {
 //     }
 //   }
 // }
-
 // function addRegisterEvent() {
 //   const register = document.querySelector('#facebook-register');
 //   register.addEventListener('click', function () {
@@ -151,3 +130,19 @@ register.addEventListener('click', function (event) {
 // }
 
 // addRegisterEvent();
+
+// function radioCustom() {
+//   const forms = document.querySelector('.form-register');
+//   forms.addEventListener('click', function (event) {
+//     if (event.target.id === 'personalizado') {
+//       const textArea = document.createElement('input');
+//       const personalizado = document.querySelector('.custom');
+//       textArea.type = 'text';
+//       textArea.name = 'gender-custom';
+//       textArea.placeholder = 'Gênero (opcional)';
+//       personalizado.appendChild(textArea);
+//     }
+//   });
+// }
+
+// radioCustom();

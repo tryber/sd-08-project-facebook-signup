@@ -25,7 +25,7 @@ document.querySelector('#facebook-register').addEventListener('click', () => {
   const password = document.querySelector('.password').value;
   const birthdate = document.querySelector('.birthdate').value;
   const gender = document.querySelector('input[type="radio"]:checked').value;
-  if (firstName===''||lastName===''||phoneEmail===''||password===''||birthdate==='') {
+  if (firstName === '' || lastName === '' || phoneEmail === '' || password === '' || birthdate === '') {
     if (document.querySelector('.invalid') === null) {
       const span = document.createElement('span');
       span.innerHTML = 'Campos inválidos';

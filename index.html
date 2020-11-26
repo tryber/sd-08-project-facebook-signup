@@ -41,12 +41,14 @@
           <label class="label-in-form" for="birthdate" id="label-birthdate">Data de nascimento</label>
           <input class="birthdate" type="text" placeholder="dd/mm/aaaa" name="birthdate" required>
           <label class="label-in-form" id="label-gender">Gênero:</label>
-          <input id="gender-female" class="gender-sel gender-female" type="radio" name="gender" value="Feminino" checked>
-          <label for="gender-female" id="label-gender">Feminino</label>
-          <input id="gender-male" class="gender-sel gender-male" type="radio" name="gender" value="Masculino">
-          <label for="gender-male" id="label-gender">Masculino</label>
-          <input id="gender-personalized" class="gender-sel gender-personalized" type="radio" name="gender" value="Personalizado">
-          <label for="gender-personalized" id="label-gender">Personalizado</label>
+          <div id="genderAll" class="gender-selection">
+            <input id="gender-female" class="gender-sel gender-female" type="radio" name="gender" value="Feminino" checked>
+            <label for="gender-female" id="label-gender">Feminino</label>
+            <input id="gender-male" class="gender-sel gender-male" type="radio" name="gender" value="Masculino">
+            <label for="gender-male" id="label-gender">Masculino</label>
+            <input id="gender-personalized" class="gender-sel gender-personalized" type="radio" name="gender" value="Personalizado">
+            <label for="gender-personalized" id="label-gender">Personalizado</label>
+          </div>
           <input type="text" id="genderText" placeholder="Gênero (opcional)" class="input-gender-personalized hidden">
           <div class="buttonSubmit">
             <button id="facebook-register" type="submit">Cadastre-se</button>

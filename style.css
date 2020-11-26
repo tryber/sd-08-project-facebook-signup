@@ -13,8 +13,8 @@ body {
 }
 
 .facebook-login {
-  display: flex;
   color: white;
+  display: flex;
 }
 
 .form-group {

@@ -26,9 +26,7 @@ function changeRightContainer() {
   const lastName = document.getElementById('lastname').value;
   const phoneEmail = document.getElementById('phone-email').value;
   const birthdate = document.getElementById('birthdate').value;
-  const selectedGender = document.querySelector('input[type="radio"]:checked')
-    .value;
-
+  const selectedGender = document.querySelector('input[type="radio"]:checked').value;
   const rightContent = document.querySelector('.right-content');
   rightContent.innerHTML = `<p>Olá, ${firstName} ${lastName}!</p> <p>E-mail ou telefone: ${phoneEmail}</p> <p>Data de nascimento: ${birthdate}</p> <p>Gênero: ${selectedGender}</p>`;
 }

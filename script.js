@@ -1,10 +1,8 @@
 window.onload = function () {
-
-  let buttonLogin = document.getElementById("button-login")
-  buttonLogin.addEventListener("click", function () {
-    let userEmailOrFone = document.querySelector("#user-email-phone").value
-    let inputEmailOrFone = userEmailOrFone
-    alert(inputEmailOrFone)
-  })
-
-}
+  const buttonLogin = document.getElementById('button-login');
+  buttonLogin.addEventListener('click', function () {
+    const userEmailOrFone = document.querySelector('#user-email-phone').value;
+    const inputEmailOrFone = userEmailOrFone;
+    alert(inputEmailOrFone);
+  });
+};

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook</title>
-    <link rel="stylesheet" href="bulma.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,55 +16,52 @@
       <form action="" method="GET" class="facebook-login">
         <div class="form-group">
           <label for="user-email-phone" id="user-email-phone-label"
-          class="label">Email ou telefone</label
+            >Email ou telefone</label
           >
-          <input type="text" id="user-email-phone" class="input is-small"/>
+          <input type="text" id="user-email-phone" />
         </div>
 
         <div class="form-group">
-          <label for="user-password" id="user-password-label" class="label">Senha</label>
-          <input type="password" id="user-password" class="input is-small"/>
+          <label for="user-password" id="user-password-label">Senha</label>
+          <input type="password" id="user-password" />
         </div>
 
         <div class="form-control">
-          <button id="button-login" class="button is-static">Entrar</button>
+          <button id="button-login">Entrar</button>
         </div>
       </form>
     </header>
     <div class="main-content">
       <div class="left-content">
-        <p id="facebook-slogan" class="title is-5">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
         <img src="imgs/networking.png" alt="mapa mundi em braco com alguns personagens conectados" id="facebook-networking">
       </div>
-      <div class="right-content content">
-        <h1 class="title is-3">Abra uma conta</h1>
-        <p class="quick-easy title is-5">É rápido e fácil.</p>
+      <div class="right-content">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
         <form action="" method="GET" class="novoUsuario">
           <div class="nome">
-          <input type="text" name="firstname" placeholder="Nome" class="entradas input" required>
-          <input type="text" name="lastname" placeholder="Sobrenome" class="entradas input" required>
+          <input type="text" name="firstname" placeholder="Nome" class="entradas" required>
+          <input type="text" name="lastname" placeholder="Sobrenome" class="entradas" required>
          </div>
-         <input type="text" name="phone_email" placeholder="Celular ou email" class="entradas input" required>
-         <input type="password" name="password" placeholder="Nova senha" required class="input">
+         <input type="text" name="phone_email" placeholder="Celular ou email" class="entradas" required>
+         <input type="password" name="password" placeholder="Nova senha" required>
          <br>
-         <label for="birthdate" id="label-birthdate" class="label">Data de nascimento</label>
-         <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="entradas input" required>
+         <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+         <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="entradas" required>
          <br>
-         <label for="gender" id="label-gender" class="label">Gênero</label>
+         <label for="gender" id="label-gender">Gênero</label>
          <br>
          <div class="generos">
           <input type="radio" name="gender" value="Feminino" class="genero" required>Feminino
           <input type="radio" name="gender" value="Masculino" class="genero" required>Masculino
           <input id="genero-personalizado" type="radio" name="gender" value="Personalizado"  class="genero" required>Personalizado
-          <input type="text" name="gender-custom" placeholder="Gênero (opcional)" class="personalizado input">
+          <input type="text" name="gender-custom" placeholder="Gênero (opcional)" class="personalizado">
          </div>
-         <button id="facebook-register" type="submit" class="button is-primary">Cadastre-se</button>
+         <button id="facebook-register" type="submit">Cadastre-se</button>
         </form>
       </div>
     </div>
-    <footer>
-      <p>Desenvolvido por: Marcela Souza e Hugo Braga </p>
-    </footer>
     <script src="script.js"></script>
   </body>
 </html>

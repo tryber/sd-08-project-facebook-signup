@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="top-bar">
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do Facebook">
+        <form class="facebook-login" action="">
+          <div class="form-group">
+            <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+            <input id="user-email-phone" type="text">
+          </div>
+          <div class="form-group">
+            <label id="user-password-label" for="user-password">Senha</label>
+            <input id="user-password" type="password">
+          </div>
+          <div class="form-control">
+            <button id="button-login">Entrar</button>
+          </div>
+        </form>
+    </div>
+    <div class="main-content">
+      <div class="left-content">
+        <p id="facebook-slogan">
+          O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+        </p>
+        <img id="facebook-networking"src="imgs/networking.png" alt="Facebook networking">
+      </div>
+      <div class="right-content">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">
+          É rápido e fácil.
+        </p>
+        <form class="new-user-form" action="">
+          <div>
+            <input name="firstname" type="text" placeholder="Nome">
+            <input name="lastname" type="text" placeholder="Sobrenome">
+          </div>
+          <div class="new-user-form-control">
+            <input name="phone_email" type="text" placeholder="Celular ou email">
+          <input name="password" type="password" placeholder="Nova senha">
+          <label id="label-birthdate" for="birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+          </div>
+          <button id="facebook-register" type="submit">Cadastre-se</button>
+        </form>
+      </div>
+    </div>
+</body>
+</html>

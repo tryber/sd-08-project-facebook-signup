@@ -106,7 +106,7 @@ body {
   max-width: 27%;
 }
 
-.button-submit {
+/* #facebook-register {
   background-color: green;
   border: none;
   border-color: transparent;
@@ -121,9 +121,10 @@ body {
   margin-top: 10px;
   padding: 1px 2px;
   width: 200px;
-}
+} */
 
 .space-arround {
+  display: flex;
   margin-bottom: 2px;
   margin-top: 2px;
 }
@@ -134,4 +135,8 @@ body {
 
 .image {
   max-width: 60%;
+}
+
+.gender-custom , .invalid {
+  display: none;
 }

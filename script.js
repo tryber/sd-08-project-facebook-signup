@@ -6,10 +6,8 @@ window.onload = function () {
   });
 };
 
-const buttonSignUp = document.getElementById('facebook-register');
-const missing = document.createElement('p');
-const form = document.querySelector('.form');
-let counting = 0;
+// const buttonSignUp = document.getElementById('facebook-register');
+// const missing = document.createElement('p');
 const inputCustomGender = document.createElement('input');
 inputCustomGender.name = 'gender-custom';
 inputCustomGender.placeholder = 'Gênero (opcional)';
@@ -18,28 +16,10 @@ inputCustomGender.id = 'gender';
 const formGender = document.querySelector('.form-gender');
 const optionCustom = document.querySelector('#personal');
 
-/* const alertLogin = () => {
-    const emailCelular = document.getElementById('user-email-phone');
-    alert(emailCelular.value);
-} */
-
-const inputRadio = document.querySelectorAll('inputRadio');
-function contagem() {
-  for (let index = 0; index < inputRadio.length; index += 1) {
-    if (inputRadio[index].checked) {
-      counting += 1;
-    }
-  }
-}
-
-function checkRadio() {
-  if (counting === 1) {
-    missing.innerHTML = '';
-  } else {
-    missing.innerHTML = 'Campos Inválidos';
-    form.appendChild(missing);
-  }
-}
+// const alertLogin = () => {
+//     const emailCelular = document.getElementById('user-email-phone');
+//     alert(emailCelular.value);
+// }
 
 function changeRightContainer() {
   const firstName = document.getElementById('firstname').value;
@@ -63,13 +43,6 @@ registerButton.addEventListener('click', function (event) {
     }
   }
   changeRightContainer();
-});
-
-
-buttonSignUp.addEventListener('click', function (event) {
-  event.preventDefault();
-  contagem();
-  checkRadio();
 });
 
 optionCustom.addEventListener('click', function () {

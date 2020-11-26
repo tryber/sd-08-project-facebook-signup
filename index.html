@@ -32,19 +32,19 @@
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
             <form class="form" id="container">
-              <div class="space-arround ">
-                <input class="firstname borderStyle input " name="firstname" placeholder="Nome" type="text" required>
-                <input class="lastname borderStyle input" name="lastname"  placeholder="Sobrenome" type="text" required>
+              <div class="space-arround">
+                <input id="firstname" class="borderStyle input " name="firstname" placeholder="Nome" type="text" required>
+                <input id="lastname" class="borderStyle input" name="lastname"  placeholder="Sobrenome" type="text" required>
               </div>
               <div class="space-arround">
-                <input class="fullSize borderStyle input email " name="phone_email" placeholder="Celular ou email" type="text" required>
+                <input id="phone-email" class="fullSize borderStyle input" name="phone_email" placeholder="Celular ou email" type="text" required>
               </div>
               <div class="space-arround">
                 <input class="fullSize borderStyle input" name="password" placeholder="Nova senha" type="password" required>
               </div>
               <div class="space-arround">
                 <label id="label-birthdate" class="tag">Data de nascimento</label>
-                <input class="fullSize borderStyle input birthdate" name="birthdate" type="text" placeholder="dd/mm/aaaa" required>
+                <input id="birthdate" class="fullSize borderStyle input" name="birthdate" type="text" placeholder="dd/mm/aaaa" required>
               </div>
               <div class="space-arround">
                 <label id="label-gender" class="tag">Gênero</label>
@@ -59,7 +59,7 @@
               </div>
               <div class="space-arround space-top">
                 <p class="invalid">Campos inválidos</p>
-                <button id="facebook-register" class= "button-submit" type="submit">Cadastre-se</button>
+                <button id="facebook-register" type="submit">Cadastre-se</button>
               </div>
             </form>
         </aside>

@@ -29,9 +29,6 @@ body {
   flex-direction: column;
   margin: 5px;
 }
-#teste{
-  height: 10px;
-}
 
 .form-group label {
   font-size: 12px;

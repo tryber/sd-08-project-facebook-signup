@@ -97,6 +97,6 @@ window.onload = function () {
   }
 };
 
-let login = document.getElementById('button-login')
-login.addEventListener('click', alerta);
+const getLogin = document.getElementById('button-login')
 const alerta = () => alert('email-tel');
+login.addEventListener('click', alerta);

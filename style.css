@@ -1,0 +1,188 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+.mobile-container {
+  display: none;
+}
+
+footer p {
+  color: #4267b2;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  padding: 0 20%;
+}
+
+.top-bar img {
+  width: 200px;
+}
+
+.facebook-login {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+form input {
+  border: 1px solid #0005;
+  border-radius: 3px;
+  box-sizing: border-box;
+  height: 30px;
+  margin: 0 0 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.form-group input {
+  height: 30px;
+}
+
+.form-group label {
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+
+form p {
+  color: #0008;
+  font-size: 0.7em;
+}
+
+.form-group p {
+  color: white;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.entrar-button {
+  background-color: rgb(66, 103, 178);
+  border: solid 1px #0008;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: white;
+  height: 30px;
+  margin-bottom: 25px;
+  padding: 2px 10px;
+}
+
+.main-content {
+  background-image: linear-gradient(to top, #d3d8e8, white);
+  display: flex;
+  flex-flow: row nowrap;
+  height: 550px;
+  padding: 0 20%;
+}
+
+.left-content {
+  justify-content: flex-start;
+  min-width: 800px;
+  padding-top: 30px;
+}
+
+.left-content p {
+  color: rgb(66, 103, 178);
+  font-size: 1.4em;
+  font-weight: 600;
+  width: 500px;
+}
+
+.right-content {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 300px;
+  padding-top: 30px;
+}
+
+.right-content p {
+  margin: 0 0 20px;
+}
+
+.nomecompleto {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nomecompleto input {
+  margin: 0 0 10px;
+  width: 49%;
+}
+
+footer {
+  padding: 0 20%;
+}
+
+.input-genero {
+  display: none;
+}
+
+.bold-grey {
+  color: #0005;
+  font-weight: 900;
+}
+
+.radioButtons {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.radioButtons label {
+  font-size: 0.9em;
+}
+
+.radioButtons input {
+  margin: 0 5px;
+  width: 12px;
+}
+
+.cadastrar-button {
+  background-image: linear-gradient(to top, #5b9147, #65a953);
+  border: 1px solid #5b9147;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 900;
+  padding: 10px 30px;
+  text-shadow: -1px 1px grey;
+}
+
+.mensagem-invalidos {
+  color: red;
+  display: none;
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+footer ul {
+  margin: 10px 0;
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+}
+
+footer ul li {
+  color: #4267b2;
+  margin: 0 2px;
+}
+
+.create-mobile p {
+  color: #4267b2;
+}

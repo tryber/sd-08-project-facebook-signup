@@ -66,6 +66,36 @@ body {
   width: 90%;
 }
 
+.form .label-birthdate {
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.form .birthdate-input {
+  margin-left: 10px;
+}
+
+.form .label-gender {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.radio-button-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.form button {
+  margin: 10px;
+  padding: 10px;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;

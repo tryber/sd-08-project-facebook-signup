@@ -33,35 +33,71 @@
         />
       </div>
       <div class="right-content">
-        <h1>Abra uma conta</h1>
-        <h3 class="quick-easy">É rapido e fácil.</h3>
-        <form action="" method="GET" class="form">
-          <input
-            type="text"
-            name="firstname"
-            placeholder="Nome"
-            class="name-input"
-          />
-          <input
-            type="text"
-            name="lastname"
-            placeholder="Sobrenome"
-            class="lastname-input"
-          />
-          <input
-            type="text"
-            name="phone_email"
-            placeholder="Celular ou email"
-            class="phoneemail-input"
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Nova senha"
-            class="password-input"
-          />
-        </form>
+        <div class="form-container">
+          <h1>Abra uma conta</h1>
+          <h3 class="quick-easy">É rápido e fácil.</h3>
+          <form class="form">
+            <input
+              type="text"
+              name="firstname"
+              placeholder="Nome"
+              class="name-input"
+            />
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Sobrenome"
+              class="lastname-input"
+            />
+            <input
+              type="text"
+              name="phone_email"
+              placeholder="Celular ou email"
+              class="phoneemail-input"
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Nova senha"
+              class="password-input"
+            />
+
+            <label for="" id="label-birthdate" class="label-birthdate"
+              >Data de nascimento
+            </label>
+            <input
+              type="text"
+              name="birthdate"
+              placeholder="dd/mm/aaaa"
+              class="birthdate-input"
+            />
+            <label for="" id="label-gender" class="label-gender">Gênero</label>
+            <br />
+            <div class="radio-button-container">
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="Feminino"
+              />Feminino
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="Masculino"
+              />Masculino
+              <input
+                type="radio"
+                name="gender"
+                id="custom"
+                value="Personalizado"
+              />Personalizado
+            </div>
+            <button type="submit" id="facebook-register">Cadastre-se</button>
+          </form>
+        </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

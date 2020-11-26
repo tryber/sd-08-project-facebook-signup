@@ -23,7 +23,7 @@ cadastro.addEventListener('click', function (event) {
     }
   }
   if (erros !== '') {
-        const p = document.createElement('p');
+      const p = document.createElement('p');
     p.innerHTML = 'Campos inválidos';
     document.querySelectorAll('form')[1].appendChild(p);
   } else {

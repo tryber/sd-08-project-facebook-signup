@@ -1,0 +1,120 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6px 15px;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+}
+
+.facebook-logo {
+  display: flex;
+  height: 70px;
+  justify-content: flex-start;
+}
+
+.facebook-login {
+  align-self: baseline;
+  display: flex;
+  margin-top: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.fonte-padrao {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin-left: 10px;
+}
+
+.button-header {
+  background-color: blue;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content p {
+  font-weight: 600;
+  width: 300px;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.img-left {
+  width: 380px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.name-lastname {
+  display: flex;
+  height: 35px;
+}
+
+.name {
+  margin-right: 5px;
+  width: 150px;
+}
+
+.lastname {
+  width: 150px;
+}
+
+.registry-input {
+  height: 29px;
+  margin-top: 5px;
+  width: 313px;
+}
+
+.birthdate-gender-label {
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.title-form {
+  margin: 15px;
+}
+
+.gender-option {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  justify-content: space-between;
+}
+
+.button-register {
+  background-color: green;
+  color: white;
+  margin: 20px;
+}
+
+.undefinedGender {
+  margin-top: 10px;
+  width: 100%;
+}

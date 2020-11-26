@@ -11,26 +11,26 @@ addEventListener('click', (event) => {
   if (event.target === button) {
     alert(label.value);
   } else if (event.target.id === 'facebook-register') {
-    const evaluatorGender = document.querySelector('input[type="radio"]:checked').value;
+    event.preventDefault();
+    const evaluatorGender = document.querySelector('input[type="radio"]:checked');
     for (let key = 0; key < required.length; key += 1) {
       const input = required[key];
-      if (input.required) {
-        if (input.value === '') {
-          erro.innerText = 'Campos inválidos';
-          erro.className = 'campos-invalidos';
-          erro.id = 'campos-invalidos';
-          erroButton.innerText = 'OK';
-          erroButton.id = 'erro-button';
-          cadastro.appendChild(erro);
-          erro.appendChild(erroButton);
-        }
+      if (input.value === '') {
+        erro.innerText = 'Campos inválidos';
+        erro.className = 'campos-invalidos';
+        erro.id = 'campos-invalidos';
+        erroButton.innerText = 'OK';
+        erroButton.id = 'erro-button';
+        cadastro.appendChild(erro);
+        erro.appendChild(erroButton);
+        return;
       }
     }
     rightContent.classList.add('fonteMaior');
-    rightContent.innerText = `Olá ${cadastroInput[0].value} ${cadastroInput[1].value}
+    rightContent.innerText = `Olá, ${cadastroInput[0].value} ${cadastroInput[1].value}
     Fone: ${cadastroInput[2].value}
     Data: ${cadastroInput[4].value}
-    Genero: ${evaluatorGender}`;
+    Gênero: ${evaluatorGender.value}`;
   } else if (event.target.id === 'erro-button') {
     erro.remove();
   } else if (event.target.id === 'custom-gender') {

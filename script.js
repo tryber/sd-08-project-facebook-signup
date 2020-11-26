@@ -31,7 +31,7 @@ function preencher() {
 buttonCadastro.addEventListener('click', function (event) {
   const mensagemErro = document.createTextNode('Campos inválidos');
   event.preventDefault();
-  // Dica da Tais no plantão do dia 20-11-20
+  // Dica da Tais no plantão do dia 20-11-20.
   const resultado = novoUsuario.checkValidity();
   if (resultado === false) {
     novoUsuario.appendChild(mensagemErro);

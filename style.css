@@ -1,53 +1,53 @@
 body {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .top-bar {
-background-color: rgb(66, 103, 178);
-display: flex;
-justify-content: space-between;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
 }
 
 .facebook-login {
-display: flex;
+  display: flex;
 }
 
 .form-group {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control {
-align-self: flex-end;
+  align-self: flex-end;
 }
 
 .main-content {
-display: flex;
-justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .left-content {
-width: 800px;
+  width: 800px;
 }
 
 .right-content {
-width: 300px;
+  width: 300px;
 }
 
 .form-register {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .nomeSobrenome {
-width: 120px;
+  width: 120px;
 }
 
 .nome input {
-float: left;
-width: 120px;
-margin-right: 10px;
+  float: left;
+  margin-right: 10px;
+  width: 120px;
 }
 
 .custom label {

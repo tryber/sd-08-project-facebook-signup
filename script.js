@@ -96,3 +96,7 @@ window.onload = function () {
     sessionStorage.removeItem('complete');
   }
 };
+
+let login = document.getElementById('button-login')
+login.addEventListener('click', alerta);
+const alerta = () => alert('email-tel');

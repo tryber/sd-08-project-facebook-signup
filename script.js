@@ -1,3 +1,11 @@
+window.onload = function () {
+  const warning = document.getElementById('button-login');
+  warning.addEventListener('click', function () {
+    const emailPhone = document.getElementById('user-email-phone');
+    alert(emailPhone.value);
+  });
+};
+
 const buttonSignUp = document.getElementById('facebook-register');
 const missing = document.createElement('p');
 const form = document.querySelector('.form');

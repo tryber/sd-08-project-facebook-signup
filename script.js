@@ -17,7 +17,7 @@ function showInfo() {
   infos.innerText = `Olá, ${inputs[2].value} ${inputs[3].value}
   ${inputs[4].value}
   ${inputs[6].value}
-  ${radioChecked.id === 'other' ? genderInput.value : radioChecked.value}`;
+  ${radioChecked.value}`;
   rightContent.innerHTML = '';
   rightContent.appendChild(infos);
 }

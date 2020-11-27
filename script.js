@@ -21,14 +21,13 @@ const paiDoRadio = document.getElementById('parent-radio');
 addEventListener('input', (event) => {
   const radio = event.target;
   const ultimoInput = document.getElementById('marcado');
-  console.log(ultimoInput)
   if (radio.id === 'personalizado' && radio.checked) {
     const personalizar = document.createElement('input');
     personalizar.id = 'marcado';
     personalizar.name = 'gender-custom';
     personalizar.placeholder = 'Gênero';
     paiDoRadio.appendChild(personalizar);
-  } else if (radio.id === 'personalizado'){
+  } else if (radio.className === 'radio') {
     paiDoRadio.removeChild(ultimoInput);
   }
 });

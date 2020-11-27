@@ -20,13 +20,11 @@ const radio = document.getElementById('personalizado');
 const paiDoRadio = document.getElementById('parent-radio');
 addEventListener('input', () => {
   if (radio.checked) {
-    let personalizar = document.createElement('input');
+    const personalizar = document.createElement('input');
     personalizar.id = 'marcado';
     paiDoRadio.appendChild(personalizar);
-  } else {
-    if (document.getElementById('marcado') !== null) {
-      const ultimoInput = document.getElementById('marcado');
-      paiDoRadio.removeChild(ultimoInput);
-    }
+  } else if (document.getElementById('marcado') !== null) {
+    const ultimoInput = document.getElementById('marcado');
+    paiDoRadio.removeChild(ultimoInput);
   }
-})
+});

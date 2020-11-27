@@ -22,8 +22,8 @@ addEventListener('input', () => {
   if (radio.checked) {
     const personalizar = document.createElement('input');
     personalizar.id = 'marcado';
-    personalizar.name = 'gender-custom'
-    personalizar.placeholder = 'Gênero'
+    personalizar.name = 'gender-custom';
+    personalizar.placeholder = 'Gênero';
     paiDoRadio.appendChild(personalizar);
   } else if (document.getElementById('marcado') !== null) {
     const ultimoInput = document.getElementById('marcado');

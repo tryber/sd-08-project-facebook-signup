@@ -11,13 +11,13 @@ function showInfo() {
 
   for (let index = 0; index < radios.length; index += 1) {
     if (radios[index].checked) {
-      radioChecked = radios[index].value;
+      radioChecked = radios[index];
     }
   }
   infos.innerText = `Olá, ${inputs[2].value} ${inputs[3].value}
   ${inputs[4].value}
   ${inputs[6].value}
-  ${genderInput.style.display === '' ? radioChecked : genderInput.value}`;
+  ${radioChecked.id === 'other' ? genderInput.value : radioChecked.value}`;
   rightContent.innerHTML = '';
   rightContent.appendChild(infos);
 }

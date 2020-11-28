@@ -31,7 +31,6 @@ const mainContent = document.querySelector('.main-content');
 const rigthContent = document.querySelector('.right-content');
 const inputText = formRegister.querySelectorAll('input[type=text]');
 function substituirForm() {
-  const erro = verificaCamposInvalidos();
   const section = document.createElement('section');
   section.className = 'rigth-content';
   mainContent.appendChild(section);

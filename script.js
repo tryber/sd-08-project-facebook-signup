@@ -32,31 +32,32 @@ const rigthContent = document.querySelector('.right-content');
 const inputText = formRegister.querySelectorAll('input[type=text]');
 function substituirForm() {
   const erro = verificaCamposInvalidos();
-  if (erro === 0) {
-    const section = document.createElement('section');
-    section.className = 'rigth-content';
-    mainContent.appendChild(section);
-    const name = document.createElement('p');
-    name.innerHTML = `Olá, ${inputText[0].value} ${inputText[1].value}`;
-    section.appendChild(name);
-    for (let index = 2; index < inputText.length; index += 1) {
-      const input = inputText[index];
-      const validar = document.createElement('p');
-      validar.innerHTML = input.value;
-      section.appendChild(validar);
-    }
-    const inputRadio = formRegister.querySelector('input[type=radio]:checked').value;
-    const gender = document.createElement('p');
-    gender.innerHTML = inputRadio;
-    section.appendChild(gender);
-    rigthContent.style.display = 'none';
+  const section = document.createElement('section');
+  section.className = 'rigth-content';
+  mainContent.appendChild(section);
+  const name = document.createElement('p');
+  name.innerHTML = `Olá, ${inputText[0].value} ${inputText[1].value}`;
+  section.appendChild(name);
+  for (let index = 2; index < inputText.length; index += 1) {
+    const input = inputText[index];
+    const validar = document.createElement('p');
+    validar.innerHTML = input.value;
+    section.appendChild(validar);
   }
+  const inputRadio = formRegister.querySelector('input[type=radio]:checked').value;
+  const gender = document.createElement('p');
+  gender.innerHTML = inputRadio;
+  section.appendChild(gender);
+  rigthContent.style.display = 'none';
 }
 
 botaoCadastrar.addEventListener('click', function (event) {
   event.preventDefault();
-  verificaErros();
-  substituirForm();
+  if (verificaCamposInvalidos === 0) {
+    substituirForm();
+  } else {
+    verificaErros();
+  }
 });
 
 const personalizado = document.getElementById('personalizado');

@@ -21,7 +21,7 @@ const paiDoRadio = document.getElementById('parent-radio');
 addEventListener('input', (event) => {
   const radio = event.target;
   const ultimoInput = document.getElementById('marcado');
-  if (radio.id === 'personalizado' && radio.checked) {
+  if (radio.id === 'Personalizado' && radio.checked) {
     const personalizar = document.createElement('input');
     personalizar.id = 'marcado';
     personalizar.name = 'gender-custom';

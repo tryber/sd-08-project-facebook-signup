@@ -20,7 +20,6 @@ body {
   align-items: flex-end;
   align-self: center;
   display: flex;
-  margin-right: 2%;
 }
 
 input:focus {

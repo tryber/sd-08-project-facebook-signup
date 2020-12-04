@@ -20,8 +20,14 @@ body {
   align-items: flex-end;
   align-self: center;
   display: flex;
+  margin-right: 2%;
 }
 
 input:focus {
   outline: black;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }

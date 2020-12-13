@@ -39,3 +39,15 @@ input:focus {
   display: flex;
   flex-direction: row;
 }
+
+.left-content {
+  justify-content: flex-start;
+  width: 800px;
+}
+
+p {
+  color: #032f62;
+  font-size: 20px;
+  font-weight: 900;
+  width: 400px;
+}

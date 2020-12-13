@@ -52,6 +52,10 @@ p {
   width: 400px;
 }
 
-.rigth-content {
+.right-content {
   width: 300px;
+}
+
+.quick-easy {
+  font-weight: 500;
 }

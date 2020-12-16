@@ -39,3 +39,8 @@
 .names-container {
   display: flex;
 }
+
+.mensagem-invalidos {
+  color: red;
+  display: none;
+}

@@ -21,12 +21,17 @@
     align-self: flex-end;
 }
 
-.main-content {main-content
+.main-content {
     align-items: baseline;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .left-content {
     width: 800px;
+}
+
+.right-content {
+    width: 300px;
 }

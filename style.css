@@ -35,3 +35,7 @@
 .right-content {
   width: 300px;
 }
+
+.names-container {
+  display: flex;
+}

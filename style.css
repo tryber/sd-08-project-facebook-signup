@@ -20,3 +20,9 @@
 .form-control {
     align-self: flex-end;
 }
+
+.main-content {main-content
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+}

@@ -59,3 +59,21 @@ p {
 .quick-easy {
   font-weight: 500;
 }
+
+.facebook-cadastro {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-lastname {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.in-name {
+  margin-right: 10px;
+}
+
+.cell {
+  width: 124%;
+}

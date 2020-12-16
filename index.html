@@ -14,14 +14,14 @@
         <form class="facebook-login">
             <div class="form-group">
                 <label id="user-email-phone-label">Email ou telefone</label>
-                <input type="text" id="user-email-phone">
+                <input type="email" id="user-email-phone" name="user">
             </div>
             <div class="form-group">
                 <label id="user-password-label">Senha</label>
-                <input type="text" id="user-password">
+                <input type="password" id="user-password" name="password">
             </div>
             <div class="form-control">
-                <button id="button-login" type="submit">Entrar</button>
+                <button id="button-login" type="submit" name="btn-login">Entrar</button>
             </div>
         </form>
     </header>
@@ -35,12 +35,15 @@
         <div class="right-content">
             <h1>Abra uma conta</h1>
             <h2 class="quick-easy">É rápido e fácil.</h2>
-            <form class="facebook-login">
-                <div>
-                    <input type="text" name="firstname" placeholder="Nome" />
+            <form class="facebook-cadastro">
+                <div class="name-lastname">
+                    <input class="in-name" type="text" name="firstname" placeholder="Nome">
+                    <div>
+                    <input type="text" name="lastname" placeholder="Sobrenome">
+                </div>
                 </div>
                 <div>
-                    <input type="text" name="lastname" placeholder="Sobrenome">
+                    <input class="cell" type="text" name="phone_email" placeholder="Celular ou email">
                 </div>
             </form>
         </div>

@@ -44,3 +44,7 @@
   color: red;
   display: none;
 }
+
+.register-validation {
+  display: none;
+}

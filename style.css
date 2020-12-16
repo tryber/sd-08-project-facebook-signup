@@ -77,3 +77,8 @@ p {
 .cell {
   width: 124%;
 }
+
+.in-password {
+  margin-top: 10px;
+  width: 124%;
+}

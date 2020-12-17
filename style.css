@@ -14,6 +14,7 @@ body {
 .facebook-logo {
   align-items: flex-start;
   align-self: center;
+  width: 150px;
 }
 
 .facebook-login {
@@ -90,4 +91,8 @@ p {
 
 .birthdate {
   margin: 10px;
+}
+
+.gender {
+  width: 105%;
 }

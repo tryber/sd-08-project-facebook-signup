@@ -85,5 +85,9 @@ p {
 }
 
 .label-gender {
+  margin-top: 10px;
+}
+
+.birthdate {
   margin: 10px;
 }

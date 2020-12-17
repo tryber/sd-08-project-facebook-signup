@@ -68,7 +68,6 @@ p {
 
 .name-lastname {
   display: flex;
-  margin-bottom: 10px;
 }
 
 .in-name {
@@ -80,17 +79,7 @@ p {
 }
 
 .in-password {
-  margin-bottom: 10px;
-  margin-top: 10px;
   width: 124%;
-}
-
-.label-gender {
-  margin-top: 10px;
-}
-
-.birthdate {
-  margin: 10px;
 }
 
 .gender {

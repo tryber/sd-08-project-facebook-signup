@@ -85,3 +85,14 @@ p {
 .gender {
   width: 105%;
 }
+
+.facebook-register {
+  background-color: rgb(77, 185, 77);
+  border: white;
+  border-radius: 5px;
+  color: white;
+  font-size: larger;
+  height: 35px;
+  margin: 20px;
+  width: 150px;
+}

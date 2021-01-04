@@ -24,8 +24,8 @@ function cadastroConcluido() {
   }
 }
 
-window.onload = function() {
-  validatingForm;
-  addGender;
-  cadastroConcluido;
+window.onabort = function () {
+  validatingForm();
+  addGender();
+  cadastroConcluido();
 };

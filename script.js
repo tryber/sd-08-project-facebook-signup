@@ -25,3 +25,4 @@ function cadastroConcluido() {
 }
 
 const funcs = [validatingForm, addGender, cadastroConcluido];
+console.log(funcs);

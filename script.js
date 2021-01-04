@@ -24,5 +24,8 @@ function cadastroConcluido() {
   }
 }
 
-const funcs = [validatingForm, addGender, cadastroConcluido];
-console.log(funcs);
+window.onload = function() {
+  validatingForm;
+  addGender;
+  cadastroConcluido;
+};

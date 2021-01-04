@@ -4,8 +4,8 @@ function validatingForm() {
     .some((element) => element === '')) {
     const newSpan = document.createElement('span');
     if (!document.getElementById('invalido')) {
-       document.getElementsByClassName('cadastro')[0].appendChild(newSpan);
-       newSpan.outerHTML = '<span id="invalido" style="color: red;">Campos inválidos</span>';
+      document.getElementsByClassName('cadastro')[0].appendChild(newSpan);
+      newSpan.outerHTML = '<span id="invalido" style="color: red;">Campos inválidos</span>';
     }
   }
 }
@@ -34,4 +34,5 @@ window.onabort = function () {
   validatingForm();
   addGender();
   cadastroConcluido();
+  alertButton();
 };

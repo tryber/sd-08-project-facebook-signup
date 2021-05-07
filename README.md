@@ -339,7 +339,7 @@ Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus co
 
 Caso tenha alguma dúvida, [aqui tem um vídeo explicativo](https://vimeo.com/362189205).
 
----
+----
 
 ### REVISANDO UM PULL REQUEST
 
